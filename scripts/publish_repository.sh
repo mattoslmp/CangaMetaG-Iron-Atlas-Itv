@@ -89,4 +89,10 @@ python scripts/validate_app_content.py
 python scripts/headless_navigation_test.py
 git lfs fsck
 git push -u origin "$BRANCH"
-gh pr create --repo "$EXPECTED_REPO" --base main --head "$BRANCH" --draft --title "Prepare private Streamlit review release" --body-file deployment/PRIVATE_RELEASE_PR_BODY.md
+existing_pr="$(gh pr list --repo "$EXPECTED_REPO" --head "$BRANCH" --base main --state open --json number --jq '.[0].number // empty')"
+if [[ -n "$existing_pr" ]]; then
+  echo "Existing private pull request: #$existing_pr"
+  gh pr view "$existing_pr" --repo "$EXPECTED_REPO" --json number,title,state,isDraft,url
+else
+  gh pr create --repo "$EXPECTED_REPO" --base main --head "$BRANCH" --draft --title "Prepare private Streamlit review release" --body-file deployment/PRIVATE_RELEASE_PR_BODY.md
+fi

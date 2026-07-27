@@ -1,0 +1,8 @@
+# Text normalization
+* text=auto eol=lf
+*.bat text eol=crlf
+
+# Git LFS policy
+# No included runtime file currently requires Git LFS after the documented
+# exclusions. Track only exact required paths here if future runtime assets are
+# >= 100 MiB (mandatory) or binary assets >= 50 MiB (preferred).

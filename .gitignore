@@ -1,0 +1,49 @@
+# Python environments
+.venv/
+venv/
+env/
+
+# Python caches
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.mypy_cache/
+
+# Secrets and credentials
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Local temporary and runtime state files
+logs/
+tmp/
+temp/
+cache/
+.DS_Store
+Thumbs.db
+*.log
+*.pid
+
+# Manuscripts and editorial supplements (kept only in the local scientific package)
+docs/manuscript_final/
+docs/manuscript_V7/
+
+# High-resolution publication assets not required by the Streamlit runtime
+outputs/final_publication_figures/SupplementaryFigure4_alpha_diversity_CDS_32999.tiff
+
+# Raw archives not required at runtime
+data/antismash/antismash_uploaded_latest.zip
+data/kegg_modules/raw_uploaded_archives/antismash(1)(1).zip
+
+# Local publication staging and package archives
+private_release_staging/
+*.zip.part*-of-*
+
+# Local validation command logs (summary report is committed)
+deployment/test_logs/

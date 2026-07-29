@@ -1,0 +1,44 @@
+name: Regenerate atlas workflow figure
+
+on:
+  push:
+    paths:
+      - '.github/workflows/regenerate_atlas_workflow.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  regenerate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          lfs: true
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install plotting dependency
+        run: python -m pip install --upgrade matplotlib
+
+      - name: Generate workflow figure
+        run: python scripts/generate_atlas_workflow_figure.py
+
+      - name: Commit generated outputs
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add outputs/final_publication_figures/SupplementaryFigure29_complete_computational_workflow.*
+          git add outputs/app_supplementary_figures/SupplementaryFigure29_complete_computational_workflow.*
+          git add outputs/article_highres_figures/SupplementaryFigure29_complete_computational_workflow.*
+          if git diff --cached --quiet; then
+            echo 'No generated changes to commit.'
+          else
+            git commit -m 'Regenerate atlas workflow with semantic input labels'
+            git push
+          fi

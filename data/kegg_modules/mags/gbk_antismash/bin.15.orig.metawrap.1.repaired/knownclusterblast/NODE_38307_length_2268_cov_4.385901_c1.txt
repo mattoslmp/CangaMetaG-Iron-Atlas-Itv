@@ -1,0 +1,12 @@
+ClusterBlast scores for NODE_38307_length_2268_cov_4.385901
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg450_1	1	310	-		
+ctg450_2	389	1445	+		
+ctg450_3	1441	2266	+		
+
+
+Significant hits: 
+
+
+Details:

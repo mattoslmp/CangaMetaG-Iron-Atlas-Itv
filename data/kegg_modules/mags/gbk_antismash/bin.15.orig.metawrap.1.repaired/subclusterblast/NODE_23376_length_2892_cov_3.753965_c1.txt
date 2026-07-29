@@ -1,0 +1,12 @@
+ClusterBlast scores for NODE_23376_length_2892_cov_3.753965
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg265_1	2	1016	-		
+ctg265_2	2076	2538	+		
+ctg265_3	2534	2891	+		
+
+
+Significant hits: 
+
+
+Details:

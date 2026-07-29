@@ -1,0 +1,272 @@
+{
+  "status": "VALIDATED",
+  "tested_combinations": 24,
+  "validated": 24,
+  "failed": 0,
+  "results": [
+    {
+      "Domain": "Bacteria",
+      "Taxonomic level": "Phylum",
+      "Visualization": "Barplot by individual sample",
+      "Expected dynamic title": "Bacteria — Phylum — Barplot by individual sample",
+      "Dynamic title found": true,
+      "Exceptions": 0,
+      "Status": "VALIDATED",
+      "Elapsed seconds": 8.86,
+      "Details": ""
+    },
+    {
+      "Domain": "Bacteria",
+      "Taxonomic level": "Phylum",
+      "Visualization": "Relative-abundance heatmap",
+      "Expected dynamic title": "Bacteria — Phylum — Relative-abundance heatmap",
+      "Dynamic title found": true,
+      "Exceptions": 0,
+      "Status": "VALIDATED",
+      "Elapsed seconds": 8.64,
+      "Details": ""
+    },
+    {
+      "Domain": "Bacteria",
+      "Taxonomic level": "Class",
+      "Visualization": "Barplot by individual sample",
+      "Expected dynamic title": "Bacteria — Class — Barplot by individual sample",
+      "Dynamic title found": true,
+      "Exceptions": 0,
+      "Status": "VALIDATED",
+      "Elapsed seconds": 10.21,
+      "Details": ""
+    },
+    {
+      "Domain": "Bacteria",
+      "Taxonomic level": "Class",
+      "Visualization": "Relative-abundance heatmap",
+      "Expected dynamic title": "Bacteria — Class — Relative-abundance heatmap",
+      "Dynamic title found": true,
+      "Exceptions": 0,
+      "Status": "VALIDATED",
+      "Elapsed seconds": 7.84,
+      "Details": ""
+    },
+    {
+      "Domain": "Bacteria",
+      "Taxonomic level": "Order",
+      "Visualization": "Barplot by individual sample",
+      "Expected dynamic title": "Bacteria — Order — Barplot by individual sample",
+      "Dynamic title found": true,
+      "Exceptions": 0,
+      "Status": "VALIDATED",
+      "Elapsed seconds": 9.93,
+      "Details": ""
+    },
+    {
+      "Domain": "Bacteria",
+      "Taxonomic level": "Order",
+      "Visualization": "Relative-abundance heatmap",
+      "Expected dynamic title": "Bacteria — Order — Relative-abundance heatmap",
+      "Dynamic title found": true,
+      "Exceptions": 0,
+      "Status": "VALIDATED",
+      "Elapsed seconds": 8.03,
+      "Details": ""
+    },
+    {
+      "Domain": "Bacteria",
+      "Taxonomic level": "Family",
+      "Visualization": "Barplot by individual sample",
+      "Expected dynamic title": "Bacteria — Family — Barplot by individual sample",
+      "Dynamic title found": true,
+      "Exceptions": 0,
+      "Status": "VALIDATED",
+      "Elapsed seconds": 10.27,
+      "Details": ""
+    },
+    {
+      "Domain": "Bacteria",
+      "Taxonomic level": "Family",
+      "Visualization": "Relative-abundance heatmap",
+      "Expected dynamic title": "Bacteria — Family — Relative-abundance heatmap",
+      "Dynamic title found": true,
+      "Exceptions": 0,
+      "Status": "VALIDATED",
+      "Elapsed seconds": 9.29,
+      "Details": ""
+    },
+    {
+      "Domain": "Bacteria",
+      "Taxonomic level": "Genus",
+      "Visualization": "Barplot by individual sample",
+      "Expected dynamic title": "Bacteria — Genus — Barplot by individual sample",
+      "Dynamic title found": true,
+      "Exceptions": 0,
+      "Status": "VALIDATED",
+      "Elapsed seconds": 18.14,
+      "Details": ""
+    },
+    {
+      "Domain": "Bacteria",
+      "Taxonomic level": "Genus",
+      "Visualization": "Relative-abundance heatmap",
+      "Expected dynamic title": "Bacteria — Genus — Relative-abundance heatmap",
+      "Dynamic title found": true,
+      "Exceptions": 0,
+      "Status": "VALIDATED",
+      "Elapsed seconds": 15.64,
+      "Details": ""
+    },
+    {
+      "Domain": "Bacteria",
+      "Taxonomic level": "Species",
+      "Visualization": "Barplot by individual sample",
+      "Expected dynamic title": "Bacteria — Species — Barplot by individual sample",
+      "Dynamic title found": true,
+      "Exceptions": 0,
+      "Status": "VALIDATED",
+      "Elapsed seconds": 76.4,
+      "Details": ""
+    },
+    {
+      "Domain": "Bacteria",
+      "Taxonomic level": "Species",
+      "Visualization": "Relative-abundance heatmap",
+      "Expected dynamic title": "Bacteria — Species — Relative-abundance heatmap",
+      "Dynamic title found": true,
+      "Exceptions": 0,
+      "Status": "VALIDATED",
+      "Elapsed seconds": 69.82,
+      "Details": ""
+    },
+    {
+      "Domain": "Archaea",
+      "Taxonomic level": "Phylum",
+      "Visualization": "Barplot by individual sample",
+      "Expected dynamic title": "Archaea — Phylum — Barplot by individual sample",
+      "Dynamic title found": true,
+      "Exceptions": 0,
+      "Status": "VALIDATED",
+      "Elapsed seconds": 12.12,
+      "Details": ""
+    },
+    {
+      "Domain": "Archaea",
+      "Taxonomic level": "Phylum",
+      "Visualization": "Relative-abundance heatmap",
+      "Expected dynamic title": "Archaea — Phylum — Relative-abundance heatmap",
+      "Dynamic title found": true,
+      "Exceptions": 0,
+      "Status": "VALIDATED",
+      "Elapsed seconds": 11.55,
+      "Details": ""
+    },
+    {
+      "Domain": "Archaea",
+      "Taxonomic level": "Class",
+      "Visualization": "Barplot by individual sample",
+      "Expected dynamic title": "Archaea — Class — Barplot by individual sample",
+      "Dynamic title found": true,
+      "Exceptions": 0,
+      "Status": "VALIDATED",
+      "Elapsed seconds": 9.09,
+      "Details": ""
+    },
+    {
+      "Domain": "Archaea",
+      "Taxonomic level": "Class",
+      "Visualization": "Relative-abundance heatmap",
+      "Expected dynamic title": "Archaea — Class — Relative-abundance heatmap",
+      "Dynamic title found": true,
+      "Exceptions": 0,
+      "Status": "VALIDATED",
+      "Elapsed seconds": 7.98,
+      "Details": ""
+    },
+    {
+      "Domain": "Archaea",
+      "Taxonomic level": "Order",
+      "Visualization": "Barplot by individual sample",
+      "Expected dynamic title": "Archaea — Order — Barplot by individual sample",
+      "Dynamic title found": true,
+      "Exceptions": 0,
+      "Status": "VALIDATED",
+      "Elapsed seconds": 9.15,
+      "Details": ""
+    },
+    {
+      "Domain": "Archaea",
+      "Taxonomic level": "Order",
+      "Visualization": "Relative-abundance heatmap",
+      "Expected dynamic title": "Archaea — Order — Relative-abundance heatmap",
+      "Dynamic title found": true,
+      "Exceptions": 0,
+      "Status": "VALIDATED",
+      "Elapsed seconds": 8.01,
+      "Details": ""
+    },
+    {
+      "Domain": "Archaea",
+      "Taxonomic level": "Family",
+      "Visualization": "Barplot by individual sample",
+      "Expected dynamic title": "Archaea — Family — Barplot by individual sample",
+      "Dynamic title found": true,
+      "Exceptions": 0,
+      "Status": "VALIDATED",
+      "Elapsed seconds": 9.28,
+      "Details": ""
+    },
+    {
+      "Domain": "Archaea",
+      "Taxonomic level": "Family",
+      "Visualization": "Relative-abundance heatmap",
+      "Expected dynamic title": "Archaea — Family — Relative-abundance heatmap",
+      "Dynamic title found": true,
+      "Exceptions": 0,
+      "Status": "VALIDATED",
+      "Elapsed seconds": 8.43,
+      "Details": ""
+    },
+    {
+      "Domain": "Archaea",
+      "Taxonomic level": "Genus",
+      "Visualization": "Barplot by individual sample",
+      "Expected dynamic title": "Archaea — Genus — Barplot by individual sample",
+      "Dynamic title found": true,
+      "Exceptions": 0,
+      "Status": "VALIDATED",
+      "Elapsed seconds": 9.58,
+      "Details": ""
+    },
+    {
+      "Domain": "Archaea",
+      "Taxonomic level": "Genus",
+      "Visualization": "Relative-abundance heatmap",
+      "Expected dynamic title": "Archaea — Genus — Relative-abundance heatmap",
+      "Dynamic title found": true,
+      "Exceptions": 0,
+      "Status": "VALIDATED",
+      "Elapsed seconds": 9.14,
+      "Details": ""
+    },
+    {
+      "Domain": "Archaea",
+      "Taxonomic level": "Species",
+      "Visualization": "Barplot by individual sample",
+      "Expected dynamic title": "Archaea — Species — Barplot by individual sample",
+      "Dynamic title found": true,
+      "Exceptions": 0,
+      "Status": "VALIDATED",
+      "Elapsed seconds": 12.43,
+      "Details": ""
+    },
+    {
+      "Domain": "Archaea",
+      "Taxonomic level": "Species",
+      "Visualization": "Relative-abundance heatmap",
+      "Expected dynamic title": "Archaea — Species — Relative-abundance heatmap",
+      "Dynamic title found": true,
+      "Exceptions": 0,
+      "Status": "VALIDATED",
+      "Elapsed seconds": 10.69,
+      "Details": ""
+    }
+  ]
+}

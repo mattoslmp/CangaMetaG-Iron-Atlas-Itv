@@ -1,0 +1,16 @@
+ClusterBlast scores for NODE_221_length_6512_cov_3.251748
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg221_1	338	1154	-		
+ctg221_2	1150	1969	-		
+ctg221_3	2162	2468	+		
+ctg221_4	2442	2907	+		
+ctg221_5	3073	4150	-		
+ctg221_6	4197	4962	-		
+ctg221_7	5044	6511	-		
+
+
+Significant hits: 
+
+
+Details:

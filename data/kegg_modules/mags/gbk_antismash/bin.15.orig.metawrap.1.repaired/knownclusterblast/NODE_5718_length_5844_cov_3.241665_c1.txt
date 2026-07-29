@@ -1,0 +1,426 @@
+ClusterBlast scores for NODE_5718_length_5844_cov_3.241665
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg31_1	2	4877	+		
+ctg31_2	4972	5842	+		
+
+
+Significant hits: 
+1. BGC0002484.3	scytocyclamide A/scytocyclamide B/scytocyclamide B3/scytocyclamide C/scytocyclamide A2/scytocyclamide B2
+2. BGC0002572.3	heinamide A1/heinamide A2/heinamide A3/heinamide B1/heinamide B2/heinamide B3/heinamide B4/heinamide B5
+3. BGC0001028.5	nostopeptolide A2
+4. BGC0002512.3	anabaenopeptin 788/anabaenopeptin 816/anabaenopeptin 802
+5. BGC0000331.4	cyanopeptolin 1138
+6. BGC0002625.2	desmamide A/desmamide B/desmamide C
+7. BGC0000397.5	nostocyclopeptide A2
+8. BGC0001953.4	puwainaphycin F/minutissamide A/minutissamide B/minutissamide C/minutissamide D
+9. BGC0000367.5	gramicidin
+10. BGC0002532.3	anachelin
+11. BGC0001018.4	micropeptin K139
+12. BGC0002623.2	microginin 755/microginin 721/microginin 773/microginin 739/microginin 705/microginin 803/microginin 769/microginin 735/microginin 626/microginin 592/microginin 558/microginin 789
+13. BGC0001125.5	puwainaphycin A/puwainaphycin B/puwainaphycin C/puwainaphycin D
+14. BGC0000332.4	cyanopeptolin
+15. BGC0001822.4	vioprolide A/vioprolide B/vioprolide C/vioprolide D
+16. BGC0001951.4	puwainaphycin F/minutissamide A
+17. BGC0001950.4	puwainaphycin F/minutissamide A
+18. BGC0001952.3	minutissamide A/minutissamide C/minutissamide D
+19. BGC0002754.2	hectoramide B
+20. BGC0001416.5	nunapeptin/nunamycin
+21. BGC0001328.5	rakicidin A/rakicidin B
+22. BGC0001327.5	rakicidin A/rakicidin B
+23. BGC0001132.4	xenotetrapeptide
+
+
+Details:
+
+>>
+1. BGC0002484.3
+Source: scytocyclamide A/scytocyclamide B/scytocyclamide B3/scytocyclamide C/scytocyclamide A2/scytocyclamide B2
+Type: NRPS:Type I+PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 6723.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg31_1	WA1_15530	49	1462	99.32266009852216	0.0
+ctg31_1	WA1_15575	48	1411	100.86206896551724	0.0
+ctg31_1	WA1_15565	48	1407	102.70935960591132	0.0
+ctg31_1	WA1_15540	48	1397	99.56896551724138	0.0
+ctg31_2	WA1_15565	52	267	90.3448275862069	4.3e-81
+ctg31_2	WA1_15530	52	261	90.3448275862069	4.53e-79
+ctg31_2	WA1_15540	51	259	90.3448275862069	2.1e-78
+ctg31_2	WA1_15575	51	259	90.3448275862069	2.11e-78
+
+
+
+>>
+2. BGC0002572.3
+Source: heinamide A1/heinamide A2/heinamide A3/heinamide B1/heinamide B2/heinamide B3/heinamide B4/heinamide B5
+Type: NRPS:Type I+PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 6359.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg31_1	JYQ62_16310	50	1503	100.49261083743843	0.0
+ctg31_1	JYQ62_16330	49	1484	100.18472906403942	0.0
+ctg31_1	JYQ62_16355	47	1400	100.98522167487684	0.0
+ctg31_1	JYQ62_16335	47	927	67.05665024630541	1.13e-309
+ctg31_2	JYQ62_16330	51	270	90.3448275862069	3.69e-82
+ctg31_2	JYQ62_16310	51	269	93.10344827586206	1.3e-81
+ctg31_2	JYQ62_16355	49	254	90.3448275862069	2.18e-76
+ctg31_2	JYQ62_16335	46	252	90.3448275862069	9.08e-76
+
+
+
+>>
+3. BGC0001028.5
+Source: nostopeptolide A2
+Type: NRPS:Type I+PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 5083.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg31_1	AAF17281.1	48	1439	99.81527093596058	0.0
+ctg31_1	AAF15891.2	47	1416	101.66256157635468	0.0
+ctg31_1	AAF17280.1	47	1404	102.95566502463053	0.0
+ctg31_2	AAF17280.1	53	282	90.3448275862069	3.42e-86
+ctg31_2	AAF17281.1	50	273	90.3448275862069	4.06e-83
+ctg31_2	AAF15891.2	49	269	93.10344827586206	1.26e-81
+
+
+
+>>
+4. BGC0002512.3
+Source: anabaenopeptin 788/anabaenopeptin 816/anabaenopeptin 802
+Type: NRPS:Type I
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 3723.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg31_1	QNL14922.1	46	1359	100.30788177339902	0.0
+ctg31_1	QNL14925.1	46	929	65.51724137931035	4.13e-313
+ctg31_1	QNL14923.1	48	948	65.39408866995073	1.34e-307
+ctg31_2	QNL14923.1	48	258	90.3448275862069	5.08e-78
+ctg31_2	QNL14925.1	46	229	90.0	9.59e-68
+
+
+
+>>
+5. BGC0000331.4
+Source: cyanopeptolin 1138
+Type: NRPS:Type I
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 3609.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg31_1	ABI26078.1	47	1458	100.92364532019704	0.0
+ctg31_1	ABI26077.1	46	1371	100.43103448275863	0.0
+ctg31_2	ABI26078.1	50	266	90.3448275862069	1.5e-80
+ctg31_2	ABI26077.1	52	263	89.65517241379311	9.39e-80
+ctg31_2	ABI26079.1	48	251	90.3448275862069	1.14e-75
+
+
+
+>>
+6. BGC0002625.2
+Source: desmamide A/desmamide B/desmamide C
+Type: NRPS:Type I+PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 3472.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg31_1	IQ276_029105	50	1503	100.92364532019704	0.0
+ctg31_1	IQ276_029115	48	1437	100.36945812807883	0.0
+ctg31_2	IQ276_029105	52	268	90.3448275862069	2.38e-81
+ctg31_2	IQ276_029115	50	264	90.3448275862069	7.1e-80
+
+
+
+>>
+7. BGC0000397.5
+Source: nostocyclopeptide A2
+Type: NRPS:Type I
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 3426.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg31_1	AAO23334.1	47	1477	103.26354679802957	0.0
+ctg31_1	AAO23333.1	48	1440	99.75369458128078	0.0
+ctg31_2	AAO23334.1	50	255	91.37931034482759	6.24e-77
+ctg31_2	AAO23333.1	48	254	94.48275862068965	1.14e-76
+
+
+
+>>
+8. BGC0001953.4
+Source: puwainaphycin F/minutissamide A/minutissamide B/minutissamide C/minutissamide D
+Type: NRPS:Type I
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 3271.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg31_1	AXN93615.1	47	1374	98.46059113300493	0.0
+ctg31_1	AXN93614.1	48	1085	73.64532019704434	0.0
+ctg31_2	AXN93614.1	51	279	92.75862068965517	4.01e-85
+ctg31_2	AXN93605.1	49	268	91.0344827586207	2.28e-81
+ctg31_2	AXN93615.1	50	265	92.75862068965517	3.68e-80
+
+
+
+>>
+9. BGC0000367.5
+Source: gramicidin
+Type: NRPS:Type I
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 3248.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg31_1	BBR47_28940	46	1367	99.56896551724138	0.0
+ctg31_1	BBR47_28930	46	1341	100.18472906403942	0.0
+ctg31_2	BBR47_28930	53	271	90.3448275862069	1.49e-82
+ctg31_2	BBR47_28940	51	269	90.3448275862069	1.28e-81
+
+
+
+>>
+10. BGC0002532.3
+Source: anachelin
+Type: NRPS:Type I+PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 3025.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg31_1	NIES19_13760	47	1415	99.07635467980296	0.0
+ctg31_1	NIES19_13780	51	1040	65.94827586206897	0.0
+ctg31_2	NIES19_13760	53	292	90.3448275862069	1.09e-89
+ctg31_2	NIES19_13780	53	278	90.3448275862069	6.21e-85
+
+
+
+>>
+11. BGC0001018.4
+Source: micropeptin K139
+Type: NRPS:Type I
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 2886.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg31_1	BAH22764.1	47	1466	100.73891625615762	0.0
+ctg31_1	BAH22765.1	46	909	65.70197044334975	1.15e-305
+ctg31_2	BAH22764.1	48	261	90.3448275862069	8.29e-79
+ctg31_2	BAH22765.1	47	250	89.65517241379311	3.82e-75
+
+
+
+>>
+12. BGC0002623.2
+Source: microginin 755/microginin 721/microginin 773/microginin 739/microginin 705/microginin 803/microginin 769/microginin 735/microginin 626/microginin 592/microginin 558/microginin 789
+Type: NRPS:Type I+PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 2866.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg31_1	IQ234_09890	47	1391	100.36945812807883	0.0
+ctg31_1	IQ234_09885	47	961	66.13300492610837	0.0
+ctg31_2	IQ234_09885	51	265	90.3448275862069	5.2e-81
+ctg31_2	IQ234_09890	48	249	90.3448275862069	1.13e-74
+
+
+
+>>
+13. BGC0001125.5
+Source: puwainaphycin A/puwainaphycin B/puwainaphycin C/puwainaphycin D
+Type: NRPS:Type I+PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 2253.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg31_1	AIW82284.1	47	1423	100.30788177339902	0.0
+ctg31_2	AIW82277.1	52	288	91.0344827586207	3.29e-88
+ctg31_2	AIW82283.1	50	273	91.0344827586207	2.97e-83
+ctg31_2	AIW82284.1	52	269	89.65517241379311	9.15e-82
+
+
+
+>>
+14. BGC0000332.4
+Source: cyanopeptolin
+Type: NRPS:Type I
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 2062.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg31_1	AAZ03552.1	49	1540	100.18472906403942	0.0
+ctg31_2	AAZ03552.1	49	268	90.3448275862069	2.35e-81
+ctg31_2	AAZ03554.1	48	254	90.3448275862069	9.51e-77
+
+
+
+>>
+15. BGC0001822.4
+Source: vioprolide A/vioprolide B/vioprolide C/vioprolide D
+Type: NRPS:Type I
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 2027.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg31_1	AWI62628.1	46	1290	101.66256157635468	0.0
+ctg31_2	AWI62628.1	49	250	96.55172413793103	3.38e-75
+ctg31_2	AWI62629.1	48	244	90.3448275862069	3.26e-73
+ctg31_2	AWI62626.1	50	243	90.3448275862069	8.93e-73
+
+
+
+>>
+16. BGC0001951.4
+Source: puwainaphycin F/minutissamide A
+Type: NRPS:Type I
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 2011.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg31_1	AXN93590.1	48	1447	99.8768472906404	0.0
+ctg31_2	AXN93584.1	53	289	91.0344827586207	9.57e-89
+ctg31_2	AXN93590.1	52	275	89.65517241379311	1.24e-83
+
+
+
+>>
+17. BGC0001950.4
+Source: puwainaphycin F/minutissamide A
+Type: NRPS:Type I
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 2008.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg31_1	AXN93581.1	48	1444	99.8768472906404	0.0
+ctg31_2	AXN93575.1	53	289	91.0344827586207	9.57e-89
+ctg31_2	AXN93581.1	52	275	89.65517241379311	1.24e-83
+
+
+
+>>
+18. BGC0001952.3
+Source: minutissamide A/minutissamide C/minutissamide D
+Type: NRPS:Type I
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 1918.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg31_1	AXN93602.1	47	1370	98.27586206896551	0.0
+ctg31_2	AXN93602.1	51	277	92.75862068965517	1.43e-84
+ctg31_2	AXN93592.1	49	271	91.0344827586207	1.93e-82
+
+
+
+>>
+19. BGC0002754.2
+Source: hectoramide B
+Type: NRPS:Type I
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 1850.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg31_1	BJP36_15450	46	821	58.312807881773395	4.23e-266
+ctg31_1	BJP36_39130	46	772	57.389162561576356	7.86e-247
+ctg31_2	BJP36_15455	48	257	90.3448275862069	1.27e-77
+
+
+
+>>
+20. BGC0001416.5
+Source: nunapeptin/nunamycin
+Type: NRPS:Type I
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 1777.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg31_1	AL066_08515	46	1285	99.19950738916256	0.0
+ctg31_2	AL066_08465	46	253	100.6896551724138	2.93e-76
+ctg31_2	AL066_08460	46	239	89.65517241379311	3.6e-71
+
+
+
+>>
+21. BGC0001328.5
+Source: rakicidin A/rakicidin B
+Type: NRPS:Type I+PKS:Type I
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 1294.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg31_1	MCBG_00138	46	775	56.52709359605911	6.11e-259
+ctg31_2	MCBG_00138	51	263	90.6896551724138	8.86e-81
+ctg31_2	MCBG_00135	49	256	91.0344827586207	1.37e-77
+
+
+
+>>
+22. BGC0001327.5
+Source: rakicidin A/rakicidin B
+Type: NRPS:Type I+PKS:Type I
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 1292.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg31_1	IH31_RS0100595	46	776	56.52709359605911	3.57e-253
+ctg31_2	IH31_RS0100595	50	261	90.6896551724138	3.88e-79
+ctg31_2	IH31_RS0100585	49	255	91.0344827586207	2.59e-77
+
+
+
+>>
+23. BGC0001132.4
+Source: xenotetrapeptide
+Type: NRPS:Type I
+Number of proteins with BLAST hits to this cluster: 1
+Cumulative BLAST score: 233.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg31_2	XNC1_2022	47	233	95.17241379310344	2.69e-69
+

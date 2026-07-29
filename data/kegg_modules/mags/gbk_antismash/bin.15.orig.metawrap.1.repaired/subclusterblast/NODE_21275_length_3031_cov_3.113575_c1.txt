@@ -1,0 +1,10 @@
+ClusterBlast scores for NODE_21275_length_3031_cov_3.113575
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg241_1	2	3029	-		
+
+
+Significant hits: 
+
+
+Details:

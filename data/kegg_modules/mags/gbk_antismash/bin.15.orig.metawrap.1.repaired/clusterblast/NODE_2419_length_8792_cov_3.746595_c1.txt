@@ -1,0 +1,10 @@
+ClusterBlast scores for NODE_2419_length_8792_cov_3.746595
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg4_1	1	8791	+		
+
+
+Significant hits: 
+
+
+Details:

@@ -1,0 +1,257 @@
+LOCUS       NODE_461_length_3608_cov_3.781365 3608 bp    DNA              UNK 01-JAN-1980
+DEFINITION  NODE_461_length_3608_cov_3.781365.
+ACCESSION   NODE_461_length_3608_cov_3
+VERSION     NODE_461_length_3608_cov_3.781365
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+COMMENT     ##antiSMASH-Data-START##
+            Version     :: 8.0.4
+            Run date    :: 2026-06-19 15:13:30
+            NOTE :: This is a single region extracted from a larger record!
+            Orig. start :: 0
+            Orig. end   :: 3608
+            ##antiSMASH-Data-END##
+FEATURES             Location/Qualifiers
+     region          1..3608
+                     /candidate_cluster_numbers="1"
+                     /contig_edge="True"
+                     /product="CDPS"
+                     /region_number="1"
+                     /rules="CDPS"
+                     /tool="antismash"
+     cand_cluster    1..3608
+                     /candidate_cluster_number="1"
+                     /contig_edge="True"
+                     /detection_rules="CDPS"
+                     /kind="single"
+                     /product="CDPS"
+                     /protoclusters="1"
+                     /tool="antismash"
+     protocluster    1..3608
+                     /aStool="rule-based-clusters"
+                     /category="NRPS"
+                     /contig_edge="True"
+                     /core_location="[2831:3608](-)"
+                     /cutoff="5000"
+                     /detection_rule="CDPS"
+                     /neighbourhood="10000"
+                     /product="CDPS"
+                     /protocluster_number="1"
+                     /tool="antismash"
+     proto_core      complement(2832..3608)
+                     /aStool="rule-based-clusters"
+                     /tool="antismash"
+                     /cutoff="5000"
+                     /detection_rule="CDPS"
+                     /neighbourhood="10000"
+                     /product="CDPS"
+                     /protocluster_number="1"
+     CDS             2..256
+                     /locus_tag="ctg461_1"
+                     /transl_table=11
+                     /translation="MVCSWKCLLKKLSLLRLVLIAVIRKMIERQGELQVLGELNPEQIE
+                     QVLRSEAISRLGCHARGRTYVPSPMPMTALTDYFGVNHE"
+     CDS             249..833
+                     /locus_tag="ctg461_2"
+                     /transl_table=11
+                     /translation="MSNPPKILAFAGSAREGSFNKKLVKIAAEGAKSASAEVTYLDWRD
+                     LPLPLFDQDLEAREGLPENVLKFKALMKAHQGLLIACPEYNSSIAPLLKNAIDWASRPE
+                     PGEPPMGLSCFCDKVAALMSASPGGLGGLRGLVHVRAILGNIGVLVLPEQKAIPNAHQA
+                     FDENGNLKDEKQQAEVQKLGSKLATVLAKLG"
+     PFAM_domain     261..731
+                     /aSDomain="FMN_red"
+                     /aSTool="clusterhmmer"
+                     /database="35.0"
+                     /db_xref="PF03358.18"
+                     /db_xref="GO:0016491"
+                     /description="NADPH-dependent FMN reductase"
+                     /detection="hmmscan"
+                     /domain_id="clusterhmmer_ctg461_2_0001"
+                     /evalue="5.10E-34"
+                     /gene_ontologies="GO:0016491: oxidoreductase activity"
+                     /label="ctg461_2"
+                     /locus_tag="ctg461_2"
+                     /protein_end="161"
+                     /protein_start="4"
+                     /score="117.4"
+                     /tool="antismash"
+                     /translation="PKILAFAGSAREGSFNKKLVKIAAEGAKSASAEVTYLDWRDLPLP
+                     LFDQDLEAREGLPENVLKFKALMKAHQGLLIACPEYNSSIAPLLKNAIDWASRPEPGEP
+                     PMGLSCFCDKVAALMSASPGGLGGLRGLVHVRAILGNIGVLVLPEQKAIPNAH"
+     CDS             1296..1499
+                     /gene_functions="biosynthetic-additional
+                     (rule-based-clusters) GST_C"
+                     /gene_kind="biosynthetic-additional"
+                     /locus_tag="ctg461_3"
+                     /sec_met_domain="GST_C (E-value: 1.3e-08, bitscore: 23.8,
+                     seeds: 35, tool: rule-based-clusters)"
+                     /transl_table=11
+                     /translation="MRFLAFLSVVVQPDLILFERPTIADIAVFPYIALAPDGKLDLSPY
+                     PHVLDWIERVKQLPGYIAMAGL"
+     PFAM_domain     1314..1472
+                     /aSDomain="GST_C"
+                     /aSTool="clusterhmmer"
+                     /database="35.0"
+                     /db_xref="PF00043.28"
+                     /description="Glutathione S-transferase, C-terminal domain"
+                     /detection="hmmscan"
+                     /domain_id="clusterhmmer_ctg461_3_0002"
+                     /evalue="1.20E-04"
+                     /label="ctg461_3"
+                     /locus_tag="ctg461_3"
+                     /protein_end="59"
+                     /protein_start="6"
+                     /score="22.3"
+                     /tool="antismash"
+                     /translation="LSVVVQPDLILFERPTIADIAVFPYIALAPDGKLDLSPYPHVLDW
+                     IERVKQLP"
+     CDS             1523..1963
+                     /locus_tag="ctg461_4"
+                     /transl_table=11
+                     /translation="MDGFYLGTVGSNGYPYIQFRGGQPGFLKVLDSKTLGFADFQGNLQ
+                     YVTVGNLAENDKAFLFLMDYRHRKRLKIWGRARSVEGDEALSDRLRVLGYQAVIKRAIL
+                     FEIEAWNWNCPQHIPIRYSEEEVAALKARIAFLEQQLAQKNS"
+     PFAM_domain     1532..1774
+                     /aSDomain="Putative_PNPOx"
+                     /aSTool="clusterhmmer"
+                     /database="35.0"
+                     /db_xref="PF01243.23"
+                     /description="Pyridoxamine 5'-phosphate oxidase"
+                     /detection="hmmscan"
+                     /domain_id="clusterhmmer_ctg461_4_0003"
+                     /evalue="2.10E-09"
+                     /label="ctg461_4"
+                     /locus_tag="ctg461_4"
+                     /protein_end="84"
+                     /protein_start="3"
+                     /score="37.6"
+                     /tool="antismash"
+                     /translation="FYLGTVGSNGYPYIQFRGGQPGFLKVLDSKTLGFADFQGNLQYVT
+                     VGNLAENDKAFLFLMDYRHRKRLKIWGRARSVEGDE"
+     CDS             complement(2028..2729)
+                     /locus_tag="ctg461_5"
+                     /transl_table=11
+                     /translation="MKELFGELLKSFLDNVGYLFGIDFLSFFVSGATCLGAFAFAWRQF
+                     APDTFPSQLTGGLGIAAIAIACYVLGMVCFASGRWLRSRLFRDNSLKLLYHVLENYAQV
+                     GEAPFPEYYEKAATLGSKERNPLMQRLYSRMWTEIRQSKRLMASYTLLNRYWFMSATYD
+                     GLGMASIVWFLVVFLWVLTGDHPLLVILVIALLLLPFICWREADRYKQYQVEELVATLA
+                     YQRNRRYIREE"
+     CDS             complement(2832..3608)
+                     /gene_functions="biosynthetic (rule-based-clusters) CDPS:
+                     CDPS"
+                     /gene_kind="biosynthetic"
+                     /locus_tag="ctg461_6"
+                     /sec_met_domain="CDPS (E-value: 9.5e-17, bitscore: 50.0,
+                     seeds: 17, tool: rule-based-clusters)"
+                     /transl_table=11
+                     /translation="MAYSYAYLFSISYSDFEKLVNPKKAISFSTRPRYRALVSNVSPED
+                     ARQKFKNYQSCILGLSLENEELSTAKLVAITDWISKNFKKCTAVLGDSLYRITLQIDRG
+                     FNEKQAVNKALLMGREYVDKESIVFDRHADTCLFDIVFCSEIQKWDAYAEYYKKIQDLF
+                     GQDDKFANSVRYWAREFVSRRLEQNSEFFDSKIEISCTYQLEELAIFACLAQSGLSVIV
+                     YPGSLDIFAEIAEGQHPNVPDCLQKIIHISLDLKKR"
+     aSDomain        complement(2862..3476)
+                     /aSDomain="TIGR04539"
+                     /aSTool="tigrfam"
+                     /description="tRNA_cyclodipep: tRNA-dependent
+                     cyclodipeptide synthase"
+                     /detection="hmmscan"
+                     /domain_id="TIGRFam_ctg461_6_0001"
+                     /evalue="2.70E-28"
+                     /identifier="TIGR04539"
+                     /label="ctg461_6"
+                     /locus_tag="ctg461_6"
+                     /protein_end="249"
+                     /protein_start="44"
+                     /score="97.0"
+                     /tool="antismash"
+                     /translation="DARQKFKNYQSCILGLSLENEELSTAKLVAITDWISKNFKKCTAV
+                     LGDSLYRITLQIDRGFNEKQAVNKALLMGREYVDKESIVFDRHADTCLFDIVFCSEIQK
+                     WDAYAEYYKKIQDLFGQDDKFANSVRYWAREFVSRRLEQNSEFFDSKIEISCTYQLEEL
+                     AIFACLAQSGLSVIVYPGSLDIFAEIAEGQHPNVPDCLQKII"
+     PFAM_domain     complement(2976..3464)
+                     /aSDomain="CDPS"
+                     /aSTool="clusterhmmer"
+                     /database="35.0"
+                     /db_xref="PF16715.8"
+                     /db_xref="GO:0016755"
+                     /description="Cyclodipeptide synthase"
+                     /detection="hmmscan"
+                     /domain_id="clusterhmmer_ctg461_6_0004"
+                     /evalue="6.90E-11"
+                     /gene_ontologies="GO:0016755: aminoacyltransferase
+                     activity"
+                     /label="ctg461_6"
+                     /locus_tag="ctg461_6"
+                     /protein_end="211"
+                     /protein_start="48"
+                     /score="42.4"
+                     /tool="antismash"
+                     /translation="KFKNYQSCILGLSLENEELSTAKLVAITDWISKNFKKCTAVLGDS
+                     LYRITLQIDRGFNEKQAVNKALLMGREYVDKESIVFDRHADTCLFDIVFCSEIQKWDAY
+                     AEYYKKIQDLFGQDDKFANSVRYWAREFVSRRLEQNSEFFDSKIEISCTYQLEELAIFA
+                     "
+ORIGIN
+        1 aatggtgtgt tcgtggaagt gcctactcaa aaagttaagc cttctcagac ttgtcctaat
+       61 tgcggtcatc aggaaaatga ttgagaggca gggagagtta caggtgctag gggaactcaa
+      121 tcccgagcaa attgaacaag tcctgcgctc ggaagcgatc agtcgcctcg gctgccacgc
+      181 aagaggccgc acctacgttc cgtcacctat gcctatgacg gcgctcaccg actattttgg
+      241 agttaaccat gagtaatccc cccaagattc tggcttttgc tggtagcgcc cgtgaaggct
+      301 cattcaacaa aaaattggtc aagattgccg ccgaaggcgc taagtcagcc agtgcagaag
+      361 tcacctattt agattggcgg gacttgcccc tgcccctgtt cgaccaagac ttagaagcca
+      421 gagaagggtt gccagaaaat gtcctgaagt tcaaggcgct gatgaaagcc catcaaggat
+      481 tgctcatcgc ctgcccggaa tacaatagct cgatcgcccc tctgctcaaa aatgccattg
+      541 attgggcatc acgcccggaa ccgggggaac ccccaatggg gttaagctgc ttttgcgata
+      601 aagtagcagc cctcatgagt gcgtctccag gggggctggg cggtttgcgg ggattggttc
+      661 acgtccgcgc cattctcggc aatatcgggg tcttagtctt gccggagcag aaagctatcc
+      721 ctaatgctca tcaagccttt gatgagaacg gaaatttgaa ggatgagaag caacaagcgg
+      781 aggttcaaaa actggggagt aaactagcga cagtgctggc caaacttggc taggatgaga
+      841 gtttcagggt tgtgttgcag actctcggca caattgttcg ggcaattgtt gcaaaacgcg
+      901 ctcaaaagga gtcaaatcgt cgagtccctg cgccaaaatc agagcgccct gaatcgcgat
+      961 cgccgcatct tcccctcgct gccttgcctg tttctcctct aatcctgact tgaaagaggg
+     1021 tgtggggtgt agggtgtggg gtgtagggga aagcaccctt tttcatgcct ggtggtgaaa
+     1081 attttttcat cgggactgcc tccatcaaca ccttcgccat ctcatcaatc tggaggatta
+     1141 acccatgatt caactttacg gtcacgaact ctctggcaac agctacaaat gagttccttt
+     1201 ctctcaaccc ttttggacaa gttcctgtct tagtagatgg cgaaaccgtc ttatatcaaa
+     1261 tccggttaat tgcccatggt tgcaatccaa taacgatgag attcctggct tttttaagtg
+     1321 tggttgttca accggatttg atattattcg agcgtccgac gattgcagac atcgccgttt
+     1381 tcccttacat cgccctcgcg ccggatggga agctcgacct ctccccctat cctcatgtcc
+     1441 tagactggat cgagcgagtg aagcagttgc cgggttatat tgcgatggct ggactctaga
+     1501 aattgaggaa ttcatcgctc gcatggatgg attctatctg ggaaccgtcg gttctaatgg
+     1561 ctatccttac attcaatttc ggggaggaca gccagggttt ctcaaagtac tcgatagtaa
+     1621 gacgctgggg tttgccgact ttcagggaaa tctccagtac gtcaccgtgg gcaatcttgc
+     1681 agaaaacgac aaggctttct tgttcctgat ggattaccgc caccgcaagc ggctgaaaat
+     1741 ttggggacga gctagatcgg ttgagggaga tgaagcgtta agcgatcgcc tgcgcgttct
+     1801 gggttatcaa gccgtcatca aacgggcaat cttgtttgag atagaagctt ggaattggaa
+     1861 ctgcccccaa cacattccca ttcgctactc cgaagaggaa gtagcggccc tgaaagccag
+     1921 aattgcgttc ttagagcaac agcttgctca aaaaaattcc taaaacgtca aaattttatc
+     1981 cttttgtacc gagatgtcag gagagccaga tggattagct taacaaatca ttcttctctt
+     2041 atgtaacgtc gatttctttg ataagctagg gtcgccacca gttcttccac ctgatattgt
+     2101 ttgtaacgat ctgcctctct ccagcagatg aacggaagca gcagtagagc aatgacaaga
+     2161 attaccagta atggatggtc tcctgttagc acccatagga atacgacaag aaaccacacg
+     2221 attgaagcca tccccagtcc atcgtaggtt gcactcataa accaatagcg gttgaggagg
+     2281 gtataggagg ccattaaacg tttcgattgc cgaatctccg tccacatccg actgtagagg
+     2341 cgctgcatca aaggatttct ctccttagat cccagggtag cagccttctc gtaatactct
+     2401 ggaaacggcg cttctcctac ttgggcataa ttttcgagaa cgtggtagag gagcttgaga
+     2461 gaattatctc tgaacaatcg gctgcgcagc cacctcccag aggcaaaaca aaccataccc
+     2521 agaacgtaac aggcgatcgc gatggcggcg atgcctagcc caccagttag ctggctgggg
+     2581 aaagtgtctg gggcaaactg ccgccaggca aaggcaaagg ctcccaagca ggtagctccc
+     2641 gacacgaaaa aggagaggaa gtcgatgccg aagaggtagc caacgttgtc gagaaaagac
+     2701 ttgagaagtt cgccaaataa ttctttcatc tgctattgtt tctacataaa gcgtttattt
+     2761 taaacaggaa tttcctaatt tcctgtctgt gatatttctg atagttttgc tatctcttag
+     2821 aactgtcaat attatcgttt cttgagatcc aaagaaatat gtatgatttt ttggagacaa
+     2881 tcggggacat taggatgctg accttcggca atttctgcaa aaatatccaa agaacctgga
+     2941 taaactatta ctgataagcc ggattgcgca agacaagcaa aaatcgctaa ttcttcgagt
+     3001 tgatatgtac aggaaatttc tatcttagaa tcaaagaatt cggaattttg ttcaaggcga
+     3061 cgagaaacaa actccctagc ccaatatcta actgaattgg cgaatttatc atcctgtcca
+     3121 aagagatctt gaattttttt gtaatattcg gcgtaagcat cccatttttg aatctctgag
+     3181 caaaagacta tatcaaaaag acaagtatcg gcgtgacgat caaagacaat actttctttg
+     3241 tctacatact ctctccccat aagcagggct ttgttgactg cttgtttttc attaaagccc
+     3301 cgatcaattt gcaaagtgat tcggtataag ctatcaccaa gcaccgctgt acattttttg
+     3361 aaattcttgc taatccaatc cgttatcgca accagttttg cagttgaaag ctcctcattt
+     3421 tctaaactta gacctaaaat acaagactga taatttttaa atttttgtcg agcatcttct
+     3481 ggagaaacat tgctaactag agctcgatac cttggtcttg tcgaaaagct gattgccttc
+     3541 ttgggattta ctaatttttc aaaatcgcta tagcttatac taaatagata agcataggaa
+     3601 taagcata
+//

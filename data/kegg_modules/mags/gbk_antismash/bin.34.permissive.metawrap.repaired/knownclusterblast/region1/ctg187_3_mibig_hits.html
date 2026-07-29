@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>QCP68990.1</td>
+              <td>VatC</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002296.2">BGC0002296.2</a></td>
+              <td>NRPS:Type I+PKS</td>
+              <td>60.0</td>
+              <td>73.3</td>
+              <td>105.0</td>
+              <td>8.83e-31</td>
+          </tr>
+    
+          <tr>
+              <td>AAS98798.1</td>
+              <td>JamC</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001001.5">BGC0001001.5</a></td>
+              <td>NRPS:Type I+PKS</td>
+              <td>58.0</td>
+              <td>73.3</td>
+              <td>103.0</td>
+              <td>7.22e-30</td>
+          </tr>
+    
+          <tr>
+              <td>MBC5793740.1</td>
+              <td>acyl_carrier_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002480.2">BGC0002480.2</a></td>
+              <td>PKS+NRPS:Type I</td>
+              <td>55.0</td>
+              <td>71.4</td>
+              <td>92.0</td>
+              <td>1.04e-25</td>
+          </tr>
+    
+          <tr>
+              <td>QOV09191.1</td>
+              <td>ClyB/NocM</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002597.2">BGC0002597.2</a></td>
+              <td>NRPS:Type I+PKS</td>
+              <td>56.0</td>
+              <td>68.6</td>
+              <td>92.0</td>
+              <td>1.56e-25</td>
+          </tr>
+    
+          <tr>
+              <td>AQX77692.1</td>
+              <td>NocM</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001704.3">BGC0001704.3</a></td>
+              <td>other:other</td>
+              <td>59.0</td>
+              <td>60.0</td>
+              <td>81.0</td>
+              <td>1.28e-21</td>
+          </tr>
+    
+          <tr>
+              <td>ACC80709.1</td>
+              <td>phosphopantetheine-binding</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002677.2">BGC0002677.2</a></td>
+              <td>other:other</td>
+              <td>41.0</td>
+              <td>71.4</td>
+              <td>70.0</td>
+              <td>2.38e-16</td>
+          </tr>
+    
+          <tr>
+              <td>KYC42745.1</td>
+              <td>AMP-dependent_synthetase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002484.3">BGC0002484.3</a></td>
+              <td>NRPS:Type I+PKS</td>
+              <td>41.0</td>
+              <td>80.0</td>
+              <td>68.0</td>
+              <td>1.88e-14</td>
+          </tr>
+    
+          <tr>
+              <td>APZ78858.1</td>
+              <td>polyketide_synthase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001432.4">BGC0001432.4</a></td>
+              <td>NRPS:Type I+PKS:Iterative type I</td>
+              <td>40.0</td>
+              <td>81.9</td>
+              <td>64.0</td>
+              <td>8.31e-13</td>
+          </tr>
+    
+          <tr>
+              <td>ACC80702.1</td>
+              <td>AMP-dependent_synthetase_and_ligase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002677.2">BGC0002677.2</a></td>
+              <td>other:other</td>
+              <td>40.0</td>
+              <td>66.7</td>
+              <td>61.0</td>
+              <td>5.28e-12</td>
+          </tr>
+    
+          <tr>
+              <td>QEO74980.1</td>
+              <td>omn5</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002078.2">BGC0002078.2</a></td>
+              <td>NRPS:Type I</td>
+              <td>31.0</td>
+              <td>66.7</td>
+              <td>42.0</td>
+              <td>3.43e-06</td>
+          </tr>
+    
+          <tr>
+              <td>AFU82614.1</td>
+              <td>mixed_NRPS_PKS</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000998.5">BGC0000998.5</a></td>
+              <td>NRPS:Type I+PKS</td>
+              <td>33.0</td>
+              <td>81.0</td>
+              <td>44.0</td>
+              <td>4.79e-06</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

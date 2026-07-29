@@ -1,0 +1,44 @@
+ClusterBlast scores for NODE_17649_length_3337_cov_6.138940
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg506_1	119	1310	+		
+ctg506_2	1510	2116	-		
+ctg506_3	2441	2870	+		
+ctg506_4	2901	3336	+		
+
+
+Significant hits: 
+1. NZ_CP036313	Desulfobacter hydrogenophilus strain AcRS1 chromosome
+2. NZ_CP031728	Cellvibrio sp. KY-GH-1 chromosome, complete genome
+
+
+Details:
+
+>>
+1. NZ_CP036313
+Source: Desulfobacter hydrogenophilus strain AcRS1 chromosome
+Type: arylpolyene,resorcinol
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 206.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg506_3	EYB58_RS10540	55	145	86.61971830985915	1.12e-43
+ctg506_4	EYB58_RS10650	35	61	100.6896551724138	1.24e-09
+
+
+
+>>
+2. NZ_CP031728
+Source: Cellvibrio sp. KY-GH-1 chromosome, complete genome
+Type: arylpolyene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 151.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg506_3	D0C16_RS16100	34	82	85.2112676056338	1.95e-18
+ctg506_4	D0C16_RS16060	35	69	97.93103448275862	2.49e-12
+

@@ -1,0 +1,18 @@
+ClusterBlast scores for NODE_26_length_18041_cov_2.640225
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg26_5	3619	11020	-		
+ctg26_6	11009	11945	-		
+ctg26_7	12145	13432	-		
+ctg26_8	13451	13772	-		
+ctg26_9	14014	14761	+		
+ctg26_10	15034	15739	+		
+ctg26_11	15735	17439	+		
+ctg26_12	17445	17661	+		
+ctg26_13	17714	18041	+		
+
+
+Significant hits: 
+
+
+Details:

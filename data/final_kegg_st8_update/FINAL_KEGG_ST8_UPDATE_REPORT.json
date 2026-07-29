@@ -1,0 +1,33 @@
+{
+  "lagoon_modules": 448,
+  "lagoon_metagenomes": 20,
+  "external_modules": 448,
+  "external_metagenomes": 67,
+  "combined_columns": 87,
+  "mag_columns": 47,
+  "status_categories": [
+    "Complete",
+    "1 block missing",
+    "Incomplete"
+  ],
+  "figures": [
+    "SAppFig_KEMET_all_lagoon_metagenomes_heatmap_KEMET_style_3state.png",
+    "SAppFig_ST8_external_iron_rich_module_completeness_KEMET_style_3state_heatmap.png",
+    "SAppFig_lagoon_plus_external_iron_rich_module_completeness_KEMET_style_3state_heatmap.png",
+    "SupplementaryFigure38_MAG_KEGG_module_completeness_heatmap_species_MAGnumber_KEMET_style_3state.png"
+  ],
+  "tables": [
+    "Combined_lagoon_plus_external_iron_rich_module_completeness_SCORE_3state.csv",
+    "Combined_lagoon_plus_external_iron_rich_module_completeness_STATUS_3state.csv",
+    "KEMET_lagoon_all_metagenomes_module_completeness_SCORE_3state.csv",
+    "KEMET_lagoon_all_metagenomes_module_completeness_STATUS_3state.csv",
+    "KEMET_module_KO_sets_extracted_from_lagoon_reportKMC.csv",
+    "MAG_KEGG_module_completeness_SCORE_species_MAGnumber_3state.csv",
+    "MAG_KEGG_module_completeness_STATUS_species_MAGnumber_3state.csv",
+    "MAG_KEGG_module_completeness_display_labels_species_MAGnumber.csv",
+    "ST8_external_iron_rich_module_completeness_LONG_3state_from_KO.csv",
+    "ST8_external_iron_rich_module_completeness_SCORE_3state_from_KO.csv",
+    "ST8_external_iron_rich_module_completeness_STATUS_3state_from_KO.csv",
+    "ST8_external_iron_rich_module_completeness_summary_by_sample_3state.csv"
+  ]
+}

@@ -1,0 +1,13 @@
+ClusterBlast scores for NODE_79_length_5512_cov_3.091260
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg79_1	2	2081	+		
+ctg79_2	2091	3579	+		
+ctg79_3	3568	4420	-		
+ctg79_4	4645	5284	+		
+
+
+Significant hits: 
+
+
+Details:

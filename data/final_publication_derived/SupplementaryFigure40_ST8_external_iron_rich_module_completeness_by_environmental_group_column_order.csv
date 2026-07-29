@@ -1,0 +1,135 @@
+figure_id,variant,display_order_index,sample_column,source_order_index,display_label,environmental_group,display_group,group_rank,within_group_rank,record_type,original_record_identifier,grouped_order_index
+S40,environmental_group,0,Metatransc of lab 3300055056,6,S2,Akron-AMD,"Akron
+AMD",4,1,External iron-rich record,3300055056,0
+S40,environmental_group,1,Metatransc of lab 3300055062,50,S14,Akron-AMD,"Akron
+AMD",4,13,External iron-rich record,3300055062,1
+S40,environmental_group,2,Metatransc of lab 3300055061,10,S21,Akron-AMD,"Akron
+AMD",4,20,External iron-rich record,3300055061,2
+S40,environmental_group,3,Metatransc of lab 3300055069,59,S23,Akron-AMD,"Akron
+AMD",4,22,External iron-rich record,3300055069,3
+S40,environmental_group,4,Lab enriched acid 3300038471,24,S25,Akron-AMD,"Akron
+AMD",4,24,External iron-rich record,3300038471,4
+S40,environmental_group,5,Lab enriched acid 3300038411,27,S28,Akron-AMD,"Akron
+AMD",4,27,External iron-rich record,3300038411,5
+S40,environmental_group,6,Metatransc of lab 3300046014,5,S30,Akron-AMD,"Akron
+AMD",4,29,External iron-rich record,3300046014,6
+S40,environmental_group,7,Lab enriched acid 3300038412,42,S34,Akron-AMD,"Akron
+AMD",4,33,External iron-rich record,3300038412,7
+S40,environmental_group,8,Metatransc of lab 3300046013,39,S35,Akron-AMD,"Akron
+AMD",4,34,External iron-rich record,3300046013,8
+S40,environmental_group,9,Lab enriched acid 3300038413,1,S37,Akron-AMD,"Akron
+AMD",4,36,External iron-rich record,3300038413,9
+S40,environmental_group,10,Metatransc of lab 3300055057,44,S61,Akron-AMD,"Akron
+AMD",4,60,External iron-rich record,3300055057,10
+S40,environmental_group,11,Lab enriched sediment 3300039027,21,S39,Burr-Oak-BO4,"Burr Oak
+BO4",5,38,External iron-rich record,3300039027,11
+S40,environmental_group,12,Lab enriched sediment 3300039028,46,S58,Burr-Oak-BO4,"Burr Oak
+BO4",5,57,External iron-rich record,3300039028,12
+S40,environmental_group,13,Hydrotherm Fe rich 3300023307,61,S7,Hydrothermal-Fe-mats,"Hydrothermal
+Fe mats",6,6,External iron-rich record,3300023307,13
+S40,environmental_group,14,Hydrotherm Fe rich 3300023310,4,S15,Hydrothermal-Fe-mats,"Hydrothermal
+Fe mats",6,14,External iron-rich record,3300023310,14
+S40,environmental_group,15,Hydrotherm Fe rich 3300023442,51,S19,Hydrothermal-Fe-mats,"Hydrothermal
+Fe mats",6,18,External iron-rich record,3300023442,15
+S40,environmental_group,16,Hydrotherm Fe rich 3300023313,53,S20,Hydrothermal-Fe-mats,"Hydrothermal
+Fe mats",6,19,External iron-rich record,3300023313,16
+S40,environmental_group,17,Hydrotherm Fe rich 3300023368,11,S40,Hydrothermal-Fe-mats,"Hydrothermal
+Fe mats",6,39,External iron-rich record,3300023368,17
+S40,environmental_group,18,Hydrotherm Fe rich 3300023444,66,S48,Hydrothermal-Fe-mats,"Hydrothermal
+Fe mats",6,47,External iron-rich record,3300023444,18
+S40,environmental_group,19,Hydrotherm Fe rich 3300023440,45,S50,Hydrothermal-Fe-mats,"Hydrothermal
+Fe mats",6,49,External iron-rich record,3300023440,19
+S40,environmental_group,20,Hydrotherm Fe rich 3300023439,19,S52,Hydrothermal-Fe-mats,"Hydrothermal
+Fe mats",6,51,External iron-rich record,3300023439,20
+S40,environmental_group,21,Hydrotherm Fe rich 3300023548,31,S55,Hydrothermal-Fe-mats,"Hydrothermal
+Fe mats",6,54,External iron-rich record,3300023548,21
+S40,environmental_group,22,Freshwater microbial communitie 3300023177,63,S8,Lake-Matano,"Lake
+Matano",7,7,External iron-rich record,3300023177,22
+S40,environmental_group,23,Freshwater microbial communitie 3300024300,9,S10,Lake-Matano,"Lake
+Matano",7,9,External iron-rich record,3300024300,23
+S40,environmental_group,24,Freshwater microbial communitie 3300024333,20,S12,Lake-Matano,"Lake
+Matano",7,11,External iron-rich record,3300024333,24
+S40,environmental_group,25,Freshwater microbial communitie 3300024341,48,S29,Lake-Matano,"Lake
+Matano",7,28,External iron-rich record,3300024341,25
+S40,environmental_group,26,Freshwater microbial communitie 3300028737,26,S49,Lake-Matano,"Lake
+Matano",7,48,External iron-rich record,3300028737,26
+S40,environmental_group,27,Freshwater microbial communitie 3300043827,23,S62,Lake-Matano,"Lake
+Matano",7,61,External iron-rich record,3300043827,27
+S40,environmental_group,28,Metatransc of freshwater 3300061576,32,S9,Lake-Superior,"Lake
+Superior",8,8,External iron-rich record,3300061576,28
+S40,environmental_group,29,Freshwater sediment microbial 3300010391,7,S64,Lake-Superior,"Lake
+Superior",8,63,External iron-rich record,3300010391,29
+S40,environmental_group,30,Freshwater sediment microbial 3300031604,15,S5,Lake-Towuti,"Lake
+Towuti",9,4,External iron-rich record,3300031604,30
+S40,environmental_group,31,Freshwater sediment microbial 3300021518,16,S6,Lake-Towuti,"Lake
+Towuti",9,5,External iron-rich record,3300021518,31
+S40,environmental_group,32,Freshwater sediment microbial 3300031593,13,S11,Lake-Towuti,"Lake
+Towuti",9,10,External iron-rich record,3300031593,32
+S40,environmental_group,33,Freshwater sediment microbial 3300031877,28,S16,Lake-Towuti,"Lake
+Towuti",9,15,External iron-rich record,3300031877,33
+S40,environmental_group,34,Freshwater sediment microbial 3300036046,52,S24,Lake-Towuti,"Lake
+Towuti",9,23,External iron-rich record,3300036046,34
+S40,environmental_group,35,Freshwater sediment microbial 3300036045,38,S26,Lake-Towuti,"Lake
+Towuti",9,25,External iron-rich record,3300036045,35
+S40,environmental_group,36,Freshwater sediment microbial 3300021517,49,S32,Lake-Towuti,"Lake
+Towuti",9,31,External iron-rich record,3300021517,36
+S40,environmental_group,37,Freshwater sediment microbial 3300031898,8,S33,Lake-Towuti,"Lake
+Towuti",9,32,External iron-rich record,3300031898,37
+S40,environmental_group,38,Freshwater sediment microbial 3300031876,62,S42,Lake-Towuti,"Lake
+Towuti",9,41,External iron-rich record,3300031876,38
+S40,environmental_group,39,Freshwater sediment microbial 3300031587,34,S44,Lake-Towuti,"Lake
+Towuti",9,43,External iron-rich record,3300031587,39
+S40,environmental_group,40,Freshwater sediment microbial 3300031806,43,S51,Lake-Towuti,"Lake
+Towuti",9,50,External iron-rich record,3300031806,40
+S40,environmental_group,41,Biofilm microbial communitie 3300021476,64,S57,Other-Fe,"Other
+Fe",10,56,External iron-rich record,3300021476,41
+S40,environmental_group,42,Acid mine drainage 3300038731,29,S1,Richmond-AMD,"Richmond
+AMD",11,0,External iron-rich record,3300038731,42
+S40,environmental_group,43,Acid mine drainage 3300038487,12,S3,Richmond-AMD,"Richmond
+AMD",11,2,External iron-rich record,3300038487,43
+S40,environmental_group,44,Acid mine drainage 3300030091,3,S4,Richmond-AMD,"Richmond
+AMD",11,3,External iron-rich record,3300030091,44
+S40,environmental_group,45,Acid mine drainage 3300030335,25,S13,Richmond-AMD,"Richmond
+AMD",11,12,External iron-rich record,3300030335,45
+S40,environmental_group,46,Acid Mine Drainage 2010484004,60,S17,Richmond-AMD,"Richmond
+AMD",11,16,External iron-rich record,2010484004,46
+S40,environmental_group,47,Acid mine drainage 3300008723,36,S18,Richmond-AMD,"Richmond
+AMD",11,17,External iron-rich record,3300008723,47
+S40,environmental_group,48,Acid mine drainage 3300008567,2,S22,Richmond-AMD,"Richmond
+AMD",11,21,External iron-rich record,3300008567,48
+S40,environmental_group,49,Pink biofilm microbial 3300003104,56,S27,Richmond-AMD,"Richmond
+AMD",11,26,External iron-rich record,3300003104,49
+S40,environmental_group,50,Acid mine drainage 3300030228,58,S31,Richmond-AMD,"Richmond
+AMD",11,30,External iron-rich record,3300030228,50
+S40,environmental_group,51,Acid mine drainage 3300030082,14,S36,Richmond-AMD,"Richmond
+AMD",11,35,External iron-rich record,3300030082,51
+S40,environmental_group,52,Acid mine drainage 3300038729,40,S38,Richmond-AMD,"Richmond
+AMD",11,37,External iron-rich record,3300038729,52
+S40,environmental_group,53,Acid mine drainage 3300038979,30,S41,Richmond-AMD,"Richmond
+AMD",11,40,External iron-rich record,3300038979,53
+S40,environmental_group,54,Acid Mine Drainage 3300005360,35,S43,Richmond-AMD,"Richmond
+AMD",11,42,External iron-rich record,3300005360,54
+S40,environmental_group,55,Acid mine drainage 3300039205,22,S45,Richmond-AMD,"Richmond
+AMD",11,44,External iron-rich record,3300039205,55
+S40,environmental_group,56,Acid Mine Drainage 3300003083,65,S46,Richmond-AMD,"Richmond
+AMD",11,45,External iron-rich record,3300003083,56
+S40,environmental_group,57,Acid mine drainage 3300008566,47,S47,Richmond-AMD,"Richmond
+AMD",11,46,External iron-rich record,3300008566,57
+S40,environmental_group,58,Acid mine drainage 3300008721,55,S53,Richmond-AMD,"Richmond
+AMD",11,52,External iron-rich record,3300008721,58
+S40,environmental_group,59,Acid mine drainage 3300030242,18,S54,Richmond-AMD,"Richmond
+AMD",11,53,External iron-rich record,3300030242,59
+S40,environmental_group,60,Acid mine drainage 3300039211,54,S56,Richmond-AMD,"Richmond
+AMD",11,55,External iron-rich record,3300039211,60
+S40,environmental_group,61,Acid mine drainage 3300038493,37,S59,Richmond-AMD,"Richmond
+AMD",11,58,External iron-rich record,3300038493,61
+S40,environmental_group,62,Acid mine drainage 3300038486,33,S60,Richmond-AMD,"Richmond
+AMD",11,59,External iron-rich record,3300038486,62
+S40,environmental_group,63,Acid mine drainage 3300030398,17,S63,Richmond-AMD,"Richmond
+AMD",11,62,External iron-rich record,3300030398,63
+S40,environmental_group,64,Acid mine drainage 3300038494,0,S65,Richmond-AMD,"Richmond
+AMD",11,64,External iron-rich record,3300038494,64
+S40,environmental_group,65,Acid mine drainage 3300030413,41,S66,Richmond-AMD,"Richmond
+AMD",11,65,External iron-rich record,3300030413,65
+S40,environmental_group,66,Acid mine drainage 3300038681,57,S67,Richmond-AMD,"Richmond
+AMD",11,66,External iron-rich record,3300038681,66

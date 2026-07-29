@@ -1,0 +1,1072 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="2016pt" height="1080pt" viewBox="0 0 2016 1080" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-07-23T13:23:38.027850</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 1080 
+L 2016 1080 
+L 2016 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 443.52 993.6 
+L 1006.814118 993.6 
+L 1006.814118 54 
+L 443.52 54 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 443.52 950.890909 
+L 539.644921 950.890909 
+L 539.644921 926.011827 
+L 443.52 926.011827 
+z
+" clip-path="url(#pd89675912c)" style="fill: #377eb8; stroke: #222222; stroke-width: 0.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 443.52 916.336628 
+L 540.566444 916.336628 
+L 540.566444 891.457546 
+L 443.52 891.457546 
+z
+" clip-path="url(#pd89675912c)" style="fill: #377eb8; stroke: #222222; stroke-width: 0.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 443.52 881.782348 
+L 545.426707 881.782348 
+L 545.426707 856.903266 
+L 443.52 856.903266 
+z
+" clip-path="url(#pd89675912c)" style="fill: #377eb8; stroke: #222222; stroke-width: 0.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 443.52 847.228067 
+L 547.304026 847.228067 
+L 547.304026 822.348985 
+L 443.52 822.348985 
+z
+" clip-path="url(#pd89675912c)" style="fill: #377eb8; stroke: #222222; stroke-width: 0.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 443.52 812.673786 
+L 548.486493 812.673786 
+L 548.486493 787.794704 
+L 443.52 787.794704 
+z
+" clip-path="url(#pd89675912c)" style="fill: #377eb8; stroke: #222222; stroke-width: 0.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 443.52 778.119506 
+L 549.120891 778.119506 
+L 549.120891 753.240424 
+L 443.52 753.240424 
+z
+" clip-path="url(#pd89675912c)" style="fill: #377eb8; stroke: #222222; stroke-width: 0.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 443.52 743.565225 
+L 549.625389 743.565225 
+L 549.625389 718.686143 
+L 443.52 718.686143 
+z
+" clip-path="url(#pd89675912c)" style="fill: #377eb8; stroke: #222222; stroke-width: 0.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 443.52 709.010944 
+L 555.446126 709.010944 
+L 555.446126 684.131862 
+L 443.52 684.131862 
+z
+" clip-path="url(#pd89675912c)" style="fill: #377eb8; stroke: #222222; stroke-width: 0.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 443.52 674.456664 
+L 566.194238 674.456664 
+L 566.194238 649.577582 
+L 443.52 649.577582 
+z
+" clip-path="url(#pd89675912c)" style="fill: #377eb8; stroke: #222222; stroke-width: 0.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 443.52 639.902383 
+L 568.976122 639.902383 
+L 568.976122 615.023301 
+L 443.52 615.023301 
+z
+" clip-path="url(#pd89675912c)" style="fill: #377eb8; stroke: #222222; stroke-width: 0.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_13">
+    <path d="M 443.52 605.348102 
+L 569.23232 605.348102 
+L 569.23232 580.46902 
+L 443.52 580.46902 
+z
+" clip-path="url(#pd89675912c)" style="fill: #377eb8; stroke: #222222; stroke-width: 0.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_14">
+    <path d="M 443.52 570.793822 
+L 570.104152 570.793822 
+L 570.104152 545.91474 
+L 443.52 545.91474 
+z
+" clip-path="url(#pd89675912c)" style="fill: #377eb8; stroke: #222222; stroke-width: 0.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_15">
+    <path d="M 443.52 536.239541 
+L 575.727233 536.239541 
+L 575.727233 511.360459 
+L 443.52 511.360459 
+z
+" clip-path="url(#pd89675912c)" style="fill: #377eb8; stroke: #222222; stroke-width: 0.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_16">
+    <path d="M 443.52 501.68526 
+L 577.006386 501.68526 
+L 577.006386 476.806178 
+L 443.52 476.806178 
+z
+" clip-path="url(#pd89675912c)" style="fill: #377eb8; stroke: #222222; stroke-width: 0.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_17">
+    <path d="M 443.52 467.13098 
+L 577.475759 467.13098 
+L 577.475759 442.251898 
+L 443.52 442.251898 
+z
+" clip-path="url(#pd89675912c)" style="fill: #377eb8; stroke: #222222; stroke-width: 0.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_18">
+    <path d="M 443.52 432.576699 
+L 578.529342 432.576699 
+L 578.529342 407.697617 
+L 443.52 407.697617 
+z
+" clip-path="url(#pd89675912c)" style="fill: #377eb8; stroke: #222222; stroke-width: 0.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_19">
+    <path d="M 443.52 398.022418 
+L 582.210688 398.022418 
+L 582.210688 373.143336 
+L 443.52 373.143336 
+z
+" clip-path="url(#pd89675912c)" style="fill: #377eb8; stroke: #222222; stroke-width: 0.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_20">
+    <path d="M 443.52 363.468138 
+L 591.175834 363.468138 
+L 591.175834 338.589056 
+L 443.52 338.589056 
+z
+" clip-path="url(#pd89675912c)" style="fill: #377eb8; stroke: #222222; stroke-width: 0.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_21">
+    <path d="M 443.52 328.913857 
+L 621.367258 328.913857 
+L 621.367258 304.034775 
+L 443.52 304.034775 
+z
+" clip-path="url(#pd89675912c)" style="fill: #377eb8; stroke: #222222; stroke-width: 0.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_22">
+    <path d="M 443.52 294.359576 
+L 688.174827 294.359576 
+L 688.174827 269.480494 
+L 443.52 269.480494 
+z
+" clip-path="url(#pd89675912c)" style="fill: #377eb8; stroke: #222222; stroke-width: 0.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_23">
+    <path d="M 443.52 259.805296 
+L 766.932754 259.805296 
+L 766.932754 234.926214 
+L 443.52 234.926214 
+z
+" clip-path="url(#pd89675912c)" style="fill: #377eb8; stroke: #222222; stroke-width: 0.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_24">
+    <path d="M 443.52 225.251015 
+L 773.735768 225.251015 
+L 773.735768 200.371933 
+L 443.52 200.371933 
+z
+" clip-path="url(#pd89675912c)" style="fill: #377eb8; stroke: #222222; stroke-width: 0.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_25">
+    <path d="M 443.52 190.696734 
+L 829.475917 190.696734 
+L 829.475917 165.817652 
+L 443.52 165.817652 
+z
+" clip-path="url(#pd89675912c)" style="fill: #377eb8; stroke: #222222; stroke-width: 0.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_26">
+    <path d="M 443.52 156.142454 
+L 837.952853 156.142454 
+L 837.952853 131.263372 
+L 443.52 131.263372 
+z
+" clip-path="url(#pd89675912c)" style="fill: #377eb8; stroke: #222222; stroke-width: 0.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_27">
+    <path d="M 443.52 121.588173 
+L 948.686876 121.588173 
+L 948.686876 96.709091 
+L 443.52 96.709091 
+z
+" clip-path="url(#pd89675912c)" style="fill: #377eb8; stroke: #222222; stroke-width: 0.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <path d="M 443.52 993.6 
+L 443.52 54 
+" clip-path="url(#pd89675912c)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.2; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_2">
+      <defs>
+       <path id="m3b69f0bd20" d="M 0 0 
+L 0 3.5 
+" style="stroke: #000000; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#m3b69f0bd20" x="443.52" y="993.6" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_1">
+      <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle" x="443.52" y="1009.718125" transform="rotate(-0 443.52 1009.718125)">0</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_3">
+      <path d="M 511.90499 993.6 
+L 511.90499 54 
+" clip-path="url(#pd89675912c)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.2; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_4">
+      <g>
+       <use xlink:href="#m3b69f0bd20" x="511.90499" y="993.6" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_2">
+      <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle" x="511.90499" y="1009.718125" transform="rotate(-0 511.90499 1009.718125)">2</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_5">
+      <path d="M 580.289981 993.6 
+L 580.289981 54 
+" clip-path="url(#pd89675912c)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.2; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_6">
+      <g>
+       <use xlink:href="#m3b69f0bd20" x="580.289981" y="993.6" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_3">
+      <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle" x="580.289981" y="1009.718125" transform="rotate(-0 580.289981 1009.718125)">4</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_7">
+      <path d="M 648.674971 993.6 
+L 648.674971 54 
+" clip-path="url(#pd89675912c)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.2; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_8">
+      <g>
+       <use xlink:href="#m3b69f0bd20" x="648.674971" y="993.6" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_4">
+      <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle" x="648.674971" y="1009.718125" transform="rotate(-0 648.674971 1009.718125)">6</text>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="line2d_9">
+      <path d="M 717.059962 993.6 
+L 717.059962 54 
+" clip-path="url(#pd89675912c)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.2; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_10">
+      <g>
+       <use xlink:href="#m3b69f0bd20" x="717.059962" y="993.6" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_5">
+      <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle" x="717.059962" y="1009.718125" transform="rotate(-0 717.059962 1009.718125)">8</text>
+     </g>
+    </g>
+    <g id="xtick_6">
+     <g id="line2d_11">
+      <path d="M 785.444952 993.6 
+L 785.444952 54 
+" clip-path="url(#pd89675912c)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.2; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_12">
+      <g>
+       <use xlink:href="#m3b69f0bd20" x="785.444952" y="993.6" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_6">
+      <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle" x="785.444952" y="1009.718125" transform="rotate(-0 785.444952 1009.718125)">10</text>
+     </g>
+    </g>
+    <g id="xtick_7">
+     <g id="line2d_13">
+      <path d="M 853.829943 993.6 
+L 853.829943 54 
+" clip-path="url(#pd89675912c)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.2; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_14">
+      <g>
+       <use xlink:href="#m3b69f0bd20" x="853.829943" y="993.6" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_7">
+      <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle" x="853.829943" y="1009.718125" transform="rotate(-0 853.829943 1009.718125)">12</text>
+     </g>
+    </g>
+    <g id="xtick_8">
+     <g id="line2d_15">
+      <path d="M 922.214933 993.6 
+L 922.214933 54 
+" clip-path="url(#pd89675912c)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.2; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_16">
+      <g>
+       <use xlink:href="#m3b69f0bd20" x="922.214933" y="993.6" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_8">
+      <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle" x="922.214933" y="1009.718125" transform="rotate(-0 922.214933 1009.718125)">14</text>
+     </g>
+    </g>
+    <g id="xtick_9">
+     <g id="line2d_17">
+      <path d="M 990.599923 993.6 
+L 990.599923 54 
+" clip-path="url(#pd89675912c)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.2; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_18">
+      <g>
+       <use xlink:href="#m3b69f0bd20" x="990.599923" y="993.6" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_9">
+      <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle" x="990.599923" y="1009.718125" transform="rotate(-0 990.599923 1009.718125)">16</text>
+     </g>
+    </g>
+    <g id="text_10">
+     <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: middle" x="725.167059" y="1029.131094" transform="rotate(-0 725.167059 1029.131094)">Absolute descriptive log2 contrast</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_19"/>
+     <g id="text_11">
+      <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: end" x="436.52" y="943.41879" transform="rotate(-0 436.52 943.41879)">K07306: dmsA | Anaerobic oxidative phosphorylation</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_20"/>
+     <g id="text_12">
+      <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: end" x="436.52" y="908.864509" transform="rotate(-0 436.52 908.864509)">K05384: cpeU | Oxygenic photosynthesis</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_21"/>
+     <g id="text_13">
+      <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: end" x="436.52" y="874.310229" transform="rotate(-0 436.52 874.310229)">K00580: mtrD | Methanogenesis (acetate; CO2)</text>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_22"/>
+     <g id="text_14">
+      <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: end" x="436.52" y="839.755948" transform="rotate(-0 436.52 839.755948)">K00579: mtrC | Methanogenesis (acetate; CO2)</text>
+     </g>
+    </g>
+    <g id="ytick_5">
+     <g id="line2d_23"/>
+     <g id="text_15">
+      <text style="font-size: 13px; font-family: 'DejaVu Sans'" transform="translate(130.12625 798.730105)">K10535: hao | Nitrogen: Nitrification; Complete</text>
+      <text style="font-size: 13px; font-family: 'DejaVu Sans'" transform="translate(136.849687 813.648823)">nitrification, comammox (oxidation pathways)</text>
+     </g>
+    </g>
+    <g id="ytick_6">
+     <g id="line2d_24"/>
+     <g id="text_16">
+      <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: end" x="436.52" y="770.647387" transform="rotate(-0 436.52 770.647387)">K03421: mcrC | Methanogenesis: mixed substrates</text>
+     </g>
+    </g>
+    <g id="ytick_7">
+     <g id="line2d_25"/>
+     <g id="text_17">
+      <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: end" x="436.52" y="736.093106" transform="rotate(-0 436.52 736.093106)">K08264: hdrD | Methanogenesis: mixed substrates</text>
+     </g>
+    </g>
+    <g id="ytick_8">
+     <g id="line2d_26"/>
+     <g id="text_18">
+      <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: end" x="436.52" y="701.538825" transform="rotate(-0 436.52 701.538825)">K00402: mcrG | Methanogenesis: mixed substrates</text>
+     </g>
+    </g>
+    <g id="ytick_9">
+     <g id="line2d_27"/>
+     <g id="text_19">
+      <text style="font-size: 13px; font-family: 'DejaVu Sans'" transform="translate(91.400469 660.512982)">K22015: fdhF | Carbon Fixation: reductive acetyl-CoA</text>
+      <text style="font-size: 13px; font-family: 'DejaVu Sans'" transform="translate(201.82125 675.431701)">pathway (Wood-Ljungdahl pathway)</text>
+     </g>
+    </g>
+    <g id="ytick_10">
+     <g id="line2d_28"/>
+     <g id="text_20">
+      <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: end" x="436.52" y="632.430264" transform="rotate(-0 436.52 632.430264)">K00581: mtrE | Methanogenesis (acetate; CO2)</text>
+     </g>
+    </g>
+    <g id="ytick_11">
+     <g id="line2d_29"/>
+     <g id="text_21">
+      <text style="font-size: 13px; font-family: 'DejaVu Sans'" transform="translate(89.411875 591.404421)">K00196: cooF | Carbon Fixation: reductive acetyl-CoA</text>
+      <text style="font-size: 13px; font-family: 'DejaVu Sans'" transform="translate(201.82125 606.323139)">pathway (Wood-Ljungdahl pathway)</text>
+     </g>
+    </g>
+    <g id="ytick_12">
+     <g id="line2d_30"/>
+     <g id="text_22">
+      <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: end" x="436.52" y="563.321703" transform="rotate(-0 436.52 563.321703)">K00578: mtrB | Methanogenesis (acetate; CO2)</text>
+     </g>
+    </g>
+    <g id="ytick_13">
+     <g id="line2d_31"/>
+     <g id="text_23">
+      <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: end" x="436.52" y="528.767422" transform="rotate(-0 436.52 528.767422)">K00401: mcrB | Methanogenesis: mixed substrates</text>
+     </g>
+    </g>
+    <g id="ytick_14">
+     <g id="line2d_32"/>
+     <g id="text_24">
+      <text style="font-size: 13px; font-family: 'DejaVu Sans'" transform="translate(89.958281 487.741579)">K15022: fdhB | Carbon Fixation: reductive acetyl-CoA</text>
+      <text style="font-size: 13px; font-family: 'DejaVu Sans'" transform="translate(201.82125 502.660297)">pathway (Wood-Ljungdahl pathway)</text>
+     </g>
+    </g>
+    <g id="ytick_15">
+     <g id="line2d_33"/>
+     <g id="text_25">
+      <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: end" x="436.52" y="459.658861" transform="rotate(-0 436.52 459.658861)">K00582: mtrF | Methanogenesis (acetate; CO2)</text>
+     </g>
+    </g>
+    <g id="ytick_16">
+     <g id="line2d_34"/>
+     <g id="text_26">
+      <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: end" x="436.52" y="425.10458" transform="rotate(-0 436.52 425.10458)">K00399: mcrA | Methanogenesis: mixed substrates</text>
+     </g>
+    </g>
+    <g id="ytick_17">
+     <g id="line2d_35"/>
+     <g id="text_27">
+      <text style="font-size: 13px; font-family: 'DejaVu Sans'" transform="translate(129.977969 384.078737)">K05884: comC | Methanogenesis: Coenzyme M</text>
+      <text style="font-size: 13px; font-family: 'DejaVu Sans'" transform="translate(132.462187 398.997455)">(mercaptoethane sulfonate, CoM) biosynthesis</text>
+     </g>
+    </g>
+    <g id="ytick_18">
+     <g id="line2d_36"/>
+     <g id="text_28">
+      <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: end" x="436.52" y="355.996019" transform="rotate(-0 436.52 355.996019)">K00125: fdhB | Methanogenesis: mixed substrates</text>
+     </g>
+    </g>
+    <g id="ytick_19">
+     <g id="line2d_37"/>
+     <g id="text_29">
+      <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: end" x="436.52" y="321.441738" transform="rotate(-0 436.52 321.441738)">K23349: dmsD | Anaerobic oxidative phosphorylation</text>
+     </g>
+    </g>
+    <g id="ytick_20">
+     <g id="line2d_38"/>
+     <g id="text_30">
+      <text style="font-size: 13px; font-family: 'DejaVu Sans'" transform="translate(153.908125 280.415895)">K12264: norV | N: Denitrification (reduction</text>
+      <text style="font-size: 13px; font-family: 'DejaVu Sans'" transform="translate(375.600781 295.334613)">pathway)</text>
+     </g>
+    </g>
+    <g id="ytick_21">
+     <g id="line2d_39"/>
+     <g id="text_31">
+      <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: end" x="436.52" y="252.333177" transform="rotate(-0 436.52 252.333177)">K22481: hdrB1 | Methanogenesis: mixed substrates</text>
+     </g>
+    </g>
+    <g id="ytick_22">
+     <g id="line2d_40"/>
+     <g id="text_32">
+      <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: end" x="436.52" y="217.778896" transform="rotate(-0 436.52 217.778896)">K22482: hdrC1 | Methanogenesis: mixed substrates</text>
+     </g>
+    </g>
+    <g id="ytick_23">
+     <g id="line2d_41"/>
+     <g id="text_33">
+      <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: end" x="436.52" y="183.224615" transform="rotate(-0 436.52 183.224615)">K22480: hdrA1 | Methanogenesis: mixed substrates</text>
+     </g>
+    </g>
+    <g id="ytick_24">
+     <g id="line2d_42"/>
+     <g id="text_34">
+      <text style="font-size: 13px; font-family: 'DejaVu Sans'" transform="translate(137.719062 142.198772)">K22903: VnfE | N: Nitrogen fixation (reduction</text>
+      <text style="font-size: 13px; font-family: 'DejaVu Sans'" transform="translate(375.600781 157.117491)">pathway)</text>
+     </g>
+    </g>
+    <g id="ytick_25">
+     <g id="line2d_43"/>
+     <g id="text_35">
+      <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: end" x="436.52" y="114.116054" transform="rotate(-0 436.52 114.116054)">K22516: fdhA | Methanogenesis (CO2)</text>
+     </g>
+    </g>
+   </g>
+   <g id="patch_28">
+    <path d="M 443.52 993.6 
+L 1006.814118 993.6 
+" style="fill: none; stroke: #000000; stroke-width: 1.2; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_36">
+    <text style="font-weight: 700; font-size: 19px; font-family: 'DejaVu Sans'" transform="translate(443.52 24.741273)">A  Higher in Amazonian lateritic</text>
+    <text style="font-weight: 700; font-size: 19px; font-family: 'DejaVu Sans'" transform="translate(443.52 44)">lakes</text>
+   </g>
+  </g>
+  <g id="axes_2">
+   <g id="patch_29">
+    <path d="M 1412.385882 993.6 
+L 1975.68 993.6 
+L 1975.68 54 
+L 1412.385882 54 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="patch_30">
+    <path d="M 1412.385882 950.890909 
+L 1552.592941 950.890909 
+L 1552.592941 926.011827 
+L 1412.385882 926.011827 
+z
+" clip-path="url(#pd4f823bed6)" style="fill: #c46c17; stroke: #222222; stroke-width: 0.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_31">
+    <path d="M 1412.385882 916.336628 
+L 1553.592657 916.336628 
+L 1553.592657 891.457546 
+L 1412.385882 891.457546 
+z
+" clip-path="url(#pd4f823bed6)" style="fill: #c46c17; stroke: #222222; stroke-width: 0.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_32">
+    <path d="M 1412.385882 881.782348 
+L 1558.305405 881.782348 
+L 1558.305405 856.903266 
+L 1412.385882 856.903266 
+z
+" clip-path="url(#pd4f823bed6)" style="fill: #c46c17; stroke: #222222; stroke-width: 0.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_33">
+    <path d="M 1412.385882 847.228067 
+L 1559.238359 847.228067 
+L 1559.238359 822.348985 
+L 1412.385882 822.348985 
+z
+" clip-path="url(#pd4f823bed6)" style="fill: #c46c17; stroke: #222222; stroke-width: 0.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_34">
+    <path d="M 1412.385882 812.673786 
+L 1567.439397 812.673786 
+L 1567.439397 787.794704 
+L 1412.385882 787.794704 
+z
+" clip-path="url(#pd4f823bed6)" style="fill: #c46c17; stroke: #222222; stroke-width: 0.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_35">
+    <path d="M 1412.385882 778.119506 
+L 1567.887076 778.119506 
+L 1567.887076 753.240424 
+L 1412.385882 753.240424 
+z
+" clip-path="url(#pd4f823bed6)" style="fill: #c46c17; stroke: #222222; stroke-width: 0.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_36">
+    <path d="M 1412.385882 743.565225 
+L 1570.446213 743.565225 
+L 1570.446213 718.686143 
+L 1412.385882 718.686143 
+z
+" clip-path="url(#pd4f823bed6)" style="fill: #c46c17; stroke: #222222; stroke-width: 0.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_37">
+    <path d="M 1412.385882 709.010944 
+L 1571.182026 709.010944 
+L 1571.182026 684.131862 
+L 1412.385882 684.131862 
+z
+" clip-path="url(#pd4f823bed6)" style="fill: #c46c17; stroke: #222222; stroke-width: 0.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_38">
+    <path d="M 1412.385882 674.456664 
+L 1571.360259 674.456664 
+L 1571.360259 649.577582 
+L 1412.385882 649.577582 
+z
+" clip-path="url(#pd4f823bed6)" style="fill: #c46c17; stroke: #222222; stroke-width: 0.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_39">
+    <path d="M 1412.385882 639.902383 
+L 1576.133357 639.902383 
+L 1576.133357 615.023301 
+L 1412.385882 615.023301 
+z
+" clip-path="url(#pd4f823bed6)" style="fill: #c46c17; stroke: #222222; stroke-width: 0.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_40">
+    <path d="M 1412.385882 605.348102 
+L 1579.232668 605.348102 
+L 1579.232668 580.46902 
+L 1412.385882 580.46902 
+z
+" clip-path="url(#pd4f823bed6)" style="fill: #c46c17; stroke: #222222; stroke-width: 0.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_41">
+    <path d="M 1412.385882 570.793822 
+L 1580.205914 570.793822 
+L 1580.205914 545.91474 
+L 1412.385882 545.91474 
+z
+" clip-path="url(#pd4f823bed6)" style="fill: #c46c17; stroke: #222222; stroke-width: 0.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_42">
+    <path d="M 1412.385882 536.239541 
+L 1588.009028 536.239541 
+L 1588.009028 511.360459 
+L 1412.385882 511.360459 
+z
+" clip-path="url(#pd4f823bed6)" style="fill: #c46c17; stroke: #222222; stroke-width: 0.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_43">
+    <path d="M 1412.385882 501.68526 
+L 1593.426493 501.68526 
+L 1593.426493 476.806178 
+L 1412.385882 476.806178 
+z
+" clip-path="url(#pd4f823bed6)" style="fill: #c46c17; stroke: #222222; stroke-width: 0.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_44">
+    <path d="M 1412.385882 467.13098 
+L 1600.775844 467.13098 
+L 1600.775844 442.251898 
+L 1412.385882 442.251898 
+z
+" clip-path="url(#pd4f823bed6)" style="fill: #c46c17; stroke: #222222; stroke-width: 0.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_45">
+    <path d="M 1412.385882 432.576699 
+L 1620.288275 432.576699 
+L 1620.288275 407.697617 
+L 1412.385882 407.697617 
+z
+" clip-path="url(#pd4f823bed6)" style="fill: #c46c17; stroke: #222222; stroke-width: 0.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_46">
+    <path d="M 1412.385882 398.022418 
+L 1620.373736 398.022418 
+L 1620.373736 373.143336 
+L 1412.385882 373.143336 
+z
+" clip-path="url(#pd4f823bed6)" style="fill: #c46c17; stroke: #222222; stroke-width: 0.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_47">
+    <path d="M 1412.385882 363.468138 
+L 1653.112783 363.468138 
+L 1653.112783 338.589056 
+L 1412.385882 338.589056 
+z
+" clip-path="url(#pd4f823bed6)" style="fill: #c46c17; stroke: #222222; stroke-width: 0.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_48">
+    <path d="M 1412.385882 328.913857 
+L 1671.605201 328.913857 
+L 1671.605201 304.034775 
+L 1412.385882 304.034775 
+z
+" clip-path="url(#pd4f823bed6)" style="fill: #c46c17; stroke: #222222; stroke-width: 0.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_49">
+    <path d="M 1412.385882 294.359576 
+L 1710.950461 294.359576 
+L 1710.950461 269.480494 
+L 1412.385882 269.480494 
+z
+" clip-path="url(#pd4f823bed6)" style="fill: #c46c17; stroke: #222222; stroke-width: 0.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_50">
+    <path d="M 1412.385882 259.805296 
+L 1717.092933 259.805296 
+L 1717.092933 234.926214 
+L 1412.385882 234.926214 
+z
+" clip-path="url(#pd4f823bed6)" style="fill: #c46c17; stroke: #222222; stroke-width: 0.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_51">
+    <path d="M 1412.385882 225.251015 
+L 1760.798372 225.251015 
+L 1760.798372 200.371933 
+L 1412.385882 200.371933 
+z
+" clip-path="url(#pd4f823bed6)" style="fill: #c46c17; stroke: #222222; stroke-width: 0.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_52">
+    <path d="M 1412.385882 190.696734 
+L 1770.351998 190.696734 
+L 1770.351998 165.817652 
+L 1412.385882 165.817652 
+z
+" clip-path="url(#pd4f823bed6)" style="fill: #c46c17; stroke: #222222; stroke-width: 0.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_53">
+    <path d="M 1412.385882 156.142454 
+L 1872.154538 156.142454 
+L 1872.154538 131.263372 
+L 1412.385882 131.263372 
+z
+" clip-path="url(#pd4f823bed6)" style="fill: #c46c17; stroke: #222222; stroke-width: 0.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_54">
+    <path d="M 1412.385882 121.588173 
+L 1910.298881 121.588173 
+L 1910.298881 96.709091 
+L 1412.385882 96.709091 
+z
+" clip-path="url(#pd4f823bed6)" style="fill: #c46c17; stroke: #222222; stroke-width: 0.4; stroke-linejoin: miter"/>
+   </g>
+   <g id="matplotlib.axis_3">
+    <g id="xtick_10">
+     <g id="line2d_44">
+      <path d="M 1412.385882 993.6 
+L 1412.385882 54 
+" clip-path="url(#pd4f823bed6)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.2; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_45">
+      <g>
+       <use xlink:href="#m3b69f0bd20" x="1412.385882" y="993.6" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_37">
+      <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle" x="1412.385882" y="1009.718125" transform="rotate(-0 1412.385882 1009.718125)">0</text>
+     </g>
+    </g>
+    <g id="xtick_11">
+     <g id="line2d_46">
+      <path d="M 1489.304846 993.6 
+L 1489.304846 54 
+" clip-path="url(#pd4f823bed6)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.2; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_47">
+      <g>
+       <use xlink:href="#m3b69f0bd20" x="1489.304846" y="993.6" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_38">
+      <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle" x="1489.304846" y="1009.718125" transform="rotate(-0 1489.304846 1009.718125)">2</text>
+     </g>
+    </g>
+    <g id="xtick_12">
+     <g id="line2d_48">
+      <path d="M 1566.22381 993.6 
+L 1566.22381 54 
+" clip-path="url(#pd4f823bed6)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.2; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_49">
+      <g>
+       <use xlink:href="#m3b69f0bd20" x="1566.22381" y="993.6" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_39">
+      <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle" x="1566.22381" y="1009.718125" transform="rotate(-0 1566.22381 1009.718125)">4</text>
+     </g>
+    </g>
+    <g id="xtick_13">
+     <g id="line2d_50">
+      <path d="M 1643.142773 993.6 
+L 1643.142773 54 
+" clip-path="url(#pd4f823bed6)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.2; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_51">
+      <g>
+       <use xlink:href="#m3b69f0bd20" x="1643.142773" y="993.6" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_40">
+      <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle" x="1643.142773" y="1009.718125" transform="rotate(-0 1643.142773 1009.718125)">6</text>
+     </g>
+    </g>
+    <g id="xtick_14">
+     <g id="line2d_52">
+      <path d="M 1720.061737 993.6 
+L 1720.061737 54 
+" clip-path="url(#pd4f823bed6)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.2; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_53">
+      <g>
+       <use xlink:href="#m3b69f0bd20" x="1720.061737" y="993.6" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_41">
+      <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle" x="1720.061737" y="1009.718125" transform="rotate(-0 1720.061737 1009.718125)">8</text>
+     </g>
+    </g>
+    <g id="xtick_15">
+     <g id="line2d_54">
+      <path d="M 1796.980701 993.6 
+L 1796.980701 54 
+" clip-path="url(#pd4f823bed6)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.2; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_55">
+      <g>
+       <use xlink:href="#m3b69f0bd20" x="1796.980701" y="993.6" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_42">
+      <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle" x="1796.980701" y="1009.718125" transform="rotate(-0 1796.980701 1009.718125)">10</text>
+     </g>
+    </g>
+    <g id="xtick_16">
+     <g id="line2d_56">
+      <path d="M 1873.899664 993.6 
+L 1873.899664 54 
+" clip-path="url(#pd4f823bed6)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.2; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_57">
+      <g>
+       <use xlink:href="#m3b69f0bd20" x="1873.899664" y="993.6" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_43">
+      <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle" x="1873.899664" y="1009.718125" transform="rotate(-0 1873.899664 1009.718125)">12</text>
+     </g>
+    </g>
+    <g id="xtick_17">
+     <g id="line2d_58">
+      <path d="M 1950.818628 993.6 
+L 1950.818628 54 
+" clip-path="url(#pd4f823bed6)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.2; stroke-width: 0.8; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_59">
+      <g>
+       <use xlink:href="#m3b69f0bd20" x="1950.818628" y="993.6" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_44">
+      <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle" x="1950.818628" y="1009.718125" transform="rotate(-0 1950.818628 1009.718125)">14</text>
+     </g>
+    </g>
+    <g id="text_45">
+     <text style="font-weight: 700; font-size: 17px; font-family: 'DejaVu Sans'; text-anchor: middle" x="1694.032941" y="1029.131094" transform="rotate(-0 1694.032941 1029.131094)">Absolute descriptive log2 contrast</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_4">
+    <g id="ytick_26">
+     <g id="line2d_60"/>
+     <g id="text_46">
+      <text style="font-size: 13px; font-family: 'DejaVu Sans'" transform="translate(1078.571976 936.947227)">K04040: chlG | Anoxygenic photosynthesis (Green</text>
+      <text style="font-size: 13px; font-family: 'DejaVu Sans'" transform="translate(1303.86807 951.865946)">Sulfur Bacteria)</text>
+     </g>
+    </g>
+    <g id="ytick_27">
+     <g id="line2d_61"/>
+     <g id="text_47">
+      <text style="font-size: 13px; font-family: 'DejaVu Sans'" transform="translate(1103.930101 902.392947)">K17227: soxZ | Sulfur metabolism: Thiosulfate</text>
+      <text style="font-size: 13px; font-family: 'DejaVu Sans'" transform="translate(1128.372132 917.311666)">oxidation by SOX (sulfur-oxidation) system</text>
+     </g>
+    </g>
+    <g id="ytick_28">
+     <g id="line2d_62"/>
+     <g id="text_48">
+      <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: end" x="1405.385882" y="874.310229" transform="rotate(-0 1405.385882 874.310229)">K00184: dmsB | Anaerobic oxidative phosphorylation</text>
+     </g>
+    </g>
+    <g id="ytick_29">
+     <g id="line2d_63"/>
+     <g id="text_49">
+      <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: end" x="1405.385882" y="839.755948" transform="rotate(-0 1405.385882 839.755948)">K01602: rbcS | Calvin-Benson cycle</text>
+     </g>
+    </g>
+    <g id="ytick_30">
+     <g id="line2d_64"/>
+     <g id="text_50">
+      <text style="font-size: 13px; font-family: 'DejaVu Sans'" transform="translate(1073.662445 798.730105)">K08929: pufM | Anoxygenic photosynthesis (Purple</text>
+      <text style="font-size: 13px; font-family: 'DejaVu Sans'" transform="translate(1182.145414 813.648823)">bacteria/green nonsulfur bacteria)</text>
+     </g>
+    </g>
+    <g id="ytick_31">
+     <g id="line2d_65"/>
+     <g id="text_51">
+      <text style="font-size: 13px; font-family: 'DejaVu Sans'" transform="translate(1108.86807 764.175824)">K02592: NifN | N: Nitrogen fixation (reduction</text>
+      <text style="font-size: 13px; font-family: 'DejaVu Sans'" transform="translate(1344.466664 779.094543)">pathway)</text>
+     </g>
+    </g>
+    <g id="ytick_32">
+     <g id="line2d_66"/>
+     <g id="text_52">
+      <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: end" x="1405.385882" y="736.093106" transform="rotate(-0 1405.385882 736.093106)">K17067: mdo | Methanol oxidation: Methylotrophs</text>
+     </g>
+    </g>
+    <g id="ytick_33">
+     <g id="line2d_67"/>
+     <g id="text_53">
+      <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: end" x="1405.385882" y="701.538825" transform="rotate(-0 1405.385882 701.538825)">K02641: petH | Oxygenic photosynthesis</text>
+     </g>
+    </g>
+    <g id="ytick_34">
+     <g id="line2d_68"/>
+     <g id="text_54">
+      <text style="font-size: 13px; font-family: 'DejaVu Sans'" transform="translate(1111.136976 660.512982)">K00392: sir | Sulfur metabolism: Assimilatory</text>
+      <text style="font-size: 13px; font-family: 'DejaVu Sans'" transform="translate(1295.40182 675.431701)">sulfate reduction</text>
+     </g>
+    </g>
+    <g id="ytick_35">
+     <g id="line2d_69"/>
+     <g id="text_55">
+      <text style="font-size: 13px; font-family: 'DejaVu Sans'" transform="translate(1074.93807 625.958701)">K14469 | Carbon Fixation: 3-Hydroxypropionate bi-</text>
+      <text style="font-size: 13px; font-family: 'DejaVu Sans'" transform="translate(1090.629476 640.87742)">cycle; Hydroxypropionate-hydroxybutylate cycle</text>
+     </g>
+    </g>
+    <g id="ytick_36">
+     <g id="line2d_70"/>
+     <g id="text_56">
+      <text style="font-size: 13px; font-family: 'DejaVu Sans'" transform="translate(1046.153226 591.404421)">K02690: psaB | Oxygenic photosynthesis: Photosystem</text>
+      <text style="font-size: 13px; font-family: 'DejaVu Sans'" transform="translate(1401.550882 606.323139)">I</text>
+     </g>
+    </g>
+    <g id="ytick_37">
+     <g id="line2d_71"/>
+     <g id="text_57">
+      <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: end" x="1405.385882" y="563.321703" transform="rotate(-0 1405.385882 563.321703)">K00185: dmsC | Anaerobic oxidative phosphorylation</text>
+     </g>
+    </g>
+    <g id="ytick_38">
+     <g id="line2d_72"/>
+     <g id="text_58">
+      <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: end" x="1405.385882" y="528.767422" transform="rotate(-0 1405.385882 528.767422)">K15019 | Hydroxypropionate-hydroxybutylate cycle</text>
+     </g>
+    </g>
+    <g id="ytick_39">
+     <g id="line2d_73"/>
+     <g id="text_59">
+      <text style="font-size: 13px; font-family: 'DejaVu Sans'" transform="translate(1087.860882 487.741579)">K08930: pucA | Oxygenic photosynthesis (Purple</text>
+      <text style="font-size: 13px; font-family: 'DejaVu Sans'" transform="translate(1293.080101 502.660297)">sulfur bacterium)</text>
+     </g>
+    </g>
+    <g id="ytick_40">
+     <g id="line2d_74"/>
+     <g id="text_60">
+      <text style="font-size: 13px; font-family: 'DejaVu Sans'" transform="translate(1113.509476 453.187298)">K10945: pmoB-amoB | Nitrification; Methane</text>
+      <text style="font-size: 13px; font-family: 'DejaVu Sans'" transform="translate(1238.823382 468.106017)">oxidation; Methanotrophs</text>
+     </g>
+    </g>
+    <g id="ytick_41">
+     <g id="line2d_75"/>
+     <g id="text_61">
+      <text style="font-size: 13px; font-family: 'DejaVu Sans'" transform="translate(1113.854789 418.633017)">K10944: pmoA-amoA | Nitrification; Methane</text>
+      <text style="font-size: 13px; font-family: 'DejaVu Sans'" transform="translate(1238.823382 433.551736)">oxidation; Methanotrophs</text>
+     </g>
+    </g>
+    <g id="ytick_42">
+     <g id="line2d_76"/>
+     <g id="text_62">
+      <text style="font-size: 13px; font-family: 'DejaVu Sans'" transform="translate(1113.192601 384.078737)">K10946: pmoC-amoC | Nitrification; Methane</text>
+      <text style="font-size: 13px; font-family: 'DejaVu Sans'" transform="translate(1238.823382 398.997455)">oxidation; Methanotrophs</text>
+     </g>
+    </g>
+    <g id="ytick_43">
+     <g id="line2d_77"/>
+     <g id="text_63">
+      <text style="font-size: 13px; font-family: 'DejaVu Sans'" transform="translate(1077.63557 349.524456)">K08928: pufL | Anoxygenic photosynthesis (Purple</text>
+      <text style="font-size: 13px; font-family: 'DejaVu Sans'" transform="translate(1182.145414 364.443175)">bacteria/green nonsulfur bacteria)</text>
+     </g>
+    </g>
+    <g id="ytick_44">
+     <g id="line2d_78"/>
+     <g id="text_64">
+      <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: end" x="1405.385882" y="321.441738" transform="rotate(-0 1405.385882 321.441738)">K15020 | 3-Hydroxypropionate bi-cycle</text>
+     </g>
+    </g>
+    <g id="ytick_45">
+     <g id="line2d_79"/>
+     <g id="text_65">
+      <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: end" x="1405.385882" y="286.887457" transform="rotate(-0 1405.385882 286.887457)">K14471: smtA1 | 3-Hydroxypropionate bi-cycle</text>
+     </g>
+    </g>
+    <g id="ytick_46">
+     <g id="line2d_80"/>
+     <g id="text_66">
+      <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: end" x="1405.385882" y="252.333177" transform="rotate(-0 1405.385882 252.333177)">K15036 | 3-Hydroxypropionate bi-cycle</text>
+     </g>
+    </g>
+    <g id="ytick_47">
+     <g id="line2d_81"/>
+     <g id="text_67">
+      <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: end" x="1405.385882" y="217.778896" transform="rotate(-0 1405.385882 217.778896)">K14029: mdh2 | Methanol oxidation: Methylotrophs</text>
+     </g>
+    </g>
+    <g id="ytick_48">
+     <g id="line2d_82"/>
+     <g id="text_68">
+      <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: end" x="1405.385882" y="183.224615" transform="rotate(-0 1405.385882 183.224615)">K14472: smtB | 3-Hydroxypropionate bi-cycle</text>
+     </g>
+    </g>
+    <g id="ytick_49">
+     <g id="line2d_83"/>
+     <g id="text_69">
+      <text style="font-size: 13px; font-family: 'DejaVu Sans'; text-anchor: end" x="1405.385882" y="148.670334" transform="rotate(-0 1405.385882 148.670334)">K14028: mdh1 | Methanol oxidation: Methylotrophs</text>
+     </g>
+    </g>
+    <g id="ytick_50">
+     <g id="line2d_84"/>
+     <g id="text_70">
+      <text style="font-size: 13px; font-family: 'DejaVu Sans'" transform="translate(1046.153226 107.644491)">K02689: psaB | Oxygenic photosynthesis: Photosystem</text>
+      <text style="font-size: 13px; font-family: 'DejaVu Sans'" transform="translate(1401.550882 122.56321)">I</text>
+     </g>
+    </g>
+   </g>
+   <g id="patch_55">
+    <path d="M 1412.385882 993.6 
+L 1975.68 993.6 
+" style="fill: none; stroke: #000000; stroke-width: 1.2; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_71">
+    <text style="font-weight: 700; font-size: 19px; font-family: 'DejaVu Sans'" transform="translate(1412.385882 24.741273)">B  Higher in external iron-rich</text>
+    <text style="font-weight: 700; font-size: 19px; font-family: 'DejaVu Sans'" transform="translate(1412.385882 44)">records</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pd89675912c">
+   <rect x="443.52" y="54" width="563.294118" height="939.6"/>
+  </clipPath>
+  <clipPath id="pd4f823bed6">
+   <rect x="1412.385882" y="54" width="563.294118" height="939.6"/>
+  </clipPath>
+ </defs>
+</svg>

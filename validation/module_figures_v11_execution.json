@@ -1,0 +1,154 @@
+{
+  "script": "scripts/generate_s38_s41_module_figures.py",
+  "executed_utc": "2026-07-28T04:42:36.382701+00:00",
+  "python": "3.13.5 (main, May  5 2026, 21:05:52) [GCC 14.2.0]",
+  "matplotlib": "3.10.8",
+  "pandas": "2.2.3",
+  "numpy": "2.3.5",
+  "thematic_module_count": 55,
+  "thematic_cycles": [
+    "Nitrogen",
+    "Phosphorus",
+    "Carbon",
+    "Methane",
+    "Sulfur",
+    "Photosynthesis",
+    "Iron"
+  ],
+  "row_rule": "thematic catalogue then at least one Complete in the displayed matrix",
+  "cell_rule": "all original states displayed; no valid state blanked",
+  "colors": {
+    "Complete": "#2E7D32",
+    "1 block missing": "#1565C0",
+    "Incomplete": "#C62828"
+  },
+  "records": [
+    {
+      "figure": "S38",
+      "config": {
+        "figure": 38,
+        "source_file": "KEMET_lagoon_all_metagenomes_module_completeness_STATUS_3state.csv",
+        "stem": "SupplementaryFigure38_metagenome_KEGG_module_completeness_heatmap",
+        "title": "Thematic Amazonian lagoon metagenome KEGG/KEMET module completeness",
+        "x_label": "Amazonian lagoon metagenomes",
+        "rows_per_block": 999,
+        "cols_per_block": 999,
+        "x_font": 12.0,
+        "y_font": 11.5,
+        "x_wrap": 100,
+        "y_wrap": 45
+      },
+      "source": "data/final_kegg_st8_update/KEMET_lagoon_all_metagenomes_module_completeness_STATUS_3state.csv",
+      "source_sha256": "77fde99096e48ac1ed8f10d6dd0cc24f3d367b66e8f9c1c1ed4187a97200ac11",
+      "thematic_catalog_rows": 55,
+      "thematic_rows_available": 55,
+      "rows_displayed_after_complete_rule": 21,
+      "columns_displayed": 20,
+      "panel_count": 1,
+      "panels": [
+        {
+          "panel": "P001",
+          "row_block": [
+            0,
+            21
+          ],
+          "column_block": [
+            0,
+            20
+          ],
+          "layout": {
+            "figure_inches": [
+              16.5,
+              10.6
+            ],
+            "figure_pixels_at_300dpi": [
+              4950,
+              3180
+            ],
+            "rows": 21,
+            "columns": 20,
+            "row_range": [
+              1,
+              21
+            ],
+            "column_range": [
+              1,
+              20
+            ],
+            "x_font_pt": 11.5,
+            "y_font_pt": 11.5,
+            "x_rotation_deg": 35,
+            "title_font_pt": 16.0,
+            "axis_title_font_pt": 14.0,
+            "legend_font_pt": 12.5,
+            "legend_below_heatmap": true,
+            "legend_inside_figure": true,
+            "title_above_heatmap": true,
+            "all_text_inside_figure": true,
+            "outside_texts": []
+          },
+          "outputs": {
+            "png": {
+              "path": "/mnt/data/CangaMetaG_App_Final_CORRECTED/outputs/final_publication_figures/SupplementaryFigure38_metagenome_KEGG_module_completeness_heatmap_P001.png",
+              "sha256": "d81c3ed1156148fbdc83833bde2152d8e61a5f1e0b4c248dc881a5c5e9a747f6",
+              "size": 858411,
+              "dimensions": [
+                4950,
+                3180
+              ]
+            },
+            "pdf": {
+              "path": "/mnt/data/CangaMetaG_App_Final_CORRECTED/outputs/final_publication_figures/SupplementaryFigure38_metagenome_KEGG_module_completeness_heatmap_P001.pdf",
+              "sha256": "08f2acad078c74059be71777ee645532ab9c296d89197ca375282daabe41f8e6",
+              "size": 1073512
+            },
+            "svg": {
+              "path": "/mnt/data/CangaMetaG_App_Final_CORRECTED/outputs/final_publication_figures/SupplementaryFigure38_metagenome_KEGG_module_completeness_heatmap_P001.svg",
+              "sha256": "7c8227e1d3a630eac4cf8b706f549b0ccc7f13de842f4a6f2fe5755cacb1e718",
+              "size": 1144710
+            }
+          }
+        }
+      ],
+      "application_integral": {
+        "layout": {
+          "source": "exact manuscript panel contact sheet",
+          "panel_count": 1,
+          "same_panels_as_article": true
+        },
+        "outputs": {
+          "png": {
+            "path": "/mnt/data/CangaMetaG_App_Final_CORRECTED/outputs/final_publication_figures/SupplementaryFigure38_metagenome_KEGG_module_completeness_heatmap.png",
+            "sha256": "189a83c04fdadf8218401025e4a1568a1dc374784c71fb3cdcc2e3ec9ca61b33",
+            "size": 722681,
+            "dimensions": [
+              4950,
+              3180
+            ]
+          },
+          "svg": {
+            "path": "/mnt/data/CangaMetaG_App_Final_CORRECTED/outputs/final_publication_figures/SupplementaryFigure38_metagenome_KEGG_module_completeness_heatmap.svg",
+            "sha256": "e6bac435acc512fedba7ce8c06a34ee13de73bf1f7d9c1d7efed2f9c1e2c20ac",
+            "size": 963738
+          }
+        }
+      },
+      "visual_counts": {
+        "Complete": 173,
+        "1 block missing": 183,
+        "Incomplete": 64,
+        "Missing data": 0
+      },
+      "original_counts": {
+        "1 block missing": 183,
+        "Complete": 173,
+        "Incomplete": 64
+      },
+      "audit_rows": 420,
+      "multipage_pdf": {
+        "path": "outputs/final_publication_figures/SupplementaryFigure38_metagenome_KEGG_module_completeness_heatmap_multipage.pdf",
+        "sha256": "3f00d8d7a8301f1d10f3c47e650174e1c88d1a46c7ac9039646606b6310e6b6c"
+      }
+    }
+  ]
+}

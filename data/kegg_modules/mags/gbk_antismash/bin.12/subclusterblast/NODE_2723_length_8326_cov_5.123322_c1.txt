@@ -1,0 +1,23 @@
+ClusterBlast scores for NODE_2723_length_8326_cov_5.123322
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg82_1	238	679	+		
+ctg82_2	734	2627	+		
+ctg82_3	2681	3707	+		
+ctg82_4	3707	4241	+		
+ctg82_5	4237	4957	+		
+ctg82_6	4981	5302	+		
+ctg82_7	5298	6183	-		
+ctg82_8	6260	6491	-		
+ctg82_9	6495	6753	-		
+ctg82_10	6742	7039	-		
+ctg82_11	7151	7376	-		
+ctg82_12	7553	7667	-		
+ctg82_13	7709	7955	-		
+ctg82_14	8161	8326	+		
+
+
+Significant hits: 
+
+
+Details:

@@ -1,0 +1,173 @@
+,AM.P1.D,AM.P1.R,AM.P2.D,AM.P2.R,TIA.P1.D,TIA.P1.R,TIA.P2.D,TIA.P2.R,TI.P1.D,TI.P1.R,TI.P2.D,TI.P2.R,TI.P3.D,TI.P3.R,TI.P4.D,TI.P4.R,VI.P1.D,VI.P1.R,VI.P2.D,VI.P2.R
+K00125: fdhB | Methanogenesis (methanol; acetate; methylamine; dimethylamine; trimethylamine; CO2),10,19,22,38,28,19,25,23,24,13,24,30,44,26,26,20,4,22,21,20
+K00169: porA | Carbon Fixation: Arnon-Buchanan cycle; Dicarboxylate-hydroxybutyrate cycle; Incomplete rTCA cycle,70,69,105,117,117,68,124,57,52,98,80,136,105,102,65,82,18,88,93,79
+K00170: porB | Carbon Fixation: Arnon-Buchanan cycle; Dicarboxylate-hydroxybutyrate cycle; Incomplete rTCA cycle,56,66,96,89,97,51,103,52,47,69,78,114,83,103,46,65,12,96,70,64
+K00171: porD | Carbon Fixation: Arnon-Buchanan cycle; Dicarboxylate-hydroxybutyrate cycle; Incomplete rTCA cycle,20,30,34,43,38,15,33,15,18,27,25,52,30,27,16,19,8,25,31,20
+K00172: porC | Carbon Fixation: Arnon-Buchanan cycle; Dicarboxylate-hydroxybutyrate cycle; Incomplete rTCA cycle,15,36,42,56,46,22,44,24,26,27,28,63,48,44,23,28,5,36,41,27
+K00184: dmsB | Anaerobic oxidative phosphorylation,2,5,2,5,6,2,6,2,1,2,1,3,4,5,8,4,2,4,3,1
+K00185: dmsC | Anaerobic oxidative phosphorylation,0,1,0,1,3,1,1,3,2,1,1,1,3,3,2,3,0,2,4,1
+K00189: porG | Carbon Fixation: Arnon-Buchanan cycle,6,2,3,12,9,4,8,3,3,4,8,8,4,6,4,5,2,5,6,5
+K00192: cdhA | Carbon Fixation: reductive acetyl-CoA pathway (Wood-Ljungdahl pathway),7,51,78,81,58,22,60,28,19,60,73,101,73,90,15,52,15,66,74,53
+K00193: cdhC | Carbon Fixation: reductive acetyl-CoA pathway (Wood-Ljungdahl pathway),5,30,61,51,49,15,48,18,16,31,43,57,35,55,9,27,12,41,44,37
+K00195: cdhB | Carbon Fixation: reductive acetyl-CoA pathway (Wood-Ljungdahl pathway),4,11,19,18,14,1,7,3,2,10,20,19,9,17,2,10,2,13,20,11
+K00196: cooF | Carbon Fixation: reductive acetyl-CoA pathway (Wood-Ljungdahl pathway),15,41,68,57,58,20,76,21,16,31,55,67,55,71,40,43,11,49,50,41
+K00198: acsA | Carbon Fixation: reductive acetyl-CoA pathway (Wood-Ljungdahl pathway),22,42,43,82,61,41,73,40,35,33,30,79,71,52,56,66,6,35,43,45
+K00200: fmdA   | Methanogenesis (CO2),12,37,69,61,43,16,44,28,16,37,67,66,40,69,10,30,10,59,50,41
+K00201: fmdB   | Methanogenesis (CO2),14,22,52,39,37,21,34,15,5,42,59,62,39,49,9,22,9,51,44,20
+K00202: fmdC   | Methanogenesis (CO2),13,12,37,28,26,11,17,10,6,9,29,31,18,24,4,2,5,21,18,22
+K00203: fmdD   | Methanogenesis (CO2),2,8,14,12,11,7,11,5,4,8,19,17,8,12,2,3,2,11,16,6
+K00320: mer | Methanogenesis (CO2),75,51,57,44,22,4,23,2,18,12,40,47,28,37,21,27,6,43,42,24
+K00360: nasB | Nitrogen: Assimilatory nitrate reduction (reduction pathway),0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+K00362: nirB | Nitrogen: Assimilatory nitrate reduction (reduction pathway),15,35,23,29,19,10,26,8,10,16,22,25,25,20,18,18,5,21,28,17
+K00363: nirD | Nitrogen: Assimilatory nitrate reduction (reduction pathway),20,5,0,4,2,0,0,0,2,0,2,3,4,2,3,2,0,4,2,1
+K00366: nirA | Nitrogen: Assimilatory nitrate reduction (reduction pathway),17,1,1,1,0,1,2,0,2,0,0,2,0,0,0,0,0,2,0,0
+K00367: narB | Nitrogen: Assimilatory nitrate reduction (reduction pathway),1,2,2,1,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0
+K00368: nirK | Nitrogen: Assimilatory nitrate reduction (reduction pathway),34,18,0,7,5,1,2,1,5,2,4,3,6,3,6,4,2,7,4,3
+K00370: narG | Nitrogen: Dissimilatory nitrate reduction; Denitrification; Nitrification,122,64,1,26,19,11,22,12,42,7,3,32,49,9,57,51,6,20,19,13
+K00371: narH | Nitrogen: Dissimilatory nitrate reduction; Denitrification; Nitrification,63,25,1,15,12,3,7,5,11,3,0,18,14,2,23,16,2,7,3,3
+K00372: nasA | Nitrogen: Assimilatory nitrate reduction (reduction pathway),19,6,0,5,0,3,2,0,1,2,0,3,5,1,2,4,0,0,0,4
+K00376: nosZ | Nitrogen: Denitrification (reduction pathway),5,12,0,10,2,0,5,0,3,1,1,7,10,2,14,9,0,1,1,0
+K00380: cysJ | Sulfur metabolism: Assimilatory sulfate reduction,9,4,0,9,0,0,0,0,10,0,0,2,2,0,1,5,0,1,1,0
+K00381: cysI | Sulfur metabolism: Assimilatory sulfate reduction,11,7,0,6,0,2,2,0,6,1,0,3,7,1,9,6,0,0,0,0
+K00387: SUOX | Sulfur metabolism: Sulfite oxydation,3,2,0,1,0,0,0,0,0,0,0,1,1,0,3,1,0,0,0,0
+K00390: cysH | Sulfur metabolism: Assimilatory sulfate reduction,28,21,13,12,5,3,11,5,11,4,12,10,14,8,9,6,3,18,6,8
+K00392: sir | Sulfur metabolism: Assimilatory sulfate reduction,31,16,0,5,1,1,3,0,5,0,0,0,2,1,10,1,0,3,0,1
+K00394: aprA | Sulfur metabolism: Dissimilatory sulfate reduction,11,20,3,22,12,6,11,5,23,7,12,21,20,11,26,29,4,7,6,6
+K00395: aprB | Sulfur metabolism: Dissimilatory sulfate reduction,10,6,2,7,5,2,5,4,10,1,3,10,6,2,10,10,0,3,2,1
+K00399: mcrA | Methanogenesis (methanol; acetate; methylamine; dimethylamine; trimethylamine; CO2),3,2,8,10,10,13,4,6,5,5,6,13,7,9,3,4,1,5,5,5
+K00401: mcrB | Methanogenesis (methanol; acetate; methylamine; dimethylamine; trimethylamine; CO2),1,1,3,7,6,4,10,6,7,5,2,9,11,7,1,3,3,6,4,4
+K00402: mcrG | Methanogenesis (methanol; acetate; methylamine; dimethylamine; trimethylamine; CO2),3,1,1,8,2,4,4,2,3,3,2,5,6,6,1,1,0,3,4,4
+K00577: mtrA | Methanogenesis (acetate; CO2),11,6,4,11,13,9,15,6,6,5,7,15,10,12,5,6,2,10,9,7
+K00578: mtrB  | Methanogenesis (acetate; CO2),2,1,1,3,1,1,2,2,0,2,2,3,2,0,0,1,2,2,3,2
+K00579: mtrC  | Methanogenesis (acetate; CO2),1,1,2,3,2,3,3,3,1,1,2,5,3,2,0,1,1,4,3,4
+K00580: mtrD | Methanogenesis (acetate; CO2),1,0,2,5,5,1,2,0,0,4,1,6,5,3,1,1,1,1,2,3
+K00581: mtrE | Methanogenesis (acetate; CO2),1,1,2,3,5,6,6,3,5,4,3,2,5,1,4,6,1,1,3,2
+K00582: mtrF | Methanogenesis (acetate; CO2),0,1,0,1,3,2,1,0,1,1,2,3,1,2,0,0,0,1,2,2
+K00583: mtrG | Methanogenesis (acetate; CO2),1,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,1,1,0
+K00584: mtrH | Methanogenesis (acetate; CO2),4,22,44,31,31,16,25,8,12,20,33,39,31,40,15,28,8,27,23,24
+K00625: pta | Carbon Fixation: Acetate production,14,13,8,14,11,5,11,7,22,7,4,10,14,6,16,9,2,4,6,10
+K00672: ftr | Methanogenesis (CO2),6,51,94,69,66,29,46,29,9,47,62,91,50,79,3,31,15,73,76,41
+K00855: prkB | Carbon Fixation: Calvin-Benson cycle,6,3,2,6,5,7,3,1,7,3,1,8,7,4,6,4,1,2,4,5
+K00860: cysC | Sulfur metabolism: Assimilatory sulfate reduction,14,15,8,9,12,8,16,10,12,8,6,25,23,12,22,24,1,9,9,4
+K00925: ackA | Methanogenesis (acetato); Acetate production,41,36,18,43,31,16,29,17,34,18,9,40,42,23,41,38,4,15,19,12
+K00956: cysN | Sulfur metabolism: Dissimilatory sulfate reduction,2,6,0,4,3,0,1,1,7,1,0,3,5,2,4,5,0,0,2,1
+K00957: cysD | Sulfur metabolism: Assimilatory sulfate reduction,19,20,16,18,15,4,11,6,13,8,7,15,12,8,19,8,0,7,6,5
+K00958: sat | Sulfur metabolism: Dissimilatory sulfate reduction,47,41,12,28,28,10,24,8,20,7,5,39,32,15,41,42,2,11,16,10
+K01601: rbcL | Carbon Fixation: Calvin-Benson cycle,20,19,43,43,34,16,44,18,25,29,23,50,36,41,17,19,5,28,25,20
+K01602: rbcS | Carbon Fixation: Calvin-Benson cycle,4,1,0,0,0,1,1,0,2,0,0,2,1,0,2,1,0,0,0,0
+K01738: cysK | Sulfur metabolism,123,103,57,84,110,38,96,66,117,46,50,109,131,81,117,103,5,60,59,35
+K01895: acs | Methanogenesis (acetate),261,233,155,205,186,94,192,85,168,124,142,264,258,184,201,197,31,169,157,99
+K01961: accC | Carbon Fixation: 3-Hydroxypropionate bi-cycle,97,78,21,55,40,20,46,27,56,23,14,61,65,32,84,67,1,32,24,17
+K01962: accA | Carbon Fixation: 3-Hydroxypropionate bi-cycle,43,37,7,32,23,18,15,15,31,12,9,22,35,11,40,43,0,13,20,9
+K01963: accD   | Carbon Fixation: 3-Hydroxypropionate bi-cycle,33,34,7,26,18,5,19,10,33,10,6,25,30,10,46,31,2,13,11,6
+K01965: pccA | Carbon Fixation: 3-Hydroxypropionate bi-cycle,14,7,0,8,3,4,3,2,12,0,0,9,11,1,9,8,0,1,0,0
+K02092: apcA | Oxygenic photosynthesis (Plants and Cyanobacteria),0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0
+K02093: apcB | Oxygenic photosynthesis (Plants and Cyanobacteria),0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0
+K02095: apcD | Oxygenic photosynthesis (Plants and Cyanobacteria),0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0
+K02096: apcE | Oxygenic photosynthesis (Plants and Cyanobacteria),0,0,0,0,0,0,0,0,1,0,0,0,0,0,2,0,0,0,0,0
+K02097: apcF | Oxygenic photosynthesis (Plants and Cyanobacteria),0,0,0,0,0,0,0,0,1,0,0,0,1,0,0,0,0,0,0,0
+K02160: accB | Carbon Fixation: 3-Hydroxypropionate bi-cycle,26,20,3,13,12,9,11,7,17,7,4,12,18,7,22,19,1,9,5,5
+K02164: norE | Nitrogen: Denitrification (reduction pathway),0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,1,0
+K02284: cpcA | Oxygenic photosynthesis (Plants and Cyanobacteria),0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+K02285: cpcB | Oxygenic photosynthesis (Plants and Cyanobacteria),0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+K02305: norC | Nitrogen: Denitrification (reduction pathway),7,4,0,3,2,1,0,0,5,0,0,10,11,1,18,8,0,3,2,0
+K02437: gcvH | Carbon Fixation: Reductive glycine pathway,77,65,43,69,52,18,47,27,47,33,64,89,67,59,59,54,12,73,50,35
+K02448: norD | Nitrogen: Denitrification (reduction pathway),8,16,5,9,2,3,5,0,5,5,2,6,7,7,9,9,0,2,5,6
+K02567: napA | Nitrogen: Dissimilatory nitrate reduction; Denitrification; Nitrification,7,2,0,4,4,4,5,2,13,4,1,21,18,0,25,17,0,1,1,0
+K02585: NifB | Nitrogen: Nitrogen fixation (reduction pathway),2,4,8,4,6,5,11,6,11,5,7,12,8,5,2,6,3,7,4,5
+K02586: nifD | Nitrogen: Nitrogen fixation (reduction pathway),0,5,1,0,1,0,2,0,7,2,1,5,6,0,2,1,0,2,0,0
+K02587: NifE | Nitrogen: Nitrogen fixation (reduction pathway),1,1,0,0,1,1,1,2,8,1,0,1,3,0,2,0,0,1,0,0
+K02588: nifH | Nitrogen: Nitrogen fixation (reduction pathway),2,5,14,10,9,5,4,2,10,9,7,9,11,8,2,2,0,6,5,6
+K02591: nifK | Nitrogen: Nitrogen fixation (reduction pathway),1,1,0,1,2,2,3,1,12,2,2,2,1,1,2,0,0,1,3,1
+K02592: NifN | Nitrogen: Nitrogen fixation (reduction pathway),0,1,0,0,1,0,0,0,5,1,0,0,0,0,1,0,0,0,0,0
+K02628: pecA | Oxygenic photosynthesis (Plants and Cyanobacteria),0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0
+K02629: pecB | Oxygenic photosynthesis (Plants and Cyanobacteria),0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0
+K02636: petC | Oxygenic photosynthesis (Plants and Cyanobacteria),42,22,1,11,13,1,4,4,12,1,4,10,20,7,26,17,0,8,5,6
+K02638: petE | Oxygenic photosynthesis (Plants and Cyanobacteria),2,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+K02641: petH | Oxygenic photosynthesis (Plants and Cyanobacteria),0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,1,0,0,0,0
+K02690: psaA | Oxygenic photosynthesis: Photosystem I,2,0,0,0,0,0,1,0,2,0,0,0,0,0,1,0,0,0,0,0
+K02703: psbA | Oxygenic photosynthesis: Photosystem II,2,1,0,0,0,0,0,0,9,0,0,0,0,0,1,2,0,0,0,0
+K03385: nrfA | Nitrogen: Assimilatory nitrate reduction (reduction pathway),6,11,3,21,11,13,17,10,28,5,3,35,41,12,30,36,4,7,4,5
+K03388: hdrA2 | Methanogenesis (methanol; acetate; methylamine; dimethylamine; trimethylamine; CO2),212,635,788,884,732,308,724,376,295,500,831,1061,776,869,443,598,174,741,751,556
+K03389: hdrB2 | Methanogenesis (methanol; acetate; methylamine; dimethylamine; trimethylamine; CO2),43,103,154,154,110,36,134,53,60,68,139,183,134,147,87,111,30,131,124,90
+K03421: mcrC | Methanogenesis (methanol; acetate; methylamine; dimethylamine; trimethylamine; CO2),3,1,2,3,6,3,5,2,6,3,2,4,3,2,0,1,0,2,2,2
+K03518: coxS | Carbon Fixation: Aerobic CO-oxidation,95,75,23,62,40,18,29,18,34,24,26,46,49,43,48,51,9,46,44,15
+K03519: coxM | Carbon Fixation: Aerobic CO-oxidation,107,42,16,42,26,9,19,10,20,16,13,28,17,22,49,48,6,25,21,7
+K03520: coxL | Carbon Fixation: Aerobic CO-oxidation,387,156,5,67,32,11,13,12,89,6,15,27,31,22,94,54,10,50,28,12
+K03737: nifJ | Carbon Fixation: Arnon-Buchanan cycle,139,114,13,77,55,35,84,40,104,41,21,62,105,45,114,92,6,39,28,29
+K04040: chlG | Anoxygenic photosynthesis (Green Sulfur Bacteria),0,0,1,0,0,0,0,0,3,0,0,0,1,0,1,1,0,0,0,0
+K04561: norB | Nitrogen: Denitrification (reduction pathway),20,24,9,33,23,14,31,13,37,15,10,42,46,23,41,40,3,21,19,22
+K04748: norQ | Nitrogen: Denitrification (reduction pathway),17,23,18,22,17,4,18,5,6,10,20,27,16,24,9,10,4,14,18,13
+K05299: fdhA | Carbon Fixation: reductive acetyl-CoA pathway (Wood-Ljungdahl pathway),1,10,18,19,18,7,23,8,2,5,9,17,11,11,13,10,3,13,19,11
+K05301: E1.8.2.1 | Sulfur metabolism: Sulfite oxydation,13,3,0,3,0,0,1,1,10,0,0,9,9,0,8,10,0,0,1,0
+K05376: cpeA | Oxygenic photosynthesis (Plants and Cyanobacteria),0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+K05377: cpeB | Oxygenic photosynthesis (Plants and Cyanobacteria),0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+K05378: cpeC | Oxygenic photosynthesis (Plants and Cyanobacteria),0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,1,0,0,0,0
+K05382: cpeS | Oxygenic photosynthesis (Plants and Cyanobacteria),0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0
+K05383: cpeT | Oxygenic photosynthesis (Plants and Cyanobacteria),0,0,0,0,0,0,0,0,0,0,0,1,0,0,2,0,0,0,0,0
+K05384: cpeU | Oxygenic photosynthesis (Plants and Cyanobacteria),0,1,3,3,6,0,0,1,4,6,1,3,4,2,2,2,0,2,2,4
+"K05884: comC | Methanogenesis: Coenzyme M (mercaptoethane sulfonate, CoM) biosynthesis",26,25,31,23,24,5,22,8,18,12,19,23,29,27,19,21,6,21,22,14
+"K05979: comB | Methanogenesis: Coenzyme M (mercaptoethane sulfonate, CoM) biosynthesis",10,13,11,15,19,11,15,8,12,7,4,23,15,10,19,13,2,13,10,6
+"K06034: comD | Methanogenesis: Coenzyme M (mercaptoethane sulfonate, CoM) biosynthesis",10,3,1,5,2,2,3,2,2,2,1,1,2,0,1,1,0,1,1,2
+K06163: phnJ | Methanogenesis accoupled to Phosphate,5,1,0,0,3,0,2,0,0,1,0,0,1,0,4,0,0,0,0,0
+K07306: dmsA | Anaerobic oxidative phosphorylation,10,17,23,55,59,23,58,26,13,18,17,37,31,17,24,24,0,12,19,29
+K07307: dmsB | Anaerobic oxidative phosphorylation,1,8,4,11,20,8,8,3,5,4,6,6,9,3,11,8,2,3,5,7
+K07308: dmsC | Anaerobic oxidative phosphorylation,1,0,0,0,1,0,0,0,1,0,0,2,1,0,1,0,0,0,0,1
+"K08097: comA | Methanogenesis: Coenzyme M (mercaptoethane sulfonate, CoM) biosynthesis",7,5,5,7,5,3,4,0,6,3,5,8,3,4,9,5,0,3,4,3
+K08264: hdrD | Methanogenesis (methanol; acetate; methylamine; dimethylamine; trimethylamine; CO2),32,63,84,108,65,36,65,32,22,40,57,116,85,95,41,63,19,67,68,52
+K08265: hdrE | Methanogenesis (methanol; acetate; methylamine; dimethylamine; trimethylamine; CO2),2,0,0,1,0,0,2,2,0,0,0,1,0,0,0,0,0,1,1,0
+K08928: pufL | Anoxygenic photosynthesis (Purple bacteria/green nonsulfur bacteria),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+K08929: pufM | Anoxygenic photosynthesis (Purple bacteria/green nonsulfur bacteria),0,0,0,0,0,1,0,0,0,1,0,1,1,0,1,0,0,0,0,0
+K08930: pucA | Oxygenic photosynthesis (Purple sulfur bacterium),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+K09709: meh | Carbon Fixation: 3-Hydroxypropionate bi-cycle,10,2,0,2,0,0,0,0,1,1,0,1,1,0,3,3,0,0,1,0
+K10150: cysO | Sulfur metabolism,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"K10535: hao | Nitrogen: Nitrification; Complete nitrification, comammox (oxidation pathways)",45,42,9,27,20,9,18,11,22,11,5,44,38,13,40,29,4,20,16,13
+K10944: pmoA-amoA | Nitrification; Methane oxidation; Methanotrophs,3,1,0,0,0,0,0,0,2,0,0,0,1,0,1,0,0,0,0,0
+K10945: pmoB-amoB | Nitrification; Methane oxidation; Methanotrophs,5,2,0,1,0,0,0,0,2,0,0,2,0,0,1,0,0,0,0,0
+K10946: pmoC-amoC | Nitrification; Methane oxidation; Methanotrophs,4,3,0,1,0,0,0,0,3,0,0,1,1,0,3,1,0,0,0,0
+K11261: fmdE | Methanogenesis (CO2),14,13,14,13,9,3,10,4,14,9,14,31,13,11,15,16,1,17,8,9
+"K11780: cofG | Methanogenesis: F420 biosynthesis, archaea",6,2,5,7,2,5,6,3,5,4,4,7,5,6,3,3,1,7,1,3
+"K11781: cofH | Methanogenesis: F420 biosynthesis, archaea",8,4,1,7,5,3,7,1,1,5,4,2,5,2,3,3,2,3,4,4
+"K12234: cofE | Methanogenesis: F420 biosynthesis, archaea",50,67,86,77,47,23,59,17,16,34,60,74,37,76,16,24,7,80,73,44
+K12264: norV | Nitrogen: Denitrification (reduction pathway),8,18,24,26,24,11,29,7,16,12,17,38,36,37,13,22,7,16,25,16
+K12339: cysM | Sulfur metabolism,47,37,7,20,26,4,24,12,15,9,13,27,22,19,27,19,2,19,15,11
+"K13039: comE | Methanogenesis: Coenzyme M (mercaptoethane sulfonate, CoM) biosynthesis",9,3,4,3,3,2,2,1,0,0,1,1,0,3,3,0,0,0,3,1
+K13788: pta | Carbon Fixation: Acetate production,4,5,0,10,6,7,7,6,16,9,3,15,16,6,17,13,0,5,5,5
+K13992: psaB | Anoxygenic photosynthesis (Purple bacteria/green nonsulfur bacteria),6,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+K14126: mvhA | Methanogenesis (methanol; acetate; methylamine; dimethylamine; trimethylamine; CO2),56,111,108,154,126,59,155,60,62,76,118,160,126,125,72,101,27,115,125,100
+K14127: mvhD | Methanogenesis (methanol; acetate; methylamine; dimethylamine; trimethylamine; CO2),39,95,106,140,113,62,116,56,42,61,101,151,122,120,79,86,23,88,95,91
+K14128: mvhG | Methanogenesis (methanol; acetate; methylamine; dimethylamine; trimethylamine; CO2),50,76,87,99,86,42,103,43,42,58,91,111,79,98,35,74,24,72,93,70
+K14138: acsB | Carbon Fixation: reductive acetyl-CoA pathway (Wood-Ljungdahl pathway),16,40,31,55,49,29,64,27,35,24,29,47,75,40,56,61,5,26,32,31
+K14469 | Carbon Fixation: 3-Hydroxypropionate bi-cycle; Hydroxypropionate-hydroxybutylate cycle,0,0,0,0,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0,0
+K14470: mct | Carbon Fixation: 3-Hydroxypropionate bi-cycle,4,3,0,0,0,0,1,0,1,0,0,1,0,0,0,0,0,2,1,1
+K14534: abfD | Carbon Fixation: Dicarboxylate-hydroxybutyrate cycle; Hydroxypropionate-hydroxybutylate cycle,45,81,83,139,107,39,86,39,51,67,74,136,86,105,67,92,19,94,102,57
+"K14941: cofC | Methanogenesis: F420 biosynthesis, archaea",17,13,10,5,6,5,8,1,1,2,7,9,7,13,4,7,1,14,8,7
+K15019 | Carbon Fixation: Hydroxypropionate-hydroxybutylate cycle,5,7,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0
+K15020 | Carbon Fixation: 3-Hydroxypropionate bi-cycle,2,0,0,0,1,0,0,0,0,0,0,1,0,0,0,3,0,0,0,0
+K15022: fdhB | Carbon Fixation: reductive acetyl-CoA pathway (Wood-Ljungdahl pathway),73,72,21,71,53,24,56,32,42,27,26,49,55,33,73,70,8,33,48,35
+K15024: pduL | Carbon Fixation: Acetate production,4,2,1,0,2,3,3,2,3,0,0,1,5,0,0,2,0,0,0,0
+K15038 | Carbon Fixation: Dicarboxylate-hydroxybutyrate cycle; Hydroxypropionate-hydroxybutylate cycle,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+K15039: ydfG | Carbon Fixation: 3-Hydroxypropionate bi-cycle,0,1,2,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,0,0
+K15864: nirS | Nitrogen: Denitrification (reduction pathway),6,4,0,0,0,2,2,2,7,0,0,2,3,0,1,2,0,0,0,0
+K15876: nrfH | Nitrogen: Dissimilatory nitrate reduction (reduction pathway),4,3,0,3,0,3,0,1,5,1,0,3,4,1,7,6,0,0,0,0
+K17067: mdo | Methanol oxidation: Methylotrophs,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0
+K17222: SOXA | Sulfur metabolism: Thiosulfate oxidation by SOX (sulfur-oxidation) system,9,2,0,5,0,0,1,1,1,0,0,0,0,0,5,2,0,0,0,0
+K17223: soxX | Sulfur metabolism: Thiosulfate oxidation by SOX (sulfur-oxidation) system,5,0,0,1,1,0,1,0,1,1,0,1,1,0,4,0,0,0,0,0
+K17224: soxB | Sulfur metabolism: Thiosulfate oxidation by SOX (sulfur-oxidation) system,13,4,2,5,1,2,4,1,5,1,0,3,1,0,3,4,0,1,1,0
+K17225: soxC | Sulfur metabolism: Thiosulfate oxidation by SOX (sulfur-oxidation) system,17,8,0,7,5,1,1,0,5,0,1,2,2,1,3,2,0,4,2,1
+K17226: soxY | Sulfur metabolism: Thiosulfate oxidation by SOX (sulfur-oxidation) system,6,2,0,1,1,2,0,2,4,2,0,1,3,0,5,1,0,0,0,0
+K17227: soxZ | Sulfur metabolism: Thiosulfate oxidation by SOX (sulfur-oxidation) system,5,2,0,0,0,0,0,1,2,0,0,1,1,0,0,0,0,0,0,0
+K17229: fccB | Sulfur metabolism: Sulfite oxydation,7,1,0,3,0,0,0,0,1,0,0,0,0,0,0,4,0,0,0,0
+K18289: ict-P | Carbon Fixation: 3-Hydroxypropionate bi-cycle,16,11,0,3,0,1,1,1,6,0,0,2,1,1,4,4,0,3,3,3
+K18603: pccB | Carbon Fixation: 3-Hydroxypropionate bi-cycle,4,5,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+K18604: pccC | Carbon Fixation: 3-Hydroxypropionate bi-cycle,4,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+K19745: acuI | Carbon Fixation: 3-Hydroxypropionate bi-cycle,10,9,0,7,1,3,4,2,9,1,0,5,5,0,11,3,0,2,0,2
+K22015: fdhF | Carbon Fixation: reductive acetyl-CoA pathway (Wood-Ljungdahl pathway),2,1,0,0,1,2,0,0,1,1,0,0,1,1,0,0,0,1,1,0
+K22480: hdrA1 | Methanogenesis (methanol; acetate; methylamine; dimethylamine; trimethylamine; CO2),1,0,2,6,2,1,2,1,0,2,2,3,2,11,1,1,0,0,4,3
+K22481: hdrB1 | Methanogenesis (methanol; acetate; methylamine; dimethylamine; trimethylamine; CO2),5,1,0,1,0,0,0,1,0,0,1,0,0,0,0,0,0,1,2,0
+K22482: hdrC1 | Methanogenesis (methanol; acetate; methylamine; dimethylamine; trimethylamine; CO2),5,1,0,2,3,0,0,0,1,1,0,1,0,1,0,0,0,0,0,0
+K22516: fdhA | Methanogenesis (CO2),6,20,20,33,36,16,33,18,19,25,16,41,30,30,28,24,2,26,20,20
+K22622: soxD | Sulfur metabolism: Thiosulfate oxidation by SOX (sulfur-oxidation) system,15,5,0,6,1,0,1,0,2,0,0,0,6,0,2,2,0,2,2,1
+K22903: VnfE | Nitrogen: Nitrogen fixation (reduction pathway),1,1,1,5,2,3,0,4,3,5,1,1,1,3,0,2,1,1,3,2
+K23349: dmsD | Anaerobic oxidative phosphorylation,5,4,2,4,2,0,0,1,4,0,0,5,3,2,8,2,0,1,2,0
+K23995: xoxF | Methane oxidation: Methanotroph,9,7,0,2,2,2,2,0,2,1,0,0,4,0,5,1,0,1,0,0

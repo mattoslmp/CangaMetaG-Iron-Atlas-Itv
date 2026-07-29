@@ -1,0 +1,27 @@
+page	status	stderr
+article_atlas	PASS	
+mags_genomes	PASS	
+kegg_modules	PASS	
+taxonomy	PASS	
+ko_biomarkers	PASS	
+iron_metals	PASS	
+differential_abundance	PASS	
+iron_environment_comparison	PASS	
+img_functional	PASS	
+st8_references	PASS	
+environment_integrator	PASS	"/mnt/data/CangaMetaG_PROMPT_FINAL_WORK/CangaMetaG_App_Final_CORRECTED/app.py:10162: UserWarning:
+
+Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+
+"
+code_reproducibility	PASS	"/usr/lib/python3.13/zipfile/__init__.py:1642: UserWarning:
+
+Duplicate name: 'requirements.txt'
+
+/usr/lib/python3.13/zipfile/__init__.py:1642: UserWarning:
+
+Duplicate name: 'README.md'
+
+"
+final_figures	PASS	
+methods_references	PASS	

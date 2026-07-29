@@ -1,0 +1,24 @@
+[
+  {
+    "Domain": "Bacteria",
+    "Taxonomic level": "Order",
+    "Visualization": "Barplot by individual sample",
+    "Expected dynamic title": "Bacteria — Order — Barplot by individual sample",
+    "Dynamic title found": true,
+    "Exceptions": 0,
+    "Status": "VALIDATED",
+    "Elapsed seconds": 9.53,
+    "Details": ""
+  },
+  {
+    "Domain": "Bacteria",
+    "Taxonomic level": "Order",
+    "Visualization": "Relative-abundance heatmap",
+    "Expected dynamic title": "Bacteria — Order — Relative-abundance heatmap",
+    "Dynamic title found": true,
+    "Exceptions": 0,
+    "Status": "VALIDATED",
+    "Elapsed seconds": 8.34,
+    "Details": ""
+  }
+]

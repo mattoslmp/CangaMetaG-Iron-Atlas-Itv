@@ -1,0 +1,16 @@
+ClusterBlast scores for NODE_184_length_7341_cov_3.225633
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg184_1	1	361	-		
+ctg184_2	743	1121	-		
+ctg184_3	1347	2229	-		
+ctg184_4	2243	2816	-		
+ctg184_5	2806	3901	-		
+ctg184_6	4147	5260	+		
+ctg184_7	5284	7120	-		
+
+
+Significant hits: 
+
+
+Details:

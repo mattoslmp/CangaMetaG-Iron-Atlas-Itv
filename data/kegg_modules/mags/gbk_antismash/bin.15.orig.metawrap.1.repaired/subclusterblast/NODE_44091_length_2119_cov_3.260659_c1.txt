@@ -1,0 +1,10 @@
+ClusterBlast scores for NODE_44091_length_2119_cov_3.260659
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg500_1	1	2119	+		
+
+
+Significant hits: 
+
+
+Details:

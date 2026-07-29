@@ -1,0 +1,8 @@
+sheet,csv,rows,columns
+metadata,st8_metadata_curated.csv,67,143
+Taxonomy_summary_by_group,st8_taxonomy_summary_by_group.csv,10032,9
+KO_group_summary,st8_ko_group_summary.csv,2079,9
+Iron_KO_group_summary,st8_iron_ko_group_summary.csv,1441,9
+KO_Amazonia_vs_groups,st8_ko_amazonia_vs_groups.csv,2079,10
+Iron_Amazonia_vs_groups,st8_iron_amazonia_vs_groups.csv,1441,10
+ST8_study_references,st8_study_references.csv,12,17

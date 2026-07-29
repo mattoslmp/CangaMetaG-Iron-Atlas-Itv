@@ -1,0 +1,988 @@
+ClusterBlast scores for NODE_9061_length_4679_cov_3.030493
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg77_1	0	2919	+		
+ctg77_2	2915	4679	+		
+
+
+Significant hits: 
+1. NZ_LR882944	Planktothrix agardhii strain No.365 chromosome I
+2. NZ_KE734720	Planktothrix prolifica NIVA-CYA 540 scaffold00001, whole genome shotgun sequence
+3. NZ_CP024625	Pseudoalteromonas flavipulchra strain SCSIO 43202 chromosome 1, complete sequence
+4. NZ_JH992901	Mastigocladopsis repens PCC 10914 Mas10914DRAFT_scaffold1.1, whole genome shotgun sequence
+5. NZ_AP018194	Scytonema sp. HK-05 DNA, nearly complete genome
+6. NZ_AP025732	Nostoc cf. commune SO-36 chromosome, complete genome
+7. NZ_AP018248	Tolypothrix tenuis PCC 7101 DNA, nearly complete genome
+8. NZ_AP018178	Calothrix sp. NIES-2100 DNA, nearly complete genome
+9. NZ_LR882952	Planktothrix agardhii strain No.976 chromosome I
+10. NZ_LR882950	Planktothrix agardhii strain PCC7805 chromosome I
+11. NC_019753	Crinalium epipsammum PCC 9333, complete sequence
+12. NZ_CP091913	Nostoc sp. UHCC 0870 chromosome, complete genome
+13. NC_010296	Microcystis aeruginosa NIES-843, complete sequence
+14. NC_014623	Stigmatella aurantiaca DW4/3-1, complete sequence
+15. NZ_HE973165	Microcystis aeruginosa PCC 7941, whole genome shotgun sequence
+16. NZ_AP018166	Anabaena cylindrica PCC 7122 DNA, nearly complete genome
+17. NZ_CP040297	Nostoc sp. TCL26-01 chromosome, complete genome
+18. NZ_CP026692	Nostoc sp. 'Lobaria pulmonaria (5183) cyanobiont' strain 5183 chromosome, complete genome
+19. NC_019738	Allocoleopsis franciscana PCC 7113, complete sequence
+20. NZ_CP010976	Paenibacillus sp. IHBB 10380 isolate IHBB chromosome, complete genome
+21. NZ_MKZR01000001	Moorena producens 3L Ga0081465_101, whole genome shotgun sequence
+22. NZ_CP007014	Pseudomonas syringae CC1557 chromosome, complete genome
+23. NZ_CP012159	Chondromyces crocatus strain Cm c5 chromosome, complete genome
+24. NZ_CP046570	Xanthomonas albilineans strain Xa-FJ1 chromosome, complete genome
+25. NZ_CP113519	Pseudomonas sp. GOM7 chromosome, complete genome
+26. NZ_CP023254	Chitinophaga sp. MD30 chromosome
+27. NZ_AP024862	Vibrio aerogenes strain LMG 19650 chromosome 2, complete sequence
+28. NZ_CP114203	Streptomyces nigrescens strain DSM 40276 chromosome, complete genome
+29. NZ_CP051010	Streptomyces sp. S1D4-11 chromosome, complete genome
+30. NZ_JZHZ01000007	Xanthomonas sp. GPE 39 Xal-GPE_39-G1-Mol001, whole genome shotgun sequence
+31. NZ_AP018268	Scytonema sp. NIES-4073 DNA, nearly complete genome
+32. NZ_OMKA01000029	Aquimarina sp. Aq78 isolate Aquimarina sp. strain Aq78 assembly02, whole genome shotgun sequence
+33. NZ_CP106840	Streptomyces sp. Je 1-4 chromosome, complete genome
+34. NZ_CP049782	Streptomyces sp. ID38640 chromosome
+35. NZ_AP024905	Vibrio ruber strain LMG 23124 chromosome 1, complete sequence
+36. NZ_JAPKNL010000006	Streptomyces libani strain NEAU-BS7 Scaffold6, whole genome shotgun sequence
+37. NZ_CP027306	Streptomyces atratus strain SCSIO_ZH16 chromosome, complete genome
+38. NZ_CP022098	Cystobacter fuscus strain DSM 52655 chromosome, complete genome
+39. NZ_FTMZ01000008	Sphaerotilus natans strain ATCC 13338, whole genome shotgun sequence
+40. NZ_CP024478	Pseudomonas sp. HLS-6 chromosome, complete genome
+41. NZ_AP018166	Anabaena cylindrica PCC 7122 DNA, nearly complete genome
+42. NZ_CP046622	Variovorax paradoxus strain CSUSB chromosome, complete genome
+43. NZ_CP026692	Nostoc sp. 'Lobaria pulmonaria (5183) cyanobiont' strain 5183 chromosome, complete genome
+44. NZ_CP036117	Bacillus mycoides strain JAS481 chromosome, complete genome
+45. NZ_CP117768	Nostoc sp. UHCC 0926 chromosome, complete genome
+46. NZ_AP018290	Calothrix sp. NIES-4105 DNA, nearly complete genome
+47. NZ_NOLJ01000008	Nostoc sp. 'Peltigera membranacea cyanobiont' 210A scaffold8, whole genome shotgun sequence
+48. NZ_CP054698	Nostoc edaphicum CCNP1411 chromosome, complete genome
+49. NC_010628	Nostoc punctiforme PCC 73102, complete sequence
+50. NZ_CP040272	Nostoc sp. C052 chromosome, complete genome
+
+
+Details:
+
+>>
+1. NZ_LR882944
+Source: Planktothrix agardhii strain No.365 chromosome I
+Type: NRPS,betalactone
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 9054.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg77_1	NMG87_RS04145	54	997	98.14814814814815	0.0
+ctg77_1	NMG87_RS04155	54	993	94.75308641975309	0.0
+ctg77_1	NMG87_RS04205	47	843	94.75308641975309	1.03e-286
+ctg77_1	NMG87_RS04140	47	827	96.39917695473251	1.64e-280
+ctg77_1	NMG87_RS04200	46	797	95.06172839506173	4.77e-258
+ctg77_1	NMG87_RS04190	43	788	97.53086419753086	8.03e-258
+ctg77_1	NMG87_RS04150	39	630	99.07407407407408	2.23e-208
+ctg77_2	NMG87_RS04145	52	571	94.38775510204081	4.4e-180
+ctg77_2	NMG87_RS04155	48	558	97.61904761904762	8.04e-176
+ctg77_2	NMG87_RS04140	49	535	94.5578231292517	7.6e-174
+ctg77_2	NMG87_RS04200	45	526	103.0612244897959	1.06e-164
+ctg77_2	NMG87_RS04205	46	496	94.72789115646259	4.22e-159
+ctg77_2	NMG87_RS04190	42	493	103.0612244897959	1.12e-153
+
+
+
+>>
+2. NZ_KE734720
+Source: Planktothrix prolifica NIVA-CYA 540 scaffold00001, whole genome shotgun sequence
+Type: NRPS,betalactone
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 8879.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg77_1	N317_RS0113255	53	945	95.78189300411523	3.38e-304
+ctg77_1	N317_RS29440	51	905	95.47325102880659	1.1e-298
+ctg77_1	N317_RS0113315	47	848	94.95884773662551	4.5e-289
+ctg77_1	N317_RS27305	46	802	97.11934156378601	6.83e-271
+ctg77_1	N317_RS0113310	46	801	95.06172839506173	1.24e-259
+ctg77_1	N317_RS0113300	43	775	97.53086419753086	7.4e-253
+ctg77_1	N317_RS0113260	39	644	99.48559670781893	1.25e-213
+ctg77_2	N317_RS0113255	51	578	95.74829931972789	1.71e-182
+ctg77_2	N317_RS27305	49	538	95.578231292517	1.08e-174
+ctg77_2	N317_RS29440	48	551	96.25850340136054	1.51e-173
+ctg77_2	N317_RS0113310	45	521	103.0612244897959	4.54e-163
+ctg77_2	N317_RS0113315	45	491	94.72789115646259	3.93e-157
+ctg77_2	N317_RS0113300	41	480	103.0612244897959	2.94e-149
+
+
+
+>>
+3. NZ_CP024625
+Source: Pseudoalteromonas flavipulchra strain SCSIO 43202 chromosome 1, complete sequence
+Type: NRP-metallophore,NRPS,betalactone
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 7840.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg77_1	CTT31_RS00635	43	760	98.14814814814815	7.56e-241
+ctg77_1	CTT31_RS00640	42	711	98.14814814814815	1.19e-238
+ctg77_1	CTT31_RS00615	43	746	96.70781893004116	3.12e-235
+ctg77_1	CTT31_RS00625	42	713	97.63374485596708	2.3e-224
+ctg77_1	CTT31_RS00655	40	675	98.14814814814815	7.88e-220
+ctg77_1	CTT31_RS00620	42	698	96.91358024691358	6.87e-219
+ctg77_1	CTT31_RS00630	39	635	96.50205761316872	3.53e-210
+ctg77_2	CTT31_RS00635	44	492	94.21768707482994	1.1e-152
+ctg77_2	CTT31_RS00625	47	491	94.72789115646259	2.02e-152
+ctg77_2	CTT31_RS00615	44	491	99.48979591836735	2.16e-152
+ctg77_2	CTT31_RS00640	44	471	94.5578231292517	7.47e-152
+ctg77_2	CTT31_RS00620	46	488	94.72789115646259	1.74e-151
+ctg77_2	CTT31_RS00655	43	469	100.0	1.56e-147
+
+
+
+>>
+4. NZ_JH992901
+Source: Mastigocladopsis repens PCC 10914 Mas10914DRAFT_scaffold1.1, whole genome shotgun sequence
+Type: NRP-metallophore,NRPS,T1PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 7432.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg77_1	MAS10914_RS30585	54	968	95.67901234567901	0.0
+ctg77_1	MAS10914_RS30590	54	965	96.91358024691358	0.0
+ctg77_1	MAS10914_RS0119720	54	959	95.37037037037037	0.0
+ctg77_1	MAS10914_RS30580	54	944	95.67901234567901	2.54e-310
+ctg77_1	MAS10914_RS0119725	40	629	95.37037037037037	2.04e-208
+ctg77_2	MAS10914_RS30590	55	657	102.04081632653062	1.94e-219
+ctg77_2	MAS10914_RS0119720	55	648	99.65986394557824	1.39e-212
+ctg77_2	MAS10914_RS30580	57	631	95.06802721088435	1.98e-201
+ctg77_2	MAS10914_RS30585	55	612	94.5578231292517	1.46e-197
+ctg77_2	MAS10914_RS0119695	51	419	73.46938775510205	1e-131
+
+
+
+>>
+5. NZ_AP018194
+Source: Scytonema sp. HK-05 DNA, nearly complete genome
+Type: NRP-metallophore,NRPS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 7118.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg77_1	CA739_RS32230	55	980	95.88477366255144	0.0
+ctg77_1	CA739_RS32205	53	971	96.70781893004116	0.0
+ctg77_1	CA739_RS32225	54	963	96.60493827160494	0.0
+ctg77_1	CA739_RS32220	44	736	96.60493827160494	9.06e-244
+ctg77_1	CA739_RS32210	42	701	106.27572016460904	3.71e-235
+ctg77_2	CA739_RS32205	53	632	101.87074829931973	5.13e-210
+ctg77_2	CA739_RS32225	57	638	94.38775510204081	7.36e-205
+ctg77_2	CA739_RS32230	53	607	100.0	4.1e-193
+ctg77_2	CA739_RS32245	52	447	75.85034013605441	2.09e-142
+ctg77_2	CA739_RS32220	50	443	79.08163265306123	2.83e-138
+
+
+
+>>
+6. NZ_AP025732
+Source: Nostoc cf. commune SO-36 chromosome, complete genome
+Type: NRP-metallophore,NRPS,NRPS-like,T1PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 5579.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg77_1	ANSO36C_RS27185	51	916	95.06172839506173	1.62e-313
+ctg77_1	ANSO36C_RS27120	48	872	97.63374485596708	2.16e-293
+ctg77_1	ANSO36C_RS27165	49	807	88.16872427983539	1.24e-276
+ctg77_1	ANSO36C_RS27180	39	637	96.81069958847736	6.17e-211
+ctg77_2	ANSO36C_RS27185	51	622	102.04081632653062	8.2e-206
+ctg77_2	ANSO36C_RS27165	53	605	94.38775510204081	7.71e-204
+ctg77_2	ANSO36C_RS27155	49	579	100.34013605442176	1.73e-198
+ctg77_2	ANSO36C_RS27120	47	541	98.46938775510205	3.62e-173
+
+
+
+>>
+7. NZ_AP018248
+Source: Tolypothrix tenuis PCC 7101 DNA, nearly complete genome
+Type: LAP,NRP-metallophore,NRPS,NRPS-like,T1PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 5440.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg77_1	CDC28_RS18085	54	978	94.34156378600824	0.0
+ctg77_1	CDC28_RS18025	50	899	94.75308641975309	8.69e-307
+ctg77_1	CDC28_RS18065	47	824	94.54732510288066	1.73e-275
+ctg77_1	CDC28_RS18030	40	659	102.67489711934157	2.2e-219
+ctg77_2	CDC28_RS18025	54	627	100.17006802721089	1.26e-207
+ctg77_2	CDC28_RS18065	52	576	94.38775510204081	1.45e-186
+ctg77_2	CDC28_RS18085	46	461	92.00680272108843	2.7e-142
+ctg77_2	CDC28_RS18055	46	416	77.72108843537416	3.24e-133
+
+
+
+>>
+8. NZ_AP018178
+Source: Calothrix sp. NIES-2100 DNA, nearly complete genome
+Type: LAP,NRP-metallophore,NRPS,T1PKS,thiopeptide
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 5180.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg77_1	CA734_RS15420	50	872	94.75308641975309	1.64e-296
+ctg77_1	CA734_RS15460	46	799	97.22222222222221	1.52e-265
+ctg77_1	CA734_RS15425	40	637	97.53086419753086	5.06e-211
+ctg77_1	CA734_RS15440	40	649	97.94238683127571	2.53e-210
+ctg77_1	CA734_RS15415	39	637	96.60493827160494	9.81e-207
+ctg77_2	CA734_RS15420	52	611	100.17006802721089	1.29e-201
+ctg77_2	CA734_RS15460	50	561	96.7687074829932	1.05e-180
+ctg77_2	CA734_RS15450	47	414	75.0	7.39e-133
+
+
+
+>>
+9. NZ_LR882952
+Source: Planktothrix agardhii strain No.976 chromosome I
+Type: NRPS,betalactone
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 4946.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg77_1	NMG88_RS19975	52	925	95.37037037037037	6.65e-304
+ctg77_1	NMG88_RS19965	51	909	96.50205761316872	8.34e-292
+ctg77_1	NMG88_RS19960	47	825	96.39917695473251	1.3e-279
+ctg77_1	NMG88_RS19970	39	631	98.86831275720165	1.49e-208
+ctg77_2	NMG88_RS19965	52	572	94.38775510204081	1.28e-180
+ctg77_2	NMG88_RS19960	49	534	94.5578231292517	2.94e-173
+ctg77_2	NMG88_RS19975	47	550	97.61904761904762	4.09e-173
+
+
+
+>>
+10. NZ_LR882950
+Source: Planktothrix agardhii strain PCC7805 chromosome I
+Type: NRPS,betalactone
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 4942.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg77_1	NMG85_RS02240	51	914	95.37037037037037	5.41e-300
+ctg77_1	NMG85_RS02230	51	919	96.50205761316872	2.7e-295
+ctg77_1	NMG85_RS02225	47	825	96.39917695473251	1.3e-279
+ctg77_1	NMG85_RS02235	38	626	99.07407407407408	9.66e-207
+ctg77_2	NMG85_RS02230	51	577	94.38775510204081	2.33e-182
+ctg77_2	NMG85_RS02225	49	534	94.5578231292517	2.94e-173
+ctg77_2	NMG85_RS02240	47	547	97.61904761904762	6.69e-172
+
+
+
+>>
+11. NC_019753
+Source: Crinalium epipsammum PCC 9333, complete sequence
+Type: NRP-metallophore,NRPS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 4936.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg77_1	CRI9333_RS01390	50	895	97.63374485596708	7.4e-301
+ctg77_1	CRI9333_RS01370	48	874	99.48559670781893	3.06e-286
+ctg77_1	CRI9333_RS01365	47	823	96.09053497942386	8.69e-266
+ctg77_1	CRI9333_RS01385	39	631	100.92592592592592	9.45e-209
+ctg77_2	CRI9333_RS01390	52	616	102.89115646258504	2.32e-200
+ctg77_2	CRI9333_RS01370	54	596	94.38775510204081	1.83e-189
+ctg77_2	CRI9333_RS01365	46	501	97.10884353741497	8.75e-156
+
+
+
+>>
+12. NZ_CP091913
+Source: Nostoc sp. UHCC 0870 chromosome, complete genome
+Type: NRPS,betalactone
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 4623.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg77_1	L6494_RS15865	47	835	95.26748971193416	4.17e-284
+ctg77_1	L6494_RS15875	49	855	94.75308641975309	5.17e-280
+ctg77_1	L6494_RS15885	43	770	100.30864197530865	1.26e-250
+ctg77_1	L6494_RS15880	38	630	100.10288065843622	1.99e-208
+ctg77_2	L6494_RS15875	48	546	101.36054421768708	4.26e-172
+ctg77_2	L6494_RS15865	46	503	94.38775510204081	6.89e-162
+ctg77_2	L6494_RS15885	43	484	96.5986394557823	1.52e-150
+
+
+
+>>
+13. NC_010296
+Source: Microcystis aeruginosa NIES-843, complete sequence
+Type: NRPS,microviridin
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 4282.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg77_1	MAE_RS26185	55	1007	95.57613168724279	0.0
+ctg77_1	MAE_RS26180	45	798	96.81069958847736	3.9e-269
+ctg77_1	MAE_RS26195	45	738	96.09053497942386	5.18e-250
+ctg77_1	MAE_RS26190	39	628	98.97119341563786	3.08e-207
+ctg77_2	MAE_RS26185	49	565	100.0	4.47e-178
+ctg77_2	MAE_RS26180	50	546	94.5578231292517	8.35e-178
+
+
+
+>>
+14. NC_014623
+Source: Stigmatella aurantiaca DW4/3-1, complete sequence
+Type: NRPS,RiPP-like,T1PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 4258.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg77_1	STAUR_RS23870	43	723	98.35390946502058	9e-228
+ctg77_1	STAUR_RS41685	43	712	96.19341563786008	4.44e-227
+ctg77_1	STAUR_RS23815	40	644	97.11934156378601	9.89e-210
+ctg77_1	STAUR_RS23875	42	643	95.98765432098766	4.46e-206
+ctg77_2	STAUR_RS41685	51	565	94.5578231292517	7.32e-179
+ctg77_2	STAUR_RS23870	49	540	94.21768707482994	2.1e-169
+ctg77_2	STAUR_RS23815	41	431	95.74829931972789	2.07e-134
+
+
+
+>>
+15. NZ_HE973165
+Source: Microcystis aeruginosa PCC 7941, whole genome shotgun sequence
+Type: NRPS,microviridin
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 4249.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg77_1	MICAD_RS14010	55	1004	95.57613168724279	0.0
+ctg77_1	MICAD_RS14000	45	786	96.81069958847736	8.35e-265
+ctg77_1	MICAD_RS14020	44	707	96.39917695473251	9.51e-238
+ctg77_1	MICAD_RS14015	39	641	99.38271604938271	2.12e-212
+ctg77_2	MICAD_RS14010	49	565	100.0	3.28e-178
+ctg77_2	MICAD_RS14000	50	546	94.5578231292517	8.35e-178
+
+
+
+>>
+16. NZ_AP018166
+Source: Anabaena cylindrica PCC 7122 DNA, nearly complete genome
+Type: NRP-metallophore,NRPS,T1PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 3785.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg77_1	CA722_RS06895	54	963	94.1358024691358	0.0
+ctg77_1	CA722_RS06885	52	932	95.37037037037037	3.03e-308
+ctg77_1	CA722_RS06890	42	688	95.78189300411523	6.54e-231
+ctg77_2	CA722_RS06885	53	610	94.38775510204081	1.36e-194
+ctg77_2	CA722_RS06895	52	592	94.72789115646259	1.52e-194
+
+
+
+>>
+17. NZ_CP040297
+Source: Nostoc sp. TCL26-01 chromosome, complete genome
+Type: NRP-metallophore,NRPS,T1PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 3692.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg77_1	FD725_RS04055	53	956	94.34156378600824	0.0
+ctg77_1	FD725_RS32290	49	895	97.94238683127571	1.29e-297
+ctg77_1	FD725_RS04050	41	669	96.29629629629629	7.75e-224
+ctg77_2	FD725_RS04055	51	592	98.63945578231292	1.88e-194
+ctg77_2	FD725_RS32290	48	580	105.61224489795917	2.68e-185
+
+
+
+>>
+18. NZ_CP026692
+Source: Nostoc sp. 'Lobaria pulmonaria (5183) cyanobiont' strain 5183 chromosome, complete genome
+Type: NRPS,microviridin
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 3648.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg77_1	NLP_RS12740	54	951	95.16460905349794	2.79e-306
+ctg77_1	NLP_RS12735	47	838	101.33744855967078	4.16e-284
+ctg77_1	NLP_RS12745	43	716	98.86831275720165	3.53e-241
+ctg77_2	NLP_RS12740	52	589	100.0	2.29e-186
+ctg77_2	NLP_RS12735	50	554	100.68027210884354	2.31e-180
+
+
+
+>>
+19. NC_019738
+Source: Allocoleopsis franciscana PCC 7113, complete sequence
+Type: NRP-metallophore,NRPS,T1PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 3647.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg77_1	MIC7113_RS08495	53	964	94.65020576131687	0.0
+ctg77_1	MIC7113_RS08475	48	829	95.47325102880659	7.5e-282
+ctg77_1	MIC7113_RS08490	41	676	100.72016460905351	1.75e-225
+ctg77_2	MIC7113_RS08495	53	608	97.27891156462584	6.12e-194
+ctg77_2	MIC7113_RS08475	48	570	100.17006802721089	1.07e-187
+
+
+
+>>
+20. NZ_CP010976
+Source: Paenibacillus sp. IHBB 10380 isolate IHBB chromosome, complete genome
+Type: NRPS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 3421.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg77_1	UB51_RS06530	48	856	94.8559670781893	3.18e-273
+ctg77_1	UB51_RS26255	47	778	94.75308641975309	9.76e-253
+ctg77_1	UB51_RS06525	42	740	95.16460905349794	4.24e-243
+ctg77_2	UB51_RS26255	46	533	94.5578231292517	8.71e-168
+ctg77_2	UB51_RS06530	47	514	94.5578231292517	2.75e-160
+
+
+
+>>
+21. NZ_MKZR01000001
+Source: Moorena producens 3L Ga0081465_101, whole genome shotgun sequence
+Type: NRPS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 3409.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg77_1	BI334_RS18800	45	782	97.63374485596708	1.23e-263
+ctg77_1	BI334_RS18790	44	796	97.0164609053498	1.94e-260
+ctg77_1	BI334_RS18795	45	761	99.1769547325103	2.03e-259
+ctg77_2	BI334_RS18800	47	548	102.89115646258504	6.71e-179
+ctg77_2	BI334_RS18790	46	522	102.89115646258504	4e-164
+
+
+
+>>
+22. NZ_CP007014
+Source: Pseudomonas syringae CC1557 chromosome, complete genome
+Type: NRPS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 3401.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg77_1	N018_RS13795	44	753	96.09053497942386	2e-243
+ctg77_1	N018_RS13800	42	682	96.39917695473251	9.62e-217
+ctg77_1	N018_RS28085	44	622	79.73251028806584	4.43e-209
+ctg77_2	N018_RS13795	43	468	99.82993197278913	1.24e-144
+ctg77_2	N018_RS13800	45	453	96.25850340136054	2.32e-139
+ctg77_2	N018_RS28090	41	423	94.89795918367348	8.2e-129
+
+
+
+>>
+23. NZ_CP012159
+Source: Chondromyces crocatus strain Cm c5 chromosome, complete genome
+Type: NRPS,thiopeptide
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 3291.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg77_1	CMC5_RS32625	47	789	99.58847736625515	1.25e-263
+ctg77_1	CMC5_RS32635	45	776	97.11934156378601	1.22e-252
+ctg77_1	CMC5_RS32630	43	686	97.53086419753086	1.19e-229
+ctg77_2	CMC5_RS32625	52	551	95.74829931972789	2.15e-178
+ctg77_2	CMC5_RS32635	43	489	100.51020408163265	3.45e-152
+
+
+
+>>
+24. NZ_CP046570
+Source: Xanthomonas albilineans strain Xa-FJ1 chromosome, complete genome
+Type: NRPS,T3PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 3112.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg77_1	XaFJ1_RS04985	48	845	95.78189300411523	2.35e-269
+ctg77_1	XaFJ1_RS04995	41	667	95.78189300411523	1.13e-207
+ctg77_1	XaFJ1_RS04990	40	651	95.78189300411523	2.08e-206
+ctg77_2	XaFJ1_RS04985	47	500	94.21768707482994	1.41e-155
+ctg77_2	XaFJ1_RS04995	44	449	95.23809523809523	1.04e-137
+
+
+
+>>
+25. NZ_CP113519
+Source: Pseudomonas sp. GOM7 chromosome, complete genome
+Type: NRPS,NRPS-like,PKS-like
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 3074.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg77_1	OU800_RS12580	45	762	95.57613168724279	1.06e-240
+ctg77_1	OU800_RS12490	43	724	95.88477366255144	1.83e-227
+ctg77_1	OU800_RS12495	43	682	94.65020576131687	7.19e-213
+ctg77_2	OU800_RS12490	44	457	95.40816326530613	9.47e-141
+ctg77_2	OU800_RS12580	44	449	94.5578231292517	5.74e-138
+
+
+
+>>
+26. NZ_CP023254
+Source: Chitinophaga sp. MD30 chromosome
+Type: NRPS,T1PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 2989.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg77_1	CK934_RS30970	43	719	97.32510288065843	9.08e-226
+ctg77_1	CK934_RS20870	42	708	96.91358024691358	6.82e-222
+ctg77_1	CK934_RS20865	41	679	96.09053497942386	2.42e-216
+ctg77_2	CK934_RS20870	43	450	96.25850340136054	4.29e-138
+ctg77_2	CK934_RS30970	42	433	94.72789115646259	3.14e-132
+
+
+
+>>
+27. NZ_AP024862
+Source: Vibrio aerogenes strain LMG 19650 chromosome 2, complete sequence
+Type: NRP-metallophore,NRPS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 2978.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg77_1	OCV29_RS22520	42	737	97.32510288065843	1.26e-234
+ctg77_1	OCV29_RS22525	43	719	96.91358024691358	6.37e-226
+ctg77_1	OCV29_RS22530	41	668	97.8395061728395	4.44e-208
+ctg77_2	OCV29_RS22525	42	430	94.5578231292517	3.58e-131
+ctg77_2	OCV29_RS22520	41	424	94.5578231292517	3.32e-129
+
+
+
+>>
+28. NZ_CP114203
+Source: Streptomyces nigrescens strain DSM 40276 chromosome, complete genome
+Type: LAP,NRPS,NRPS-like,lassopeptide,thioamitides,thiopeptide
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 2935.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg77_1	STRNI_RS19280	45	734	95.98765432098766	2.79e-234
+ctg77_1	STRNI_RS19275	43	696	96.50205761316872	9.32e-220
+ctg77_1	STRNI_RS19285	43	658	97.22222222222221	9.43e-211
+ctg77_2	STRNI_RS19280	44	425	96.93877551020408	1.31e-129
+ctg77_2	STRNI_RS19275	43	422	100.0	1.13e-128
+
+
+
+>>
+29. NZ_CP051010
+Source: Streptomyces sp. S1D4-11 chromosome, complete genome
+Type: NRPS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 2928.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg77_1	HEP87_RS29855	43	734	95.26748971193416	1.5e-231
+ctg77_1	HEP87_RS57920	43	688	96.29629629629629	3.07e-225
+ctg77_1	HEP87_RS57915	40	654	95.78189300411523	7.96e-206
+ctg77_2	HEP87_RS57920	41	425	94.38775510204081	2.4e-131
+ctg77_2	HEP87_RS29855	42	427	94.21768707482994	4.03e-130
+
+
+
+>>
+30. NZ_JZHZ01000007
+Source: Xanthomonas sp. GPE 39 Xal-GPE_39-G1-Mol001, whole genome shotgun sequence
+Type: NRPS,T3PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 2659.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg77_1	XALGPE39_RS16390	43	680	95.67901234567901	8.05e-215
+ctg77_1	XALGPE39_RS04840	40	661	95.88477366255144	3.25e-210
+ctg77_2	XALGPE39_RS15935	45	468	94.72789115646259	3.05e-155
+ctg77_2	XALGPE39_RS15925	42	424	94.04761904761905	3.17e-134
+ctg77_2	XALGPE39_RS16390	41	426	94.21768707482994	5.1e-130
+
+
+
+>>
+31. NZ_AP018268
+Source: Scytonema sp. NIES-4073 DNA, nearly complete genome
+Type: NRPS,NRPS-like,T1PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 2640.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg77_1	CDC39_RS18470	53	939	95.88477366255144	6.81e-303
+ctg77_1	CDC39_RS18465	41	671	97.7366255144033	2e-214
+ctg77_2	CDC39_RS18470	53	592	94.21768707482994	2.55e-187
+ctg77_2	CDC39_RS18460	50	438	74.82993197278913	1.75e-140
+
+
+
+>>
+32. NZ_OMKA01000029
+Source: Aquimarina sp. Aq78 isolate Aquimarina sp. strain Aq78 assembly02, whole genome shotgun sequence
+Type: NRPS,T1PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 2606.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg77_1	DG435_RS21710	40	665	96.19341563786008	1.57e-211
+ctg77_1	DG435_RS21700	40	656	95.16460905349794	8.01e-206
+ctg77_2	DG435_RS21705	43	434	95.40816326530613	1.12e-132
+ctg77_2	DG435_RS21710	40	428	99.65986394557824	1.03e-130
+ctg77_2	DG435_RS21695	41	423	94.5578231292517	5.84e-129
+
+
+
+>>
+33. NZ_CP106840
+Source: Streptomyces sp. Je 1-4 chromosome, complete genome
+Type: NRPS,NRPS-like,lassopeptide
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 2537.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg77_1	SLV14_RS17515	45	735	95.98765432098766	1.05e-234
+ctg77_1	SLV14_RS17510	43	711	96.39917695473251	2.23e-225
+ctg77_1	SLV14_RS17520	43	664	97.22222222222221	3.52e-213
+ctg77_2	SLV14_RS17515	44	427	96.5986394557823	3.82e-130
+
+
+
+>>
+34. NZ_CP049782
+Source: Streptomyces sp. ID38640 chromosome
+Type: NRPS,NRPS-like,lassopeptide
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 2536.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg77_1	G7Z12_RS16205	45	734	95.98765432098766	2.01e-234
+ctg77_1	G7Z12_RS16200	43	710	96.39917695473251	5.88e-225
+ctg77_1	G7Z12_RS16210	43	665	97.22222222222221	2.52e-213
+ctg77_2	G7Z12_RS16205	44	427	96.5986394557823	3.82e-130
+
+
+
+>>
+35. NZ_AP024905
+Source: Vibrio ruber strain LMG 23124 chromosome 1, complete sequence
+Type: NRPS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 2528.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg77_1	OCU42_RS13540	43	730	96.29629629629629	3.85e-232
+ctg77_1	OCU42_RS13550	43	700	96.39917695473251	3.96e-219
+ctg77_1	OCU42_RS13545	41	662	95.78189300411523	4.41e-206
+ctg77_2	OCU42_RS13550	41	436	94.38775510204081	1.93e-133
+
+
+
+>>
+36. NZ_JAPKNL010000006
+Source: Streptomyces libani strain NEAU-BS7 Scaffold6, whole genome shotgun sequence
+Type: LAP,NRPS,NRPS-like,lassopeptide,thioamitides,thiopeptide
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 2522.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg77_1	OSI21_RS10390	45	736	95.98765432098766	7.53e-235
+ctg77_1	OSI21_RS10385	43	700	96.50205761316872	3.8e-221
+ctg77_1	OSI21_RS10395	43	659	97.22222222222221	5.71e-211
+ctg77_2	OSI21_RS10390	44	427	96.93877551020408	2.07e-130
+
+
+
+>>
+37. NZ_CP027306
+Source: Streptomyces atratus strain SCSIO_ZH16 chromosome, complete genome
+Type: NRPS,aminocoumarin,arylpolyene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 2509.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg77_1	C5746_RS26155	44	717	96.70781893004116	3.74e-225
+ctg77_1	C5746_RS26160	42	694	100.0	2.49e-217
+ctg77_1	C5746_RS26165	41	671	98.559670781893	2.89e-209
+ctg77_2	C5746_RS26160	43	427	96.5986394557823	3.01e-130
+
+
+
+>>
+38. NZ_CP022098
+Source: Cystobacter fuscus strain DSM 52655 chromosome, complete genome
+Type: NRPS,T1PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 2336.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg77_1	CYFUS_RS38315	43	715	96.29629629629629	2.19e-224
+ctg77_1	CYFUS_RS38320	42	660	96.29629629629629	1.14e-212
+ctg77_2	CYFUS_RS38315	51	535	94.89795918367348	8.71e-168
+ctg77_2	CYFUS_RS38310	49	426	73.63945578231292	1.07e-129
+
+
+
+>>
+39. NZ_FTMZ01000008
+Source: Sphaerotilus natans strain ATCC 13338, whole genome shotgun sequence
+Type: NRPS,T1PKS,betalactone
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 2251.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg77_1	BW996_RS09360	41	682	98.97119341563786	5.88e-215
+ctg77_1	BW996_RS09365	43	664	98.4567901234568	3.05e-210
+ctg77_2	BW996_RS09360	43	462	96.5986394557823	1.45e-142
+ctg77_2	BW996_RS09355	44	443	94.89795918367348	8.95e-136
+
+
+
+>>
+40. NZ_CP024478
+Source: Pseudomonas sp. HLS-6 chromosome, complete genome
+Type: NRP-metallophore,NRPS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 2207.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg77_1	CS390_RS12960	44	706	94.8559670781893	3.08e-221
+ctg77_1	CS390_RS25350	40	624	97.22222222222221	5.36e-206
+ctg77_2	CS390_RS12960	42	442	101.87074829931973	2.56e-135
+ctg77_2	CS390_RS12955	43	435	102.72108843537416	4.53e-133
+
+
+
+>>
+41. NZ_AP018166
+Source: Anabaena cylindrica PCC 7122 DNA, nearly complete genome
+Type: NRPS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 2174.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg77_1	CA722_RS15515	48	851	96.50205761316872	9.06e-283
+ctg77_1	CA722_RS15510	43	766	99.07407407407408	8.69e-261
+ctg77_2	CA722_RS15515	48	557	96.7687074829932	9.44e-178
+
+
+
+>>
+42. NZ_CP046622
+Source: Variovorax paradoxus strain CSUSB chromosome, complete genome
+Type: NRP-metallophore,NRPS,T1PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 2142.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg77_1	GOQ09_RS19095	42	653	96.19341563786008	5.01e-210
+ctg77_1	GOQ09_RS19085	40	628	95.78189300411523	3.96e-207
+ctg77_2	GOQ09_RS19080	41	434	100.85034013605443	1.11e-132
+ctg77_2	GOQ09_RS19095	42	427	94.89795918367348	2.01e-131
+
+
+
+>>
+43. NZ_CP026692
+Source: Nostoc sp. 'Lobaria pulmonaria (5183) cyanobiont' strain 5183 chromosome, complete genome
+Type: NRPS,NRPS-like,T1PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 2116.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg77_1	NLP_RS02665	49	862	97.63374485596708	4.99e-294
+ctg77_1	NLP_RS02660	41	683	100.92592592592592	2.85e-228
+ctg77_2	NLP_RS02665	52	571	94.89795918367348	2.04e-187
+
+
+
+>>
+44. NZ_CP036117
+Source: Bacillus mycoides strain JAS481 chromosome, complete genome
+Type: NRP-metallophore,NRPS,T1PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 2077.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg77_1	EXW43_RS03455	47	858	96.39917695473251	5.31e-274
+ctg77_1	EXW43_RS03450	41	676	96.91358024691358	4.96e-226
+ctg77_2	EXW43_RS03455	48	543	94.5578231292517	1.37e-170
+
+
+
+>>
+45. NZ_CP117768
+Source: Nostoc sp. UHCC 0926 chromosome, complete genome
+Type: NRPS,NRPS-like,T1PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 2063.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg77_1	PQG02_RS07075	42	775	97.11934156378601	5.06e-260
+ctg77_1	PQG02_RS07070	45	753	95.26748971193416	5.38e-256
+ctg77_2	PQG02_RS07075	49	535	97.95918367346938	1.01e-173
+
+
+
+>>
+46. NZ_AP018290
+Source: Calothrix sp. NIES-4105 DNA, nearly complete genome
+Type: NRPS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 2046.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg77_1	CDC38_RS03640	47	860	105.9670781893004	2.4e-278
+ctg77_1	CDC38_RS03635	53	632	64.19753086419753	1.31e-208
+ctg77_2	CDC38_RS03640	50	554	94.38775510204081	3.01e-174
+
+
+
+>>
+47. NZ_NOLJ01000008
+Source: Nostoc sp. 'Peltigera membranacea cyanobiont' 210A scaffold8, whole genome shotgun sequence
+Type: NRPS,NRPS-like,T1PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 2045.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg77_1	CDG76_RS25445	43	765	96.91358024691358	1.87e-256
+ctg77_1	CDG76_RS25440	44	744	95.26748971193416	2.15e-252
+ctg77_2	CDG76_RS25445	49	536	97.61904761904762	5.03e-174
+
+
+
+>>
+48. NZ_CP054698
+Source: Nostoc edaphicum CCNP1411 chromosome, complete genome
+Type: NRPS,NRPS-like,T1PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 2019.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg77_1	HUN01_RS08595	42	763	99.07407407407408	1.01e-255
+ctg77_1	HUN01_RS08590	42	721	95.57613168724279	1.24e-243
+ctg77_2	HUN01_RS08595	49	535	97.95918367346938	1.91e-173
+
+
+
+>>
+49. NC_010628
+Source: Nostoc punctiforme PCC 73102, complete sequence
+Type: NRPS,NRPS-like,T1PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 2014.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg77_1	NPUN_RS33525	42	755	98.4567901234568	1.36e-252
+ctg77_1	NPUN_RS33530	43	726	95.57613168724279	2.78e-245
+ctg77_2	NPUN_RS33525	49	533	97.95918367346938	7.36e-173
+
+
+
+>>
+50. NZ_CP040272
+Source: Nostoc sp. C052 chromosome, complete genome
+Type: NRPS,NRPS-like,T1PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 2011.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg77_1	FD723_RS01855	43	767	97.63374485596708	1.33e-256
+ctg77_1	FD723_RS01860	42	721	95.57613168724279	1.24e-243
+ctg77_2	FD723_RS01855	48	523	97.95918367346938	7.25e-169
+

@@ -1,0 +1,363 @@
+ClusterBlast scores for NODE_74891_length_1643_cov_3.847607
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg383_1	2	287	-		
+ctg383_2	298	1297	-		
+ctg383_3	1351	1642	-		
+
+
+Significant hits: 
+1. NZ_CP022048	Brevundimonas vesicularis strain FDAARGOS_289 chromosome, complete genome
+2. NZ_CP070968	Brevundimonas sp. CS1 chromosome, complete genome
+3. NZ_JAOYTN010000001	Brevundimonas sp. BT-123 chromosome 1, whole genome shotgun sequence
+4. NZ_CP114278	Brevundimonas vesicularis strain Br4 chromosome, complete genome
+5. NZ_CP039382	Brevundimonas sp. 'scallop' chromosome, complete genome
+6. NZ_CP014213	Methanosphaera sp. BMS chromosome, complete genome
+7. NZ_WBMT01000010	Actinomadura rudentiformis strain HMC1 Scaffold10, whole genome shotgun sequence
+8. NZ_AP025592	Anaeromyxobacter paludicola strain Red630 chromosome, complete genome
+9. NZ_KQ948210	Streptomyces yokosukanensis strain DSM 40224 PRJNA299221_s005, whole genome shotgun sequence
+10. NZ_AP018365	Streptomyces sp. SN-593 chromosome
+11. NZ_AP017635	Mycobacterium ulcerans subsp. shinshuense strain ATCC 33728 chromosome
+12. NZ_CP070973	Mycobacterium gordonae strain X7091 chromosome, complete genome
+13. NZ_LR135168	Mycobacterium ulcerans strain SGL03 isolate ITM032481 chromosome 1
+14. NZ_AP018410	Mycobacterium pseudoshottsii JCM 15466 chromosome, complete genome
+15. NC_020504	Streptomyces davaonensis JCM 4913, complete sequence
+16. NZ_AP022595	Mycolicibacterium sarraceniae strain JCM 30395 chromosome, complete genome
+17. NZ_HG964936	Mycobacterium asiaticum DSM 44297, whole genome shotgun sequence
+18. NZ_JACIBJ010000001	Mycolicibacterium sp. BK634 Ga0365322_01, whole genome shotgun sequence
+19. NZ_AP022613	Mycobacterium conspicuum strain JCM 14738 chromosome
+20. NZ_AP022596	Mycolicibacterium helvum strain JCM 30396 chromosome, complete genome
+21. NZ_CP059165	Mycobacterium vicinigordonae strain 24 chromosome, complete genome
+22. NZ_AP025179	Mycobacterium sp. IWGMT90018-18076 strain IWGMT90018 chromosome, complete genome
+
+
+Details:
+
+>>
+1. NZ_CP022048
+Source: Brevundimonas vesicularis strain FDAARGOS_289 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 160.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg383_2	CEP68_RS17655	34	111	68.37349397590361	2.59e-26
+ctg383_3	CEP68_RS17650	39	49	72.91666666666666	5.44e-06
+
+
+
+>>
+2. NZ_CP070968
+Source: Brevundimonas sp. CS1 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 159.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg383_2	JX001_RS09340	34	110	68.37349397590361	4.99e-26
+ctg383_3	JX001_RS09345	39	49	75.0	3.98e-06
+
+
+
+>>
+3. NZ_JAOYTN010000001
+Source: Brevundimonas sp. BT-123 chromosome 1, whole genome shotgun sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 159.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg383_2	OIU13_RS01885	34	110	68.37349397590361	9.62e-26
+ctg383_3	OIU13_RS01880	39	49	72.91666666666666	7.44e-06
+
+
+
+>>
+4. NZ_CP114278
+Source: Brevundimonas vesicularis strain Br4 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 158.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg383_2	O2K97_RS10495	34	109	68.37349397590361	1.34e-25
+ctg383_3	O2K97_RS10490	39	49	72.91666666666666	5.44e-06
+
+
+
+>>
+5. NZ_CP039382
+Source: Brevundimonas sp. 'scallop' chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 158.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg383_2	E4341_RS10235	33	109	68.37349397590361	1.85e-25
+ctg383_3	E4341_RS10230	39	49	72.91666666666666	5.44e-06
+
+
+
+>>
+6. NZ_CP014213
+Source: Methanosphaera sp. BMS chromosome, complete genome
+Type: NRPS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 298.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg383_2	AW729_RS01850	36	216	99.69879518072288	4.71e-66
+ctg383_3	AW729_RS01840	45	82	95.83333333333334	7.33e-18
+
+
+
+>>
+7. NZ_WBMT01000010
+Source: Actinomadura rudentiformis strain HMC1 Scaffold10, whole genome shotgun sequence
+Type: PKS-like,T1PKS,T3PKS,terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 209.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg383_2	F8566_RS22235	35	151	87.65060240963855	7.42e-41
+ctg383_3	F8566_RS22215	40	58	101.04166666666667	3.08e-09
+
+
+
+>>
+8. NZ_AP025592
+Source: Anaeromyxobacter paludicola strain Red630 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 202.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg383_2	AMPC_RS10670	37	143	73.49397590361446	3.05e-38
+ctg383_3	AMPC_RS10715	46	59	71.875	2.16e-09
+
+
+
+>>
+9. NZ_KQ948210
+Source: Streptomyces yokosukanensis strain DSM 40224 PRJNA299221_s005, whole genome shotgun sequence
+Type: NRPS-like,T3PKS,other,terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 164.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg383_2	AQI95_RS13890	31	105	82.83132530120481	1.67e-23
+ctg383_3	AQI95_RS13925	37	59	101.04166666666667	1.18e-09
+
+
+
+>>
+10. NZ_AP018365
+Source: Streptomyces sp. SN-593 chromosome
+Type: T3PKS,other,terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 164.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg383_2	RVR_RS14665	32	100	73.19277108433735	1.46e-21
+ctg383_3	RVR_RS14700	40	64	101.04166666666667	2.7e-11
+
+
+
+>>
+11. NZ_AP017635
+Source: Mycobacterium ulcerans subsp. shinshuense strain ATCC 33728 chromosome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 163.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg383_2	CPZ18_RS12020	32	100	64.45783132530121	7.56e-22
+ctg383_3	CPZ18_RS11980	54	63	61.458333333333336	4.92e-11
+
+
+
+>>
+12. NZ_CP070973
+Source: Mycobacterium gordonae strain X7091 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 162.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg383_2	JX552_RS09535	32	105	75.6024096385542	1.47e-23
+ctg383_3	JX552_RS09475	53	57	60.416666666666664	5.56e-09
+
+
+
+>>
+13. NZ_LR135168
+Source: Mycobacterium ulcerans strain SGL03 isolate ITM032481 chromosome 1
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 162.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg383_2	EQB88_RS01900	32	100	64.45783132530121	3.98e-22
+ctg383_3	EQB88_RS01935	53	62	61.458333333333336	1.27e-10
+
+
+
+>>
+14. NZ_AP018410
+Source: Mycobacterium pseudoshottsii JCM 15466 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 161.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg383_2	MPSD_RS24660	32	98	64.45783132530121	1.97e-21
+ctg383_3	MPSD_RS24700	54	63	61.458333333333336	4.92e-11
+
+
+
+>>
+15. NC_020504
+Source: Streptomyces davaonensis JCM 4913, complete sequence
+Type: 2dos,NRPS,NRPS-like,T3PKS,cyanobactin,other,terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 158.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg383_2	BN159_RS39460	31	100	82.83132530120481	4.8e-22
+ctg383_3	BN159_RS39405	37	58	101.04166666666667	4.13e-09
+
+
+
+>>
+16. NZ_AP022595
+Source: Mycolicibacterium sarraceniae strain JCM 30395 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 157.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg383_2	G6N13_RS02760	31	96	71.3855421686747	3.98e-20
+ctg383_3	G6N13_RS02810	51	61	76.04166666666666	4.45e-10
+
+
+
+>>
+17. NZ_HG964936
+Source: Mycobacterium asiaticum DSM 44297, whole genome shotgun sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 155.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg383_2	BN972_RS06830	32	99	71.6867469879518	2.8e-21
+ctg383_3	BN972_RS06765	53	56	60.416666666666664	2.67e-08
+
+
+
+>>
+18. NZ_JACIBJ010000001
+Source: Mycolicibacterium sp. BK634 Ga0365322_01, whole genome shotgun sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 155.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg383_2	FHT44_RS12800	31	95	66.26506024096386	7.75e-20
+ctg383_3	FHT44_RS12750	59	60	60.416666666666664	6.11e-10
+
+
+
+>>
+19. NZ_AP022613
+Source: Mycobacterium conspicuum strain JCM 14738 chromosome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 153.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg383_2	G6N66_RS07035	32	96	71.6867469879518	2.62e-20
+ctg383_3	G6N66_RS06980	55	57	60.416666666666664	7.61e-09
+
+
+
+>>
+20. NZ_AP022596
+Source: Mycolicibacterium helvum strain JCM 30396 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 151.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg383_2	G6N38_RS17335	31	94	71.6867469879518	1.91e-19
+ctg383_3	G6N38_RS17305	47	57	76.04166666666666	7.57e-09
+
+
+
+>>
+21. NZ_CP059165
+Source: Mycobacterium vicinigordonae strain 24 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 150.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg383_2	H0P51_RS09195	31	95	71.6867469879518	8.11e-20
+ctg383_3	H0P51_RS09140	50	55	60.416666666666664	4.99e-08
+
+
+
+>>
+22. NZ_AP025179
+Source: Mycobacterium sp. IWGMT90018-18076 strain IWGMT90018 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 150.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg383_2	L6444_RS08675	31	95	64.45783132530121	9.57e-20
+ctg383_3	L6444_RS08620	52	55	60.416666666666664	3.65e-08
+

@@ -1,0 +1,126 @@
+ClusterBlast scores for NODE_461_length_3608_cov_3.781365
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg461_1	1	256	+		
+ctg461_2	248	833	+		
+ctg461_3	1295	1499	+		
+ctg461_4	1522	1963	+		
+ctg461_5	2027	2729	-		
+ctg461_6	2831	3608	-		
+
+
+Significant hits: 
+1. NZ_AP017308	Leptolyngbya sp. NIES-3755 DNA, complete genome
+2. NZ_KE386951	Chitinibacter tainanensis DSM 15459 G482DRAFT_scaffold00002.2, whole genome shotgun sequence
+3. NZ_CP058952	Chitinibacter fontanus strain STM-7 chromosome, complete genome
+4. NZ_CP025781	Iodobacter fluviatilis strain PCH194 chromosome, complete genome
+5. NZ_AUMS01000004	Chitinilyticum aquatile DSM 21506 H559DRAFT_scaffold00003.3_C, whole genome shotgun sequence
+6. NZ_ATZJ01000001	Chitinilyticum litopenaei DSM 21440 C515DRAFT_scaffold00001.1_C, whole genome shotgun sequence
+7. NZ_CP079095	Methylococcus sp. Mc7 chromosome, complete genome
+
+
+Details:
+
+>>
+1. NZ_AP017308
+Source: Leptolyngbya sp. NIES-3755 DNA, complete genome
+Type: NRPS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 278.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg461_3	LEP3755_RS14105	67	77	73.13432835820896	2.61e-17
+ctg461_4	LEP3755_RS14110	67	201	100.0	1.04e-64
+
+
+
+>>
+2. NZ_KE386951
+Source: Chitinibacter tainanensis DSM 15459 G482DRAFT_scaffold00002.2, whole genome shotgun sequence
+Type: RiPP-like
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 221.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg461_3	G482_RS0111710	54	64	68.65671641791045	3.01e-12
+ctg461_4	G482_RS0111715	55	157	97.94520547945206	2.76e-44
+
+
+
+>>
+3. NZ_CP058952
+Source: Chitinibacter fontanus strain STM-7 chromosome, complete genome
+Type: RiPP-like
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 217.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg461_3	HZU75_RS13865	52	61	68.65671641791045	3.17e-11
+ctg461_4	HZU75_RS13860	55	156	97.94520547945206	5.39e-44
+
+
+
+>>
+4. NZ_CP025781
+Source: Iodobacter fluviatilis strain PCH194 chromosome, complete genome
+Type: NRPS,T1PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 215.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg461_3	C1H71_RS15725	50	59	68.65671641791045	3.22e-10
+ctg461_4	C1H71_RS15720	57	156	91.78082191780823	5.23e-44
+
+
+
+>>
+5. NZ_AUMS01000004
+Source: Chitinilyticum aquatile DSM 21506 H559DRAFT_scaffold00003.3_C, whole genome shotgun sequence
+Type: RiPP-like
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 213.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg461_3	H559_RS0104285	50	57	68.65671641791045	1.24e-09
+ctg461_4	H559_RS22125	56	156	91.0958904109589	9.24e-44
+
+
+
+>>
+6. NZ_ATZJ01000001
+Source: Chitinilyticum litopenaei DSM 21440 C515DRAFT_scaffold00001.1_C, whole genome shotgun sequence
+Type: RiPP-like
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 211.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg461_3	C515_RS0100565	48	57	68.65671641791045	1.24e-09
+ctg461_4	C515_RS22860	55	154	91.0958904109589	6.78e-43
+
+
+
+>>
+7. NZ_CP079095
+Source: Methylococcus sp. Mc7 chromosome, complete genome
+Type: T1PKS,hglE-KS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 208.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg461_3	KW115_RS12300	47	62	73.13432835820896	1.08e-11
+ctg461_4	KW115_RS12305	53	146	89.72602739726028	9.83e-41
+

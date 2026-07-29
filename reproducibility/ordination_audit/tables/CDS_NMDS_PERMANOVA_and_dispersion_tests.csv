@@ -1,0 +1,4 @@
+analysis,factor,PERMANOVA_pseudo_F,PERMANOVA_p_value,PERMANOVA_df_between,PERMANOVA_df_within,PERMANOVA_permutations,dispersion_F,dispersion_p_value,dispersion_df_between,dispersion_df_within,dispersion_permutations
+CDS_all_OTUs,Lake,1.6442465131615709,0.026,3,16,999,1.708787961138055,0.459,3,16,999
+CDS_all_OTUs,Season,0.705192655542427,0.875,1,18,999,4.925379184081188,0.047,1,18,999
+CDS_all_OTUs,LakeSeason,1.160211418477432,0.19,7,12,999,4.485865570656609,0.535,7,12,999

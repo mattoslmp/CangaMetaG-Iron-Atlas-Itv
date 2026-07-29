@@ -1,0 +1,56 @@
+Module,AM.P1.D,AM.P1.R,AM.P2.D,AM.P2.R,TIA.P1.D,TIA.P1.R,TIA.P2.D,TIA.P2.R,TI.P1.D,TI.P1.R,TI.P2.D,TI.P2.R,TI.P3.D,TI.P3.R,TI.P4.D,TI.P4.R,VI.P1.D,VI.P1.R,VI.P2.D,VI.P2.R
+"M00909 | UDP-N-acetyl-D-glucosamine biosynthesis, prokaryotes, glucose => UDP-GlcNAc",1.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0
+"M00880 | Molybdenum cofactor biosynthesis, GTP => molybdenum cofactor",1.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0
+M00916 | Pyridoxal-P_biosynthesis,1.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0
+"M00050 | Guanine ribonucleotide biosynthesis IMP => GDP,GTP",1.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0
+"M00051 | Uridine monophosphate biosynthesis, glutamine (+ PRPP) => UMP",1.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0
+M00063 | CMP-KDO biosynthesis,1.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0
+"M00045 | Histidine degradation, histidine => N-formiminoglutamate => glutamate",1.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0
+"M00052 | Pyrimidine ribonucleotide biosynthesis, UMP => UDP/UTP,CDP/CTP",1.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0
+"M00048 | Inosine monophosphate biosynthesis, PRPP + glutamine => IMP",1.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0
+"M00049 | Adenine ribonucleotide biosynthesis, IMP => ADP,ATP",1.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0
+"M00855 | Glycogen degradation, glycogen => glucose-6P",1.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0
+"M00854 | Glycogen biosynthesis, glucose-1P => glycogen/starch",1.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0
+"M00022 | Shikimate pathway, phosphoenolpyruvate + erythrose-4P => chorismate",1.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0
+"M00527 | Lysine biosynthesis, DAP aminotransferase pathway, aspartate => lysine",1.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0
+"M00119 | Pantothenate biosynthesis, valine/L-aspartate => pantothenate",1.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0
+"M00115 | NAD biosynthesis, aspartate => NAD",1.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0
+"M00570 | Isoleucine biosynthesis, threonine => 2-oxobutanoate => isoleucine",1.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0
+"M00549 | Nucleotide sugar biosynthesis, glucose => UDP-glucose",1.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0
+"M00554 | Nucleotide sugar biosynthesis, galactose => UDP-galactose",1.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0
+"M00133 | Polyamine biosynthesis, arginine => agmatine => putrescine => spermidine",1.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0
+"M00120 | Coenzyme A biosynthesis, pantothenate => CoA",1.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0
+"M00632 | Galactose degradation, Leloir pathway, galactose => alpha-D-glucose-1P",1.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0
+"M00579 | Phosphate acetyltransferase-acetate kinase pathway, acetyl-CoA => acetate",1.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0
+"M00580 | Pentose phosphate pathway, archaea, fructose 6P => ribose 5P",1.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0
+M00087 | beta-Oxidation,1.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0
+"M00093 | Phosphatidylethanolamine (PE) biosynthesis, PA => PS => PE",1.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0
+"M00082 | Fatty acid biosynthesis, initiation",1.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0
+"M00083 | Fatty acid biosynthesis, elongation",1.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0
+M00793 | dTDP-L-rhamnose biosynthesis,1.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0
+"M00086 | beta-Oxidation, acyl-CoA synthesis",1.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0
+"M00096 | C5 isoprenoid biosynthesis, non-mevalonate pathway",1.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0
+"M00844 | Arginine biosynthesis, ornithine => arginine",1.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0
+"M00006 | Pentose phosphate pathway, oxidative phase, glucose 6P => ribulose 5P",1.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0
+"M00028 | Ornithine biosynthesis, glutamate => ornithine",1.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0
+"M00018 | Threonine biosynthesis, aspartate => homoserine => threonine",1.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0
+M00004 | Pentose phosphate pathway (Pentose phosphate cycle),1.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0
+"M00005 | PRPP biosynthesis, ribose 5P => PRPP",1.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0
+"M00015 | Proline biosynthesis, glutamate => proline",1.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0
+M00012 | Glyoxylate cycle,1.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0
+"M00026 | Histidine biosynthesis, PRPP => histidine",1.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0
+"M00001 | Glycolysis (Embden-Meyerhof pathway), glucose => pyruvate",1.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0
+"M00002 | Glycolysis, core module involving three-carbon compounds",1.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0
+"M00003 | Gluconeogenesis, oxaloacetate => fructose-6P",1.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0
+"M00010 | Citrate cycle, first carbon oxidation, oxaloacetate => 2-oxoglutarate",1.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0
+"M00140 | C1-unit interconversion, prokaryotes",1.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0
+"M00168 | CAM (Crassulacean acid metabolism), dark",1.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0
+"M00166 | Reductive pentose phosphate cycle, ribulose-5P => glyceraldehyde-3P",1.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0
+"M00432 | Leucine biosynthesis, 2-oxoisovalerate => 2-oxoisocaproate",1.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0
+"M00345 | Formaldehyde assimilation, ribulose monophosphate pathway",1.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0
+"M00307 | Pyruvate oxidation, pyruvate => acetyl-CoA",1.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0
+"M00364 | C10-C20 isoprenoid biosynthesis, bacteria",1.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0
+"M00365 | C10-C20 isoprenoid biosynthesis, archaea",1.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0
+"M00020 | Serine biosynthesis, glycerate-3P => serine",1.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0
+"M00021 | Cysteine biosynthesis, serine => cysteine",1.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0
+"M00019 | Valine/isoleucine biosynthesis, pyruvate => valine / 2-oxobutanoate => isoleucine",1.0,0.0,0.0,1.0,0.0,0.0,1.0,0.0,1.0,1.0,0.0,1.0,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0

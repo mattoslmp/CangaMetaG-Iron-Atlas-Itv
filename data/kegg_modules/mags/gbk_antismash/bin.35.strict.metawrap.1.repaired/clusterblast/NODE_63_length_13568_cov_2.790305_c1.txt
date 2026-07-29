@@ -1,0 +1,829 @@
+ClusterBlast scores for NODE_63_length_13568_cov_2.790305
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg63_1	1	418	-		
+ctg63_2	473	1349	-		
+ctg63_3	1360	2113	-		
+ctg63_4	2128	3010	-		
+ctg63_5	3050	3323	-		
+ctg63_6	3319	4192	-		
+ctg63_7	4207	6664	-		
+ctg63_8	6741	8064	-		
+ctg63_9	8107	9484	-		
+ctg63_10	9484	10252	-		
+ctg63_11	10248	11241	-		
+ctg63_12	11563	12991	+		
+
+
+Significant hits: 
+1. NZ_JADMNS010000001	Massiliimalia timonensis strain 1001287H_170206_D5 NODE_1_length_726486_cov_66.8581, whole genome shotgun sequence
+2. NZ_CP027747	Pseudomonas chlororaphis subsp. aureofaciens strain 66 chromosome, complete genome
+3. NZ_AP014623	Pseudomonas chlororaphis subsp. aurantiaca strain StFRB508 chromosome
+4. NZ_CP025309	Pseudomonas chlororaphis strain Lzh-T5 chromosome, complete genome
+5. NZ_CP102374	Pseudomonas sp. T8 chromosome, complete genome
+6. NZ_CP040506	Hungatella hathewayi WAL-18680 chromosome, complete genome
+7. NZ_JACHHH010000002	Oribacterium sinus strain DSM 17245 Ga0415240_02, whole genome shotgun sequence
+8. NZ_CP030040	Acetobacterium sp. KB-1 chromosome
+9. NZ_CP048051	Pseudomonas chlororaphis subsp. aurantiaca strain zm-1 chromosome, complete genome
+10. NZ_CP087994	Acetobacterium wieringae strain Y chromosome, complete genome
+11. NZ_CP097897	Acetobacterium wieringae strain CH1 chromosome, complete genome
+12. NC_016894	Acetobacterium woodii DSM 1030, complete sequence
+13. NZ_AXAC01000031	Acetobacterium dehalogenans DSM 11527 A3KSDRAFT_scaffold_27.28_C, whole genome shotgun sequence
+14. NZ_AP023391	Streptococcus suis strain DAT299 chromosome, complete genome
+15. NZ_JAFFHI010000003	Streptococcus suis strain K06-WJ Scaffold3, whole genome shotgun sequence
+16. NZ_CP017088	Streptococcus suis strain SRD478 chromosome, complete genome
+17. NZ_CP030125	Streptococcus suis strain HA1003 chromosome, complete genome
+18. NZ_JAFHCS010000001	Streptococcus suis strain 2018WUSS100 Scaffold1, whole genome shotgun sequence
+19. NZ_LR738724	Streptococcus suis isolate 9401240 chromosome 1
+20. NZ_CP082203	Streptococcus suis strain NJ3 chromosome, complete genome
+21. NC_021213	Streptococcus suis TL13, complete sequence
+22. NZ_CP100430	Streptococcus suis strain LSS42 chromosome, complete genome
+23. NZ_JAIJZP010000004	Streptococcus sp. 2018162 Scaffold4, whole genome shotgun sequence
+24. NZ_CP030124	Streptococcus suis strain SH1510 chromosome, complete genome
+25. NZ_JAMYJP010000005	Streptococcus suis strain 2018WUSS047 Scaffold5, whole genome shotgun sequence
+26. NZ_JAMYIY010000001	Streptococcus suis strain WUSS314 Scaffold1, whole genome shotgun sequence
+27. NZ_FIMB01000005	Streptococcus suis strain SS997, whole genome shotgun sequence
+28. NC_017621	Streptococcus suis D12, complete sequence
+29. NZ_CP017666	Streptococcus suis strain 0061 chromosome, complete genome
+30. NZ_CP039462	Streptococcus suis strain WUSS351 chromosome, complete genome
+31. NZ_FILS01000009	Streptococcus suis strain SS986, whole genome shotgun sequence
+32. NZ_JAEUXE010000001	Streptococcus suis strain HM55 Scaffold1, whole genome shotgun sequence
+33. NZ_JAFHDO010000001	Streptococcus suis strain 128.01B Scaffold1, whole genome shotgun sequence
+34. NZ_JAJUWV010000001	Streptococcus suis strain Ss39 contig01, whole genome shotgun sequence
+35. NZ_SSXP01000002	Streptococcus suis strain WUSS425 Scaffold2, whole genome shotgun sequence
+36. NC_017617	Streptococcus suis GZ1, complete sequence
+37. NC_017950	Streptococcus suis ST1, complete sequence
+38. NZ_AP023392	Streptococcus suis strain DAT300 chromosome, complete genome
+39. NZ_CP002007	Streptococcus suis 05HAS68 chromosome, complete genome
+40. NZ_CP008921	Streptococcus suis 6407 chromosome, complete genome
+41. NZ_CP015557	Streptococcus suis strain DN13 chromosome, complete genome
+42. NZ_CP071806	Streptococcus suis strain GX69 chromosome, complete genome
+43. NZ_CP078543	Streptococcus suis YB51 strain Colony29 chromosome
+44. NZ_CP031970	Streptococcus suis strain SFJ44 chromosome, complete genome
+45. NZ_CP073084	Streptococcus oriscaviae strain HKU75 chromosome, complete genome
+46. NZ_LR738723	Streptococcus suis isolate GD-0088 chromosome 1
+47. NZ_CP029398	Streptococcus suis strain HN105 chromosome, complete genome
+48. NZ_CP068708	Streptococcus suis strain ID33329 chromosome, complete genome
+49. NZ_CP071305	Streptococcus suis strain SC183 chromosome, complete genome
+50. NZ_CP102094	Streptococcus suis strain 12RC1 chromosome, complete genome
+
+
+Details:
+
+>>
+1. NZ_JADMNS010000001
+Source: Massiliimalia timonensis strain 1001287H_170206_D5 NODE_1_length_726486_cov_66.8581, whole genome shotgun sequence
+Type: phosphonate
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 647.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg63_2	I2G46_RS01035	38	171	88.65979381443299	1.76e-49
+ctg63_3	I2G46_RS01030	41	188	95.19999999999999	4.23e-57
+ctg63_4	I2G46_RS01015	45	236	97.26962457337885	7.28e-75
+ctg63_5	I2G46_RS01010	40	52	63.33333333333333	1.53e-08
+
+
+
+>>
+2. NZ_CP027747
+Source: Pseudomonas chlororaphis subsp. aureofaciens strain 66 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 554.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg63_4	C4K10_RS15290	44	223	93.51535836177474	8.73e-68
+ctg63_10	C4K10_RS15230	32	113	96.07843137254902	2.62e-28
+ctg63_11	C4K10_RS15225	39	218	95.75757575757575	6e-67
+
+
+
+>>
+3. NZ_AP014623
+Source: Pseudomonas chlororaphis subsp. aurantiaca strain StFRB508 chromosome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 552.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg63_4	PCAU_RS14805	44	223	93.51535836177474	1.23e-67
+ctg63_10	PCAU_RS14740	32	113	96.07843137254902	2.62e-28
+ctg63_11	PCAU_RS14735	39	216	95.75757575757575	1.69e-66
+
+
+
+>>
+4. NZ_CP025309
+Source: Pseudomonas chlororaphis strain Lzh-T5 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 551.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg63_4	CXP47_RS14870	44	221	93.51535836177474	4.83e-67
+ctg63_10	CXP47_RS14800	32	113	96.07843137254902	2.62e-28
+ctg63_11	CXP47_RS14795	39	217	95.75757575757575	8.48e-67
+
+
+
+>>
+5. NZ_CP102374
+Source: Pseudomonas sp. T8 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 551.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg63_4	NRG23_RS03950	44	221	93.51535836177474	4.83e-67
+ctg63_10	NRG23_RS04010	32	113	96.07843137254902	2.62e-28
+ctg63_11	NRG23_RS04015	39	217	95.75757575757575	8.48e-67
+
+
+
+>>
+6. NZ_CP040506
+Source: Hungatella hathewayi WAL-18680 chromosome, complete genome
+Type: cyclic-lactone-autoinducer
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 543.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg63_2	FFD75_RS21750	33	162	95.1890034364261	2.31e-46
+ctg63_3	FFD75_RS21745	44	202	95.19999999999999	1.31e-62
+ctg63_4	FFD75_RS21735	38	179	95.56313993174061	8.83e-53
+
+
+
+>>
+7. NZ_JACHHH010000002
+Source: Oribacterium sinus strain DSM 17245 Ga0415240_02, whole genome shotgun sequence
+Type: phosphonate
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 512.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg63_2	HNQ46_RS02580	37	142	75.94501718213058	1.65e-38
+ctg63_3	HNQ46_RS02575	46	199	100.0	3.78e-61
+ctg63_4	HNQ46_RS02565	39	171	102.04778156996588	5.93e-49
+
+
+
+>>
+8. NZ_CP030040
+Source: Acetobacterium sp. KB-1 chromosome
+Type: ranthipeptide
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 417.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg63_3	DOZ58_RS17170	45	191	94.8	3.88e-58
+ctg63_4	DOZ58_RS17165	49	226	91.46757679180887	4.69e-71
+
+
+
+>>
+9. NZ_CP048051
+Source: Pseudomonas chlororaphis subsp. aurantiaca strain zm-1 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 414.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg63_4	GSF17_RS15445	45	85	29.01023890784983	5.13e-17
+ctg63_10	GSF17_RS15380	31	112	96.07843137254902	5.15e-28
+ctg63_11	GSF17_RS15375	39	217	95.75757575757575	8.48e-67
+
+
+
+>>
+10. NZ_CP087994
+Source: Acetobacterium wieringae strain Y chromosome, complete genome
+Type: ranthipeptide
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 412.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg63_3	LNN31_RS13955	45	191	94.8	2.74e-58
+ctg63_4	LNN31_RS13960	45	221	98.63481228668942	4.25e-69
+
+
+
+>>
+11. NZ_CP097897
+Source: Acetobacterium wieringae strain CH1 chromosome, complete genome
+Type: ranthipeptide
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 412.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg63_3	CHL1_RS12670	45	191	94.8	2.91e-58
+ctg63_4	CHL1_RS12675	45	221	98.63481228668942	4.25e-69
+
+
+
+>>
+12. NC_016894
+Source: Acetobacterium woodii DSM 1030, complete sequence
+Type: ranthipeptide
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 412.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg63_3	AWO_RS06780	44	189	94.8	2.19e-57
+ctg63_4	AWO_RS06775	49	223	91.80887372013652	1.06e-69
+
+
+
+>>
+13. NZ_AXAC01000031
+Source: Acetobacterium dehalogenans DSM 11527 A3KSDRAFT_scaffold_27.28_C, whole genome shotgun sequence
+Type: ranthipeptide
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 411.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg63_3	A3KS_RS21210	45	191	94.8	2.74e-58
+ctg63_4	A3KS_RS0112640	45	220	98.63481228668942	1.7e-68
+
+
+
+>>
+14. NZ_AP023391
+Source: Streptococcus suis strain DAT299 chromosome, complete genome
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 352.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg63_3	H7677_RS07505	39	166	98.4	2.1e-48
+ctg63_4	H7677_RS07510	43	186	89.419795221843	3.02e-55
+
+
+
+>>
+15. NZ_JAFFHI010000003
+Source: Streptococcus suis strain K06-WJ Scaffold3, whole genome shotgun sequence
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 350.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg63_3	JN541_RS04055	39	162	100.4	9.3e-47
+ctg63_4	JN541_RS04050	43	188	89.419795221843	3.81e-56
+
+
+
+>>
+16. NZ_CP017088
+Source: Streptococcus suis strain SRD478 chromosome, complete genome
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 349.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg63_3	A7J08_RS07620	39	163	98.4	2.34e-47
+ctg63_4	A7J08_RS07625	43	186	89.419795221843	2.14e-55
+
+
+
+>>
+17. NZ_CP030125
+Source: Streptococcus suis strain HA1003 chromosome, complete genome
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 349.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg63_3	DP112_RS02625	39	163	99.2	2.34e-47
+ctg63_4	DP112_RS02620	43	186	89.419795221843	2.14e-55
+
+
+
+>>
+18. NZ_JAFHCS010000001
+Source: Streptococcus suis strain 2018WUSS100 Scaffold1, whole genome shotgun sequence
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 349.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg63_3	JXW66_RS02020	39	163	99.2	2.34e-47
+ctg63_4	JXW66_RS02025	42	186	89.419795221843	2.14e-55
+
+
+
+>>
+19. NZ_LR738724
+Source: Streptococcus suis isolate 9401240 chromosome 1
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 349.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg63_3	GPW69_RS02545	39	163	99.2	2.34e-47
+ctg63_4	GPW69_RS02540	42	186	89.419795221843	3.02e-55
+
+
+
+>>
+20. NZ_CP082203
+Source: Streptococcus suis strain NJ3 chromosome, complete genome
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 349.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg63_3	K6972_RS02855	38	161	99.2	1.85e-46
+ctg63_4	K6972_RS02850	43	188	89.419795221843	3.81e-56
+
+
+
+>>
+21. NC_021213
+Source: Streptococcus suis TL13, complete sequence
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 348.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg63_3	TL13_RS07220	39	162	98.4	9.3e-47
+ctg63_4	TL13_RS07225	43	186	89.419795221843	2.14e-55
+
+
+
+>>
+22. NZ_CP100430
+Source: Streptococcus suis strain LSS42 chromosome, complete genome
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 348.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg63_3	NLY76_RS07705	39	162	98.4	9.3e-47
+ctg63_4	NLY76_RS07710	43	186	89.419795221843	3.02e-55
+
+
+
+>>
+23. NZ_JAIJZP010000004
+Source: Streptococcus sp. 2018162 Scaffold4, whole genome shotgun sequence
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 348.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg63_3	K5Q22_RS05200	39	161	98.4	1.31e-46
+ctg63_4	K5Q22_RS05205	42	187	89.419795221843	5.38e-56
+
+
+
+>>
+24. NZ_CP030124
+Source: Streptococcus suis strain SH1510 chromosome, complete genome
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 347.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg63_3	DP111_RS03370	39	161	98.4	1.85e-46
+ctg63_4	DP111_RS03365	43	186	89.419795221843	2.14e-55
+
+
+
+>>
+25. NZ_JAMYJP010000005
+Source: Streptococcus suis strain 2018WUSS047 Scaffold5, whole genome shotgun sequence
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 347.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg63_3	NKE68_RS03115	38	161	98.4	1.85e-46
+ctg63_4	NKE68_RS03120	42	186	89.419795221843	3.02e-55
+
+
+
+>>
+26. NZ_JAMYIY010000001
+Source: Streptococcus suis strain WUSS314 Scaffold1, whole genome shotgun sequence
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 347.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg63_3	NKE64_RS00385	39	160	98.4	2.61e-46
+ctg63_4	NKE64_RS00380	42	187	89.419795221843	1.07e-55
+
+
+
+>>
+27. NZ_FIMB01000005
+Source: Streptococcus suis strain SS997, whole genome shotgun sequence
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 346.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg63_3	A0E53_RS05390	39	161	98.4	1.28e-46
+ctg63_4	A0E53_RS05395	43	185	89.419795221843	6.01e-55
+
+
+
+>>
+28. NC_017621
+Source: Streptococcus suis D12, complete sequence
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 346.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg63_3	SSUD12_RS08025	39	161	98.4	1.31e-46
+ctg63_4	SSUD12_RS08030	43	185	89.419795221843	4.26e-55
+
+
+
+>>
+29. NZ_CP017666
+Source: Streptococcus suis strain 0061 chromosome, complete genome
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 346.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg63_3	BKM66_RS02665	39	161	98.4	1.31e-46
+ctg63_4	BKM66_RS02660	43	185	89.419795221843	4.26e-55
+
+
+
+>>
+30. NZ_CP039462
+Source: Streptococcus suis strain WUSS351 chromosome, complete genome
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 346.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg63_3	E8M06_RS02835	39	161	98.4	1.31e-46
+ctg63_4	E8M06_RS02830	43	185	89.419795221843	6.01e-55
+
+
+
+>>
+31. NZ_FILS01000009
+Source: Streptococcus suis strain SS986, whole genome shotgun sequence
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 346.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg63_3	A0495_RS04795	39	161	98.4	1.31e-46
+ctg63_4	A0495_RS04800	43	185	89.419795221843	6.01e-55
+
+
+
+>>
+32. NZ_JAEUXE010000001
+Source: Streptococcus suis strain HM55 Scaffold1, whole genome shotgun sequence
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 346.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg63_3	JNE33_RS01405	39	161	98.4	1.31e-46
+ctg63_4	JNE33_RS01410	42	185	89.419795221843	6.01e-55
+
+
+
+>>
+33. NZ_JAFHDO010000001
+Source: Streptococcus suis strain 128.01B Scaffold1, whole genome shotgun sequence
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 346.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg63_3	JXX17_RS00565	39	161	98.4	1.31e-46
+ctg63_4	JXX17_RS00570	43	185	89.419795221843	6.01e-55
+
+
+
+>>
+34. NZ_JAJUWV010000001
+Source: Streptococcus suis strain Ss39 contig01, whole genome shotgun sequence
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 346.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg63_3	LZF89_RS07760	39	161	98.4	1.31e-46
+ctg63_4	LZF89_RS07765	43	185	89.419795221843	6.01e-55
+
+
+
+>>
+35. NZ_SSXP01000002
+Source: Streptococcus suis strain WUSS425 Scaffold2, whole genome shotgun sequence
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 346.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg63_3	FAJ34_RS02135	39	161	98.4	1.31e-46
+ctg63_4	FAJ34_RS02130	42	185	89.419795221843	4.26e-55
+
+
+
+>>
+36. NC_017617
+Source: Streptococcus suis GZ1, complete sequence
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 346.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg63_3	SSGZ1_RS07535	39	161	98.4	1.85e-46
+ctg63_4	SSGZ1_RS07540	43	185	89.419795221843	6.01e-55
+
+
+
+>>
+37. NC_017950
+Source: Streptococcus suis ST1, complete sequence
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 346.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg63_3	SSUST1_RS07485	39	161	98.4	1.85e-46
+ctg63_4	SSUST1_RS07490	43	185	89.419795221843	6.01e-55
+
+
+
+>>
+38. NZ_AP023392
+Source: Streptococcus suis strain DAT300 chromosome, complete genome
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 346.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg63_3	H7679_RS08405	39	161	98.4	1.85e-46
+ctg63_4	H7679_RS08410	43	185	89.419795221843	4.26e-55
+
+
+
+>>
+39. NZ_CP002007
+Source: Streptococcus suis 05HAS68 chromosome, complete genome
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 346.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg63_3	HAS68_RS08165	39	161	98.4	1.85e-46
+ctg63_4	HAS68_RS08170	43	185	89.419795221843	6.01e-55
+
+
+
+>>
+40. NZ_CP008921
+Source: Streptococcus suis 6407 chromosome, complete genome
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 346.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg63_3	ID09_RS08345	39	161	98.4	1.85e-46
+ctg63_4	ID09_RS08350	43	185	89.419795221843	6.01e-55
+
+
+
+>>
+41. NZ_CP015557
+Source: Streptococcus suis strain DN13 chromosome, complete genome
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 346.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg63_3	A6M16_RS07700	39	161	98.4	1.85e-46
+ctg63_4	A6M16_RS07705	43	185	89.419795221843	4.26e-55
+
+
+
+>>
+42. NZ_CP071806
+Source: Streptococcus suis strain GX69 chromosome, complete genome
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 346.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg63_3	JZ789_RS08795	39	161	98.4	1.85e-46
+ctg63_4	JZ789_RS08800	43	185	89.419795221843	6.01e-55
+
+
+
+>>
+43. NZ_CP078543
+Source: Streptococcus suis YB51 strain Colony29 chromosome
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 346.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg63_3	JTJ04_RS06790	39	161	98.4	1.85e-46
+ctg63_4	JTJ04_RS06795	43	185	89.419795221843	6.01e-55
+
+
+
+>>
+44. NZ_CP031970
+Source: Streptococcus suis strain SFJ44 chromosome, complete genome
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 346.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg63_3	D2A30_RS07910	39	160	98.4	5.2e-46
+ctg63_4	D2A30_RS07915	42	186	89.419795221843	2.14e-55
+
+
+
+>>
+45. NZ_CP073084
+Source: Streptococcus oriscaviae strain HKU75 chromosome, complete genome
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 345.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg63_3	INT76_RS03715	38	164	99.2	8.34e-48
+ctg63_4	INT76_RS03720	42	181	90.10238907849829	1.94e-53
+
+
+
+>>
+46. NZ_LR738723
+Source: Streptococcus suis isolate GD-0088 chromosome 1
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 345.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg63_3	GPW68_RS08530	39	162	98.4	9.3e-47
+ctg63_4	GPW68_RS08535	43	183	86.3481228668942	2.39e-54
+
+
+
+>>
+47. NZ_CP029398
+Source: Streptococcus suis strain HN105 chromosome, complete genome
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 345.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg63_3	DF184_RS02690	39	161	98.4	1.31e-46
+ctg63_4	DF184_RS02685	43	184	89.419795221843	8.49e-55
+
+
+
+>>
+48. NZ_CP068708
+Source: Streptococcus suis strain ID33329 chromosome, complete genome
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 345.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg63_3	JM964_RS07150	39	161	98.4	1.31e-46
+ctg63_4	JM964_RS07155	43	184	89.419795221843	8.49e-55
+
+
+
+>>
+49. NZ_CP071305
+Source: Streptococcus suis strain SC183 chromosome, complete genome
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 345.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg63_3	JZY07_RS08770	39	161	98.4	1.31e-46
+ctg63_4	JZY07_RS08775	43	184	89.419795221843	8.49e-55
+
+
+
+>>
+50. NZ_CP102094
+Source: Streptococcus suis strain 12RC1 chromosome, complete genome
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 345.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg63_3	NQZ84_RS02605	39	161	98.4	1.31e-46
+ctg63_4	NQZ84_RS02600	43	184	89.419795221843	8.49e-55
+

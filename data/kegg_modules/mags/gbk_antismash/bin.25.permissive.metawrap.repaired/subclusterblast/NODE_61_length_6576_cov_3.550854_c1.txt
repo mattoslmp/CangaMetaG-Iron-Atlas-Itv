@@ -1,0 +1,18 @@
+ClusterBlast scores for NODE_61_length_6576_cov_3.550854
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg61_1	104	1106	+		
+ctg61_2	1106	2816	+		
+ctg61_3	2821	3682	+		
+ctg61_4	3735	4044	+		
+ctg61_5	4089	4359	+		
+ctg61_6	4384	5152	+		
+ctg61_7	5190	5541	+		
+ctg61_8	5542	6124	-		
+ctg61_9	6158	6575	-		
+
+
+Significant hits: 
+
+
+Details:

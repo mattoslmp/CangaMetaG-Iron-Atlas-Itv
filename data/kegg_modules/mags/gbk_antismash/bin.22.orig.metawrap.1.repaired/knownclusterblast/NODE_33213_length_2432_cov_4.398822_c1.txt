@@ -1,0 +1,14 @@
+ClusterBlast scores for NODE_33213_length_2432_cov_4.398822
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg219_1	0	312	+		
+ctg219_2	366	1293	+		
+ctg219_3	1300	1432	-		
+ctg219_4	1605	1968	+		
+ctg219_5	1964	2432	+		
+
+
+Significant hits: 
+
+
+Details:

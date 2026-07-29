@@ -1,0 +1,12 @@
+ClusterBlast scores for NODE_224_length_6479_cov_2.086223
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg224_1	1	2368	-		
+ctg224_2	2472	5058	-		
+ctg224_3	5337	6465	+		
+
+
+Significant hits: 
+
+
+Details:

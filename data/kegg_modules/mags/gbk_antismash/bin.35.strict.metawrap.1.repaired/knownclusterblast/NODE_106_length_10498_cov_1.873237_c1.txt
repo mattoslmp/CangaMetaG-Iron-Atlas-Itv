@@ -1,0 +1,17 @@
+ClusterBlast scores for NODE_106_length_10498_cov_1.873237
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg106_1	2	3185	+		
+ctg106_2	3195	4269	+		
+ctg106_3	4562	5186	+		
+ctg106_4	5232	6747	+		
+ctg106_5	6865	8140	+		
+ctg106_6	8257	10336	+		
+allorf_08154_08261	8153	8261	+		
+allorf_04356_04478	4355	4478	-		
+
+
+Significant hits: 
+
+
+Details:

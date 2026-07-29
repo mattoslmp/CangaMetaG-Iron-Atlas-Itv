@@ -1,0 +1,384 @@
+ClusterBlast scores for NODE_221_length_6512_cov_3.251748
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg221_1	338	1154	-		
+ctg221_2	1150	1969	-		
+ctg221_3	2162	2468	+		
+ctg221_4	2442	2907	+		
+ctg221_5	3073	4150	-		
+ctg221_6	4197	4962	-		
+ctg221_7	5044	6511	-		
+
+
+Significant hits: 
+1. NZ_KB235948	Oscillatoria sp. PCC 10802 Osc10802DRAFT_Contig7.7, whole genome shotgun sequence
+2. NZ_JAIQZM010000012	Argonema galeatum A003/A1 NODE_22_length_179773_cov_34.506444, whole genome shotgun sequence
+3. NZ_CP060140	Nodularia sphaerocarpa UHCC 0038 chromosome, complete genome
+4. NZ_JADEWH010000002	Nodularia sp. LEGE 06071 N071000002, whole genome shotgun sequence
+5. NZ_JH980292	Spirulina subsalsa PCC 9445 Contig210, whole genome shotgun sequence
+6. NC_019940	Thioflavicoccus mobilis 8321, complete sequence
+7. NC_020304	Desulfocapsa sulfexigens DSM 10523, complete sequence
+8. NZ_CP070950	Conexibacter sp. SYSU D00693 chromosome
+9. NZ_QXHD01000004	Adonisia turfae CCMR0081 Scaffold_3b, whole genome shotgun sequence
+10. NZ_CP062983	Phototrophicus methaneseepsis strain ZRK33 chromosome, complete genome
+11. NZ_AP023257	Mesorhizobium sp. L-2-11 chromosome, complete genome
+12. NZ_CP034452	Mesorhizobium sp. M6A.T.Cr.TU.016.01.1.1 chromosome
+13. NZ_CP062229	Mesorhizobium onobrychidis strain OM4 chromosome, complete genome
+14. NZ_CP023278	Nostoc sp. CENA543 chromosome, complete genome
+15. NZ_AUDK01000006	Flavobacterium daejeonense DSM 17708 H599DRAFT_scaffold00006.6_C, whole genome shotgun sequence
+16. NZ_CP077604	Aquihabitans sp. G128 chromosome, complete genome
+17. NZ_CP073779	Rubrobacter xylanophilus DSM 9941 chromosome
+18. NC_008148	Rubrobacter xylanophilus DSM 9941, complete sequence
+19. NZ_AP019791	Rubrobacter xylanophilus strain AA3-22 chromosome, complete genome
+20. NC_007912	Saccharophagus degradans 2-40, complete sequence
+21. NZ_JAHKPP010000014	Saccharophagus degradans strain E3M17 E3M17_E3M17_contig_32, whole genome shotgun sequence
+22. NZ_AP014638	Leptolyngbya boryana IAM M-101 chromosome
+23. NZ_KB235914	Pseudanabaena sp. PCC 6802 Pse6802_scaffold_5, whole genome shotgun sequence
+
+
+Details:
+
+>>
+1. NZ_KB235948
+Source: Oscillatoria sp. PCC 10802 Osc10802DRAFT_Contig7.7, whole genome shotgun sequence
+Type: RRE-containing,lassopeptide
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 244.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg221_3	OSC10802_RS0118365	49	76	77.22772277227723	1.79e-17
+ctg221_4	OSC10802_RS0118360	42	97	92.85714285714286	2.65e-24
+ctg221_4	OSC10802_RS40770	49	71	46.103896103896105	5.44e-15
+
+
+
+>>
+2. NZ_JAIQZM010000012
+Source: Argonema galeatum A003/A1 NODE_22_length_179773_cov_34.506444, whole genome shotgun sequence
+Type: RRE-containing,lassopeptide
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 183.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg221_3	LAY41_RS15170	53	92	88.11881188118812	6.94e-24
+ctg221_4	LAY41_RS15175	40	91	96.75324675324676	1.23e-21
+
+
+
+>>
+3. NZ_CP060140
+Source: Nodularia sphaerocarpa UHCC 0038 chromosome, complete genome
+Type: RRE-containing,lassopeptide
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 170.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg221_3	BDGGKGIB_RS01950	46	71	77.22772277227723	1.57e-15
+ctg221_4	BDGGKGIB_RS01945	42	99	94.15584415584416	7e-25
+
+
+
+>>
+4. NZ_JADEWH010000002
+Source: Nodularia sp. LEGE 06071 N071000002, whole genome shotgun sequence
+Type: RRE-containing,lassopeptide
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 168.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg221_3	IQ233_RS04475	46	71	77.22772277227723	1.57e-15
+ctg221_4	IQ233_RS04480	41	97	96.1038961038961	3.7e-24
+
+
+
+>>
+5. NZ_JH980292
+Source: Spirulina subsalsa PCC 9445 Contig210, whole genome shotgun sequence
+Type: RRE-containing
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 149.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg221_3	SPI9445_RS0120255	43	67	85.14851485148515	9.98e-14
+ctg221_4	SPI9445_RS0120250	40	82	95.45454545454545	2.97e-18
+
+
+
+>>
+6. NC_019940
+Source: Thioflavicoccus mobilis 8321, complete sequence
+Type: RRE-containing
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 137.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg221_2	THIMO_RS16970	36	81	76.83823529411765	6.82e-15
+ctg221_3	THIMO_RS16965	36	56	71.28712871287128	1.23e-09
+
+
+
+>>
+7. NC_020304
+Source: Desulfocapsa sulfexigens DSM 10523, complete sequence
+Type: RRE-containing
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 196.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg221_2	UWK_RS08860	36	145	94.11764705882352	6.95e-40
+ctg221_3	UWK_RS08845	31	51	74.25742574257426	1.13e-07
+
+
+
+>>
+8. NZ_CP070950
+Source: Conexibacter sp. SYSU D00693 chromosome
+Type: RRE-containing
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 161.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg221_2	JUB12_RS19515	36	94	72.42647058823529	7.19e-21
+ctg221_3	JUB12_RS19535	44	67	83.16831683168317	6.71e-14
+
+
+
+>>
+9. NZ_QXHD01000004
+Source: Adonisia turfae CCMR0081 Scaffold_3b, whole genome shotgun sequence
+Type: lassopeptide
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 155.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg221_3	DXZ20_RS06240	44	73	81.1881188118812	2.75e-16
+ctg221_4	DXZ20_RS06280	41	82	76.62337662337663	1.62e-18
+
+
+
+>>
+10. NZ_CP062983
+Source: Phototrophicus methaneseepsis strain ZRK33 chromosome, complete genome
+Type: RRE-containing
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 149.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg221_2	G4Y79_RS11750	34	87	80.88235294117648	4.15e-17
+ctg221_3	G4Y79_RS11770	38	62	78.21782178217822	4.35e-12
+
+
+
+>>
+11. NZ_AP023257
+Source: Mesorhizobium sp. L-2-11 chromosome, complete genome
+Type: RRE-containing,lassopeptide
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 143.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg221_3	JG739_RS23180	37	68	88.11881188118812	3.34e-14
+ctg221_4	JG739_RS23155	48	75	51.298701298701296	2.73e-15
+
+
+
+>>
+12. NZ_CP034452
+Source: Mesorhizobium sp. M6A.T.Cr.TU.016.01.1.1 chromosome
+Type: RRE-containing,lassopeptide
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 141.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg221_3	EJ075_RS02395	36	68	88.11881188118812	3.34e-14
+ctg221_4	EJ075_RS02420	48	73	51.298701298701296	1.06e-14
+
+
+
+>>
+13. NZ_CP062229
+Source: Mesorhizobium onobrychidis strain OM4 chromosome, complete genome
+Type: RRE-containing,lassopeptide
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 138.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg221_3	IHQ72_RS29160	36	65	85.14851485148515	3.82e-13
+ctg221_4	IHQ72_RS29195	48	73	51.298701298701296	1.43e-15
+
+
+
+>>
+14. NZ_CP023278
+Source: Nostoc sp. CENA543 chromosome, complete genome
+Type: RRE-containing,lassopeptide
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 137.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg221_2	CLI64_RS13305	34	88	82.72058823529412	2.25e-17
+ctg221_3	CLI64_RS13325	32	49	71.28712871287128	9.61e-07
+
+
+
+>>
+15. NZ_AUDK01000006
+Source: Flavobacterium daejeonense DSM 17708 H599DRAFT_scaffold00006.6_C, whole genome shotgun sequence
+Type: NRPS,NRPS-like
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 284.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg221_1	H599_RS0107115	33	138	94.0959409594096	2.7e-37
+ctg221_2	H599_RS19325	34	146	93.38235294117648	1.98e-40
+
+
+
+>>
+16. NZ_CP077604
+Source: Aquihabitans sp. G128 chromosome, complete genome
+Type: RRE-containing
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 259.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg221_1	KSP35_RS02490	36	133	94.8339483394834	2.55e-35
+ctg221_2	KSP35_RS02485	37	126	95.58823529411765	5.31e-33
+
+
+
+>>
+17. NZ_CP073779
+Source: Rubrobacter xylanophilus DSM 9941 chromosome
+Type: NI-siderophore
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 244.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg221_1	Rxycam_RS12390	33	104	76.75276752767527	2.6e-24
+ctg221_2	Rxycam_RS12385	38	140	87.86764705882352	3.5e-38
+
+
+
+>>
+18. NC_008148
+Source: Rubrobacter xylanophilus DSM 9941, complete sequence
+Type: NI-siderophore
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 242.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg221_1	RXYL_RS02050	33	104	76.75276752767527	2.55e-24
+ctg221_2	RXYL_RS02045	37	138	88.23529411764706	2.39e-37
+
+
+
+>>
+19. NZ_AP019791
+Source: Rubrobacter xylanophilus strain AA3-22 chromosome, complete genome
+Type: NI-siderophore
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 242.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg221_1	RxyAA322_RS13975	32	101	76.75276752767527	2.64e-23
+ctg221_2	RxyAA322_RS13970	37	141	87.86764705882352	1.26e-38
+
+
+
+>>
+20. NC_007912
+Source: Saccharophagus degradans 2-40, complete sequence
+Type: NRPS,T1PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 179.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg221_2	SDE_RS19520	37	125	71.69117647058823	2.33e-32
+ctg221_5	SDE_RS19495	34	54	27.37430167597765	7.12e-06
+
+
+
+>>
+21. NZ_JAHKPP010000014
+Source: Saccharophagus degradans strain E3M17 E3M17_E3M17_contig_32, whole genome shotgun sequence
+Type: NRPS,T1PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 179.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg221_2	KO528_RS06290	37	125	71.69117647058823	2.33e-32
+ctg221_5	KO528_RS06320	34	54	27.37430167597765	7.12e-06
+
+
+
+>>
+22. NZ_AP014638
+Source: Leptolyngbya boryana IAM M-101 chromosome
+Type: lassopeptide
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 168.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg221_2	LBWT_RS17855	34	84	92.27941176470588	6.18e-16
+ctg221_4	LBWT_RS17885	41	84	83.11688311688312	2.86e-17
+
+
+
+>>
+23. NZ_KB235914
+Source: Pseudanabaena sp. PCC 6802 Pse6802_scaffold_5, whole genome shotgun sequence
+Type: lassopeptide
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 163.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg221_2	PSE6802_RS0107535	36	87	84.19117647058823	4.11e-17
+ctg221_4	PSE6802_RS28155	33	76	92.85714285714286	4.87e-16
+

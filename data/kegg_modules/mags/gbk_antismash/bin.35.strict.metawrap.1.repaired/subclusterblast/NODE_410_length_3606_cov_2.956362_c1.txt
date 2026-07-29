@@ -1,0 +1,14 @@
+ClusterBlast scores for NODE_410_length_3606_cov_2.956362
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg410_1	2	197	-		
+ctg410_2	291	1200	+		
+ctg410_3	1208	2228	+		
+ctg410_4	2214	2907	+		
+ctg410_5	3122	3605	+		
+
+
+Significant hits: 
+
+
+Details:

@@ -1,0 +1,27 @@
+ClusterBlast scores for NODE_15293_length_3585_cov_6.994334
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg75_1	0	1146	-		
+ctg75_2	1158	2148	-		
+ctg75_3	2218	3583	-		
+
+
+Significant hits: 
+1. NZ_JACHXB010000002	Geodermatophilus sabuli strain CECT 8820 Ga0372439_02, whole genome shotgun sequence
+
+
+Details:
+
+>>
+1. NZ_JACHXB010000002
+Source: Geodermatophilus sabuli strain CECT 8820 Ga0372439_02, whole genome shotgun sequence
+Type: indole,lanthipeptide-class-iv
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 223.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg75_1	FHR93_RS11445	34	84	34.81675392670157	9.76e-16
+ctg75_2	FHR93_RS11415	31	139	100.6079027355623	1.98e-36
+

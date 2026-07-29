@@ -1,0 +1,141 @@
+display_group,taxon,count_or_abundance,relative_abundance_percent,taxonomy_level,layer_filter,top_n,colour_hex,script,input_table
+Additional AMD group: Akron / Pennsylvania–Ohio lab-enriched AMD,Archaea:Halobacteriota,26128,0.3041479857820595,Phylum,Metagenomics,20,#F547E7,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Additional AMD group: Akron / Pennsylvania–Ohio lab-enriched AMD,Archaea:Thermoproteota,51142,0.5953282413068772,Phylum,Metagenomics,20,#ADB820,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Additional AMD group: Akron / Pennsylvania–Ohio lab-enriched AMD,Bacteria:Acidobacteriota,843990,9.82462716320424,Phylum,Metagenomics,20,#C371E7,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Additional AMD group: Akron / Pennsylvania–Ohio lab-enriched AMD,Bacteria:Actinomycetota,1188587,13.835974509213896,Phylum,Metagenomics,20,#EAAD36,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Additional AMD group: Akron / Pennsylvania–Ohio lab-enriched AMD,Bacteria:Bacillota,114435,1.3321025242257338,Phylum,Metagenomics,20,#3AF345,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Additional AMD group: Akron / Pennsylvania–Ohio lab-enriched AMD,Bacteria:Bacillota_A,43214,0.5030408396197917,Phylum,Metagenomics,20,#D251BD,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Additional AMD group: Akron / Pennsylvania–Ohio lab-enriched AMD,Bacteria:Bacillota_B,43127,0.502028099465052,Phylum,Metagenomics,20,#609F27,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Additional AMD group: Akron / Pennsylvania–Ohio lab-enriched AMD,Bacteria:Bacteroidota,391202,4.553861770281431,Phylum,Metagenomics,20,#BF5CD9,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Additional AMD group: Akron / Pennsylvania–Ohio lab-enriched AMD,Bacteria:Chloroflexota,180933,2.106185223189887,Phylum,Metagenomics,20,#215EAD,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Additional AMD group: Akron / Pennsylvania–Ohio lab-enriched AMD,Bacteria:Cyanobacteriota,147442,1.7163268263808336,Phylum,Metagenomics,20,#CE7012,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Additional AMD group: Akron / Pennsylvania–Ohio lab-enriched AMD,Bacteria:Desulfobacterota,183592,2.137137821712334,Phylum,Metagenomics,20,#0F12A1,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Additional AMD group: Akron / Pennsylvania–Ohio lab-enriched AMD,Bacteria:Gemmatimonadota,170901,1.9894058067261078,Phylum,Metagenomics,20,#A050DB,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Additional AMD group: Akron / Pennsylvania–Ohio lab-enriched AMD,Bacteria:Myxococcota,280376,3.263770501440245,Phylum,Metagenomics,20,#BBEC20,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Additional AMD group: Akron / Pennsylvania–Ohio lab-enriched AMD,Bacteria:Nitrospirota,104296,1.2140775537785393,Phylum,Metagenomics,20,#16F78E,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Additional AMD group: Akron / Pennsylvania–Ohio lab-enriched AMD,Bacteria:Patescibacteria,3169,0.03688935115367983,Phylum,Metagenomics,20,#E36AE6,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Additional AMD group: Akron / Pennsylvania–Ohio lab-enriched AMD,Bacteria:Planctomycetota,418607,4.872874919024441,Phylum,Metagenomics,20,#20419F,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Additional AMD group: Akron / Pennsylvania–Ohio lab-enriched AMD,Bacteria:Pseudomonadota,4049283,47.1364539310906,Phylum,Metagenomics,20,#59FAB4,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Additional AMD group: Akron / Pennsylvania–Ohio lab-enriched AMD,Bacteria:Verrucomicrobiota,221289,2.5759569666919075,Phylum,Metagenomics,20,#5BD6A6,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Additional AMD group: Akron / Pennsylvania–Ohio lab-enriched AMD,Other taxa,128842,1.4998099657123434,Phylum,Metagenomics,20,#D4A373,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Control: Burr Oak Reservoir BO4,Archaea:Halobacteriota,33,0.04780253208563896,Phylum,Metagenomics,20,#F547E7,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Control: Burr Oak Reservoir BO4,Archaea:Methanobacteriota,3,0.004345684735058087,Phylum,Metagenomics,20,#B8315D,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Control: Burr Oak Reservoir BO4,Archaea:Thermoproteota,1,0.0014485615783526957,Phylum,Metagenomics,20,#ADB820,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Control: Burr Oak Reservoir BO4,Bacteria:Acidobacteriota,85,0.12312773415997914,Phylum,Metagenomics,20,#C371E7,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Control: Burr Oak Reservoir BO4,Bacteria:Actinomycetota,1764,2.555262624214155,Phylum,Metagenomics,20,#EAAD36,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Control: Burr Oak Reservoir BO4,Bacteria:Bacillota,116,0.1680331430889127,Phylum,Metagenomics,20,#3AF345,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Control: Burr Oak Reservoir BO4,Bacteria:Bacillota_A,30,0.04345684735058088,Phylum,Metagenomics,20,#D251BD,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Control: Burr Oak Reservoir BO4,Bacteria:Bacillota_B,28,0.040559724193875484,Phylum,Metagenomics,20,#609F27,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Control: Burr Oak Reservoir BO4,Bacteria:Bacteroidota,6407,9.280934032505723,Phylum,Metagenomics,20,#BF5CD9,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Control: Burr Oak Reservoir BO4,Bacteria:Chloroflexota,38,0.05504533997740244,Phylum,Metagenomics,20,#215EAD,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Control: Burr Oak Reservoir BO4,Bacteria:Cyanobacteriota,308,0.4461569661326303,Phylum,Metagenomics,20,#CE7012,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Control: Burr Oak Reservoir BO4,Bacteria:Desulfobacterota,220,0.31868354723759307,Phylum,Metagenomics,20,#0F12A1,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Control: Burr Oak Reservoir BO4,Bacteria:Gemmatimonadota,17,0.02462554683199583,Phylum,Metagenomics,20,#A050DB,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Control: Burr Oak Reservoir BO4,Bacteria:Myxococcota,86,0.12457629573833183,Phylum,Metagenomics,20,#BBEC20,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Control: Burr Oak Reservoir BO4,Bacteria:Nitrospirota,6823,9.883535649100443,Phylum,Metagenomics,20,#16F78E,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Control: Burr Oak Reservoir BO4,Bacteria:Planctomycetota,92,0.13326766520844802,Phylum,Metagenomics,20,#20419F,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Control: Burr Oak Reservoir BO4,Bacteria:Pseudomonadota,52810,76.49853695280586,Phylum,Metagenomics,20,#59FAB4,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Control: Burr Oak Reservoir BO4,Bacteria:Verrucomicrobiota,50,0.07242807891763478,Phylum,Metagenomics,20,#5BD6A6,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Control: Burr Oak Reservoir BO4,Other taxa,123,0.1781730741373816,Phylum,Metagenomics,20,#D4A373,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Ferruginous lake/sediment group: Lake Matano,Archaea:Halobacteriota,140202,2.904195840264879,Phylum,Metagenomics,20,#F547E7,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Ferruginous lake/sediment group: Lake Matano,Archaea:Methanobacteriota,31020,0.6425596993268038,Phylum,Metagenomics,20,#B8315D,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Ferruginous lake/sediment group: Lake Matano,Archaea:Methanobacteriota_B,25977,0.5380971408579104,Phylum,Metagenomics,20,#CD2187,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Ferruginous lake/sediment group: Lake Matano,Archaea:Thermoproteota,63844,1.3224881187563011,Phylum,Metagenomics,20,#ADB820,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Ferruginous lake/sediment group: Lake Matano,Bacteria:Acidobacteriota,129942,2.6916664232728413,Phylum,Metagenomics,20,#C371E7,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Ferruginous lake/sediment group: Lake Matano,Bacteria:Actinomycetota,240839,4.988827705550229,Phylum,Metagenomics,20,#EAAD36,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Ferruginous lake/sediment group: Lake Matano,Bacteria:Bacillota,145162,3.0069391061791584,Phylum,Metagenomics,20,#3AF345,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Ferruginous lake/sediment group: Lake Matano,Bacteria:Bacillota_A,182463,3.7796057517171695,Phylum,Metagenomics,20,#D251BD,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Ferruginous lake/sediment group: Lake Matano,Bacteria:Bacillota_B,120139,2.488603472515244,Phylum,Metagenomics,20,#609F27,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Ferruginous lake/sediment group: Lake Matano,Bacteria:Bacteroidota,470598,9.748140212243559,Phylum,Metagenomics,20,#BF5CD9,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Ferruginous lake/sediment group: Lake Matano,Bacteria:Chloroflexota,333557,6.909422489630905,Phylum,Metagenomics,20,#215EAD,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Ferruginous lake/sediment group: Lake Matano,Bacteria:Cyanobacteriota,148256,3.071029361166816,Phylum,Metagenomics,20,#CE7012,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Ferruginous lake/sediment group: Lake Matano,Bacteria:Desulfobacterota,680591,14.098012518521235,Phylum,Metagenomics,20,#0F12A1,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Ferruginous lake/sediment group: Lake Matano,Bacteria:Gemmatimonadota,322,0.0066700265371770085,Phylum,Metagenomics,20,#A050DB,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Ferruginous lake/sediment group: Lake Matano,Bacteria:Myxococcota,75962,1.5735048317299376,Phylum,Metagenomics,20,#BBEC20,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Ferruginous lake/sediment group: Lake Matano,Bacteria:Nitrospirota,50830,1.052911331940085,Phylum,Metagenomics,20,#16F78E,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Ferruginous lake/sediment group: Lake Matano,Bacteria:Patescibacteria,176496,3.6560031170981158,Phylum,Metagenomics,20,#E36AE6,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Ferruginous lake/sediment group: Lake Matano,Bacteria:Planctomycetota,260631,5.398806479537208,Phylum,Metagenomics,20,#20419F,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Ferruginous lake/sediment group: Lake Matano,Bacteria:Pseudomonadota,1123800,23.27880690211032,Phylum,Metagenomics,20,#59FAB4,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Ferruginous lake/sediment group: Lake Matano,Bacteria:Verrucomicrobiota,133140,2.757910972545798,Phylum,Metagenomics,20,#5BD6A6,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Ferruginous lake/sediment group: Lake Matano,Other taxa,293796,6.085798498498312,Phylum,Metagenomics,20,#D4A373,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Ferruginous lake/sediment group: Lake Towuti,Archaea:Halobacteriota,590817,5.5638830378869,Phylum,Metagenomics,20,#F547E7,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Ferruginous lake/sediment group: Lake Towuti,Archaea:Methanobacteriota,278438,2.622125743340413,Phylum,Metagenomics,20,#B8315D,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Ferruginous lake/sediment group: Lake Towuti,Archaea:Methanobacteriota_B,246196,2.3184941333705753,Phylum,Metagenomics,20,#CD2187,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Ferruginous lake/sediment group: Lake Towuti,Archaea:Thermoproteota,985949,9.28494765269373,Phylum,Metagenomics,20,#ADB820,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Ferruginous lake/sediment group: Lake Towuti,Bacteria:Acidobacteriota,325775,3.0679110395733447,Phylum,Metagenomics,20,#C371E7,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Ferruginous lake/sediment group: Lake Towuti,Bacteria:Actinomycetota,584088,5.500514230012481,Phylum,Metagenomics,20,#EAAD36,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Ferruginous lake/sediment group: Lake Towuti,Bacteria:Bacillota,415744,3.915173378056575,Phylum,Metagenomics,20,#3AF345,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Ferruginous lake/sediment group: Lake Towuti,Bacteria:Bacillota_A,310335,2.922508395260514,Phylum,Metagenomics,20,#D251BD,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Ferruginous lake/sediment group: Lake Towuti,Bacteria:Bacillota_B,289671,2.7279099339858814,Phylum,Metagenomics,20,#609F27,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Ferruginous lake/sediment group: Lake Towuti,Bacteria:Bacteroidota,328636,3.0948538482118817,Phylum,Metagenomics,20,#BF5CD9,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Ferruginous lake/sediment group: Lake Towuti,Bacteria:Chloroflexota,852798,8.031028773620044,Phylum,Metagenomics,20,#215EAD,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Ferruginous lake/sediment group: Lake Towuti,Bacteria:Cyanobacteriota,674497,6.351920167167838,Phylum,Metagenomics,20,#CE7012,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Ferruginous lake/sediment group: Lake Towuti,Bacteria:Desulfobacterota,477578,4.497480833266392,Phylum,Metagenomics,20,#0F12A1,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Ferruginous lake/sediment group: Lake Towuti,Bacteria:Gemmatimonadota,24889,0.23438642579676458,Phylum,Metagenomics,20,#A050DB,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Ferruginous lake/sediment group: Lake Towuti,Bacteria:Myxococcota,181429,1.708565826103146,Phylum,Metagenomics,20,#BBEC20,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Ferruginous lake/sediment group: Lake Towuti,Bacteria:Nitrospirota,51690,0.48677867127786417,Phylum,Metagenomics,20,#16F78E,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Ferruginous lake/sediment group: Lake Towuti,Bacteria:Patescibacteria,28819,0.2713962957546289,Phylum,Metagenomics,20,#E36AE6,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Ferruginous lake/sediment group: Lake Towuti,Bacteria:Planctomycetota,616233,5.803232364820508,Phylum,Metagenomics,20,#20419F,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Ferruginous lake/sediment group: Lake Towuti,Bacteria:Pseudomonadota,2540866,23.928020417394112,Phylum,Metagenomics,20,#59FAB4,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Ferruginous lake/sediment group: Lake Towuti,Bacteria:Verrucomicrobiota,145760,1.3726612328392624,Phylum,Metagenomics,20,#5BD6A6,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Ferruginous lake/sediment group: Lake Towuti,Other taxa,668581,6.296207599567144,Phylum,Metagenomics,20,#D4A373,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Main iron-rich/AMD group: Richmond Mine / Iron Mountain AMD,Archaea:Halobacteriota,4016,1.5623905820838617,Phylum,Metagenomics,20,#F547E7,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Main iron-rich/AMD group: Richmond Mine / Iron Mountain AMD,Archaea:Methanobacteriota,1688,0.6567020175691133,Phylum,Metagenomics,20,#B8315D,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Main iron-rich/AMD group: Richmond Mine / Iron Mountain AMD,Archaea:Methanobacteriota_B,1456,0.5664443943013204,Phylum,Metagenomics,20,#CD2187,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Main iron-rich/AMD group: Richmond Mine / Iron Mountain AMD,Archaea:Thermoproteota,6242,2.4283969156791496,Phylum,Metagenomics,20,#ADB820,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Main iron-rich/AMD group: Richmond Mine / Iron Mountain AMD,Bacteria:Acidobacteriota,445,0.17312345842313706,Phylum,Metagenomics,20,#C371E7,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Main iron-rich/AMD group: Richmond Mine / Iron Mountain AMD,Bacteria:Actinomycetota,3628,1.4114424879980703,Phylum,Metagenomics,20,#EAAD36,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Main iron-rich/AMD group: Richmond Mine / Iron Mountain AMD,Bacteria:Bacillota,2729,1.0616941978353733,Phylum,Metagenomics,20,#3AF345,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Main iron-rich/AMD group: Richmond Mine / Iron Mountain AMD,Bacteria:Bacillota_A,1730,0.6730417597124205,Phylum,Metagenomics,20,#D251BD,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Main iron-rich/AMD group: Richmond Mine / Iron Mountain AMD,Bacteria:Bacillota_B,855,0.33263046506018473,Phylum,Metagenomics,20,#609F27,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Main iron-rich/AMD group: Richmond Mine / Iron Mountain AMD,Bacteria:Bacteroidota,1462,0.5687786431789357,Phylum,Metagenomics,20,#BF5CD9,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Main iron-rich/AMD group: Richmond Mine / Iron Mountain AMD,Bacteria:Chloroflexota,722,0.28088794827304486,Phylum,Metagenomics,20,#215EAD,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Main iron-rich/AMD group: Richmond Mine / Iron Mountain AMD,Bacteria:Cyanobacteriota,1087,0.4228880883279776,Phylum,Metagenomics,20,#CE7012,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Main iron-rich/AMD group: Richmond Mine / Iron Mountain AMD,Bacteria:Desulfobacterota,1455,0.5660553528217179,Phylum,Metagenomics,20,#0F12A1,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Main iron-rich/AMD group: Richmond Mine / Iron Mountain AMD,Bacteria:Myxococcota,197,0.07664117148170338,Phylum,Metagenomics,20,#BBEC20,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Main iron-rich/AMD group: Richmond Mine / Iron Mountain AMD,Bacteria:Nitrospirota,343,0.13344122750367646,Phylum,Metagenomics,20,#16F78E,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Main iron-rich/AMD group: Richmond Mine / Iron Mountain AMD,Bacteria:Patescibacteria,173,0.06730417597124205,Phylum,Metagenomics,20,#E36AE6,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Main iron-rich/AMD group: Richmond Mine / Iron Mountain AMD,Bacteria:Planctomycetota,315,0.12254806607480488,Phylum,Metagenomics,20,#20419F,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Main iron-rich/AMD group: Richmond Mine / Iron Mountain AMD,Bacteria:Pseudomonadota,9988,3.8857462982703215,Phylum,Metagenomics,20,#59FAB4,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Main iron-rich/AMD group: Richmond Mine / Iron Mountain AMD,Bacteria:Verrucomicrobiota,77,0.029956193929396753,Phylum,Metagenomics,20,#5BD6A6,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Main iron-rich/AMD group: Richmond Mine / Iron Mountain AMD,Other taxa,218434,84.97988655550455,Phylum,Metagenomics,20,#D4A373,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Optional outgroup: Hydrothermal Fe-rich mats,Archaea:Halobacteriota,57947,2.3794203768589286,Phylum,Metagenomics,20,#F547E7,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Optional outgroup: Hydrothermal Fe-rich mats,Archaea:Methanobacteriota,5248,0.2154934360321614,Phylum,Metagenomics,20,#B8315D,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Optional outgroup: Hydrothermal Fe-rich mats,Archaea:Methanobacteriota_B,5067,0.20806121196169244,Phylum,Metagenomics,20,#CD2187,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Optional outgroup: Hydrothermal Fe-rich mats,Archaea:Thermoproteota,28940,1.1883346110462558,Phylum,Metagenomics,20,#ADB820,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Optional outgroup: Hydrothermal Fe-rich mats,Bacteria:Acidobacteriota,39889,1.6379225742924708,Phylum,Metagenomics,20,#C371E7,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Optional outgroup: Hydrothermal Fe-rich mats,Bacteria:Actinomycetota,74244,3.0486079772812102,Phylum,Metagenomics,20,#EAAD36,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Optional outgroup: Hydrothermal Fe-rich mats,Bacteria:Bacillota,36162,1.4848844576591123,Phylum,Metagenomics,20,#3AF345,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Optional outgroup: Hydrothermal Fe-rich mats,Bacteria:Bacillota_A,28429,1.1673519232008986,Phylum,Metagenomics,20,#D251BD,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Optional outgroup: Hydrothermal Fe-rich mats,Bacteria:Bacillota_B,28768,1.1812719450787383,Phylum,Metagenomics,20,#609F27,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Optional outgroup: Hydrothermal Fe-rich mats,Bacteria:Bacteroidota,233227,9.576769741896515,Phylum,Metagenomics,20,#BF5CD9,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Optional outgroup: Hydrothermal Fe-rich mats,Bacteria:Chloroflexota,69999,2.874299738722421,Phylum,Metagenomics,20,#215EAD,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Optional outgroup: Hydrothermal Fe-rich mats,Bacteria:Cyanobacteriota,46088,1.8924659832031736,Phylum,Metagenomics,20,#CE7012,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Optional outgroup: Hydrothermal Fe-rich mats,Bacteria:Desulfobacterota,185487,7.616469315796022,Phylum,Metagenomics,20,#0F12A1,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Optional outgroup: Hydrothermal Fe-rich mats,Bacteria:Gemmatimonadota,3850,0.1580887440403623,Phylum,Metagenomics,20,#A050DB,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Optional outgroup: Hydrothermal Fe-rich mats,Bacteria:Myxococcota,45321,1.860971420429418,Phylum,Metagenomics,20,#BBEC20,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Optional outgroup: Hydrothermal Fe-rich mats,Bacteria:Nitrospirota,21711,0.8914973303533262,Phylum,Metagenomics,20,#16F78E,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Optional outgroup: Hydrothermal Fe-rich mats,Bacteria:Patescibacteria,11994,0.49249776520002747,Phylum,Metagenomics,20,#E36AE6,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Optional outgroup: Hydrothermal Fe-rich mats,Bacteria:Planctomycetota,98869,4.0597600089679435,Phylum,Metagenomics,20,#20419F,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Optional outgroup: Hydrothermal Fe-rich mats,Bacteria:Pseudomonadota,1230223,50.51543089858874,Phylum,Metagenomics,20,#59FAB4,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Optional outgroup: Hydrothermal Fe-rich mats,Bacteria:Verrucomicrobiota,16230,0.666436445655865,Phylum,Metagenomics,20,#5BD6A6,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Optional outgroup: Hydrothermal Fe-rich mats,Other taxa,167648,6.883964093734717,Phylum,Metagenomics,20,#D4A373,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Other iron-rich / unassigned,Archaea:Halobacteriota,6987,0.5531567221960962,Phylum,Metagenomics,20,#F547E7,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Other iron-rich / unassigned,Archaea:Methanobacteriota_B,1323,0.10474113975460647,Phylum,Metagenomics,20,#CD2187,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Other iron-rich / unassigned,Archaea:Thermoproteota,25519,2.020324372938626,Phylum,Metagenomics,20,#ADB820,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Other iron-rich / unassigned,Bacteria:Acidobacteriota,310182,24.556928353260275,Phylum,Metagenomics,20,#C371E7,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Other iron-rich / unassigned,Bacteria:Actinomycetota,100399,7.948530378097305,Phylum,Metagenomics,20,#EAAD36,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Other iron-rich / unassigned,Bacteria:Bacillota,23668,1.873781780583542,Phylum,Metagenomics,20,#3AF345,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Other iron-rich / unassigned,Bacteria:Bacillota_A,8433,0.6676357003405868,Phylum,Metagenomics,20,#D251BD,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Other iron-rich / unassigned,Bacteria:Bacillota_B,11640,0.9215320232378076,Phylum,Metagenomics,20,#609F27,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Other iron-rich / unassigned,Bacteria:Bacteroidota,21235,1.6811625870665672,Phylum,Metagenomics,20,#BF5CD9,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Other iron-rich / unassigned,Bacteria:Chloroflexota,82288,6.514693052250233,Phylum,Metagenomics,20,#215EAD,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Other iron-rich / unassigned,Bacteria:Cyanobacteriota,31672,2.507453800686241,Phylum,Metagenomics,20,#CE7012,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Other iron-rich / unassigned,Bacteria:Desulfobacterota,34785,2.753908198309891,Phylum,Metagenomics,20,#0F12A1,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Other iron-rich / unassigned,Bacteria:Gemmatimonadota,10449,0.8272412466333204,Phylum,Metagenomics,20,#A050DB,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Other iron-rich / unassigned,Bacteria:Myxococcota,28016,2.218010409195053,Phylum,Metagenomics,20,#BBEC20,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Other iron-rich / unassigned,Bacteria:Nitrospirota,10968,0.868330174473563,Phylum,Metagenomics,20,#16F78E,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Other iron-rich / unassigned,Bacteria:Planctomycetota,39211,3.1043120415101093,Phylum,Metagenomics,20,#20419F,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Other iron-rich / unassigned,Bacteria:Pseudomonadota,476255,37.70483107621323,Phylum,Metagenomics,20,#59FAB4,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Other iron-rich / unassigned,Bacteria:Verrucomicrobiota,13999,1.108292679837291,Phylum,Metagenomics,20,#5BD6A6,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv
+Other iron-rich / unassigned,Other taxa,26085,2.0651342634156538,Phylum,Metagenomics,20,#D4A373,scripts/final_visual_sync.py,tables/st8_taxonomy_summary_by_group.csv

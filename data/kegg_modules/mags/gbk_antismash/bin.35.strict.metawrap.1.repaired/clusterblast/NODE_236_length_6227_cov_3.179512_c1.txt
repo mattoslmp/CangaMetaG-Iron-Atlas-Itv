@@ -1,0 +1,886 @@
+ClusterBlast scores for NODE_236_length_6227_cov_3.179512
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg236_1	0	1767	-		
+ctg236_2	1917	3030	-		
+ctg236_3	3026	4073	-		
+ctg236_4	4132	4882	-		
+ctg236_5	5028	6051	-		
+
+
+Significant hits: 
+1. NZ_CP030840	Acidisarcina polymorpha strain SBC82 chromosome, complete genome
+2. NZ_JACHEK010000002	Silvibacterium bohemicum strain DSM 103733 Ga0415307_02, whole genome shotgun sequence
+3. NC_008009	Candidatus Koribacter versatilis Ellin345, complete sequence
+4. NZ_QVQT02000001	Paracidobacterium acidisoli strain 4G-K13 scaffold1, whole genome shotgun sequence
+5. NZ_CP093313	Occallatibacter riparius strain DSM 25168 chromosome, complete genome
+6. NZ_LAIJ01000001	Terracidiphilus gabretensis strain S55 contig_1, whole genome shotgun sequence
+7. NC_016631	Granulicella mallensis MP5ACTX8, complete sequence
+8. NZ_CP063849	Paludibaculum fermentans strain P105 chromosome, complete genome
+9. NZ_CP060394	Alloacidobacterium dinghuense strain 4Y35 chromosome, complete genome
+10. NC_012483	Acidobacterium capsulatum ATCC 51196, complete sequence
+11. NZ_SMGK01000002	Acidipila rosea strain DSM 103428 Ga0215723_102, whole genome shotgun sequence
+12. NZ_CP042596	Granulicella sp. WH15 chromosome, complete genome
+13. NZ_CP060393	Edaphobacter sp. 4G125 chromosome, complete genome
+14. NZ_CP073697	Edaphobacter flagellatus strain HZ411 chromosome, complete genome
+15. NZ_CP073696	Edaphobacter lichenicola strain DSM 104462 chromosome, complete genome
+16. NZ_JACHDY010000001	Edaphobacter lichenicola strain M8UP27 Ga0401168_01, whole genome shotgun sequence
+17. NZ_JACHEB010000006	Edaphobacter lichenicola strain X5P2 Ga0401175_06, whole genome shotgun sequence
+18. NC_018014	Terriglobus roseus DSM 18391, complete sequence
+19. NZ_CP064655	Miltoncostaea marina strain SCSIO 60955 chromosome, complete genome
+20. NZ_LMUH01000001	Granulicella sp. S156 NODE_1_length_366219_cov_9.600998, whole genome shotgun sequence
+21. NZ_JACCCW010000002	Granulicella arctica strain X4EP2 Ga0401179_02, whole genome shotgun sequence
+22. NZ_CP048114	Edaphobacter sp. 12200R-103 chromosome, complete genome
+23. NZ_JACHIP010000007	Granulicella aggregans strain M8UP14 Ga0401177_07, whole genome shotgun sequence
+24. NZ_CP042806	Terriglobus albidus strain ORNL chromosome, complete genome
+25. NZ_JACHEA010000001	Edaphobacter lichenicola strain M8UP15 Ga0401174_01, whole genome shotgun sequence
+26. NZ_JACHDZ010000007	Edaphobacter lichenicola strain M8US30 Ga0401170_07, whole genome shotgun sequence
+27. NZ_LT629690	Terriglobus roseus strain GAS232 chromosome I
+28. NC_015064	Granulicella tundricola MP5ACTX9, complete sequence
+29. NZ_CP046444	Granulicella sp. 5B5 chromosome, complete genome
+30. NZ_CP044434	Alicyclobacillus sp. TC chromosome, complete genome
+31. NZ_CP080467	Alicyclobacillus acidoterrestris strain DSM 3922 chromosome, complete genome
+32. NC_017167	Alicyclobacillus acidocaldarius subsp. acidocaldarius Tc-4-1, complete sequence
+33. NZ_CP104067	Alicyclobacillus fastidiosus strain DSM 17978 chromosome, complete genome
+34. NC_013205	Alicyclobacillus acidocaldarius subsp. acidocaldarius DSM 446, complete sequence
+35. NZ_CP119138	Alicyclobacillus fastidiosus strain Alicyclobacillus fastidiosus KKP 3000 chromosome, complete genome
+36. NZ_CP018477	Thermogutta terrifontis strain R1 chromosome, complete genome
+37. NC_014963	Terriglobus saanensis SP1PR4, complete sequence
+38. NZ_CP046535	Sphingomonas profundi strain LMO-1 chromosome, complete genome
+39. NZ_SLXW01000003	Sphingomonas sp. PP-CE-1G-424 Ga0191677_103, whole genome shotgun sequence
+40. NZ_RCWY01000001	Sphingomonas sp. PP-CE-3A-406 Ga0191674_11, whole genome shotgun sequence
+41. NZ_RCWT01000010	Sphingomonas sp. PP-F2F-G114-C0414 Ga0191679_102, whole genome shotgun sequence
+42. NZ_AP025591	Anaeromyxobacter oryzae strain Red232 chromosome, complete genome
+43. NZ_AP025592	Anaeromyxobacter paludicola strain Red630 chromosome, complete genome
+44. NZ_SORF01000001	Alicyclobacillus sacchari strain DSM 17974 Ga0215652_101, whole genome shotgun sequence
+45. NC_009675	Anaeromyxobacter sp. Fw109-5, complete sequence
+46. NZ_CP081941	Asaia bogorensis strain CSR-2 chromosome, complete genome
+47. NZ_AP014690	Asaia bogorensis NBRC 16594 chromosome, complete genome
+48. NZ_CBLX010000008	Asaia bogorensis strain SF2.1, whole genome shotgun sequence
+49. NZ_BMCH01000010	Asaia siamensis strain CCM 7132 sequence10, whole genome shotgun sequence
+50. NZ_JAKZLF010000026	Anaeromyxobacter sp. SG29 Scaffold26, whole genome shotgun sequence
+
+
+Details:
+
+>>
+1. NZ_CP030840
+Source: Acidisarcina polymorpha strain SBC82 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1188.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg236_1	ACPOL_RS05755	44	197	47.198641765704586	4.82e-56
+ctg236_2	ACPOL_RS05760	50	339	93.51351351351352	2.02e-113
+ctg236_3	ACPOL_RS05765	47	332	100.86206896551724	1.33e-110
+ctg236_5	ACPOL_RS05775	50	320	98.52941176470588	2.2e-106
+
+
+
+>>
+2. NZ_JACHEK010000002
+Source: Silvibacterium bohemicum strain DSM 103733 Ga0415307_02, whole genome shotgun sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1174.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg236_1	HNQ77_RS06175	44	202	47.02886247877759	5.4e-58
+ctg236_2	HNQ77_RS06180	48	322	94.32432432432432	8.53e-107
+ctg236_3	HNQ77_RS06185	50	333	100.0	4.38e-111
+ctg236_5	HNQ77_RS06195	49	317	96.17647058823529	1.56e-105
+
+
+
+>>
+3. NC_008009
+Source: Candidatus Koribacter versatilis Ellin345, complete sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1522.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg236_1	ACID345_RS08945	59	342	48.72665534804754	7.42e-112
+ctg236_1	ACID345_RS08950	37	176	51.95246179966044	3.43e-48
+ctg236_2	ACID345_RS08940	52	354	92.97297297297298	3.01e-119
+ctg236_3	ACID345_RS08935	48	331	99.42528735632183	3.04e-110
+ctg236_5	ACID345_RS08925	50	319	96.17647058823529	3.51e-106
+
+
+
+>>
+4. NZ_QVQT02000001
+Source: Paracidobacterium acidisoli strain 4G-K13 scaffold1, whole genome shotgun sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1500.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg236_1	D0Y96_RS01980	58	309	46.17996604414261	6.6e-99
+ctg236_1	D0Y96_RS01975	40	199	48.89643463497453	7.92e-57
+ctg236_2	D0Y96_RS01985	51	349	94.05405405405406	3e-117
+ctg236_3	D0Y96_RS01990	49	324	100.0	1.93e-107
+ctg236_5	D0Y96_RS02000	51	319	96.76470588235294	2.92e-106
+
+
+
+>>
+5. NZ_CP093313
+Source: Occallatibacter riparius strain DSM 25168 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1399.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg236_1	MOP44_RS15035	53	292	49.745331069609506	1.93e-92
+ctg236_1	MOP44_RS15040	42	179	46.01018675721562	1.43e-49
+ctg236_2	MOP44_RS15030	50	330	93.78378378378378	4.67e-110
+ctg236_3	MOP44_RS15025	44	301	100.28735632183907	2.79e-98
+ctg236_5	MOP44_RS15015	48	297	96.17647058823529	1.52e-97
+
+
+
+>>
+6. NZ_LAIJ01000001
+Source: Terracidiphilus gabretensis strain S55 contig_1, whole genome shotgun sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1398.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg236_1	VO84_RS01615	52	282	49.57555178268252	2.13e-88
+ctg236_1	VO84_RS01620	43	184	46.349745331069606	1.93e-51
+ctg236_2	VO84_RS01610	49	329	94.32432432432432	2.22e-109
+ctg236_3	VO84_RS01605	46	313	100.28735632183907	2.91e-103
+ctg236_5	VO84_RS01595	46	290	96.17647058823529	1.06e-94
+
+
+
+>>
+7. NC_016631
+Source: Granulicella mallensis MP5ACTX8, complete sequence
+Type: redox-cofactor,terpene
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 639.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg236_1	ACIX8_RS12980	37	161	48.55687606112054	8.7e-43
+ctg236_2	ACIX8_RS12985	46	313	94.32432432432432	7.59e-103
+ctg236_3	ACIX8_RS12985	31	165	101.14942528735634	1.29e-45
+
+
+
+>>
+8. NZ_CP063849
+Source: Paludibaculum fermentans strain P105 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1746.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg236_1	IRI77_RS14410	56	317	47.368421052631575	2.46e-102
+ctg236_1	IRI77_RS14415	46	219	43.97283531409168	6.98e-65
+ctg236_2	IRI77_RS14405	54	370	92.97297297297298	9.52e-126
+ctg236_3	IRI77_RS14400	48	338	99.13793103448276	6.27e-113
+ctg236_3	IRI77_RS14405	31	172	96.26436781609196	1.14e-48
+ctg236_5	IRI77_RS14390	54	330	94.70588235294117	8.79e-111
+
+
+
+>>
+9. NZ_CP060394
+Source: Alloacidobacterium dinghuense strain 4Y35 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1688.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg236_1	H7849_RS03135	55	308	49.57555178268252	1.52e-98
+ctg236_1	H7849_RS03140	44	198	48.217317487266556	2.04e-56
+ctg236_2	H7849_RS03130	51	358	93.51351351351352	4.91e-121
+ctg236_3	H7849_RS03125	48	331	100.28735632183907	2.94e-110
+ctg236_3	H7849_RS03130	32	173	97.12643678160919	4.2e-49
+ctg236_5	H7849_RS03115	51	320	97.35294117647058	1.03e-106
+
+
+
+>>
+10. NC_012483
+Source: Acidobacterium capsulatum ATCC 51196, complete sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1651.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg236_1	ACP_RS03895	52	297	48.72665534804754	1.5e-94
+ctg236_1	ACP_RS03890	42	195	46.01018675721562	2.22e-55
+ctg236_2	ACP_RS03900	51	343	94.05405405405406	7.8e-115
+ctg236_2	ACP_RS03905	32	149	98.37837837837839	2.21e-39
+ctg236_3	ACP_RS03905	51	344	100.0	2.11e-115
+ctg236_5	ACP_RS03915	51	323	96.76470588235294	1.27e-107
+
+
+
+>>
+11. NZ_SMGK01000002
+Source: Acidipila rosea strain DSM 103428 Ga0215723_102, whole genome shotgun sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1650.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg236_1	C7378_RS07830	55	315	50.42444821731748	3.52e-101
+ctg236_1	C7378_RS07825	42	188	48.55687606112054	1.28e-52
+ctg236_2	C7378_RS07835	49	338	93.51351351351352	7.36e-113
+ctg236_3	C7378_RS07840	49	331	100.28735632183907	2.5e-110
+ctg236_3	C7378_RS07835	31	160	97.98850574712644	3.02e-44
+ctg236_5	C7378_RS07850	50	318	96.17647058823529	5.49e-106
+
+
+
+>>
+12. NZ_CP042596
+Source: Granulicella sp. WH15 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 954.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg236_1	FTO74_RS12215	48	265	47.87775891341256	8.54e-82
+ctg236_1	FTO74_RS12210	38	178	47.70797962648557	5.38e-49
+ctg236_2	FTO74_RS12220	52	347	94.32432432432432	2.24e-116
+ctg236_3	FTO74_RS12220	32	164	97.98850574712644	1.24e-45
+
+
+
+>>
+13. NZ_CP060393
+Source: Edaphobacter sp. 4G125 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 954.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg236_1	H7846_RS09535	49	263	47.87775891341256	2.77e-81
+ctg236_1	H7846_RS09540	40	179	47.53820033955857	2.36e-49
+ctg236_2	H7846_RS09530	53	346	93.78378378378378	4.49e-116
+ctg236_3	H7846_RS09530	31	166	101.14942528735634	2.29e-46
+
+
+
+>>
+14. NZ_CP073697
+Source: Edaphobacter flagellatus strain HZ411 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 944.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg236_1	KFE13_RS03740	49	259	47.53820033955857	6e-80
+ctg236_1	KFE13_RS03735	42	177	45.840407470288625	7.93e-49
+ctg236_2	KFE13_RS03745	52	347	93.78378378378378	1.96e-116
+ctg236_3	KFE13_RS03745	31	161	95.97701149425288	1.69e-44
+
+
+
+>>
+15. NZ_CP073696
+Source: Edaphobacter lichenicola strain DSM 104462 chromosome, complete genome
+Type: NRPS-like,terpene
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 926.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg236_1	KFE12_RS03095	48	250	46.859083191850594	2.15e-76
+ctg236_1	KFE12_RS03100	39	171	49.23599320882852	3.13e-46
+ctg236_2	KFE12_RS03090	52	350	93.78378378378378	1.2e-117
+ctg236_3	KFE12_RS03090	31	155	97.98850574712644	5.21e-42
+
+
+
+>>
+16. NZ_JACHDY010000001
+Source: Edaphobacter lichenicola strain M8UP27 Ga0401168_01, whole genome shotgun sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 916.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg236_1	HDF09_RS02880	48	256	47.53820033955857	1.51e-78
+ctg236_1	HDF09_RS02875	41	173	47.53820033955857	2.74e-47
+ctg236_2	HDF09_RS02885	51	336	93.78378378378378	4.79e-112
+ctg236_3	HDF09_RS02885	31	151	97.98850574712644	1.07e-40
+
+
+
+>>
+17. NZ_JACHEB010000006
+Source: Edaphobacter lichenicola strain X5P2 Ga0401175_06, whole genome shotgun sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 915.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg236_1	HDF14_RS14595	48	253	46.859083191850594	1.98e-77
+ctg236_1	HDF14_RS14590	41	179	49.57555178268252	2.35e-49
+ctg236_2	HDF14_RS14600	50	331	94.05405405405406	4.59e-110
+ctg236_3	HDF14_RS14600	31	152	97.12643678160919	7.85e-41
+
+
+
+>>
+18. NC_018014
+Source: Terriglobus roseus DSM 18391, complete sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 894.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg236_1	TERRO_RS09195	48	251	48.72665534804754	1.12e-76
+ctg236_1	TERRO_RS09200	36	142	47.70797962648557	6.17e-36
+ctg236_2	TERRO_RS09190	52	345	94.05405405405406	1.81e-115
+ctg236_3	TERRO_RS09190	31	156	93.10344827586206	2.08e-42
+
+
+
+>>
+19. NZ_CP064655
+Source: Miltoncostaea marina strain SCSIO 60955 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 645.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg236_1	ITJ85_RS03790	40	189	45.840407470288625	2.09e-53
+ctg236_2	ITJ85_RS03830	35	187	92.97297297297298	2.14e-54
+ctg236_5	ITJ85_RS03800	48	269	93.82352941176471	1.17e-86
+
+
+
+>>
+20. NZ_LMUH01000001
+Source: Granulicella sp. S156 NODE_1_length_366219_cov_9.600998, whole genome shotgun sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 634.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg236_1	GSQ91_RS00985	37	164	49.06621392190153	6.4e-44
+ctg236_2	GSQ91_RS00995	46	310	94.32432432432432	8.65e-102
+ctg236_3	GSQ91_RS00995	31	160	101.72413793103448	1.03e-43
+
+
+
+>>
+21. NZ_JACCCW010000002
+Source: Granulicella arctica strain X4EP2 Ga0401179_02, whole genome shotgun sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 788.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg236_1	HDF17_RS10620	49	268	49.745331069609506	4.44e-83
+ctg236_1	HDF17_RS10625	41	183	47.198641765704586	6.52e-51
+ctg236_2	HDF17_RS10615	51	337	94.32432432432432	2.55e-112
+
+
+
+>>
+22. NZ_CP048114
+Source: Edaphobacter sp. 12200R-103 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 777.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg236_1	GWR55_RS08015	50	262	47.87775891341256	5.49e-81
+ctg236_1	GWR55_RS08010	40	179	46.6893039049236	1.65e-49
+ctg236_2	GWR55_RS08020	50	336	93.78378378378378	5.47e-112
+
+
+
+>>
+23. NZ_JACHIP010000007
+Source: Granulicella aggregans strain M8UP14 Ga0401177_07, whole genome shotgun sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 775.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg236_1	HDF16_RS22095	49	271	49.745331069609506	1.81e-84
+ctg236_1	HDF16_RS22090	40	171	46.859083191850594	1.59e-46
+ctg236_2	HDF16_RS22100	48	333	96.21621621621622	1.82e-110
+
+
+
+>>
+24. NZ_CP042806
+Source: Terriglobus albidus strain ORNL chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 766.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg236_1	FTW19_RS15740	47	267	49.06621392190153	4.26e-83
+ctg236_1	FTW19_RS15735	36	162	47.198641765704586	3.6e-43
+ctg236_2	FTW19_RS15745	50	337	94.05405405405406	1.36e-112
+
+
+
+>>
+25. NZ_JACHEA010000001
+Source: Edaphobacter lichenicola strain M8UP15 Ga0401174_01, whole genome shotgun sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 765.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg236_1	HDF13_RS05505	49	257	47.53820033955857	5.95e-79
+ctg236_1	HDF13_RS05500	40	172	48.217317487266556	7.56e-47
+ctg236_2	HDF13_RS05510	51	336	93.78378378378378	3.38e-112
+
+
+
+>>
+26. NZ_JACHDZ010000007
+Source: Edaphobacter lichenicola strain M8US30 Ga0401170_07, whole genome shotgun sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 763.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg236_1	HDF10_RS17920	48	253	47.53820033955857	2.31e-77
+ctg236_1	HDF10_RS17925	41	176	48.217317487266556	2.8e-48
+ctg236_2	HDF10_RS17915	50	334	93.78378378378378	1.93e-111
+
+
+
+>>
+27. NZ_LT629690
+Source: Terriglobus roseus strain GAS232 chromosome I
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 761.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg236_1	BLT38_RS06870	51	268	47.53820033955857	3.58e-83
+ctg236_1	BLT38_RS06875	39	160	49.57555178268252	2.14e-42
+ctg236_2	BLT38_RS06865	50	333	94.05405405405406	8.88e-111
+
+
+
+>>
+28. NC_015064
+Source: Granulicella tundricola MP5ACTX9, complete sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 757.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg236_1	ACIX9_RS08180	48	248	46.5195246179966	2.49e-75
+ctg236_1	ACIX9_RS08185	40	177	48.38709677419355	7.69e-49
+ctg236_2	ACIX9_RS08175	50	332	94.05405405405406	2.69e-110
+
+
+
+>>
+29. NZ_CP046444
+Source: Granulicella sp. 5B5 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 728.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg236_1	GOB94_RS16520	44	245	49.40577249575552	2.38e-74
+ctg236_1	GOB94_RS16525	37	151	44.99151103565365	5.26e-39
+ctg236_2	GOB94_RS16515	48	332	94.32432432432432	5.01e-110
+
+
+
+>>
+30. NZ_CP044434
+Source: Alicyclobacillus sp. TC chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 645.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg236_1	FY534_RS10045	44	221	44.99151103565365	1.21e-65
+ctg236_1	FY534_RS10040	35	159	44.821731748726656	3.92e-42
+ctg236_5	FY534_RS10055	44	265	94.70588235294117	9.34e-85
+
+
+
+>>
+31. NZ_CP080467
+Source: Alicyclobacillus acidoterrestris strain DSM 3922 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 633.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg236_1	K1I37_RS18750	47	233	45.50084889643464	3.75e-70
+ctg236_1	K1I37_RS18745	35	149	44.312393887945674	9.77e-39
+ctg236_5	K1I37_RS18760	44	251	96.76470588235294	2.29e-79
+
+
+
+>>
+32. NC_017167
+Source: Alicyclobacillus acidocaldarius subsp. acidocaldarius Tc-4-1, complete sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 617.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg236_1	TC41_RS12595	45	209	44.48217317487266	6.07e-61
+ctg236_1	TC41_RS12590	39	158	44.65195246179966	8.36e-42
+ctg236_5	TC41_RS12605	43	250	95.0	2.72e-79
+
+
+
+>>
+33. NZ_CP104067
+Source: Alicyclobacillus fastidiosus strain DSM 17978 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 616.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg236_1	NZD89_RS04675	45	223	45.331069609507644	2.52e-66
+ctg236_1	NZD89_RS04680	34	140	44.312393887945674	3.04e-35
+ctg236_5	NZD89_RS04665	45	253	96.47058823529412	3.17e-80
+
+
+
+>>
+34. NC_013205
+Source: Alicyclobacillus acidocaldarius subsp. acidocaldarius DSM 446, complete sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 610.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg236_1	AACI_RS12060	45	208	44.48217317487266	1.67e-60
+ctg236_1	AACI_RS12055	39	156	44.65195246179966	3.07e-41
+ctg236_5	AACI_RS12070	42	246	95.0	1.74e-77
+
+
+
+>>
+35. NZ_CP119138
+Source: Alicyclobacillus fastidiosus strain Alicyclobacillus fastidiosus KKP 3000 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 598.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg236_1	PYS47_RS03635	45	217	45.331069609507644	5.63e-64
+ctg236_1	PYS47_RS03640	32	130	44.312393887945674	1.19e-31
+ctg236_5	PYS47_RS03625	45	251	96.47058823529412	1.79e-79
+
+
+
+>>
+36. NZ_CP018477
+Source: Thermogutta terrifontis strain R1 chromosome, complete genome
+Type: acyl_amino_acids,terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 547.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg236_1	THTE_RS15785	47	262	47.53820033955857	9.08e-81
+ctg236_1	THTE_RS15790	31	138	45.67062818336163	3.91e-34
+ctg236_3	THTE_RS15765	32	147	95.11494252873564	4.93e-39
+
+
+
+>>
+37. NC_014963
+Source: Terriglobus saanensis SP1PR4, complete sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 502.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg236_1	ACIPR4_RS22710	36	161	49.40577249575552	1.3e-42
+ctg236_2	ACIPR4_RS09225	51	341	93.78378378378378	7.21e-114
+
+
+
+>>
+38. NZ_CP046535
+Source: Sphingomonas profundi strain LMO-1 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 491.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg236_1	GNT64_RS13155	37	110	39.72835314091681	6.05e-25
+ctg236_1	GNT64_RS13160	36	104	33.446519524618	8.47e-23
+ctg236_5	GNT64_RS13145	44	277	95.29411764705881	1.23e-89
+
+
+
+>>
+39. NZ_SLXW01000003
+Source: Sphingomonas sp. PP-CE-1G-424 Ga0191677_103, whole genome shotgun sequence
+Type: phosphonate,terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 484.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg236_1	C8J43_RS11335	34	108	41.59592529711375	3.26e-24
+ctg236_1	C8J43_RS11330	35	106	40.0679117147708	2.48e-23
+ctg236_5	C8J43_RS11345	43	270	96.17647058823529	9.05e-87
+
+
+
+>>
+40. NZ_RCWY01000001
+Source: Sphingomonas sp. PP-CE-3A-406 Ga0191674_11, whole genome shotgun sequence
+Type: phosphonate,terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 484.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg236_1	C8J44_RS00920	39	107	33.276740237691	1.34e-23
+ctg236_1	C8J44_RS00925	33	106	42.10526315789473	2.06e-23
+ctg236_5	C8J44_RS00935	43	271	96.17647058823529	2.26e-87
+
+
+
+>>
+41. NZ_RCWT01000010
+Source: Sphingomonas sp. PP-F2F-G114-C0414 Ga0191679_102, whole genome shotgun sequence
+Type: phosphonate,terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 482.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg236_1	C8J47_RS06170	39	108	33.276740237691	5.34e-24
+ctg236_1	C8J47_RS06175	33	104	42.10526315789473	9.53e-23
+ctg236_5	C8J47_RS06185	43	270	96.17647058823529	6.4e-87
+
+
+
+>>
+42. NZ_AP025591
+Source: Anaeromyxobacter oryzae strain Red232 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 460.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg236_1	AMOR_RS06125	39	149	42.61460101867572	4.1e-38
+ctg236_5	AMOR_RS06105	48	311	95.88235294117648	5.71e-103
+
+
+
+>>
+43. NZ_AP025592
+Source: Anaeromyxobacter paludicola strain Red630 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 458.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg236_1	AMPC_RS10705	38	140	42.78438030560272	5.64e-35
+ctg236_5	AMPC_RS10725	49	318	97.6470588235294	1.05e-105
+
+
+
+>>
+44. NZ_SORF01000001
+Source: Alicyclobacillus sacchari strain DSM 17974 Ga0215652_101, whole genome shotgun sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 454.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg236_1	C7445_RS01835	43	202	45.16129032258064	1.84e-58
+ctg236_5	C7445_RS01845	42	252	96.17647058823529	5.44e-80
+
+
+
+>>
+45. NC_009675
+Source: Anaeromyxobacter sp. Fw109-5, complete sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 450.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg236_1	ANAE109_RS20935	38	144	47.53820033955857	1.08e-36
+ctg236_5	ANAE109_RS20955	49	306	95.58823529411765	5.86e-101
+
+
+
+>>
+46. NZ_CP081941
+Source: Asaia bogorensis strain CSR-2 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 441.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg236_1	K6K47_RS07150	31	97	44.65195246179966	4.54e-20
+ctg236_1	K6K47_RS07165	35	97	37.18166383701188	5.83e-20
+ctg236_5	K6K47_RS07175	41	247	96.17647058823529	6.95e-78
+
+
+
+>>
+47. NZ_AP014690
+Source: Asaia bogorensis NBRC 16594 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 440.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg236_1	Asbog_RS12865	31	100	42.27504244482173	2.95e-21
+ctg236_1	Asbog_RS12880	35	99	37.86078098471987	7.62e-21
+ctg236_5	Asbog_RS12890	40	241	96.17647058823529	8.85e-76
+
+
+
+>>
+48. NZ_CBLX010000008
+Source: Asaia bogorensis strain SF2.1, whole genome shotgun sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 438.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg236_1	ASAP_RS05015	32	100	42.27504244482173	2.18e-21
+ctg236_1	ASAP_RS05000	34	97	37.86078098471987	3.47e-20
+ctg236_5	ASAP_RS04990	40	241	96.17647058823529	8.85e-76
+
+
+
+>>
+49. NZ_BMCH01000010
+Source: Asaia siamensis strain CCM 7132 sequence10, whole genome shotgun sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 436.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg236_1	IEV53_RS14415	32	102	43.12393887945671	4.74e-22
+ctg236_1	IEV53_RS14400	34	94	37.18166383701188	3.91e-19
+ctg236_5	IEV53_RS14390	40	240	95.88235294117648	2.5e-75
+
+
+
+>>
+50. NZ_JAKZLF010000026
+Source: Anaeromyxobacter sp. SG29 Scaffold26, whole genome shotgun sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 433.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg236_1	MLV88_RS16810	39	137	43.63327674023769	5.11e-34
+ctg236_5	MLV88_RS16830	47	296	95.29411764705881	6.78e-97
+

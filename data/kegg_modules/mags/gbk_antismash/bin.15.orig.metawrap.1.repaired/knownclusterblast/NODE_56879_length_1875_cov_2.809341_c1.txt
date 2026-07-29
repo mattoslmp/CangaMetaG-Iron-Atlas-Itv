@@ -1,0 +1,84 @@
+ClusterBlast scores for NODE_56879_length_1875_cov_2.809341
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg612_1	2	1874	-		
+
+
+Significant hits: 
+1. BGC0001833.4	icosalide A/icosalide B
+2. BGC0001641.4	kolossin
+3. BGC0001132.4	xenotetrapeptide
+4. BGC0001758.4	rhizomide A/rhizomide B/rhizomide C
+5. BGC0002286.3	ririwpeptide A/ririwpeptide B/ririwpeptide C
+
+
+Details:
+
+>>
+1. BGC0001833.4
+Source: icosalide A/icosalide B
+Type: NRPS:Type I
+Number of proteins with BLAST hits to this cluster: 1
+Cumulative BLAST score: 533.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg612_1	AYA44686.1	51	533	87.17948717948718	2.02e-168
+
+
+
+>>
+2. BGC0001641.4
+Source: kolossin
+Type: NRPS:Type I
+Number of proteins with BLAST hits to this cluster: 1
+Cumulative BLAST score: 485.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg612_1	PLU_RS13235	46	485	94.87179487179486	1.09e-151
+
+
+
+>>
+3. BGC0001132.4
+Source: xenotetrapeptide
+Type: NRPS:Type I
+Number of proteins with BLAST hits to this cluster: 1
+Cumulative BLAST score: 480.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg612_1	XNC1_2022	47	480	94.39102564102564	5.34e-150
+
+
+
+>>
+4. BGC0001758.4
+Source: rhizomide A/rhizomide B/rhizomide C
+Type: NRPS:Type I
+Number of proteins with BLAST hits to this cluster: 1
+Cumulative BLAST score: 472.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg612_1	RBRH_RS12370	47	472	95.1923076923077	4.91e-147
+
+
+
+>>
+5. BGC0002286.3
+Source: ririwpeptide A/ririwpeptide B/ririwpeptide C
+Type: NRPS:Type I
+Number of proteins with BLAST hits to this cluster: 1
+Cumulative BLAST score: 365.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg612_1	plu3123	46	365	72.91666666666666	4.92e-110
+

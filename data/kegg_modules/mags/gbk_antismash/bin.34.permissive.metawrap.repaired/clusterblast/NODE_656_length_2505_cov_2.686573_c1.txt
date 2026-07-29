@@ -1,0 +1,10 @@
+ClusterBlast scores for NODE_656_length_2505_cov_2.686573
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg656_1	2	2504	-		
+
+
+Significant hits: 
+
+
+Details:

@@ -1,0 +1,12 @@
+ClusterBlast scores for NODE_38277_length_2269_cov_4.246161
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg139_1	0	591	-		
+ctg139_2	616	1738	-		
+ctg139_3	1685	2267	-		
+
+
+Significant hits: 
+
+
+Details:

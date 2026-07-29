@@ -1,0 +1,14 @@
+ClusterBlast scores for NODE_7057_length_5268_cov_7.026856
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg304_1	629	860	+		
+ctg304_2	1016	1352	+		
+ctg304_3	1680	2898	+		
+ctg304_4	3073	4201	+		
+ctg304_5	4239	5136	-		
+
+
+Significant hits: 
+
+
+Details:

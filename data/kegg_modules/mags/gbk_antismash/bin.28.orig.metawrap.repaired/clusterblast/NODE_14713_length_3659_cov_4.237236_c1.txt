@@ -1,0 +1,13 @@
+ClusterBlast scores for NODE_14713_length_3659_cov_4.237236
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg60_1	0	675	+		
+ctg60_2	671	1919	-		
+ctg60_3	2169	3168	-		
+ctg60_4	3198	3579	-		
+
+
+Significant hits: 
+
+
+Details:

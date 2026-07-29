@@ -1,0 +1,23 @@
+ClusterBlast scores for NODE_672_length_15314_cov_5.952290
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg42_1	126	429	+		
+ctg42_2	499	709	-		
+ctg42_3	806	1808	+		
+ctg42_4	1903	2950	-		
+ctg42_5	3034	3775	+		
+ctg42_6	3759	4512	+		
+ctg42_7	4608	5901	+		
+ctg42_8	5881	6370	-		
+ctg42_9	6479	6791	+		
+ctg42_10	6816	7824	-		
+ctg42_11	7820	12410	-		
+ctg42_12	12413	14027	-		
+ctg42_13	14029	14713	-		
+ctg42_14	15062	15314	+		
+
+
+Significant hits: 
+
+
+Details:

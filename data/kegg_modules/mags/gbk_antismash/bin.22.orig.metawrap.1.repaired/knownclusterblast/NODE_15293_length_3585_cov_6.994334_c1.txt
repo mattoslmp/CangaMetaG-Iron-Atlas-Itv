@@ -1,0 +1,12 @@
+ClusterBlast scores for NODE_15293_length_3585_cov_6.994334
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg75_1	0	1146	-		
+ctg75_2	1158	2148	-		
+ctg75_3	2218	3583	-		
+
+
+Significant hits: 
+
+
+Details:

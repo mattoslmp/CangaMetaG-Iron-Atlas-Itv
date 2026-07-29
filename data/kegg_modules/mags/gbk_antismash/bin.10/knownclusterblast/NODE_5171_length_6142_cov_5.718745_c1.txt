@@ -1,0 +1,15 @@
+ClusterBlast scores for NODE_5171_length_6142_cov_5.718745
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg81_1	159	444	-		
+ctg81_2	453	1161	-		
+ctg81_3	1769	2210	+		
+ctg81_4	2638	4282	+		
+ctg81_5	4285	5647	-		
+ctg81_6	5643	6141	-		
+
+
+Significant hits: 
+
+
+Details:

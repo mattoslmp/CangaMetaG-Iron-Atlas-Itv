@@ -1,0 +1,23 @@
+ClusterBlast scores for NODE_1571_length_10679_cov_15.011389
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg48_1	1	289	-		
+ctg48_2	589	1414	+		
+ctg48_3	1400	1763	+		
+ctg48_4	1759	2215	+		
+ctg48_5	2214	2625	+		
+ctg48_6	2639	2870	+		
+ctg48_7	2889	4152	+		
+ctg48_8	4156	4882	+		
+ctg48_9	4886	5738	+		
+ctg48_10	5747	6731	+		
+ctg48_11	6717	7518	+		
+ctg48_12	7520	8624	+		
+ctg48_13	8627	9698	+		
+ctg48_14	9720	10677	+		
+
+
+Significant hits: 
+
+
+Details:

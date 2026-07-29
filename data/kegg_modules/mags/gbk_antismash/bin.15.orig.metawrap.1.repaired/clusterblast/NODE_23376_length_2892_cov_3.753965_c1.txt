@@ -1,0 +1,203 @@
+ClusterBlast scores for NODE_23376_length_2892_cov_3.753965
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg265_1	2	1016	-		
+ctg265_2	2076	2538	+		
+ctg265_3	2534	2891	+		
+
+
+Significant hits: 
+1. NZ_LR882970	Planktothrix tepida strain PCC9214 chromosome I
+2. NZ_LR882967	Planktothrix pseudagardhii strain No.713 chromosome I
+3. NZ_VILB01000004	Anabaena sp. UHCC 0187 scaffold4_cov7, whole genome shotgun sequence
+4. NZ_VILD01000009	Anabaena sp. UHCC 0253 XSP2A_scaffold00009_cov, whole genome shotgun sequence
+5. NZ_RSCM01000001	Trichormus variabilis SAG 1403-4b sequence01, whole genome shotgun sequence
+6. NZ_AP014821	Geminocystis sp. NIES-3709 chromosome, complete genome
+7. NZ_CP114054	Aurantiacibacter sp. MUD11 chromosome, complete genome
+8. NZ_KB235930	Fortiea contorta PCC 7126 Mic7126DRAFT_MPQ.3, whole genome shotgun sequence
+9. NZ_KK073769	[Scytonema hofmanni] UTEX 2349 Tol9009DRAFT_TPD.9, whole genome shotgun sequence
+10. NC_019682	Calothrix sp. PCC 7507, complete sequence
+11. NZ_AP014821	Geminocystis sp. NIES-3709 chromosome, complete genome
+12. NZ_AP014638	Leptolyngbya boryana IAM M-101 chromosome
+
+
+Details:
+
+>>
+1. NZ_LR882970
+Source: Planktothrix tepida strain PCC9214 chromosome I
+Type: RRE-containing
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 245.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg265_2	NMK37_RS10955	47	132	96.07843137254902	3.17e-38
+ctg265_3	NMK37_RS10960	50	113	90.75630252100841	3.13e-29
+
+
+
+>>
+2. NZ_LR882967
+Source: Planktothrix pseudagardhii strain No.713 chromosome I
+Type: RRE-containing
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 241.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg265_2	NMK36_RS19210	47	128	96.73202614379085	1.47e-36
+ctg265_3	NMK36_RS19205	50	113	90.75630252100841	3.13e-29
+
+
+
+>>
+3. NZ_VILB01000004
+Source: Anabaena sp. UHCC 0187 scaffold4_cov7, whole genome shotgun sequence
+Type: RRE-containing
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 232.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg265_2	FJR11_RS04125	47	117	96.07843137254902	2.24e-32
+ctg265_3	FJR11_RS04130	47	115	97.47899159663865	4.37e-30
+
+
+
+>>
+4. NZ_VILD01000009
+Source: Anabaena sp. UHCC 0253 XSP2A_scaffold00009_cov, whole genome shotgun sequence
+Type: RRE-containing
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 231.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg265_2	FJR38_RS22705	46	119	96.07843137254902	7.89e-33
+ctg265_3	FJR38_RS22710	46	112	97.47899159663865	6.31e-29
+
+
+
+>>
+5. NZ_RSCM01000001
+Source: Trichormus variabilis SAG 1403-4b sequence01, whole genome shotgun sequence
+Type: RRE-containing
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 225.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg265_2	DSM107003_RS02970	47	118	95.42483660130719	1.12e-32
+ctg265_3	DSM107003_RS02965	44	107	97.47899159663865	9.8e-27
+
+
+
+>>
+6. NZ_AP014821
+Source: Geminocystis sp. NIES-3709 chromosome, complete genome
+Type: RRE-containing
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 205.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg265_2	GM3709_RS09200	42	116	94.11764705882352	8.76e-32
+ctg265_3	GM3709_RS09195	44	89	87.39495798319328	6.32e-20
+
+
+
+>>
+7. NZ_CP114054
+Source: Aurantiacibacter sp. MUD11 chromosome, complete genome
+Type: RRE-containing
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 148.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg265_2	OZN62_RS05070	31	84	90.19607843137256	3.82e-19
+ctg265_3	OZN62_RS05065	44	64	61.34453781512605	3.42e-11
+
+
+
+>>
+8. NZ_KB235930
+Source: Fortiea contorta PCC 7126 Mic7126DRAFT_MPQ.3, whole genome shotgun sequence
+Type: RRE-containing
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 212.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg265_2	MIC7126_RS0120760	48	120	90.19607843137256	1.38e-33
+ctg265_3	MIC7126_RS0120750	50	92	77.31092436974791	6.42e-21
+
+
+
+>>
+9. NZ_KK073769
+Source: [Scytonema hofmanni] UTEX 2349 Tol9009DRAFT_TPD.9, whole genome shotgun sequence
+Type: RRE-containing
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 206.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg265_2	TOL9009_RS0132140	44	115	92.81045751633987	1.28e-31
+ctg265_3	TOL9009_RS0132130	44	91	96.63865546218487	8.74e-21
+
+
+
+>>
+10. NC_019682
+Source: Calothrix sp. PCC 7507, complete sequence
+Type: RRE-containing
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 205.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg265_2	CAL7507_RS16410	44	108	95.42483660130719	1.26e-28
+ctg265_3	CAL7507_RS16400	42	97	106.72268907563026	4.29e-23
+
+
+
+>>
+11. NZ_AP014821
+Source: Geminocystis sp. NIES-3709 chromosome, complete genome
+Type: RRE-containing
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 189.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg265_2	GM3709_RS06865	43	107	94.11764705882352	1.94e-28
+ctg265_3	GM3709_RS06830	49	82	65.54621848739495	2.05e-17
+
+
+
+>>
+12. NZ_AP014638
+Source: Leptolyngbya boryana IAM M-101 chromosome
+Type: RRE-containing
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 184.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg265_2	LBWT_RS11050	43	110	93.4640522875817	1.52e-29
+ctg265_3	LBWT_RS11060	36	74	101.68067226890756	1.17e-14
+

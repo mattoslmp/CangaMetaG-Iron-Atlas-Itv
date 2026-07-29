@@ -1,0 +1,447 @@
+ClusterBlast scores for NODE_14_length_48778_cov_3.346523
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg14_24	23747	24341	+		
+ctg14_25	24366	25509	+		
+ctg14_26	25924	27832	+		
+ctg14_27	27853	29527	+		
+ctg14_28	29530	30331	-		
+ctg14_29	30352	31978	-		
+ctg14_30	32310	33204	-		
+ctg14_31	33193	34204	-		
+ctg14_32	34193	34544	-		
+ctg14_33	34618	34942	-		
+ctg14_34	35002	36946	-		
+ctg14_35	36951	38172	-		
+ctg14_36	38187	38715	-		
+ctg14_37	38714	39611	-		
+ctg14_38	39607	40534	-		
+ctg14_39	40546	41128	-		
+ctg14_40	41403	42120	-		
+ctg14_41	42116	44246	-		
+
+
+Significant hits: 
+1. NC_007517	Geobacter metallireducens GS-15, complete sequence
+2. NZ_CP071382	Geobacter benzoatilyticus strain Jerry-YX chromosome, complete genome
+3. NC_002939	Geobacter sulfurreducens PCA, complete sequence
+4. NZ_CP074693	Geobacter sulfurreducens strain YM35 chromosome, complete genome
+5. NZ_CP072789	Geobacter sulfurreducens strain PL chromosome, complete genome
+6. NC_017454	Geobacter sulfurreducens KN400, complete sequence
+7. NZ_JXBL01000001	Geobacter soli strain GSS01 Scaffold1, whole genome shotgun sequence
+8. NZ_BLIZ01000001	Geobacter sp. AOG1 scaffold1, whole genome shotgun sequence
+9. NZ_CP009788	Geobacter pickeringii strain G13 chromosome, complete genome
+10. NC_011979	Geotalea daltonii FRC-32, complete sequence
+11. NZ_CP087999	Geomonas sp. RF6 chromosome, complete genome
+12. NZ_LT896716	Geobacter sp. DSM 9736 chromosome I
+13. NC_009483	Geotalea uraniireducens Rf4, complete sequence
+14. NZ_PPFX01000021	Geothermobacter hydrogeniphilus strain HR-1 NODE_21_length_71345_cov_174.314, whole genome shotgun sequence
+15. NZ_CP010311	Geoalkalibacter subterraneus strain Red1 chromosome, complete genome
+16. NZ_AP024355	Desulfuromonas versatilis strain NIT-T3 chromosome, complete genome
+17. NZ_CP015080	Desulfuromonas sp. DDH964 chromosome, complete genome
+18. NZ_FNGU01000008	Geoalkalibacter ferrihydriticus strain DSM 17813, whole genome shotgun sequence
+19. NZ_CP010802	Desulfuromonas soudanensis strain WTL chromosome, complete genome
+20. NZ_CP092109	Geoalkalibacter sp. SAP-1 chromosome
+
+
+Details:
+
+>>
+1. NC_007517
+Source: Geobacter metallireducens GS-15, complete sequence
+Type: ranthipeptide
+Number of proteins with BLAST hits to this cluster: 11
+Cumulative BLAST score: 3496.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg14_30	GMET_RS02830	36	194	98.65319865319864	1.23e-58
+ctg14_31	GMET_RS02825	69	481	99.10714285714286	5.8e-170
+ctg14_32	GMET_RS02820	56	120	87.06896551724138	9.18e-35
+ctg14_33	GMET_RS02815	65	150	100.0	1.29e-46
+ctg14_34	GMET_RS02810	59	721	97.52704791344668	5.58e-255
+ctg14_35	GMET_RS02845	51	340	86.69950738916256	5.55e-113
+ctg14_37	GMET_RS02835	52	312	97.98657718120806	1.66e-104
+ctg14_38	GMET_RS02805	49	296	96.1038961038961	5.6e-98
+ctg14_39	GMET_RS02800	41	149	100.51813471502591	1.5e-43
+ctg14_40	GMET_RS02795	46	168	73.52941176470588	5.07e-50
+ctg14_41	GMET_RS02790	55	565	96.89703808180536	7.69e-190
+
+
+
+>>
+2. NZ_CP071382
+Source: Geobacter benzoatilyticus strain Jerry-YX chromosome, complete genome
+Type: ranthipeptide
+Number of proteins with BLAST hits to this cluster: 10
+Cumulative BLAST score: 3298.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg14_31	JZM60_RS08460	72	491	97.32142857142857	5.61e-174
+ctg14_32	JZM60_RS08455	58	122	87.06896551724138	2.33e-35
+ctg14_33	JZM60_RS08450	66	152	100.0	1.57e-47
+ctg14_34	JZM60_RS08445	57	716	98.76352395672335	7.15e-253
+ctg14_35	JZM60_RS08480	51	342	86.69950738916256	4.86e-114
+ctg14_37	JZM60_RS08470	52	315	97.98657718120806	1.44e-105
+ctg14_38	JZM60_RS08440	51	302	93.83116883116884	3.1e-100
+ctg14_39	JZM60_RS08435	42	144	99.48186528497409	9.73e-42
+ctg14_40	JZM60_RS08430	40	168	86.5546218487395	7.38e-50
+ctg14_41	JZM60_RS08425	54	546	96.47390691114246	8.15e-183
+
+
+
+>>
+3. NC_002939
+Source: Geobacter sulfurreducens PCA, complete sequence
+Type: ranthipeptide
+Number of proteins with BLAST hits to this cluster: 10
+Cumulative BLAST score: 3270.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg14_31	GS_RS14610	67	461	97.32142857142857	1.42e-161
+ctg14_32	GS_RS14615	62	125	87.06896551724138	9.67e-37
+ctg14_33	GS_RS14620	66	151	100.0	4.51e-47
+ctg14_34	GS_RS14625	58	728	97.52704791344668	8.44e-258
+ctg14_35	GS_RS14590	50	331	86.69950738916256	1.66e-109
+ctg14_37	GS_RS14600	51	311	99.66442953020133	4.73e-104
+ctg14_38	GS_RS14630	51	296	93.83116883116884	5.72e-98
+ctg14_39	GS_RS14635	45	155	99.48186528497409	3.94e-46
+ctg14_40	GS_RS14640	45	165	76.47058823529412	1.15e-48
+ctg14_41	GS_RS14645	54	547	96.05077574047954	3.97e-183
+
+
+
+>>
+4. NZ_CP074693
+Source: Geobacter sulfurreducens strain YM35 chromosome, complete genome
+Type: ranthipeptide
+Number of proteins with BLAST hits to this cluster: 10
+Cumulative BLAST score: 3264.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg14_31	KIP69_RS14125	67	461	97.32142857142857	1.42e-161
+ctg14_32	KIP69_RS14130	62	125	87.06896551724138	9.67e-37
+ctg14_33	KIP69_RS14135	66	151	100.0	4.51e-47
+ctg14_34	KIP69_RS14140	58	728	97.52704791344668	8.44e-258
+ctg14_35	KIP69_RS14105	50	331	86.69950738916256	1.17e-109
+ctg14_37	KIP69_RS14115	51	311	99.66442953020133	2.35e-104
+ctg14_38	KIP69_RS14145	51	295	93.83116883116884	1.15e-97
+ctg14_39	KIP69_RS14150	44	152	99.48186528497409	9.03e-45
+ctg14_40	KIP69_RS14155	45	165	76.47058823529412	1.15e-48
+ctg14_41	KIP69_RS14160	53	545	96.33286318758815	4.45e-182
+
+
+
+>>
+5. NZ_CP072789
+Source: Geobacter sulfurreducens strain PL chromosome, complete genome
+Type: ranthipeptide
+Number of proteins with BLAST hits to this cluster: 10
+Cumulative BLAST score: 3261.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg14_31	J8622_RS14515	67	460	97.32142857142857	4.07e-161
+ctg14_32	J8622_RS14520	62	125	87.06896551724138	1.37e-36
+ctg14_33	J8622_RS14525	66	151	100.0	4.51e-47
+ctg14_34	J8622_RS14530	58	725	97.52704791344668	1.96e-256
+ctg14_35	J8622_RS14495	50	331	86.69950738916256	1.17e-109
+ctg14_37	J8622_RS14505	51	311	99.66442953020133	4.73e-104
+ctg14_38	J8622_RS14535	50	293	93.83116883116884	4.63e-97
+ctg14_39	J8622_RS14540	45	155	99.48186528497409	3.94e-46
+ctg14_40	J8622_RS14545	45	164	76.47058823529412	1.62e-48
+ctg14_41	J8622_RS14550	54	546	96.05077574047954	1.12e-182
+
+
+
+>>
+6. NC_017454
+Source: Geobacter sulfurreducens KN400, complete sequence
+Type: ranthipeptide
+Number of proteins with BLAST hits to this cluster: 10
+Cumulative BLAST score: 3260.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg14_31	KN400_RS15225	67	461	97.32142857142857	1.42e-161
+ctg14_32	KN400_RS15230	62	125	87.06896551724138	9.67e-37
+ctg14_33	KN400_RS15235	66	151	100.0	4.51e-47
+ctg14_34	KN400_RS15240	58	725	97.52704791344668	1.24e-256
+ctg14_35	KN400_RS15205	50	331	86.69950738916256	1.17e-109
+ctg14_37	KN400_RS15215	51	311	99.66442953020133	2.35e-104
+ctg14_38	KN400_RS15245	51	295	93.83116883116884	8.1e-98
+ctg14_39	KN400_RS15250	44	152	99.48186528497409	9.03e-45
+ctg14_40	KN400_RS15255	45	165	76.47058823529412	1.15e-48
+ctg14_41	KN400_RS15260	54	544	96.05077574047954	6.28e-182
+
+
+
+>>
+7. NZ_JXBL01000001
+Source: Geobacter soli strain GSS01 Scaffold1, whole genome shotgun sequence
+Type: ranthipeptide
+Number of proteins with BLAST hits to this cluster: 10
+Cumulative BLAST score: 3239.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg14_31	SE37_RS11800	66	457	97.32142857142857	3.32e-160
+ctg14_32	SE37_RS11805	63	124	85.34482758620689	2.77e-36
+ctg14_33	SE37_RS11810	66	151	100.0	4.51e-47
+ctg14_34	SE37_RS11815	59	712	94.5904173106646	5.55e-252
+ctg14_35	SE37_RS11780	50	328	86.69950738916256	1.89e-108
+ctg14_37	SE37_RS11790	51	311	99.66442953020133	3.33e-104
+ctg14_38	SE37_RS11820	51	294	93.83116883116884	3.27e-97
+ctg14_39	SE37_RS11825	44	150	99.48186528497409	5.14e-44
+ctg14_40	SE37_RS11830	45	166	76.47058823529412	4.05e-49
+ctg14_41	SE37_RS11835	54	546	96.33286318758815	1.12e-182
+
+
+
+>>
+8. NZ_BLIZ01000001
+Source: Geobacter sp. AOG1 scaffold1, whole genome shotgun sequence
+Type: ranthipeptide
+Number of proteins with BLAST hits to this cluster: 9
+Cumulative BLAST score: 2663.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg14_30	LDN04_RS01540	38	194	100.0	2.31e-58
+ctg14_31	LDN04_RS01545	70	478	97.02380952380952	7.51e-169
+ctg14_32	LDN04_RS01550	54	112	87.06896551724138	1.43e-31
+ctg14_35	LDN04_RS01525	49	328	86.69950738916256	2.68e-108
+ctg14_37	LDN04_RS01535	54	319	100.0	2.61e-107
+ctg14_38	LDN04_RS01570	54	325	96.75324675324676	1.49e-109
+ctg14_39	LDN04_RS01575	42	136	90.67357512953367	8.98e-39
+ctg14_40	LDN04_RS01580	44	187	85.71428571428571	2.43e-57
+ctg14_41	LDN04_RS01585	57	584	96.05077574047954	1.02e-197
+
+
+
+>>
+9. NZ_CP009788
+Source: Geobacter pickeringii strain G13 chromosome, complete genome
+Type: ranthipeptide
+Number of proteins with BLAST hits to this cluster: 9
+Cumulative BLAST score: 2626.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg14_30	GPICK_RS03020	40	211	98.98989898989899	4.28e-65
+ctg14_31	GPICK_RS03015	71	485	97.32142857142857	1.89e-171
+ctg14_32	GPICK_RS03010	55	118	87.06896551724138	7.51e-34
+ctg14_35	GPICK_RS03035	51	330	87.4384236453202	2.2e-109
+ctg14_37	GPICK_RS03025	53	315	98.99328859060402	1.44e-105
+ctg14_38	GPICK_RS02990	50	295	95.45454545454545	1.15e-97
+ctg14_39	GPICK_RS02985	47	157	90.15544041450777	7.13e-47
+ctg14_40	GPICK_RS02980	42	172	85.29411764705883	2.31e-51
+ctg14_41	GPICK_RS02975	56	543	97.32016925246828	1.77e-181
+
+
+
+>>
+10. NC_011979
+Source: Geotalea daltonii FRC-32, complete sequence
+Type: ranthipeptide
+Number of proteins with BLAST hits to this cluster: 9
+Cumulative BLAST score: 2573.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg14_30	GEOB_RS16655	37	207	101.01010101010101	1.63e-63
+ctg14_31	GEOB_RS16660	69	478	97.02380952380952	6.74e-169
+ctg14_32	GEOB_RS16665	61	133	86.20689655172413	8.48e-40
+ctg14_35	GEOB_RS16650	50	332	87.192118226601	8.55e-110
+ctg14_37	GEOB_RS16640	53	300	90.26845637583892	6.46e-100
+ctg14_38	GEOB_RS16670	48	264	93.18181818181817	1.82e-85
+ctg14_39	GEOB_RS16675	43	159	99.48186528497409	1.06e-47
+ctg14_40	GEOB_RS16680	40	170	84.87394957983193	5.07e-51
+ctg14_41	GEOB_RS16685	56	530	95.76868829337094	2.52e-176
+
+
+
+>>
+11. NZ_CP087999
+Source: Geomonas sp. RF6 chromosome, complete genome
+Type: ranthipeptide
+Number of proteins with BLAST hits to this cluster: 9
+Cumulative BLAST score: 2512.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg14_30	LPW11_RS20860	41	240	99.66329966329967	1.72e-76
+ctg14_31	LPW11_RS20865	66	463	99.10714285714286	5.99e-163
+ctg14_32	LPW11_RS20870	54	124	88.79310344827587	2.68e-36
+ctg14_35	LPW11_RS20845	52	345	85.4679802955665	3e-115
+ctg14_37	LPW11_RS20855	50	293	98.3221476510067	4.88e-97
+ctg14_38	LPW11_RS20890	48	273	95.45454545454545	6.04e-89
+ctg14_39	LPW11_RS20895	42	147	99.48186528497409	3.79e-43
+ctg14_40	LPW11_RS20900	40	170	89.07563025210085	1.85e-50
+ctg14_41	LPW11_RS20905	46	457	98.44851904090268	3.04e-148
+
+
+
+>>
+12. NZ_LT896716
+Source: Geobacter sp. DSM 9736 chromosome I
+Type: ranthipeptide
+Number of proteins with BLAST hits to this cluster: 7
+Cumulative BLAST score: 1951.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg14_30	CFB04_RS14455	39	205	100.0	8.41e-63
+ctg14_31	CFB04_RS14450	68	476	99.10714285714286	3.89e-168
+ctg14_32	CFB04_RS14445	55	125	85.34482758620689	1.37e-36
+ctg14_38	CFB04_RS14420	49	291	95.77922077922078	6.26e-96
+ctg14_39	CFB04_RS14415	42	147	100.0	5.86e-43
+ctg14_40	CFB04_RS14410	46	172	76.05042016806722	1.59e-51
+ctg14_41	CFB04_RS14405	55	535	96.47390691114246	2.76e-178
+
+
+
+>>
+13. NC_009483
+Source: Geotalea uraniireducens Rf4, complete sequence
+Type: ranthipeptide
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1040.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg14_30	GURA_RS08965	43	253	100.33670033670035	1.48e-81
+ctg14_31	GURA_RS08960	69	478	99.10714285714286	6.99e-169
+ctg14_32	GURA_RS08955	59	132	87.93103448275862	1.76e-39
+ctg14_39	GURA_RS08950	49	177	97.92746113989638	8.42e-55
+
+
+
+>>
+14. NZ_PPFX01000021
+Source: Geothermobacter hydrogeniphilus strain HR-1 NODE_21_length_71345_cov_174.314, whole genome shotgun sequence
+Type: ranthipeptide
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1090.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg14_31	C2E25_RS10170	54	383	98.21428571428571	2.52e-131
+ctg14_32	C2E25_RS10175	41	82	82.75862068965517	2.77e-19
+ctg14_35	C2E25_RS10180	51	339	86.94581280788178	1.27e-112
+ctg14_37	C2E25_RS10190	48	286	101.34228187919463	1.61e-94
+
+
+
+>>
+15. NZ_CP010311
+Source: Geoalkalibacter subterraneus strain Red1 chromosome, complete genome
+Type: ranthipeptide
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1077.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg14_31	GSUB_RS06410	54	370	97.32142857142857	3.38e-126
+ctg14_32	GSUB_RS06405	37	84	84.48275862068965	2.42e-20
+ctg14_35	GSUB_RS06400	50	333	86.69950738916256	1.45e-110
+ctg14_37	GSUB_RS06390	51	290	90.26845637583892	1.94e-96
+
+
+
+>>
+16. NZ_AP024355
+Source: Desulfuromonas versatilis strain NIT-T3 chromosome, complete genome
+Type: ranthipeptide
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 1028.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg14_31	DESUT3_RS12230	57	397	96.72619047619048	8.63e-137
+ctg14_35	DESUT3_RS12240	49	325	86.45320197044335	2.3e-107
+ctg14_37	DESUT3_RS12250	52	306	97.98657718120806	4.49e-102
+
+
+
+>>
+17. NZ_CP015080
+Source: Desulfuromonas sp. DDH964 chromosome, complete genome
+Type: ranthipeptide
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 1014.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg14_31	DBW_RS10045	56	381	97.02380952380952	1.45e-130
+ctg14_35	DBW_RS10055	51	348	86.69950738916256	1.98e-116
+ctg14_37	DBW_RS10065	46	285	99.32885906040269	7.63e-94
+
+
+
+>>
+18. NZ_FNGU01000008
+Source: Geoalkalibacter ferrihydriticus strain DSM 17813, whole genome shotgun sequence
+Type: ranthipeptide
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 997.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg14_31	BLS07_RS14775	58	392	96.72619047619048	5.94e-135
+ctg14_35	BLS07_RS14765	52	339	84.48275862068965	7.86e-113
+ctg14_37	BLS07_RS14755	45	266	99.66442953020133	1.69e-86
+
+
+
+>>
+19. NZ_CP010802
+Source: Desulfuromonas soudanensis strain WTL chromosome, complete genome
+Type: ranthipeptide
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 997.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg14_31	DSOUD_RS07735	55	382	96.72619047619048	5.08e-131
+ctg14_35	DSOUD_RS07725	50	327	88.42364532019704	5.73e-108
+ctg14_37	DSOUD_RS07715	50	288	97.31543624161074	7.83e-95
+
+
+
+>>
+20. NZ_CP092109
+Source: Geoalkalibacter sp. SAP-1 chromosome
+Type: ranthipeptide
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 994.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg14_31	L9S41_RS12790	58	399	96.72619047619048	1.56e-137
+ctg14_35	L9S41_RS12800	49	330	86.69950738916256	2.35e-109
+ctg14_37	L9S41_RS12810	44	265	99.66442953020133	9.31e-86
+

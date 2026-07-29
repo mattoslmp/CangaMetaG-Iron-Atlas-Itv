@@ -1,0 +1,19 @@
+ClusterBlast scores for NODE_16_length_30288_cov_3.843766
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg16_21	19367	20012	+		
+ctg16_22	20124	20709	+		
+ctg16_23	20692	21472	+		
+ctg16_24	21518	24548	-		
+ctg16_25	24904	26284	-		
+ctg16_26	26654	27479	+		
+ctg16_27	27655	28741	+		
+ctg16_28	28966	29251	-		
+ctg16_29	29639	29840	-		
+ctg16_30	29895	30288	+		
+
+
+Significant hits: 
+
+
+Details:

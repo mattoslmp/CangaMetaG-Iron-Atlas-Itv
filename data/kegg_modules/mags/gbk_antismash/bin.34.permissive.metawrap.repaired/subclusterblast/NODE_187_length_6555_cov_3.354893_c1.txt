@@ -1,0 +1,14 @@
+ClusterBlast scores for NODE_187_length_6555_cov_3.354893
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg187_1	188	4115	-		
+ctg187_2	4102	4210	-		
+ctg187_3	4228	4546	-		
+ctg187_4	4613	5570	-		
+ctg187_5	5639	6554	-		
+
+
+Significant hits: 
+
+
+Details:

@@ -1,0 +1,10 @@
+{
+  "modules": 448,
+  "samples": 67,
+  "states": [
+    "Complete",
+    "1 block missing",
+    "Incomplete"
+  ],
+  "method": "ST8 ko sheet KEMET-like proxy; 2 blocks missing collapsed into Incomplete as requested."
+}

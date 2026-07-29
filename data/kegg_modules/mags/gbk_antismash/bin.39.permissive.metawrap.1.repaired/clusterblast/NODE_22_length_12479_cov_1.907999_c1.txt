@@ -1,0 +1,18 @@
+ClusterBlast scores for NODE_22_length_12479_cov_1.907999
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg22_1	18	735	-		
+ctg22_2	1060	2332	-		
+ctg22_3	2556	2739	-		
+ctg22_4	3030	3834	-		
+ctg22_5	3940	4783	-		
+ctg22_6	5002	6016	+		
+ctg22_7	6177	6768	+		
+ctg22_8	6900	9468	-		
+ctg22_9	10135	12013	+		
+
+
+Significant hits: 
+
+
+Details:

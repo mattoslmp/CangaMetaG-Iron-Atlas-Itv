@@ -1,0 +1,14 @@
+ClusterBlast scores for NODE_18939_length_3223_cov_6.250947
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg521_1	1	1144	-		
+ctg521_2	1140	1434	-		
+ctg521_3	1646	2060	-		
+ctg521_4	2178	2478	+		
+ctg521_5	3124	3223	+		
+
+
+Significant hits: 
+
+
+Details:

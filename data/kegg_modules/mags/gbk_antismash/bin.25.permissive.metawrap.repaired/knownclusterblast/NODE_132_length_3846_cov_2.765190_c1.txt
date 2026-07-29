@@ -1,0 +1,15 @@
+ClusterBlast scores for NODE_132_length_3846_cov_2.765190
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg132_1	142	1204	+		
+ctg132_2	1237	1867	+		
+ctg132_3	1867	2140	-		
+ctg132_4	2225	2522	+		
+ctg132_5	2577	3168	+		
+ctg132_6	3134	3626	-		
+
+
+Significant hits: 
+
+
+Details:

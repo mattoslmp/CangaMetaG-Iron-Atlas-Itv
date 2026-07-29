@@ -1,0 +1,822 @@
+ClusterBlast scores for NODE_2723_length_8326_cov_5.123322
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg82_1	238	679	+		
+ctg82_2	734	2627	+		
+ctg82_3	2681	3707	+		
+ctg82_4	3707	4241	+		
+ctg82_5	4237	4957	+		
+ctg82_6	4981	5302	+		
+ctg82_7	5298	6183	-		
+ctg82_8	6260	6491	-		
+ctg82_9	6495	6753	-		
+ctg82_10	6742	7039	-		
+ctg82_11	7151	7376	-		
+ctg82_12	7553	7667	-		
+ctg82_13	7709	7955	-		
+ctg82_14	8161	8326	+		
+
+
+Significant hits: 
+1. NZ_CP087952	Desulfosarcina sp. BuS5 chromosome, complete genome
+2. NC_009943	Desulfosudis oleivorans Hxd3, complete sequence
+3. NZ_FOIK01000001	Paenibacillus sp. NFR01, whole genome shotgun sequence
+4. NZ_CP007806	Brevibacillus laterosporus LMG 15441 chromosome, complete genome
+5. NZ_CP032848	Brevibacillus laterosporus strain Bl-zj chromosome, complete genome
+6. NZ_CP041643	Olivibacter sp. LS-1 chromosome, complete genome
+7. NZ_LR027850	Olivibacter jilunii strain P8502, whole genome shotgun sequence
+8. NZ_CP086067	Stutzerimonas chloritidismutans strain 6L11 chromosome, complete genome
+9. NZ_CP113257	Stutzerimonas frequens strain TF18 chromosome, complete genome
+10. NZ_CP040709	Inhella inkyongensis strain IMCC1713 chromosome, complete genome
+11. NZ_CP090366	Stutzerimonas kunmingensis strain 7850S chromosome, complete genome
+12. NZ_RHQL01000001	Stutzerimonas xanthomarina strain PX_177 NODE_1_length_853214_cov_16.2064, whole genome shotgun sequence
+13. NZ_JAIGPC010000017	Pseudomonas cichorii strain LJDD01 Scaffold17, whole genome shotgun sequence
+14. NZ_JAIGPS010000007	Pseudomonas cichorii strain LCYJ07 Scaffold7, whole genome shotgun sequence
+15. NZ_CP066045	Stutzerimonas stutzeri strain FDAARGOS_1065 chromosome, complete genome
+16. NC_019936	Stutzerimonas stutzeri RCH2, complete sequence
+17. NZ_CP091174	Stutzerimonas stutzeri strain XX1 chromosome, complete genome
+18. NZ_JAFMNW010000002	Stutzerimonas stutzeri strain MM2021_5 NODE_2_length_826465_cov_25.787167, whole genome shotgun sequence
+19. NZ_CP078509	Stutzerimonas stutzeri strain S116 chromosome, complete genome
+20. NZ_RHRB01000002	Stutzerimonas stutzeri strain PS_197 NODE_2_length_395947_cov_37.3927, whole genome shotgun sequence
+21. NZ_MUEH01000013	Stutzerimonas stutzeri strain KMS 55 Scaffold_13, whole genome shotgun sequence
+22. NZ_WIFY01000007	Stutzerimonas frequens strain KOL14.W.20.12 Scaffold_7_length_1128880_pilon, whole genome shotgun sequence
+23. NZ_JAIGOY010000001	Pseudomonas cichorii strain WSXC14 Scaffold1, whole genome shotgun sequence
+24. NZ_JAIGPY010000001	Pseudomonas cichorii strain LCDW06 Scaffold1, whole genome shotgun sequence
+25. NZ_QPEA01000002	Pseudomonas cichorii strain 481 Contig_2, whole genome shotgun sequence
+26. NZ_WIGG01000001	Stutzerimonas frequens strain KOL14.W.5.3 Scaffold_1_length_4537025_pilon, whole genome shotgun sequence
+27. NZ_CP029772	Stutzerimonas frequens strain R2A2 chromosome, complete genome
+28. NZ_RHRJ01000001	Stutzerimonas stutzeri strain PS_128 NODE_1_length_732061_cov_15.8862, whole genome shotgun sequence
+29. NZ_QPDS01000002	Pseudomonas cichorii strain 473 Contig_2, whole genome shotgun sequence
+30. NZ_CP076668	Pseudomonas lijiangensis strain LJ2 chromosome, complete genome
+31. NZ_JAIGPG010000004	Pseudomonas cichorii strain LCYJ26 Scaffold4, whole genome shotgun sequence
+32. NZ_JAIGPP010000001	Pseudomonas cichorii strain LCYJ11 Scaffold1, whole genome shotgun sequence
+33. NZ_JAIGPV010000013	Pseudomonas cichorii strain LCYJ03 Scaffold13, whole genome shotgun sequence
+34. NZ_AP024086	Desulfomarina profundi strain KT2 chromosome, complete genome
+35. NZ_CP007509	Stutzerimonas decontaminans strain 19SMN4 chromosome, complete genome
+36. NZ_CP011854	Stutzerimonas stutzeri strain SLG510A3-8 chromosome, complete genome
+37. NZ_CP062162	Stutzerimonas stutzeri strain 2020WEIHUA_G chromosome, complete genome
+38. NZ_CP101739	Stutzerimonas stutzeri strain J15 chromosome, complete genome
+39. NZ_RHQV01000001	Stutzerimonas stutzeri strain PS_377 NODE_1_length_757854_cov_46.883165, whole genome shotgun sequence
+40. NC_015740	Stutzerimonas stutzeri, complete sequence
+41. NZ_CP025149	Stutzerimonas stutzeri strain SGAir0442 chromosome, complete genome
+42. NZ_CP078087	Stutzerimonas stutzeri strain YWX-1 chromosome, complete genome
+43. NZ_RHQZ01000001	Stutzerimonas stutzeri strain PS_234 NODE_1_length_822348_cov_20.5884, whole genome shotgun sequence
+44. NZ_RHRO01000005	Stutzerimonas stutzeri strain PS_072 NODE_5_length_304974_cov_21.7553, whole genome shotgun sequence
+45. NC_009434	Stutzerimonas stutzeri A1501, complete sequence
+46. NZ_CP027664	Stutzerimonas stutzeri strain 1W1-1A chromosome, complete genome
+47. NZ_RHQX01000003	Stutzerimonas stutzeri strain PS_366 NODE_3_length_369975_cov_49.801502, whole genome shotgun sequence
+48. NZ_WIGJ01000007	Stutzerimonas stutzeri strain KOL14.W25.495.90 Scaffold_7_length_1054418_pilon, whole genome shotgun sequence
+49. NZ_CP065720	Stutzerimonas frequens strain FDAARGOS_877 chromosome, complete genome
+50. NZ_CP113258	Stutzerimonas sp. R40042 chromosome, complete genome
+
+
+Details:
+
+>>
+1. NZ_CP087952
+Source: Desulfosarcina sp. BuS5 chromosome, complete genome
+Type: NRPS-like
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 679.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg82_2	BuS5_RS18310	50	577	97.77777777777777	7.23e-199
+ctg82_3	BuS5_RS18315	33	102	65.39589442815249	1.12e-22
+
+
+
+>>
+2. NC_009943
+Source: Desulfosudis oleivorans Hxd3, complete sequence
+Type: T1PKS,hglE-KS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 676.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg82_2	DOLE_RS08535	50	577	100.15873015873015	1.02e-198
+ctg82_3	DOLE_RS08540	32	99	70.67448680351906	1.84e-21
+
+
+
+>>
+3. NZ_FOIK01000001
+Source: Paenibacillus sp. NFR01, whole genome shotgun sequence
+Type: cyclic-lactone-autoinducer
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 675.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg82_2	BMW84_RS09245	48	566	97.93650793650794	2.2e-194
+ctg82_3	BMW84_RS09250	33	109	67.44868035190615	2.75e-25
+
+
+
+>>
+4. NZ_CP007806
+Source: Brevibacillus laterosporus LMG 15441 chromosome, complete genome
+Type: NRPS-like
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 656.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg82_2	BRLA_RS08255	48	562	98.73015873015873	6.03e-193
+ctg82_3	BRLA_RS08250	31	94	80.05865102639295	1.24e-19
+
+
+
+>>
+5. NZ_CP032848
+Source: Brevibacillus laterosporus strain Bl-zj chromosome, complete genome
+Type: NRPS,NRPS-like,PKS-like,RiPP-like,T3PKS,transAT-PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 653.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg82_2	D8Z77_RS14715	47	559	98.73015873015873	9.74e-192
+ctg82_3	D8Z77_RS14710	31	94	80.05865102639295	1.24e-19
+
+
+
+>>
+6. NZ_CP041643
+Source: Olivibacter sp. LS-1 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 638.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg82_2	FKG96_RS07335	45	506	99.36507936507937	8.55e-171
+ctg82_3	FKG96_RS07330	31	132	85.92375366568915	1.26e-33
+
+
+
+>>
+7. NZ_LR027850
+Source: Olivibacter jilunii strain P8502, whole genome shotgun sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 638.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg82_2	E0E36_RS12560	45	506	99.36507936507937	8.55e-171
+ctg82_3	E0E36_RS12555	31	132	85.92375366568915	1.26e-33
+
+
+
+>>
+8. NZ_CP086067
+Source: Stutzerimonas chloritidismutans strain 6L11 chromosome, complete genome
+Type: NI-siderophore
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 636.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg82_2	LLJ08_RS02815	48	540	97.46031746031746	2.77e-184
+ctg82_3	LLJ08_RS02820	33	96	72.14076246334311	2.4e-20
+
+
+
+>>
+9. NZ_CP113257
+Source: Stutzerimonas frequens strain TF18 chromosome, complete genome
+Type: NI-siderophore
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 635.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg82_2	OSV15_RS20505	48	540	97.46031746031746	3.92e-184
+ctg82_3	OSV15_RS20500	33	95	72.14076246334311	3.3e-20
+
+
+
+>>
+10. NZ_CP040709
+Source: Inhella inkyongensis strain IMCC1713 chromosome, complete genome
+Type: hserlactone
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 635.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg82_2	FF090_RS06925	47	539	98.73015873015873	1.23e-183
+ctg82_3	FF090_RS06920	33	96	62.17008797653959	1.28e-20
+
+
+
+>>
+11. NZ_CP090366
+Source: Stutzerimonas kunmingensis strain 7850S chromosome, complete genome
+Type: NI-siderophore
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 634.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg82_2	LW136_RS02815	48	540	97.46031746031746	3.92e-184
+ctg82_3	LW136_RS02820	33	94	72.14076246334311	8.6e-20
+
+
+
+>>
+12. NZ_RHQL01000001
+Source: Stutzerimonas xanthomarina strain PX_177 NODE_1_length_853214_cov_16.2064, whole genome shotgun sequence
+Type: NI-siderophore
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 634.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg82_2	EGJ28_RS01605	48	539	97.46031746031746	7.86e-184
+ctg82_3	EGJ28_RS01600	33	95	72.14076246334311	4.54e-20
+
+
+
+>>
+13. NZ_JAIGPC010000017
+Source: Pseudomonas cichorii strain LJDD01 Scaffold17, whole genome shotgun sequence
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 634.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg82_2	K5D69_RS18275	47	534	96.66666666666667	9.52e-182
+ctg82_3	K5D69_RS18280	34	100	71.8475073313783	3.67e-22
+
+
+
+>>
+14. NZ_JAIGPS010000007
+Source: Pseudomonas cichorii strain LCYJ07 Scaffold7, whole genome shotgun sequence
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 634.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg82_2	K5D47_RS08415	47	534	96.66666666666667	9.52e-182
+ctg82_3	K5D47_RS08420	34	100	71.8475073313783	3.67e-22
+
+
+
+>>
+15. NZ_CP066045
+Source: Stutzerimonas stutzeri strain FDAARGOS_1065 chromosome, complete genome
+Type: NI-siderophore
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 633.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg82_2	I6I22_RS19985	48	540	97.46031746031746	2.77e-184
+ctg82_3	I6I22_RS19980	33	93	72.14076246334311	1.63e-19
+
+
+
+>>
+16. NC_019936
+Source: Stutzerimonas stutzeri RCH2, complete sequence
+Type: NI-siderophore
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 633.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg82_2	PSEST_RS03130	48	540	97.46031746031746	3.92e-184
+ctg82_3	PSEST_RS03135	33	93	71.5542521994135	1.63e-19
+
+
+
+>>
+17. NZ_CP091174
+Source: Stutzerimonas stutzeri strain XX1 chromosome, complete genome
+Type: NI-siderophore
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 633.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg82_2	L1776_RS04450	48	540	97.46031746031746	3.92e-184
+ctg82_3	L1776_RS04455	33	93	71.26099706744868	2.24e-19
+
+
+
+>>
+18. NZ_JAFMNW010000002
+Source: Stutzerimonas stutzeri strain MM2021_5 NODE_2_length_826465_cov_25.787167, whole genome shotgun sequence
+Type: NI-siderophore
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 633.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg82_2	J1P25_RS06120	48	538	97.46031746031746	1.57e-183
+ctg82_3	J1P25_RS06125	33	95	71.26099706744868	4.54e-20
+
+
+
+>>
+19. NZ_CP078509
+Source: Stutzerimonas stutzeri strain S116 chromosome, complete genome
+Type: NI-siderophore
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 633.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg82_2	KVH38_RS19570	48	538	96.82539682539682	2.23e-183
+ctg82_3	KVH38_RS19575	33	95	72.14076246334311	3.3e-20
+
+
+
+>>
+20. NZ_RHRB01000002
+Source: Stutzerimonas stutzeri strain PS_197 NODE_2_length_395947_cov_37.3927, whole genome shotgun sequence
+Type: NI-siderophore
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 633.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg82_2	EGJ07_RS03370	48	538	96.82539682539682	3.15e-183
+ctg82_3	EGJ07_RS03365	33	95	72.14076246334311	3.3e-20
+
+
+
+>>
+21. NZ_MUEH01000013
+Source: Stutzerimonas stutzeri strain KMS 55 Scaffold_13, whole genome shotgun sequence
+Type: NI-siderophore
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 633.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg82_2	BV581_RS20065	48	537	97.46031746031746	4.46e-183
+ctg82_3	BV581_RS20070	33	96	71.26099706744868	2.4e-20
+
+
+
+>>
+22. NZ_WIFY01000007
+Source: Stutzerimonas frequens strain KOL14.W.20.12 Scaffold_7_length_1128880_pilon, whole genome shotgun sequence
+Type: NI-siderophore
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 633.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg82_2	GFL02_RS19825	48	537	97.46031746031746	6.32e-183
+ctg82_3	GFL02_RS19830	33	96	71.26099706744868	1.74e-20
+
+
+
+>>
+23. NZ_JAIGOY010000001
+Source: Pseudomonas cichorii strain WSXC14 Scaffold1, whole genome shotgun sequence
+Type: NRPS-like,T1PKS,T3PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 633.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg82_2	K5D38_RS02065	47	534	96.66666666666667	6.73e-182
+ctg82_3	K5D38_RS02060	34	99	70.67448680351906	1.84e-21
+
+
+
+>>
+24. NZ_JAIGPY010000001
+Source: Pseudomonas cichorii strain LCDW06 Scaffold1, whole genome shotgun sequence
+Type: NRPS-like,T1PKS,T3PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 633.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg82_2	K5D50_RS01845	47	534	96.66666666666667	6.73e-182
+ctg82_3	K5D50_RS01840	34	99	70.67448680351906	1.84e-21
+
+
+
+>>
+25. NZ_QPEA01000002
+Source: Pseudomonas cichorii strain 481 Contig_2, whole genome shotgun sequence
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 633.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg82_2	D2G43_RS01880	47	534	96.66666666666667	6.73e-182
+ctg82_3	D2G43_RS01885	34	99	70.67448680351906	1.84e-21
+
+
+
+>>
+26. NZ_WIGG01000001
+Source: Stutzerimonas frequens strain KOL14.W.5.3 Scaffold_1_length_4537025_pilon, whole genome shotgun sequence
+Type: NI-siderophore
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 632.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg82_2	GFL01_RS20345	48	537	97.46031746031746	6.32e-183
+ctg82_3	GFL01_RS20350	33	95	71.26099706744868	4.54e-20
+
+
+
+>>
+27. NZ_CP029772
+Source: Stutzerimonas frequens strain R2A2 chromosome, complete genome
+Type: NI-siderophore
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 632.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg82_2	DM292_RS00715	48	536	97.46031746031746	8.94e-183
+ctg82_3	DM292_RS00720	33	96	71.26099706744868	2.4e-20
+
+
+
+>>
+28. NZ_RHRJ01000001
+Source: Stutzerimonas stutzeri strain PS_128 NODE_1_length_732061_cov_15.8862, whole genome shotgun sequence
+Type: NI-siderophore
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 632.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg82_2	EGJ71_RS02140	48	536	96.82539682539682	8.94e-183
+ctg82_3	EGJ71_RS02145	33	96	71.26099706744868	2.4e-20
+
+
+
+>>
+29. NZ_QPDS01000002
+Source: Pseudomonas cichorii strain 473 Contig_2, whole genome shotgun sequence
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 632.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg82_2	D2G36_RS02195	47	534	96.66666666666667	9.52e-182
+ctg82_3	D2G36_RS02190	34	98	70.67448680351906	2.53e-21
+
+
+
+>>
+30. NZ_CP076668
+Source: Pseudomonas lijiangensis strain LJ2 chromosome, complete genome
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 632.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg82_2	KQP88_RS21545	47	533	96.66666666666667	2.7e-181
+ctg82_3	KQP88_RS21540	33	99	71.8475073313783	1.33e-21
+
+
+
+>>
+31. NZ_JAIGPG010000004
+Source: Pseudomonas cichorii strain LCYJ26 Scaffold4, whole genome shotgun sequence
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 632.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg82_2	K5D34_RS07300	47	532	96.66666666666667	3.82e-181
+ctg82_3	K5D34_RS07295	34	100	71.8475073313783	2.65e-22
+
+
+
+>>
+32. NZ_JAIGPP010000001
+Source: Pseudomonas cichorii strain LCYJ11 Scaffold1, whole genome shotgun sequence
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 632.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg82_2	K5D57_RS01945	47	532	96.66666666666667	3.82e-181
+ctg82_3	K5D57_RS01940	34	100	71.8475073313783	6.99e-22
+
+
+
+>>
+33. NZ_JAIGPV010000013
+Source: Pseudomonas cichorii strain LCYJ03 Scaffold13, whole genome shotgun sequence
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 632.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg82_2	K5D56_RS17200	47	532	96.66666666666667	3.82e-181
+ctg82_3	K5D56_RS17195	34	100	71.8475073313783	2.65e-22
+
+
+
+>>
+34. NZ_AP024086
+Source: Desulfomarina profundi strain KT2 chromosome, complete genome
+Type: NRPS-like
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 631.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg82_2	LO777_RS04610	48	572	97.93650793650794	8.71e-197
+ctg82_3	LO777_RS04615	44	59	23.75366568914956	1.8e-08
+
+
+
+>>
+35. NZ_CP007509
+Source: Stutzerimonas decontaminans strain 19SMN4 chromosome, complete genome
+Type: NI-siderophore
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 631.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg82_2	UIB01_RS02620	48	538	97.46031746031746	1.57e-183
+ctg82_3	UIB01_RS02625	33	93	71.26099706744868	2.24e-19
+
+
+
+>>
+36. NZ_CP011854
+Source: Stutzerimonas stutzeri strain SLG510A3-8 chromosome, complete genome
+Type: NI-siderophore
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 631.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg82_2	AB691_RS18625	48	538	97.46031746031746	1.57e-183
+ctg82_3	AB691_RS18620	33	93	71.26099706744868	1.63e-19
+
+
+
+>>
+37. NZ_CP062162
+Source: Stutzerimonas stutzeri strain 2020WEIHUA_G chromosome, complete genome
+Type: NI-siderophore
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 631.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg82_2	IGX38_RS18750	48	538	97.46031746031746	1.57e-183
+ctg82_3	IGX38_RS18745	33	93	71.26099706744868	1.63e-19
+
+
+
+>>
+38. NZ_CP101739
+Source: Stutzerimonas stutzeri strain J15 chromosome, complete genome
+Type: NI-siderophore
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 631.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg82_2	NPN27_RS19140	48	538	97.46031746031746	1.57e-183
+ctg82_3	NPN27_RS19135	33	93	71.26099706744868	1.63e-19
+
+
+
+>>
+39. NZ_RHQV01000001
+Source: Stutzerimonas stutzeri strain PS_377 NODE_1_length_757854_cov_46.883165, whole genome shotgun sequence
+Type: NI-siderophore
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 631.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg82_2	EGJ12_RS01190	48	538	97.46031746031746	1.57e-183
+ctg82_3	EGJ12_RS01185	33	93	71.26099706744868	1.63e-19
+
+
+
+>>
+40. NC_015740
+Source: Stutzerimonas stutzeri, complete sequence
+Type: NI-siderophore
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 631.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg82_2	PSTAB_RS18205	48	538	97.46031746031746	2.23e-183
+ctg82_3	PSTAB_RS18200	33	93	71.26099706744868	1.63e-19
+
+
+
+>>
+41. NZ_CP025149
+Source: Stutzerimonas stutzeri strain SGAir0442 chromosome, complete genome
+Type: NI-siderophore
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 631.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg82_2	CXB48_RS19075	48	538	96.82539682539682	2.23e-183
+ctg82_3	CXB48_RS19070	33	93	71.26099706744868	1.63e-19
+
+
+
+>>
+42. NZ_CP078087
+Source: Stutzerimonas stutzeri strain YWX-1 chromosome, complete genome
+Type: NI-siderophore
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 631.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg82_2	KUD99_RS18105	48	538	97.46031746031746	2.23e-183
+ctg82_3	KUD99_RS18100	33	93	71.26099706744868	1.63e-19
+
+
+
+>>
+43. NZ_RHQZ01000001
+Source: Stutzerimonas stutzeri strain PS_234 NODE_1_length_822348_cov_20.5884, whole genome shotgun sequence
+Type: NI-siderophore
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 631.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg82_2	EGI92_RS02345	48	538	96.82539682539682	2.23e-183
+ctg82_3	EGI92_RS02350	33	93	71.26099706744868	1.63e-19
+
+
+
+>>
+44. NZ_RHRO01000005
+Source: Stutzerimonas stutzeri strain PS_072 NODE_5_length_304974_cov_21.7553, whole genome shotgun sequence
+Type: NI-siderophore
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 631.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg82_2	EGJ45_RS09460	48	538	97.46031746031746	2.23e-183
+ctg82_3	EGJ45_RS09455	33	93	71.26099706744868	1.63e-19
+
+
+
+>>
+45. NC_009434
+Source: Stutzerimonas stutzeri A1501, complete sequence
+Type: NI-siderophore
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 631.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg82_2	PST_RS18450	48	538	96.82539682539682	3.15e-183
+ctg82_3	PST_RS18445	33	93	71.26099706744868	1.63e-19
+
+
+
+>>
+46. NZ_CP027664
+Source: Stutzerimonas stutzeri strain 1W1-1A chromosome, complete genome
+Type: NI-siderophore
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 631.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg82_2	C6Y50_RS03940	48	538	96.82539682539682	3.15e-183
+ctg82_3	C6Y50_RS03935	33	93	71.26099706744868	1.63e-19
+
+
+
+>>
+47. NZ_RHQX01000003
+Source: Stutzerimonas stutzeri strain PS_366 NODE_3_length_369975_cov_49.801502, whole genome shotgun sequence
+Type: NI-siderophore
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 631.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg82_2	EGJ26_RS07060	48	538	96.82539682539682	3.15e-183
+ctg82_3	EGJ26_RS07065	33	93	71.26099706744868	1.63e-19
+
+
+
+>>
+48. NZ_WIGJ01000007
+Source: Stutzerimonas stutzeri strain KOL14.W25.495.90 Scaffold_7_length_1054418_pilon, whole genome shotgun sequence
+Type: NI-siderophore
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 631.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg82_2	GFK96_RS20920	48	538	96.82539682539682	3.15e-183
+ctg82_3	GFK96_RS20915	33	93	71.26099706744868	1.63e-19
+
+
+
+>>
+49. NZ_CP065720
+Source: Stutzerimonas frequens strain FDAARGOS_877 chromosome, complete genome
+Type: NI-siderophore
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 631.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg82_2	I6G34_RS02320	48	536	97.46031746031746	1.79e-182
+ctg82_3	I6G34_RS02315	33	95	72.14076246334311	3.3e-20
+
+
+
+>>
+50. NZ_CP113258
+Source: Stutzerimonas sp. R40042 chromosome, complete genome
+Type: NI-siderophore
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 631.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg82_2	OUY36_RS18840	48	536	97.46031746031746	1.79e-182
+ctg82_3	OUY36_RS18835	33	95	71.26099706744868	4.54e-20
+

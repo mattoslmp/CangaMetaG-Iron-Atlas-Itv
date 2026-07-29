@@ -1,0 +1,10 @@
+ClusterBlast scores for NODE_20989_length_3053_cov_3.366911
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg235_1	97	3052	-		
+
+
+Significant hits: 
+
+
+Details:

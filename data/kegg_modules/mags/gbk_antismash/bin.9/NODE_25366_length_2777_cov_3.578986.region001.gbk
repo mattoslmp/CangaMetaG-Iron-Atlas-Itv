@@ -1,0 +1,241 @@
+LOCUS       NODE_25366_length_2777_cov_3.578986 2777 bp    DNA              UNK 01-JAN-1980
+DEFINITION  NODE_25366_length_2777_cov_3.578986.
+ACCESSION   NODE_25366_length_2777_cov_3
+VERSION     NODE_25366_length_2777_cov_3.578986
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+COMMENT     ##antiSMASH-Data-START##
+            Version     :: 8.0.4
+            Run date    :: 2026-07-02 19:35:31
+            NOTE :: This is a single region extracted from a larger record!
+            Orig. start :: 0
+            Orig. end   :: 2777
+            ##antiSMASH-Data-END##
+FEATURES             Location/Qualifiers
+     region          1..2777
+                     /candidate_cluster_numbers="1"
+                     /contig_edge="True"
+                     /product="RiPP-like"
+                     /region_number="1"
+                     /rules="(strepbact or Antimicrobial14 or Bacteriocin_IId or
+                     BacteriocIIc_cy or Bacteriocin_II or Bacteriocin_IIi or
+                     Lactococcin or Antimicrobial17 or Lactococcin_972 or
+                     Bacteriocin_IIc or LcnG-beta or Cloacin or Linocin_M18 or
+                     TIGR03651 or TIGR03693 or TIGR03601 or TIGR03795 or
+                     TIGR03975 or DUF692 or TIGR01193 or (YcaO or TIGR03604))"
+                     /tool="antismash"
+     cand_cluster    1..2777
+                     /candidate_cluster_number="1"
+                     /contig_edge="True"
+                     /detection_rules="(strepbact or Antimicrobial14 or
+                     Bacteriocin_IId or BacteriocIIc_cy or Bacteriocin_II or
+                     Bacteriocin_IIi or Lactococcin or Antimicrobial17 or
+                     Lactococcin_972 or Bacteriocin_IIc or LcnG-beta or Cloacin
+                     or Linocin_M18 or TIGR03651 or TIGR03693 or TIGR03601 or
+                     TIGR03795 or TIGR03975 or DUF692 or TIGR01193 or (YcaO or
+                     TIGR03604))"
+                     /kind="single"
+                     /product="RiPP-like"
+                     /protoclusters="1"
+                     /tool="antismash"
+     protocluster    1..2777
+                     /aStool="rule-based-clusters"
+                     /category="RiPP"
+                     /contig_edge="True"
+                     /core_location="[2542:2776](+)"
+                     /cutoff="20000"
+                     /detection_rule="(strepbact or Antimicrobial14 or
+                     Bacteriocin_IId or BacteriocIIc_cy or Bacteriocin_II or
+                     Bacteriocin_IIi or Lactococcin or Antimicrobial17 or
+                     Lactococcin_972 or Bacteriocin_IIc or LcnG-beta or Cloacin
+                     or Linocin_M18 or TIGR03651 or TIGR03693 or TIGR03601 or
+                     TIGR03795 or TIGR03975 or DUF692 or TIGR01193 or (YcaO or
+                     TIGR03604))"
+                     /neighbourhood="5000"
+                     /product="RiPP-like"
+                     /protocluster_number="1"
+                     /tool="antismash"
+     proto_core      2543..2776
+                     /aStool="rule-based-clusters"
+                     /tool="antismash"
+                     /cutoff="20000"
+                     /detection_rule="(strepbact or Antimicrobial14 or
+                     Bacteriocin_IId or BacteriocIIc_cy or Bacteriocin_II or
+                     Bacteriocin_IIi or Lactococcin or Antimicrobial17 or
+                     Lactococcin_972 or Bacteriocin_IIc or LcnG-beta or Cloacin
+                     or Linocin_M18 or TIGR03651 or TIGR03693 or TIGR03601 or
+                     TIGR03795 or TIGR03975 or DUF692 or TIGR01193 or (YcaO or
+                     TIGR03604))"
+                     /neighbourhood="5000"
+                     /product="RiPP-like"
+                     /protocluster_number="1"
+     CDS             complement(3..758)
+                     /gene_functions="biosynthetic-additional
+                     (rule-based-clusters) Pyr_redox_2"
+                     /gene_functions="biosynthetic-additional (smcogs)
+                     SMCOG1175: pyridine nucleotide-disulfide oxidoreductase"
+                     /gene_kind="biosynthetic-additional"
+                     /locus_tag="ctg493_1"
+                     /sec_met_domain="Pyr_redox_2 (E-value: 8.7e-39, bitscore:
+                     121.8, seeds: 64, tool: rule-based-clusters)"
+                     /transl_table=11
+                     /translation="MATAPARAPVLIESDPYDQELARHVRPAGWKNPKPASRYDLVVVG
+                     AGTAGLVSALGAAGLGARVALVERALLGGDCLNHGCVPSKGLIRASRAAFDARGGAPFG
+                     VEASAPRADFGAAMTRMRRLRAGIARNDSAARATSLGVDVFLGDGRFVGEDALEVAGAT
+                     LRFKRAVVATGARASAPPVPGLAGAGYRTNETIFTLTELPRRLAVVGAGPIGCELGQAF
+                     RRFGAEVTIVGADPRLLPREDPEASAVLRH"
+     PFAM_domain     complement(9..644)
+                     /aSDomain="Pyr_redox_2"
+                     /aSTool="clusterhmmer"
+                     /database="35.0"
+                     /db_xref="PF07992.17"
+                     /db_xref="GO:0016491"
+                     /description="Pyridine nucleotide-disulphide
+                     oxidoreductase"
+                     /detection="hmmscan"
+                     /domain_id="clusterhmmer_ctg493_1_0001"
+                     /evalue="3.40E-35"
+                     /gene_ontologies="GO:0016491: oxidoreductase activity"
+                     /label="ctg493_1"
+                     /locus_tag="ctg493_1"
+                     /protein_end="250"
+                     /protein_start="38"
+                     /score="121.8"
+                     /tool="antismash"
+                     /translation="YDLVVVGAGTAGLVSALGAAGLGARVALVERALLGGDCLNHGCVP
+                     SKGLIRASRAAFDARGGAPFGVEASAPRADFGAAMTRMRRLRAGIARNDSAARATSLGV
+                     DVFLGDGRFVGEDALEVAGATLRFKRAVVATGARASAPPVPGLAGAGYRTNETIFTLTE
+                     LPRRLAVVGAGPIGCELGQAFRRFGAEVTIVGADPRLLPREDPEASAVL"
+     CDS             complement(841..1179)
+                     /locus_tag="ctg493_2"
+                     /transl_table=11
+                     /translation="MNEDAGAKVIDADGFEQEVLHASEPVLVDFHATWCGPCHALAPTL
+                     DELARDLAGRARVVKLDVDEAPHLAREYQVSSIPCLVVFKGGREVGRLVGAVPKRRIAG
+                     VLEAALAA"
+     aSDomain        complement(856..1146)
+                     /aSDomain="TIGR01068"
+                     /aSTool="tigrfam"
+                     /description="thioredoxin: thioredoxin"
+                     /detection="hmmscan"
+                     /domain_id="TIGRFam_ctg493_2_0001"
+                     /evalue="2.50E-32"
+                     /identifier="TIGR01068"
+                     /label="ctg493_2"
+                     /locus_tag="ctg493_2"
+                     /protein_end="108"
+                     /protein_start="11"
+                     /score="109.0"
+                     /tool="antismash"
+                     /translation="ADGFEQEVLHASEPVLVDFHATWCGPCHALAPTLDELARDLAGRA
+                     RVVKLDVDEAPHLAREYQVSSIPCLVVFKGGREVGRLVGAVPKRRIAGVLEA"
+     PFAM_domain     complement(862..1155)
+                     /aSDomain="Thioredoxin"
+                     /aSTool="clusterhmmer"
+                     /database="35.0"
+                     /db_xref="PF00085.23"
+                     /description="Thioredoxin"
+                     /detection="hmmscan"
+                     /domain_id="clusterhmmer_ctg493_2_0002"
+                     /evalue="6.80E-28"
+                     /label="ctg493_2"
+                     /locus_tag="ctg493_2"
+                     /protein_end="106"
+                     /protein_start="8"
+                     /score="96.8"
+                     /tool="antismash"
+                     /translation="VIDADGFEQEVLHASEPVLVDFHATWCGPCHALAPTLDELARDLA
+                     GRARVVKLDVDEAPHLAREYQVSSIPCLVVFKGGREVGRLVGAVPKRRIAGVL"
+     misc_feature    complement(1446..1459)
+                     /note="TFBS match to ANR, Anaerobic transcriptional
+                     regulator, confidence: weak, score: 18.84"
+                     /tool="antismash"
+     CDS             1503..2144
+                     /locus_tag="ctg493_3"
+                     /transl_table=11
+                     /translation="MNRTAALLAVTLATPAALAEDFTVNPDAGNNSFSAVFDAALGERI
+                     NAVSSAVGCDLAYDEKAGVASGRCSVPLTSIRVDNDDTKSDHFRQWATNKKSDPAACKL
+                     EAVLGAVKVGPLAPETPAPFATEIPFTVCGRARADGGTEKVAGTALLFPPGAYGERKTI
+                     RIRATVAGFDRDAYRIGPKYTEGWLARVQSLAKVVAEKGTVELSLFAKAK"
+     CDS             2221..2493
+                     /locus_tag="ctg493_4"
+                     /transl_table=11
+                     /translation="MIREAVKGAVVAAAVCSMFAAGTARAAEKTKDGPKVVHCGGINAC
+                     KGQGSCAGADNACKAQNSCKGQGWVESKSEKECKAKGGKVLAAKM"
+     CDS             2543..2776
+                     /gene_functions="biosynthetic (rule-based-clusters)
+                     RiPP-like: DUF692"
+                     /gene_kind="biosynthetic"
+                     /locus_tag="ctg493_5"
+                     /sec_met_domain="DUF692 (E-value: 4.7e-21, bitscore: 63.5,
+                     seeds: 7, tool: rule-based-clusters)"
+                     /transl_table=11
+                     /translation="MDLPHLGHGIGLRSRHFERFLAERPPVDWVEAVTENFMAPGGRPI
+                     AVLEKVRREVPVVLHGVSLAIGSVDPMPERYLD"
+     PFAM_domain     2564..2773
+                     /aSDomain="DUF692"
+                     /aSTool="clusterhmmer"
+                     /database="35.0"
+                     /db_xref="PF05114.16"
+                     /description="Protein of unknown function (DUF692)"
+                     /detection="hmmscan"
+                     /domain_id="clusterhmmer_ctg493_5_0003"
+                     /evalue="1.10E-20"
+                     /label="ctg493_5"
+                     /locus_tag="ctg493_5"
+                     /protein_end="77"
+                     /protein_start="7"
+                     /score="74.1"
+                     /tool="antismash"
+                     /translation="HGIGLRSRHFERFLAERPPVDWVEAVTENFMAPGGRPIAVLEKVR
+                     REVPVVLHGVSLAIGSVDPMPERYL"
+ORIGIN
+        1 tggtgccgca gcacggccga ggcctccgga tcctcgcgcg gcaggagcct cgggtcggcg
+       61 ccgacgatgg tcacctcggc gccgaagcgc cggaacgcct gccccagctc gcagccgatg
+      121 gggccggccc cgacgacggc gaggcggcgc ggcagctcgg tgagcgtgaa gatggtttcg
+      181 ttggtccggt agccggcccc ggccaggccc gggaccggcg gcgccgaggc gcgggcgccg
+      241 gtggccacga ccgcccgctt gaagcgaagc gtcgcgccgg ccacctccag cgcgtcctcg
+      301 ccgacgaagc ggccgtcgcc gaggaagacg tccacgccga gcgacgtggc gcgagcggcc
+      361 gagtcgttgc gcgcgatgcc ggcccgcagg cggcgcatgc gcgtcatggc cgcgccgaag
+      421 tccgcccggg gcgcggaggc ctcgacgccg aagggcgccc cgccgcgggc gtcgaaggcg
+      481 gcccgcgagg cgcggatgag ccctttcgag ggaacgcagc cgtggttgag gcagtcgccg
+      541 ccgaggagcg cccgctccac cagcgccacc cgggcgccga ggccggcggc ccccagcgcc
+      601 gagaccaggc cggcggtgcc cgcgccgacc accaccaggt cgtagcggga tgctggtttc
+      661 gggttcttcc agccggcggg ccggacgtgg cgggccagct cctgatcgta cgggtcggac
+      721 tcgatgagca ccggggctcg ggcgggggcg gtcgccatgg cgtggtctgg agggagccgc
+      781 ctcggcccag ggcgaggaaa cgccgtctcg tcgcagctga gggccggggc cttccggctg
+      841 tcaggccgcg agggccgcct ccagcacgcc cgcgatgcgg cgcttgggaa cggcgccgac
+      901 caggcgcccc acctcgcgcc cgcccttgaa gaccaccagg cacgggatcg aggaaacctg
+      961 gtactcgcgg gccaggtgcg gcgcctcgtc gacgtcgagc ttcaccacac gcgcgcgccc
+     1021 ggcgagatcg cgggccagct cgtccagcgt cggcgccagg gcatggcagg ggccgcacca
+     1081 cgtcgcgtgg aagtccacca gcaccggctc cgacgcgtgg agcacctcct gctcgaagcc
+     1141 gtcggcatcg atcactttcg cgcctgcatc ctcgttcatg gctcgctctc ctgtcctcac
+     1201 ggccgggaat ccgcgccgtg tgtccttggt cgtgccgagc accggtggca ttacagccgc
+     1261 cgcgaccgcg gtgccgcctc ctccctccgc cgatgccgga tgggctcgtc gttcaggctg
+     1321 cgccagggtc gcggacgcga cgggttcgag gccgaggcgc tggatgccgc ggttctcccc
+     1381 tgcgcgcagt gccagcatca cgagcgcctg cgacccagat ggggcccgtc ctgtaatggc
+     1441 gccacttgac ccgagtcaaa cgcggcgagg ccgacgaggc cacttgccca cgaggagccg
+     1501 caatgaaccg gaccgccgcc ctgctcgccg tgaccctggc cacgcccgcc gcgttggccg
+     1561 aggacttcac ggtgaacccc gacgccggca acaacagctt ctcggcggtg ttcgacgccg
+     1621 ccctcggcga gcgcatcaac gccgtcagct cggccgtcgg gtgcgacctc gcctacgacg
+     1681 agaaggcggg cgtcgcctcg gggcgctgct cggtgccgct cacctccatc cgcgtcgaca
+     1741 acgacgatac caagagcgac cacttccgcc agtgggccac caacaagaag tccgacccgg
+     1801 cggcctgcaa gctcgaggcg gtgctcggcg ccgtgaaggt cggcccgctc gcccccgaga
+     1861 cgccggcgcc cttcgccacc gagatcccct tcaccgtgtg cggccgcgcc cgcgccgacg
+     1921 gcggcacgga gaaggtggct ggcaccgccc tgctcttccc gcccggcgcc tacggcgaga
+     1981 ggaagaccat ccgcatccgc gccaccgtcg ccggcttcga ccgcgacgcc taccgcatcg
+     2041 gccccaagta caccgaaggc tggctggcgc gggtgcagtc gctcgccaag gtggtcgccg
+     2101 agaagggcac cgtcgaactc tccctcttcg ccaaggcgaa gtgaccgcct cggcccgtcg
+     2161 tcccactccg tcgcaccgga tgggtccgca gtccaacgca gtccaccgaa aggaaacgcc
+     2221 atgatccgtg aagccgtgaa gggcgccgtg gtcgccgccg ccgtctgttc catgttcgcc
+     2281 gccggcaccg cccgggccgc cgagaagacc aaggacggcc ccaaggtcgt ccactgcggc
+     2341 ggcatcaacg cctgcaaggg gcagggcagc tgcgccggcg ccgacaacgc ctgcaaggcc
+     2401 cagaacagct gcaagggcca gggctgggtc gagagcaaga gcgagaagga gtgcaaggcc
+     2461 aagggcggca aggttctcgc cgccaagatg tagccgaccg gagcccgggg ccggcccgcg
+     2521 tggccggctc cgggaccgcg ccatggacct cccccacctc ggacacggca tcggcctccg
+     2581 ctcccggcac ttcgagcgct tcctggcgga gcgcccgccg gtcgactggg tcgaggcggt
+     2641 gaccgagaac ttcatggcgc cgggcggccg gcccatcgcc gtcctggaga aggtgcggcg
+     2701 cgaggtgccg gtggtgctgc acggcgtctc gctcgccatc gggtcggtgg accccatgcc
+     2761 ggagcgctac ctcgacg
+//

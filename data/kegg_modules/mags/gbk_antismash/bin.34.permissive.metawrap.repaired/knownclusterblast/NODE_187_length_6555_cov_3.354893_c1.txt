@@ -1,0 +1,134 @@
+ClusterBlast scores for NODE_187_length_6555_cov_3.354893
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg187_1	188	4115	-		
+ctg187_2	4102	4210	-		
+ctg187_3	4228	4546	-		
+ctg187_4	4613	5570	-		
+ctg187_5	5639	6554	-		
+
+
+Significant hits: 
+1. BGC0002296.2	vatiamide A/vatiamide B/vatiamide C/vatiamide D/vatiamide E/vatiamide F
+2. BGC0001001.5	jamaicamide A/jamaicamide B/jamaicamide C
+3. BGC0002597.2	Nocuolactylate A/Nocuolactylate B/Nocuolactylate C
+4. BGC0001704.3	nocuolin A
+5. BGC0002480.2	chlorosphaerolactylate D/chlorosphaerolactylate A/chlorosphaerolactylate B/chlorosphaerolactylate C
+6. BGC0001164.3	1-heptadecene
+7. BGC0002804.2	protegencin
+
+
+Details:
+
+>>
+1. BGC0002296.2
+Source: vatiamide A/vatiamide B/vatiamide C/vatiamide D/vatiamide E/vatiamide F
+Type: NRPS:Type I+PKS
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 4865.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg187_1	QCP68966.1	46	867	81.03975535168195	4.21e-279
+ctg187_1	QCP68973.1	46	818	73.92966360856269	1.65e-271
+ctg187_1	QCP68970.1	47	823	72.70642201834863	4.88e-270
+ctg187_1	QCP68968.1	46	811	72.17125382262996	2.72e-263
+ctg187_1	QCP68974.1	46	787	73.01223241590215	6.13e-260
+ctg187_3	QCP68990.1	60	105	73.33333333333333	8.83e-31
+ctg187_4	QCP68985.1	58	363	94.9685534591195	6.18e-126
+ctg187_5	QCP68985.1	51	291	90.78947368421053	1.16e-97
+
+
+
+>>
+2. BGC0001001.5
+Source: jamaicamide A/jamaicamide B/jamaicamide C
+Type: NRPS:Type I+PKS
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 2336.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg187_1	AAS98777.1	46	774	69.03669724770643	1.25e-253
+ctg187_1	AAS98783.1	47	805	71.94189602446484	5.64e-253
+ctg187_3	AAS98798.1	58	103	73.33333333333333	7.22e-30
+ctg187_4	AAS98775.1	58	361	94.9685534591195	5.03e-125
+ctg187_5	AAS98775.1	51	293	90.78947368421053	1.44e-98
+
+
+
+>>
+3. BGC0002597.2
+Source: Nocuolactylate A/Nocuolactylate B/Nocuolactylate C
+Type: NRPS:Type I+PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 960.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg187_1	QOV09193.1	54	868	65.36697247706422	4.94e-300
+ctg187_3	QOV09191.1	56	92	68.57142857142857	1.56e-25
+
+
+
+>>
+4. BGC0001704.3
+Source: nocuolin A
+Type: other:other
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 951.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg187_1	AQX77694.1	54	870	65.4434250764526	1.24e-300
+ctg187_3	AQX77692.1	59	81	60.0	1.28e-21
+
+
+
+>>
+5. BGC0002480.2
+Source: chlorosphaerolactylate D/chlorosphaerolactylate A/chlorosphaerolactylate B/chlorosphaerolactylate C
+Type: PKS+NRPS:Type I
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 947.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg187_1	H5968_00855	55	855	62.61467889908256	3.24e-290
+ctg187_3	H5968_00875	55	92	71.42857142857143	1.04e-25
+
+
+
+>>
+6. BGC0001164.3
+Source: 1-heptadecene
+Type: PKS:Type I
+Number of proteins with BLAST hits to this cluster: 1
+Cumulative BLAST score: 780.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg187_1	Cyan7822_1847	48	780	68.96024464831805	1.75e-247
+
+
+
+>>
+7. BGC0002804.2
+Source: protegencin
+Type: other:other
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 762.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg187_4	PPRCHA0_0267	52	273	83.9622641509434	1.33e-90
+ctg187_4	PPRCHA0_0268	46	230	75.15723270440252	1.2e-73
+ctg187_5	PPRCHA0_0267	48	259	87.17105263157895	1.58e-85
+

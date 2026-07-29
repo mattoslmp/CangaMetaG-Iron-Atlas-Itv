@@ -1,0 +1,98 @@
+ClusterBlast scores for NODE_280_length_21721_cov_6.557556
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg14_1	2	554	-		
+ctg14_2	556	1354	-		
+ctg14_3	1387	2086	+		
+ctg14_4	2141	2972	-		
+ctg14_5	3288	5490	-		
+ctg14_6	5547	5754	+		
+ctg14_7	5772	6978	+		
+ctg14_8	7001	8960	+		
+ctg14_9	8970	9663	-		
+ctg14_10	9772	10765	-		
+ctg14_11	10773	11637	-		
+ctg14_12	11633	12053	-		
+ctg14_13	12049	12604	-		
+ctg14_14	12691	13690	-		
+ctg14_15	13783	14884	-		
+ctg14_16	14880	16653	-		
+ctg14_17	16657	16915	-		
+ctg14_18	16911	17520	-		
+ctg14_19	17513	18578	-		
+ctg14_20	18712	20734	-		
+ctg14_21	20879	21719	+		
+
+
+Significant hits: 
+1. BGC0001964.2	alkylpyrone-407/alkylpyrone-393
+2. BGC0001831.3	alkylpyrone-407/alkylpyrone-393
+3. BGC0000282.3	2-methoxy-5-methyl-6-(13-methyltetradecyl)-1,4-benzoquinone/2-methoxy-5-methyl-6-(13-methyltetradecyl)phenol
+4. BGC0001647.3	lagunapyrone A/lagunapyrone B/lagunapyrone C
+
+
+Details:
+
+>>
+1. BGC0001964.2
+Source: alkylpyrone-407/alkylpyrone-393
+Type: PKS
+Number of proteins with BLAST hits to this cluster: 5
+Cumulative BLAST score: 1662.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg14_15	AYM52862.1	55	330	98.36065573770492	1.66e-111
+ctg14_16	AYM52861.1	59	621	99.66101694915255	3.1e-219
+ctg14_17	AYM52860.1	53	57	88.23529411764706	4.3e-12
+ctg14_18	AYM52859.1	51	181	93.56435643564357	6.45e-58
+ctg14_19	AYM52858.1	67	473	99.15254237288136	5.09e-168
+
+
+
+>>
+2. BGC0001831.3
+Source: alkylpyrone-407/alkylpyrone-393
+Type: PKS
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1599.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg14_15	MXAN_6635	53	320	98.36065573770492	2e-107
+ctg14_16	MXAN_6636	61	627	99.83050847457628	1.54e-221
+ctg14_18	MXAN_6638	54	181	92.07920792079209	8.21e-58
+ctg14_19	MXAN_6639	68	471	99.15254237288136	3.87e-167
+
+
+
+>>
+3. BGC0000282.3
+Source: 2-methoxy-5-methyl-6-(13-methyltetradecyl)-1,4-benzoquinone/2-methoxy-5-methyl-6-(13-methyltetradecyl)phenol
+Type: PKS:Type III
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 506.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg14_18	SGR_471	52	155	84.15841584158416	8.15e-48
+ctg14_19	SGR_472	60	351	88.13559322033898	3.13e-120
+
+
+
+>>
+4. BGC0001647.3
+Source: lagunapyrone A/lagunapyrone B/lagunapyrone C
+Type: PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 492.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg14_18	STBA_03880	49	135	78.71287128712872	5.23e-40
+ctg14_19	STBA_03890	60	357	89.54802259887006	1.18e-122
+

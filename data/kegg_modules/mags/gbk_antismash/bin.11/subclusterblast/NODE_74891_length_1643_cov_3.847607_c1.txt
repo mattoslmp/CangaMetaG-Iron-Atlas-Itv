@@ -1,0 +1,12 @@
+ClusterBlast scores for NODE_74891_length_1643_cov_3.847607
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg383_1	2	287	-		
+ctg383_2	298	1297	-		
+ctg383_3	1351	1642	-		
+
+
+Significant hits: 
+
+
+Details:

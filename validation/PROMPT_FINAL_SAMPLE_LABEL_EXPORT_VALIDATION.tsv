@@ -1,0 +1,4 @@
+annotation_type	expected_labels	present_labels	missing_labels	backend	pass
+KO	20	20		chromium-playwright	True
+EC number	20	20		chromium-playwright	True
+PFAM	20	20		chromium-playwright	True

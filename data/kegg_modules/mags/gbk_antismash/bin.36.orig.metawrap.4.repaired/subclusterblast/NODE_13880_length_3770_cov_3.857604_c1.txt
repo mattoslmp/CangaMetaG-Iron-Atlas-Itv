@@ -1,0 +1,13 @@
+ClusterBlast scores for NODE_13880_length_3770_cov_3.857604
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg54_1	113	491	+		
+ctg54_2	470	1760	-		
+ctg54_3	1893	2493	-		
+ctg54_4	2619	3597	-		
+
+
+Significant hits: 
+
+
+Details:

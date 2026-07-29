@@ -1,0 +1,21 @@
+ClusterBlast scores for NODE_1447_length_11147_cov_3.559322
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg3_1	2	215	+		
+ctg3_2	709	1135	+		
+ctg3_3	1457	1985	+		
+ctg3_4	1981	2893	+		
+ctg3_5	2889	4263	+		
+ctg3_6	4344	4722	+		
+ctg3_7	4783	5959	+		
+ctg3_8	6114	6720	+		
+ctg3_9	6768	8565	+		
+ctg3_10	8574	9453	-		
+ctg3_11	9943	10228	+		
+ctg3_12	10241	11147	+		
+
+
+Significant hits: 
+
+
+Details:

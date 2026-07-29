@@ -1,0 +1,27 @@
+ClusterBlast scores for NODE_203_length_2910_cov_3.256618
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg203_1	0	894	-		
+ctg203_2	898	1972	-		
+ctg203_3	1973	2750	-		
+
+
+Significant hits: 
+1. NZ_CP014213	Methanosphaera sp. BMS chromosome, complete genome
+
+
+Details:
+
+>>
+1. NZ_CP014213
+Source: Methanosphaera sp. BMS chromosome, complete genome
+Type: NRPS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 395.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg203_2	AW729_RS01840	45	253	97.75910364145658	7.79e-80
+ctg203_3	AW729_RS01835	35	142	100.7751937984496	2.56e-39
+

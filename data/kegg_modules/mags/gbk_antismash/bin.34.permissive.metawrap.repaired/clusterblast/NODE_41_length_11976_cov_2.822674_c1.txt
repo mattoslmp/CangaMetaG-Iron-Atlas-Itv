@@ -1,0 +1,262 @@
+ClusterBlast scores for NODE_41_length_11976_cov_2.822674
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg41_1	0	504	+		
+ctg41_2	602	1589	+		
+ctg41_3	1829	2345	+		
+ctg41_4	2437	4408	-		
+ctg41_5	4704	4968	+		
+ctg41_6	5023	5995	+		
+ctg41_7	6015	6708	-		
+ctg41_8	6765	7686	-		
+ctg41_9	7935	8748	+		
+ctg41_10	8872	9460	-		
+ctg41_11	9519	10344	-		
+ctg41_12	10724	11543	+		
+ctg41_13	11634	11976	+		
+
+
+Significant hits: 
+1. NZ_JH992898	Fischerella sp. PCC 9339 PCC9339DRAFT_scaffold1.1, whole genome shotgun sequence
+2. NZ_NAPS01000001	Westiellopsis prolifica IICB1 scaffold_1, whole genome shotgun sequence
+3. NZ_CP060822	Cylindrospermopsis curvispora GIHE-G1 chromosome, complete genome
+4. NZ_VILE02000003	Dolichospermum planctonicum UHCC 0167 VILE01000003.1, whole genome shotgun sequence
+5. NZ_AP018194	Scytonema sp. HK-05 DNA, nearly complete genome
+6. NZ_CP023278	Nostoc sp. CENA543 chromosome, complete genome
+7. NZ_CP050440	Tolypothrix sp. PCC 7910 chromosome, complete genome
+8. NC_019678	Rivularia sp. PCC 7116, complete sequence
+9. NZ_CP040272	Nostoc sp. C052 chromosome, complete genome
+10. NC_014248	'Nostoc azollae' 0708, complete sequence
+11. NZ_AP018290	Calothrix sp. NIES-4105 DNA, nearly complete genome
+12. NZ_MKZS01000001	Moorena bouillonii PNG strain PNG5-198 Ga0081470_101, whole genome shotgun sequence
+13. NZ_LMFP01000028	Pelomonas sp. Root1444 contig_4, whole genome shotgun sequence
+14. NZ_AP018194	Scytonema sp. HK-05 DNA, nearly complete genome
+15. NZ_CP082249	Natrinema sp. SYSU A 869 chromosome, complete genome
+
+
+Details:
+
+>>
+1. NZ_JH992898
+Source: Fischerella sp. PCC 9339 PCC9339DRAFT_scaffold1.1, whole genome shotgun sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 838.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg41_6	PCC9339_RS0110265	68	436	95.97523219814241	1.13e-152
+ctg41_9	PCC9339_RS0110240	73	402	99.25925925925925	5.96e-141
+
+
+
+>>
+2. NZ_NAPS01000001
+Source: Westiellopsis prolifica IICB1 scaffold_1, whole genome shotgun sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 834.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg41_6	B4U84_RS06235	67	432	95.97523219814241	2.63e-151
+ctg41_9	B4U84_RS06260	73	402	99.25925925925925	5.96e-141
+
+
+
+>>
+3. NZ_CP060822
+Source: Cylindrospermopsis curvispora GIHE-G1 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 676.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg41_2	IAR63_RS06725	53	296	100.30487804878048	2.83e-97
+ctg41_9	IAR63_RS06770	70	380	98.51851851851852	3.02e-132
+
+
+
+>>
+4. NZ_VILE02000003
+Source: Dolichospermum planctonicum UHCC 0167 VILE01000003.1, whole genome shotgun sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 584.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg41_3	FJR41_RS05730	59	207	83.04093567251462	5.32e-67
+ctg41_9	FJR41_RS05715	70	377	98.51851851851852	5.16e-131
+
+
+
+>>
+5. NZ_AP018194
+Source: Scytonema sp. HK-05 DNA, nearly complete genome
+Type: NRPS,terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 521.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg41_9	CA739_RS18180	71	372	99.25925925925925	4.26e-129
+ctg41_12	CA739_RS18225	63	149	41.17647058823529	4.83e-42
+
+
+
+>>
+6. NZ_CP023278
+Source: Nostoc sp. CENA543 chromosome, complete genome
+Type: RRE-containing,lanthipeptide-class-v,spliceotide
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 800.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg41_1	CLI64_RS16995	88	293	100.0	4.74e-91
+ctg41_2	CLI64_RS17000	52	299	102.1341463414634	1.08e-98
+ctg41_3	CLI64_RS17125	57	208	94.15204678362574	1.58e-67
+
+
+
+>>
+7. NZ_CP050440
+Source: Tolypothrix sp. PCC 7910 chromosome, complete genome
+Type: NRPS-like
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 606.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg41_1	HCG51_RS33075	88	295	100.0	1.02e-91
+ctg41_2	HCG51_RS33080	53	311	101.82926829268293	1.66e-103
+
+
+
+>>
+8. NC_019678
+Source: Rivularia sp. PCC 7116, complete sequence
+Type: RRE-containing,lassopeptide
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 601.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg41_1	RIV7116_RS26635	87	289	100.0	2.11e-89
+ctg41_2	RIV7116_RS26640	54	312	102.74390243902438	8.26e-104
+
+
+
+>>
+9. NZ_CP040272
+Source: Nostoc sp. C052 chromosome, complete genome
+Type: T1PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 598.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg41_1	FD723_RS12340	86	286	100.0	2.19e-88
+ctg41_2	FD723_RS12345	53	312	102.74390243902438	1.33e-103
+
+
+
+>>
+10. NC_014248
+Source: 'Nostoc azollae' 0708, complete sequence
+Type: lanthipeptide-class-v
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 588.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg41_1	AAZO_RS03625	86	285	100.0	3.11e-88
+ctg41_2	AAZO_RS03630	52	303	102.1341463414634	5.35e-100
+
+
+
+>>
+11. NZ_AP018290
+Source: Calothrix sp. NIES-4105 DNA, nearly complete genome
+Type: NRPS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 1605.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg41_4	CDC38_RS26335	84	1169	100.15243902439023	0.0
+ctg41_6	CDC38_RS26135	67	436	98.14241486068111	1.01e-152
+
+
+
+>>
+12. NZ_MKZS01000001
+Source: Moorena bouillonii PNG strain PNG5-198 Ga0081470_101, whole genome shotgun sequence
+Type: lanthipeptide-class-v
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 1480.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg41_4	BJP37_RS00210	85	1184	99.54268292682927	0.0
+ctg41_12	BJP37_RS00145	52	296	116.54411764705883	3.6e-97
+
+
+
+>>
+13. NZ_LMFP01000028
+Source: Pelomonas sp. Root1444 contig_4, whole genome shotgun sequence
+Type: acyl_amino_acids
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 848.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg41_4	ASD35_RS21405	56	696	98.6280487804878	7.92e-245
+ctg41_11	ASD35_RS21385	39	152	91.97080291970804	7.58e-43
+
+
+
+>>
+14. NZ_AP018194
+Source: Scytonema sp. HK-05 DNA, nearly complete genome
+Type: NRPS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 508.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg41_6	CA739_RS29160	35	172	85.13931888544892	1.33e-49
+ctg41_12	CA739_RS29000	55	336	118.01470588235294	1.04e-112
+
+
+
+>>
+15. NZ_CP082249
+Source: Natrinema sp. SYSU A 869 chromosome, complete genome
+Type: NI-siderophore
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 444.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg41_1	K6I40_RS14710	54	166	88.02395209580838	6.32e-46
+ctg41_4	K6I40_RS14725	35	278	71.79878048780488	1.51e-83
+

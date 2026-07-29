@@ -1,0 +1,34 @@
+ClusterBlast scores for NODE_30_length_26596_cov_3.746257
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg30_1	1	85	-		
+ctg30_2	471	615	-		
+ctg30_3	786	1347	+		
+ctg30_4	2215	2620	-		
+ctg30_5	2963	3137	-		
+ctg30_6	3076	3844	-		
+ctg30_7	3918	4476	-		
+ctg30_8	4472	4820	-		
+ctg30_9	4826	4952	+		
+ctg30_10	5157	5286	+		
+ctg30_11	5315	5753	+		
+ctg30_12	5859	6165	+		
+ctg30_13	6360	6645	+		
+ctg30_14	6666	6966	-		
+ctg30_15	6978	12333	-		
+ctg30_16	12329	12476	-		
+ctg30_17	12441	13308	-		
+ctg30_18	13364	13586	+		
+ctg30_19	13592	14192	+		
+ctg30_20	14421	14625	-		
+ctg30_21	14745	15072	+		
+ctg30_22	15261	15402	-		
+ctg30_23	15385	15538	-		
+ctg30_24	15616	15766	-		
+ctg30_25	15785	16514	+		
+
+
+Significant hits: 
+
+
+Details:

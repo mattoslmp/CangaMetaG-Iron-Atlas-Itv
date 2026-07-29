@@ -1,0 +1,39 @@
+ClusterBlast scores for NODE_927_length_1546_cov_2.885636
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg927_1	2	1544	-		
+
+
+Significant hits: 
+1. BGC0001758.4	rhizomide A/rhizomide B/rhizomide C
+2. BGC0002286.3	ririwpeptide A/ririwpeptide B/ririwpeptide C
+
+
+Details:
+
+>>
+1. BGC0001758.4
+Source: rhizomide A/rhizomide B/rhizomide C
+Type: NRPS:Type I
+Number of proteins with BLAST hits to this cluster: 1
+Cumulative BLAST score: 425.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg927_1	RBRH_RS12370	47	425	100.58365758754863	2.26e-132
+
+
+
+>>
+2. BGC0002286.3
+Source: ririwpeptide A/ririwpeptide B/ririwpeptide C
+Type: NRPS:Type I
+Number of proteins with BLAST hits to this cluster: 1
+Cumulative BLAST score: 286.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg927_1	plu3123	47	286	65.95330739299611	1.57e-84
+

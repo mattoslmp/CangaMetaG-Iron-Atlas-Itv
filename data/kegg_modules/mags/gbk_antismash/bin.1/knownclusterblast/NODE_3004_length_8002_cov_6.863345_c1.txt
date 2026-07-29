@@ -1,0 +1,18 @@
+ClusterBlast scores for NODE_3004_length_8002_cov_6.863345
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg32_1	1	499	-		
+ctg32_2	541	1855	-		
+ctg32_3	1968	3222	+		
+ctg32_4	3235	3907	+		
+ctg32_5	3903	4914	+		
+ctg32_6	4997	5723	+		
+ctg32_7	5732	6056	-		
+ctg32_8	6139	6904	-		
+ctg32_9	7026	8001	+		
+
+
+Significant hits: 
+
+
+Details:

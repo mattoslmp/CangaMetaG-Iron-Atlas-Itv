@@ -1,0 +1,2 @@
+dataset,source,n_reports,n_samples,n_modules,n_fasta
+mags,reportKMC_*.tsv,47,47,448,0

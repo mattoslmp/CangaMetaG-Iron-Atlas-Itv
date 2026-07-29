@@ -1,0 +1,820 @@
+ClusterBlast scores for NODE_8879_length_4726_cov_3.950760
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg27_1	0	1164	+		
+ctg27_2	1350	2382	+		
+ctg27_3	2398	3136	+		
+ctg27_4	3122	3443	+		
+ctg27_5	3439	4249	-		
+ctg27_6	4442	4649	-		
+
+
+Significant hits: 
+1. NZ_CP033381	Methylomonas sp. LW13 chromosome, complete genome
+2. NZ_CP070494	Methylomonas sp. EFPC1 chromosome, complete genome
+3. NZ_CP014476	Methylomonas denitrificans strain FJG1 chromosome, complete genome
+4. NC_015572	Methylomonas methanica MC09, complete sequence
+5. NZ_CP113517	Methylomonas sp. MP1 chromosome, complete genome
+6. NZ_CP046172	Nocardia arthritidis strain AUSMDU00012717 chromosome, complete genome
+7. NZ_CP087952	Desulfosarcina sp. BuS5 chromosome, complete genome
+8. NC_009943	Desulfosudis oleivorans Hxd3, complete sequence
+9. NZ_FOIK01000001	Paenibacillus sp. NFR01, whole genome shotgun sequence
+10. NZ_AP019755	Nitrosomonas stercoris strain KYUHI-S chromosome 1, complete sequence
+11. NZ_AP024086	Desulfomarina profundi strain KT2 chromosome, complete genome
+12. NC_004757	Nitrosomonas europaea ATCC 19718, complete sequence
+13. NC_008344	Nitrosomonas eutropha C91, complete sequence
+14. NZ_JQKP01000003	Ferriphaselus sp. R-1 DM08DRAFT_scaffold00003.3_C, whole genome shotgun sequence
+15. NZ_CP007806	Brevibacillus laterosporus LMG 15441 chromosome, complete genome
+16. NZ_FPBL01000002	Nitrosomonas eutropha strain Nm24, whole genome shotgun sequence
+17. NZ_CP032848	Brevibacillus laterosporus strain Bl-zj chromosome, complete genome
+18. NZ_JABEPP010000002	Enterovirga sp. DB1703 contig2, whole genome shotgun sequence
+19. NZ_AP024515	Nitrosospira sp. NRS527 chromosome, complete genome
+20. NZ_CP012371	Nitrosospira briensis C-128 chromosome, complete genome
+21. NZ_JAIGOY010000001	Pseudomonas cichorii strain WSXC14 Scaffold1, whole genome shotgun sequence
+22. NZ_JAIGPY010000001	Pseudomonas cichorii strain LCDW06 Scaffold1, whole genome shotgun sequence
+23. NZ_QPEA01000002	Pseudomonas cichorii strain 481 Contig_2, whole genome shotgun sequence
+24. NZ_JAIGPC010000017	Pseudomonas cichorii strain LJDD01 Scaffold17, whole genome shotgun sequence
+25. NZ_JAIGPG010000004	Pseudomonas cichorii strain LCYJ26 Scaffold4, whole genome shotgun sequence
+26. NZ_JAIGPS010000007	Pseudomonas cichorii strain LCYJ07 Scaffold7, whole genome shotgun sequence
+27. NZ_JAIGPV010000013	Pseudomonas cichorii strain LCYJ03 Scaffold13, whole genome shotgun sequence
+28. NZ_FMWY01000022	Nitrosospira sp. Nsp18, whole genome shotgun sequence
+29. NZ_QPDS01000002	Pseudomonas cichorii strain 473 Contig_2, whole genome shotgun sequence
+30. NZ_LOHF01000009	Pseudomonas caspiana strain FBF102 scaffold00009, whole genome shotgun sequence
+31. NZ_LOHG01000013	Pseudomonas sp. S25 scaffold00013, whole genome shotgun sequence
+32. NZ_JAIGPP010000001	Pseudomonas cichorii strain LCYJ11 Scaffold1, whole genome shotgun sequence
+33. NZ_LT629746	Pseudomonas lini strain DSM 16768 chromosome I
+34. NZ_CP011104	Photorhabdus thracensis strain DSM 15199 chromosome, complete genome
+35. NZ_JAIGPF010000010	Pseudomonas cichorii strain LCYQ02 Scaffold10, whole genome shotgun sequence
+36. NZ_JAIGPO010000001	Pseudomonas cichorii strain LCYJ12 Scaffold1, whole genome shotgun sequence
+37. NZ_CP076668	Pseudomonas lijiangensis strain LJ2 chromosome, complete genome
+38. NZ_CP041643	Olivibacter sp. LS-1 chromosome, complete genome
+39. NZ_LR027850	Olivibacter jilunii strain P8502, whole genome shotgun sequence
+40. NZ_CP016176	Xenorhabdus hominickii strain ANU1 chromosome, complete genome
+41. NZ_CP007039	Pseudomonas cichorii JBC1 chromosome, complete genome
+42. NZ_FYDI01000006	Pseudomonas sp. Irchel 3A18 isolate Pseudomonas sp. Irchel 3A18, whole genome shotgun sequence
+43. NZ_CP047265	Pseudomonas asturiensis strain CC1524 chromosome, complete genome
+44. NZ_CP074437	Klebsiella sp. A52 chromosome, complete genome
+45. NZ_JACOJA010000001	Klebsiella aerogenes strain UCI167 scaffold00001, whole genome shotgun sequence
+46. NZ_KN150798	Klebsiella aerogenes strain CDC UA0804-01 scaffold1, whole genome shotgun sequence
+47. NZ_LR890184	Klebsiella aerogenes isolate MINF_10B-sc-2280448 chromosome 1, complete sequence
+48. NZ_CP022684	Ketobacter alkanivorans strain GI5 chromosome, complete genome
+49. NZ_FKIT01000001	Klebsiella aerogenes strain e381, whole genome shotgun sequence
+50. NZ_CP024880	Klebsiella aerogenes strain AR_0018 chromosome, complete genome
+
+
+Details:
+
+>>
+1. NZ_CP033381
+Source: Methylomonas sp. LW13 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 783.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg27_1	JL719_RS04965	48	344	96.38242894056847	2.1e-111
+ctg27_1	JL719_RS05020	48	342	96.38242894056847	1.62e-110
+ctg27_2	JL719_RS05025	31	97	77.25947521865889	5.14e-21
+
+
+
+>>
+2. NZ_CP070494
+Source: Methylomonas sp. EFPC1 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 777.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg27_1	JWZ98_RS04635	48	343	96.38242894056847	4.19e-111
+ctg27_1	JWZ98_RS04690	47	337	96.38242894056847	7.15e-109
+ctg27_2	JWZ98_RS04695	31	97	77.25947521865889	7.09e-21
+
+
+
+>>
+3. NZ_CP014476
+Source: Methylomonas denitrificans strain FJG1 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 777.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg27_1	JT25_RS15440	47	340	96.38242894056847	4.67e-110
+ctg27_1	JT25_RS15495	47	340	96.38242894056847	9.05e-110
+ctg27_2	JT25_RS15500	31	97	77.25947521865889	7.09e-21
+
+
+
+>>
+4. NC_015572
+Source: Methylomonas methanica MC09, complete sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 747.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg27_1	METME_RS17445	46	330	96.38242894056847	3.61e-106
+ctg27_1	METME_RS17390	46	328	96.38242894056847	2.01e-105
+ctg27_2	METME_RS17385	31	89	76.38483965014578	4.13e-18
+
+
+
+>>
+5. NZ_CP113517
+Source: Methylomonas sp. MP1 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 730.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg27_1	NM686_RS04010	45	320	96.38242894056847	2.75e-102
+ctg27_1	NM686_RS04065	45	318	95.34883720930233	2.16e-101
+ctg27_2	NM686_RS04070	33	92	68.5131195335277	6.17e-19
+
+
+
+>>
+6. NZ_CP046172
+Source: Nocardia arthritidis strain AUSMDU00012717 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 566.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg27_1	F5544_RS16895	42	258	96.89922480620154	1.48e-78
+ctg27_2	F5544_RS16890	35	186	90.0874635568513	3.97e-54
+ctg27_2	F5544_RS16900	32	122	85.71428571428571	1.42e-29
+
+
+
+>>
+7. NZ_CP087952
+Source: Desulfosarcina sp. BuS5 chromosome, complete genome
+Type: NRPS-like
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 510.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg27_1	BuS5_RS18310	52	381	96.38242894056847	7.06e-126
+ctg27_2	BuS5_RS18315	37	129	63.84839650145773	8.46e-33
+
+
+
+>>
+8. NC_009943
+Source: Desulfosudis oleivorans Hxd3, complete sequence
+Type: T1PKS,hglE-KS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 498.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg27_1	DOLE_RS08535	51	373	95.34883720930233	1.01e-122
+ctg27_2	DOLE_RS08540	35	125	74.05247813411079	1.49e-31
+
+
+
+>>
+9. NZ_FOIK01000001
+Source: Paenibacillus sp. NFR01, whole genome shotgun sequence
+Type: cyclic-lactone-autoinducer
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 476.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg27_1	BMW84_RS09245	48	344	91.47286821705426	2.99e-111
+ctg27_2	BMW84_RS09250	37	132	74.9271137026239	9.99e-34
+
+
+
+>>
+10. NZ_AP019755
+Source: Nitrosomonas stercoris strain KYUHI-S chromosome 1, complete sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 460.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg27_1	Nstercoris_RS08030	50	369	95.8656330749354	4.65e-121
+ctg27_2	Nstercoris_RS08035	32	91	63.84839650145773	8.47e-19
+
+
+
+>>
+11. NZ_AP024086
+Source: Desulfomarina profundi strain KT2 chromosome, complete genome
+Type: NRPS-like
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 458.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg27_1	LO777_RS04610	52	390	96.38242894056847	2.2e-129
+ctg27_2	LO777_RS04615	45	68	23.9067055393586	1.91e-11
+
+
+
+>>
+12. NC_004757
+Source: Nitrosomonas europaea ATCC 19718, complete sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 452.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg27_1	ALW85_RS06030	49	360	96.89922480620154	1.28e-117
+ctg27_2	ALW85_RS06025	32	92	63.26530612244898	3.27e-19
+
+
+
+>>
+13. NC_008344
+Source: Nitrosomonas eutropha C91, complete sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 450.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg27_1	NEUT_RS07610	48	352	95.8656330749354	1.27e-114
+ctg27_2	NEUT_RS07605	33	98	63.84839650145773	3.73e-21
+
+
+
+>>
+14. NZ_JQKP01000003
+Source: Ferriphaselus sp. R-1 DM08DRAFT_scaffold00003.3_C, whole genome shotgun sequence
+Type: arylpolyene,resorcinol
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 450.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg27_1	DM08_RS05205	48	352	97.41602067183463	1.27e-114
+ctg27_2	DM08_RS05210	33	98	61.80758017492711	3.67e-21
+
+
+
+>>
+15. NZ_CP007806
+Source: Brevibacillus laterosporus LMG 15441 chromosome, complete genome
+Type: NRPS-like
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 450.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg27_1	BRLA_RS08255	45	344	97.9328165374677	1.85e-111
+ctg27_2	BRLA_RS08250	31	106	82.5072886297376	2.24e-24
+
+
+
+>>
+16. NZ_FPBL01000002
+Source: Nitrosomonas eutropha strain Nm24, whole genome shotgun sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 448.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg27_1	BM331_RS03570	49	353	96.12403100775194	3.29e-115
+ctg27_2	BM331_RS03565	31	95	73.17784256559767	4.83e-20
+
+
+
+>>
+17. NZ_CP032848
+Source: Brevibacillus laterosporus strain Bl-zj chromosome, complete genome
+Type: NRPS,NRPS-like,PKS-like,RiPP-like,T3PKS,transAT-PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 446.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg27_1	D8Z77_RS14715	45	341	97.9328165374677	2.91e-110
+ctg27_2	D8Z77_RS14710	31	105	80.75801749271136	5.94e-24
+
+
+
+>>
+18. NZ_JABEPP010000002
+Source: Enterovirga sp. DB1703 contig2, whole genome shotgun sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 446.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg27_1	HJG44_RS05390	47	339	96.89922480620154	3.93e-109
+ctg27_2	HJG44_RS05395	32	107	71.7201166180758	1.45e-24
+
+
+
+>>
+19. NZ_AP024515
+Source: Nitrosospira sp. NRS527 chromosome, complete genome
+Type: NRPS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 438.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg27_1	KJS40_RS13510	48	344	95.8656330749354	1.78e-111
+ctg27_2	KJS40_RS13515	31	94	74.05247813411079	1.26e-19
+
+
+
+>>
+20. NZ_CP012371
+Source: Nitrosospira briensis C-128 chromosome, complete genome
+Type: NRPS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 437.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg27_1	F822_RS09040	48	343	95.8656330749354	3.55e-111
+ctg27_2	F822_RS09035	31	94	74.05247813411079	9.15e-20
+
+
+
+>>
+21. NZ_JAIGOY010000001
+Source: Pseudomonas cichorii strain WSXC14 Scaffold1, whole genome shotgun sequence
+Type: NRPS-like,T1PKS,T3PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 437.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg27_1	K5D38_RS02065	44	316	96.12403100775194	1.56e-100
+ctg27_2	K5D38_RS02060	33	121	77.84256559766763	7.99e-30
+
+
+
+>>
+22. NZ_JAIGPY010000001
+Source: Pseudomonas cichorii strain LCDW06 Scaffold1, whole genome shotgun sequence
+Type: NRPS-like,T1PKS,T3PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 437.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg27_1	K5D50_RS01845	44	316	96.12403100775194	1.56e-100
+ctg27_2	K5D50_RS01840	33	121	77.84256559766763	7.99e-30
+
+
+
+>>
+23. NZ_QPEA01000002
+Source: Pseudomonas cichorii strain 481 Contig_2, whole genome shotgun sequence
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 437.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg27_1	D2G43_RS01880	44	316	96.12403100775194	1.56e-100
+ctg27_2	D2G43_RS01885	33	121	77.84256559766763	7.99e-30
+
+
+
+>>
+24. NZ_JAIGPC010000017
+Source: Pseudomonas cichorii strain LJDD01 Scaffold17, whole genome shotgun sequence
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 436.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg27_1	K5D69_RS18275	44	316	96.12403100775194	2.2e-100
+ctg27_2	K5D69_RS18280	36	120	71.42857142857143	1.55e-29
+
+
+
+>>
+25. NZ_JAIGPG010000004
+Source: Pseudomonas cichorii strain LCYJ26 Scaffold4, whole genome shotgun sequence
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 436.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg27_1	K5D34_RS07300	44	316	96.12403100775194	2.2e-100
+ctg27_2	K5D34_RS07295	36	120	71.42857142857143	1.55e-29
+
+
+
+>>
+26. NZ_JAIGPS010000007
+Source: Pseudomonas cichorii strain LCYJ07 Scaffold7, whole genome shotgun sequence
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 436.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg27_1	K5D47_RS08415	44	316	96.12403100775194	2.2e-100
+ctg27_2	K5D47_RS08420	36	120	71.42857142857143	1.55e-29
+
+
+
+>>
+27. NZ_JAIGPV010000013
+Source: Pseudomonas cichorii strain LCYJ03 Scaffold13, whole genome shotgun sequence
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 436.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg27_1	K5D56_RS17200	44	316	96.12403100775194	2.2e-100
+ctg27_2	K5D56_RS17195	36	120	71.42857142857143	1.55e-29
+
+
+
+>>
+28. NZ_FMWY01000022
+Source: Nitrosospira sp. Nsp18, whole genome shotgun sequence
+Type: NRPS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 435.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg27_1	BLS94_RS10495	48	343	97.41602067183463	2.52e-111
+ctg27_2	BLS94_RS10490	32	92	63.26530612244898	4.49e-19
+
+
+
+>>
+29. NZ_QPDS01000002
+Source: Pseudomonas cichorii strain 473 Contig_2, whole genome shotgun sequence
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 435.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg27_1	D2G36_RS02195	44	315	96.12403100775194	4.36e-100
+ctg27_2	D2G36_RS02190	33	120	77.84256559766763	1.11e-29
+
+
+
+>>
+30. NZ_LOHF01000009
+Source: Pseudomonas caspiana strain FBF102 scaffold00009, whole genome shotgun sequence
+Type: RiPP-like
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 435.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg27_1	AUC60_RS12705	44	315	96.38242894056847	6.31e-100
+ctg27_2	AUC60_RS12710	35	120	69.97084548104957	1.55e-29
+
+
+
+>>
+31. NZ_LOHG01000013
+Source: Pseudomonas sp. S25 scaffold00013, whole genome shotgun sequence
+Type: RiPP-like
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 434.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg27_1	AUC61_RS19375	44	314	96.38242894056847	8.89e-100
+ctg27_2	AUC61_RS19380	35	120	69.97084548104957	1.11e-29
+
+
+
+>>
+32. NZ_JAIGPP010000001
+Source: Pseudomonas cichorii strain LCYJ11 Scaffold1, whole genome shotgun sequence
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 434.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg27_1	K5D57_RS01945	44	314	96.12403100775194	1.22e-99
+ctg27_2	K5D57_RS01940	36	120	71.42857142857143	2.16e-29
+
+
+
+>>
+33. NZ_LT629746
+Source: Pseudomonas lini strain DSM 16768 chromosome I
+Type: NRP-metallophore,NRPS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 433.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg27_1	BLU65_RS14175	48	338	96.89922480620154	1.99e-109
+ctg27_2	BLU65_RS14180	31	95	67.93002915451895	4.55e-20
+
+
+
+>>
+34. NZ_CP011104
+Source: Photorhabdus thracensis strain DSM 15199 chromosome, complete genome
+Type: NRP-metallophore
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 433.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg27_1	VY86_RS02680	45	323	96.38242894056847	2.55e-103
+ctg27_2	VY86_RS02685	31	110	74.34402332361516	1.33e-25
+
+
+
+>>
+35. NZ_JAIGPF010000010
+Source: Pseudomonas cichorii strain LCYQ02 Scaffold10, whole genome shotgun sequence
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 433.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg27_1	K5D37_RS16520	44	314	96.12403100775194	8.67e-100
+ctg27_2	K5D37_RS16525	36	119	71.42857142857143	3e-29
+
+
+
+>>
+36. NZ_JAIGPO010000001
+Source: Pseudomonas cichorii strain LCYJ12 Scaffold1, whole genome shotgun sequence
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 433.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg27_1	K5D44_RS00765	44	314	96.12403100775194	8.67e-100
+ctg27_2	K5D44_RS00760	36	119	71.42857142857143	3e-29
+
+
+
+>>
+37. NZ_CP076668
+Source: Pseudomonas lijiangensis strain LJ2 chromosome, complete genome
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 433.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg27_1	KQP88_RS21545	44	314	96.12403100775194	1.22e-99
+ctg27_2	KQP88_RS21540	36	119	71.42857142857143	3e-29
+
+
+
+>>
+38. NZ_CP041643
+Source: Olivibacter sp. LS-1 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 433.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg27_1	FKG96_RS07335	43	303	97.41602067183463	1.99e-95
+ctg27_2	FKG96_RS07330	37	130	64.72303206997084	6.97e-33
+
+
+
+>>
+39. NZ_LR027850
+Source: Olivibacter jilunii strain P8502, whole genome shotgun sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 433.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg27_1	E0E36_RS12560	43	303	97.41602067183463	1.99e-95
+ctg27_2	E0E36_RS12555	37	130	64.72303206997084	6.97e-33
+
+
+
+>>
+40. NZ_CP016176
+Source: Xenorhabdus hominickii strain ANU1 chromosome, complete genome
+Type: NRPS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 431.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg27_1	A9255_RS11590	45	324	96.38242894056847	9.09e-104
+ctg27_2	A9255_RS11585	33	107	63.84839650145773	2.01e-24
+
+
+
+>>
+41. NZ_CP007039
+Source: Pseudomonas cichorii JBC1 chromosome, complete genome
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 431.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg27_1	BH81_RS22415	44	313	96.12403100775194	1.72e-99
+ctg27_2	BH81_RS22410	36	118	71.7201166180758	1.13e-28
+
+
+
+>>
+42. NZ_FYDI01000006
+Source: Pseudomonas sp. Irchel 3A18 isolate Pseudomonas sp. Irchel 3A18, whole genome shotgun sequence
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 431.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg27_1	CKW23_RS14900	44	313	96.12403100775194	1.72e-99
+ctg27_2	CKW23_RS14895	36	118	71.7201166180758	1.13e-28
+
+
+
+>>
+43. NZ_CP047265
+Source: Pseudomonas asturiensis strain CC1524 chromosome, complete genome
+Type: RiPP-like
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 431.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg27_1	N015_RS23360	43	311	96.38242894056847	1.95e-98
+ctg27_2	N015_RS23355	33	120	78.4256559766764	2.16e-29
+
+
+
+>>
+44. NZ_CP074437
+Source: Klebsiella sp. A52 chromosome, complete genome
+Type: HR-T2PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 427.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg27_1	KGA69_RS00695	45	320	96.38242894056847	2.75e-102
+ctg27_2	KGA69_RS00690	33	107	70.26239067055393	1.19e-24
+
+
+
+>>
+45. NZ_JACOJA010000001
+Source: Klebsiella aerogenes strain UCI167 scaffold00001, whole genome shotgun sequence
+Type: HR-T2PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 427.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg27_1	CXL60_RS04515	45	319	96.38242894056847	1.09e-101
+ctg27_2	CXL60_RS04520	33	108	70.26239067055393	6.2e-25
+
+
+
+>>
+46. NZ_KN150798
+Source: Klebsiella aerogenes strain CDC UA0804-01 scaffold1, whole genome shotgun sequence
+Type: HR-T2PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 427.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg27_1	DR72_RS04415	45	319	96.38242894056847	1.09e-101
+ctg27_2	DR72_RS04420	33	108	70.26239067055393	6.2e-25
+
+
+
+>>
+47. NZ_LR890184
+Source: Klebsiella aerogenes isolate MINF_10B-sc-2280448 chromosome 1, complete sequence
+Type: HR-T2PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 427.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg27_1	JMV66_RS18730	45	319	96.38242894056847	1.09e-101
+ctg27_2	JMV66_RS18725	33	108	70.26239067055393	6.2e-25
+
+
+
+>>
+48. NZ_CP022684
+Source: Ketobacter alkanivorans strain GI5 chromosome, complete genome
+Type: NRPS-like,T1PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 426.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg27_1	Kalk_RS15330	44	320	96.38242894056847	8.51e-102
+ctg27_2	Kalk_RS15335	32	106	63.55685131195335	3.1e-24
+
+
+
+>>
+49. NZ_FKIT01000001
+Source: Klebsiella aerogenes strain e381, whole genome shotgun sequence
+Type: HR-T2PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 426.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg27_1	A7U66_RS04990	45	319	96.38242894056847	1.09e-101
+ctg27_2	A7U66_RS04985	33	107	70.26239067055393	1.19e-24
+
+
+
+>>
+50. NZ_CP024880
+Source: Klebsiella aerogenes strain AR_0018 chromosome, complete genome
+Type: HR-T2PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 426.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg27_1	AM345_RS06710	45	318	96.38242894056847	1.53e-101
+ctg27_2	AM345_RS06715	33	108	70.26239067055393	6.2e-25
+

@@ -1,0 +1,14 @@
+ClusterBlast scores for NODE_24533_length_2823_cov_5.278179
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg584_1	1	178	-		
+ctg584_2	216	381	-		
+ctg584_3	616	1654	-		
+ctg584_4	1655	1961	-		
+ctg584_5	1953	2772	-		
+
+
+Significant hits: 
+
+
+Details:

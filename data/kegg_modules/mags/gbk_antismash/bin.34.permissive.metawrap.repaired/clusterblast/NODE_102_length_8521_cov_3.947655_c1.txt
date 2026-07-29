@@ -1,0 +1,819 @@
+ClusterBlast scores for NODE_102_length_8521_cov_3.947655
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg102_1	126	663	-		
+ctg102_2	1015	1534	+		
+ctg102_3	2607	4785	-		
+ctg102_4	5076	5538	-		
+ctg102_5	5684	6260	+		
+ctg102_6	6335	7271	-		
+ctg102_7	7403	8519	-		
+
+
+Significant hits: 
+1. NC_019753	Crinalium epipsammum PCC 9333, complete sequence
+2. NC_019738	Allocoleopsis franciscana PCC 7113, complete sequence
+3. NZ_AP018316	Dolichospermum compactum NIES-806 chromosome
+4. NZ_AP017308	Leptolyngbya sp. NIES-3755 DNA, complete genome
+5. NC_011729	Gloeothece citriformis PCC 7424, complete sequence
+6. NC_014501	Gloeothece verrucosa PCC 7822, complete sequence
+7. NZ_AP014821	Geminocystis sp. NIES-3709 chromosome, complete genome
+8. NZ_CP020664	Microcystis sp. MC19 chromosome, complete genome
+9. NC_011726	Rippkaea orientalis PCC 8801, complete sequence
+10. NC_019776	Cyanobacterium aponinum PCC 10605, complete sequence
+11. NZ_CP097576	Microcystis aeruginosa str. Chao 1910 chromosome, complete genome
+12. NZ_CP011304	Microcystis aeruginosa NIES-2549 chromosome, complete genome
+13. NZ_CM001775	Geminocystis herdmanii PCC 6308 chromosome, whole genome shotgun sequence
+14. NC_010296	Microcystis aeruginosa NIES-843, complete sequence
+15. NZ_AP019314	Microcystis viridis NIES-102 chromosome, complete genome
+16. NZ_AP024565	Microcystis aeruginosa strain NIES-88 chromosome, complete genome
+17. NZ_HE973242	Microcystis aeruginosa PCC 9806, whole genome shotgun sequence
+18. NZ_BDSM01000026	Microcystis sp. 0824, whole genome shotgun sequence
+19. NZ_AP014815	Geminocystis sp. NIES-3708 chromosome, complete genome
+20. NZ_CP020771	Microcystis aeruginosa PCC 7806SL chromosome, complete genome
+21. NZ_CP046973	Microcystis aeruginosa FD4 chromosome, complete genome
+22. NZ_CP046058	Microcystis aeruginosa NIES-298 chromosome, complete genome
+23. NZ_HE973143	Microcystis aeruginosa PCC 7941, whole genome shotgun sequence
+24. NC_010546	Crocosphaera subtropica ATCC 51142 chromosome circular, complete sequence
+25. NZ_CP019225	Synechocystis sp. CACIAM 05 chromosome
+26. NZ_JH980292	Spirulina subsalsa PCC 9445 Contig210, whole genome shotgun sequence
+27. NZ_CP007542	Synechocystis sp. PCC 6714 chromosome, complete genome
+28. NC_017277	Synechocystis sp. PCC 6803, complete sequence
+29. NZ_CP054306	Synechocystis sp. PCC 7338 chromosome, complete genome
+30. NZ_CP063659	Synechocystis sp. PCC 7339 chromosome, complete genome
+31. NZ_MKZR01000001	Moorena producens 3L Ga0081465_101, whole genome shotgun sequence
+32. NZ_CP064879	Tolypothrix sp. PCC 7601 chromosome, complete genome
+33. NZ_AP018172	Calothrix sp. NIES-2098 DNA, complete genome
+34. NZ_CP042326	Euhalothece natronophila Z-M001 chromosome, complete genome
+35. NZ_AP018248	Tolypothrix tenuis PCC 7101 DNA, nearly complete genome
+36. NZ_CP017708	Moorena producens JHB chromosome, complete genome
+37. NZ_CP017599	Moorena producens PAL-8-15-08-1 chromosome, complete genome
+38. NZ_MKZS01000001	Moorena bouillonii PNG strain PNG5-198 Ga0081470_101, whole genome shotgun sequence
+39. NZ_CP050440	Tolypothrix sp. PCC 7910 chromosome, complete genome
+40. NZ_CP016477	Synechococcus sp. PCC 7117 chromosome, complete genome
+41. NZ_CP040360	Synechococcus sp. PCC 11901 chromosome, complete genome
+42. NZ_CP071065	Nostoc sp. UHCC 0702 chromosome, complete genome
+43. NC_019779	Halothece sp. PCC 7418, complete sequence
+44. NZ_CP013998	Synechococcus sp. PCC 73109 chromosome, complete genome
+45. NZ_CP016483	Synechococcus sp. PCC 8807 chromosome, complete genome
+46. NZ_AP018207	Calothrix brevissima NIES-22 DNA, nearly complete genome
+47. NC_010475	Synechococcus sp. PCC 7002, complete sequence
+48. NZ_AP018178	Calothrix sp. NIES-2100 DNA, nearly complete genome
+49. NZ_CP016474	Synechococcus sp. PCC 7003 chromosome, complete genome
+50. NC_014248	'Nostoc azollae' 0708, complete sequence
+
+
+Details:
+
+>>
+1. NC_019753
+Source: Crinalium epipsammum PCC 9333, complete sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 1332.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg102_5	CRI9333_RS14110	79	307	100.0	6.68e-106
+ctg102_6	CRI9333_RS14115	74	467	96.46302250803859	2.88e-165
+ctg102_7	CRI9333_RS14120	85	558	85.17520215633422	7.86e-198
+
+
+
+>>
+2. NC_019738
+Source: Allocoleopsis franciscana PCC 7113, complete sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 1363.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg102_5	MIC7113_RS13050	79	306	97.38219895287958	7.44e-106
+ctg102_6	MIC7113_RS13080	82	509	96.46302250803859	5.25e-182
+ctg102_7	MIC7113_RS13085	84	548	85.44474393530997	8.66e-194
+
+
+
+>>
+3. NZ_AP018316
+Source: Dolichospermum compactum NIES-806 chromosome
+Type: lanthipeptide-class-v,terpene
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 1132.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg102_3	CA730_RS05355	54	138	17.24137931034483	2.45e-34
+ctg102_6	CA730_RS05410	69	449	100.0	4.25e-158
+ctg102_7	CA730_RS05415	83	545	85.17520215633422	1.7e-192
+
+
+
+>>
+4. NZ_AP017308
+Source: Leptolyngbya sp. NIES-3755 DNA, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 1027.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg102_3	LEP3755_RS10995	50	113	16.96551724137931	1.03e-24
+ctg102_6	LEP3755_RS11020	66	426	100.0	4.17e-149
+ctg102_7	LEP3755_RS11025	75	488	87.6010781671159	2.81e-170
+
+
+
+>>
+5. NC_011729
+Source: Gloeothece citriformis PCC 7424, complete sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 1096.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg102_6	PCC7424_RS05660	82	520	100.0	2.04e-186
+ctg102_7	PCC7424_RS05655	87	576	88.40970350404312	6.23e-205
+
+
+
+>>
+6. NC_014501
+Source: Gloeothece verrucosa PCC 7822, complete sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 1088.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg102_6	CYAN7822_RS05940	82	519	100.0	5.83e-186
+ctg102_7	CYAN7822_RS05945	84	569	91.37466307277629	5.18e-202
+
+
+
+>>
+7. NZ_AP014821
+Source: Geminocystis sp. NIES-3709 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 1058.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg102_6	GM3709_RS02545	78	502	100.0	4.02e-179
+ctg102_7	GM3709_RS02550	84	556	87.06199460916442	3.53e-197
+
+
+
+>>
+8. NZ_CP020664
+Source: Microcystis sp. MC19 chromosome, complete genome
+Type: T1PKS,terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 1055.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg102_6	B5D77_RS13990	77	499	100.0	6.89e-178
+ctg102_7	B5D77_RS13985	82	556	91.10512129380054	5.98e-197
+
+
+
+>>
+9. NC_011726
+Source: Rippkaea orientalis PCC 8801, complete sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 1055.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg102_6	PCC8801_RS01530	76	485	100.0	1.47e-172
+ctg102_7	PCC8801_RS01525	83	570	90.83557951482479	1.95e-202
+
+
+
+>>
+10. NC_019776
+Source: Cyanobacterium aponinum PCC 10605, complete sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 1052.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg102_6	CYAN10605_RS04370	76	492	100.0	3.66e-175
+ctg102_7	CYAN10605_RS04375	83	560	89.21832884097036	2e-198
+
+
+
+>>
+11. NZ_CP097576
+Source: Microcystis aeruginosa str. Chao 1910 chromosome, complete genome
+Type: T1PKS,terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 1051.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg102_6	M8120_RS05130	76	491	100.0	5.39e-175
+ctg102_7	M8120_RS05125	83	560	91.10512129380054	1.27e-198
+
+
+
+>>
+12. NZ_CP011304
+Source: Microcystis aeruginosa NIES-2549 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 1050.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg102_6	myaer_RS01835	76	494	100.0	3.26e-176
+ctg102_7	myaer_RS01830	83	556	88.40970350404312	8.48e-197
+
+
+
+>>
+13. NZ_CM001775
+Source: Geminocystis herdmanii PCC 6308 chromosome, whole genome shotgun sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 1050.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg102_6	SYN6308_RS18120	77	493	100.0	1.81e-175
+ctg102_7	SYN6308_RS18115	84	557	87.06199460916442	2.24e-197
+
+
+
+>>
+14. NC_010296
+Source: Microcystis aeruginosa NIES-843, complete sequence
+Type: T1PKS,terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 1049.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg102_6	MAE_RS05720	76	491	100.0	7.65e-175
+ctg102_7	MAE_RS05725	82	558	91.10512129380054	7.32e-198
+
+
+
+>>
+15. NZ_AP019314
+Source: Microcystis viridis NIES-102 chromosome, complete genome
+Type: T1PKS,terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 1049.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg102_6	myaer102_RS25705	76	491	100.0	7.65e-175
+ctg102_7	myaer102_RS25710	82	558	91.10512129380054	7.32e-198
+
+
+
+>>
+16. NZ_AP024565
+Source: Microcystis aeruginosa strain NIES-88 chromosome, complete genome
+Type: T1PKS,terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 1048.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg102_6	LC603172_RS25810	76	490	100.0	1.54e-174
+ctg102_7	LC603172_RS25805	83	558	88.40970350404312	7.32e-198
+
+
+
+>>
+17. NZ_HE973242
+Source: Microcystis aeruginosa PCC 9806, whole genome shotgun sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 1047.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg102_6	MICAE_RS15360	76	496	100.0	1.14e-176
+ctg102_7	MICAE_RS15355	81	551	91.10512129380054	5.66e-195
+
+
+
+>>
+18. NZ_BDSM01000026
+Source: Microcystis sp. 0824, whole genome shotgun sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 1047.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg102_6	N0824_RS11270	76	493	100.0	9.33e-176
+ctg102_7	N0824_RS11265	81	554	91.10512129380054	4.88e-196
+
+
+
+>>
+19. NZ_AP014815
+Source: Geminocystis sp. NIES-3708 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 1047.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg102_6	GM3708_RS15600	77	490	100.32154340836013	2.11e-174
+ctg102_7	GM3708_RS15595	84	557	86.79245283018868	2.32e-197
+
+
+
+>>
+20. NZ_CP020771
+Source: Microcystis aeruginosa PCC 7806SL chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 1047.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg102_6	BH695_RS23380	75	487	100.0	3.62e-173
+ctg102_7	BH695_RS23385	82	560	91.10512129380054	1.81e-198
+
+
+
+>>
+21. NZ_CP046973
+Source: Microcystis aeruginosa FD4 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 1047.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg102_6	GQR42_RS19275	75	486	100.0	1.04e-172
+ctg102_7	GQR42_RS19280	84	561	88.40970350404312	6.32e-199
+
+
+
+>>
+22. NZ_CP046058
+Source: Microcystis aeruginosa NIES-298 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 1046.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg102_6	D3800_RS03655	75	489	100.0	6.27e-174
+ctg102_7	D3800_RS03650	82	557	91.10512129380054	2.09e-197
+
+
+
+>>
+23. NZ_HE973143
+Source: Microcystis aeruginosa PCC 7941, whole genome shotgun sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 1045.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg102_6	MICAD_RS00365	75	489	100.0	6.27e-174
+ctg102_7	MICAD_RS00370	82	556	91.10512129380054	8.48e-197
+
+
+
+>>
+24. NC_010546
+Source: Crocosphaera subtropica ATCC 51142 chromosome circular, complete sequence
+Type: T1PKS,terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 1036.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg102_6	CCE_RS17755	74	482	100.0	3.45e-171
+ctg102_7	CCE_RS17750	82	554	91.10512129380054	3.32e-196
+
+
+
+>>
+25. NZ_CP019225
+Source: Synechocystis sp. CACIAM 05 chromosome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 1028.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg102_6	BWK47_RS06680	75	483	100.0	3.19e-171
+ctg102_7	BWK47_RS06675	79	545	89.75741239892183	9.35e-193
+
+
+
+>>
+26. NZ_JH980292
+Source: Spirulina subsalsa PCC 9445 Contig210, whole genome shotgun sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 1026.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg102_6	SPI9445_RS0107445	75	472	96.46302250803859	2.11e-167
+ctg102_7	SPI9445_RS0107440	83	554	88.40970350404312	2.88e-196
+
+
+
+>>
+27. NZ_CP007542
+Source: Synechocystis sp. PCC 6714 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 1025.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg102_6	D082_RS10225	75	484	100.0	1.58e-171
+ctg102_7	D082_RS10220	81	541	85.98382749326146	4.39e-191
+
+
+
+>>
+28. NC_017277
+Source: Synechocystis sp. PCC 6803, complete sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 1025.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg102_6	SYNGTS_RS06570	75	483	100.0	3.19e-171
+ctg102_7	SYNGTS_RS06565	78	542	89.21832884097036	2.18e-191
+
+
+
+>>
+29. NZ_CP054306
+Source: Synechocystis sp. PCC 7338 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 1021.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg102_6	HTZ78_RS10740	74	479	100.0	1.51e-169
+ctg102_7	HTZ78_RS10745	79	542	89.21832884097036	2.18e-191
+
+
+
+>>
+30. NZ_CP063659
+Source: Synechocystis sp. PCC 7339 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 1021.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg102_6	IQE94_RS02830	74	479	100.0	1.51e-169
+ctg102_7	IQE94_RS02835	79	542	89.21832884097036	2.18e-191
+
+
+
+>>
+31. NZ_MKZR01000001
+Source: Moorena producens 3L Ga0081465_101, whole genome shotgun sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 1019.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg102_6	BI334_RS17945	76	486	100.0	7.04e-173
+ctg102_7	BI334_RS17940	81	533	85.17520215633422	1.94e-187
+
+
+
+>>
+32. NZ_CP064879
+Source: Tolypothrix sp. PCC 7601 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 1016.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg102_6	HG267_RS05965	71	453	100.0	9e-160
+ctg102_7	HG267_RS05970	82	563	90.83557951482479	1.22e-199
+
+
+
+>>
+33. NZ_AP018172
+Source: Calothrix sp. NIES-2098 DNA, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 1016.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg102_6	CA733_RS31260	70	448	100.0	8.56e-158
+ctg102_7	CA733_RS31255	83	568	90.83557951482479	1.29e-201
+
+
+
+>>
+34. NZ_CP042326
+Source: Euhalothece natronophila Z-M001 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 1015.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg102_6	FRE64_RS16095	72	473	100.0	1.06e-167
+ctg102_7	FRE64_RS16100	84	542	85.17520215633422	2.42e-191
+
+
+
+>>
+35. NZ_AP018248
+Source: Tolypothrix tenuis PCC 7101 DNA, nearly complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 1015.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg102_6	CDC28_RS11205	70	448	100.0	6.03e-158
+ctg102_7	CDC28_RS11200	83	567	90.83557951482479	3.69e-201
+
+
+
+>>
+36. NZ_CP017708
+Source: Moorena producens JHB chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 1014.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg102_6	BJP36_RS22360	76	483	100.0	1.16e-171
+ctg102_7	BJP36_RS22355	80	531	85.17520215633422	5.54e-187
+
+
+
+>>
+37. NZ_CP017599
+Source: Moorena producens PAL-8-15-08-1 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 1013.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg102_6	BJP34_RS19445	76	484	100.0	4.06e-172
+ctg102_7	BJP34_RS19440	80	529	85.17520215633422	4.52e-186
+
+
+
+>>
+38. NZ_MKZS01000001
+Source: Moorena bouillonii PNG strain PNG5-198 Ga0081470_101, whole genome shotgun sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 1012.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg102_6	BJP37_RS19075	75	481	100.0	4.73e-171
+ctg102_7	BJP37_RS19070	80	531	85.17520215633422	1.12e-186
+
+
+
+>>
+39. NZ_CP050440
+Source: Tolypothrix sp. PCC 7910 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 1011.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg102_6	HCG51_RS26160	70	446	100.0	3.48e-157
+ctg102_7	HCG51_RS26165	85	565	86.79245283018868	3.01e-200
+
+
+
+>>
+40. NZ_CP016477
+Source: Synechococcus sp. PCC 7117 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 1008.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg102_6	AWQ22_RS09855	76	470	94.85530546623794	2.01e-166
+ctg102_7	AWQ22_RS09850	81	538	87.06199460916442	9.88e-190
+
+
+
+>>
+41. NZ_CP040360
+Source: Synechococcus sp. PCC 11901 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 1008.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg102_6	FEK30_RS14000	76	470	94.85530546623794	2.01e-166
+ctg102_7	FEK30_RS13995	81	538	87.06199460916442	9.88e-190
+
+
+
+>>
+42. NZ_CP071065
+Source: Nostoc sp. UHCC 0702 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 1008.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg102_6	JYQ62_RS36035	70	444	96.46302250803859	4.04e-156
+ctg102_7	JYQ62_RS36030	85	564	87.06199460916442	6.06e-200
+
+
+
+>>
+43. NC_019779
+Source: Halothece sp. PCC 7418, complete sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 1007.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg102_6	PCC7418_RS18215	73	472	100.0	3.02e-167
+ctg102_7	PCC7418_RS18210	82	535	85.44474393530997	1.32e-188
+
+
+
+>>
+44. NZ_CP013998
+Source: Synechococcus sp. PCC 73109 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 1006.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg102_6	AWQ23_RS09725	76	470	94.85530546623794	2.01e-166
+ctg102_7	AWQ23_RS09720	81	536	87.06199460916442	4.01e-189
+
+
+
+>>
+45. NZ_CP016483
+Source: Synechococcus sp. PCC 8807 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 1006.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg102_6	AWQ24_RS09945	76	470	94.85530546623794	2.01e-166
+ctg102_7	AWQ24_RS09940	81	536	87.06199460916442	4.01e-189
+
+
+
+>>
+46. NZ_AP018207
+Source: Calothrix brevissima NIES-22 DNA, nearly complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 1006.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg102_6	CA724_RS07980	69	437	100.0	1.1e-153
+ctg102_7	CA724_RS07975	83	569	90.83557951482479	4.51e-202
+
+
+
+>>
+47. NC_010475
+Source: Synechococcus sp. PCC 7002, complete sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 1005.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg102_6	SYNPCC7002_RS09680	76	470	94.85530546623794	2.01e-166
+ctg102_7	SYNPCC7002_RS09675	81	535	87.06199460916442	1.62e-188
+
+
+
+>>
+48. NZ_AP018178
+Source: Calothrix sp. NIES-2100 DNA, nearly complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 1005.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg102_6	CA734_RS28650	69	444	100.0	2.85e-156
+ctg102_7	CA734_RS28655	82	561	90.83557951482479	4.95e-199
+
+
+
+>>
+49. NZ_CP016474
+Source: Synechococcus sp. PCC 7003 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 1004.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg102_6	AWQ21_RS08900	76	468	94.85530546623794	8.19e-166
+ctg102_7	AWQ21_RS08905	81	536	87.06199460916442	4.01e-189
+
+
+
+>>
+50. NC_014248
+Source: 'Nostoc azollae' 0708, complete sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 1004.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg102_6	AAZO_RS13720	69	446	100.0	3.48e-157
+ctg102_7	AAZO_RS13725	84	558	86.79245283018868	1.16e-197
+

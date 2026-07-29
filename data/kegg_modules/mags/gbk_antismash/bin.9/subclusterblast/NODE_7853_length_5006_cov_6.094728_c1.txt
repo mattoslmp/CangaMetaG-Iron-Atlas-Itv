@@ -1,0 +1,15 @@
+ClusterBlast scores for NODE_7853_length_5006_cov_6.094728
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg295_1	2	221	+		
+ctg295_2	328	1213	+		
+ctg295_3	1214	3140	+		
+ctg295_4	3144	3969	+		
+ctg295_5	4152	4659	+		
+ctg295_6	4661	5006	+		
+
+
+Significant hits: 
+
+
+Details:

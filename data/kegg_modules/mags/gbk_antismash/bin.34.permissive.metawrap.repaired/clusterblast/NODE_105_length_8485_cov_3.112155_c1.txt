@@ -1,0 +1,864 @@
+ClusterBlast scores for NODE_105_length_8485_cov_3.112155
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg105_1	0	1281	+		
+ctg105_2	1277	3146	-		
+ctg105_3	3168	4359	-		
+ctg105_4	4589	6167	-		
+ctg105_5	6397	6553	-		
+ctg105_6	6920	7637	+		
+ctg105_7	7880	8111	+		
+ctg105_8	8248	8413	+		
+
+
+Significant hits: 
+1. NC_019745	Gloeocapsa sp. PCC 7428, complete sequence
+2. NZ_CP040272	Nostoc sp. C052 chromosome, complete genome
+3. NZ_JHEG04000001	Tolypothrix bouteillei VB521301 NODE_1_length_9494340_cov_10.278967, whole genome shotgun sequence, ribosomal protein l10 leader region
+4. NZ_CP011304	Microcystis aeruginosa NIES-2549 chromosome, complete genome
+5. NZ_CP020664	Microcystis sp. MC19 chromosome, complete genome
+6. NZ_QEOM01000004	Williamsia marianensis strain DSM 44944 Ga0215645_104, whole genome shotgun sequence
+7. NZ_CP086599	Nocardia farcinica strain SZ 1509 chromosome, complete genome
+8. NC_006361	Nocardia farcinica IFM 10152, complete sequence
+9. NZ_CP031418	Nocardia farcinica strain W6977 chromosome, complete genome
+10. NZ_QNRE01000003	Nocardia puris strain DSM 44599 Ga0244502_103, whole genome shotgun sequence
+11. NZ_CP041695	Nocardia otitidiscaviarum strain NEB252 chromosome, complete genome
+12. NZ_CP032568	Nocardia yunnanensis strain CFH S0054 chromosome
+13. NZ_CP017839	Nocardia seriolae strain EM150506 chromosome, complete genome
+14. NZ_CP089227	Nocardia asteroides strain FDAARGOS_1622 chromosome, complete genome
+15. NZ_BMNE01000003	Nocardia rhizosphaerihabitans strain CGMCC 4.7329 sequence03, whole genome shotgun sequence
+16. NZ_BMMW01000001	Nocardia camponoti strain CGMCC 4.7278 sequence01, whole genome shotgun sequence
+17. NZ_CP074371	Nocardia tengchongensis strain CFH S0057 chromosome, complete genome
+18. NZ_LMFE01000008	Nocardia sp. Root136 contig_3, whole genome shotgun sequence
+19. NZ_SMFR01000002	Nocardia alba strain DSM 44684 Ga0244504_102, whole genome shotgun sequence
+20. NZ_QGTL01000006	Nocardia neocaledoniensis strain DSM 44717 Ga0244503_106, whole genome shotgun sequence
+21. NZ_CP089212	Nocardia asteroides strain FDAARGOS_1621 chromosome, complete genome
+22. NZ_KB911513	Nocardia sp. 348MFTsu5.1 H290DRAFT_scaffold00005.5, whole genome shotgun sequence
+23. NZ_CP018082	Nocardia mangyaensis strain Y48 chromosome, complete genome
+24. NZ_CP089226	Nocardia yamanashiensis strain FDAARGOS_1623 chromosome, complete genome
+25. NZ_VMSD01000004	Nocardia caishijiensis strain DSM 44831 Ga0244506_104, whole genome shotgun sequence
+26. NZ_SNXK01000005	Nocardia ignorata strain DSM 44496 Ga0244500_105, whole genome shotgun sequence
+27. NZ_CP089214	Nocardia asteroides strain FDAARGOS_1620 chromosome, complete genome
+28. NZ_CP059399	Nocardia huaxiensis strain WCH-YHL-001 chromosome, complete genome
+29. NZ_CP088007	Nocardia huaxiensis strain BCHNH01 chromosome, complete genome
+30. NZ_JAHKNI010000018	Nocardia albiluteola strain NEAU-G5 Scaffold18, whole genome shotgun sequence
+31. NZ_CP025546	Mycobacterium paragordonae strain 49061 chromosome, complete genome
+32. NZ_JANDBD010000012	Mycolicibacterium sp. CAU 1645 contig12, whole genome shotgun sequence
+33. NZ_CP070973	Mycobacterium gordonae strain X7091 chromosome, complete genome
+34. NZ_CP045809	Gordonia pseudamarae strain CON9 chromosome, complete genome
+35. NZ_CP045804	Gordonia amarae strain BEN374 chromosome, complete genome
+36. NZ_CP019066	Tsukamurella tyrosinosolvens strain MH1 chromosome, complete genome
+37. NZ_CP070357	Tsukamurella tyrosinosolvens strain PDNC001 chromosome
+38. NZ_LR134450	Tsukamurella tyrosinosolvens strain NCTC13231 plasmid 8, complete sequence
+39. NZ_HE997627	Tsukamurella sp. 1534, whole genome shotgun sequence
+40. NZ_JANUCJ010000002	Tsukamurella ocularis strain S00175 Ga0436325_02, whole genome shotgun sequence
+41. NZ_CP085954	Tsukamurella paurometabola strain FDAARGOS_1558 chromosome, complete genome
+42. NZ_AP025457	Tsukamurella pulmonis strain TP-B0596 chromosome, complete genome
+43. NZ_CP104302	Mycolicibacterium brumae strain ATCC 51384 chromosome, complete genome
+44. NZ_JACERH010000001	Tsukamurella tyrosinosolvens strain TY201901 Scaffold1, whole genome shotgun sequence
+45. NZ_AP022618	Mycolicibacterium insubricum strain JCM 16366 chromosome
+46. NC_014158	Tsukamurella paurometabola DSM 20162, complete sequence
+47. NZ_AP025688	Tsukamurella sp. PLM1 chromosome, complete genome
+48. NC_019697	Chamaesiphon minutus PCC 6605, complete sequence
+49. NC_019678	Rivularia sp. PCC 7116, complete sequence
+50. NC_010612	Mycobacterium marinum M, complete sequence
+
+
+Details:
+
+>>
+1. NC_019745
+Source: Gloeocapsa sp. PCC 7428, complete sequence
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 2033.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg105_2	GLO7428_RS11345	65	743	97.26688102893891	7.28e-265
+ctg105_3	GLO7428_RS11350	74	562	101.01010101010101	6.88e-200
+ctg105_4	GLO7428_RS11355	72	728	92.19047619047619	2.55e-261
+
+
+
+>>
+2. NZ_CP040272
+Source: Nostoc sp. C052 chromosome, complete genome
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 2033.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg105_2	FD723_RS42370	64	732	100.96463022508037	4.63e-260
+ctg105_3	FD723_RS02820	73	562	103.03030303030303	2e-199
+ctg105_4	FD723_RS02825	76	739	88.38095238095238	5.3e-265
+
+
+
+>>
+3. NZ_JHEG04000001
+Source: Tolypothrix bouteillei VB521301 NODE_1_length_9494340_cov_10.278967, whole genome shotgun sequence, ribosomal protein l10 leader region
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 1944.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg105_2	HC643_RS41665	62	678	97.58842443729904	3.8e-239
+ctg105_3	HC643_RS30515	71	547	102.020202020202	1.76e-193
+ctg105_4	HC643_RS30510	71	719	93.71428571428572	2.53e-257
+
+
+
+>>
+4. NZ_CP011304
+Source: Microcystis aeruginosa NIES-2549 chromosome, complete genome
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 1799.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg105_2	myaer_RS19560	55	626	105.62700964630226	7.92e-218
+ctg105_3	myaer_RS19555	61	479	100.0	3.12e-167
+ctg105_4	myaer_RS19550	68	694	91.23809523809524	1.11e-247
+
+
+
+>>
+5. NZ_CP020664
+Source: Microcystis sp. MC19 chromosome, complete genome
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 1788.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg105_2	B5D77_RS11330	56	623	103.37620578778134	6.03e-217
+ctg105_3	B5D77_RS11335	61	476	100.0	3.61e-166
+ctg105_4	B5D77_RS11340	67	689	93.33333333333333	5.22e-246
+
+
+
+>>
+6. NZ_QEOM01000004
+Source: Williamsia marianensis strain DSM 44944 Ga0215645_104, whole genome shotgun sequence
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 1431.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg105_2	C7458_RS12865	48	505	97.58842443729904	1.32e-171
+ctg105_3	C7458_RS12870	51	365	97.72727272727273	1.16e-122
+ctg105_4	C7458_RS12875	56	561	88.76190476190476	1.94e-196
+
+
+
+>>
+7. NZ_CP086599
+Source: Nocardia farcinica strain SZ 1509 chromosome, complete genome
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 1423.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg105_2	LMJ57_RS25050	48	501	98.23151125401928	2.77e-169
+ctg105_3	LMJ57_RS25055	47	335	97.72727272727273	6.33e-111
+ctg105_4	LMJ57_RS25060	56	587	92.95238095238095	3.31e-206
+
+
+
+>>
+8. NC_006361
+Source: Nocardia farcinica IFM 10152, complete sequence
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 1421.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg105_2	NFA_RS24445	48	502	98.23151125401928	9.79e-170
+ctg105_3	NFA_RS24450	47	333	97.72727272727273	3.6e-110
+ctg105_4	NFA_RS24455	56	586	92.95238095238095	6.66e-206
+
+
+
+>>
+9. NZ_CP031418
+Source: Nocardia farcinica strain W6977 chromosome, complete genome
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 1420.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg105_2	DXT66_RS21010	48	501	97.10610932475883	1.39e-169
+ctg105_3	DXT66_RS21005	47	332	97.72727272727273	5.1e-110
+ctg105_4	DXT66_RS21000	56	587	92.95238095238095	3.31e-206
+
+
+
+>>
+10. NZ_QNRE01000003
+Source: Nocardia puris strain DSM 44599 Ga0244502_103, whole genome shotgun sequence
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 1420.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg105_2	DFR74_RS12880	47	493	97.10610932475883	2.77e-166
+ctg105_3	DFR74_RS12885	48	332	97.72727272727273	6.99e-110
+ctg105_4	DFR74_RS12890	57	595	93.33333333333333	1.46e-209
+
+
+
+>>
+11. NZ_CP041695
+Source: Nocardia otitidiscaviarum strain NEB252 chromosome, complete genome
+Type: T3PKS,arylpolyene
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 1419.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg105_2	FOH10_RS09365	47	500	104.983922829582	2.53e-168
+ctg105_3	FOH10_RS09370	48	334	96.71717171717171	1.27e-110
+ctg105_4	FOH10_RS09375	55	585	92.95238095238095	1.71e-205
+
+
+
+>>
+12. NZ_CP032568
+Source: Nocardia yunnanensis strain CFH S0054 chromosome
+Type: T3PKS,arylpolyene
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 1419.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg105_2	D7D52_RS22370	46	491	101.60771704180065	8.79e-165
+ctg105_3	D7D52_RS22375	50	346	97.72727272727273	8.5e-115
+ctg105_4	D7D52_RS22380	57	582	90.85714285714286	3.58e-204
+
+
+
+>>
+13. NZ_CP017839
+Source: Nocardia seriolae strain EM150506 chromosome, complete genome
+Type: T3PKS,arylpolyene
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 1416.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg105_2	NS506_RS17460	48	493	101.60771704180065	1.28e-165
+ctg105_3	NS506_RS17465	49	345	98.48484848484848	1.35e-114
+ctg105_4	NS506_RS17470	56	578	90.85714285714286	2.38e-202
+
+
+
+>>
+14. NZ_CP089227
+Source: Nocardia asteroides strain FDAARGOS_1622 chromosome, complete genome
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 1413.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg105_2	LT345_RS13880	47	494	99.03536977491962	1.97e-166
+ctg105_3	LT345_RS13885	47	338	97.72727272727273	5.14e-112
+ctg105_4	LT345_RS13890	56	581	91.04761904761904	6.04e-204
+
+
+
+>>
+15. NZ_BMNE01000003
+Source: Nocardia rhizosphaerihabitans strain CGMCC 4.7329 sequence03, whole genome shotgun sequence
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 1413.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg105_2	IEY60_RS15270	47	490	100.48231511254019	7.43e-165
+ctg105_3	IEY60_RS15265	47	340	97.72727272727273	6.38e-113
+ctg105_4	IEY60_RS15260	56	583	91.04761904761904	1.05e-204
+
+
+
+>>
+16. NZ_BMMW01000001
+Source: Nocardia camponoti strain CGMCC 4.7278 sequence01, whole genome shotgun sequence
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 1408.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg105_2	IEX78_RS01655	48	494	98.71382636655949	1.63e-166
+ctg105_3	IEX78_RS01650	47	328	96.71717171717171	4.61e-108
+ctg105_4	IEX78_RS01645	56	586	93.33333333333333	4.53e-206
+
+
+
+>>
+17. NZ_CP074371
+Source: Nocardia tengchongensis strain CFH S0057 chromosome, complete genome
+Type: T3PKS,arylpolyene
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 1406.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg105_2	KHQ06_RS18610	47	481	100.48231511254019	3.81e-161
+ctg105_3	KHQ06_RS18615	48	343	98.48484848484848	3.58e-114
+ctg105_4	KHQ06_RS18620	57	582	90.85714285714286	3.71e-204
+
+
+
+>>
+18. NZ_LMFE01000008
+Source: Nocardia sp. Root136 contig_3, whole genome shotgun sequence
+Type: T2PKS,T3PKS
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 1403.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg105_2	ASD42_RS21445	48	495	99.83922829581994	4.62e-167
+ctg105_3	ASD42_RS21440	47	334	96.46464646464646	1.66e-110
+ctg105_4	ASD42_RS21435	56	574	90.66666666666666	2.29e-201
+
+
+
+>>
+19. NZ_SMFR01000002
+Source: Nocardia alba strain DSM 44684 Ga0244504_102, whole genome shotgun sequence
+Type: NRPS-like,T1PKS,T2PKS,T3PKS
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 1402.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg105_2	DFR71_RS14940	48	498	99.67845659163987	5.77e-168
+ctg105_3	DFR71_RS14945	47	328	96.71717171717171	3.05e-108
+ctg105_4	DFR71_RS14950	56	576	91.04761904761904	4e-202
+
+
+
+>>
+20. NZ_QGTL01000006
+Source: Nocardia neocaledoniensis strain DSM 44717 Ga0244503_106, whole genome shotgun sequence
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 1401.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg105_2	DFR69_RS17690	47	480	100.0	6.28e-161
+ctg105_3	DFR69_RS17695	48	342	96.71717171717171	1.12e-113
+ctg105_4	DFR69_RS17700	56	579	91.04761904761904	2.44e-203
+
+
+
+>>
+21. NZ_CP089212
+Source: Nocardia asteroides strain FDAARGOS_1621 chromosome, complete genome
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 1400.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg105_2	LTT85_RS01805	47	480	99.51768488745981	4.44e-161
+ctg105_3	LTT85_RS01800	48	340	96.71717171717171	9.03e-113
+ctg105_4	LTT85_RS01795	56	580	91.04761904761904	1.21e-203
+
+
+
+>>
+22. NZ_KB911513
+Source: Nocardia sp. 348MFTsu5.1 H290DRAFT_scaffold00005.5, whole genome shotgun sequence
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 1396.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg105_2	H290_RS0111150	48	486	96.94533762057877	9.86e-164
+ctg105_3	H290_RS0111145	50	350	97.72727272727273	1.84e-116
+ctg105_4	H290_RS0111140	58	560	88.76190476190476	1.43e-195
+
+
+
+>>
+23. NZ_CP018082
+Source: Nocardia mangyaensis strain Y48 chromosome, complete genome
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 1394.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg105_2	BOX37_RS16820	47	493	100.48231511254019	2.98e-166
+ctg105_3	BOX37_RS16825	46	335	97.72727272727273	8.29e-111
+ctg105_4	BOX37_RS16830	55	566	90.66666666666666	2.57e-198
+
+
+
+>>
+24. NZ_CP089226
+Source: Nocardia yamanashiensis strain FDAARGOS_1623 chromosome, complete genome
+Type: T3PKS,arylpolyene
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 1393.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg105_2	LTV02_RS35505	45	468	106.2700964630225	1.46e-155
+ctg105_3	LTV02_RS35510	49	350	97.72727272727273	8.92e-117
+ctg105_4	LTV02_RS35515	54	575	92.38095238095238	1.1e-201
+
+
+
+>>
+25. NZ_VMSD01000004
+Source: Nocardia caishijiensis strain DSM 44831 Ga0244506_104, whole genome shotgun sequence
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 1392.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg105_2	FNL39_RS14300	46	476	100.32154340836013	1.21e-159
+ctg105_3	FNL39_RS14295	46	335	103.28282828282829	5.49e-111
+ctg105_4	FNL39_RS14290	56	581	91.04761904761904	6.04e-204
+
+
+
+>>
+26. NZ_SNXK01000005
+Source: Nocardia ignorata strain DSM 44496 Ga0244500_105, whole genome shotgun sequence
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 1390.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg105_2	DFR75_RS22775	47	477	100.32154340836013	6.05e-160
+ctg105_3	DFR75_RS22780	48	335	96.71717171717171	6.61e-111
+ctg105_4	DFR75_RS22785	56	578	91.04761904761904	4.91e-203
+
+
+
+>>
+27. NZ_CP089214
+Source: Nocardia asteroides strain FDAARGOS_1620 chromosome, complete genome
+Type: T3PKS,terpene
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 1387.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg105_2	LTT61_RS02385	46	478	100.16077170418008	5.18e-160
+ctg105_3	LTT61_RS02390	50	348	97.22222222222221	3.71e-116
+ctg105_4	LTT61_RS02395	55	561	89.71428571428571	3.18e-196
+
+
+
+>>
+28. NZ_CP059399
+Source: Nocardia huaxiensis strain WCH-YHL-001 chromosome, complete genome
+Type: T3PKS,arylpolyene
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 1382.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg105_2	H0264_RS17590	46	472	103.05466237942123	2.25e-157
+ctg105_3	H0264_RS17595	49	332	97.72727272727273	9.76e-110
+ctg105_4	H0264_RS17600	56	578	91.42857142857143	9.88e-203
+
+
+
+>>
+29. NZ_CP088007
+Source: Nocardia huaxiensis strain BCHNH01 chromosome, complete genome
+Type: T3PKS,arylpolyene
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 1382.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg105_2	LPY97_RS15930	46	472	103.05466237942123	2.25e-157
+ctg105_3	LPY97_RS15925	49	332	97.72727272727273	9.76e-110
+ctg105_4	LPY97_RS15920	56	578	91.42857142857143	9.88e-203
+
+
+
+>>
+30. NZ_JAHKNI010000018
+Source: Nocardia albiluteola strain NEAU-G5 Scaffold18, whole genome shotgun sequence
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 1372.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg105_2	KO481_RS36845	45	477	102.89389067524115	2.14e-159
+ctg105_3	KO481_RS36840	47	328	96.46464646464646	2.26e-108
+ctg105_4	KO481_RS36835	55	567	90.28571428571428	1.75e-198
+
+
+
+>>
+31. NZ_CP025546
+Source: Mycobacterium paragordonae strain 49061 chromosome, complete genome
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 1356.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg105_2	C0J29_RS03365	46	469	96.94533762057877	1.37e-157
+ctg105_3	C0J29_RS03370	48	327	97.72727272727273	1.44e-107
+ctg105_4	C0J29_RS03375	53	560	93.14285714285714	2.42e-195
+
+
+
+>>
+32. NZ_JANDBD010000012
+Source: Mycolicibacterium sp. CAU 1645 contig12, whole genome shotgun sequence
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 1354.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg105_2	NM203_RS25760	48	466	96.46302250803859	9.77e-156
+ctg105_3	NM203_RS25765	46	321	97.97979797979798	3.72e-105
+ctg105_4	NM203_RS25770	55	567	90.28571428571428	1.42e-198
+
+
+
+>>
+33. NZ_CP070973
+Source: Mycobacterium gordonae strain X7091 chromosome, complete genome
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 1352.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg105_2	JX552_RS03275	46	470	98.07073954983923	8.29e-158
+ctg105_3	JX552_RS03280	49	335	97.22222222222221	1.34e-110
+ctg105_4	JX552_RS03285	54	547	91.23809523809524	2.43e-190
+
+
+
+>>
+34. NZ_CP045809
+Source: Gordonia pseudamarae strain CON9 chromosome, complete genome
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 1350.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg105_2	GII31_RS03790	48	488	98.07073954983923	2.16e-164
+ctg105_3	GII31_RS03785	48	325	96.46464646464646	2.84e-107
+ctg105_4	GII31_RS03780	52	537	88.76190476190476	1.26e-185
+
+
+
+>>
+35. NZ_CP045804
+Source: Gordonia amarae strain BEN374 chromosome, complete genome
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 1342.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg105_2	GII35_RS19545	44	475	109.80707395498392	2.87e-158
+ctg105_3	GII35_RS19550	49	330	96.46464646464646	5.69e-109
+ctg105_4	GII35_RS19555	53	537	89.14285714285714	1.18e-185
+
+
+
+>>
+36. NZ_CP019066
+Source: Tsukamurella tyrosinosolvens strain MH1 chromosome, complete genome
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 1308.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg105_2	ASU32_RS12565	44	438	96.94533762057877	3.66e-145
+ctg105_3	ASU32_RS12560	46	322	97.72727272727273	2.18e-105
+ctg105_4	ASU32_RS12555	54	548	88.95238095238095	2.18e-191
+
+
+
+>>
+37. NZ_CP070357
+Source: Tsukamurella tyrosinosolvens strain PDNC001 chromosome
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 1308.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg105_2	JVY00_RS16770	44	438	96.94533762057877	3.66e-145
+ctg105_3	JVY00_RS16765	46	322	97.72727272727273	2.18e-105
+ctg105_4	JVY00_RS16760	54	548	88.95238095238095	2.18e-191
+
+
+
+>>
+38. NZ_LR134450
+Source: Tsukamurella tyrosinosolvens strain NCTC13231 plasmid 8, complete sequence
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 1308.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg105_2	EL451_RS03320	44	438	96.94533762057877	3.66e-145
+ctg105_3	EL451_RS03325	46	322	97.72727272727273	2.18e-105
+ctg105_4	EL451_RS03330	54	548	88.95238095238095	2.18e-191
+
+
+
+>>
+39. NZ_HE997627
+Source: Tsukamurella sp. 1534, whole genome shotgun sequence
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 1306.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg105_2	BN39_RS12580	44	446	96.94533762057877	3.11e-148
+ctg105_3	BN39_RS12585	47	318	96.71717171717171	4.65e-104
+ctg105_4	BN39_RS12590	53	542	88.76190476190476	3.44e-189
+
+
+
+>>
+40. NZ_JANUCJ010000002
+Source: Tsukamurella ocularis strain S00175 Ga0436325_02, whole genome shotgun sequence
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 1306.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg105_2	HNP44_RS06265	44	439	96.62379421221866	1.83e-145
+ctg105_3	HNP44_RS06270	45	318	97.72727272727273	4.23e-104
+ctg105_4	HNP44_RS06275	54	549	88.76190476190476	1.54e-191
+
+
+
+>>
+41. NZ_CP085954
+Source: Tsukamurella paurometabola strain FDAARGOS_1558 chromosome, complete genome
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 1306.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg105_2	LK411_RS01010	44	436	96.62379421221866	1.46e-144
+ctg105_3	LK411_RS01015	45	321	97.72727272727273	3.73e-105
+ctg105_4	LK411_RS01020	54	549	89.33333333333333	1.09e-191
+
+
+
+>>
+42. NZ_AP025457
+Source: Tsukamurella pulmonis strain TP-B0596 chromosome, complete genome
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 1305.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg105_2	TPB0596_RS11195	45	439	96.62379421221866	1.18e-145
+ctg105_3	TPB0596_RS11200	46	317	97.72727272727273	1.86e-103
+ctg105_4	TPB0596_RS11205	54	549	88.95238095238095	1.54e-191
+
+
+
+>>
+43. NZ_CP104302
+Source: Mycolicibacterium brumae strain ATCC 51384 chromosome, complete genome
+Type: NAPAA,T3PKS
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 1304.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg105_2	L2Z93_RS01795	45	437	97.10610932475883	1.46e-144
+ctg105_3	L2Z93_RS01790	45	316	96.46464646464646	3.19e-103
+ctg105_4	L2Z93_RS01785	55	551	88.38095238095238	1.08e-192
+
+
+
+>>
+44. NZ_JACERH010000001
+Source: Tsukamurella tyrosinosolvens strain TY201901 Scaffold1, whole genome shotgun sequence
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 1304.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg105_2	HWD35_RS00270	44	436	96.94533762057877	2.06e-144
+ctg105_3	HWD35_RS00275	46	320	97.72727272727273	1.24e-104
+ctg105_4	HWD35_RS00280	54	548	88.95238095238095	4.39e-191
+
+
+
+>>
+45. NZ_AP022618
+Source: Mycolicibacterium insubricum strain JCM 16366 chromosome
+Type: NAPAA,T3PKS
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 1293.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg105_2	G6N16_RS00520	47	467	96.78456591639872	3.7e-156
+ctg105_3	G6N16_RS00525	46	322	96.46464646464646	7.67e-106
+ctg105_4	G6N16_RS00530	51	504	94.66666666666667	1.43e-173
+
+
+
+>>
+46. NC_014158
+Source: Tsukamurella paurometabola DSM 20162, complete sequence
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 1276.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg105_2	TPAU_RS11650	43	421	97.10610932475883	2.43e-138
+ctg105_3	TPAU_RS11645	48	314	96.71717171717171	1.32e-102
+ctg105_4	TPAU_RS11640	54	541	88.57142857142857	1.09e-188
+
+
+
+>>
+47. NZ_AP025688
+Source: Tsukamurella sp. PLM1 chromosome, complete genome
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 1079.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg105_2	MTP03_RS12080	35	289	97.42765273311898	1.48e-87
+ctg105_3	MTP03_RS12075	47	256	76.26262626262627	4.02e-80
+ctg105_4	MTP03_RS12070	53	534	88.57142857142857	8.27e-186
+
+
+
+>>
+48. NC_019697
+Source: Chamaesiphon minutus PCC 6605, complete sequence
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 1684.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg105_2	CHA6605_RS12340	54	602	99.67845659163987	5.74e-209
+ctg105_3	CHA6605_RS12315	57	422	99.74747474747475	4.07e-145
+ctg105_4	CHA6605_RS12310	65	660	89.33333333333333	2.94e-234
+
+
+
+>>
+49. NC_019678
+Source: Rivularia sp. PCC 7116, complete sequence
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 1036.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg105_3	RIV7116_RS19235	59	458	101.51515151515152	6.08e-159
+ctg105_4	RIV7116_RS19240	57	578	90.85714285714286	1.07e-202
+
+
+
+>>
+50. NC_010612
+Source: Mycobacterium marinum M, complete sequence
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 907.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg105_3	MMAR_RS10905	47	338	96.46464646464646	8.28e-112
+ctg105_4	MMAR_RS10900	55	569	90.28571428571428	2.94e-199
+

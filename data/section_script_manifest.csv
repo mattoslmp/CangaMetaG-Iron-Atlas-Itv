@@ -1,0 +1,8 @@
+section,script,purpose,inputs,outputs,command
+Taxonomy,app.py,Interactive domain/rank/filter/Top-N controls and chart rendering,Supplementary Table 1 and canonical palette,Interactive charts and downloads,bash run_app_no_root.sh
+Taxonomy,src/supplementary_database.py,Load and normalize taxonomy profiles,tables/Supplementary_Table_1.xlsx,Long-form taxonomy data,Imported by app.py
+Taxonomy,src/taxonomy_palette.py,Provide the canonical taxon-to-colour mapping,data/taxonomy_palette.json,Stable colour mapping,Imported by app and figure scripts
+Taxonomy,scripts/generate_final_domain_taxonomy_figures.py,Generate main taxonomy Figures 2-5,CDS abundance/taxonomy and physicochemical tables,PNG PDF SVG and source CSVs,python scripts/generate_final_domain_taxonomy_figures.py
+Taxonomy,scripts/generate_taxonomy_supplementary_figures.py,Generate supplementary taxonomy barplots and heatmaps,CDS abundance/taxonomy and canonical palette,Supplementary Figures 43-66 PNG PDF SVG,python scripts/generate_taxonomy_supplementary_figures.py
+ST8,scripts/rebuild_st8_final_exports.py,Export application-ready ST8 metadata and summary tables,tables/Supplementary_table_8_final_restructured_filled.xlsx,data/tables st8 CSV mirrors,python scripts/rebuild_st8_final_exports.py
+ST8,app.py,Render ST8 metadata omics layers GTDB taxonomy and contrasts,ST8 CSV mirrors and source workbook,Interactive tables figures and downloads,bash run_app_no_root.sh

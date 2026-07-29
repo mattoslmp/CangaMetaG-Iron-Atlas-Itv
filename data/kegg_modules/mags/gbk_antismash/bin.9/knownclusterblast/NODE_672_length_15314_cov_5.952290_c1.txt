@@ -1,0 +1,40 @@
+ClusterBlast scores for NODE_672_length_15314_cov_5.952290
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg42_1	126	429	+		
+ctg42_2	499	709	-		
+ctg42_3	806	1808	+		
+ctg42_4	1903	2950	-		
+ctg42_5	3034	3775	+		
+ctg42_6	3759	4512	+		
+ctg42_7	4608	5901	+		
+ctg42_8	5881	6370	-		
+ctg42_9	6479	6791	+		
+ctg42_10	6816	7824	-		
+ctg42_11	7820	12410	-		
+ctg42_12	12413	14027	-		
+ctg42_13	14029	14713	-		
+ctg42_14	15062	15314	+		
+
+
+Significant hits: 
+1. BGC0000871.4	VEPE/AEPE/TG-1
+
+
+Details:
+
+>>
+1. BGC0000871.4
+Source: VEPE/AEPE/TG-1
+Type: other:nucleoside
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 2838.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg42_10	MXAN_1527	54	322	95.52238805970148	3.89e-109
+ctg42_11	MXAN_1528	54	1470	96.72988881621976	0.0
+ctg42_12	MXAN_1529	65	738	99.06890130353817	5.37e-267
+ctg42_13	MXAN_1530	67	308	94.7136563876652	3.33e-107
+

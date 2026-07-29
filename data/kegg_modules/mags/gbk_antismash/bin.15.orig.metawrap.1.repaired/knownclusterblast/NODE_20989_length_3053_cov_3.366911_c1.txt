@@ -1,0 +1,24 @@
+ClusterBlast scores for NODE_20989_length_3053_cov_3.366911
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg235_1	97	3052	-		
+
+
+Significant hits: 
+1. BGC0001641.4	kolossin
+
+
+Details:
+
+>>
+1. BGC0001641.4
+Source: kolossin
+Type: NRPS:Type I
+Number of proteins with BLAST hits to this cluster: 1
+Cumulative BLAST score: 517.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg235_1	PLU_RS13235	51	517	55.6910569105691	7.53e-158
+

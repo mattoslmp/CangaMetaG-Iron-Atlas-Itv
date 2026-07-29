@@ -1,0 +1,874 @@
+ClusterBlast scores for NODE_4_length_20628_cov_3.075665
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg4_13	7588	8410	+		
+ctg4_14	8431	9880	+		
+ctg4_15	9891	10746	-		
+ctg4_16	10920	11232	-		
+ctg4_17	11258	11474	-		
+ctg4_18	11686	12754	+		
+ctg4_19	12842	13466	+		
+ctg4_20	13462	14935	+		
+ctg4_21	15370	15709	-		
+ctg4_22	15705	15918	-		
+ctg4_23	15932	16496	+		
+ctg4_24	16564	18469	-		
+ctg4_25	18559	18916	-		
+ctg4_26	18921	19152	-		
+ctg4_27	19175	20066	-		
+ctg4_28	20139	20373	+		
+ctg4_29	20372	20591	+		
+
+
+Significant hits: 
+1. NZ_MKZS01000001	Moorena bouillonii PNG strain PNG5-198 Ga0081470_101, whole genome shotgun sequence
+2. NZ_CP017599	Moorena producens PAL-8-15-08-1 chromosome, complete genome
+3. NZ_CP021056	Richelia sinica FACHB-800 strain FACHB 800 chromosome, complete genome
+4. NZ_CP046704	Nostoc sp. ATCC 53789 plasmid pNsp_a, complete sequence
+5. NZ_LT629762	Pseudomonas prosekii strain LMG 26867 chromosome I
+6. NZ_CP010892	Pseudomonas sp. MRSN 12121 strain MRSN12121 chromosome, complete genome
+7. NZ_CP011110	Pseudomonas chlororaphis strain PCL1606 chromosome, complete genome
+8. NZ_CP027709	Pseudomonas chlororaphis subsp. piscium strain ATCC 17809 chromosome, complete genome
+9. NZ_NEHE01000004	Pseudomonas sp. R5(2017) R5_4, whole genome shotgun sequence
+10. NZ_NEID01000001	Pseudomonas sp. R21(2017) R21_1, whole genome shotgun sequence
+11. NZ_CP027656	Pseudomonas chlororaphis subsp. piscium strain ZJU60 chromosome, complete genome
+12. NZ_CP083442	Pseudomonas chlororaphis strain L5734 chromosome, complete genome
+13. NZ_CP079947	Pseudomonas sp. AO-1 chromosome, complete genome
+14. NZ_CP014867	Pseudomonas chlororaphis strain 189 isolate 189 chromosome, complete genome
+15. NZ_CP027736	Pseudomonas chlororaphis subsp. piscium strain PCL1391 chromosome, complete genome
+16. NZ_CP027737	Pseudomonas chlororaphis subsp. piscium strain PCL1607 chromosome, complete genome
+17. NZ_KZ300474	Pseudomonas chlororaphis strain L19 scaffold1, whole genome shotgun sequence
+18. NZ_CP027710	Pseudomonas chlororaphis subsp. piscium strain SLPH10 chromosome, complete genome
+19. NZ_CP027739	Pseudomonas chlororaphis subsp. piscium strain ToZa7 chromosome, complete genome
+20. NZ_CP027740	Pseudomonas chlororaphis subsp. piscium strain ChPhzS140 chromosome, complete genome
+21. NZ_CM001559	Pseudomonas chlororaphis subsp. aureofaciens 30-84 chromosome, whole genome shotgun sequence
+22. NZ_CP027714	Pseudomonas chlororaphis strain ATCC 17415 chromosome, complete genome
+23. NZ_CP118135	Pseudomonas chlororaphis strain NCCB 820532 chromosome, complete genome
+24. NZ_CP118143	Pseudomonas chlororaphis strain ATCC 174182 chromosome, complete genome
+25. NZ_CP118145	Pseudomonas chlororaphis strain ATCC 17417 chromosome, complete genome
+26. NZ_CP038207	Pseudomonas sp. S150 chromosome, complete genome
+27. NZ_CP083988	Pseudomonas putida strain PgBE89 chromosome
+28. NZ_FYDR01000006	Pseudomonas sp. Irchel s3a10 isolate Pseudomonas sp. Irchel s3a10, whole genome shotgun sequence
+29. NZ_JACHCY010000003	Pseudomonas sp. JAI115 Ga0401624_03, whole genome shotgun sequence
+30. NZ_VDDB01000020	Pseudomonas jessenii strain EC-S101 contig_000000000022, whole genome shotgun sequence
+31. NZ_CP027744	Pseudomonas chlororaphis subsp. aurantiaca strain M71 chromosome, complete genome
+32. NZ_CP027753	Pseudomonas chlororaphis strain B25 chromosome, complete genome
+33. NZ_CP068390	Pseudomonas chlororaphis subsp. aurantiaca strain YS21 chromosome, complete genome
+34. NZ_LT629709	Pseudomonas reinekei strain DSM 18361 chromosome I
+35. NZ_CP038438	Pseudomonas fluorescens strain LBUM677 chromosome, complete genome
+36. NZ_CP049737	Pseudomonas sp. AN-B15 chromosome, complete genome
+37. NZ_AP014623	Pseudomonas chlororaphis subsp. aurantiaca strain StFRB508 chromosome
+38. NZ_CM001561	Pseudomonas fluorescens R124 chromosome, whole genome shotgun sequence
+39. NZ_CP027715	Pseudomonas chlororaphis subsp. aurantiaca strain M12 chromosome, complete genome
+40. NZ_CP027717	Pseudomonas chlororaphis subsp. aurantiaca strain PCM 2210 chromosome, complete genome
+41. NZ_CP027741	Pseudomonas chlororaphis subsp. aurantiaca strain 449 chromosome, complete genome
+42. NZ_CP027743	Pseudomonas chlororaphis subsp. aurantiaca strain CW2 chromosome, complete genome
+43. NZ_CP027746	Pseudomonas chlororaphis subsp. aurantiaca strain DSM 19603 chromosome, complete genome
+44. NZ_CP048051	Pseudomonas chlororaphis subsp. aurantiaca strain zm-1 chromosome, complete genome
+45. NZ_CP054866	Pseudomonas chlororaphis strain PCLRT04 chromosome
+46. NZ_CP077678	Pseudomonas chlororaphis strain X8 chromosome, complete genome
+47. NZ_CP009290	Pseudomonas chlororaphis subsp. aurantiaca strain JD37 chromosome, complete genome
+48. NZ_CP087166	Pseudomonas sp. B21-051 chromosome, complete genome
+49. NZ_CP058974	Pseudomonas sp. Y5-11 chromosome
+50. NZ_CP027718	Pseudomonas chlororaphis subsp. aurantiaca strain Q16 chromosome, complete genome
+
+
+Details:
+
+>>
+1. NZ_MKZS01000001
+Source: Moorena bouillonii PNG strain PNG5-198 Ga0081470_101, whole genome shotgun sequence
+Type: lassopeptide
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 1175.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg4_18	BJP37_RS14235	60	396	100.56338028169014	5.14e-135
+ctg4_24	BJP37_RS14260	49	575	96.37223974763407	9.71e-198
+ctg4_27	BJP37_RS14265	42	204	94.93243243243244	7.15e-63
+
+
+
+>>
+2. NZ_CP017599
+Source: Moorena producens PAL-8-15-08-1 chromosome, complete genome
+Type: NRPS,lassopeptide
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 1167.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg4_18	BJP34_RS04170	60	394	100.56338028169014	4.17e-134
+ctg4_24	BJP34_RS04210	49	569	96.37223974763407	2.62e-195
+ctg4_27	BJP34_RS04215	42	204	95.27027027027027	3.57e-63
+
+
+
+>>
+3. NZ_CP021056
+Source: Richelia sinica FACHB-800 strain FACHB 800 chromosome, complete genome
+Type: lassopeptide
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 1085.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg4_24	B6N60_RS20500	65	795	95.74132492113566	6.54e-285
+ctg4_27	B6N60_RS20505	56	290	89.1891891891892	2.88e-96
+
+
+
+>>
+4. NZ_CP046704
+Source: Nostoc sp. ATCC 53789 plasmid pNsp_a, complete sequence
+Type: lassopeptide
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 1060.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg4_24	GJB62_RS31645	63	777	95.74132492113566	1.28e-277
+ctg4_27	GJB62_RS31655	55	283	88.51351351351352	6.71e-94
+
+
+
+>>
+5. NZ_LT629762
+Source: Pseudomonas prosekii strain LMG 26867 chromosome I
+Type: NRP-metallophore,NRPS
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 436.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg4_18	BLU01_RS22885	39	161	84.78873239436619	2.85e-42
+ctg4_18	BLU01_RS22985	34	118	85.35211267605634	4.15e-27
+ctg4_20	BLU01_RS22950	44	100	29.591836734693878	4.75e-21
+ctg4_23	BLU01_RS22945	35	57	54.01069518716578	1.12e-07
+
+
+
+>>
+6. NZ_CP010892
+Source: Pseudomonas sp. MRSN 12121 strain MRSN12121 chromosome, complete genome
+Type: NRP-metallophore,NRPS,ranthipeptide,resorcinol
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 334.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg4_18	TO66_RS21415	39	169	84.78873239436619	4.63e-45
+ctg4_20	TO66_RS21335	46	105	29.591836734693878	1.28e-22
+ctg4_23	TO66_RS21340	36	60	54.01069518716578	1.33e-08
+
+
+
+>>
+7. NZ_CP011110
+Source: Pseudomonas chlororaphis strain PCL1606 chromosome, complete genome
+Type: NRP-metallophore,NRPS,ranthipeptide,resorcinol
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 334.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg4_18	PCL1606_RS10305	39	169	84.78873239436619	4.63e-45
+ctg4_20	PCL1606_RS10385	46	105	29.591836734693878	1.28e-22
+ctg4_23	PCL1606_RS10380	36	60	54.01069518716578	1.33e-08
+
+
+
+>>
+8. NZ_CP027709
+Source: Pseudomonas chlororaphis subsp. piscium strain ATCC 17809 chromosome, complete genome
+Type: NRP-metallophore,NRPS,ranthipeptide
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 333.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg4_18	C4K36_RS21640	38	169	84.78873239436619	3.35e-45
+ctg4_20	C4K36_RS21555	44	105	30.0	1.74e-22
+ctg4_23	C4K36_RS21560	36	59	54.01069518716578	3.31e-08
+
+
+
+>>
+9. NZ_NEHE01000004
+Source: Pseudomonas sp. R5(2017) R5_4, whole genome shotgun sequence
+Type: NRP-metallophore,NRPS
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 333.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg4_18	CAG05_RS08165	39	167	84.78873239436619	3.2e-44
+ctg4_20	CAG05_RS08095	40	106	37.95918367346939	4.9e-23
+ctg4_23	CAG05_RS08100	36	60	54.01069518716578	9.82e-09
+
+
+
+>>
+10. NZ_NEID01000001
+Source: Pseudomonas sp. R21(2017) R21_1, whole genome shotgun sequence
+Type: NRP-metallophore,NRPS
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 333.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg4_18	CAG36_RS00535	39	167	84.78873239436619	3.2e-44
+ctg4_20	CAG36_RS00465	40	106	37.95918367346939	4.9e-23
+ctg4_23	CAG36_RS00470	36	60	54.01069518716578	9.82e-09
+
+
+
+>>
+11. NZ_CP027656
+Source: Pseudomonas chlororaphis subsp. piscium strain ZJU60 chromosome, complete genome
+Type: NRP-metallophore,NRPS,ranthipeptide
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 332.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg4_18	C6Q18_RS20230	38	169	84.78873239436619	3.35e-45
+ctg4_20	C6Q18_RS20140	44	105	30.0	1.74e-22
+ctg4_23	C6Q18_RS20145	36	58	54.01069518716578	4.49e-08
+
+
+
+>>
+12. NZ_CP083442
+Source: Pseudomonas chlororaphis strain L5734 chromosome, complete genome
+Type: NRP-metallophore,NRPS,ranthipeptide
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 332.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg4_18	K9V45_RS26540	38	169	84.78873239436619	3.35e-45
+ctg4_20	K9V45_RS26630	44	104	29.591836734693878	3.19e-22
+ctg4_23	K9V45_RS26625	36	59	54.01069518716578	3.31e-08
+
+
+
+>>
+13. NZ_CP079947
+Source: Pseudomonas sp. AO-1 chromosome, complete genome
+Type: NRP-metallophore,NRPS,terpene
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 331.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg4_18	KVQ82_RS19940	40	169	84.78873239436619	6.39e-45
+ctg4_20	KVQ82_RS19865	45	105	29.591836734693878	1.23e-22
+ctg4_23	KVQ82_RS19870	35	57	54.01069518716578	1.12e-07
+
+
+
+>>
+14. NZ_CP014867
+Source: Pseudomonas chlororaphis strain 189 isolate 189 chromosome, complete genome
+Type: NRP-metallophore,NRPS,ranthipeptide
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 331.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg4_18	A3218_RS23005	39	168	85.35211267605634	1.22e-44
+ctg4_20	A3218_RS23090	44	105	30.0	1.28e-22
+ctg4_23	A3218_RS23085	36	58	54.01069518716578	4.49e-08
+
+
+
+>>
+15. NZ_CP027736
+Source: Pseudomonas chlororaphis subsp. piscium strain PCL1391 chromosome, complete genome
+Type: NRP-metallophore,NRPS,ranthipeptide
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 330.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg4_18	C4K33_RS20550	38	169	84.78873239436619	3.35e-45
+ctg4_20	C4K33_RS20465	44	103	29.591836734693878	4.33e-22
+ctg4_23	C4K33_RS20470	36	58	54.01069518716578	4.49e-08
+
+
+
+>>
+16. NZ_CP027737
+Source: Pseudomonas chlororaphis subsp. piscium strain PCL1607 chromosome, complete genome
+Type: NRP-metallophore,NRPS,ranthipeptide
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 330.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg4_18	C4K32_RS20910	38	169	84.78873239436619	3.35e-45
+ctg4_20	C4K32_RS20825	44	103	29.591836734693878	4.33e-22
+ctg4_23	C4K32_RS20830	36	58	54.01069518716578	4.49e-08
+
+
+
+>>
+17. NZ_KZ300474
+Source: Pseudomonas chlororaphis strain L19 scaffold1, whole genome shotgun sequence
+Type: NRP-metallophore,NRPS,ranthipeptide
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 330.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg4_18	CRT54_RS15035	38	169	84.78873239436619	3.35e-45
+ctg4_20	CRT54_RS14950	44	103	29.591836734693878	4.28e-22
+ctg4_23	CRT54_RS14955	35	58	54.01069518716578	6.08e-08
+
+
+
+>>
+18. NZ_CP027710
+Source: Pseudomonas chlororaphis subsp. piscium strain SLPH10 chromosome, complete genome
+Type: NRP-metallophore,NRPS,ranthipeptide
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 330.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg4_18	C4K35_RS21765	38	169	84.78873239436619	4.63e-45
+ctg4_20	C4K35_RS21680	44	103	29.591836734693878	4.33e-22
+ctg4_23	C4K35_RS21685	36	58	54.01069518716578	4.49e-08
+
+
+
+>>
+19. NZ_CP027739
+Source: Pseudomonas chlororaphis subsp. piscium strain ToZa7 chromosome, complete genome
+Type: NRP-metallophore,NRPS,ranthipeptide
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 330.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg4_18	C4K30_RS20805	38	169	84.78873239436619	4.63e-45
+ctg4_20	C4K30_RS20720	44	103	29.591836734693878	4.33e-22
+ctg4_23	C4K30_RS20725	36	58	54.01069518716578	4.49e-08
+
+
+
+>>
+20. NZ_CP027740
+Source: Pseudomonas chlororaphis subsp. piscium strain ChPhzS140 chromosome, complete genome
+Type: NRP-metallophore,NRPS,ranthipeptide
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 330.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg4_18	C4K29_RS21585	38	169	84.78873239436619	4.63e-45
+ctg4_20	C4K29_RS21500	44	103	29.591836734693878	4.33e-22
+ctg4_23	C4K29_RS21505	36	58	54.01069518716578	4.49e-08
+
+
+
+>>
+21. NZ_CM001559
+Source: Pseudomonas chlororaphis subsp. aureofaciens 30-84 chromosome, whole genome shotgun sequence
+Type: NRP-metallophore,NRPS,ranthipeptide,resorcinol
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 330.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg4_18	PCHL3084_RS20255	39	167	85.35211267605634	1.68e-44
+ctg4_20	PCHL3084_RS20170	44	105	30.0	1.28e-22
+ctg4_23	PCHL3084_RS20175	35	58	54.01069518716578	6.08e-08
+
+
+
+>>
+22. NZ_CP027714
+Source: Pseudomonas chlororaphis strain ATCC 17415 chromosome, complete genome
+Type: NRP-metallophore,NRPS,ranthipeptide,resorcinol
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 330.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg4_18	C4K25_RS19790	39	167	85.35211267605634	1.68e-44
+ctg4_20	C4K25_RS19705	44	105	30.0	1.28e-22
+ctg4_23	C4K25_RS19710	35	58	54.01069518716578	6.08e-08
+
+
+
+>>
+23. NZ_CP118135
+Source: Pseudomonas chlororaphis strain NCCB 820532 chromosome, complete genome
+Type: NRP-metallophore,NRPS,ranthipeptide,resorcinol
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 330.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg4_18	PUP76_RS20635	39	167	85.35211267605634	1.68e-44
+ctg4_20	PUP76_RS20720	44	105	30.0	1.28e-22
+ctg4_23	PUP76_RS20715	35	58	54.01069518716578	6.08e-08
+
+
+
+>>
+24. NZ_CP118143
+Source: Pseudomonas chlororaphis strain ATCC 174182 chromosome, complete genome
+Type: NRP-metallophore,NRPS,ranthipeptide,resorcinol
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 330.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg4_18	PUP62_RS22030	39	167	85.35211267605634	1.68e-44
+ctg4_20	PUP62_RS21945	44	105	30.0	1.28e-22
+ctg4_23	PUP62_RS21950	35	58	54.01069518716578	6.08e-08
+
+
+
+>>
+25. NZ_CP118145
+Source: Pseudomonas chlororaphis strain ATCC 17417 chromosome, complete genome
+Type: NRP-metallophore,NRPS,ranthipeptide,resorcinol
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 330.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg4_18	PUP75_RS21300	39	167	85.35211267605634	1.68e-44
+ctg4_20	PUP75_RS21215	44	105	30.0	1.28e-22
+ctg4_23	PUP75_RS21220	35	58	54.01069518716578	6.08e-08
+
+
+
+>>
+26. NZ_CP038207
+Source: Pseudomonas sp. S150 chromosome, complete genome
+Type: NRP-metallophore,NRPS,terpene
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 329.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg4_18	E3Z29_RS12460	39	167	84.78873239436619	3.2e-44
+ctg4_20	E3Z29_RS12530	45	105	29.591836734693878	1.23e-22
+ctg4_23	E3Z29_RS12525	35	57	54.01069518716578	8.24e-08
+
+
+
+>>
+27. NZ_CP083988
+Source: Pseudomonas putida strain PgBE89 chromosome
+Type: NRP-metallophore,NRPS
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 329.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg4_18	K9S42_RS09700	39	167	84.78873239436619	3.2e-44
+ctg4_20	K9S42_RS09775	45	105	29.591836734693878	1.23e-22
+ctg4_23	K9S42_RS09770	35	57	54.01069518716578	8.24e-08
+
+
+
+>>
+28. NZ_FYDR01000006
+Source: Pseudomonas sp. Irchel s3a10 isolate Pseudomonas sp. Irchel s3a10, whole genome shotgun sequence
+Type: NRP-metallophore,NRPS
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 329.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg4_18	CKW11_RS18765	39	167	84.78873239436619	3.2e-44
+ctg4_20	CKW11_RS18835	45	105	29.591836734693878	1.23e-22
+ctg4_23	CKW11_RS18830	35	57	54.01069518716578	1.12e-07
+
+
+
+>>
+29. NZ_JACHCY010000003
+Source: Pseudomonas sp. JAI115 Ga0401624_03, whole genome shotgun sequence
+Type: NRP-metallophore,NRPS
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 329.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg4_18	HDC30_RS08715	39	167	84.78873239436619	3.2e-44
+ctg4_20	HDC30_RS08785	45	105	29.591836734693878	1.23e-22
+ctg4_23	HDC30_RS08780	35	57	54.01069518716578	8.24e-08
+
+
+
+>>
+30. NZ_VDDB01000020
+Source: Pseudomonas jessenii strain EC-S101 contig_000000000022, whole genome shotgun sequence
+Type: NRP-metallophore,NRPS
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 329.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg4_18	FHG55_RS26040	39	167	84.78873239436619	3.2e-44
+ctg4_20	FHG55_RS26110	45	105	29.591836734693878	1.23e-22
+ctg4_23	FHG55_RS26105	35	57	54.01069518716578	8.24e-08
+
+
+
+>>
+31. NZ_CP027744
+Source: Pseudomonas chlororaphis subsp. aurantiaca strain M71 chromosome, complete genome
+Type: NRP-metallophore,NRPS,ranthipeptide,resorcinol
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 329.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg4_18	C4K19_RS20640	40	166	85.35211267605634	8.38e-44
+ctg4_20	C4K19_RS20555	44	105	30.0	1.74e-22
+ctg4_23	C4K19_RS20560	36	58	54.01069518716578	4.49e-08
+
+
+
+>>
+32. NZ_CP027753
+Source: Pseudomonas chlororaphis strain B25 chromosome, complete genome
+Type: NRP-metallophore,NRPS,ranthipeptide
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 329.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg4_18	C4K04_RS21000	39	166	85.35211267605634	8.38e-44
+ctg4_20	C4K04_RS20915	44	105	30.0	1.28e-22
+ctg4_23	C4K04_RS20920	35	58	54.01069518716578	6.08e-08
+
+
+
+>>
+33. NZ_CP068390
+Source: Pseudomonas chlororaphis subsp. aurantiaca strain YS21 chromosome, complete genome
+Type: NRP-metallophore,NRPS,ranthipeptide,resorcinol
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 328.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg4_18	JHW28_RS20295	39	165	85.35211267605634	1.16e-43
+ctg4_20	JHW28_RS20210	44	105	30.0	1.74e-22
+ctg4_23	JHW28_RS20215	35	58	54.01069518716578	6.08e-08
+
+
+
+>>
+34. NZ_LT629709
+Source: Pseudomonas reinekei strain DSM 18361 chromosome I
+Type: NRP-metallophore,NRPS
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 327.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg4_18	BLS73_RS22035	39	166	84.78873239436619	8.38e-44
+ctg4_20	BLS73_RS22085	40	103	37.95918367346939	7.67e-22
+ctg4_23	BLS73_RS22080	36	58	54.01069518716578	6.08e-08
+
+
+
+>>
+35. NZ_CP038438
+Source: Pseudomonas fluorescens strain LBUM677 chromosome, complete genome
+Type: NRP-metallophore,NRPS,terpene
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 327.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg4_18	E4T63_RS09615	39	165	84.78873239436619	1.16e-43
+ctg4_20	E4T63_RS09685	45	105	29.591836734693878	1.23e-22
+ctg4_23	E4T63_RS09680	35	57	54.01069518716578	8.24e-08
+
+
+
+>>
+36. NZ_CP049737
+Source: Pseudomonas sp. AN-B15 chromosome, complete genome
+Type: NRP-metallophore,NRPS,terpene
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 327.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg4_18	GTQ41_RS09595	39	164	84.78873239436619	2.2e-43
+ctg4_20	GTQ41_RS09670	45	105	29.591836734693878	1.23e-22
+ctg4_23	GTQ41_RS09665	36	58	54.01069518716578	4.49e-08
+
+
+
+>>
+37. NZ_AP014623
+Source: Pseudomonas chlororaphis subsp. aurantiaca strain StFRB508 chromosome
+Type: NRP-metallophore,NRPS,ranthipeptide,resorcinol
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 327.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg4_18	PCAU_RS20475	39	164	85.35211267605634	3.03e-43
+ctg4_20	PCAU_RS20390	44	105	30.0	1.28e-22
+ctg4_23	PCAU_RS20395	36	58	54.01069518716578	4.49e-08
+
+
+
+>>
+38. NZ_CM001561
+Source: Pseudomonas fluorescens R124 chromosome, whole genome shotgun sequence
+Type: NRP-metallophore,NRPS
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 327.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg4_18	I1A_RS09265	38	164	84.78873239436619	3.03e-43
+ctg4_20	I1A_RS09345	46	106	29.591836734693878	4.9e-23
+ctg4_23	I1A_RS09340	35	57	54.01069518716578	1.51e-07
+
+
+
+>>
+39. NZ_CP027715
+Source: Pseudomonas chlororaphis subsp. aurantiaca strain M12 chromosome, complete genome
+Type: NRP-metallophore,NRPS,ranthipeptide,resorcinol
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 327.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg4_18	C4K24_RS20170	39	164	85.35211267605634	3.03e-43
+ctg4_20	C4K24_RS20085	44	105	30.0	1.74e-22
+ctg4_23	C4K24_RS20090	36	58	54.01069518716578	4.49e-08
+
+
+
+>>
+40. NZ_CP027717
+Source: Pseudomonas chlororaphis subsp. aurantiaca strain PCM 2210 chromosome, complete genome
+Type: NRP-metallophore,NRPS,ranthipeptide,resorcinol
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 327.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg4_18	C4K16_RS20670	39	164	85.35211267605634	3.03e-43
+ctg4_20	C4K16_RS20585	44	105	30.0	1.28e-22
+ctg4_23	C4K16_RS20590	36	58	54.01069518716578	4.49e-08
+
+
+
+>>
+41. NZ_CP027741
+Source: Pseudomonas chlororaphis subsp. aurantiaca strain 449 chromosome, complete genome
+Type: NRP-metallophore,NRPS,ranthipeptide,resorcinol
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 327.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg4_18	C4K22_RS21385	39	164	85.35211267605634	3.03e-43
+ctg4_20	C4K22_RS21300	44	105	30.0	1.28e-22
+ctg4_23	C4K22_RS21305	36	58	54.01069518716578	4.49e-08
+
+
+
+>>
+42. NZ_CP027743
+Source: Pseudomonas chlororaphis subsp. aurantiaca strain CW2 chromosome, complete genome
+Type: NRP-metallophore,NRPS,ranthipeptide,resorcinol
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 327.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg4_18	C4K20_RS20965	39	164	85.35211267605634	3.03e-43
+ctg4_20	C4K20_RS20880	44	105	30.0	1.74e-22
+ctg4_23	C4K20_RS20885	36	58	54.01069518716578	4.49e-08
+
+
+
+>>
+43. NZ_CP027746
+Source: Pseudomonas chlororaphis subsp. aurantiaca strain DSM 19603 chromosome, complete genome
+Type: NRP-metallophore,NRPS,ranthipeptide,resorcinol
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 327.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg4_18	C4K17_RS22025	39	164	85.35211267605634	3.03e-43
+ctg4_20	C4K17_RS21940	44	105	30.0	1.74e-22
+ctg4_23	C4K17_RS21945	36	58	54.01069518716578	4.49e-08
+
+
+
+>>
+44. NZ_CP048051
+Source: Pseudomonas chlororaphis subsp. aurantiaca strain zm-1 chromosome, complete genome
+Type: NRP-metallophore,NRPS,ranthipeptide,resorcinol
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 327.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg4_18	GSF17_RS20785	39	164	85.35211267605634	3.03e-43
+ctg4_20	GSF17_RS20700	44	105	30.0	1.74e-22
+ctg4_23	GSF17_RS20705	36	58	54.01069518716578	4.49e-08
+
+
+
+>>
+45. NZ_CP054866
+Source: Pseudomonas chlororaphis strain PCLRT04 chromosome
+Type: NRP-metallophore,NRPS,ranthipeptide
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 327.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg4_18	HUT28_RS11295	39	164	84.78873239436619	3.03e-43
+ctg4_20	HUT28_RS11385	44	105	29.591836734693878	1.74e-22
+ctg4_23	HUT28_RS11380	36	58	54.01069518716578	4.49e-08
+
+
+
+>>
+46. NZ_CP077678
+Source: Pseudomonas chlororaphis strain X8 chromosome, complete genome
+Type: NRP-metallophore,NRPS,ranthipeptide,resorcinol
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 327.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg4_18	KS461_RS20665	39	164	85.35211267605634	3.03e-43
+ctg4_20	KS461_RS20580	44	105	30.0	1.74e-22
+ctg4_23	KS461_RS20585	36	58	54.01069518716578	4.49e-08
+
+
+
+>>
+47. NZ_CP009290
+Source: Pseudomonas chlororaphis subsp. aurantiaca strain JD37 chromosome, complete genome
+Type: NRP-metallophore,NRPS,ranthipeptide,resorcinol
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 327.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg4_18	JM49_RS10380	39	164	85.35211267605634	4.17e-43
+ctg4_20	JM49_RS10470	44	105	30.0	1.28e-22
+ctg4_23	JM49_RS10465	35	58	54.01069518716578	6.08e-08
+
+
+
+>>
+48. NZ_CP087166
+Source: Pseudomonas sp. B21-051 chromosome, complete genome
+Type: NRP-metallophore,NRPS
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 326.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg4_18	LOY52_RS09665	38	165	84.78873239436619	1.59e-43
+ctg4_20	LOY52_RS09750	45	105	29.591836734693878	1.23e-22
+ctg4_23	LOY52_RS09745	35	56	54.01069518716578	2.77e-07
+
+
+
+>>
+49. NZ_CP058974
+Source: Pseudomonas sp. Y5-11 chromosome
+Type: NRP-metallophore,NRPS,terpene
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 326.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg4_18	HXW87_RS13415	39	164	84.78873239436619	3.03e-43
+ctg4_20	HXW87_RS13490	45	105	29.591836734693878	1.23e-22
+ctg4_23	HXW87_RS13485	35	57	54.01069518716578	1.12e-07
+
+
+
+>>
+50. NZ_CP027718
+Source: Pseudomonas chlororaphis subsp. aurantiaca strain Q16 chromosome, complete genome
+Type: NRP-metallophore,NRPS,ranthipeptide,resorcinol
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 326.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg4_18	C4K15_RS20810	39	163	85.35211267605634	7.92e-43
+ctg4_20	C4K15_RS20725	44	105	30.0	1.28e-22
+ctg4_23	C4K15_RS20730	36	58	54.01069518716578	4.49e-08
+

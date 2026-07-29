@@ -1,0 +1,17 @@
+ClusterBlast scores for NODE_105_length_8485_cov_3.112155
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg105_1	0	1281	+		
+ctg105_2	1277	3146	-		
+ctg105_3	3168	4359	-		
+ctg105_4	4589	6167	-		
+ctg105_5	6397	6553	-		
+ctg105_6	6920	7637	+		
+ctg105_7	7880	8111	+		
+ctg105_8	8248	8413	+		
+
+
+Significant hits: 
+
+
+Details:

@@ -1,0 +1,32 @@
+ClusterBlast scores for NODE_255_length_5906_cov_2.661692
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg255_1	2	1097	-		
+ctg255_2	1129	1414	-		
+ctg255_3	1421	2171	-		
+ctg255_4	2179	3112	-		
+ctg255_5	3705	4146	+		
+ctg255_6	4219	5074	+		
+ctg255_7	5103	5493	+		
+ctg255_8	5579	5906	+		
+
+
+Significant hits: 
+1. BGC0001100.5	lankacidin C
+
+
+Details:
+
+>>
+1. BGC0001100.5
+Source: lankacidin C
+Type: NRPS:Type I+PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 519.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg255_1	BAC76463.1	47	321	93.97260273972603	6.59e-108
+ctg255_3	BAC76465.1	48	198	90.36144578313254	2.58e-63
+

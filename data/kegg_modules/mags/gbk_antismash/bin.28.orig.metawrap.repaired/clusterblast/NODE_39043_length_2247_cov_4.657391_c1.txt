@@ -1,0 +1,11 @@
+ClusterBlast scores for NODE_39043_length_2247_cov_4.657391
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg178_1	123	1200	+		
+ctg178_2	1236	2247	+		
+
+
+Significant hits: 
+
+
+Details:

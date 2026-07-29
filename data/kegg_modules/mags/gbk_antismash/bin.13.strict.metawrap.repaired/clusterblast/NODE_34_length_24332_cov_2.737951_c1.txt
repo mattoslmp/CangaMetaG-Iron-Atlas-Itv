@@ -1,0 +1,939 @@
+ClusterBlast scores for NODE_34_length_24332_cov_2.737951
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg34_1	1	1309	+		
+ctg34_2	1416	1557	-		
+ctg34_3	1563	2364	+		
+ctg34_4	2363	3245	+		
+ctg34_5	3252	3699	-		
+ctg34_6	3989	5900	-		
+ctg34_7	6146	7166	-		
+ctg34_8	7433	8813	-		
+ctg34_9	9018	9648	-		
+ctg34_10	9762	10011	+		
+ctg34_11	10180	10453	-		
+
+
+Significant hits: 
+1. NZ_SMGK01000001	Acidipila rosea strain DSM 103428 Ga0215723_101, whole genome shotgun sequence
+2. NZ_KE386569	Methylobacter luteus IMV-B-3098 MetluDRAFT_scaffold1.1, whole genome shotgun sequence
+3. NZ_CP091424	Methylobacter sp. YRD-M1 chromosome, complete genome
+4. NZ_CM001475	Methylomicrobium album BG8 chromosome, whole genome shotgun sequence
+5. NZ_JAERVK010000010	Methylomicrobium sp. RS1 NODE_10_length_206380_cov_117.544035, whole genome shotgun sequence
+6. NZ_KB912877	Methylobacter marinus A45 MetmaDRAFT_scaffold1.1, whole genome shotgun sequence
+7. NZ_KB913025	Methylovulum miyakonense HT12 MetmiDRAFT_scaffold1.1, whole genome shotgun sequence
+8. NZ_CP014360	Methylomonas sp. DH-1 chromosome, complete genome
+9. NZ_CP023669	Methylomonas koyamae strain LM6 chromosome, complete genome
+10. NZ_CP076024	Methylobacter sp. S3L5C chromosome, complete genome
+11. NZ_AP019777	Methylomonas koyamae strain Fw12E-Y chromosome, complete genome
+12. NZ_CP113517	Methylomonas sp. MP1 chromosome, complete genome
+13. NZ_CP064653	Methylomonas sp. LL1 chromosome, complete genome
+14. NZ_CP033381	Methylomonas sp. LW13 chromosome, complete genome
+15. NZ_KB889965	Methylosarcina fibrata AML-C10 A3OWDRAFT_scaffold1.1, whole genome shotgun sequence
+16. NZ_CP043929	Methylomonas rhizoryzae strain GJ1 chromosome, complete genome
+17. NZ_KI911557	Methylomonas sp. 11b scaffold1, whole genome shotgun sequence
+18. NZ_CP070494	Methylomonas sp. EFPC1 chromosome, complete genome
+19. NC_015572	Methylomonas methanica MC09, complete sequence
+20. NZ_CP014476	Methylomonas denitrificans strain FJG1 chromosome, complete genome
+21. NZ_CP058409	Trichlorobacter lovleyi strain IAE chromosome, complete genome
+22. NZ_PTIY01000008	Methylobacter tundripaludum strain OWC-G53F Ga0139037_108, whole genome shotgun sequence
+23. NZ_JH109152	Methylobacter tundripaludum SV96 Mettuscaffold_1, whole genome shotgun sequence
+24. NZ_CP035467	Methylotuvimicrobium buryatense strain 5GB1C chromosome, complete genome
+25. NZ_CP024202	Methylomicrobium sp. wino1 chromosome, complete genome
+26. NZ_JAJQQQ010000001	Streptomyces albireticuli strain NRRL B1670 type C NODE_1_length_1391478_cov_79.771254, whole genome shotgun sequence
+27. NZ_CP022129	Methylovulum psychrotolerans strain HV10_M2 chromosome, complete genome
+28. NZ_CP079095	Methylococcus sp. Mc7 chromosome, complete genome
+29. NZ_CP046565	Methylococcus geothermalis strain IM1 chromosome, complete genome
+30. NZ_CP079097	Methylococcus capsulatus strain KN2 chromosome, complete genome
+31. NZ_CP079096	Methylococcus capsulatus strain BH chromosome, complete genome
+32. NC_016112	Methylotuvimicrobium alcaliphilum 20Z, complete sequence
+33. NZ_CP110921	Methylococcus sp. 16-5 chromosome, complete genome
+34. NC_002977	Methylococcus capsulatus str. Bath, complete sequence
+35. NZ_CP097123	Streptomyces sp. HU2014 chromosome
+36. NZ_CP073754	Methylomonas paludis strain S2AM chromosome, complete genome
+37. NZ_MWLK01000033	Rhodomicrobium sp. R_RK_3 BLEFHOIH_33, whole genome shotgun sequence
+38. NC_016109	Kitasatospora setae KM-6054, complete sequence
+39. NZ_CP113837	Kitasatospora sp. YST-16 chromosome, complete genome
+40. NZ_CP026498	Streptomyces sp. CB01881 chromosome
+41. NZ_CP020567	Kitasatospora aureofaciens strain DM-1 chromosome, complete genome
+42. NZ_JAGIYX010000001	Kitasatospora sp. RG8 contig1, whole genome shotgun sequence
+43. NZ_QLLT01000012	Kitasatospora sp. SolWspMP-SS2h K353DRAFT_scaffold00012.12, whole genome shotgun sequence
+44. NZ_CP054919	Kitasatospora sp. NA04385 chromosome, complete genome
+45. NZ_KK853997	Kitasatospora cheerisanensis KCTC 2395 scaffold00001, whole genome shotgun sequence
+46. NZ_BNBY01000002	Kitasatospora xanthocidica strain JCM 4862 sequence02, whole genome shotgun sequence
+47. NZ_LMHX01000003	Kitasatospora sp. Root187 contig_11, whole genome shotgun sequence
+48. NZ_CP115450	Kitasatospora sp. HUAS 3-15 chromosome, complete genome
+49. NZ_JAIY01000020	Kitasatospora sp. MBT66 scaffold20, whole genome shotgun sequence
+50. NZ_CP071872	Streptomyces formicae strain 1H-GS9 chromosome, complete genome
+
+
+Details:
+
+>>
+1. NZ_SMGK01000001
+Source: Acidipila rosea strain DSM 103428 Ga0215723_101, whole genome shotgun sequence
+Type: T3PKS,terpene
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 888.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg34_1	C7378_RS04995	48	370	98.39080459770115	1.93e-120
+ctg34_3	C7378_RS05000	38	191	92.10526315789474	7.3e-57
+ctg34_8	C7378_RS04810	39	327	98.69281045751634	8.54e-106
+
+
+
+>>
+2. NZ_KE386569
+Source: Methylobacter luteus IMV-B-3098 MetluDRAFT_scaffold1.1, whole genome shotgun sequence
+Type: NI-siderophore,terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 2188.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg34_1	METLU_RS0109975	42	319	97.47126436781609	1.22e-100
+ctg34_3	METLU_RS0109965	40	216	95.86466165413535	2.36e-66
+ctg34_6	METLU_RS0110000	50	587	98.27044025157232	8.56e-203
+ctg34_6	METLU_RS0109940	50	585	98.27044025157232	4.88e-202
+ctg34_8	METLU_RS0109985	49	481	100.0	3.69e-166
+
+
+
+>>
+3. NZ_CP091424
+Source: Methylobacter sp. YRD-M1 chromosome, complete genome
+Type: NI-siderophore,terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 2181.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg34_1	LZ558_RS07965	42	325	97.47126436781609	7.18e-103
+ctg34_3	LZ558_RS07980	40	216	95.86466165413535	2.36e-66
+ctg34_6	LZ558_RS07940	50	582	98.42767295597484	7.91e-201
+ctg34_6	LZ558_RS08005	50	581	98.42767295597484	2.25e-200
+ctg34_8	LZ558_RS07955	48	477	100.0	1.34e-164
+
+
+
+>>
+4. NZ_CM001475
+Source: Methylomicrobium album BG8 chromosome, whole genome shotgun sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 2175.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg34_1	METAL_RS13830	40	308	96.0919540229885	1.25e-96
+ctg34_3	METAL_RS13820	41	218	96.61654135338345	2.05e-67
+ctg34_6	METAL_RS13800	50	595	98.74213836477988	1.67e-205
+ctg34_6	METAL_RS13855	50	588	97.16981132075472	4.27e-203
+ctg34_8	METAL_RS13840	48	466	100.0	3.43e-160
+
+
+
+>>
+5. NZ_JAERVK010000010
+Source: Methylomicrobium sp. RS1 NODE_10_length_206380_cov_117.544035, whole genome shotgun sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 2172.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg34_1	JJL52_RS12820	40	310	94.71264367816093	4.48e-97
+ctg34_3	JJL52_RS12830	41	220	96.61654135338345	5.91e-68
+ctg34_6	JJL52_RS12795	50	588	97.16981132075472	6.05e-203
+ctg34_6	JJL52_RS12850	50	587	99.37106918238993	1.76e-202
+ctg34_8	JJL52_RS12810	48	467	100.0	1.2e-160
+
+
+
+>>
+6. NZ_KB912877
+Source: Methylobacter marinus A45 MetmaDRAFT_scaffold1.1, whole genome shotgun sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 2172.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg34_1	METMA_RS0119600	41	309	94.71264367816093	8.86e-97
+ctg34_3	METMA_RS0119610	41	213	95.86466165413535	3.74e-65
+ctg34_6	METMA_RS0119570	50	587	98.27044025157232	1.72e-202
+ctg34_6	METMA_RS0119635	50	586	98.27044025157232	3.45e-202
+ctg34_8	METMA_RS0119585	48	477	100.0	1.9e-164
+
+
+
+>>
+7. NZ_KB913025
+Source: Methylovulum miyakonense HT12 MetmiDRAFT_scaffold1.1, whole genome shotgun sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 2169.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg34_1	METMI_RS0110320	43	310	97.70114942528735	2.62e-97
+ctg34_3	METMI_RS0110305	40	219	95.86466165413535	7.47e-68
+ctg34_6	METMI_RS0110285	49	582	98.27044025157232	7.91e-201
+ctg34_6	METMI_RS0110345	49	578	98.27044025157232	3.51e-199
+ctg34_8	METMI_RS0110330	49	480	100.0	1.2e-165
+
+
+
+>>
+8. NZ_CP014360
+Source: Methylomonas sp. DH-1 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 2164.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg34_1	AYM39_RS06150	40	302	94.48275862068965	3.01e-94
+ctg34_3	AYM39_RS06160	40	208	95.86466165413535	1.57e-63
+ctg34_6	AYM39_RS06180	49	599	98.27044025157232	2.49e-207
+ctg34_6	AYM39_RS06125	49	596	98.27044025157232	2.85e-206
+ctg34_8	AYM39_RS06140	46	459	100.0	1.2e-157
+
+
+
+>>
+9. NZ_CP023669
+Source: Methylomonas koyamae strain LM6 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 2164.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg34_1	MKLM6_RS06365	40	302	94.48275862068965	3.01e-94
+ctg34_3	MKLM6_RS06375	40	208	95.86466165413535	1.57e-63
+ctg34_6	MKLM6_RS06395	49	598	98.27044025157232	7.08e-207
+ctg34_6	MKLM6_RS06340	49	597	98.27044025157232	2.01e-206
+ctg34_8	MKLM6_RS06355	46	459	100.0	1.2e-157
+
+
+
+>>
+10. NZ_CP076024
+Source: Methylobacter sp. S3L5C chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 2162.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg34_1	KKZ03_RS13000	39	298	96.0919540229885	1.44e-92
+ctg34_3	KKZ03_RS12990	41	218	95.86466165413535	2.11e-67
+ctg34_6	KKZ03_RS13025	49	587	97.16981132075472	1.25e-202
+ctg34_6	KKZ03_RS12970	49	585	97.16981132075472	4.88e-202
+ctg34_8	KKZ03_RS13010	49	474	100.0	1.59e-163
+
+
+
+>>
+11. NZ_AP019777
+Source: Methylomonas koyamae strain Fw12E-Y chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 2158.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg34_1	MKFW12EY_RS15695	40	300	94.48275862068965	3.27e-93
+ctg34_3	MKFW12EY_RS15685	40	208	95.86466165413535	1.57e-63
+ctg34_6	MKFW12EY_RS15665	49	596	98.27044025157232	2.85e-206
+ctg34_6	MKFW12EY_RS15720	49	595	98.27044025157232	5.72e-206
+ctg34_8	MKFW12EY_RS15705	46	459	100.0	1.2e-157
+
+
+
+>>
+12. NZ_CP113517
+Source: Methylomonas sp. MP1 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 2153.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg34_1	NM686_RS04035	41	300	96.0919540229885	3.27e-93
+ctg34_3	NM686_RS04045	39	208	96.61654135338345	2.28e-63
+ctg34_6	NM686_RS04065	50	591	97.32704402515722	3.73e-204
+ctg34_6	NM686_RS04010	50	590	97.16981132075472	1.06e-203
+ctg34_8	NM686_RS04025	47	464	100.0	2.6e-159
+
+
+
+>>
+13. NZ_CP064653
+Source: Methylomonas sp. LL1 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 2149.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg34_1	IVG45_RS22170	40	301	96.55172413793103	1.18e-93
+ctg34_3	IVG45_RS22180	41	211	95.86466165413535	9.69e-65
+ctg34_6	IVG45_RS22145	49	585	97.32704402515722	9.79e-202
+ctg34_6	IVG45_RS22200	49	583	97.16981132075472	3.81e-201
+ctg34_8	IVG45_RS22160	49	469	100.0	1.97e-161
+
+
+
+>>
+14. NZ_CP033381
+Source: Methylomonas sp. LW13 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 2147.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg34_1	JL719_RS04990	40	295	96.55172413793103	2.68e-91
+ctg34_3	JL719_RS05000	40	213	95.86466165413535	2.51e-65
+ctg34_6	JL719_RS04965	50	591	97.16981132075472	3.73e-204
+ctg34_6	JL719_RS05020	50	588	97.16981132075472	5.84e-203
+ctg34_8	JL719_RS04980	47	460	100.0	5.99e-158
+
+
+
+>>
+15. NZ_KB889965
+Source: Methylosarcina fibrata AML-C10 A3OWDRAFT_scaffold1.1, whole genome shotgun sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 2146.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg34_1	A3OW_RS0107640	41	305	97.93103448275862	4.39e-95
+ctg34_3	A3OW_RS0107630	42	222	95.86466165413535	9.67e-69
+ctg34_6	A3OW_RS0107665	49	574	98.27044025157232	1.18e-197
+ctg34_6	A3OW_RS0107610	49	573	98.27044025157232	3.35e-197
+ctg34_8	A3OW_RS0107650	47	472	100.0	1.77e-162
+
+
+
+>>
+16. NZ_CP043929
+Source: Methylomonas rhizoryzae strain GJ1 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 2142.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg34_1	F1E05_RS18845	40	307	98.16091954022988	3.56e-96
+ctg34_3	F1E05_RS18835	40	209	96.2406015037594	7.68e-64
+ctg34_6	F1E05_RS18870	49	583	97.0125786163522	2.69e-201
+ctg34_6	F1E05_RS18815	49	582	97.0125786163522	1.08e-200
+ctg34_8	F1E05_RS18855	48	461	100.0	2.1e-158
+
+
+
+>>
+17. NZ_KI911557
+Source: Methylomonas sp. 11b scaffold1, whole genome shotgun sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 2141.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg34_1	METH11B_RS0110560	39	293	96.55172413793103	7.63e-91
+ctg34_3	METH11B_RS0110545	40	213	95.86466165413535	3.54e-65
+ctg34_6	METH11B_RS0110585	50	589	97.16981132075472	1.5e-203
+ctg34_6	METH11B_RS0110525	50	588	97.16981132075472	2.91e-203
+ctg34_8	METH11B_RS0110570	46	458	100.0	4.85e-157
+
+
+
+>>
+18. NZ_CP070494
+Source: Methylomonas sp. EFPC1 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 2140.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg34_1	JWZ98_RS04660	40	295	97.01149425287356	1.95e-91
+ctg34_3	JWZ98_RS04670	40	212	95.86466165413535	5e-65
+ctg34_6	JWZ98_RS04690	50	588	97.16981132075472	5.84e-203
+ctg34_6	JWZ98_RS04635	50	587	97.16981132075472	8.56e-203
+ctg34_8	JWZ98_RS04650	46	458	100.0	4.85e-157
+
+
+
+>>
+19. NC_015572
+Source: Methylomonas methanica MC09, complete sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 2133.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg34_1	METME_RS17420	39	289	94.94252873563218	3.3e-89
+ctg34_3	METME_RS17410	40	207	95.86466165413535	4.31e-63
+ctg34_6	METME_RS17390	49	586	98.42767295597484	3.45e-202
+ctg34_6	METME_RS17445	49	585	97.32704402515722	4.88e-202
+ctg34_8	METME_RS17430	48	466	100.0	4.54e-160
+
+
+
+>>
+20. NZ_CP014476
+Source: Methylomonas denitrificans strain FJG1 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 2130.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg34_1	JT25_RS15465	40	295	96.55172413793103	1.36e-91
+ctg34_3	JT25_RS15475	40	209	95.86466165413535	5.59e-64
+ctg34_6	JT25_RS15440	49	583	97.16981132075472	2.78e-201
+ctg34_6	JT25_RS15495	49	583	97.16981132075472	5.4e-201
+ctg34_8	JT25_RS15455	47	460	100.0	8.48e-158
+
+
+
+>>
+21. NZ_CP058409
+Source: Trichlorobacter lovleyi strain IAE chromosome, complete genome
+Type: T1PKS,hglE-KS,terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1596.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg34_1	FY034_RS10145	52	450	95.86206896551724	2.67e-151
+ctg34_3	FY034_RS10160	51	287	98.87218045112782	1.02e-94
+ctg34_6	FY034_RS10155	55	693	98.27044025157232	2.97e-244
+ctg34_8	FY034_RS10215	31	166	84.31372549019608	5.57e-44
+
+
+
+>>
+22. NZ_PTIY01000008
+Source: Methylobacter tundripaludum strain OWC-G53F Ga0139037_108, whole genome shotgun sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1596.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg34_1	B0F88_RS10920	41	314	94.71264367816093	7.59e-99
+ctg34_3	B0F88_RS10910	41	222	95.86466165413535	6.65e-69
+ctg34_6	B0F88_RS10950	49	587	98.27044025157232	8.56e-203
+ctg34_8	B0F88_RS10935	48	473	100.0	9.12e-163
+
+
+
+>>
+23. NZ_JH109152
+Source: Methylobacter tundripaludum SV96 Mettuscaffold_1, whole genome shotgun sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1596.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg34_1	METTU_RS03390	40	310	94.71264367816093	4.48e-97
+ctg34_3	METTU_RS03400	41	225	95.86466165413535	4.19e-70
+ctg34_6	METTU_RS03360	49	581	97.16981132075472	3.18e-200
+ctg34_8	METTU_RS03375	49	480	100.0	1.13e-165
+
+
+
+>>
+24. NZ_CP035467
+Source: Methylotuvimicrobium buryatense strain 5GB1C chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1588.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg34_1	EQU24_RS15365	39	307	96.0919540229885	5.01e-96
+ctg34_3	EQU24_RS15355	41	218	95.86466165413535	2.17e-67
+ctg34_6	EQU24_RS15335	49	589	98.27044025157232	1.5e-203
+ctg34_8	EQU24_RS15380	49	474	100.0	1.59e-163
+
+
+
+>>
+25. NZ_CP024202
+Source: Methylomicrobium sp. wino1 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1584.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg34_1	CS064_RS20675	40	309	96.0919540229885	9.08e-97
+ctg34_3	CS064_RS20665	41	218	95.86466165413535	3.06e-67
+ctg34_6	CS064_RS20645	49	586	98.27044025157232	3.45e-202
+ctg34_8	CS064_RS20690	48	471	100.0	5.21e-162
+
+
+
+>>
+26. NZ_JAJQQQ010000001
+Source: Streptomyces albireticuli strain NRRL B1670 type C NODE_1_length_1391478_cov_79.771254, whole genome shotgun sequence
+Type: NRPS,NRPS-like,T1PKS,aminopolycarboxylic-acid,arylpolyene,nucleoside,other,terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1576.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg34_1	LUZ28_RS02720	47	332	97.70114942528735	1.61e-105
+ctg34_3	LUZ28_RS02710	42	213	94.73684210526315	1.18e-65
+ctg34_6	LUZ28_RS02700	41	444	99.84276729559748	3.11e-146
+ctg34_8	LUZ28_RS02695	49	431	99.78213507625271	2.57e-146
+ctg34_8	LUZ28_RS02625	33	156	81.69934640522875	9.9e-41
+
+
+
+>>
+27. NZ_CP022129
+Source: Methylovulum psychrotolerans strain HV10_M2 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1576.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg34_1	CEK71_RS04645	39	300	97.70114942528735	3.69e-93
+ctg34_3	CEK71_RS04655	41	222	95.86466165413535	9.14e-69
+ctg34_6	CEK71_RS04620	50	583	98.27044025157232	3.94e-201
+ctg34_8	CEK71_RS04635	48	471	100.0	3.68e-162
+
+
+
+>>
+28. NZ_CP079095
+Source: Methylococcus sp. Mc7 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1576.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg34_1	KW115_RS11290	40	292	95.17241379310344	2.22e-90
+ctg34_3	KW115_RS11300	42	220	96.2406015037594	5.59e-68
+ctg34_6	KW115_RS11310	51	587	100.62893081761007	2.3e-202
+ctg34_8	KW115_RS11275	48	477	100.21786492374727	1.9e-164
+
+
+
+>>
+29. NZ_CP046565
+Source: Methylococcus geothermalis strain IM1 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1575.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg34_1	GNH96_RS04655	45	290	94.71264367816093	2.4e-89
+ctg34_3	GNH96_RS04665	43	223	96.2406015037594	2.49e-69
+ctg34_6	GNH96_RS04675	50	580	99.05660377358491	8.54e-200
+ctg34_8	GNH96_RS04640	49	482	100.21786492374727	1.43e-166
+
+
+
+>>
+30. NZ_CP079097
+Source: Methylococcus capsulatus strain KN2 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1574.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg34_1	KW114_RS14490	39	291	95.17241379310344	8.67e-90
+ctg34_3	KW114_RS14500	43	222	96.2406015037594	7.04e-69
+ctg34_6	KW114_RS14510	51	587	99.05660377358491	3.26e-202
+ctg34_8	KW114_RS14475	48	474	100.21786492374727	1.54e-163
+
+
+
+>>
+31. NZ_CP079096
+Source: Methylococcus capsulatus strain BH chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1573.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg34_1	KW112_RS04595	39	291	95.17241379310344	8.67e-90
+ctg34_3	KW112_RS04585	43	222	96.2406015037594	7.04e-69
+ctg34_6	KW112_RS04575	51	587	99.05660377358491	2.3e-202
+ctg34_8	KW112_RS04610	47	473	100.21786492374727	6.22e-163
+
+
+
+>>
+32. NC_016112
+Source: Methylotuvimicrobium alcaliphilum 20Z, complete sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1572.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg34_1	MEALZ_RS15135	40	310	96.0919540229885	2.32e-97
+ctg34_3	MEALZ_RS15125	41	218	95.86466165413535	2.17e-67
+ctg34_6	MEALZ_RS15105	48	571	98.27044025157232	1.91e-196
+ctg34_8	MEALZ_RS15150	49	473	100.0	6.43e-163
+
+
+
+>>
+33. NZ_CP110921
+Source: Methylococcus sp. 16-5 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1572.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg34_1	OOT43_RS06745	40	291	94.71264367816093	6.17e-90
+ctg34_3	OOT43_RS06735	43	222	96.2406015037594	7.04e-69
+ctg34_6	OOT43_RS06725	50	581	99.05660377358491	4.26e-200
+ctg34_8	OOT43_RS06760	48	478	100.21786492374727	9.45e-165
+
+
+
+>>
+34. NC_002977
+Source: Methylococcus capsulatus str. Bath, complete sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1572.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg34_1	MCA_RS04015	39	291	95.17241379310344	8.67e-90
+ctg34_3	MCA_RS04025	43	222	96.2406015037594	7.04e-69
+ctg34_6	MCA_RS04035	51	587	99.05660377358491	2.3e-202
+ctg34_8	MCA_RS04000	47	472	100.21786492374727	1.77e-162
+
+
+
+>>
+35. NZ_CP097123
+Source: Streptomyces sp. HU2014 chromosome
+Type: lanthipeptide-class-iv,nucleoside,other,terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1562.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg34_1	M1P56_RS22550	47	327	97.93103448275862	9.83e-104
+ctg34_3	M1P56_RS22540	42	213	93.60902255639097	8.35e-66
+ctg34_6	M1P56_RS22530	40	439	99.84276729559748	1.47e-144
+ctg34_8	M1P56_RS22525	48	427	99.56427015250546	1.11e-144
+ctg34_8	M1P56_RS22410	33	156	81.69934640522875	2.01e-40
+
+
+
+>>
+36. NZ_CP073754
+Source: Methylomonas paludis strain S2AM chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1550.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg34_1	KEF85_RS15850	40	291	94.94252873563218	6.02e-90
+ctg34_3	KEF85_RS15840	40	208	95.86466165413535	1.57e-63
+ctg34_6	KEF85_RS15875	49	583	97.16981132075472	5.58e-201
+ctg34_8	KEF85_RS15860	48	468	100.0	7.93e-161
+
+
+
+>>
+37. NZ_MWLK01000033
+Source: Rhodomicrobium sp. R_RK_3 BLEFHOIH_33, whole genome shotgun sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1526.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg34_1	BLEFHOIH_RS20415	39	301	99.54022988505747	7.58e-94
+ctg34_3	BLEFHOIH_RS20405	42	225	96.99248120300751	6.02e-70
+ctg34_6	BLEFHOIH_RS20395	48	546	98.58490566037736	3.29e-186
+ctg34_8	BLEFHOIH_RS20440	48	454	99.12854030501089	1.2e-155
+
+
+
+>>
+38. NC_016109
+Source: Kitasatospora setae KM-6054, complete sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1468.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg34_1	KSE_RS08630	51	363	96.0919540229885	8.88e-118
+ctg34_3	KSE_RS08620	41	216	98.87218045112782	7.63e-67
+ctg34_6	KSE_RS08615	41	445	100.0	6.51e-147
+ctg34_8	KSE_RS08610	49	444	99.78213507625271	2.07e-151
+
+
+
+>>
+39. NZ_CP113837
+Source: Kitasatospora sp. YST-16 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1465.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg34_1	OU787_RS05885	51	358	96.0919540229885	5.53e-116
+ctg34_3	OU787_RS05875	41	216	98.87218045112782	7.63e-67
+ctg34_6	OU787_RS05870	41	447	100.0	1.16e-147
+ctg34_8	OU787_RS05865	49	444	99.78213507625271	1.46e-151
+
+
+
+>>
+40. NZ_CP026498
+Source: Streptomyces sp. CB01881 chromosome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1463.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg34_1	C2142_RS07285	50	352	97.93103448275862	7.19e-113
+ctg34_3	C2142_RS07275	40	213	100.0	1.71e-65
+ctg34_6	C2142_RS07270	41	446	100.1572327044025	2.8e-147
+ctg34_8	C2142_RS07265	51	452	99.56427015250546	2.78e-154
+
+
+
+>>
+41. NZ_CP020567
+Source: Kitasatospora aureofaciens strain DM-1 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1462.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg34_1	B6264_RS00545	50	353	97.47126436781609	2.03e-113
+ctg34_3	B6264_RS00535	40	214	100.0	4.42e-66
+ctg34_6	B6264_RS00530	41	446	101.10062893081762	3.96e-147
+ctg34_8	B6264_RS00525	49	449	99.56427015250546	1.23e-153
+
+
+
+>>
+42. NZ_JAGIYX010000001
+Source: Kitasatospora sp. RG8 contig1, whole genome shotgun sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1461.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg34_1	J5Y04_RS00295	50	352	97.93103448275862	7.19e-113
+ctg34_3	J5Y04_RS00285	40	213	100.0	1.71e-65
+ctg34_6	J5Y04_RS00280	41	445	100.1572327044025	5.59e-147
+ctg34_8	J5Y04_RS00275	50	451	99.56427015250546	3.94e-154
+
+
+
+>>
+43. NZ_QLLT01000012
+Source: Kitasatospora sp. SolWspMP-SS2h K353DRAFT_scaffold00012.12, whole genome shotgun sequence
+Type: NRPS,T1PKS,T3PKS,terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1460.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg34_1	K353_RS16300	51	360	96.0919540229885	1.4e-116
+ctg34_3	K353_RS16290	41	215	98.87218045112782	1.52e-66
+ctg34_6	K353_RS16285	41	444	100.0	2.59e-146
+ctg34_8	K353_RS16280	48	441	99.78213507625271	3.36e-150
+
+
+
+>>
+44. NZ_CP054919
+Source: Kitasatospora sp. NA04385 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1460.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg34_1	HUT16_RS07505	51	358	96.0919540229885	3.92e-116
+ctg34_3	HUT16_RS07495	41	216	98.87218045112782	5.4e-67
+ctg34_6	HUT16_RS07490	41	443	100.0	3.66e-146
+ctg34_8	HUT16_RS07485	49	443	99.78213507625271	4.16e-151
+
+
+
+>>
+45. NZ_KK853997
+Source: Kitasatospora cheerisanensis KCTC 2395 scaffold00001, whole genome shotgun sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1459.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg34_1	KCH_RS08495	51	357	96.0919540229885	1.55e-115
+ctg34_3	KCH_RS08485	41	214	98.87218045112782	2.96e-66
+ctg34_6	KCH_RS08480	41	444	100.0	2.93e-146
+ctg34_8	KCH_RS08475	49	444	99.78213507625271	1.03e-151
+
+
+
+>>
+46. NZ_BNBY01000002
+Source: Kitasatospora xanthocidica strain JCM 4862 sequence02, whole genome shotgun sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1457.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg34_1	IE332_RS03685	50	353	97.01149425287356	9.65e-114
+ctg34_3	IE332_RS03675	41	216	100.0	5.55e-67
+ctg34_6	IE332_RS03670	40	440	101.10062893081762	7.01e-145
+ctg34_8	IE332_RS03665	50	448	99.56427015250546	4.96e-153
+
+
+
+>>
+47. NZ_LMHX01000003
+Source: Kitasatospora sp. Root187 contig_11, whole genome shotgun sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1454.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg34_1	ASE03_RS02335	49	348	99.54022988505747	1.06e-114
+ctg34_3	ASE03_RS02325	42	218	99.62406015037594	9.29e-68
+ctg34_6	ASE03_RS02320	41	442	100.1572327044025	8.84e-146
+ctg34_8	ASE03_RS02315	50	446	97.1677559912854	3.5e-152
+
+
+
+>>
+48. NZ_CP115450
+Source: Kitasatospora sp. HUAS 3-15 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1452.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg34_1	O1G21_RS07955	50	352	97.47126436781609	5.69e-113
+ctg34_3	O1G21_RS07945	40	215	100.0	1.57e-66
+ctg34_6	O1G21_RS07940	40	442	100.0	6.26e-146
+ctg34_8	O1G21_RS07935	50	443	99.56427015250546	3.24e-151
+
+
+
+>>
+49. NZ_JAIY01000020
+Source: Kitasatospora sp. MBT66 scaffold20, whole genome shotgun sequence
+Type: T3PKS,terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1452.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg34_1	BI06_RS42035	50	347	97.01149425287356	5.32e-111
+ctg34_3	BI06_RS42025	40	214	100.0	6.08e-66
+ctg34_6	BI06_RS42020	41	445	100.78616352201257	1.45e-146
+ctg34_8	BI06_RS42015	50	446	99.56427015250546	5.61e-152
+
+
+
+>>
+50. NZ_CP071872
+Source: Streptomyces formicae strain 1H-GS9 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1450.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg34_1	J4032_RS14815	50	355	97.93103448275862	1.23e-114
+ctg34_3	J4032_RS14825	42	213	93.60902255639097	1.67e-65
+ctg34_6	J4032_RS14830	42	456	100.62893081761007	4.13e-151
+ctg34_8	J4032_RS14835	47	426	99.56427015250546	2.49e-144
+

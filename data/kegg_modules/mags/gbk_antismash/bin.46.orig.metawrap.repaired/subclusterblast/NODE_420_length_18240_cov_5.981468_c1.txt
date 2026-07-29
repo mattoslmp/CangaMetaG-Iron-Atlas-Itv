@@ -1,0 +1,22 @@
+ClusterBlast scores for NODE_420_length_18240_cov_5.981468
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg7_1	1	448	+		
+ctg7_2	422	1232	+		
+ctg7_3	1206	2349	+		
+ctg7_4	2359	3436	+		
+ctg7_5	3471	5211	+		
+ctg7_6	5251	5554	+		
+ctg7_7	5594	5984	-		
+ctg7_8	6108	7146	+		
+ctg7_9	7263	8205	+		
+ctg7_10	8272	8977	+		
+ctg7_11	8991	9873	+		
+ctg7_12	10040	10709	+		
+ctg7_13	10788	12840	+		
+
+
+Significant hits: 
+
+
+Details:

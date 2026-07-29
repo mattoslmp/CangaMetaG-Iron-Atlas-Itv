@@ -1,0 +1,21 @@
+ClusterBlast scores for NODE_63_length_13568_cov_2.790305
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg63_1	1	418	-		
+ctg63_2	473	1349	-		
+ctg63_3	1360	2113	-		
+ctg63_4	2128	3010	-		
+ctg63_5	3050	3323	-		
+ctg63_6	3319	4192	-		
+ctg63_7	4207	6664	-		
+ctg63_8	6741	8064	-		
+ctg63_9	8107	9484	-		
+ctg63_10	9484	10252	-		
+ctg63_11	10248	11241	-		
+ctg63_12	11563	12991	+		
+
+
+Significant hits: 
+
+
+Details:

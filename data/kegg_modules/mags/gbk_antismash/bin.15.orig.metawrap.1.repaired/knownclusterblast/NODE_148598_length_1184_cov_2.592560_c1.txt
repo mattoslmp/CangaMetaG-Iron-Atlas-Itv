@@ -1,0 +1,129 @@
+ClusterBlast scores for NODE_148598_length_1184_cov_2.592560
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg932_1	35	1184	+		
+
+
+Significant hits: 
+1. BGC0002135.2	bovienimide A
+2. BGC0001833.4	icosalide A/icosalide B
+3. BGC0001758.4	rhizomide A/rhizomide B/rhizomide C
+4. BGC0001641.4	kolossin
+5. BGC0002286.3	ririwpeptide A/ririwpeptide B/ririwpeptide C
+6. BGC0001135.5	bicornutin A1/bicornutin A2
+7. BGC0001132.4	xenotetrapeptide
+8. BGC0001128.4	gamexpeptide C
+
+
+Details:
+
+>>
+1. BGC0002135.2
+Source: bovienimide A
+Type: NRPS:Type I
+Number of proteins with BLAST hits to this cluster: 1
+Cumulative BLAST score: 354.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg932_1	XBJ1_RS10015	52	354	95.56135770234987	6.45e-110
+
+
+
+>>
+2. BGC0001833.4
+Source: icosalide A/icosalide B
+Type: NRPS:Type I
+Number of proteins with BLAST hits to this cluster: 1
+Cumulative BLAST score: 319.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg932_1	AYA44686.1	49	319	92.95039164490862	1e-97
+
+
+
+>>
+3. BGC0001758.4
+Source: rhizomide A/rhizomide B/rhizomide C
+Type: NRPS:Type I
+Number of proteins with BLAST hits to this cluster: 1
+Cumulative BLAST score: 315.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg932_1	RBRH_RS12370	49	315	97.65013054830287	4.14e-96
+
+
+
+>>
+4. BGC0001641.4
+Source: kolossin
+Type: NRPS:Type I
+Number of proteins with BLAST hits to this cluster: 1
+Cumulative BLAST score: 308.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg932_1	PLU_RS13235	53	308	79.37336814621409	1.08e-93
+
+
+
+>>
+5. BGC0002286.3
+Source: ririwpeptide A/ririwpeptide B/ririwpeptide C
+Type: NRPS:Type I
+Number of proteins with BLAST hits to this cluster: 1
+Cumulative BLAST score: 305.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg932_1	plu3123	53	305	77.80678851174935	1.22e-92
+
+
+
+>>
+6. BGC0001135.5
+Source: bicornutin A1/bicornutin A2
+Type: NRPS:Type I
+Number of proteins with BLAST hits to this cluster: 1
+Cumulative BLAST score: 304.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg932_1	AFP87549.1	46	304	101.0443864229765	2.27e-92
+
+
+
+>>
+7. BGC0001132.4
+Source: xenotetrapeptide
+Type: NRPS:Type I
+Number of proteins with BLAST hits to this cluster: 1
+Cumulative BLAST score: 300.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg932_1	XNC1_2022	46	300	98.9556135770235	6.59e-91
+
+
+
+>>
+8. BGC0001128.4
+Source: gamexpeptide C
+Type: NRPS:Type I
+Number of proteins with BLAST hits to this cluster: 1
+Cumulative BLAST score: 300.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg932_1	plu3263	47	300	99.73890339425587	6.69e-91
+

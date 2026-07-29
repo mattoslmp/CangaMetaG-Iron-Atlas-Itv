@@ -1,0 +1,22 @@
+ClusterBlast scores for NODE_41_length_11976_cov_2.822674
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg41_1	0	504	+		
+ctg41_2	602	1589	+		
+ctg41_3	1829	2345	+		
+ctg41_4	2437	4408	-		
+ctg41_5	4704	4968	+		
+ctg41_6	5023	5995	+		
+ctg41_7	6015	6708	-		
+ctg41_8	6765	7686	-		
+ctg41_9	7935	8748	+		
+ctg41_10	8872	9460	-		
+ctg41_11	9519	10344	-		
+ctg41_12	10724	11543	+		
+ctg41_13	11634	11976	+		
+
+
+Significant hits: 
+
+
+Details:

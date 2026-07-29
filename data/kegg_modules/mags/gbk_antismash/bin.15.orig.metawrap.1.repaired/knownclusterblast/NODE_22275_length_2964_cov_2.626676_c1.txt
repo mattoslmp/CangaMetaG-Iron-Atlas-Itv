@@ -1,0 +1,303 @@
+ClusterBlast scores for NODE_22275_length_2964_cov_2.626676
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg252_1	0	1569	-		
+ctg252_2	1570	2962	-		
+
+
+Significant hits: 
+1. BGC0000302.5	anabaenopeptin
+2. BGC0002532.3	anachelin
+3. BGC0000397.5	nostocyclopeptide A2
+4. BGC0001951.4	puwainaphycin F/minutissamide A
+5. BGC0001125.5	puwainaphycin A/puwainaphycin B/puwainaphycin C/puwainaphycin D
+6. BGC0001950.4	puwainaphycin F/minutissamide A
+7. BGC0002512.3	anabaenopeptin 788/anabaenopeptin 816/anabaenopeptin 802
+8. BGC0001952.3	minutissamide A/minutissamide C/minutissamide D
+9. BGC0000975.5	Cryptophycin A
+10. BGC0001953.4	puwainaphycin F/minutissamide A/minutissamide B/minutissamide C/minutissamide D
+11. BGC0001016.5	microcystin
+12. BGC0001667.4	microcystin-LR/microcystin-FR/microcystin-LA/microcystin-LAba/microcystin-LM/microcystin-LV/microcystin-LL
+13. BGC0002484.3	scytocyclamide A/scytocyclamide B/scytocyclamide B3/scytocyclamide C/scytocyclamide A2/scytocyclamide B2
+14. BGC0002572.3	heinamide A1/heinamide A2/heinamide A3/heinamide B1/heinamide B2/heinamide B3/heinamide B4/heinamide B5
+15. BGC0002625.2	desmamide A/desmamide B/desmamide C
+16. BGC0001029.5	nostophycin
+17. BGC0000367.5	gramicidin
+
+
+Details:
+
+>>
+1. BGC0000302.5
+Source: anabaenopeptin
+Type: NRPS:Type I
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 1337.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg252_1	ACZ55943.1	46	476	99.4263862332696	3.6e-157
+ctg252_2	ACZ55942.1	50	445	100.21598272138228	1.55e-140
+ctg252_2	ACZ55945.1	47	416	100.21598272138228	2.43e-130
+
+
+
+>>
+2. BGC0002532.3
+Source: anachelin
+Type: NRPS:Type I+PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 1049.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg252_1	NIES19_13770	53	561	100.0	4.39e-190
+ctg252_2	NIES19_13760	54	488	97.8401727861771	2.5e-155
+
+
+
+>>
+3. BGC0000397.5
+Source: nostocyclopeptide A2
+Type: NRPS:Type I
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 966.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg252_1	AAO23334.1	50	524	101.52963671128109	9.03e-167
+ctg252_2	AAO23333.1	49	442	98.70410367170626	2.46e-139
+
+
+
+>>
+4. BGC0001951.4
+Source: puwainaphycin F/minutissamide A
+Type: NRPS:Type I
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 965.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg252_1	AXN93591.1	50	521	99.61759082217974	1.67e-174
+ctg252_2	AXN93590.1	50	444	99.35205183585313	1.01e-139
+
+
+
+>>
+5. BGC0001125.5
+Source: puwainaphycin A/puwainaphycin B/puwainaphycin C/puwainaphycin D
+Type: NRPS:Type I+PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 960.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg252_1	AIW82285.1	50	521	99.61759082217974	2.36e-174
+ctg252_2	AIW82284.1	50	439	99.35205183585313	2.87e-138
+
+
+
+>>
+6. BGC0001950.4
+Source: puwainaphycin F/minutissamide A
+Type: NRPS:Type I
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 952.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg252_1	AXN93582.1	50	508	97.51434034416826	1.14e-169
+ctg252_2	AXN93581.1	50	444	99.35205183585313	1.01e-139
+
+
+
+>>
+7. BGC0002512.3
+Source: anabaenopeptin 788/anabaenopeptin 816/anabaenopeptin 802
+Type: NRPS:Type I
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 943.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg252_1	QNL14921.1	47	481	99.4263862332696	3.01e-159
+ctg252_2	QNL14922.1	51	462	100.21598272138228	1.65e-146
+
+
+
+>>
+8. BGC0001952.3
+Source: minutissamide A/minutissamide C/minutissamide D
+Type: NRPS:Type I
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 941.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg252_1	AXN93603.1	50	522	99.61759082217974	1.91e-174
+ctg252_2	AXN93602.1	48	419	101.51187904967603	3.75e-131
+
+
+
+>>
+9. BGC0000975.5
+Source: Cryptophycin A
+Type: NRPS:Type I+PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 939.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg252_1	ABM21572.1	50	532	100.76481835564053	1.33e-169
+ctg252_2	ABM21571.1	46	407	99.35205183585313	3.24e-127
+
+
+
+>>
+10. BGC0001953.4
+Source: puwainaphycin F/minutissamide A/minutissamide B/minutissamide C/minutissamide D
+Type: NRPS:Type I
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 936.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg252_1	AXN93616.1	50	520	99.61759082217974	1.49e-173
+ctg252_2	AXN93615.1	48	416	101.51187904967603	3.03e-130
+
+
+
+>>
+11. BGC0001016.5
+Source: microcystin
+Type: NRPS:Type I+PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 935.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg252_1	AAO62587.1	48	512	100.19120458891013	1.38e-163
+ctg252_2	AAO62586.1	49	423	99.35205183585313	1.59e-132
+
+
+
+>>
+12. BGC0001667.4
+Source: microcystin-LR/microcystin-FR/microcystin-LA/microcystin-LAba/microcystin-LM/microcystin-LV/microcystin-LL
+Type: NRPS:Type I+PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 919.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg252_1	AQH32485.1	48	508	99.80879541108987	3.51e-162
+ctg252_2	AQH32484.1	47	411	99.56803455723542	1.65e-128
+
+
+
+>>
+13. BGC0002484.3
+Source: scytocyclamide A/scytocyclamide B/scytocyclamide B3/scytocyclamide C/scytocyclamide A2/scytocyclamide B2
+Type: NRPS:Type I+PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 5371.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg252_1	WA1_15540	51	521	99.80879541108987	7.85e-166
+ctg252_1	WA1_15530	51	517	100.0	2.38e-164
+ctg252_1	WA1_15565	49	508	99.4263862332696	5.03e-161
+ctg252_1	WA1_15575	49	493	99.4263862332696	6.41e-156
+ctg252_1	WA1_15570	48	490	100.95602294455065	7.14e-155
+ctg252_1	WA1_15580	51	276	53.346080305927345	7.23e-82
+ctg252_2	WA1_15535	47	417	98.70410367170626	1.05e-139
+ctg252_2	WA1_15565	50	441	98.92008639308855	1.15e-138
+ctg252_2	WA1_15570	50	436	98.92008639308855	6.26e-137
+ctg252_2	WA1_15575	49	429	99.56803455723542	1.24e-134
+ctg252_2	WA1_15540	50	427	98.92008639308855	5.73e-134
+ctg252_2	WA1_15530	48	416	99.35205183585313	6.05e-130
+
+
+
+>>
+14. BGC0002572.3
+Source: heinamide A1/heinamide A2/heinamide A3/heinamide B1/heinamide B2/heinamide B3/heinamide B4/heinamide B5
+Type: NRPS:Type I+PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 3221.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg252_1	JYQ62_16330	51	517	99.80879541108987	3.17e-164
+ctg252_1	JYQ62_16355	51	515	99.80879541108987	1.12e-163
+ctg252_1	JYQ62_16310	50	515	99.80879541108987	1.56e-163
+ctg252_2	JYQ62_16335	48	428	99.35205183585313	6.12e-136
+ctg252_2	JYQ62_16310	48	422	98.70410367170626	2.42e-132
+ctg252_2	JYQ62_16330	47	412	98.92008639308855	6.98e-129
+ctg252_2	JYQ62_16355	47	412	98.92008639308855	1.33e-128
+
+
+
+>>
+15. BGC0002625.2
+Source: desmamide A/desmamide B/desmamide C
+Type: NRPS:Type I+PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 1926.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg252_1	IQ276_029115	50	527	99.80879541108987	1.07e-167
+ctg252_1	IQ276_029105	50	515	99.4263862332696	1.11e-163
+ctg252_2	IQ276_029105	49	442	97.8401727861771	4.76e-139
+ctg252_2	IQ276_029115	50	442	99.35205183585313	4.77e-139
+
+
+
+>>
+16. BGC0001029.5
+Source: nostophycin
+Type: NRPS:Type I+PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 1886.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg252_1	AEU11003.1	51	520	99.4263862332696	2.7e-165
+ctg252_1	AEU11006.1	50	513	99.4263862332696	6.89e-163
+ctg252_2	AEU11003.1	48	427	100.21598272138228	7.8e-134
+ctg252_2	AEU11006.1	47	426	98.92008639308855	1.44e-133
+
+
+
+>>
+17. BGC0000367.5
+Source: gramicidin
+Type: NRPS:Type I
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 1331.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg252_1	BBR47_28930	46	464	99.80879541108987	7.1e-146
+ctg252_2	BBR47_28940	51	452	97.40820734341253	1.57e-142
+ctg252_2	BBR47_28930	46	415	99.56803455723542	8.3e-130
+

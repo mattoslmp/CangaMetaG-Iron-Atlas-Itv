@@ -1,0 +1,51 @@
+MAG_raw,CheckM_completeness_percent,CheckM_contamination_percent,GC_fraction,N50_bp,Genome_size_bp,CheckM_lineage,Species_definition,MAG,ENA sample alias,ENA analysis accession,ENA taxon ID,ENA scientific name
+MAG.13.strict,100.0,2.0,0.496,29076,2667540,Bacteria,Nitrospirales bacterium LBB_01,MAG.13,AMZLL_BIN_013,ERZ29768272,77133,uncultured bacterium
+MAG.37.orig,96.53,2.4,0.647,25963,2366063,Euryarchaeota,Euryarchaeota archaeon RBG-16-68-12,MAG.37,AMZLL_BIN_037,ERZ29768296,115547,uncultured archaeon
+MAG.34.permissive,94.18,2.401,0.483,5293,4737358,Cyanobacteria,Hydrococcus,MAG.34,AMZLL_BIN_034,ERZ29768293,77133,uncultured bacterium
+MAG.26.strict,93.81,2.074,0.682,8047,3188400,Proteobacteria,Burkholderiales bacterium,MAG.26,AMZLL_BIN_026,ERZ29768285,77133,uncultured bacterium
+MAG.25.permissive,91.26,2.091,0.368,5995,1355181,Archaea,Nitrosotalea sp.,MAG.25,AMZLL_BIN_025,ERZ29768284,115547,uncultured archaeon
+MAG.6.strict,91.12,0.467,0.524,7410,1784266,Archaea,Candidatus Bathyarchaeota archaeon 40CM-2-53-6,MAG.6,AMZLL_BIN_006,ERZ29768265,115547,uncultured archaeon
+MAG.12.orig,89.76,0.33,0.585,8401,2213642,Bacteria,Dehalococcoides mccartyi ,MAG.12,AMZLL_BIN_012,ERZ29768271,77133,uncultured bacterium
+MAG.7.orig,89.57,2.336,0.493,19113,1548046,Archaea,Candidatus Bathyarchaeota archaeon 20-14-0-80-47-9,MAG.7,AMZLL_BIN_007,ERZ29768266,115547,uncultured archaeon
+MAG.9.orig,88.8,0.668,0.744,7764,4122778,Deltaproteobacteria,Anaeromyxobacter sp. Red267,MAG.9,AMZLL_BIN_009,ERZ29768268,77133,uncultured bacterium
+MAG.30.orig,88.72,2.909,0.652,6973,3456760,Bacteria,Anaerolineales bacterium,MAG.30,AMZLL_BIN_030,ERZ29768289,77133,uncultured bacterium
+MAG.19.strict,87.94,1.333,0.648,13121,1855204,Euryarchaeota,Thermoplasmata archaeon RBG-16-68-12,MAG.19,AMZLL_BIN_019,ERZ29768278,115547,uncultured archaeon
+MAG.18.strict,87.84,0.99,0.488,16238,2579792,Bacteria,Dehalococcoidia bacterium SZUA-161,MAG.18,AMZLL_BIN_018,ERZ29768277,77133,uncultured bacterium
+MAG.8.orig,86.41,1.871,0.712,5425,4071694,Actinomycetales,Trebonia kvetii ,MAG.8,AMZLL_BIN_008,ERZ29768267,77133,uncultured bacterium
+MAG.40.orig,83.91,3.655,0.491,6716,4466865,Deltaproteobacteria,Desulfobacterales bacterium UBA1163,MAG.40,AMZLL_BIN_040,ERZ29768299,77133,uncultured bacterium
+MAG.35.strict,83.82,0.118,0.579,8683,4307486,Bacteria,Acidobacteria bacterium UBA7541,MAG.35,AMZLL_BIN_035,ERZ29768294,77133,uncultured bacterium
+MAG.43.strict,82.0,0.389,0.628,5926,3276146,Bacteria,Acidobacteria bacterium UBA7541,MAG.43,AMZLL_BIN_043,ERZ29768302,77133,uncultured bacterium
+MAG.45.permissive,81.56,3.685,0.551,8719,2772903,Bacteria,Candidatus Aminicenantes bacterium UBA8522,MAG.45,AMZLL_BIN_045,ERZ29768304,77133,uncultured bacterium
+MAG.46.orig,80.42,4.929,0.472,8267,1292637,Archaea,Candidatus Bathyarchaeota archaeon B26-1,MAG.46,AMZLL_BIN_046,ERZ29768305,115547,uncultured archaeon
+MAG.20.strict,79.99,2.336,0.454,4325,1220956,Archaea,Candidatus Bathyarchaeota archaeon B26-1,MAG.20,AMZLL_BIN_020,ERZ29768279,115547,uncultured archaeon
+MAG.17.orig,75.98,4.0,0.432,3521,1521741,Euryarchaeota,Thermoplasmata archaeon SM1-50,MAG.17,AMZLL_BIN_017,ERZ29768276,115547,uncultured archaeon
+MAG.21.strict,75.95,3.883,0.455,5338,1306103,Archaea,Candidatus Bathyarchaeota archaeon BA1,MAG.21,AMZLL_BIN_021,ERZ29768280,115547,uncultured archaeon
+MAG.15.orig,74.72,3.642,0.537,2640,2511746,Bacteria,Bacteroidetes bacterium,MAG.15,AMZLL_BIN_015,ERZ29768274,77133,uncultured bacterium
+MAG.39.permissive,74.32,0.0,0.581,6804,1614040,Archaea,Candidatus Thorarchaeota archaeon,MAG.39,AMZLL_BIN_039,ERZ29768298,115547,uncultured archaeon
+MAG.41.permissive,72.18,0.495,0.456,8909,1584571,Bacteria,Dehalococcoidia bacterium RBG-13-51-36,MAG.41,AMZLL_BIN_041,ERZ29768300,77133,uncultured bacterium
+MAG.22.orig,71.93,4.854,0.525,2326,1600617,Archaea,Candidatus Bathyarchaeota archaeon 40CM-2-53-6,MAG.22,AMZLL_BIN_022,ERZ29768281,115547,uncultured archaeon
+MAG.31.strict,70.68,1.2,0.667,6980,1729934,Euryarchaeota,Thermoflexales bacterium RBG-16-68-12,MAG.31,AMZLL_BIN_031,ERZ29768290,115547,uncultured archaeon
+MAG.38.permissive,70.33,1.869,0.525,3725,1641528,Archaea,Candidatus Bathyarchaeota archaeon 40CM-2-53-6,MAG.38,AMZLL_BIN_038,ERZ29768297,115547,uncultured archaeon
+MAG.3.permissive,69.22,0.854,0.457,5054,2215404,Bacteria,Candidatus Aminicenantes bacterium,MAG.3,AMZLL_BIN_003,ERZ29768262,77133,uncultured bacterium
+MAG.27.orig,68.62,3.787,0.715,1941,3054562,Bacteria,Planctomycetes bacterium UBA8742,MAG.27,AMZLL_BIN_027,ERZ29768286,77133,uncultured bacterium
+MAG.14.orig,63.6,1.321,0.664,2930,2521245,Bacteria,Spirochaetes bacterium RBG_16_67_19,MAG.14,AMZLL_BIN_014,ERZ29768273,77133,uncultured bacterium
+MAG.1.patric,62.62,14.77,0.4308,2727,931274,Archaea,Nitrosotalea,MAG.1,AMZLL_BIN_001,ERZ29768260,115547,uncultured archaeon
+MAG.23.permissive,62.11,0.0,0.364,6796,1101335,Archaea,Candidatus Bathyarchaeota archaeon B26-1,MAG.23,AMZLL_BIN_023,ERZ29768282,115547,uncultured archaeon
+MAG.4.strict,60.65,0.641,0.619,2728,1910560,Bacteria,Acidobacteria bacterium UBA7541,MAG.4,AMZLL_BIN_004,ERZ29768263,77133,uncultured bacterium
+MAG.16.strict,58.98,3.398,0.455,4988,564581,Archaea,Candidatus Bathyarchaeota archaeon BA1,MAG.16,AMZLL_BIN_016,ERZ29768275,115547,uncultured archaeon
+MAG.33.permissive,58.38,3.191,0.596,2019,3656305,Bacteria,Thermoflexales bacterium Fen-1058,MAG.33,AMZLL_BIN_033,ERZ29768292,77133,uncultured bacterium
+MAG.10.strict,57.97,0.934,0.482,7136,1463287,Archaea,Candidatus Bathyarchaeota archaeon B26-1,MAG.10,AMZLL_BIN_010,ERZ29768269,115547,uncultured archaeon
+MAG.1.strict,57.91,2.484,0.671,5607,1597004,Euryarchaeota,Thermoplasmata RBG-16-68-12,MAG.1,AMZLL_BIN_001,ERZ29768260,115547,uncultured archaeon
+MAG.24.orig,56.67,0.97,0.479,2630,909541,Archaea,Candidatus Bathyarchaeota archaeon B26,MAG.24,AMZLL_BIN_024,ERZ29768283,115547,uncultured archaeon
+MAG.32.orig,55.4,3.971,0.478,2041,1377197,Archaea,Candidatus Thorarchaeota archaeon,MAG.32,AMZLL_BIN_032,ERZ29768291,115547,uncultured archaeon
+MAG.2.strict,54.39,0.163,0.445,1915,997761,Euryarchaeota,Candidatus Methanoperedens nitroreducens strain ANME-2d,MAG.2,AMZLL_BIN_002,ERZ29768261,115547,uncultured archaeon
+MAG.48.orig,53.77,1.869,0.464,3475,764504,Archaea,Candidatus Thorarchaeota archaeon,MAG.48,AMZLL_BIN_048,ERZ29768307,115547,uncultured archaeon
+MAG.50.orig,53.74,2.564,0.558,2450,2374342,Bacteria,Acidobacteria bacterium,MAG.50,AMZLL_BIN_050,ERZ29768309,77133,uncultured bacterium
+MAG.44.orig,53.38,3.188,0.541,1603,2332027,Bacteria,Anaerolineae bacterium UBA4142,MAG.44,AMZLL_BIN_044,ERZ29768303,77133,uncultured bacterium
+MAG.5.orig,53.03,2.336,0.451,3300,704977,Archaea,Candidatus Bathyarchaeota archaeon B26-1,MAG.5,AMZLL_BIN_005,ERZ29768264,115547,uncultured archaeon
+MAG.11.strict,52.62,2.912,0.573,4568,1393879,Archaea,Nitrososphaeria archeon EX4484-205,MAG.11,AMZLL_BIN_011,ERZ29768270,115547,uncultured archaeon
+MAG.36.orig,52.46,1.456,0.518,2291,1279040,Archaea,Candidatus Bathyarchaeota archaeon FEN-987,MAG.36,AMZLL_BIN_036,ERZ29768295,115547,uncultured archaeon
+MAG.47.strict,51.83,0.311,0.466,2865,1131581,Archaea,Candidatus Lokiarchaeota archaeon ,MAG.47,AMZLL_BIN_047,ERZ29768306,115547,uncultured archaeon
+MAG.29.orig,51.64,4.31,0.634,1578,1521413,Bacteria,Candidatus Aminicenantes bacterium RBG-16-66-30,MAG.29,AMZLL_BIN_029,ERZ29768288,77133,uncultured bacterium
+MAG.28.orig,51.39,2.912,0.474,2893,877540,Bacteria,Candidatus Bathyarchaeota archaeon BA1,MAG.28,AMZLL_BIN_028,ERZ29768287,115547,uncultured archaeon
+MAG.42.orig,50.83,1.155,0.504,2595,954576,Bacteria,Dehalococcoidia bacterium  BG-13-53-26,MAG.42,AMZLL_BIN_042,ERZ29768301,77133,uncultured bacterium

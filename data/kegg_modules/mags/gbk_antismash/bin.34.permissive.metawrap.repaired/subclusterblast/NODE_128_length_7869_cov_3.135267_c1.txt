@@ -1,0 +1,12 @@
+ClusterBlast scores for NODE_128_length_7869_cov_3.135267
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg128_1	0	483	-		
+ctg128_2	552	4854	-		
+ctg128_3	5023	7753	-		
+
+
+Significant hits: 
+
+
+Details:

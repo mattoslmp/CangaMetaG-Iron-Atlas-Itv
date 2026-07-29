@@ -1,0 +1,23 @@
+ClusterBlast scores for NODE_15_length_13837_cov_2.619695
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg15_1	214	2017	+		
+ctg15_2	2117	3164	+		
+ctg15_3	3160	4048	+		
+ctg15_4	4049	5207	+		
+ctg15_5	5222	6269	+		
+ctg15_6	6650	6770	-		
+ctg15_7	6785	7010	-		
+ctg15_8	7022	7277	-		
+ctg15_9	7458	8493	+		
+ctg15_10	8504	9692	+		
+ctg15_11	9785	10568	+		
+ctg15_12	10578	11505	+		
+ctg15_13	11501	12383	+		
+ctg15_14	12379	13549	+		
+
+
+Significant hits: 
+
+
+Details:

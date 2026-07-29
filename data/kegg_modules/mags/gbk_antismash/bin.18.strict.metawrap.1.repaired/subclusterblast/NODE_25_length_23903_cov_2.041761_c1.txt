@@ -1,0 +1,27 @@
+ClusterBlast scores for NODE_25_length_23903_cov_2.041761
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg25_1	2	1106	-		
+ctg25_2	1121	1820	-		
+ctg25_3	1882	2722	-		
+ctg25_4	2776	3145	-		
+ctg25_5	3232	4144	-		
+ctg25_6	4140	4905	-		
+ctg25_7	4915	6121	-		
+ctg25_8	6132	7326	-		
+ctg25_9	7330	8110	-		
+ctg25_10	8255	9284	-		
+ctg25_11	9362	11276	-		
+ctg25_12	11296	11734	-		
+ctg25_13	11850	12483	-		
+ctg25_14	12660	13146	+		
+ctg25_15	13379	15056	+		
+ctg25_16	15159	16419	+		
+ctg25_17	16421	16874	+		
+ctg25_18	16904	18296	+		
+
+
+Significant hits: 
+
+
+Details:

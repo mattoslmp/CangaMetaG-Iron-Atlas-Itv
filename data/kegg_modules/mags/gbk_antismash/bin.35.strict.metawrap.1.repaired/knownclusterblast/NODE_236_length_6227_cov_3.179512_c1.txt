@@ -1,0 +1,14 @@
+ClusterBlast scores for NODE_236_length_6227_cov_3.179512
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg236_1	0	1767	-		
+ctg236_2	1917	3030	-		
+ctg236_3	3026	4073	-		
+ctg236_4	4132	4882	-		
+ctg236_5	5028	6051	-		
+
+
+Significant hits: 
+
+
+Details:

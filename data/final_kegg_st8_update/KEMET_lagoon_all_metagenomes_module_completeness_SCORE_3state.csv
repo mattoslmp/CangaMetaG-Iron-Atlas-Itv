@@ -1,0 +1,449 @@
+,AM.P1.D,AM.P1.R,AM.P2.D,AM.P2.R,TIA.P1.D,TIA.P1.R,TIA.P2.D,TIA.P2.R,TI.P1.D,TI.P1.R,TI.P2.D,TI.P2.R,TI.P3.D,TI.P3.R,TI.P4.D,TI.P4.R,VI.P1.D,VI.P1.R,VI.P2.D,VI.P2.R
+"M00001 | Glycolysis (Embden-Meyerhof pathway), glucose => pyruvate",2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
+"M00002 | Glycolysis, core module involving three-carbon compounds",2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
+"M00003 | Gluconeogenesis, oxaloacetate => fructose-6P",2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
+M00004 | Pentose phosphate pathway (Pentose phosphate cycle),2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
+"M00005 | PRPP biosynthesis, ribose 5P => PRPP",2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
+"M00006 | Pentose phosphate pathway, oxidative phase, glucose 6P => ribulose 5P",2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
+"M00007 | Pentose phosphate pathway, non-oxidative phase, fructose 6P => ribose 5P",2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
+"M00008 | Entner-Doudoroff pathway, glucose-6P => glyceraldehyde-3P + pyruvate",1,1,1,1,1,1,1,1,1,1,1,2,1,1,1,2,1,1,1,1
+"M00009 | Citrate cycle (TCA cycle, Krebs cycle)",2,2,2,2,2,2,1,1,2,1,2,2,2,1,1,2,2,2,2,2
+"M00010 | Citrate cycle, first carbon oxidation, oxaloacetate => 2-oxoglutarate",2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
+"M00011 | Citrate cycle, second carbon oxidation, 2-oxoglutarate => oxaloacetate",2,2,2,2,2,2,1,1,2,1,2,2,2,1,1,2,2,2,2,2
+M00012 | Glyoxylate cycle,2,2,0,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
+"M00013 | Malonate semialdehyde pathway, propanoyl-CoA => acetyl-CoA",1,1,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+M00014 | Glucuronate pathway (uronate pathway),0,0,0,0,0,0,0,0,2,1,1,0,0,0,0,0,0,0,0,0
+"M00015 | Proline biosynthesis, glutamate => proline",2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
+"M00016 | Lysine biosynthesis, succinyl-DAP pathway, aspartate => lysine",2,2,1,2,2,2,2,2,2,2,1,2,2,1,2,2,1,2,2,2
+"M00017 | Methionine biosynthesis, apartate => homoserine => methionine",2,1,2,2,1,2,1,1,2,2,2,2,1,2,2,1,1,2,1,1
+"M00018 | Threonine biosynthesis, aspartate => homoserine => threonine",2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
+"M00019 | Valine/isoleucine biosynthesis, pyruvate => valine / 2-oxobutanoate => isoleucine",2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
+"M00020 | Serine biosynthesis, glycerate-3P => serine",2,2,1,2,2,2,2,2,2,2,2,2,2,2,2,2,1,2,2,2
+"M00021 | Cysteine biosynthesis, serine => cysteine",2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,2,2,2
+"M00022 | Shikimate pathway, phosphoenolpyruvate + erythrose-4P => chorismate",2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,0,2,2,2
+"M00023 | Tryptophan biosynthesis, chorismate => tryptophan",2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,2,0,1,2,2
+"M00024 | Phenylalanine biosynthesis, chorismate => phenylalanine",2,1,1,1,1,1,1,2,2,2,1,2,1,1,1,1,1,1,1,2
+"M00025 | Tyrosine biosynthesis, chorismate => tyrosine",2,1,1,1,2,1,1,2,2,2,1,2,1,1,1,1,0,2,1,2
+"M00026 | Histidine biosynthesis, PRPP => histidine",2,2,1,2,2,2,2,1,2,2,2,2,2,2,2,2,0,2,2,2
+M00027 | GABA (gamma-Aminobutyrate) shunt,2,2,2,2,2,2,2,2,2,2,1,2,2,1,2,2,1,2,2,1
+"M00028 | Ornithine biosynthesis, glutamate => ornithine",2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
+M00029 | Urea cycle,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,0,1,1,1
+"M00030 | Lysine biosynthesis, AAA pathway, 2-oxoglutarate => 2-aminoadipate => lysine",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00031 | Lysine biosynthesis, mediated by LysW, 2-aminoadipate => lysine",0,0,0,0,1,0,0,0,0,1,0,0,0,1,0,1,0,0,1,0
+"M00032 | Lysine degradation, lysine => saccharopine => acetoacetyl-CoA",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00033 | Ectoine biosynthesis, aspartate => ectoine",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+M00034 | Methionine salvage pathway,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+M00035 | Methionine degradation,2,2,2,2,1,2,2,2,2,2,0,1,2,2,2,2,1,2,2,1
+"M00036 | Leucine degradation, leucine => acetoacetate + acetyl-CoA",1,0,0,1,1,0,0,0,0,0,0,0,1,0,0,1,0,0,1,0
+"M00037 | Melatonin biosynthesis, tryptophan => serotonin => melatonin",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00038 | Tryptophan metabolism, tryptophan => kynurenine => 2-aminomuconate",1,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+"M00039 | Monolignol biosynthesis, phenylalanine/tyrosine => monolignol",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00040 | Tyrosine biosynthesis, prephanate => pretyrosine => tyrosine",2,0,1,0,0,1,0,1,2,1,2,2,0,0,0,1,1,0,1,0
+"M00042 | Catecholamine biosynthesis, tyrosine => dopamine => noradrenaline => adrenaline",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00043 | Thyroid hormone biosynthesis, tyrosine => triiodothyronine/thyroxine",1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+"M00044 | Tyrosine degradation, tyrosine => homogentisate",1,1,0,0,1,0,0,0,1,0,0,0,0,0,0,1,0,0,0,0
+"M00045 | Histidine degradation, histidine => N-formiminoglutamate => glutamate",2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
+"M00046 | Pyrimidine degradation, uracil => beta-alanine, thymine => 3-aminoisobutanoate",2,2,2,1,1,1,0,1,2,2,1,2,2,0,1,2,1,1,2,1
+M00047 | Creatine pathway,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,1,0,0
+"M00048 | Inosine monophosphate biosynthesis, PRPP + glutamine => IMP",2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
+"M00049 | Adenine ribonucleotide biosynthesis, IMP => ADP,ATP",2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
+"M00050 | Guanine ribonucleotide biosynthesis IMP => GDP,GTP",2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,2,2,2
+"M00051 | Uridine monophosphate biosynthesis, glutamine (+ PRPP) => UMP",2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
+"M00052 | Pyrimidine ribonucleotide biosynthesis, UMP => UDP/UTP,CDP/CTP",2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
+"M00053 | Pyrimidine deoxyribonuleotide biosynthesis, CDP/CTP => dCDP/dCTP,dTDP/dTTP",2,2,1,2,2,2,2,1,2,1,1,2,2,0,2,2,0,1,0,1
+M00055 | N-glycan precursor biosynthesis,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00056 | O-glycan biosynthesis, mucin type core",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00057 | Glycosaminoglycan biosynthesis, linkage tetrasaccharide",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00058 | Glycosaminoglycan biosynthesis, chondroitin sulfate backbone",0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+"M00059 | Glycosaminoglycan biosynthesis, heparan sulfate backbone",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00060 | KDO2-lipid A biosynthesis, Raetz pathway, LpxL-LpxM type",1,1,0,1,0,0,1,0,1,0,0,1,1,0,1,1,0,0,0,0
+"M00061 | D-Glucuronate degradation, D-glucuronate => pyruvate + D-glyceraldehyde 3P",1,1,1,1,1,1,2,1,1,1,0,1,2,1,1,1,0,1,1,1
+M00063 | CMP-KDO biosynthesis,2,2,1,2,2,2,2,2,2,2,2,2,2,2,2,2,1,2,2,2
+M00064 | ADP-L-glycero-D-manno-heptose biosynthesis,2,2,1,2,1,2,2,2,2,1,2,1,2,1,2,2,2,2,2,2
+"M00065 | GPI-anchor biosynthesis, core oligosaccharide",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+M00066 | Lactosylceramide biosynthesis,2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+"M00067 | Sulfoglycolipids biosynthesis, ceramide/1-alkyl-2-acylglycerol => sulfatide/seminolipid",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00068 | Glycosphingolipid biosynthesis, globo-series, LacCer => Gb4Cer",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00069 | Glycosphingolipid biosynthesis, ganglio series, LacCer => GT3",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00070 | Glycosphingolipid biosynthesis, lacto-series, LacCer => Lc4Cer",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00071 | Glycosphingolipid biosynthesis, neolacto-series, LacCer => nLc4Cer",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+M00072 | N-glycosylation by oligosaccharyltransferase,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+M00073 | N-glycan precursor trimming,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00074 | N-glycan biosynthesis, high-mannose type",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00075 | N-glycan biosynthesis, complex type",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+M00076 | Dermatan sulfate degradation,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+M00077 | Chondroitin sulfate degradation,0,0,0,0,1,0,0,0,0,0,0,0,0,2,0,0,0,0,0,1
+M00078 | Heparan sulfate degradation,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+M00079 | Keratan sulfate degradation,0,0,1,0,1,0,1,0,0,0,1,0,0,1,0,0,0,1,0,1
+M00081 | Pectin degradation,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00082 | Fatty acid biosynthesis, initiation",2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,2,2,2
+"M00083 | Fatty acid biosynthesis, elongation",2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
+M00085 | Fatty acid elongation in mitochondria,1,0,0,1,0,0,0,0,0,0,1,1,0,1,1,1,0,0,0,0
+"M00086 | beta-Oxidation, acyl-CoA synthesis",2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
+M00087 | beta-Oxidation,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
+"M00088 | Ketone body biosynthesis, acetyl-CoA => acetoacetate/3-hydroxybutyrate/acetone",2,1,0,1,0,0,0,2,2,2,1,1,2,0,2,2,0,0,1,1
+M00089 | Triacylglycerol biosynthesis,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00090 | Phosphatidylcholine (PC) biosynthesis, choline => PC",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00091 | Phosphatidylcholine (PC) biosynthesis, PE => PC",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00092 | Phosphatidylethanolamine (PE) biosynthesis, ethanolamine => PE",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00093 | Phosphatidylethanolamine (PE) biosynthesis, PA => PS => PE",2,2,2,2,2,2,2,2,2,2,1,2,2,2,2,2,1,2,2,2
+M00094 | Ceramide biosynthesis,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,1,0,0
+"M00095 | C5 isoprenoid biosynthesis, mevalonate pathway",0,0,1,1,1,1,0,1,1,1,1,1,1,1,1,0,0,1,0,1
+"M00096 | C5 isoprenoid biosynthesis, non-mevalonate pathway",2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,0,2,2,2
+"M00097 | beta-Carotene biosynthesis, GGAP => beta-carotene",0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+M00098 | Acylglycerol degradation,0,1,2,0,1,1,1,0,1,1,0,1,1,0,0,2,1,1,1,0
+M00099 | Sphingosine biosynthesis,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+M00100 | Sphingosine degradation,1,1,1,1,1,1,1,0,2,1,1,1,1,0,2,1,1,1,1,2
+"M00101 | Cholesterol biosynthesis, squalene 2,3-epoxide => cholesterol",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+M00102 | Ergocalciferol biosynthesis,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+M00103 | Cholecalciferol biosynthesis,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00104 | Bile acid biosynthesis, cholesterol => cholate/chenodeoxycholate",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00106 | Conjugated bile acid biosynthesis, cholate => taurocholate/glycocholate",0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,1,1,0
+"M00107 | Steroid hormone biosynthesis, cholesterol => prognenolone => progesterone",0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,1
+"M00108 | C21-Steroid hormone biosynthesis, progesterone => corticosterone/aldosterone",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00109 | C21-Steroid hormone biosynthesis, progesterone => cortisol/cortisone",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00110 | C19/C18-Steroid hormone biosynthesis, pregnenolone => androstenedione => estrone",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+M00112 | Tocopherol/tocotorienol biosynthesis,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+M00113 | Jasmonic acid biosynthesis,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00114 | Ascorbate biosynthesis, plants, glucose-6P => ascorbate",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00115 | NAD biosynthesis, aspartate => NAD",2,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,0,1,1,2
+"M00116 | Menaquinone biosynthesis, chorismate => menaquinol",1,1,0,0,0,0,0,0,2,0,0,1,0,0,0,1,0,0,0,0
+"M00117 | Ubiquinone biosynthesis, prokaryotes, chorismate => ubiquinone",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00118 | Glutathione biosynthesis, glutamate => glutathione",2,2,0,2,1,2,1,1,2,2,0,2,2,0,2,1,0,1,0,0
+"M00119 | Pantothenate biosynthesis, valine/L-aspartate => pantothenate",2,1,1,2,2,2,2,2,2,2,2,2,2,2,2,2,1,1,1,2
+"M00120 | Coenzyme A biosynthesis, pantothenate => CoA",2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
+"M00121 | Heme biosynthesis, plants and bacteria, glutamate => heme",2,2,0,2,2,2,2,1,2,2,1,2,2,2,1,2,1,1,1,1
+"M00122 | Cobalamin biosynthesis, cobinamide => cobalamin",0,1,0,1,1,1,1,0,1,0,1,1,1,0,1,0,0,1,2,2
+"M00123 | Biotin biosynthesis, pimeloyl-ACP/CoA => biotin",2,2,0,2,1,1,2,1,2,2,2,2,2,1,2,2,1,1,1,1
+"M00124 | Pyridoxal biosynthesis, erythrose-4P => pyridoxal-5P",1,1,0,0,1,0,1,0,0,0,0,1,0,0,1,1,0,1,0,0
+"M00125 | Riboflavin biosynthesis, GTP => riboflavin/FMN/FAD",2,2,2,2,1,1,1,1,1,1,1,1,1,1,1,1,0,2,1,2
+"M00126 | Tetrahydrofolate biosynthesis, GTP => THF",1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00127 | Thiamine biosynthesis, AIR => thiamine-P/thiamine-2P",1,2,0,2,1,1,1,1,2,1,2,1,1,1,2,1,0,1,1,1
+"M00128 | Ubiquinone biosynthesis, eukaryotes, 4-hydroxybenzoate => ubiquinone",0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00129 | Ascorbate biosynthesis, animals, glucose-1P => ascorbate",0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00130 | Inositol phosphate metabolism, PI=> PIP2 => Ins(1,4,5)P3 => Ins(1,3,4,5)P4",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00131 | Inositol phosphate metabolism, Ins(1,3,4,5)P4 => Ins(1,3,4)P3 => myo-inositol",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00132 | Inositol phosphate metabolism, Ins(1,3,4)P3 => phytate",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00133 | Polyamine biosynthesis, arginine => agmatine => putrescine => spermidine",2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,0,2,2,2
+"M00134 | Polyamine biosynthesis, arginine => ornithine => putrescine",2,2,2,2,2,2,2,2,2,2,2,2,2,1,2,2,1,2,2,2
+"M00135 | GABA biosynthesis, eukaryotes, putrescine => GABA",2,2,1,1,1,0,1,1,1,0,1,1,1,1,1,1,0,1,0,0
+"M00136 | GABA biosynthesis, prokaryotes, putrescine => GABA",0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+"M00137 | Flavanone biosynthesis, phenylalanine => naringenin",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00138 | Flavonoid biosynthesis, naringenin => pelargonidin",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00140 | C1-unit interconversion, prokaryotes",2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,2,2,2,2
+"M00141 | C1-unit interconversion, eukaryotes",0,2,2,2,2,0,1,2,0,1,2,2,2,2,0,2,0,2,0,2
+"M00142 | NADH:ubiquinone oxidoreductase, mitochondria",1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+"M00143 | NADH dehydrogenase (ubiquinone) Fe-S protein/flavoprotein complex, mitochondria",1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+"M00144 | NADH:quinone oxidoreductase, prokaryotes",2,2,1,1,2,1,1,1,2,1,2,2,1,1,2,2,1,2,1,2
+"M00145 | NAD(P)H:quinone oxidoreductase, chloroplasts and cyanobacteria",1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,1
+M00146 | NADH dehydrogenase (ubiquinone) 1 alpha subcomplex,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+M00147 | NADH dehydrogenase (ubiquinone) 1 beta subcomplex,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+M00148 | Succinate dehydrogenase (ubiquinone),1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+"M00149 | Succinate dehydrogenase, prokaryotes",2,2,1,1,1,1,1,1,2,1,1,1,1,1,2,1,1,1,1,1
+"M00150 | Fumarate reductase, prokaryotes",2,1,1,1,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1
+M00151 | Cytochrome bc1 complex respiratory unit,2,2,1,2,1,2,1,1,2,1,1,1,1,1,2,1,1,1,1,1
+M00152 | Cytochrome bc1 complex,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+M00153 | Cytochrome bd ubiquinol oxidase,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+M00154 | Cytochrome c oxidase,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+"M00155 | Cytochrome c oxidase, prokaryotes",2,2,1,2,2,2,2,2,2,2,2,2,2,1,2,1,2,2,2,1
+"M00156 | Cytochrome c oxidase, cbb3-type",1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+"M00157 | F-type ATPase, prokaryotes and chloroplasts",2,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,1
+"M00158 | F-type ATPase, eukaryotes",1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+"M00159 | V/A-type ATPase, prokaryotes",1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+"M00160 | V-type ATPase, eukaryotes",1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+M00161 | Photosystem II,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,1
+M00162 | Cytochrome b6f complex,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+M00163 | Photosystem I,1,1,1,1,1,1,1,1,2,1,1,1,1,1,1,1,1,1,1,1
+M00165 | Reductive pentose phosphate cycle (Calvin cycle),2,2,1,1,2,1,1,2,2,1,1,1,2,1,2,1,1,1,1,1
+"M00166 | Reductive pentose phosphate cycle, ribulose-5P => glyceraldehyde-3P",2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
+"M00167 | Reductive pentose phosphate cycle, glyceraldehyde-3P => ribulose-5P",2,2,1,1,2,1,1,2,2,1,1,1,2,1,2,1,1,1,1,1
+"M00168 | CAM (Crassulacean acid metabolism), dark",2,2,1,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
+"M00169 | CAM (Crassulacean acid metabolism), light",2,2,2,2,2,2,2,2,2,2,1,2,1,1,2,2,2,2,2,2
+"M00170 | C4-dicarboxylic acid cycle, phosphoenolpyruvate carboxykinase type",0,1,0,0,1,1,0,0,0,0,0,0,1,0,0,1,0,0,0,0
+"M00171 | C4-dicarboxylic acid cycle, NAD - malic enzyme type",0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00172 | C4-dicarboxylic acid cycle, NADP - malic enzyme type",1,1,0,1,1,1,1,1,1,1,0,1,0,0,1,1,1,1,1,1
+M00173 | Reductive citrate cycle (Arnon-Buchanan cycle),1,1,0,1,1,0,0,1,0,1,0,1,1,1,1,1,1,1,1,1
+"M00174 | Methane oxidation, methanotroph, methane => formaldehyde",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00175 | Nitrogen fixation, nitrogen => ammonia",1,2,1,1,2,1,2,1,2,1,1,1,1,1,2,1,1,1,1,1
+"M00176 | Assimilatory sulfate reduction, sulfate => H2S",2,2,1,2,1,2,1,1,2,1,1,1,2,1,2,2,0,1,1,1
+"M00307 | Pyruvate oxidation, pyruvate => acetyl-CoA",2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
+"M00308 | Semi-phosphorylative Entner-Doudoroff pathway, gluconate => glycerate-3P",1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+"M00309 | Non-phosphorylative Entner-Doudoroff pathway, gluconate/galactonate => glycerate",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00338 | Cysteine biosynthesis, homocysteine + serine => cysteine",2,2,1,2,1,2,2,2,2,2,1,1,2,2,2,2,2,2,2,2
+"M00344 | Formaldehyde assimilation, xylulose monophosphate pathway",1,1,1,0,1,1,1,0,1,1,1,1,1,0,1,1,0,1,1,1
+"M00345 | Formaldehyde assimilation, ribulose monophosphate pathway",2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
+"M00346 | Formaldehyde assimilation, serine pathway",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00356 | Methanogenesis, methanol => methane",1,1,1,1,1,1,1,0,0,1,1,1,1,1,0,0,0,1,1,0
+"M00357 | Methanogenesis, acetate => methane",1,1,1,1,0,1,1,0,0,0,1,1,1,0,0,0,0,1,1,0
+M00358 | Coenzyme M biosynthesis,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,1,0,1,1,1
+"M00363 | EHEC pathogenicity signature, Shiga toxin",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00364 | C10-C20 isoprenoid biosynthesis, bacteria",2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
+"M00365 | C10-C20 isoprenoid biosynthesis, archaea",2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,2,2,2,2
+"M00366 | C10-C20 isoprenoid biosynthesis, plants",0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00367 | C10-C20 isoprenoid biosynthesis, non-plant eukaryotes",0,0,0,1,1,0,0,0,0,1,0,0,0,0,0,1,0,0,0,0
+"M00368 | Ethylene biosynthesis, methionine => ethylene",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00369 | Cyanogenic glycoside biosynthesis, tyrosine => dhurrin",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00370 | Glucosinolate biosynthesis, tryptophan => glucobrassicin",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00371 | Castasterone biosynthesis, campesterol => castasterone",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00372 | Abscisic acid biosynthesis, beta-carotene => abscisic acid",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+M00373 | Ethylmalonyl pathway,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+M00374 | Dicarboxylate-hydroxybutyrate cycle,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+M00375 | Hydroxypropionate-hydroxybutylate cycle,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+M00376 | 3-Hydroxypropionate bi-cycle,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+M00377 | Reductive acetyl-CoA pathway (Wood-Ljungdahl pathway),0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+M00378 | F420 biosynthesis,2,1,1,1,1,1,2,1,2,2,2,2,1,2,0,0,1,2,1,2
+M00415 | Fatty acid elongation in endoplasmic reticulum,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0
+M00416 | Cytochrome aa3-600 menaquinol oxidase,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+M00417 | Cytochrome o ubiquinol oxidase,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+"M00418 | Toluene degradation, anaerobic, toluene => benzoyl-CoA",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00419 | Cymene degradation, p-cymene => p-cumate",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00422 | Acetyl-CoA pathway, CO2 => acetyl-CoA",2,1,1,1,0,1,1,0,0,0,2,2,1,1,0,0,1,1,1,2
+"M00432 | Leucine biosynthesis, 2-oxoisovalerate => 2-oxoisocaproate",2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
+"M00433 | Lysine biosynthesis, 2-oxoglutarate => 2-oxoadipate",1,1,0,1,0,0,0,1,2,0,0,1,2,0,1,1,0,0,2,0
+"M00525 | Lysine biosynthesis, acetyl-DAP pathway, aspartate => lysine",0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00526 | Lysine biosynthesis, DAP dehydrogenase pathway, aspartate => lysine",1,1,2,1,1,2,1,2,1,1,1,1,1,1,1,1,1,2,1,1
+"M00527 | Lysine biosynthesis, DAP aminotransferase pathway, aspartate => lysine",2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,1,2
+"M00528 | Nitrification, ammonia => nitrite",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00529 | Denitrification, nitrate => nitrogen",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00530 | Dissimilatory nitrate reduction, nitrate => ammonia",2,2,0,1,0,0,0,0,1,0,0,1,1,0,1,1,0,0,1,0
+"M00531 | Assimilatory nitrate reduction, nitrate => ammonia",2,1,1,2,2,0,2,0,2,1,0,2,1,1,1,1,0,1,0,1
+M00532 | Photorespiration,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00533 | Homoprotocatechuate degradation, homoprotocatechuate => 2-oxohept-3-enedioate",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00534 | Naphthalene degradation, naphthalene => salicylate",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00535 | Isoleucine biosynthesis, pyruvate => 2-oxobutanoate",1,2,2,1,2,1,2,2,1,2,1,2,2,1,1,2,1,2,2,1
+"M00537 | Xylene degradation, xylene => methylbenzoate",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00538 | Toluene degradation, toluene => benzoate",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00539 | Cumate degradation, p-cumate => 2-oxopent-4-enoate + 2-methylpropanoate",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00540 | Benzoate degradation, cyclohexanecarboxylic acid =>pimeloyl-CoA",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00541 | Benzoyl-CoA degradation, benzoyl-CoA => 3-hydroxypimeloyl-CoA",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00542 | EHEC/EPEC pathogenicity signature, T3SS and effectors",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00543 | Biphenyl degradation, biphenyl => 2-oxopent-4-enoate + benzoate",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00544 | Carbazole degradation, carbazole => 2-oxopent-4-enoate + anthranilate",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00545 | Trans-cinnamate degradation, trans-cinnamate => acetyl-CoA",0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00546 | Purine degradation, xanthine => urea",1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00547 | Benzene/toluene degradation, benzene => catechol / toluene => 3-methylcatechol",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00548 | Benzene degradation, benzene => catechol",1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+"M00549 | Nucleotide sugar biosynthesis, glucose => UDP-glucose",2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
+"M00550 | Ascorbate degradation, ascorbate => D-xylulose-5P",0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0
+"M00551 | Benzoate degradation, benzoate => catechol / methylbenzoate => methylcatechol",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00552 | D-galactonate degradation, De Ley-Doudoroff pathway, D-galactonate => glycerate-3P",0,0,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0
+"M00554 | Nucleotide sugar biosynthesis, galactose => UDP-galactose",2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
+"M00555 | Betaine biosynthesis, choline => betaine",2,2,1,1,2,2,2,1,2,1,2,2,2,1,2,2,2,1,1,2
+"M00563 | Methanogenesis, methylamine/dimethylamine/trimethylamine => methane",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00564 | Helicobacter pylori pathogenicity signature, cagA pathogenicity island",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00565 | Trehalose biosynthesis, D-glucose 1P => trehalose",2,2,0,0,2,0,0,1,2,0,1,2,1,2,2,2,0,2,2,1
+"M00567 | Methanogenesis, CO2 => methane",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00568 | Catechol ortho-cleavage, catechol => 3-oxoadipate",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00569 | Catechol meta-cleavage, catechol => acetyl-CoA / 4-methylcatechol => propanoyl-CoA",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00570 | Isoleucine biosynthesis, threonine => 2-oxobutanoate => isoleucine",2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
+"M00572 | Pimeloyl-ACP biosynthesis, BioC-BioH pathway, malonyl-ACP => pimeloyl-ACP",2,1,0,0,1,0,2,0,2,0,0,0,0,1,1,0,0,0,0,0
+"M00573 | Biotin biosynthesis, BioI pathway, long-chain-acyl-ACP => pimeloyl-ACP => biotin",1,0,0,1,0,0,0,0,1,0,0,2,1,0,1,1,0,0,0,0
+"M00574 | Pertussis pathogenicity signature, pertussis toxin",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00575 | Pertussis pathogenicity signature, T1SS",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00576 | ETEC pathogenicity signature, heat-labile and heat-stable enterotoxins",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00577 | Biotin biosynthesis, BioW pathway, pimelate => pimeloyl-CoA => biotin",2,1,0,1,0,0,1,0,2,1,1,2,2,1,2,2,1,1,0,0
+"M00579 | Phosphate acetyltransferase-acetate kinase pathway, acetyl-CoA => acetate",2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
+"M00580 | Pentose phosphate pathway, archaea, fructose 6P => ribose 5P",2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
+"M00595 | Thiosulfate oxidation by SOX complex, thiosulfate => sulfate",1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+"M00596 | Dissimilatory sulfate reduction, sulfate => H2S",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+M00597 | Anoxygenic photosystem II,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+M00598 | Anoxygenic photosystem I,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+"M00608 | 2-Oxocarboxylic acid chain extension, 2-oxoglutarate => 2-oxoadipate => 2-oxopimelate => 2-oxosuberate",2,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+"M00609 | Cysteine biosynthesis, methionine => cysteine",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+M00611 | Oxygenic_photosynthesis_in_plants_and_cyanobacteria,1,1,0,0,1,0,0,1,2,0,0,0,1,0,1,0,0,0,0,0
+M00612 | Anoxygenic_photosynthesis_in_purple_bacteria,1,1,0,0,1,0,0,1,1,0,0,0,1,0,1,0,0,0,0,0
+M00613 | Anoxygenic_photosynthesis_in_green_nonsulfur_bacteria,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+M00614 | Anoxygenic_photosynthesis_in_green_sulfur_bacteria,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+M00615 | Nitrate_assimilation,1,0,0,1,1,0,0,0,1,0,0,1,0,0,0,0,0,0,0,0
+M00616 | Sulfate-sulfur_assimilation,2,2,0,2,0,2,1,0,1,1,0,1,1,0,1,1,0,1,0,0
+M00617 | Methanogen,1,1,1,1,0,1,1,0,0,0,1,1,1,0,0,0,1,1,1,0
+M00618 | Acetogen,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00620 | Incomplete reductive citrate cycle, acetyl-CoA => oxoglutarate",0,0,1,1,1,0,0,0,0,1,1,1,1,1,0,1,0,1,0,1
+"M00622 | Nicotinate degradation, nicotinate => fumarate",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00623 | Phthalate degradation, phthalate => protocatechuate",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00624 | Terephthalate degradation, terephthalate => 3,4-dihydroxybenzoate",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+M00625 | Methicillin resistance,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00627 | beta-Lactam resistance, Bla system",0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,1,0,0
+"M00630 | D-Galacturonate degradation (fungi), D-galacturonate => glycerol",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00631 | D-Galacturonate degradation (bacteria), D-galacturonate => pyruvate + D-glyceraldehyde 3P",2,1,2,2,2,1,2,1,1,1,1,1,2,2,1,1,0,1,0,2
+"M00632 | Galactose degradation, Leloir pathway, galactose => alpha-D-glucose-1P",2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,1,2,2,2
+"M00633 | Semi-phosphorylative Entner-Doudoroff pathway, gluconate/galactonate => glycerate-3P",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00636 | Phthalate degradation, phthalate => protocatechuate",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00637 | Anthranilate degradation, anthranilate => catechol",1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+"M00638 | Salicylate degradation, salicylate => gentisate",1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+"M00639 | Multidrug resistance, efflux pump MexCD-OprJ",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00641 | Multidrug resistance, efflux pump MexEF-OprN",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00642 | Multidrug resistance, efflux pump MexJK-OprM",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00643 | Multidrug resistance, efflux pump MexXY-OprM",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00649 | Multidrug resistance, efflux pump AdeABC",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00651 | Vancomycin resistance, D-Ala-D-Lac type",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00652 | Vancomycin resistance, D-Ala-D-Ser type",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00660 | Xanthomonas spp. pathogenicity signature, T3SS and effectors",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00661 | Paspaline biosynthesis, geranylgeranyl-PP + indoleglycerol phosphate => paspaline",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+M00664 | Nodulation,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00672 | Penicillin biosynthesis, aminoadipate + cycteine + valine => penicillin",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00673 | Cephamycin C biosynthesis, aminoadipate + cycteine + valine => cephamycin C",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00674 | Clavaminate biosynthesis, arginine + glyceraldehyde-3P => clavaminate",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00675 | Carbapenem-3-carboxylate biosynthesis, pyrroline-5-carboxylate + malonyl-CoA => carbapenem-3-carboxylate",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00696 | Multidrug resistance, efflux pump AcrEF-TolC",0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00697 | Multidrug resistance, efflux pump MdtEF-TolC",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00698 | Multidrug resistance, efflux pump BpeEF-OprC",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00700 | Multidrug resistance, efflux pump AbcA",0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00702 | Multidrug resistance, efflux pump NorB",0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00704 | Tetracycline resistance, efflux pump Tet38",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00705 | Multidrug resistance, efflux pump MepA",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00714 | Multidrug resistance, efflux pump QacA",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00718 | Multidrug resistance, efflux pump MexAB-OprM",0,0,0,0,0,0,1,1,1,0,0,0,1,0,1,0,0,0,0,0
+"M00725 | Cationic antimicrobial peptide (CAMP) resistance, dltABCD operon",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00726 | Cationic antimicrobial peptide (CAMP) resistance, lysyl-phosphatidylglycerol (L-PG) synthase MprF",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00730 | Cationic antimicrobial peptide (CAMP) resistance, VraFG transporter",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00736 | Nocardicin A biosynthesis, L-pHPG + arginine + serine => nocardicin A",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+M00740 | Methylaspartate cycle,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00741 | Propanoyl-CoA metabolism, propanoyl-CoA => succinyl-CoA",2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+"M00744 | Cationic antimicrobial peptide (CAMP) resistance, protease PgtE",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00745 | Imipenem resistance, repression of porin OprD",0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,1,0,0
+"M00746 | Multidrug resistance, repression of porin OmpF",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00761 | Undecaprenylphosphate alpha-L-Ara4N biosynthesis, UDP-GlcA => undecaprenyl phosphate alpha-L-Ara4N",1,1,2,2,1,1,1,0,2,2,0,2,1,2,2,1,0,0,2,1
+"M00763 | Ornithine biosynthesis, mediated by LysW, glutamate => ornithine",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00769 | Multidrug resistance, efflux pump MexPQ-OpmE",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00773 | Tylosin biosynthesis, methylmalonyl-CoA + malonyl-CoA => tylactone => tylosin",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00774 | Erythromycin biosynthesis, propanoyl-CoA + methylmalonyl-CoA => deoxyerythronolide B => erythromycin A/B",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00775 | Oleandomycin biosynthesis, malonyl-CoA + methylmalonyl-CoA => 8,8a-deoxyoleandolide => oleandomycin",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00776 | Pikromycin/methymycin biosynthesis, methylmalonyl-CoA + malonyl-CoA => narbonolide/10-deoxymethynolide => pikromycin/methymycin",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00777 | Avermectin biosynthesis, 2-methylbutanoyl-CoA/isobutyryl-CoA => 6,8a-Seco-6,8a-deoxy-5-oxoavermectin 1a/1b aglycone => avermectin A1a/B1a/A1b/B1b",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00778 | Type II polyketide backbone biosynthesis, acyl-CoA + malonyl-CoA => polyketide",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00779 | Dihydrokalafungin biosynthesis, octaketide => dihydrokalafungin",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00780 | Tetracycline/oxytetracycline biosynthesis, pretetramide => tetracycline/oxytetracycline",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00781 | Nogalavinone/aklavinone biosynthesis, deoxynogalonate/deoxyaklanonate => nogalavinone/aklavinone",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00782 | Mithramycin biosynthesis, 4-demethylpremithramycinone => mithramycin",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00783 | Tetracenomycin C/8-demethyltetracenomycin C biosynthesis, tetracenomycin F2 => tetracenomycin C/8-demethyltetracenomycin C",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00784 | Elloramycin biosynthesis, 8-demethyltetracenomycin C => elloramycin A",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00785 | Cycloserine biosynthesis, arginine/serine => cycloserine",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00786 | Fumitremorgin alkaloid biosynthesis, tryptophan + proline => fumitremorgin C/A",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00787 | Bacilysin biosynthesis, prephenate => bacilysin",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00788 | Terpentecin biosynthesis, GGAP => terpentecin",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00789 | Rebeccamycin biosynthesis, tryptophan => rebeccamycin",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00790 | Pyrrolnitrin biosynthesis, tryptophan => pyrrolnitrin",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+M00793 | dTDP-L-rhamnose biosynthesis,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
+M00794 | dTDP-6-deoxy-D-allose biosynthesis,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+M00795 | dTDP-beta-L-noviose biosynthesis,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+M00796 | dTDP-D-mycaminose biosynthesis,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+M00797 | dTDP-D-desosamine biosynthesis,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+M00798 | dTDP-L-mycarose biosynthesis,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+M00799 | dTDP-L-oleandrose biosynthesis,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+M00800 | dTDP-L-megosamine biosynthesis,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+M00801 | dTDP-L-olivose biosynthesis,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+M00802 | dTDP-D-forosamine biosynthesis,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+M00803 | dTDP-D-angolosamine biosynthesis,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00804 | Complete nitrification, comammox, ammonia => nitrite => nitrate",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00805 | Staurosporine biosynthesis, tryptophan => staurosporine",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00808 | Violacein biosynthesis, tryptophan => violacein",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00810 | Nicotine degradation, pyridine pathway, nicotine => 2,6-dihydroxypyridine/succinate semialdehyde",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00811 | Nicotine degradation, pyrrolidine pathway, nicotine => succinate semialdehyde",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00814 | Acarbose biosynthesis, sedoheptulopyranose-7P => acarbose",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00815 | Validamycin A biosynthesis, sedoheptulopyranose-7P => validamycin A",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00819 | Pentalenolactone biosynthesis, farnesyl-PP => pentalenolactone",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00823 | Chlortetracycline biosynthesis, pretetramide => chlortetracycline",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00824 | 9-membered enediyne core biosynthesis, malonyl-CoA => 3-hydroxyhexadeca-4,6,8,10,12,14-hexaenoyl-ACP => 9-membered enediyne core",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00825 | 10-membered enediyne core biosynthesis, malonyl-CoA => 3-hydroxyhexadeca-4,6,8,10,12,14-hexaenoyl-ACP => 10-membered enediyne core",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00826 | C-1027 benzoxazolinate moiety biosynthesis, chorismate => benzoxazolinyl-CoA",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00827 | C-1027 beta-amino acid moiety biosynthesis, tyrosine => 3-chloro-4,5-dihydroxy-beta-phenylalanyl-PCP",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00828 | Maduropeptin beta-hydroxy acid moiety biosynthesis, tyrosine => 3-(4-hydroxyphenyl)-3-oxopropanoyl-PCP",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00829 | 3,6-Dimethylsalicylyl-CoA biosynthesis, malonyl-CoA => 6-methylsalicylate => 3,6-dimethylsalicylyl-CoA",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00830 | Neocarzinostatin naphthoate moiety biosynthesis, malonyl-CoA => 2-hydroxy-5-methyl-1-naphthoate => 2-hydroxy-7-methoxy-5-methyl-1-naphthoyl-CoA",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00831 | Kedarcidin 2-hydroxynaphthoate moiety biosynthesis, malonyl-CoA => 3,6,8-trihydroxy-2-naphthoate => 3-hydroxy-7,8-dimethoxy-6-isopropoxy-2-naphthoyl-CoA",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00832 | Kedarcidin 2-aza-3-chloro-beta-tyrosine moiety biosynthesis, azatyrosine => 2-aza-3-chloro-beta-tyrosyl-PCP",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00833 | Calicheamicin biosynthesis, calicheamicinone => calicheamicin",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00834 | Calicheamicin orsellinate moiety biosynthesis, malonyl-CoA => orsellinate-ACP => 5-iodo-2,3-dimethoxyorsellinate-ACP",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00835 | Pyocyanine biosynthesis, chorismate => pyocyanine",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00836 | Coenzyme F430 biosynthesis, sirohydrochlorin => coenzyme F430",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00837 | Prodigiosin biosynthesis, L-proline => prodigiosin",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00838 | Undecylprodigiosin biosynthesis, L-proline => undecylprodigiosin",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00840 | Tetrahydrofolate biosynthesis, mediated by ribA and trpF, GTP => THF",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00841 | Tetrahydrofolate biosynthesis, mediated by PTPS, GTP => THF",0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00842 | Tetrahydrobiopterin biosynthesis, GTP => BH4",1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1
+"M00843 | L-threo-Tetrahydrobiopterin biosynthesis, GTP => L-threo-BH4",1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,1,1,1
+"M00844 | Arginine biosynthesis, ornithine => arginine",2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
+"M00845 | Arginine biosynthesis, glutamate => acetylcitrulline => arginine",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00846 | Siroheme biosynthesis, glutamate => siroheme",1,2,1,2,1,1,1,0,2,1,0,1,1,1,1,2,0,1,2,1
+"M00847 | Heme biosynthesis, archaea, siroheme => heme",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00848 | Aurachin biosynthesis, anthranilate => aurachin A",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00849 | C5 isoprenoid biosynthesis, mevalonate pathway, archaea",0,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,0,1,0,0
+"M00850 | Vibrio cholerae pathogenicity signature, cholera toxins",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+M00851 | Carbapenem resistance,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+"M00852 | Vibrio cholerae pathogenicity signature, toxin coregulated pilus",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00853 | ETEC pathogenicity signature, colonization factors",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00854 | Glycogen biosynthesis, glucose-1P => glycogen/starch",2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
+"M00855 | Glycogen degradation, glycogen => glucose-6P",2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
+"M00856 | Salmonella enterica pathogenicity signature, typhoid toxin",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00857 | Salmonella enterica pathogenicity signature, Vi antigen",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00859 | Bacillus anthracis pathogenicity signature, anthrax toxin",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00860 | Bacillus anthracis pathogenicity signature, polyglutamic acid capsule biosynthesis",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00861 | beta-Oxidation, peroxisome, VLCFA",1,0,1,0,1,2,0,1,1,1,1,1,1,0,2,1,1,1,1,1
+"M00862 | beta-Oxidation, peroxisome, tri/dihydroxycholestanoyl-CoA => choloyl/chenodeoxycholoyl-CoA",0,0,1,0,1,0,0,0,1,1,1,1,1,0,1,1,1,1,1,1
+"M00866 | KDO2-lipid A biosynthesis, Raetz pathway, non-LpxL-LpxM type",2,2,1,2,1,0,2,0,1,2,1,2,2,1,1,2,0,0,0,1
+M00867 | KDO2-lipid A modification pathway,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00868 | Heme biosynthesis, animals and fungi, glycine => heme",0,2,0,1,0,0,0,0,2,0,0,1,0,0,0,1,0,0,1,0
+"M00872 | O-glycan biosynthesis, mannose type (core M3)",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00873 | Fatty acid biosynthesis in mitochondria, animals",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00874 | Fatty acid biosynthesis in mitochondria, fungi",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00875 | Staphyloferrin B biosynthesis, L-serine => staphyloferrin B",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00876 | Staphyloferrin A biosynthesis, L-ornithine => staphyloferrin A",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00877 | Kanosamine biosynthesis, glucose 6-phosphate => kanosamine",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00878 | Phenylacetate degradation, phenylaxetate => acetyl-CoA/succinyl-CoA",1,1,0,1,1,0,1,0,1,0,0,0,1,0,0,0,0,1,0,0
+"M00879 | Arginine succinyltransferase pathway, arginine => glutamate",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00880 | Molybdenum cofactor biosynthesis, GTP => molybdenum cofactor",2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
+"M00889 | Puromycin biosynthesis, ATP => puromycin",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00890 | Roseoflavin biosynthesis, FMN => roseoflavin",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00891 | Ditryptophenaline biosynthesis, tryptophan + phenylalanine => ditryptophenaline",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00892 | UDP-N-acetyl-D-glucosamine biosynthesis, eukaryotes, glucose => UDP-GlcNAc",0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0
+"M00893 | Lovastatin biosynthesis, malonyl-CoA => lovastatin acid",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00894 | Cannabidiol biosynthesis, malonyl-CoA => cannabidiol/dronabinol",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00900 | Crocin biosynthesis, crocetin => crocin",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00901 | Fumiquinazoline biosynthesis, tryptophan + alanine + anthranilate => fumiquinazoline",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00902 | Podophyllotoxin biosynthesis, coniferyl alcohol => podophyllotoxin",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00903 | Fosfomycin biosynthesis, phosphoenolpyruvate => fosfomycin",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00904 | Dapdiamides biosynthesis, L-2,3-diaminopropanoate => dapdiamide A/B/C",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00905 | Grixazone biosynthesis, aspartate 4-semialdehyde => grixazone B",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00906 | Ethynylserine biosynthesis, lysine => ethynylserine",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00909 | UDP-N-acetyl-D-glucosamine biosynthesis, prokaryotes, glucose => UDP-GlcNAc",2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
+M00910 | Phenylalanine_biosynthesis,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+M00911 | Riboflavin_biosynthesis_fungi,1,1,0,1,0,0,0,0,1,0,0,0,1,0,1,1,0,0,0,0
+M00912 | NAD_biosynthesis,2,2,0,0,0,0,0,0,2,0,0,0,0,0,0,1,0,0,0,0
+M00913 | Pantothenate_biosynthesis,1,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,0,0,1
+M00914 | Coenzyme_A_biosynthesis_archaea,1,0,0,0,1,0,1,1,0,2,1,1,0,1,0,1,1,1,0,1
+M00915 | Caffeine_degradation,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+M00916 | Pyridoxal-P_biosynthesis,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2,2
+M00917 | Phytosterol_biosynthesis_squalene_2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+M00918 | Aerobactin_biosynthesis,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+M00919 | Ectoine_degradation,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+M00921 | Cyclooctatin_biosynthesis,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+M00922 | CMP-Neu5Ac_biosynthesis,0,0,1,0,1,0,1,0,1,0,0,1,1,1,0,0,0,0,0,0
+M00923 | UDP-L-FucNAm_biosynthesis,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+M00924 | Cobalamin_biosynthesis_anaerobicc-diamide,1,0,0,0,0,0,0,0,2,0,0,0,1,0,0,0,0,0,0,0
+M00925 | Cobalamin_biosynthesis_aerobicc-diamide,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+M00926 | Heme_biosynthesis_bacteria,2,2,0,2,1,1,1,0,1,1,1,1,2,1,0,1,1,1,1,1
+M00927 | Gibberellin_A12_biosynthesis,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+M00928 | Gibberellin_A4--A1_biosynthesis,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+M00929 | Gibberellin_A1_biosynthesis,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+M00930 | Menaquinone_biosynthesis_futalosine_pathway,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+M00931 | Menaquinone_biosynthesis_modified_futalosine_pathway,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+M00932 | Phylloquinone_biosynthesis,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+M00933 | Plastoquinone_biosynthesis,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+M00934 | Mycinamicin_biosynthesis,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+M00935 | Methanofuran_biosynthesis,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0
+M00936 | Melatonin_biosynthesis_plants,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+M00937 | Aflatoxin_biosynthesis,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+M00938 | Pyrimidine_deoxyribonucleotide_biosynthesis,2,2,1,2,2,2,2,1,2,1,1,2,2,1,2,2,1,1,1,1
+M00939 | Pyrimidine_degradation,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+M00940 | Flavanone_biosynthesis,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+M00941 | Isoflavone_biosynthesis,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+M00942 | Pterocarpan_biosynthesis,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+M00943 | Reticuline_biosynthesis,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+M00944 | Morphine_biosynthesis,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+M00945 | Sanguinarine_biosynthesis,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+M00946 | Noscapine_biosynthesis,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+M00947 | D-Arginine_racemization,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+M00948 | Hydroxyproline_degradation,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+M00949 | Staphylopine_biosynthesis,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+M00950 | Biotin_biosynthesis_BioU_pathway,1,1,0,1,1,0,1,1,1,1,1,1,1,0,1,1,0,0,0,0

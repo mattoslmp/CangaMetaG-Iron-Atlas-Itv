@@ -1,0 +1,16 @@
+{
+  "stress_1": 0.05379326105805762,
+  "iterations": 183,
+  "converged": true,
+  "rank_correlation_observed_vs_ordination_distances": 0.9835609967326695,
+  "transformation": "square root of row-wise relative proportions",
+  "dissimilarity": "Bray-Curtis",
+  "dimensions": 2,
+  "nonmetric": true,
+  "n_init": 20,
+  "max_iter": 1000,
+  "seed": 42,
+  "normalized_stress": true,
+  "domain": "Archaea",
+  "n_samples": 20
+}

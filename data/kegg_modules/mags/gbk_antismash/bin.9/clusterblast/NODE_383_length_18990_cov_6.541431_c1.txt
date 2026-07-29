@@ -1,0 +1,817 @@
+ClusterBlast scores for NODE_383_length_18990_cov_6.541431
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg19_9	13070	14597	-		
+ctg19_10	14648	15758	+		
+ctg19_11	15603	16545	-		
+ctg19_12	16541	17390	-		
+ctg19_13	17398	17665	-		
+ctg19_14	17692	18352	-		
+ctg19_15	18459	18990	+		
+
+
+Significant hits: 
+1. NC_009675	Anaeromyxobacter sp. Fw109-5, complete sequence
+2. NZ_CP012332	Vulgatibacter incomptus strain DSM 27710 chromosome, complete genome
+3. NZ_AP014879	Sulfuricaulis limicola strain HA5 chromosome, complete genome
+4. NZ_BSFN01000024	Pseudomonas turukhanskensis strain VKM B-2935 spades_K_25_97_24, whole genome shotgun sequence
+5. NZ_JAMXMC010000003	Ideonella sp. NS12-5 contig3, whole genome shotgun sequence
+6. NZ_CP013993	Pseudomonas aeruginosa DHS01 strain DH01 chromosome, complete genome
+7. NZ_CP021774	Pseudomonas aeruginosa strain Pa124 chromosome, complete genome
+8. NZ_CP026680	Pseudomonas aeruginosa strain F5677 chromosome, complete genome
+9. NZ_CP053706	Pseudomonas aeruginosa strain PAC1 chromosome, complete genome
+10. NZ_CP110346	Pseudomonas aeruginosa strain PALA35 chromosome, complete genome
+11. NZ_CP099397	Pseudomonas hydrolytica strain DSWY01 chromosome, complete genome
+12. NZ_CP054128	Pseudomonas sp. MPDS chromosome, complete genome
+13. NZ_ML178805	Pseudomonas sp. HS-2 Scaffold1, whole genome shotgun sequence
+14. NC_021491	Pseudomonas putida H8234, complete sequence
+15. NZ_AP015031	Pseudomonas putida strain KF715 plasmid pKF715B, complete sequence
+16. NZ_CP044084	Pseudomonas luteola strain FDAARGOS_637 plasmid unnamed1, complete sequence
+17. NZ_CP047313	Pseudomonas putida strain YC-AE1 plasmid unnamed2, complete sequence
+18. NZ_CP079828	Pseudomonas sp. HD6515 plasmid pHD6515-VIM, complete sequence
+19. NZ_FMTL01000001	Pseudomonas peli strain DSM 17833, whole genome shotgun sequence
+20. NZ_CP018743	Pseudomonas putida strain DRA525 chromosome
+21. NZ_JYGC02000004	Pseudomonas aeruginosa strain MRSN 20176 scaffold00004, whole genome shotgun sequence
+22. NZ_LR215729	Pseudomonas marincola strain YSy11 chromosome PMYSY11, complete sequence
+23. NZ_CP100553	Pseudomonas hydrolytica strain KHPS2 chromosome, complete genome
+24. NZ_CP113519	Pseudomonas sp. GOM7 chromosome, complete genome
+25. NC_015410	Pseudomonas mendocina NK-01, complete sequence
+26. NZ_CP045349	Pseudomonas sp. THAF187a chromosome, complete genome
+27. NZ_CP116239	Pseudomonas sp. TUM22785 chromosome, complete genome
+28. NZ_LR130779	Pseudomonas oleovorans strain T9AD chromosome POT9AD, complete sequence
+29. NZ_CP016162	Pseudomonas alcaliphila JAB1 chromosome, complete genome
+30. NZ_CP031606	Pseudomonas sp. phDV1 chromosome, complete genome
+31. NZ_CP087705	Halopseudomonas aestusnigri strain GOM5 chromosome, complete genome
+32. NZ_CP111110	Pseudomonas chengduensis strain BC1815 chromosome, complete genome
+33. NZ_HG916826	Pseudomonas oleovorans CECT 5344 strain CECT5344 chromosome I, complete sequence
+34. NZ_LT629797	Pseudomonas sihuiensis strain KCTC 32246 chromosome I
+35. NZ_CP011508	Pseudomonas mendocina strain NSYSU chromosome, complete genome
+36. NZ_CP086379	Pseudomonas furukawaii strain ZS1 chromosome
+37. NZ_CP088081	Ideonella dechloratans strain CCUG 30977 chromosome, complete genome
+38. NZ_CP060008	Pseudomonas sp. B11D7D chromosome, complete genome
+39. NZ_AP023189	Pseudomonas tohonis strain TUM18999 chromosome, complete genome
+40. NZ_CP032552	Pseudomonas aeruginosa strain PA34 chromosome, complete genome
+41. NZ_CP095766	Pseudomonas chengduensis strain T1624 chromosome, complete genome
+42. NZ_AP014862	Pseudomonas furukawaii strain KF707 chromosome, complete genome
+43. NZ_CP014062	Pseudomonas monteilii strain FDAARGOS_171 chromosome, complete genome
+44. NZ_AP018439	Undibacterium sp. KW1 chromosome, complete genome
+45. NZ_MOBU01000032	Pseudomonas fluorescens strain 24D3 24D3_Joined_contig_2, whole genome shotgun sequence
+46. NZ_PIZL01000001	Vibrio sp. vnigr-6D03 17_S17_L001_R1_001__paired__contig_1, whole genome shotgun sequence
+47. NZ_CP073910	Sphingobium phenoxybenzoativorans strain Tas13 chromosome, complete genome
+48. NZ_JABRWJ010000012	Aquabacterium terrae strain S2 contig12, whole genome shotgun sequence
+49. NZ_CP088294	Pseudomonas sp. J452 chromosome
+50. NZ_CP082244	Pseudomonas otitidis strain CSMC7.1 chromosome, complete genome
+
+
+Details:
+
+>>
+1. NC_009675
+Source: Anaeromyxobacter sp. Fw109-5, complete sequence
+Type: RiPP-like
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1086.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg19_11	ANAE109_RS23335	52	229	81.15015974440894	1.5e-72
+ctg19_12	ANAE109_RS07925	68	395	97.51773049645391	1.06e-137
+ctg19_14	ANAE109_RS07935	66	270	94.52054794520548	2.06e-90
+ctg19_15	ANAE109_RS07910	63	192	92.09039548022598	8.57e-61
+
+
+
+>>
+2. NZ_CP012332
+Source: Vulgatibacter incomptus strain DSM 27710 chromosome, complete genome
+Type: RiPP-like
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 539.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg19_11	AKJ08_RS05960	44	172	81.46964856230032	5.55e-50
+ctg19_12	AKJ08_RS05965	64	367	96.09929078014184	1.12e-126
+
+
+
+>>
+3. NZ_AP014879
+Source: Sulfuricaulis limicola strain HA5 chromosome, complete genome
+Type: RiPP-like
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 426.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg19_11	SCL_RS03855	33	110	82.42811501597444	3.07e-26
+ctg19_12	SCL_RS03860	56	316	93.61702127659575	1.23e-106
+
+
+
+>>
+4. NZ_BSFN01000024
+Source: Pseudomonas turukhanskensis strain VKM B-2935 spades_K_25_97_24, whole genome shotgun sequence
+Type: RiPP-like
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 401.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg19_11	PKE98_RS24035	37	119	69.00958466453673	9.87e-30
+ctg19_12	PKE98_RS24030	49	282	93.61702127659575	3.06e-93
+
+
+
+>>
+5. NZ_JAMXMC010000003
+Source: Ideonella sp. NS12-5 contig3, whole genome shotgun sequence
+Type: RiPP-like
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 401.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg19_11	M0L44_RS05655	33	86	84.34504792332268	4.24e-17
+ctg19_12	M0L44_RS05660	54	315	91.84397163120568	3.79e-106
+
+
+
+>>
+6. NZ_CP013993
+Source: Pseudomonas aeruginosa DHS01 strain DH01 chromosome, complete genome
+Type: RiPP-like
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 400.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg19_11	DPADHS01_RS16100	34	119	81.46964856230032	7.74e-30
+ctg19_12	DPADHS01_RS16105	50	281	94.32624113475178	4.06e-93
+
+
+
+>>
+7. NZ_CP021774
+Source: Pseudomonas aeruginosa strain Pa124 chromosome, complete genome
+Type: RiPP-like
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 400.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg19_11	CDG41_RS16020	34	119	81.46964856230032	7.74e-30
+ctg19_12	CDG41_RS16025	50	281	94.32624113475178	4.06e-93
+
+
+
+>>
+8. NZ_CP026680
+Source: Pseudomonas aeruginosa strain F5677 chromosome, complete genome
+Type: RiPP-like
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 400.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg19_11	HV91_RS15450	34	119	81.46964856230032	7.74e-30
+ctg19_12	HV91_RS15445	50	281	94.32624113475178	4.06e-93
+
+
+
+>>
+9. NZ_CP053706
+Source: Pseudomonas aeruginosa strain PAC1 chromosome, complete genome
+Type: RiPP-like
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 400.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg19_11	HPT09_RS06980	34	119	81.46964856230032	7.74e-30
+ctg19_12	HPT09_RS06975	50	281	94.32624113475178	4.06e-93
+
+
+
+>>
+10. NZ_CP110346
+Source: Pseudomonas aeruginosa strain PALA35 chromosome, complete genome
+Type: RiPP-like
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 400.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg19_11	PALA35_RS15160	34	119	81.46964856230032	7.74e-30
+ctg19_12	PALA35_RS15165	50	281	94.32624113475178	4.06e-93
+
+
+
+>>
+11. NZ_CP099397
+Source: Pseudomonas hydrolytica strain DSWY01 chromosome, complete genome
+Type: RiPP-like
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 400.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg19_11	L1F06_RS11745	34	113	81.78913738019169	1.66e-27
+ctg19_12	L1F06_RS11750	50	287	94.32624113475178	2.16e-95
+
+
+
+>>
+12. NZ_CP054128
+Source: Pseudomonas sp. MPDS chromosome, complete genome
+Type: RiPP-like
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 399.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg19_11	HQ912_RS15205	34	119	81.46964856230032	1.51e-29
+ctg19_12	HQ912_RS15200	49	280	94.32624113475178	1.64e-92
+
+
+
+>>
+13. NZ_ML178805
+Source: Pseudomonas sp. HS-2 Scaffold1, whole genome shotgun sequence
+Type: RiPP-like
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 399.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg19_11	E0W67_RS02830	34	119	81.46964856230032	1.51e-29
+ctg19_12	E0W67_RS02825	49	280	94.32624113475178	1.16e-92
+
+
+
+>>
+14. NC_021491
+Source: Pseudomonas putida H8234, complete sequence
+Type: RiPP-like
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 399.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg19_11	L483_RS16030	33	118	81.46964856230032	2.11e-29
+ctg19_12	L483_RS16035	50	281	94.32624113475178	4.06e-93
+
+
+
+>>
+15. NZ_AP015031
+Source: Pseudomonas putida strain KF715 plasmid pKF715B, complete sequence
+Type: RiPP-like
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 399.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg19_11	KF715C_RS34240	33	118	81.46964856230032	2.11e-29
+ctg19_12	KF715C_RS34245	50	281	94.32624113475178	4.06e-93
+
+
+
+>>
+16. NZ_CP044084
+Source: Pseudomonas luteola strain FDAARGOS_637 plasmid unnamed1, complete sequence
+Type: RiPP-like
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 399.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg19_11	FOB45_RS01440	33	118	81.46964856230032	2.11e-29
+ctg19_12	FOB45_RS01435	50	281	94.32624113475178	4.06e-93
+
+
+
+>>
+17. NZ_CP047313
+Source: Pseudomonas putida strain YC-AE1 plasmid unnamed2, complete sequence
+Type: RiPP-like
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 399.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg19_11	GR140_RS31760	33	118	81.46964856230032	2.11e-29
+ctg19_12	GR140_RS31765	50	281	94.32624113475178	4.06e-93
+
+
+
+>>
+18. NZ_CP079828
+Source: Pseudomonas sp. HD6515 plasmid pHD6515-VIM, complete sequence
+Type: RiPP-like
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 399.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg19_11	KW568_RS30700	33	118	81.46964856230032	2.11e-29
+ctg19_12	KW568_RS30695	50	281	94.32624113475178	4.06e-93
+
+
+
+>>
+19. NZ_FMTL01000001
+Source: Pseudomonas peli strain DSM 17833, whole genome shotgun sequence
+Type: RiPP-like
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 396.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg19_11	BLO50_RS07870	37	116	70.6070287539936	1.03e-28
+ctg19_12	BLO50_RS07875	49	280	93.61702127659575	1.24e-92
+
+
+
+>>
+20. NZ_CP018743
+Source: Pseudomonas putida strain DRA525 chromosome
+Type: RiPP-like
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 394.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg19_11	BL240_RS05745	33	114	81.46964856230032	1.16e-27
+ctg19_12	BL240_RS05750	50	280	92.90780141843972	1.64e-92
+
+
+
+>>
+21. NZ_JYGC02000004
+Source: Pseudomonas aeruginosa strain MRSN 20176 scaffold00004, whole genome shotgun sequence
+Type: RiPP-like
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 394.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg19_11	TN45_RS14880	33	114	81.46964856230032	1.16e-27
+ctg19_12	TN45_RS14885	50	280	92.90780141843972	1.64e-92
+
+
+
+>>
+22. NZ_LR215729
+Source: Pseudomonas marincola strain YSy11 chromosome PMYSY11, complete sequence
+Type: RiPP-like
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 394.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg19_11	PMYSY11_RS21005	35	110	70.6070287539936	3.82e-26
+ctg19_12	PMYSY11_RS21010	50	284	93.61702127659575	3.77e-94
+
+
+
+>>
+23. NZ_CP100553
+Source: Pseudomonas hydrolytica strain KHPS2 chromosome, complete genome
+Type: RiPP-like
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 390.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg19_11	NLY38_RS12740	34	104	76.03833865814697	3.38e-24
+ctg19_12	NLY38_RS12745	50	286	94.32624113475178	8.74e-95
+
+
+
+>>
+24. NZ_CP113519
+Source: Pseudomonas sp. GOM7 chromosome, complete genome
+Type: RiPP-like
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 390.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg19_11	OU800_RS12230	34	104	76.03833865814697	4.7e-24
+ctg19_12	OU800_RS12225	50	286	94.32624113475178	4.35e-95
+
+
+
+>>
+25. NC_015410
+Source: Pseudomonas mendocina NK-01, complete sequence
+Type: RiPP-like
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 389.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg19_11	MDS_RS12660	34	103	76.03833865814697	6.54e-24
+ctg19_12	MDS_RS12665	50	286	94.32624113475178	4.35e-95
+
+
+
+>>
+26. NZ_CP045349
+Source: Pseudomonas sp. THAF187a chromosome, complete genome
+Type: RiPP-like
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 389.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg19_11	FIV02_RS20665	34	103	76.03833865814697	6.54e-24
+ctg19_12	FIV02_RS20660	50	286	94.32624113475178	4.35e-95
+
+
+
+>>
+27. NZ_CP116239
+Source: Pseudomonas sp. TUM22785 chromosome, complete genome
+Type: RiPP-like
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 389.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg19_11	PI990_RS04370	34	103	76.03833865814697	6.54e-24
+ctg19_12	PI990_RS04375	50	286	94.32624113475178	4.35e-95
+
+
+
+>>
+28. NZ_LR130779
+Source: Pseudomonas oleovorans strain T9AD chromosome POT9AD, complete sequence
+Type: RiPP-like
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 389.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg19_11	POT9AD_RS24685	34	103	76.03833865814697	6.54e-24
+ctg19_12	POT9AD_RS24680	50	286	94.32624113475178	4.35e-95
+
+
+
+>>
+29. NZ_CP016162
+Source: Pseudomonas alcaliphila JAB1 chromosome, complete genome
+Type: RiPP-like
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 389.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg19_11	UYA_RS12560	34	103	76.03833865814697	9.09e-24
+ctg19_12	UYA_RS12555	50	286	94.32624113475178	4.35e-95
+
+
+
+>>
+30. NZ_CP031606
+Source: Pseudomonas sp. phDV1 chromosome, complete genome
+Type: RiPP-like
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 389.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg19_11	DZC76_RS10750	34	103	76.03833865814697	9.09e-24
+ctg19_12	DZC76_RS10745	50	286	94.32624113475178	4.35e-95
+
+
+
+>>
+31. NZ_CP087705
+Source: Halopseudomonas aestusnigri strain GOM5 chromosome, complete genome
+Type: RiPP-like
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 389.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg19_11	LO767_RS00415	34	103	76.03833865814697	9.09e-24
+ctg19_12	LO767_RS00420	50	286	94.32624113475178	4.35e-95
+
+
+
+>>
+32. NZ_CP111110
+Source: Pseudomonas chengduensis strain BC1815 chromosome, complete genome
+Type: RiPP-like
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 389.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg19_11	OF113_RS17855	34	103	76.03833865814697	9.09e-24
+ctg19_12	OF113_RS17850	50	286	94.32624113475178	4.35e-95
+
+
+
+>>
+33. NZ_HG916826
+Source: Pseudomonas oleovorans CECT 5344 strain CECT5344 chromosome I, complete sequence
+Type: RiPP-like
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 389.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg19_11	BN5_RS10215	34	103	76.03833865814697	9.09e-24
+ctg19_12	BN5_RS10220	50	286	94.32624113475178	4.35e-95
+
+
+
+>>
+34. NZ_LT629797
+Source: Pseudomonas sihuiensis strain KCTC 32246 chromosome I
+Type: RiPP-like
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 389.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg19_11	BLT86_RS06175	34	103	76.03833865814697	9.09e-24
+ctg19_12	BLT86_RS06180	50	286	94.32624113475178	4.35e-95
+
+
+
+>>
+35. NZ_CP011508
+Source: Pseudomonas mendocina strain NSYSU chromosome, complete genome
+Type: RiPP-like
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 389.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg19_11	PSMEN_RS01460	34	103	76.03833865814697	1.26e-23
+ctg19_12	PSMEN_RS01465	50	286	94.32624113475178	4.35e-95
+
+
+
+>>
+36. NZ_CP086379
+Source: Pseudomonas furukawaii strain ZS1 chromosome
+Type: RiPP-like
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 389.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg19_11	LMK08_RS14025	33	102	76.03833865814697	3.39e-23
+ctg19_12	LMK08_RS14030	50	287	94.32624113475178	2.16e-95
+
+
+
+>>
+37. NZ_CP088081
+Source: Ideonella dechloratans strain CCUG 30977 chromosome, complete genome
+Type: RiPP-like
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 387.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg19_11	LRM40_RS07985	32	83	79.55271565495208	5.76e-16
+ctg19_12	LRM40_RS07980	53	304	91.84397163120568	6.08e-102
+
+
+
+>>
+38. NZ_CP060008
+Source: Pseudomonas sp. B11D7D chromosome, complete genome
+Type: RiPP-like
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 386.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg19_11	HNQ27_RS16945	32	103	81.78913738019169	9.09e-24
+ctg19_12	HNQ27_RS16940	50	283	94.32624113475178	1.01e-93
+
+
+
+>>
+39. NZ_AP023189
+Source: Pseudomonas tohonis strain TUM18999 chromosome, complete genome
+Type: RiPP-like
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 386.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg19_11	HSX14_RS10650	33	103	76.03833865814697	1.26e-23
+ctg19_12	HSX14_RS10655	50	283	94.32624113475178	1.43e-93
+
+
+
+>>
+40. NZ_CP032552
+Source: Pseudomonas aeruginosa strain PA34 chromosome, complete genome
+Type: RiPP-like
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 386.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg19_11	PA34_RS15740	33	103	76.03833865814697	1.26e-23
+ctg19_12	PA34_RS15735	50	283	94.32624113475178	1.43e-93
+
+
+
+>>
+41. NZ_CP095766
+Source: Pseudomonas chengduensis strain T1624 chromosome, complete genome
+Type: RiPP-like
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 385.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg19_11	MYO55_RS12990	34	102	76.03833865814697	1.76e-23
+ctg19_12	MYO55_RS12995	50	283	94.32624113475178	7.1e-94
+
+
+
+>>
+42. NZ_AP014862
+Source: Pseudomonas furukawaii strain KF707 chromosome, complete genome
+Type: RiPP-like
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 385.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg19_11	KF707C_RS14180	33	102	76.03833865814697	2.44e-23
+ctg19_12	KF707C_RS14185	50	283	94.32624113475178	1.43e-93
+
+
+
+>>
+43. NZ_CP014062
+Source: Pseudomonas monteilii strain FDAARGOS_171 chromosome, complete genome
+Type: RiPP-like
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 385.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg19_11	AL532_RS03620	33	102	76.03833865814697	2.44e-23
+ctg19_12	AL532_RS03615	50	283	94.32624113475178	1.43e-93
+
+
+
+>>
+44. NZ_AP018439
+Source: Undibacterium sp. KW1 chromosome, complete genome
+Type: RiPP-like
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 385.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg19_11	UNDKW_RS21475	32	86	77.31629392971246	2.48e-17
+ctg19_12	UNDKW_RS21470	52	299	94.32624113475178	4.6e-100
+
+
+
+>>
+45. NZ_MOBU01000032
+Source: Pseudomonas fluorescens strain 24D3 24D3_Joined_contig_2, whole genome shotgun sequence
+Type: RiPP-like
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 384.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg19_11	BK671_RS28685	35	108	72.20447284345049	1.19e-25
+ctg19_12	BK671_RS28690	49	276	92.90780141843972	4.19e-91
+
+
+
+>>
+46. NZ_PIZL01000001
+Source: Vibrio sp. vnigr-6D03 17_S17_L001_R1_001__paired__contig_1, whole genome shotgun sequence
+Type: RiPP-like
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 384.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg19_11	CW749_RS01900	31	94	75.07987220447284	3.73e-20
+ctg19_12	CW749_RS01905	49	290	92.90780141843972	1.2e-96
+
+
+
+>>
+47. NZ_CP073910
+Source: Sphingobium phenoxybenzoativorans strain Tas13 chromosome, complete genome
+Type: RiPP-like
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 383.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg19_11	KFK14_RS09495	38	110	71.56549520766772	1.63e-26
+ctg19_12	KFK14_RS09490	52	273	95.74468085106383	1.2e-89
+
+
+
+>>
+48. NZ_JABRWJ010000012
+Source: Aquabacterium terrae strain S2 contig12, whole genome shotgun sequence
+Type: RiPP-like
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 383.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg19_11	HLB44_RS31305	33	99	75.07987220447284	5.66e-22
+ctg19_12	HLB44_RS31310	50	284	93.61702127659575	3.2e-94
+
+
+
+>>
+49. NZ_CP088294
+Source: Pseudomonas sp. J452 chromosome
+Type: RiPP-like
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 382.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg19_11	LRS11_RS16830	34	108	82.42811501597444	1.24e-25
+ctg19_12	LRS11_RS16825	48	274	94.32624113475178	3.08e-90
+
+
+
+>>
+50. NZ_CP082244
+Source: Pseudomonas otitidis strain CSMC7.1 chromosome, complete genome
+Type: RiPP-like
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 382.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg19_11	K6751_RS14535	33	102	76.03833865814697	2.44e-23
+ctg19_12	K6751_RS14530	50	280	94.32624113475178	2.33e-92
+

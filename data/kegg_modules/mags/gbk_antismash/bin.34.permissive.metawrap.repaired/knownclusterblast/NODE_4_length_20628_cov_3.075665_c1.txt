@@ -1,0 +1,26 @@
+ClusterBlast scores for NODE_4_length_20628_cov_3.075665
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg4_13	7588	8410	+		
+ctg4_14	8431	9880	+		
+ctg4_15	9891	10746	-		
+ctg4_16	10920	11232	-		
+ctg4_17	11258	11474	-		
+ctg4_18	11686	12754	+		
+ctg4_19	12842	13466	+		
+ctg4_20	13462	14935	+		
+ctg4_21	15370	15709	-		
+ctg4_22	15705	15918	-		
+ctg4_23	15932	16496	+		
+ctg4_24	16564	18469	-		
+ctg4_25	18559	18916	-		
+ctg4_26	18921	19152	-		
+ctg4_27	19175	20066	-		
+ctg4_28	20139	20373	+		
+ctg4_29	20372	20591	+		
+
+
+Significant hits: 
+
+
+Details:

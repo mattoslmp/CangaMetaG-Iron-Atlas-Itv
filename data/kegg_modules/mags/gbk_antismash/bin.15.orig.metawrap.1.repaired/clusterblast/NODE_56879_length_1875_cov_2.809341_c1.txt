@@ -1,0 +1,10 @@
+ClusterBlast scores for NODE_56879_length_1875_cov_2.809341
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg612_1	2	1874	-		
+
+
+Significant hits: 
+
+
+Details:

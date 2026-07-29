@@ -1,0 +1,14 @@
+ClusterBlast scores for NODE_10104_length_4430_cov_4.900571
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg111_1	126	561	-		
+ctg111_2	801	1143	+		
+ctg111_3	1171	2176	+		
+ctg111_4	2257	3589	+		
+ctg111_5	3591	4428	-		
+
+
+Significant hits: 
+
+
+Details:

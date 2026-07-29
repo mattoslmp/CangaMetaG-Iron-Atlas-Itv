@@ -1,0 +1,110 @@
+ClusterBlast scores for NODE_4_length_89084_cov_13.679037
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg1_1	2	851	+		
+ctg1_2	868	1174	+		
+ctg1_3	1175	1508	-		
+ctg1_4	1640	2252	-		
+ctg1_5	2520	3105	+		
+ctg1_6	3208	3784	-		
+ctg1_7	3844	4789	-		
+ctg1_8	4794	5778	-		
+ctg1_9	5977	6628	+		
+ctg1_10	6664	7375	+		
+ctg1_11	7495	8464	+		
+ctg1_12	8482	9511	+		
+ctg1_13	9510	9711	+		
+ctg1_14	9703	10417	+		
+ctg1_15	10449	11355	-		
+ctg1_16	11351	11939	-		
+ctg1_17	11940	14328	-		
+ctg1_18	14483	14783	-		
+ctg1_19	14916	15156	+		
+
+
+Significant hits: 
+1. NZ_KK211102	Desulfitibacter alkalitolerans DSM 16504 K364DRAFT_scaffold00003.3, whole genome shotgun sequence
+2. NZ_CP104208	Psychrodesulfovibrio sp. FT415 chromosome, complete genome
+3. NZ_CP087381	Desulfovibrio subterraneus strain ND17 chromosome, complete genome
+4. NZ_CP026995	Nitrosopumilus ureiphilus strain PS0 chromosome, complete genome
+5. NZ_CP040751	Salidesulfovibrio onnuriiensis strain IOR2 chromosome, complete genome
+
+
+Details:
+
+>>
+1. NZ_KK211102
+Source: Desulfitibacter alkalitolerans DSM 16504 K364DRAFT_scaffold00003.3, whole genome shotgun sequence
+Type: cyclic-lactone-autoinducer
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 888.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_15	K364_RS0114560	39	217	96.67774086378738	1.75e-67
+ctg1_16	K364_RS24285	36	128	87.6923076923077	2.53e-35
+ctg1_17	K364_RS0114555	44	543	77.23270440251572	1.09e-182
+
+
+
+>>
+2. NZ_CP104208
+Source: Psychrodesulfovibrio sp. FT415 chromosome, complete genome
+Type: NRPS-like
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 813.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_15	N1030_RS03920	41	219	97.34219269102991	3.15e-68
+ctg1_16	N1030_RS03925	36	100	87.6923076923077	1.24e-24
+ctg1_17	N1030_RS03915	42	494	77.10691823899371	8.94e-164
+
+
+
+>>
+3. NZ_CP087381
+Source: Desulfovibrio subterraneus strain ND17 chromosome, complete genome
+Type: NRPS
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 806.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_15	LN040_RS10960	41	219	96.3455149501661	3.15e-68
+ctg1_16	LN040_RS10965	35	98	86.15384615384616	9.64e-24
+ctg1_17	LN040_RS10955	42	489	77.10691823899371	7.9e-162
+
+
+
+>>
+4. NZ_CP026995
+Source: Nitrosopumilus ureiphilus strain PS0 chromosome, complete genome
+Type: lanthipeptide-class-v
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 211.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_3	C5F50_RS03835	42	84	96.36363636363636	5.1e-20
+ctg1_4	C5F50_RS03840	40	127	80.78817733990148	6.55e-35
+
+
+
+>>
+5. NZ_CP040751
+Source: Salidesulfovibrio onnuriiensis strain IOR2 chromosome, complete genome
+Type: arylpolyene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 594.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_16	FGL65_RS14155	36	103	88.2051282051282	5.8e-26
+ctg1_17	FGL65_RS14165	44	491	82.64150943396227	2.05e-162
+

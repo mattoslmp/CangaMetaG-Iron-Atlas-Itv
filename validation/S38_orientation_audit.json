@@ -1,0 +1,14 @@
+{
+  "figure": "S38",
+  "input_file": "data/final_kegg_st8_update/KEMET_lagoon_all_metagenomes_module_completeness_STATUS_3state.csv",
+  "rows": 21,
+  "columns": 20,
+  "row_semantics": "KEGG/KEMET modules and metabolic pathways",
+  "column_semantics": "Amazonian lagoon metagenomes",
+  "first_row_identifier": "M00175",
+  "last_row_identifier": "M00926",
+  "first_column_identifier": "AM.P1.D",
+  "last_column_identifier": "VI.P2.R",
+  "orientation": "observations on x-axis; modules on y-axis",
+  "validation": "PASS"
+}

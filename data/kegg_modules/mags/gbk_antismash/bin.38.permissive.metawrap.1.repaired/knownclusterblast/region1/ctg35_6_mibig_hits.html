@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>KZM73521.1</td>
+              <td>hypothetical_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000632.5">BGC0000632.5</a></td>
+              <td>terpene+saccharide</td>
+              <td>33.0</td>
+              <td>68.8</td>
+              <td>110.0</td>
+              <td>9.04e-28</td>
+          </tr>
+    
+          <tr>
+              <td>WP_091316341.1</td>
+              <td>polyprenyl_synthetase_family_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002007.2">BGC0002007.2</a></td>
+              <td>terpene</td>
+              <td>38.0</td>
+              <td>63.1</td>
+              <td>109.0</td>
+              <td>2.22e-27</td>
+          </tr>
+    
+          <tr>
+              <td>ABC50110.1</td>
+              <td>geranylgeranyl_pyrophosphate_synthase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000643.3">BGC0000643.3</a></td>
+              <td>terpene</td>
+              <td>35.0</td>
+              <td>63.5</td>
+              <td>107.0</td>
+              <td>9.58e-27</td>
+          </tr>
+    
+          <tr>
+              <td>ABT18037.1</td>
+              <td>heptaprenyl_diphosphate_synthase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000905.5">BGC0000905.5</a></td>
+              <td>other:other</td>
+              <td>29.0</td>
+              <td>92.7</td>
+              <td>106.0</td>
+              <td>1.96e-26</td>
+          </tr>
+    
+          <tr>
+              <td>DAC74134.1</td>
+              <td>GGPP_synthase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002019.3">BGC0002019.3</a></td>
+              <td>terpene</td>
+              <td>29.0</td>
+              <td>102.7</td>
+              <td>103.0</td>
+              <td>2.73e-25</td>
+          </tr>
+    
+          <tr>
+              <td>QTC09978.1</td>
+              <td>geranylfarnesyl_diphosphate_synthase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002372.3">BGC0002372.3</a></td>
+              <td>PKS+terpene+other:other</td>
+              <td>32.0</td>
+              <td>94.7</td>
+              <td>101.0</td>
+              <td>2.52e-24</td>
+          </tr>
+    
+          <tr>
+              <td>QBG38792.1</td>
+              <td>Atr31</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001975.4">BGC0001975.4</a></td>
+              <td>NRPS:Type I</td>
+              <td>32.0</td>
+              <td>70.8</td>
+              <td>99.0</td>
+              <td>2.43e-23</td>
+          </tr>
+    
+          <tr>
+              <td>AEA30255.1</td>
+              <td>putative_isoprenyl_diphosphate_synthase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000429.4">BGC0000429.4</a></td>
+              <td>NRPS:Type I+PKS</td>
+              <td>31.0</td>
+              <td>67.4</td>
+              <td>96.0</td>
+              <td>2.47e-22</td>
+          </tr>
+    
+          <tr>
+              <td>QYA95698.1</td>
+              <td>polyprenyl_synthetase_family_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002676.2">BGC0002676.2</a></td>
+              <td>NRPS:Type I</td>
+              <td>31.0</td>
+              <td>67.4</td>
+              <td>96.0</td>
+              <td>3.4e-22</td>
+          </tr>
+    
+          <tr>
+              <td>CCH63739.1</td>
+              <td>XiaM_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000665.5">BGC0000665.5</a></td>
+              <td>terpene:Sesquiterpene+other:other</td>
+              <td>33.0</td>
+              <td>75.1</td>
+              <td>93.0</td>
+              <td>2.74e-21</td>
+          </tr>
+    
+          <tr>
+              <td>AFK78082.1</td>
+              <td>XiaP</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000666.5">BGC0000666.5</a></td>
+              <td>terpene:Sesquiterpene</td>
+              <td>34.0</td>
+              <td>64.1</td>
+              <td>92.0</td>
+              <td>7.11e-21</td>
+          </tr>
+    
+          <tr>
+              <td>AHI58825.1</td>
+              <td>WelP2</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000668.5">BGC0000668.5</a></td>
+              <td>terpene:Monoterpene+other:other</td>
+              <td>32.0</td>
+              <td>75.4</td>
+              <td>86.0</td>
+              <td>8.05e-19</td>
+          </tr>
+    
+          <tr>
+              <td>APZ79611.1</td>
+              <td>FisE2</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001595.3">BGC0001595.3</a></td>
+              <td>other:other</td>
+              <td>31.0</td>
+              <td>75.4</td>
+              <td>85.0</td>
+              <td>2.47e-18</td>
+          </tr>
+    
+          <tr>
+              <td>AAZ73145.1</td>
+              <td>geranylgeranyl_pyrophosphate_synthase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000642.3">BGC0000642.3</a></td>
+              <td>terpene</td>
+              <td>31.0</td>
+              <td>80.7</td>
+              <td>84.0</td>
+              <td>2.7e-18</td>
+          </tr>
+    
+          <tr>
+              <td>BAA14124.1</td>
+              <td></td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000638.3">BGC0000638.3</a></td>
+              <td>terpene</td>
+              <td>30.0</td>
+              <td>82.7</td>
+              <td>84.0</td>
+              <td>3.7e-18</td>
+          </tr>
+    
+          <tr>
+              <td>AAY28422.1</td>
+              <td>geranylgeranyl_diphosphate_synthase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000630.3">BGC0000630.3</a></td>
+              <td>terpene</td>
+              <td>34.0</td>
+              <td>61.5</td>
+              <td>81.0</td>
+              <td>2.2e-17</td>
+          </tr>
+    
+          <tr>
+              <td>BAE47470.1</td>
+              <td>GGPP_synthase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000635.3">BGC0000635.3</a></td>
+              <td>terpene</td>
+              <td>34.0</td>
+              <td>61.5</td>
+              <td>80.0</td>
+              <td>7.74e-17</td>
+          </tr>
+    
+          <tr>
+              <td>AAZ73127.1</td>
+              <td>geranylgeranyl_pyrophosphate_synthase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000639.3">BGC0000639.3</a></td>
+              <td>terpene</td>
+              <td>28.0</td>
+              <td>76.7</td>
+              <td>77.0</td>
+              <td>5.54e-16</td>
+          </tr>
+    
+          <tr>
+              <td>AAZ73139.1</td>
+              <td>geranylgeranyl_pyrophosphate_synthase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000641.3">BGC0000641.3</a></td>
+              <td>terpene</td>
+              <td>28.0</td>
+              <td>82.1</td>
+              <td>73.0</td>
+              <td>1.67e-14</td>
+          </tr>
+    
+          <tr>
+              <td>WP_200905152.1</td>
+              <td>polyprenyl_synthetase_family_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001330.5">BGC0001330.5</a></td>
+              <td>NRPS:Type I+PKS:Type I</td>
+              <td>29.0</td>
+              <td>69.4</td>
+              <td>72.0</td>
+              <td>7.25e-14</td>
+          </tr>
+    
+          <tr>
+              <td>AAF65590.1</td>
+              <td>GGPP_synthase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000636.3">BGC0000636.3</a></td>
+              <td>terpene</td>
+              <td>30.0</td>
+              <td>67.1</td>
+              <td>70.0</td>
+              <td>3.19e-13</td>
+          </tr>
+    
+          <tr>
+              <td>AXO35202.1</td>
+              <td>geranylgeranyl_pyrophosphate_synthetase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001848.4">BGC0001848.4</a></td>
+              <td>other:other</td>
+              <td>29.0</td>
+              <td>79.4</td>
+              <td>69.0</td>
+              <td>9.58e-13</td>
+          </tr>
+    
+          <tr>
+              <td>EWM63034.1</td>
+              <td>polyprenyl_synthetase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000679.5">BGC0000679.5</a></td>
+              <td>terpene</td>
+              <td>28.0</td>
+              <td>79.4</td>
+              <td>68.0</td>
+              <td>1.74e-12</td>
+          </tr>
+    
+          <tr>
+              <td>ARM20258.1</td>
+              <td>SauI</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002591.2">BGC0002591.2</a></td>
+              <td>PKS+terpene</td>
+              <td>28.0</td>
+              <td>90.7</td>
+              <td>64.0</td>
+              <td>4.75e-11</td>
+          </tr>
+    
+          <tr>
+              <td>crtaE</td>
+              <td></td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001456.3">BGC0001456.3</a></td>
+              <td>terpene</td>
+              <td>27.0</td>
+              <td>79.4</td>
+              <td>62.0</td>
+              <td>1.85e-10</td>
+          </tr>
+    
+          <tr>
+              <td>ANQ31719.1</td>
+              <td>polyprenyl_synthetase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001395.5">BGC0001395.5</a></td>
+              <td>other:other</td>
+              <td>29.0</td>
+              <td>65.4</td>
+              <td>59.0</td>
+              <td>1.54e-09</td>
+          </tr>
+    
+          <tr>
+              <td>BBC27537.1</td>
+              <td>polyprenyl_synthetase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001529.5">BGC0001529.5</a></td>
+              <td>other:other</td>
+              <td>28.0</td>
+              <td>65.4</td>
+              <td>56.0</td>
+              <td>1.24e-08</td>
+          </tr>
+    
+          <tr>
+              <td>AZQ56744.1</td>
+              <td>sesterterpene_synthase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001969.3">BGC0001969.3</a></td>
+              <td>terpene</td>
+              <td>27.0</td>
+              <td>48.5</td>
+              <td>54.0</td>
+              <td>1.34e-07</td>
+          </tr>
+    
+          <tr>
+              <td>CAA79955.1</td>
+              <td>geranylgeranyl_pyrophosphate_synthetase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000648.3">BGC0000648.3</a></td>
+              <td>terpene</td>
+              <td>29.0</td>
+              <td>66.4</td>
+              <td>53.0</td>
+              <td>1.65e-07</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

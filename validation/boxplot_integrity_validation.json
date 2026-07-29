@@ -1,0 +1,41 @@
+{
+  "checks": {
+    "q1": true,
+    "median": true,
+    "q3": true,
+    "lower_whisker": true,
+    "upper_whisker": true,
+    "outlier_count": true,
+    "missing_preserved": true
+  },
+  "passed": true,
+  "expected": {
+    "q1": 2.0,
+    "median": 3.0,
+    "q3": 4.0,
+    "lower_whisker": 1.0,
+    "upper_whisker": 4.0,
+    "outlier_count": 1
+  },
+  "observed": {
+    "category": "A",
+    "lake": "AM",
+    "value_column": "value",
+    "n_total_rows": 5,
+    "n_observations": 5,
+    "n_missing": 0,
+    "minimum": 1.0,
+    "q1": 2.0,
+    "median": 3.0,
+    "q3": 4.0,
+    "maximum": 10.0,
+    "iqr": 2.0,
+    "lower_fence": -1.0,
+    "upper_fence": 7.0,
+    "lower_whisker": 1.0,
+    "upper_whisker": 4.0,
+    "outlier_count": 1,
+    "outliers": "10",
+    "display_recommendation": "boxplot with individual points"
+  }
+}

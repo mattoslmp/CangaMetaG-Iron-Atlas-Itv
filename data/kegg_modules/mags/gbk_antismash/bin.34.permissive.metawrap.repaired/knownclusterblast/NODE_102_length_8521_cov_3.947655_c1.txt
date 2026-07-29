@@ -1,0 +1,16 @@
+ClusterBlast scores for NODE_102_length_8521_cov_3.947655
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg102_1	126	663	-		
+ctg102_2	1015	1534	+		
+ctg102_3	2607	4785	-		
+ctg102_4	5076	5538	-		
+ctg102_5	5684	6260	+		
+ctg102_6	6335	7271	-		
+ctg102_7	7403	8519	-		
+
+
+Significant hits: 
+
+
+Details:

@@ -1,0 +1,13 @@
+ClusterBlast scores for NODE_13059_length_3893_cov_3.389005
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg114_1	0	147	-		
+ctg114_2	342	819	+		
+ctg114_3	829	1825	+		
+ctg114_4	2088	3891	-		
+
+
+Significant hits: 
+
+
+Details:

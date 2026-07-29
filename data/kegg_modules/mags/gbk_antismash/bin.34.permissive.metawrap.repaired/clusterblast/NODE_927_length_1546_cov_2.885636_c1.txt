@@ -1,0 +1,10 @@
+ClusterBlast scores for NODE_927_length_1546_cov_2.885636
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg927_1	2	1544	-		
+
+
+Significant hits: 
+
+
+Details:

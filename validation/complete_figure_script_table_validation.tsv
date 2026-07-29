@@ -1,0 +1,103 @@
+figure	panel	script	script_exists	script_compiles	explicit_inputs_exist	outputs_exist	command	status
+Figure 1	Complete figure	scripts/generate_amazon_coordinate_figure.py	True	True	True	True	python scripts/generate_amazon_coordinate_figure.py --base-dir .	PASS
+Figure 2	Complete figure	scripts/generate_final_domain_taxonomy_figures.py	True	True	True	True	python scripts/generate_final_domain_taxonomy_figures.py --base-dir .	PASS
+Figure 3	Complete figure	scripts/generate_final_domain_taxonomy_figures.py	True	True	True	True	python scripts/generate_final_domain_taxonomy_figures.py --base-dir .	PASS
+Figure 4	Complete figure	scripts/figures/generate_figures4_5_s17_revision3.py	True	True	True	True	python scripts/figures/generate_figures4_5_s17_revision3.py --base-dir . --article-root ../CangaMetaG_Article_Final	PASS
+Figure 5	Complete figure	scripts/figures/generate_figures4_5_s17_revision3.py	True	True	True	True	python scripts/figures/generate_figures4_5_s17_revision3.py --base-dir . --article-root ../CangaMetaG_Article_Final	PASS
+Figure 6	Complete figure	scripts/consolidate_final_publication.py	True	True	True	True	python scripts/consolidate_final_publication.py --base-dir .	PASS
+Figure 7	Complete figure	scripts/figures/generate_figure7.py	True	True	True	True	python scripts/figures/generate_figure7.py --base-dir .	PASS
+Figure 8	Complete figure	scripts/figures/generate_figure8.py	True	True	True	True	python scripts/figures/generate_figure8.py --base-dir .	PASS
+Supplementary Figure 1	Complete figure	scripts/consolidate_final_publication.py	True	True	True	True	python scripts/consolidate_final_publication.py --base-dir .	PASS
+Supplementary Figure 2	Complete figure	scripts/consolidate_final_publication.py	True	True	True	True	python scripts/consolidate_final_publication.py --base-dir .	PASS
+Supplementary Figure 3	Complete figure	scripts/consolidate_final_publication.py	True	True	True	True	python scripts/consolidate_final_publication.py --base-dir .	PASS
+Supplementary Figure 4	Complete figure	scripts/final_publication_figures/06_recalculate_rarefaction_alpha_32999.py	True	True	True	True	CANGAMETA_ONLY_S4=1 python scripts/final_publication_figures/06_recalculate_rarefaction_alpha_32999.py	PASS
+Supplementary Figure 5	Complete figure	scripts/figures/generate_figures4_5_s17_revision3.py	True	True	True	True	python scripts/figures/generate_figures4_5_s17_revision3.py --base-dir . --article-root ../CangaMetaG_Article_Final	PASS
+Supplementary Figure 6	P001	scripts/figures/generate_s6_s7.py	True	True	True	True	python scripts/figures/generate_s6_s7.py --base-dir . --article-root ../CangaMetaG_Article_Final --only 6	PASS
+Supplementary Figure 6	P002	scripts/figures/generate_s6_s7.py	True	True	True	True	python scripts/figures/generate_s6_s7.py --base-dir . --article-root ../CangaMetaG_Article_Final --only 6	PASS
+Supplementary Figure 7	P001	scripts/figures/generate_s6_s7.py	True	True	True	True	python scripts/figures/generate_s6_s7.py --base-dir .	PASS
+Supplementary Figure 7	P002	scripts/figures/generate_s6_s7.py	True	True	True	True	python scripts/figures/generate_s6_s7.py --base-dir .	PASS
+Supplementary Figure 8	Complete figure	scripts/consolidate_final_publication.py	True	True	True	True	python scripts/consolidate_final_publication.py --base-dir .	PASS
+Supplementary Figure 9	Complete figure	scripts/consolidate_final_publication.py	True	True	True	True	python scripts/consolidate_final_publication.py --base-dir .	PASS
+Supplementary Figure 10	Complete figure	scripts/consolidate_final_publication.py	True	True	True	True	python scripts/consolidate_final_publication.py --base-dir .	PASS
+Supplementary Figure 11	Complete figure	scripts/consolidate_final_publication.py	True	True	True	True	python scripts/consolidate_final_publication.py --base-dir .	PASS
+Supplementary Figure 12	Complete figure	scripts/consolidate_final_publication.py	True	True	True	True	python scripts/consolidate_final_publication.py --base-dir .	PASS
+Supplementary Figure 13	Complete figure	scripts/consolidate_final_publication.py	True	True	True	True	python scripts/consolidate_final_publication.py --base-dir .	PASS
+Supplementary Figure 14	Complete figure	scripts/consolidate_final_publication.py	True	True	True	True	python scripts/consolidate_final_publication.py --base-dir .	PASS
+Supplementary Figure 15	Complete figure	scripts/consolidate_final_publication.py	True	True	True	True	python scripts/consolidate_final_publication.py --base-dir .	PASS
+Supplementary Figure 16	Complete figure	scripts/consolidate_final_publication.py	True	True	True	True	python scripts/consolidate_final_publication.py --base-dir .	PASS
+Supplementary Figure 17	Complete figure	scripts/figures/generate_figures4_5_s17_revision3.py	True	True	True	True	python scripts/figures/generate_figures4_5_s17_revision3.py --base-dir . --article-root ../CangaMetaG_Article_Final	PASS
+Supplementary Figure 18	Complete figure	scripts/generate_taxonomy_supplementary_figures.py	True	True	True	True	python scripts/generate_taxonomy_supplementary_figures.py --base-dir .	PASS
+Supplementary Figure 19	Complete figure	scripts/generate_taxonomy_supplementary_figures.py	True	True	True	True	python scripts/generate_taxonomy_supplementary_figures.py --base-dir .	PASS
+Supplementary Figure 20	Complete figure	scripts/generate_taxonomy_supplementary_figures.py	True	True	True	True	python scripts/generate_taxonomy_supplementary_figures.py --base-dir .	PASS
+Supplementary Figure 21	Complete figure	scripts/generate_taxonomy_supplementary_figures.py	True	True	True	True	python scripts/generate_taxonomy_supplementary_figures.py --base-dir .	PASS
+Supplementary Figure 22	Complete figure	scripts/generate_taxonomy_supplementary_figures.py	True	True	True	True	python scripts/generate_taxonomy_supplementary_figures.py --base-dir .	PASS
+Supplementary Figure 23	Complete figure	scripts/generate_taxonomy_supplementary_figures.py	True	True	True	True	python scripts/generate_taxonomy_supplementary_figures.py --base-dir .	PASS
+Supplementary Figure 24	Complete figure	scripts/generate_taxonomy_supplementary_figures.py	True	True	True	True	python scripts/generate_taxonomy_supplementary_figures.py --base-dir .	PASS
+Supplementary Figure 25	Complete figure	scripts/generate_taxonomy_supplementary_figures.py	True	True	True	True	python scripts/generate_taxonomy_supplementary_figures.py --base-dir .	PASS
+Supplementary Figure 26	Complete figure	scripts/generate_core_taxonomy_overlap_figure.py	True	True	True	True	python scripts/generate_core_taxonomy_overlap_figure.py --base-dir .	PASS
+Supplementary Figure 27	Complete figure	scripts/generate_core_taxonomy_overlap_figure.py	True	True	True	True	python scripts/generate_core_taxonomy_overlap_figure.py --base-dir .	PASS
+Supplementary Figure 28	Complete figure	scripts/generate_core_taxonomy_overlap_figure.py	True	True	True	True	python scripts/generate_core_taxonomy_overlap_figure.py --base-dir .	PASS
+Supplementary Figure 29	Complete figure	scripts/generate_atlas_workflow_figure.py	True	True	True	True	python scripts/generate_atlas_workflow_figure.py --base-dir .	PASS
+Supplementary Figure 30	Complete figure	scripts/generate_amazon_coordinate_figure.py	True	True	True	True	python scripts/generate_amazon_coordinate_figure.py --base-dir . --article-root ../CangaMetaG_Article_Final	PASS
+Supplementary Figure 31A	Complete figure	scripts/figures/generate_s31_taxonomic_levels_revision3.py	True	True	True	True	python scripts/figures/generate_s31_taxonomic_levels_revision3.py --base-dir . --article-root ../CangaMetaG_Article_Final	PASS
+Supplementary Figure 31B	Complete figure	scripts/figures/generate_s31_taxonomic_levels_revision3.py	True	True	True	True	python scripts/figures/generate_s31_taxonomic_levels_revision3.py --base-dir . --article-root ../CangaMetaG_Article_Final	PASS
+Supplementary Figure 31C	Complete figure	scripts/figures/generate_s31_taxonomic_levels_revision3.py	True	True	True	True	python scripts/figures/generate_s31_taxonomic_levels_revision3.py --base-dir . --article-root ../CangaMetaG_Article_Final	PASS
+Supplementary Figure 32	P001	scripts/figures/generate_s31_s32.py	True	True	True	True	python scripts/figures/generate_s31_s32.py --base-dir . --article-root ../CangaMetaG_Article_Final	PASS
+Supplementary Figure 32	P002	scripts/figures/generate_s31_s32.py	True	True	True	True	python scripts/figures/generate_s31_s32.py --base-dir . --article-root ../CangaMetaG_Article_Final	PASS
+Supplementary Figure 32	P003	scripts/figures/generate_s31_s32.py	True	True	True	True	python scripts/figures/generate_s31_s32.py --base-dir . --article-root ../CangaMetaG_Article_Final	PASS
+Supplementary Figure 32	P004	scripts/figures/generate_s31_s32.py	True	True	True	True	python scripts/figures/generate_s31_s32.py --base-dir . --article-root ../CangaMetaG_Article_Final	PASS
+Supplementary Figure 32	P005	scripts/figures/generate_s31_s32.py	True	True	True	True	python scripts/figures/generate_s31_s32.py --base-dir . --article-root ../CangaMetaG_Article_Final	PASS
+Supplementary Figure 32	P006	scripts/figures/generate_s31_s32.py	True	True	True	True	python scripts/figures/generate_s31_s32.py --base-dir . --article-root ../CangaMetaG_Article_Final	PASS
+Supplementary Figure 33	P001	scripts/figures/generate_s33_biogeochemical_zscore_revision3.py	True	True	True	True	python scripts/figures/generate_s33_biogeochemical_zscore_revision3.py --base-dir . --article-root ../CangaMetaG_Article_Final	PASS
+Supplementary Figure 33	P002	scripts/figures/generate_s33_biogeochemical_zscore_revision3.py	True	True	True	True	python scripts/figures/generate_s33_biogeochemical_zscore_revision3.py --base-dir . --article-root ../CangaMetaG_Article_Final	PASS
+Supplementary Figure 33	P003	scripts/figures/generate_s33_biogeochemical_zscore_revision3.py	True	True	True	True	python scripts/figures/generate_s33_biogeochemical_zscore_revision3.py --base-dir . --article-root ../CangaMetaG_Article_Final	PASS
+Supplementary Figure 33	P004	scripts/figures/generate_s33_biogeochemical_zscore_revision3.py	True	True	True	True	python scripts/figures/generate_s33_biogeochemical_zscore_revision3.py --base-dir . --article-root ../CangaMetaG_Article_Final	PASS
+Supplementary Figure 33	P005	scripts/figures/generate_s33_biogeochemical_zscore_revision3.py	True	True	True	True	python scripts/figures/generate_s33_biogeochemical_zscore_revision3.py --base-dir . --article-root ../CangaMetaG_Article_Final	PASS
+Supplementary Figure 33	P006	scripts/figures/generate_s33_biogeochemical_zscore_revision3.py	True	True	True	True	python scripts/figures/generate_s33_biogeochemical_zscore_revision3.py --base-dir . --article-root ../CangaMetaG_Article_Final	PASS
+Supplementary Figure 34	Complete figure	scripts/materialize_preserved_publication_asset.py	True	True	True	True	python scripts/materialize_preserved_publication_asset.py --root . --stem SupplementaryFigure34_ST8_records_by_group_layer_vivid --validate-only	PASS
+Supplementary Figure 35	Complete figure	scripts/materialize_preserved_publication_asset.py	True	True	True	True	python scripts/materialize_preserved_publication_asset.py --root . --stem SupplementaryFigure35_all_KO_descriptive_contrasts_labeled --validate-only	PASS
+Supplementary Figure 36	Complete figure	scripts/materialize_preserved_publication_asset.py	True	True	True	True	python scripts/materialize_preserved_publication_asset.py --root . --stem SupplementaryFigure36_iron_KO_descriptive_contrasts_labeled --validate-only	PASS
+Supplementary Figure 37	Complete figure	scripts/generate_s37_module_completeness.py	True	True	True	True	python scripts/generate_s37_module_completeness.py --root .	PASS
+Supplementary Figure 38	Complete figure	scripts/generate_s38_s41_module_figures.py	True	True	True	True	python scripts/generate_s38_s41_module_figures.py --base-dir . --only 38	PASS
+Supplementary Figure 39	Complete figure	scripts/materialize_preserved_publication_asset.py	True	True	True	True	python scripts/materialize_preserved_publication_asset.py --root . --stem SupplementaryFigure39_top_enriched_taxa_DESeq2_vivid --validate-only	PASS
+Supplementary Figure 40	P001	scripts/figures/generate_environmental_group_heatmaps.py	True	True	True	True	python scripts/figures/generate_environmental_group_heatmaps.py --root .	PASS
+Supplementary Figure 40	P002	scripts/figures/generate_environmental_group_heatmaps.py	True	True	True	True	python scripts/figures/generate_environmental_group_heatmaps.py --root .	PASS
+Supplementary Figure 41	P001	scripts/generate_s38_s41_module_figures.py	True	True	True	True	python scripts/generate_s38_s41_module_figures.py --base-dir . --only 41	PASS
+Supplementary Figure 41	P002	scripts/generate_s38_s41_module_figures.py	True	True	True	True	python scripts/generate_s38_s41_module_figures.py --base-dir . --only 41	PASS
+Supplementary Figure 42	Complete figure	scripts/final_visual_sync.py	True	True	True	True	python scripts/final_visual_sync.py --base-dir .	PASS
+Supplementary Figure 43	Complete figure	scripts/generate_taxonomy_supplementary_figures.py	True	True	True	True	python scripts/generate_taxonomy_supplementary_figures.py --base-dir .	PASS
+Supplementary Figure 44	Complete figure	scripts/generate_taxonomy_supplementary_figures.py	True	True	True	True	python scripts/generate_taxonomy_supplementary_figures.py --base-dir .	PASS
+Supplementary Figure 45	Complete figure	scripts/generate_taxonomy_supplementary_figures.py	True	True	True	True	python scripts/generate_taxonomy_supplementary_figures.py --base-dir .	PASS
+Supplementary Figure 46	Complete figure	scripts/generate_taxonomy_supplementary_figures.py	True	True	True	True	python scripts/generate_taxonomy_supplementary_figures.py --base-dir .	PASS
+Supplementary Figure 47	Complete figure	scripts/generate_taxonomy_supplementary_figures.py	True	True	True	True	python scripts/generate_taxonomy_supplementary_figures.py --base-dir . --article-root ../CangaMetaG_Article_Final --only 47	PASS
+Supplementary Figure 48	Complete figure	scripts/generate_taxonomy_supplementary_figures.py	True	True	True	True	python scripts/generate_taxonomy_supplementary_figures.py --base-dir .	PASS
+Supplementary Figure 49	Complete figure	scripts/generate_taxonomy_supplementary_figures.py	True	True	True	True	python scripts/generate_taxonomy_supplementary_figures.py --base-dir . --article-root ../CangaMetaG_Article_Final --only 49	PASS
+Supplementary Figure 50	Complete figure	scripts/generate_taxonomy_supplementary_figures.py	True	True	True	True	python scripts/generate_taxonomy_supplementary_figures.py --base-dir .	PASS
+Supplementary Figure 51	Complete figure	scripts/generate_taxonomy_supplementary_figures.py	True	True	True	True	python scripts/generate_taxonomy_supplementary_figures.py --base-dir . --article-root ../CangaMetaG_Article_Final --only 51	PASS
+Supplementary Figure 52	Complete figure	scripts/generate_taxonomy_supplementary_figures.py	True	True	True	True	python scripts/generate_taxonomy_supplementary_figures.py --base-dir .	PASS
+Supplementary Figure 53	Complete figure	scripts/generate_taxonomy_supplementary_figures.py	True	True	True	True	python scripts/generate_taxonomy_supplementary_figures.py --base-dir . --article-root ../CangaMetaG_Article_Final --only 53	PASS
+Supplementary Figure 54	Complete figure	scripts/generate_taxonomy_supplementary_figures.py	True	True	True	True	python scripts/generate_taxonomy_supplementary_figures.py --base-dir .	PASS
+Supplementary Figure 55	Complete figure	scripts/generate_taxonomy_supplementary_figures.py	True	True	True	True	python scripts/generate_taxonomy_supplementary_figures.py --base-dir . --article-root ../CangaMetaG_Article_Final --only 55	PASS
+Supplementary Figure 56	Complete figure	scripts/generate_taxonomy_supplementary_figures.py	True	True	True	True	python scripts/generate_taxonomy_supplementary_figures.py --base-dir .	PASS
+Supplementary Figure 57	Complete figure	scripts/generate_taxonomy_supplementary_figures.py	True	True	True	True	python scripts/generate_taxonomy_supplementary_figures.py --base-dir . --article-root ../CangaMetaG_Article_Final --only 57	PASS
+Supplementary Figure 58	Complete figure	scripts/generate_taxonomy_supplementary_figures.py	True	True	True	True	python scripts/generate_taxonomy_supplementary_figures.py --base-dir . --article-root ../CangaMetaG_Article_Final --only 58	PASS
+Supplementary Figure 59	Complete figure	scripts/generate_taxonomy_supplementary_figures.py	True	True	True	True	python scripts/generate_taxonomy_supplementary_figures.py --base-dir .	PASS
+Supplementary Figure 60	Complete figure	scripts/generate_taxonomy_supplementary_figures.py	True	True	True	True	python scripts/generate_taxonomy_supplementary_figures.py --base-dir .	PASS
+Supplementary Figure 61	Complete figure	scripts/generate_taxonomy_supplementary_figures.py	True	True	True	True	python scripts/generate_taxonomy_supplementary_figures.py --base-dir . --article-root ../CangaMetaG_Article_Final --only 61	PASS
+Supplementary Figure 62	Complete figure	scripts/generate_taxonomy_supplementary_figures.py	True	True	True	True	python scripts/generate_taxonomy_supplementary_figures.py --base-dir .	PASS
+Supplementary Figure 63	Complete figure	scripts/generate_taxonomy_supplementary_figures.py	True	True	True	True	python scripts/generate_taxonomy_supplementary_figures.py --base-dir . --article-root ../CangaMetaG_Article_Final --only 63	PASS
+Supplementary Figure 64	Complete figure	scripts/generate_taxonomy_supplementary_figures.py	True	True	True	True	python scripts/generate_taxonomy_supplementary_figures.py --base-dir .	PASS
+Supplementary Figure 65	Complete figure	scripts/generate_taxonomy_supplementary_figures.py	True	True	True	True	python scripts/generate_taxonomy_supplementary_figures.py --base-dir . --article-root ../CangaMetaG_Article_Final --only 65	PASS
+Supplementary Figure 66	Complete figure	scripts/generate_taxonomy_supplementary_figures.py	True	True	True	True	python scripts/generate_taxonomy_supplementary_figures.py --base-dir .	PASS
+Supplementary Figure 67	P001	scripts/figures/generate_environmental_group_heatmaps.py	True	True	True	True	python scripts/figures/generate_environmental_group_heatmaps.py --root .	PASS
+Supplementary Figure 67	P002	scripts/figures/generate_environmental_group_heatmaps.py	True	True	True	True	python scripts/figures/generate_environmental_group_heatmaps.py --root .	PASS
+Supplementary Figure 68	Complete figure	scripts/generate_bidirectional_environment_contrast_figures.py	True	True	True	True	python scripts/generate_bidirectional_environment_contrast_figures.py --base-dir .	PASS
+Supplementary Figure 69	Complete figure	scripts/generate_bidirectional_environment_contrast_figures.py	True	True	True	True	python scripts/generate_bidirectional_environment_contrast_figures.py --base-dir .	PASS
+Supplementary Figure 70	Complete figure	scripts/figures/generate_world_map_revision3.py	True	True	True	True	python scripts/figures/generate_world_map_revision3.py --base-dir . --article-root ../CangaMetaG_Article_Final	PASS
+Supplementary Figure 67 — environmental group	P001	scripts/figures/generate_environmental_group_heatmaps.py	True	True	True	True	python scripts/figures/generate_environmental_group_heatmaps.py --root .	PASS
+Supplementary Figure 67 — environmental group	P002	scripts/figures/generate_environmental_group_heatmaps.py	True	True	True	True	python scripts/figures/generate_environmental_group_heatmaps.py --root .	PASS
+S40/S67 cell-by-cell comparison	Workflow	scripts/validation/compare_environmental_group_heatmaps.py	True	True	True	True	python scripts/validation/compare_environmental_group_heatmaps.py --root .	PASS
+Complete figure/script table	Workflow	scripts/build_complete_figure_script_table.py	True	True	True	True	python scripts/build_complete_figure_script_table.py --root . --article-root ../CangaMetaG_Article_Final	PASS
+Supplementary Information synchronization	Workflow	scripts/documents/update_supplementary_information.py	True	True	True	True	python scripts/documents/update_supplementary_information.py --app-root . --article-root ../CangaMetaG_Article_Final	PASS
+Article/application synchronization	Workflow	scripts/synchronize_article_app_outputs.py	True	True	True	True	python scripts/synchronize_article_app_outputs.py --app-root . --article-root ../CangaMetaG_Article_Final	PASS
+Application display	Workflow	app.py	True	True	True	True	streamlit run app.py	PASS

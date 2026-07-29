@@ -1,0 +1,97 @@
+{
+  "validation": "Independent audit corrections",
+  "executed_utc": "2026-07-28T06:01:52.804097+00:00",
+  "overall_status": "PASS",
+  "checks": [
+    {
+      "audit_ids": "1-3",
+      "area": "Heatmap labels",
+      "status": "PASS",
+      "evidence": "generic ticks=448; real KEGG ticks=448; rows=448; display height=9450; export=2400x9450"
+    },
+    {
+      "audit_ids": "4-9",
+      "area": "RDA Bacteria",
+      "status": "PASS",
+      "evidence": "sites=10; env=6; genera=6; vectors=12; global P=0.537"
+    },
+    {
+      "audit_ids": "10-12",
+      "area": "NMDS Bacteria",
+      "status": "PASS",
+      "evidence": "samples=20; stress=0.064982; parameters={'transformation': 'square root of row-wise relative proportions', 'dissimilarity': 'Bray-Curtis', 'dimensions': 2, 'nonmetric': True, 'n_init': 20, 'max_iter': 1000, 'seed': 42, 'normalized_stress': True, 'domain': 'Bacteria', 'n_samples': 20}"
+    },
+    {
+      "audit_ids": "4-9",
+      "area": "RDA Archaea",
+      "status": "PASS",
+      "evidence": "sites=10; env=6; genera=6; vectors=12; global P=0.698"
+    },
+    {
+      "audit_ids": "10-12",
+      "area": "NMDS Archaea",
+      "status": "PASS",
+      "evidence": "samples=20; stress=0.053793; parameters={'transformation': 'square root of row-wise relative proportions', 'dissimilarity': 'Bray-Curtis', 'dimensions': 2, 'nonmetric': True, 'n_init': 20, 'max_iter': 1000, 'seed': 42, 'normalized_stress': True, 'domain': 'Archaea', 'n_samples': 20}"
+    },
+    {
+      "audit_ids": "4-12",
+      "area": "Single shared article/app ordination implementation",
+      "status": "PASS",
+      "evidence": "canonical article manifest, interactive RDA/NMDS, exploratory and integrated ordinations all delegate to src.publication_ordination; final_figure_script_manifest.csv:True; final_figure_script_manifest.csv:True; figure_script_manifest.csv:True"
+    },
+    {
+      "audit_ids": "13",
+      "area": "PERMANOVA / dispersion",
+      "status": "PASS",
+      "evidence": "Gower pseudo-F=64.000000000000; independent distance-partition pseudo-F=64.000000000000; P=0.3400; dispersion F=518.153846; dispersion P=1.0000"
+    },
+    {
+      "audit_ids": "12,14",
+      "area": "Exploratory PCoA/NMDS alignment",
+      "status": "PASS",
+      "evidence": "app correction=Lingoes; integrated correction=Lingoes; NMDS starts=20"
+    },
+    {
+      "audit_ids": "15",
+      "area": "Biplot labels",
+      "status": "PASS",
+      "evidence": "label_x/label_y present and endpoint coordinates unchanged"
+    },
+    {
+      "audit_ids": "16-17",
+      "area": "Boxplot independent units",
+      "status": "PASS",
+      "evidence": "rows=8; unique sample×pathway=8; P1/AM.P1.D markers=2"
+    },
+    {
+      "audit_ids": "18-20",
+      "area": "Plotly formatting/export/offline",
+      "status": "PASS",
+      "evidence": "formatter has no undefined domain/rank/view_label; real errors logged; Plotly bundled inline"
+    },
+    {
+      "audit_ids": "21",
+      "area": "Real visual browser test",
+      "status": "PASS",
+      "evidence": "browser status=PASS; cases=8"
+    },
+    {
+      "audit_ids": "22-23",
+      "area": "Long supplementary heatmaps",
+      "status": "PASS",
+      "evidence": "S32 pages=6, composite=(4800, 20880); S33 pages=6, composite=(4800, 20880); S37 pages=2; S38=(4950, 3180)"
+    },
+    {
+      "audit_ids": "24",
+      "area": "Named-genus detail",
+      "status": "PASS",
+      "evidence": "complementary named-genus view excludes Unclassified/Other only in the detail panel and renormalizes"
+    },
+    {
+      "audit_ids": "25",
+      "area": "Alpha diversity rarefaction",
+      "status": "PASS",
+      "evidence": "rarefied total=100; deterministic=True"
+    }
+  ]
+}

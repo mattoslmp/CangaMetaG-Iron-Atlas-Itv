@@ -1,0 +1,20 @@
+ClusterBlast scores for NODE_34_length_24332_cov_2.737951
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg34_1	1	1309	+		
+ctg34_2	1416	1557	-		
+ctg34_3	1563	2364	+		
+ctg34_4	2363	3245	+		
+ctg34_5	3252	3699	-		
+ctg34_6	3989	5900	-		
+ctg34_7	6146	7166	-		
+ctg34_8	7433	8813	-		
+ctg34_9	9018	9648	-		
+ctg34_10	9762	10011	+		
+ctg34_11	10180	10453	-		
+
+
+Significant hits: 
+
+
+Details:

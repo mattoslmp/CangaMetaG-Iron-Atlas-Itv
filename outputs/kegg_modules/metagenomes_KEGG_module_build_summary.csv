@@ -1,0 +1,2 @@
+dataset,source,n_reports,n_samples,n_modules,n_fasta
+metagenomes,reportKMC_*.tsv,20,20,448,0

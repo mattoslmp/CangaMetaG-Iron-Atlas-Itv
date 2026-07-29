@@ -1,0 +1,18 @@
+{
+  "figure": "S4",
+  "script": "scripts/final_publication_figures/06_recalculate_rarefaction_alpha_32999.py",
+  "command": "CANGAMETA_ONLY_S4=1 CANGAMETA_ARTICLE_ROOT=<article_root> python scripts/final_publication_figures/06_recalculate_rarefaction_alpha_32999.py",
+  "source": "data/resultado.cds.otu.tab and data/Table_S1_general_statistics.csv",
+  "scientific_values_changed": false,
+  "before_inches": [
+    22,
+    8
+  ],
+  "after_inches": [
+    18,
+    10.5
+  ],
+  "font_sizes_changed": false,
+  "sample_count": 20,
+  "page_numbering": "not part of the image; handled by editable Word PAGE fields"
+}

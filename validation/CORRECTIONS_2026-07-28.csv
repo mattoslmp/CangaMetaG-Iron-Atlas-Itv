@@ -1,0 +1,26 @@
+ID,Área,Problema auditado,Correção aplicada,Status
+1,Heatmaps,Rótulos Y acima de 90 linhas,Supressão removida; todos os ticks preservados e altura dinâmica,PASS
+2,Heatmaps,Flags de todos os rótulos ignoradas,force_all_y_ticks/all_y_labels_visible respeitados,PASS
+3,Heatmaps,Interface dizia completo com nomes omitidos,Declaração e renderização alinhadas,PASS
+4,RDA,Vetores fora do autorange,"Eixos incluem escores, vetores e rótulos",PASS
+5,RDA,Vetores sem escala,Mesmo escalonamento da figura do artigo,PASS
+6,RDA,Gêneros não renderizados,6 gêneros por domínio visíveis,PASS
+7,RDA,Estatísticas ausentes,"R², R² ajustado, F, P, eixos, VIF e cautela incluídos",PASS
+8,RDA,Tabelas/downloads ausentes,Escores e vetores disponíveis,PASS
+9,RDA,Estilos e repulsão ausentes,Estilos distintos e repulsão sem alterar endpoints,PASS
+10,NMDS,Stress não mostrado,"Stress-1 em título, métrica e tabela",PASS
+11,NMDS,Codificação inferior,"Cores, símbolos, IDs e metadados canônicos",PASS
+12,Ordenações,Pipelines duplicados,Módulo científico único compartilhado pelo artigo e app,PASS
+13,PERMANOVA,Fórmula não padrão,PERMANOVA canônica e teste de dispersão,PASS
+14,PCoA,Variância/autovalores negativos omitidos,Eixos com variância e correção de Lingoes documentada,PASS
+15,Biplots,label_x/label_y ausentes,Colunas criadas e endpoints preservados,PASS
+16,Boxplots,Pseudorreplicação,Uma unidade independente por amostra × categoria,PASS
+17,Boxplots,Sobreposição/largura extrema,Top categorias por padrão e largura limitada,PASS
+18,Exportação,Variáveis indefinidas,NameError removido,PASS
+19,Erros,Exceções silenciadas,Registro e causa real expostos,PASS
+20,Offline,Dependência de CDN,Plotly incorporado inline,PASS
+21,Validação,PASS não visual,Teste Chromium real adicionado,PASS
+22,S32/S33,Composto ilegível,Painéis P001–P006 usados em resolução integral,PASS
+23,S37/S38,Geometria ruim,S37 paginada; S38 compactada,PASS
+24,Figuras 4/5,Unclassified/Other ocultavam gêneros,Visão complementar nomeada e renormalizada,PASS
+25,Alfa diversidade,Sem padronização/pseudorreplicação agregada,Rarefação determinística e agregados descritivos,PASS

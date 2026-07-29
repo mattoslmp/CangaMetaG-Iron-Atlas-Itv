@@ -1,0 +1,17 @@
+ClusterBlast scores for NODE_3156_length_7827_cov_6.287442
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg169_1	2	263	+		
+ctg169_2	566	1790	+		
+ctg169_3	1777	2257	+		
+ctg169_4	2375	3755	+		
+ctg169_5	3723	5124	+		
+ctg169_6	5276	6023	+		
+ctg169_7	6197	6656	-		
+ctg169_8	6649	7825	-		
+
+
+Significant hits: 
+
+
+Details:

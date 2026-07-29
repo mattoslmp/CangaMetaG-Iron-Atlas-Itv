@@ -1,0 +1,15 @@
+ClusterBlast scores for NODE_8879_length_4726_cov_3.950760
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg27_1	0	1164	+		
+ctg27_2	1350	2382	+		
+ctg27_3	2398	3136	+		
+ctg27_4	3122	3443	+		
+ctg27_5	3439	4249	-		
+ctg27_6	4442	4649	-		
+
+
+Significant hits: 
+
+
+Details:

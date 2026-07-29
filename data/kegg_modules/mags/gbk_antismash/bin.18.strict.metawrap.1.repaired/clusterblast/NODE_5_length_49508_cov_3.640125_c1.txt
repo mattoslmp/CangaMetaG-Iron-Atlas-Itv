@@ -1,0 +1,924 @@
+ClusterBlast scores for NODE_5_length_49508_cov_3.640125
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg5_23	23755	23899	+		
+ctg5_24	23927	24239	+		
+ctg5_25	24996	25311	+		
+ctg5_26	25297	25750	-		
+ctg5_27	25782	26298	-		
+ctg5_28	26327	26867	-		
+ctg5_29	27017	27494	-		
+ctg5_30	27490	28492	-		
+ctg5_31	28572	29310	+		
+ctg5_32	29380	30613	-		
+ctg5_33	30985	31723	-		
+ctg5_34	31722	32730	-		
+ctg5_35	32759	33329	-		
+ctg5_36	33325	33817	-		
+ctg5_37	33862	35524	-		
+ctg5_38	35658	36597	+		
+ctg5_39	36689	37547	+		
+ctg5_40	39257	39722	-		
+
+
+Significant hits: 
+1. NZ_CP073318	Kutzneria sp. CA-103260 chromosome, complete genome
+2. NZ_CP017708	Moorena producens JHB chromosome, complete genome
+3. NZ_CP030846	Candidatus Nitrosotenuis sp. DW1 chromosome, complete genome
+4. NC_010085	Nitrosopumilus maritimus SCM1, complete sequence
+5. NZ_MU078696	Nitrosopumilus sp. b3 7, whole genome shotgun sequence
+6. NZ_AP026695	Nitrosopumilus zosterae strain NM25 chromosome, complete genome
+7. NZ_JAGGOJ010000003	Streptomyces sp. ISL-10 ISL10_4, whole genome shotgun sequence
+8. NZ_CP016279	Streptomyces griseochromogenes strain ATCC 14511 chromosome, complete genome
+9. NZ_CP042905	Candidatus Prometheoarchaeum syntrophicum strain MK-D1 chromosome, complete genome
+10. NZ_JAFIQY010000001	Streptomyces monomycini strain NRRL B-24309 Scaffold1, whole genome shotgun sequence
+11. NZ_CDME01000008	Kibdelosporangium sp. MJ126-NF4, whole genome shotgun sequence
+12. NZ_JANYMP010000005	Umezawaea endophytica strain DSM 103496 DSM103496_AS2_SC05, whole genome shotgun sequence
+13. NZ_CP023695	Streptomyces alboniger strain ATCC 12461 chromosome, complete genome
+14. NZ_CP046172	Nocardia arthritidis strain AUSMDU00012717 chromosome, complete genome
+15. NZ_CP060497	Olivibacter sp. SDN3 chromosome, complete genome
+16. NZ_CP049703	Parageobacillus toebii NBRC 107807 strain DSM 14590 chromosome, complete genome
+17. NZ_CP070511	Parageobacillus toebii strain NEB718 chromosome, complete genome
+18. NZ_CP012672	Sorangium cellulosum strain So ce836 chromosome, complete genome
+19. NC_021658	Sorangium cellulosum So0157-2, complete sequence
+20. NC_010162	Sorangium cellulosum So ce56, complete sequence
+21. NZ_CP012670	Sorangium cellulosum strain So ceGT47 chromosome, complete genome
+22. NZ_CP090978	Paenibacillus sp. YPD9-1 chromosome, complete genome
+23. NC_021171	Bacillus sp. 1NLA3E, complete sequence
+24. NZ_BMOK01000003	Sporolactobacillus putidus strain JCM 15325 sequence03, whole genome shotgun sequence
+25. NC_015275	Cellulosilyticum lentocellum DSM 5427, complete sequence
+26. NZ_CM001240	Clostridium sp. DL-VIII chromosome, whole genome shotgun sequence
+27. NZ_QXDJ01000001	Clostridium chromiireducens strain C1 Scaffold1, whole genome shotgun sequence
+28. NZ_CP038804	Treponema putidum strain OMZ 835 chromosome, complete genome
+29. NZ_CP038802	Treponema putidum strain OMZ 847 chromosome, complete genome
+30. NZ_CP038803	Treponema putidum strain OMZ 846 chromosome, complete genome
+31. NZ_CP067089	Breznakiella homolactica strain RmG30 chromosome, complete genome
+32. NZ_PTIS01000001	Clostridium algidicarnis DSM 15099 Ga0131113_101, whole genome shotgun sequence
+33. NZ_CP009228	Treponema putidum strain OMZ 758 (ATCC 700334) chromosome, complete genome
+34. NZ_CP051304	Treponema denticola strain CD-1 chromosome, complete genome
+35. NZ_CP109619	Treponema denticola strain KCOM 3500 chromosome, complete genome
+36. NZ_CM001794	Treponema denticola H1-T chromosome, whole genome shotgun sequence
+37. NZ_CP051303	Treponema denticola strain OT2B chromosome, complete genome
+38. NZ_KB445542	Treponema denticola ATCC 33520 supercont1.1, whole genome shotgun sequence
+39. NZ_CP051634	Treponema denticola strain OMZ 850 chromosome, complete genome
+40. NC_002967	Treponema denticola ATCC 35405, complete sequence
+41. NZ_CM001795	Treponema denticola H-22 chromosome, whole genome shotgun sequence
+42. NZ_CP051301	Treponema sp. OMZ 799 chromosome, complete genome
+43. NZ_KB442451	Treponema denticola SP37 supercont1.1, whole genome shotgun sequence
+44. NZ_CP051633	Treponema denticola strain OMZ 898 chromosome, complete genome
+45. NZ_CP058347	Treponema denticola strain OKA3 chromosome, complete genome
+46. NZ_CP058668	Treponema sp. B152 chromosome, complete genome
+47. NZ_CM001797	Treponema denticola OTK chromosome, whole genome shotgun sequence
+48. NZ_CM001798	Treponema denticola AL-2 chromosome, whole genome shotgun sequence
+49. NZ_CP051523	Treponema denticola strain OMZ 852 chromosome, complete genome
+50. NZ_CP051200	Treponema sp. OMZ 789 chromosome, complete genome
+
+
+Details:
+
+>>
+1. NZ_CP073318
+Source: Kutzneria sp. CA-103260 chromosome, complete genome
+Type: T1PKS,phosphonate
+Number of proteins with BLAST hits to this cluster: 5
+Cumulative BLAST score: 829.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg5_34	JJ691_RS15700	31	100	81.7910447761194	7.95e-22
+ctg5_35	JJ691_RS15705	40	129	101.58730158730158	4.68e-34
+ctg5_36	JJ691_RS15705	35	102	101.22699386503066	2.71e-24
+ctg5_37	JJ691_RS15710	50	280	51.35623869801085	1.71e-88
+ctg5_39	JJ691_RS15875	41	218	98.24561403508771	6.4e-65
+
+
+
+>>
+2. NZ_CP017708
+Source: Moorena producens JHB chromosome, complete genome
+Type: phosphonate
+Number of proteins with BLAST hits to this cluster: 5
+Cumulative BLAST score: 777.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg5_31	BJP36_RS19260	31	113	105.71428571428572	5.12e-28
+ctg5_33	BJP36_RS19415	36	78	44.08163265306123	5.85e-15
+ctg5_35	BJP36_RS19360	37	130	97.35449735449735	1.45e-34
+ctg5_36	BJP36_RS19360	37	118	102.45398773006136	3.82e-30
+ctg5_37	BJP36_RS19355	38	338	98.55334538878843	1.7e-107
+
+
+
+>>
+3. NZ_CP030846
+Source: Candidatus Nitrosotenuis sp. DW1 chromosome, complete genome
+Type: phosphonate,ranthipeptide
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 731.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg5_34	DSQ19_RS09655	36	179	98.2089552238806	6.83e-52
+ctg5_35	DSQ19_RS09675	48	166	98.94179894179894	2.82e-50
+ctg5_36	DSQ19_RS09670	37	91	98.15950920245399	1.45e-21
+ctg5_37	DSQ19_RS09665	52	295	51.71790235081374	2.72e-94
+
+
+
+>>
+4. NC_010085
+Source: Nitrosopumilus maritimus SCM1, complete sequence
+Type: RRE-containing,betalactone,phosphonate
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 712.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg5_34	NMAR_RS00830	36	187	96.11940298507463	3.64e-55
+ctg5_35	NMAR_RS00815	44	147	98.94179894179894	3.3e-43
+ctg5_36	NMAR_RS00820	35	92	95.70552147239265	7.27e-22
+ctg5_37	NMAR_RS00825	50	286	50.81374321880651	7.77e-91
+
+
+
+>>
+5. NZ_MU078696
+Source: Nitrosopumilus sp. b3 7, whole genome shotgun sequence
+Type: RRE-containing,phosphonate
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 710.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg5_34	C6990_RS06625	37	199	97.01492537313433	1.87e-59
+ctg5_35	C6990_RS06610	44	147	97.88359788359789	3.3e-43
+ctg5_36	C6990_RS06615	36	90	91.41104294478528	2.88e-21
+ctg5_37	C6990_RS06620	50	274	51.17540687160941	3.32e-86
+
+
+
+>>
+6. NZ_AP026695
+Source: Nitrosopumilus zosterae strain NM25 chromosome, complete genome
+Type: RRE-containing,phosphonate
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 704.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg5_34	OO712_RS09775	37	187	96.41791044776119	5.57e-55
+ctg5_35	OO712_RS09790	44	157	98.4126984126984	5.65e-47
+ctg5_36	OO712_RS09785	39	82	76.07361963190185	2.74e-18
+ctg5_37	OO712_RS09780	50	278	51.71790235081374	1.03e-87
+
+
+
+>>
+7. NZ_JAGGOJ010000003
+Source: Streptomyces sp. ISL-10 ISL10_4, whole genome shotgun sequence
+Type: RRE-containing,T2PKS,phosphonate
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 646.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg5_34	J7E88_RS01075	32	119	81.7910447761194	3.07e-28
+ctg5_35	J7E88_RS01080	44	135	97.35449735449735	3.14e-36
+ctg5_36	J7E88_RS01080	34	104	101.840490797546	3.88e-25
+ctg5_37	J7E88_RS01085	52	288	49.90958408679928	1.84e-91
+
+
+
+>>
+8. NZ_CP016279
+Source: Streptomyces griseochromogenes strain ATCC 14511 chromosome, complete genome
+Type: RiPP-like,phosphonate
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 628.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg5_34	AVL59_RS02550	32	117	82.98507462686567	1.1e-27
+ctg5_35	AVL59_RS02545	46	132	84.65608465608466	3.16e-35
+ctg5_36	AVL59_RS02545	35	103	100.0	1.26e-24
+ctg5_37	AVL59_RS02540	51	276	49.90958408679928	7.14e-87
+
+
+
+>>
+9. NZ_CP042905
+Source: Candidatus Prometheoarchaeum syntrophicum strain MK-D1 chromosome, complete genome
+Type: phosphonate
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 624.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg5_33	DSAG12_RS08025	47	208	92.65306122448979	2.37e-65
+ctg5_34	DSAG12_RS08030	31	113	86.86567164179104	3.33e-26
+ctg5_35	DSAG12_RS08035	40	150	100.0	2.93e-42
+ctg5_37	DSAG12_RS08040	36	153	49.186256781193485	8.31e-39
+
+
+
+>>
+10. NZ_JAFIQY010000001
+Source: Streptomyces monomycini strain NRRL B-24309 Scaffold1, whole genome shotgun sequence
+Type: phosphonate
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 624.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg5_34	JXZ78_RS01335	32	108	81.19402985074626	1.33e-24
+ctg5_35	JXZ78_RS01330	43	134	84.65608465608466	4.83e-36
+ctg5_36	JXZ78_RS01330	32	94	100.0	5.48e-21
+ctg5_37	JXZ78_RS01325	54	288	49.728752260397826	1.03e-91
+
+
+
+>>
+11. NZ_CDME01000008
+Source: Kibdelosporangium sp. MJ126-NF4, whole genome shotgun sequence
+Type: NRPS,T1PKS,phosphonate
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 617.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg5_34	BN1199_RS25395	31	112	88.95522388059702	6.41e-26
+ctg5_35	BN1199_RS25390	43	137	97.88359788359789	3.85e-37
+ctg5_36	BN1199_RS25390	33	89	100.61349693251533	2.13e-19
+ctg5_37	BN1199_RS25385	53	279	49.90958408679928	2.66e-88
+
+
+
+>>
+12. NZ_JANYMP010000005
+Source: Umezawaea endophytica strain DSM 103496 DSM103496_AS2_SC05, whole genome shotgun sequence
+Type: NRPS,NRPS-like,T3PKS,phosphonate
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 617.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg5_34	NZH93_RS13240	32	104	81.7910447761194	3.18e-23
+ctg5_35	NZH93_RS13245	42	131	102.11640211640211	8.52e-35
+ctg5_36	NZH93_RS13245	39	110	90.79754601226993	3.57e-27
+ctg5_37	NZH93_RS13250	49	272	51.35623869801085	1.18e-85
+
+
+
+>>
+13. NZ_CP023695
+Source: Streptomyces alboniger strain ATCC 12461 chromosome, complete genome
+Type: NRPS,phosphonate,terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 566.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg5_34	CP975_RS03090	34	109	76.11940298507463	5.9e-25
+ctg5_35	CP975_RS03095	34	102	95.76719576719577	5.05e-24
+ctg5_36	CP975_RS03095	33	92	100.0	2.06e-20
+ctg5_37	CP975_RS03100	48	263	49.728752260397826	8.67e-82
+
+
+
+>>
+14. NZ_CP046172
+Source: Nocardia arthritidis strain AUSMDU00012717 chromosome, complete genome
+Type: NRPS,phosphonate
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 558.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg5_34	F5544_RS24180	34	110	81.19402985074626	3.03e-25
+ctg5_35	F5544_RS24185	34	102	98.94179894179894	4.87e-24
+ctg5_36	F5544_RS24185	35	86	88.34355828220859	4.83e-18
+ctg5_37	F5544_RS24190	48	260	48.824593128390596	9.87e-81
+
+
+
+>>
+15. NZ_CP060497
+Source: Olivibacter sp. SDN3 chromosome, complete genome
+Type: phosphonate
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 493.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg5_34	H8S90_RS13000	31	116	112.23880597014926	2.15e-27
+ctg5_35	H8S90_RS13005	35	107	101.05820105820106	8.98e-26
+ctg5_36	H8S90_RS13005	40	111	101.22699386503066	1.41e-27
+ctg5_37	H8S90_RS13010	35	159	51.89873417721519	5.07e-41
+
+
+
+>>
+16. NZ_CP049703
+Source: Parageobacillus toebii NBRC 107807 strain DSM 14590 chromosome, complete genome
+Type: phosphonate
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 767.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg5_34	DER53_RS11685	37	172	87.16417910447761	2.42e-48
+ctg5_35	DER53_RS11740	41	143	95.23809523809523	2.68e-39
+ctg5_36	DER53_RS11740	46	120	82.20858895705521	4.76e-31
+ctg5_37	DER53_RS11735	37	332	99.09584086799276	1.84e-105
+
+
+
+>>
+17. NZ_CP070511
+Source: Parageobacillus toebii strain NEB718 chromosome, complete genome
+Type: phosphonate
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 762.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg5_34	JTI59_RS12570	37	172	87.16417910447761	2.42e-48
+ctg5_35	JTI59_RS12515	42	143	95.23809523809523	1.87e-39
+ctg5_36	JTI59_RS12515	45	115	81.59509202453987	2.59e-29
+ctg5_37	JTI59_RS12520	37	332	99.09584086799276	1.31e-105
+
+
+
+>>
+18. NZ_CP012672
+Source: Sorangium cellulosum strain So ce836 chromosome, complete genome
+Type: phosphonate
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 754.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg5_35	SOCE836_RS43835	43	149	98.4126984126984	9.52e-44
+ctg5_36	SOCE836_RS43830	47	155	98.77300613496932	1.21e-46
+ctg5_37	SOCE836_RS43825	45	450	100.72332730560578	4.24e-151
+
+
+
+>>
+19. NC_021658
+Source: Sorangium cellulosum So0157-2, complete sequence
+Type: phosphonate
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 751.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg5_35	SCE1572_RS43745	43	148	98.4126984126984	2.7e-43
+ctg5_36	SCE1572_RS43740	46	152	98.77300613496932	1.39e-45
+ctg5_37	SCE1572_RS43735	45	451	100.72332730560578	1.06e-151
+
+
+
+>>
+20. NC_010162
+Source: Sorangium cellulosum So ce56, complete sequence
+Type: phosphonate
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 750.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg5_35	SCE_RS37430	43	150	98.4126984126984	3.35e-44
+ctg5_36	SCE_RS37425	46	151	98.77300613496932	3.95e-45
+ctg5_37	SCE_RS37420	45	449	100.72332730560578	6e-151
+
+
+
+>>
+21. NZ_CP012670
+Source: Sorangium cellulosum strain So ceGT47 chromosome, complete genome
+Type: phosphonate
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 735.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg5_35	SOCEGT47_RS32250	44	151	98.4126984126984	1.67e-44
+ctg5_36	SOCEGT47_RS32245	47	155	98.77300613496932	6e-47
+ctg5_37	SOCEGT47_RS32240	44	429	100.72332730560578	5.75e-143
+
+
+
+>>
+22. NZ_CP090978
+Source: Paenibacillus sp. YPD9-1 chromosome, complete genome
+Type: phosphonate
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 660.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg5_33	L0M14_RS27355	33	87	50.204081632653065	2.71e-18
+ctg5_35	L0M14_RS27415	38	131	94.70899470899471	7.03e-35
+ctg5_36	L0M14_RS27415	37	114	100.0	1.43e-28
+ctg5_37	L0M14_RS27420	37	328	99.09584086799276	7.37e-104
+
+
+
+>>
+23. NC_021171
+Source: Bacillus sp. 1NLA3E, complete sequence
+Type: phosphonate
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 582.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg5_33	B1NLA3E_RS03640	32	73	51.02040816326531	1.22e-12
+ctg5_35	B1NLA3E_RS03635	40	135	95.23809523809523	3.26e-36
+ctg5_36	B1NLA3E_RS03635	43	103	82.20858895705521	7.7e-25
+ctg5_37	B1NLA3E_RS03630	35	271	99.09584086799276	2.82e-82
+
+
+
+>>
+24. NZ_BMOK01000003
+Source: Sporolactobacillus putidus strain JCM 15325 sequence03, whole genome shotgun sequence
+Type: phosphonate
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 577.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg5_33	IEX81_RS05005	34	72	46.53061224489796	2.23e-12
+ctg5_35	IEX81_RS05000	41	136	95.23809523809523	1.18e-36
+ctg5_36	IEX81_RS05000	41	105	82.20858895705521	1.48e-25
+ctg5_37	IEX81_RS04995	35	264	98.37251356238697	1.38e-79
+
+
+
+>>
+25. NC_015275
+Source: Cellulosilyticum lentocellum DSM 5427, complete sequence
+Type: phosphonate
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 536.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg5_33	CLOLE_RS17965	41	181	95.91836734693877	1.23e-54
+ctg5_34	CLOLE_RS22095	35	103	66.56716417910448	8.25e-23
+ctg5_35	CLOLE_RS17950	39	114	94.70899470899471	1.66e-28
+ctg5_37	CLOLE_RS17960	33	138	51.17540687160941	1.42e-33
+
+
+
+>>
+26. NZ_CM001240
+Source: Clostridium sp. DL-VIII chromosome, whole genome shotgun sequence
+Type: phosphonate
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 519.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg5_34	CDLVIII_RS24640	35	149	86.56716417910447	9.86e-40
+ctg5_35	CDLVIII_RS24555	39	121	97.35449735449735	4.25e-31
+ctg5_36	CDLVIII_RS24555	36	100	102.45398773006136	1.5e-23
+ctg5_37	CDLVIII_RS24560	34	149	51.5370705244123	1.5e-37
+
+
+
+>>
+27. NZ_QXDJ01000001
+Source: Clostridium chromiireducens strain C1 Scaffold1, whole genome shotgun sequence
+Type: phosphonate
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 512.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg5_34	D2A34_RS02440	35	147	86.56716417910447	3.76e-39
+ctg5_35	D2A34_RS02345	36	117	99.47089947089947	1.67e-29
+ctg5_36	D2A34_RS02345	36	95	103.06748466257669	2.03e-21
+ctg5_37	D2A34_RS02350	34	153	51.5370705244123	6.15e-39
+
+
+
+>>
+28. NZ_CP038804
+Source: Treponema putidum strain OMZ 835 chromosome, complete genome
+Type: phosphonate
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 471.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg5_33	E4N74_RS03505	33	75	51.42857142857142	3.66e-13
+ctg5_35	E4N74_RS03500	40	125	99.47089947089947	2.09e-32
+ctg5_36	E4N74_RS03500	39	108	103.06748466257669	2.06e-26
+ctg5_37	E4N74_RS03495	36	163	51.5370705244123	2.01e-42
+
+
+
+>>
+29. NZ_CP038802
+Source: Treponema putidum strain OMZ 847 chromosome, complete genome
+Type: phosphonate
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 470.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg5_33	E4N76_RS04240	33	75	51.42857142857142	3.66e-13
+ctg5_35	E4N76_RS04235	40	125	99.47089947089947	2.09e-32
+ctg5_36	E4N76_RS04235	39	108	103.06748466257669	2.06e-26
+ctg5_37	E4N76_RS04230	36	162	51.5370705244123	2.78e-42
+
+
+
+>>
+30. NZ_CP038803
+Source: Treponema putidum strain OMZ 846 chromosome, complete genome
+Type: phosphonate
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 467.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg5_33	E4N75_RS03880	32	73	51.42857142857142	1.22e-12
+ctg5_35	E4N75_RS03875	40	125	99.47089947089947	2.09e-32
+ctg5_36	E4N75_RS03875	38	108	103.06748466257669	2.06e-26
+ctg5_37	E4N75_RS03870	36	161	51.5370705244123	7.33e-42
+
+
+
+>>
+31. NZ_CP067089
+Source: Breznakiella homolactica strain RmG30 chromosome, complete genome
+Type: phosphonate
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 465.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg5_33	JFL75_RS12030	34	72	51.42857142857142	3.01e-12
+ctg5_35	JFL75_RS12035	34	115	96.82539682539682	1.03e-28
+ctg5_36	JFL75_RS12035	42	124	99.38650306748467	9.86e-33
+ctg5_37	JFL75_RS12040	36	154	51.71790235081374	4.46e-39
+
+
+
+>>
+32. NZ_PTIS01000001
+Source: Clostridium algidicarnis DSM 15099 Ga0131113_101, whole genome shotgun sequence
+Type: phosphonate
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 464.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg5_33	BD821_RS00405	39	76	47.755102040816325	4.7e-14
+ctg5_35	BD821_RS00415	38	124	99.47089947089947	5.7e-32
+ctg5_36	BD821_RS00415	41	109	103.68098159509202	5.47e-27
+ctg5_37	BD821_RS00410	36	155	51.71790235081374	1.24e-39
+
+
+
+>>
+33. NZ_CP009228
+Source: Treponema putidum strain OMZ 758 (ATCC 700334) chromosome, complete genome
+Type: phosphonate
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 463.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg5_33	JO40_RS09250	33	75	51.42857142857142	3.66e-13
+ctg5_35	JO40_RS09245	38	117	99.47089947089947	1.2e-29
+ctg5_36	JO40_RS09245	39	108	103.06748466257669	2.06e-26
+ctg5_37	JO40_RS09240	36	163	51.5370705244123	2.01e-42
+
+
+
+>>
+34. NZ_CP051304
+Source: Treponema denticola strain CD-1 chromosome, complete genome
+Type: phosphonate
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 460.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg5_33	E4N79_RS06370	33	74	51.42857142857142	6.69e-13
+ctg5_35	E4N79_RS06375	38	119	99.47089947089947	4.46e-30
+ctg5_36	E4N79_RS06375	38	106	103.06748466257669	7.83e-26
+ctg5_37	E4N79_RS06380	36	161	51.5370705244123	1.01e-41
+
+
+
+>>
+35. NZ_CP109619
+Source: Treponema denticola strain KCOM 3500 chromosome, complete genome
+Type: phosphonate
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 460.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg5_33	OE909_RS07115	32	72	51.42857142857142	3.01e-12
+ctg5_35	OE909_RS07120	39	122	99.47089947089947	2.21e-31
+ctg5_36	OE909_RS07120	38	105	103.06748466257669	2.11e-25
+ctg5_37	OE909_RS07125	36	161	51.5370705244123	1.01e-41
+
+
+
+>>
+36. NZ_CM001794
+Source: Treponema denticola H1-T chromosome, whole genome shotgun sequence
+Type: phosphonate
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 459.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg5_33	HMPREF9725_RS10255	32	74	51.42857142857142	4.95e-13
+ctg5_35	HMPREF9725_RS10260	39	121	99.47089947089947	4.32e-31
+ctg5_36	HMPREF9725_RS10260	37	104	103.06748466257669	4.08e-25
+ctg5_37	HMPREF9725_RS10265	36	160	51.5370705244123	1.93e-41
+
+
+
+>>
+37. NZ_CP051303
+Source: Treponema denticola strain OT2B chromosome, complete genome
+Type: phosphonate
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 459.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg5_33	E4N91_RS06410	32	74	51.42857142857142	4.95e-13
+ctg5_35	E4N91_RS06415	39	121	99.47089947089947	4.32e-31
+ctg5_36	E4N91_RS06415	37	104	103.06748466257669	4.08e-25
+ctg5_37	E4N91_RS06420	36	160	51.5370705244123	1.93e-41
+
+
+
+>>
+38. NZ_KB445542
+Source: Treponema denticola ATCC 33520 supercont1.1, whole genome shotgun sequence
+Type: phosphonate
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 459.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg5_33	HMPREF9722_RS09255	32	74	51.42857142857142	4.95e-13
+ctg5_35	HMPREF9722_RS09260	39	121	99.47089947089947	4.32e-31
+ctg5_36	HMPREF9722_RS09260	37	104	103.06748466257669	4.08e-25
+ctg5_37	HMPREF9722_RS09265	36	160	51.5370705244123	1.93e-41
+
+
+
+>>
+39. NZ_CP051634
+Source: Treponema denticola strain OMZ 850 chromosome, complete genome
+Type: phosphonate
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 459.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg5_33	E4N83_RS06240	32	72	51.42857142857142	3.01e-12
+ctg5_35	E4N83_RS06245	39	120	99.47089947089947	1.18e-30
+ctg5_36	E4N83_RS06245	38	106	103.06748466257669	1.09e-25
+ctg5_37	E4N83_RS06250	36	161	51.5370705244123	1.01e-41
+
+
+
+>>
+40. NC_002967
+Source: Treponema denticola ATCC 35405, complete sequence
+Type: phosphonate
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 458.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg5_33	TDE_RS06780	32	72	51.42857142857142	3.01e-12
+ctg5_35	TDE_RS06775	39	120	99.47089947089947	1.64e-30
+ctg5_36	TDE_RS06775	38	105	103.06748466257669	1.52e-25
+ctg5_37	TDE_RS06770	36	161	51.5370705244123	1.01e-41
+
+
+
+>>
+41. NZ_CM001795
+Source: Treponema denticola H-22 chromosome, whole genome shotgun sequence
+Type: phosphonate
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 458.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg5_33	HMPREF9726_RS01025	32	72	51.42857142857142	3.01e-12
+ctg5_35	HMPREF9726_RS01020	38	119	99.47089947089947	4.46e-30
+ctg5_36	HMPREF9726_RS01020	38	106	103.06748466257669	7.83e-26
+ctg5_37	HMPREF9726_RS01015	36	161	51.5370705244123	1.01e-41
+
+
+
+>>
+42. NZ_CP051301
+Source: Treponema sp. OMZ 799 chromosome, complete genome
+Type: phosphonate
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 457.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg5_33	E4O04_RS07340	34	73	52.244897959183675	1.22e-12
+ctg5_35	E4O04_RS07335	40	119	98.4126984126984	4.46e-30
+ctg5_36	E4O04_RS07335	40	107	102.45398773006136	2.9e-26
+ctg5_37	E4O04_RS07330	35	158	51.5370705244123	9.66e-41
+
+
+
+>>
+43. NZ_KB442451
+Source: Treponema denticola SP37 supercont1.1, whole genome shotgun sequence
+Type: phosphonate
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 457.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg5_33	HMPREF9724_RS10335	32	73	51.42857142857142	1.22e-12
+ctg5_35	HMPREF9724_RS10330	38	119	99.47089947089947	4.4e-30
+ctg5_36	HMPREF9724_RS10330	38	104	103.06748466257669	5.6e-25
+ctg5_37	HMPREF9724_RS10325	36	161	51.5370705244123	1.01e-41
+
+
+
+>>
+44. NZ_CP051633
+Source: Treponema denticola strain OMZ 898 chromosome, complete genome
+Type: phosphonate
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 457.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg5_33	E4N85_RS06250	32	72	51.42857142857142	3.01e-12
+ctg5_35	E4N85_RS06255	37	118	99.47089947089947	6.23e-30
+ctg5_36	E4N85_RS06255	38	106	103.06748466257669	1.09e-25
+ctg5_37	E4N85_RS06260	36	161	51.5370705244123	1.01e-41
+
+
+
+>>
+45. NZ_CP058347
+Source: Treponema denticola strain OKA3 chromosome, complete genome
+Type: phosphonate
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 457.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg5_33	E4N90_RS06750	32	72	51.42857142857142	3.01e-12
+ctg5_35	E4N90_RS06755	38	118	99.47089947089947	8.7e-30
+ctg5_36	E4N90_RS06755	38	106	103.06748466257669	7.83e-26
+ctg5_37	E4N90_RS06760	36	161	51.5370705244123	1.01e-41
+
+
+
+>>
+46. NZ_CP058668
+Source: Treponema sp. B152 chromosome, complete genome
+Type: phosphonate
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 457.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg5_33	HYB91_RS06225	32	72	51.42857142857142	3.01e-12
+ctg5_35	HYB91_RS06230	39	120	99.47089947089947	8.42e-31
+ctg5_36	HYB91_RS06230	38	104	103.06748466257669	5.67e-25
+ctg5_37	HYB91_RS06235	36	161	51.5370705244123	1.01e-41
+
+
+
+>>
+47. NZ_CM001797
+Source: Treponema denticola OTK chromosome, whole genome shotgun sequence
+Type: phosphonate
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 456.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg5_33	HMPREF9723_RS12625	32	72	51.42857142857142	3.01e-12
+ctg5_35	HMPREF9723_RS12620	37	118	99.47089947089947	8.7e-30
+ctg5_36	HMPREF9723_RS12620	38	105	103.06748466257669	2.11e-25
+ctg5_37	HMPREF9723_RS12615	36	161	51.5370705244123	1.01e-41
+
+
+
+>>
+48. NZ_CM001798
+Source: Treponema denticola AL-2 chromosome, whole genome shotgun sequence
+Type: phosphonate
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 456.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg5_33	HMPREF9730_RS01890	32	72	51.42857142857142	3.01e-12
+ctg5_35	HMPREF9730_RS01895	37	118	99.47089947089947	6.23e-30
+ctg5_36	HMPREF9730_RS01895	38	105	103.06748466257669	2.93e-25
+ctg5_37	HMPREF9730_RS01900	36	161	51.5370705244123	1.01e-41
+
+
+
+>>
+49. NZ_CP051523
+Source: Treponema denticola strain OMZ 852 chromosome, complete genome
+Type: phosphonate
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 455.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg5_33	E4N84_RS06775	32	72	51.42857142857142	3.01e-12
+ctg5_35	E4N84_RS06780	37	118	99.47089947089947	6.23e-30
+ctg5_36	E4N84_RS06780	37	104	103.06748466257669	4.08e-25
+ctg5_37	E4N84_RS06785	36	161	51.5370705244123	1.01e-41
+
+
+
+>>
+50. NZ_CP051200
+Source: Treponema sp. OMZ 789 chromosome, complete genome
+Type: phosphonate
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 455.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg5_33	E4O06_RS06285	34	71	52.244897959183675	1e-11
+ctg5_35	E4O06_RS06290	39	118	98.4126984126984	6.23e-30
+ctg5_36	E4O06_RS06290	40	106	102.45398773006136	1.09e-25
+ctg5_37	E4O06_RS06295	37	160	51.5370705244123	2.66e-41
+

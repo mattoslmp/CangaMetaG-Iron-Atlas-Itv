@@ -1,0 +1,11 @@
+ClusterBlast scores for NODE_9061_length_4679_cov_3.030493
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg77_1	0	2919	+		
+ctg77_2	2915	4679	+		
+
+
+Significant hits: 
+
+
+Details:

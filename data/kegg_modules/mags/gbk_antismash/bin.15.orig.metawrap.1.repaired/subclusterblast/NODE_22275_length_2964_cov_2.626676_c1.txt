@@ -1,0 +1,11 @@
+ClusterBlast scores for NODE_22275_length_2964_cov_2.626676
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg252_1	0	1569	-		
+ctg252_2	1570	2962	-		
+
+
+Significant hits: 
+
+
+Details:

@@ -1,0 +1,11 @@
+ClusterBlast scores for NODE_5718_length_5844_cov_3.241665
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg31_1	2	4877	+		
+ctg31_2	4972	5842	+		
+
+
+Significant hits: 
+
+
+Details:

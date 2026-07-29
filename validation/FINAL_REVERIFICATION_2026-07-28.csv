@@ -1,0 +1,33 @@
+ID,Item,Status,Evidência
+1,Rótulos de heatmaps acima de 90 linhas,PASS,sparsify_heatmap_y_ticks preserva todos os rótulos por padrão; sparsificação exige allow_sparse_y_ticks=True.
+2,force_all_y_ticks/all_y_labels_visible,PASS,As flags são aplicadas globalmente a todo heatmap e não são anuladas antes da renderização.
+3,Texto da interface sobre matriz completa,PASS,"A interface informa que linhas, colunas e rótulos são mantidos; a afirmação corresponde ao DOM e ao exportador."
+4,RDA interativa — gêneros,PASS,"Bacteria e Archaea exibem 6 gêneros representativos cada, provenientes do mesmo resultado do artigo."
+5,RDA — vetores dentro dos eixos,PASS,Chromium confirmou pelo menos 12 vetores por domínio e todos os endpoints dentro dos limites manuais.
+6,RDA — escala de vetores,PASS,Vetores ambientais e taxonômicos são escalados separadamente pelo módulo canônico.
+7,RDA estática e interativa,PASS,Gerador do artigo e app importam src.publication_ordination; manifestos oficiais apontam para generate_ordinations_revision4.py.
+8,RDA — estatísticas essenciais,PASS,"Título/eixos e tabelas incluem R², R² ajustado, pseudo-F, P global, P dos eixos, variância restrita e VIF; há aviso exploratório."
+9,RDA — tabela dos gêneros,PASS,A aba canônica possui tabela e download dos vetores dos gêneros.
+10,NMDS — Stress-1,PASS,Bacteria=0.06498247382619542; Archaea=0.05379326105805762; ambos aparecem no título.
+11,Implementações distintas de NMDS/PCoA,PASS,"Canônica, exploratória e ômicas integradas delegam às funções centrais de src.publication_ordination."
+12,PERMANOVA padrão,PASS,Pseudo-F por centragem de Gower coincide com cálculo independente por partição das distâncias quadráticas (64.0 no teste determinístico).
+13,Biplot label_x/label_y,PASS,repel_label_positions cria label_x e label_y sem alterar endpoints.
+14,Boxplots — pseudorreplicação,PASS,Uma única unidade por amostra × categoria após soma dos marcadores; teste detecta duplicações residuais.
+15,Boxplots — largura e pontos,PASS,"Top 8 por padrão; pontos individuais desligados por padrão; largura reduzida para 190 px por categoria, máximo 3600 px."
+16,Variáveis indefinidas no formatador,PASS,domain/rank/view_label não são usados no escopo incorreto.
+17,Erros visuais silenciados,PASS,Exceções são registradas com LOGGER.exception e erros de exportação ficam em LAST_PLOTLY_EXPORT_ERRORS.
+18,Dependência do Plotly CDN,PASS,Plotly é incorporado inline; Chromium executou com todas as requisições HTTP(S) bloqueadas.
+19,PCoA — variância e autovalores negativos,PASS,"Eixos mostram variância explicada; contagem/soma negativa, correção Lingoes e constante são exportadas."
+20,Teste visual real,PASS,"Chromium: 8/8 casos, incluindo RDA/NMDS de ambos os domínios e heatmaps reais de 448 módulos."
+21,S32 e S33,PASS,6 páginas de 4800×3480 e compostos regenerados em 4800×20880; app utiliza páginas com rolagem/zoom.
+22,S37,PASS,"Dividida em 2 páginas legíveis, com rótulos completos."
+23,S38,PASS,"Geometria 4950×3180, sem o espaço vazio excessivo original."
+24,Figuras 4 e 5 — Unclassified/Other,PASS,Composição canônica de 100% é mantida; painel complementar remove categorias neutras e renormaliza apenas a visualização dos gêneros nomeados.
+25,S60,PASS,Heatmap estático de gênero mantém os nomes; política global garante o mesmo nas versões interativas.
+26,Exportação dos heatmaps densos,PASS,"O limite de 7600 px foi removido para preserve_cell_geometry; matriz de 448 linhas exporta em 2400×9450, sem compressão vertical."
+27,Contrato de metadados KEGG,PASS,"kegg_sample_metadata fornece canonical_id, axis_label, hover taxonômico, lake_sample e IMG_JGI_ID; testado com dados reais."
+28,Matriz KEGG de metagenomas,PASS,448 linhas × 20 colunas; 448 tick labels e 20 rótulos de amostras únicos no navegador.
+29,Matriz KEGG de MAGs,PASS,448 linhas × 47 colunas; 448 tick labels e 47 rótulos de MAGs únicos; largura declarada ≥2200 px.
+30,Regeneração do artigo,PASS,"Figuras 4, 5 e S17 regeneradas pelo script canônico; o nome revision3 permanece apenas como wrapper compatível."
+31,Navegação do aplicativo,PASS,14/14 páginas percorridas pelo harness offline.
+32,Conteúdo e dimensões dos dados,PASS,"18/18 verificações: taxonomia, ST8, KO/EC/PFAM, KEGG e 20/47/67/87 amostras conforme a tabela."

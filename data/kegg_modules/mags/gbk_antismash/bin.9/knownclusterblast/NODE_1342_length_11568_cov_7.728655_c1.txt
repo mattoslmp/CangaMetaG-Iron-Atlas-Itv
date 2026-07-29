@@ -1,0 +1,20 @@
+ClusterBlast scores for NODE_1342_length_11568_cov_7.728655
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg85_1	0	507	+		
+ctg85_2	515	1646	+		
+ctg85_3	1838	2015	+		
+ctg85_4	2023	3940	-		
+ctg85_5	3963	6690	-		
+ctg85_6	6686	7973	-		
+ctg85_7	8200	9130	-		
+ctg85_8	9361	9970	+		
+ctg85_9	10099	10324	+		
+ctg85_10	10465	11128	-		
+ctg85_11	11124	11340	-		
+
+
+Significant hits: 
+
+
+Details:

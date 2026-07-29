@@ -1,0 +1,19 @@
+ClusterBlast scores for NODE_2497_length_8663_cov_6.306227
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg43_1	94	844	+		
+ctg43_2	992	1553	+		
+ctg43_3	1652	1898	+		
+ctg43_4	1854	3177	+		
+ctg43_5	3194	3929	+		
+ctg43_6	3950	4799	+		
+ctg43_7	4804	5800	+		
+ctg43_8	5789	6587	+		
+ctg43_9	6605	7724	+		
+ctg43_10	7710	8661	+		
+
+
+Significant hits: 
+
+
+Details:

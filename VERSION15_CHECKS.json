@@ -1,0 +1,226 @@
+{
+  "passed": 44,
+  "total": 44,
+  "checks": [
+    {
+      "check": "Only canonical target generator remains",
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "check": "Canonical script in article",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Canonical script in app",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "S37 panel count",
+      "status": "PASS",
+      "detail": "1"
+    },
+    {
+      "check": "S40 panel count",
+      "status": "PASS",
+      "detail": "2"
+    },
+    {
+      "check": "S67 panel count",
+      "status": "PASS",
+      "detail": "2"
+    },
+    {
+      "check": "SupplementaryFigure37_MAG_KEGG_module_completeness_heatmap_species_MAGnumber_KEMET_style_3state.pdf synchronized",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "SupplementaryFigure37_MAG_KEGG_module_completeness_heatmap_species_MAGnumber_KEMET_style_3state.png synchronized",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "SupplementaryFigure37_MAG_KEGG_module_completeness_heatmap_species_MAGnumber_KEMET_style_3state_P001.png synchronized",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "SupplementaryFigure37_MAG_KEGG_module_completeness_heatmap_species_MAGnumber_KEMET_style_3state_P001.svg synchronized",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "SupplementaryFigure37_MAG_KEGG_module_completeness_heatmap_species_MAGnumber_KEMET_style_3state.svg synchronized",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "SupplementaryFigure37_MAG_KEGG_module_completeness_heatmap_species_MAGnumber_KEMET_style_3state_P001.pdf synchronized",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "SupplementaryFigure40_ST8_external_iron_rich_module_completeness_KEMET_style_3state_heatmap.png synchronized",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "SupplementaryFigure40_ST8_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P002.pdf synchronized",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "SupplementaryFigure40_ST8_external_iron_rich_module_completeness_KEMET_style_3state_heatmap.svg synchronized",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "SupplementaryFigure40_ST8_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P001.png synchronized",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "SupplementaryFigure40_ST8_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P001.pdf synchronized",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "SupplementaryFigure40_ST8_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P002.svg synchronized",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "SupplementaryFigure40_ST8_external_iron_rich_module_completeness_KEMET_style_3state_heatmap.pdf synchronized",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "SupplementaryFigure40_ST8_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P002.png synchronized",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "SupplementaryFigure40_ST8_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P001.svg synchronized",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "SupplementaryFigure67_lagoon_plus_external_iron_rich_module_completeness_KEMET_style_3state_heatmap.pdf synchronized",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "SupplementaryFigure67_lagoon_plus_external_iron_rich_module_completeness_KEMET_style_3state_heatmap.png synchronized",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "SupplementaryFigure67_lagoon_plus_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P001.pdf synchronized",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "SupplementaryFigure67_lagoon_plus_external_iron_rich_module_completeness_KEMET_style_3state_heatmap.svg synchronized",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "SupplementaryFigure67_lagoon_plus_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P001.png synchronized",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "SupplementaryFigure67_lagoon_plus_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P001.svg synchronized",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "SupplementaryFigure67_lagoon_plus_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P002.pdf synchronized",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "SupplementaryFigure67_lagoon_plus_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P002.svg synchronized",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "SupplementaryFigure67_lagoon_plus_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P002.png synchronized",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Supplement PAGE field",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Supplement page number is not an image",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Published supplement excludes term: audit",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Published supplement excludes term: generated by ai",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Published supplement excludes term: artificial intelligence",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Published supplement excludes term: regenerated",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Published supplement excludes term: correction",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Published supplement excludes term: visual inspection",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Editable record-key table present",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "Record key has 67 records",
+      "status": "PASS",
+      "detail": "67"
+    },
+    {
+      "check": "Record short labels unique",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "S38 unchanged",
+      "status": "PASS",
+      "detail": "[]"
+    },
+    {
+      "check": "article non-target figures unchanged",
+      "status": "PASS",
+      "detail": "{'checked': 256, 'changed': []}"
+    },
+    {
+      "check": "app non-target figures unchanged",
+      "status": "PASS",
+      "detail": "{'checked': 292, 'changed': []}"
+    }
+  ]
+}

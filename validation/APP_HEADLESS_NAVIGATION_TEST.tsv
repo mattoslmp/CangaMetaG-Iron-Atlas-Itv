@@ -1,0 +1,672 @@
+page	status	stderr
+article_atlas	PASS	
+mags_genomes	PASS	
+kegg_modules	PASS	"y/basedatatypes.py"", line 3801, in to_image
+    return pio.to_image(self, *args, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/opt/pyvenv/lib/python3.13/site-packages/plotly/io/_kaleido.py"", line 345, in to_image
+            raise ValueError(
+    ...<6 lines>...
+            )
+ValueError: 
+Image export using the ""kaleido"" engine requires the Kaleido package,
+which can be installed using pip:
+
+    $ pip install --upgrade kaleido
+
+Plotly svg export failed: 
+Image export using the ""kaleido"" engine requires the Kaleido package,
+which can be installed using pip:
+
+    $ pip install --upgrade kaleido
+Traceback (most recent call last):
+  File ""/mnt/data/CangaMetaG_App_Final_CORRECTED/app.py"", line 1205, in plotly_image_bytes
+    result = f.to_image(format=fmt, width=width, height=height, scale=effective_scale)
+  File ""/opt/pyvenv/lib/python3.13/site-packages/plotly/basedatatypes.py"", line 3801, in to_image
+    return pio.to_image(self, *args, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/opt/pyvenv/lib/python3.13/site-packages/plotly/io/_kaleido.py"", line 345, in to_image
+            raise ValueError(
+    ...<6 lines>...
+            )
+ValueError: 
+Image export using the ""kaleido"" engine requires the Kaleido package,
+which can be installed using pip:
+
+    $ pip install --upgrade kaleido
+
+Plotly png export failed: 
+Image export using the ""kaleido"" engine requires the Kaleido package,
+which can be installed using pip:
+
+    $ pip install --upgrade kaleido
+Traceback (most recent call last):
+  File ""/mnt/data/CangaMetaG_App_Final_CORRECTED/app.py"", line 1205, in plotly_image_bytes
+    result = f.to_image(format=fmt, width=width, height=height, scale=effective_scale)
+  File ""/opt/pyvenv/lib/python3.13/site-packages/plotly/basedatatypes.py"", line 3801, in to_image
+    return pio.to_image(self, *args, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/opt/pyvenv/lib/python3.13/site-packages/plotly/io/_kaleido.py"", line 345, in to_image
+            raise ValueError(
+    ...<6 lines>...
+            )
+ValueError: 
+Image export using the ""kaleido"" engine requires the Kaleido package,
+which can be installed using pip:
+
+    $ pip install --upgrade kaleido
+
+Plotly pdf export failed: 
+Image export using the ""kaleido"" engine requires the Kaleido package,
+which can be installed using pip:
+
+    $ pip install --upgrade kaleido
+Traceback (most recent call last):
+  File ""/mnt/data/CangaMetaG_App_Final_CORRECTED/app.py"", line 1205, in plotly_image_bytes
+    result = f.to_image(format=fmt, width=width, height=height, scale=effective_scale)
+  File ""/opt/pyvenv/lib/python3.13/site-packages/plotly/basedatatypes.py"", line 3801, in to_image
+    return pio.to_image(self, *args, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/opt/pyvenv/lib/python3.13/site-packages/plotly/io/_kaleido.py"", line 345, in to_image
+            raise ValueError(
+    ...<6 lines>...
+            )
+ValueError: 
+Image export using the ""kaleido"" engine requires the Kaleido package,
+which can be installed using pip:
+
+    $ pip install --upgrade kaleido
+
+Plotly svg export failed: 
+Image export using the ""kaleido"" engine requires the Kaleido package,
+which can be installed using pip:
+
+    $ pip install --upgrade kaleido
+Traceback (most recent call last):
+  File ""/mnt/data/CangaMetaG_App_Final_CORRECTED/app.py"", line 1205, in plotly_image_bytes
+    result = f.to_image(format=fmt, width=width, height=height, scale=effective_scale)
+  File ""/opt/pyvenv/lib/python3.13/site-packages/plotly/basedatatypes.py"", line 3801, in to_image
+    return pio.to_image(self, *args, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/opt/pyvenv/lib/python3.13/site-packages/plotly/io/_kaleido.py"", line 345, in to_image
+            raise ValueError(
+    ...<6 lines>...
+            )
+ValueError: 
+Image export using the ""kaleido"" engine requires the Kaleido package,
+which can be installed using pip:
+
+    $ pip install --upgrade kaleido
+
+"
+taxonomy	PASS	"y/basedatatypes.py"", line 3801, in to_image
+    return pio.to_image(self, *args, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/opt/pyvenv/lib/python3.13/site-packages/plotly/io/_kaleido.py"", line 345, in to_image
+            raise ValueError(
+    ...<6 lines>...
+            )
+ValueError: 
+Image export using the ""kaleido"" engine requires the Kaleido package,
+which can be installed using pip:
+
+    $ pip install --upgrade kaleido
+
+Plotly svg export failed: 
+Image export using the ""kaleido"" engine requires the Kaleido package,
+which can be installed using pip:
+
+    $ pip install --upgrade kaleido
+Traceback (most recent call last):
+  File ""/mnt/data/CangaMetaG_App_Final_CORRECTED/app.py"", line 1205, in plotly_image_bytes
+    result = f.to_image(format=fmt, width=width, height=height, scale=effective_scale)
+  File ""/opt/pyvenv/lib/python3.13/site-packages/plotly/basedatatypes.py"", line 3801, in to_image
+    return pio.to_image(self, *args, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/opt/pyvenv/lib/python3.13/site-packages/plotly/io/_kaleido.py"", line 345, in to_image
+            raise ValueError(
+    ...<6 lines>...
+            )
+ValueError: 
+Image export using the ""kaleido"" engine requires the Kaleido package,
+which can be installed using pip:
+
+    $ pip install --upgrade kaleido
+
+Plotly png export failed: 
+Image export using the ""kaleido"" engine requires the Kaleido package,
+which can be installed using pip:
+
+    $ pip install --upgrade kaleido
+Traceback (most recent call last):
+  File ""/mnt/data/CangaMetaG_App_Final_CORRECTED/app.py"", line 1205, in plotly_image_bytes
+    result = f.to_image(format=fmt, width=width, height=height, scale=effective_scale)
+  File ""/opt/pyvenv/lib/python3.13/site-packages/plotly/basedatatypes.py"", line 3801, in to_image
+    return pio.to_image(self, *args, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/opt/pyvenv/lib/python3.13/site-packages/plotly/io/_kaleido.py"", line 345, in to_image
+            raise ValueError(
+    ...<6 lines>...
+            )
+ValueError: 
+Image export using the ""kaleido"" engine requires the Kaleido package,
+which can be installed using pip:
+
+    $ pip install --upgrade kaleido
+
+Plotly pdf export failed: 
+Image export using the ""kaleido"" engine requires the Kaleido package,
+which can be installed using pip:
+
+    $ pip install --upgrade kaleido
+Traceback (most recent call last):
+  File ""/mnt/data/CangaMetaG_App_Final_CORRECTED/app.py"", line 1205, in plotly_image_bytes
+    result = f.to_image(format=fmt, width=width, height=height, scale=effective_scale)
+  File ""/opt/pyvenv/lib/python3.13/site-packages/plotly/basedatatypes.py"", line 3801, in to_image
+    return pio.to_image(self, *args, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/opt/pyvenv/lib/python3.13/site-packages/plotly/io/_kaleido.py"", line 345, in to_image
+            raise ValueError(
+    ...<6 lines>...
+            )
+ValueError: 
+Image export using the ""kaleido"" engine requires the Kaleido package,
+which can be installed using pip:
+
+    $ pip install --upgrade kaleido
+
+Plotly svg export failed: 
+Image export using the ""kaleido"" engine requires the Kaleido package,
+which can be installed using pip:
+
+    $ pip install --upgrade kaleido
+Traceback (most recent call last):
+  File ""/mnt/data/CangaMetaG_App_Final_CORRECTED/app.py"", line 1205, in plotly_image_bytes
+    result = f.to_image(format=fmt, width=width, height=height, scale=effective_scale)
+  File ""/opt/pyvenv/lib/python3.13/site-packages/plotly/basedatatypes.py"", line 3801, in to_image
+    return pio.to_image(self, *args, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/opt/pyvenv/lib/python3.13/site-packages/plotly/io/_kaleido.py"", line 345, in to_image
+            raise ValueError(
+    ...<6 lines>...
+            )
+ValueError: 
+Image export using the ""kaleido"" engine requires the Kaleido package,
+which can be installed using pip:
+
+    $ pip install --upgrade kaleido
+
+"
+ko_biomarkers	PASS	"y/basedatatypes.py"", line 3801, in to_image
+    return pio.to_image(self, *args, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/opt/pyvenv/lib/python3.13/site-packages/plotly/io/_kaleido.py"", line 345, in to_image
+            raise ValueError(
+    ...<6 lines>...
+            )
+ValueError: 
+Image export using the ""kaleido"" engine requires the Kaleido package,
+which can be installed using pip:
+
+    $ pip install --upgrade kaleido
+
+Plotly svg export failed: 
+Image export using the ""kaleido"" engine requires the Kaleido package,
+which can be installed using pip:
+
+    $ pip install --upgrade kaleido
+Traceback (most recent call last):
+  File ""/mnt/data/CangaMetaG_App_Final_CORRECTED/app.py"", line 1205, in plotly_image_bytes
+    result = f.to_image(format=fmt, width=width, height=height, scale=effective_scale)
+  File ""/opt/pyvenv/lib/python3.13/site-packages/plotly/basedatatypes.py"", line 3801, in to_image
+    return pio.to_image(self, *args, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/opt/pyvenv/lib/python3.13/site-packages/plotly/io/_kaleido.py"", line 345, in to_image
+            raise ValueError(
+    ...<6 lines>...
+            )
+ValueError: 
+Image export using the ""kaleido"" engine requires the Kaleido package,
+which can be installed using pip:
+
+    $ pip install --upgrade kaleido
+
+Plotly png export failed: 
+Image export using the ""kaleido"" engine requires the Kaleido package,
+which can be installed using pip:
+
+    $ pip install --upgrade kaleido
+Traceback (most recent call last):
+  File ""/mnt/data/CangaMetaG_App_Final_CORRECTED/app.py"", line 1205, in plotly_image_bytes
+    result = f.to_image(format=fmt, width=width, height=height, scale=effective_scale)
+  File ""/opt/pyvenv/lib/python3.13/site-packages/plotly/basedatatypes.py"", line 3801, in to_image
+    return pio.to_image(self, *args, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/opt/pyvenv/lib/python3.13/site-packages/plotly/io/_kaleido.py"", line 345, in to_image
+            raise ValueError(
+    ...<6 lines>...
+            )
+ValueError: 
+Image export using the ""kaleido"" engine requires the Kaleido package,
+which can be installed using pip:
+
+    $ pip install --upgrade kaleido
+
+Plotly pdf export failed: 
+Image export using the ""kaleido"" engine requires the Kaleido package,
+which can be installed using pip:
+
+    $ pip install --upgrade kaleido
+Traceback (most recent call last):
+  File ""/mnt/data/CangaMetaG_App_Final_CORRECTED/app.py"", line 1205, in plotly_image_bytes
+    result = f.to_image(format=fmt, width=width, height=height, scale=effective_scale)
+  File ""/opt/pyvenv/lib/python3.13/site-packages/plotly/basedatatypes.py"", line 3801, in to_image
+    return pio.to_image(self, *args, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/opt/pyvenv/lib/python3.13/site-packages/plotly/io/_kaleido.py"", line 345, in to_image
+            raise ValueError(
+    ...<6 lines>...
+            )
+ValueError: 
+Image export using the ""kaleido"" engine requires the Kaleido package,
+which can be installed using pip:
+
+    $ pip install --upgrade kaleido
+
+Plotly svg export failed: 
+Image export using the ""kaleido"" engine requires the Kaleido package,
+which can be installed using pip:
+
+    $ pip install --upgrade kaleido
+Traceback (most recent call last):
+  File ""/mnt/data/CangaMetaG_App_Final_CORRECTED/app.py"", line 1205, in plotly_image_bytes
+    result = f.to_image(format=fmt, width=width, height=height, scale=effective_scale)
+  File ""/opt/pyvenv/lib/python3.13/site-packages/plotly/basedatatypes.py"", line 3801, in to_image
+    return pio.to_image(self, *args, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/opt/pyvenv/lib/python3.13/site-packages/plotly/io/_kaleido.py"", line 345, in to_image
+            raise ValueError(
+    ...<6 lines>...
+            )
+ValueError: 
+Image export using the ""kaleido"" engine requires the Kaleido package,
+which can be installed using pip:
+
+    $ pip install --upgrade kaleido
+
+"
+iron_metals	PASS	"y/basedatatypes.py"", line 3801, in to_image
+    return pio.to_image(self, *args, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/opt/pyvenv/lib/python3.13/site-packages/plotly/io/_kaleido.py"", line 345, in to_image
+            raise ValueError(
+    ...<6 lines>...
+            )
+ValueError: 
+Image export using the ""kaleido"" engine requires the Kaleido package,
+which can be installed using pip:
+
+    $ pip install --upgrade kaleido
+
+Plotly svg export failed: 
+Image export using the ""kaleido"" engine requires the Kaleido package,
+which can be installed using pip:
+
+    $ pip install --upgrade kaleido
+Traceback (most recent call last):
+  File ""/mnt/data/CangaMetaG_App_Final_CORRECTED/app.py"", line 1205, in plotly_image_bytes
+    result = f.to_image(format=fmt, width=width, height=height, scale=effective_scale)
+  File ""/opt/pyvenv/lib/python3.13/site-packages/plotly/basedatatypes.py"", line 3801, in to_image
+    return pio.to_image(self, *args, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/opt/pyvenv/lib/python3.13/site-packages/plotly/io/_kaleido.py"", line 345, in to_image
+            raise ValueError(
+    ...<6 lines>...
+            )
+ValueError: 
+Image export using the ""kaleido"" engine requires the Kaleido package,
+which can be installed using pip:
+
+    $ pip install --upgrade kaleido
+
+Plotly png export failed: 
+Image export using the ""kaleido"" engine requires the Kaleido package,
+which can be installed using pip:
+
+    $ pip install --upgrade kaleido
+Traceback (most recent call last):
+  File ""/mnt/data/CangaMetaG_App_Final_CORRECTED/app.py"", line 1205, in plotly_image_bytes
+    result = f.to_image(format=fmt, width=width, height=height, scale=effective_scale)
+  File ""/opt/pyvenv/lib/python3.13/site-packages/plotly/basedatatypes.py"", line 3801, in to_image
+    return pio.to_image(self, *args, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/opt/pyvenv/lib/python3.13/site-packages/plotly/io/_kaleido.py"", line 345, in to_image
+            raise ValueError(
+    ...<6 lines>...
+            )
+ValueError: 
+Image export using the ""kaleido"" engine requires the Kaleido package,
+which can be installed using pip:
+
+    $ pip install --upgrade kaleido
+
+Plotly pdf export failed: 
+Image export using the ""kaleido"" engine requires the Kaleido package,
+which can be installed using pip:
+
+    $ pip install --upgrade kaleido
+Traceback (most recent call last):
+  File ""/mnt/data/CangaMetaG_App_Final_CORRECTED/app.py"", line 1205, in plotly_image_bytes
+    result = f.to_image(format=fmt, width=width, height=height, scale=effective_scale)
+  File ""/opt/pyvenv/lib/python3.13/site-packages/plotly/basedatatypes.py"", line 3801, in to_image
+    return pio.to_image(self, *args, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/opt/pyvenv/lib/python3.13/site-packages/plotly/io/_kaleido.py"", line 345, in to_image
+            raise ValueError(
+    ...<6 lines>...
+            )
+ValueError: 
+Image export using the ""kaleido"" engine requires the Kaleido package,
+which can be installed using pip:
+
+    $ pip install --upgrade kaleido
+
+Plotly svg export failed: 
+Image export using the ""kaleido"" engine requires the Kaleido package,
+which can be installed using pip:
+
+    $ pip install --upgrade kaleido
+Traceback (most recent call last):
+  File ""/mnt/data/CangaMetaG_App_Final_CORRECTED/app.py"", line 1205, in plotly_image_bytes
+    result = f.to_image(format=fmt, width=width, height=height, scale=effective_scale)
+  File ""/opt/pyvenv/lib/python3.13/site-packages/plotly/basedatatypes.py"", line 3801, in to_image
+    return pio.to_image(self, *args, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/opt/pyvenv/lib/python3.13/site-packages/plotly/io/_kaleido.py"", line 345, in to_image
+            raise ValueError(
+    ...<6 lines>...
+            )
+ValueError: 
+Image export using the ""kaleido"" engine requires the Kaleido package,
+which can be installed using pip:
+
+    $ pip install --upgrade kaleido
+
+"
+differential_abundance	PASS	"y/basedatatypes.py"", line 3801, in to_image
+    return pio.to_image(self, *args, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/opt/pyvenv/lib/python3.13/site-packages/plotly/io/_kaleido.py"", line 345, in to_image
+            raise ValueError(
+    ...<6 lines>...
+            )
+ValueError: 
+Image export using the ""kaleido"" engine requires the Kaleido package,
+which can be installed using pip:
+
+    $ pip install --upgrade kaleido
+
+Plotly svg export failed: 
+Image export using the ""kaleido"" engine requires the Kaleido package,
+which can be installed using pip:
+
+    $ pip install --upgrade kaleido
+Traceback (most recent call last):
+  File ""/mnt/data/CangaMetaG_App_Final_CORRECTED/app.py"", line 1205, in plotly_image_bytes
+    result = f.to_image(format=fmt, width=width, height=height, scale=effective_scale)
+  File ""/opt/pyvenv/lib/python3.13/site-packages/plotly/basedatatypes.py"", line 3801, in to_image
+    return pio.to_image(self, *args, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/opt/pyvenv/lib/python3.13/site-packages/plotly/io/_kaleido.py"", line 345, in to_image
+            raise ValueError(
+    ...<6 lines>...
+            )
+ValueError: 
+Image export using the ""kaleido"" engine requires the Kaleido package,
+which can be installed using pip:
+
+    $ pip install --upgrade kaleido
+
+Plotly png export failed: 
+Image export using the ""kaleido"" engine requires the Kaleido package,
+which can be installed using pip:
+
+    $ pip install --upgrade kaleido
+Traceback (most recent call last):
+  File ""/mnt/data/CangaMetaG_App_Final_CORRECTED/app.py"", line 1205, in plotly_image_bytes
+    result = f.to_image(format=fmt, width=width, height=height, scale=effective_scale)
+  File ""/opt/pyvenv/lib/python3.13/site-packages/plotly/basedatatypes.py"", line 3801, in to_image
+    return pio.to_image(self, *args, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/opt/pyvenv/lib/python3.13/site-packages/plotly/io/_kaleido.py"", line 345, in to_image
+            raise ValueError(
+    ...<6 lines>...
+            )
+ValueError: 
+Image export using the ""kaleido"" engine requires the Kaleido package,
+which can be installed using pip:
+
+    $ pip install --upgrade kaleido
+
+Plotly pdf export failed: 
+Image export using the ""kaleido"" engine requires the Kaleido package,
+which can be installed using pip:
+
+    $ pip install --upgrade kaleido
+Traceback (most recent call last):
+  File ""/mnt/data/CangaMetaG_App_Final_CORRECTED/app.py"", line 1205, in plotly_image_bytes
+    result = f.to_image(format=fmt, width=width, height=height, scale=effective_scale)
+  File ""/opt/pyvenv/lib/python3.13/site-packages/plotly/basedatatypes.py"", line 3801, in to_image
+    return pio.to_image(self, *args, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/opt/pyvenv/lib/python3.13/site-packages/plotly/io/_kaleido.py"", line 345, in to_image
+            raise ValueError(
+    ...<6 lines>...
+            )
+ValueError: 
+Image export using the ""kaleido"" engine requires the Kaleido package,
+which can be installed using pip:
+
+    $ pip install --upgrade kaleido
+
+Plotly svg export failed: 
+Image export using the ""kaleido"" engine requires the Kaleido package,
+which can be installed using pip:
+
+    $ pip install --upgrade kaleido
+Traceback (most recent call last):
+  File ""/mnt/data/CangaMetaG_App_Final_CORRECTED/app.py"", line 1205, in plotly_image_bytes
+    result = f.to_image(format=fmt, width=width, height=height, scale=effective_scale)
+  File ""/opt/pyvenv/lib/python3.13/site-packages/plotly/basedatatypes.py"", line 3801, in to_image
+    return pio.to_image(self, *args, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/opt/pyvenv/lib/python3.13/site-packages/plotly/io/_kaleido.py"", line 345, in to_image
+            raise ValueError(
+    ...<6 lines>...
+            )
+ValueError: 
+Image export using the ""kaleido"" engine requires the Kaleido package,
+which can be installed using pip:
+
+    $ pip install --upgrade kaleido
+
+"
+iron_environment_comparison	PASS	"y/basedatatypes.py"", line 3801, in to_image
+    return pio.to_image(self, *args, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/opt/pyvenv/lib/python3.13/site-packages/plotly/io/_kaleido.py"", line 345, in to_image
+            raise ValueError(
+    ...<6 lines>...
+            )
+ValueError: 
+Image export using the ""kaleido"" engine requires the Kaleido package,
+which can be installed using pip:
+
+    $ pip install --upgrade kaleido
+
+Plotly svg export failed: 
+Image export using the ""kaleido"" engine requires the Kaleido package,
+which can be installed using pip:
+
+    $ pip install --upgrade kaleido
+Traceback (most recent call last):
+  File ""/mnt/data/CangaMetaG_App_Final_CORRECTED/app.py"", line 1205, in plotly_image_bytes
+    result = f.to_image(format=fmt, width=width, height=height, scale=effective_scale)
+  File ""/opt/pyvenv/lib/python3.13/site-packages/plotly/basedatatypes.py"", line 3801, in to_image
+    return pio.to_image(self, *args, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/opt/pyvenv/lib/python3.13/site-packages/plotly/io/_kaleido.py"", line 345, in to_image
+            raise ValueError(
+    ...<6 lines>...
+            )
+ValueError: 
+Image export using the ""kaleido"" engine requires the Kaleido package,
+which can be installed using pip:
+
+    $ pip install --upgrade kaleido
+
+Plotly png export failed: 
+Image export using the ""kaleido"" engine requires the Kaleido package,
+which can be installed using pip:
+
+    $ pip install --upgrade kaleido
+Traceback (most recent call last):
+  File ""/mnt/data/CangaMetaG_App_Final_CORRECTED/app.py"", line 1205, in plotly_image_bytes
+    result = f.to_image(format=fmt, width=width, height=height, scale=effective_scale)
+  File ""/opt/pyvenv/lib/python3.13/site-packages/plotly/basedatatypes.py"", line 3801, in to_image
+    return pio.to_image(self, *args, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/opt/pyvenv/lib/python3.13/site-packages/plotly/io/_kaleido.py"", line 345, in to_image
+            raise ValueError(
+    ...<6 lines>...
+            )
+ValueError: 
+Image export using the ""kaleido"" engine requires the Kaleido package,
+which can be installed using pip:
+
+    $ pip install --upgrade kaleido
+
+Plotly pdf export failed: 
+Image export using the ""kaleido"" engine requires the Kaleido package,
+which can be installed using pip:
+
+    $ pip install --upgrade kaleido
+Traceback (most recent call last):
+  File ""/mnt/data/CangaMetaG_App_Final_CORRECTED/app.py"", line 1205, in plotly_image_bytes
+    result = f.to_image(format=fmt, width=width, height=height, scale=effective_scale)
+  File ""/opt/pyvenv/lib/python3.13/site-packages/plotly/basedatatypes.py"", line 3801, in to_image
+    return pio.to_image(self, *args, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/opt/pyvenv/lib/python3.13/site-packages/plotly/io/_kaleido.py"", line 345, in to_image
+            raise ValueError(
+    ...<6 lines>...
+            )
+ValueError: 
+Image export using the ""kaleido"" engine requires the Kaleido package,
+which can be installed using pip:
+
+    $ pip install --upgrade kaleido
+
+Plotly svg export failed: 
+Image export using the ""kaleido"" engine requires the Kaleido package,
+which can be installed using pip:
+
+    $ pip install --upgrade kaleido
+Traceback (most recent call last):
+  File ""/mnt/data/CangaMetaG_App_Final_CORRECTED/app.py"", line 1205, in plotly_image_bytes
+    result = f.to_image(format=fmt, width=width, height=height, scale=effective_scale)
+  File ""/opt/pyvenv/lib/python3.13/site-packages/plotly/basedatatypes.py"", line 3801, in to_image
+    return pio.to_image(self, *args, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/opt/pyvenv/lib/python3.13/site-packages/plotly/io/_kaleido.py"", line 345, in to_image
+            raise ValueError(
+    ...<6 lines>...
+            )
+ValueError: 
+Image export using the ""kaleido"" engine requires the Kaleido package,
+which can be installed using pip:
+
+    $ pip install --upgrade kaleido
+
+"
+img_functional	PASS	"Plotly png export failed: 
+Image export using the ""kaleido"" engine requires the Kaleido package,
+which can be installed using pip:
+
+    $ pip install --upgrade kaleido
+Traceback (most recent call last):
+  File ""/mnt/data/CangaMetaG_App_Final_CORRECTED/app.py"", line 1205, in plotly_image_bytes
+    result = f.to_image(format=fmt, width=width, height=height, scale=effective_scale)
+  File ""/opt/pyvenv/lib/python3.13/site-packages/plotly/basedatatypes.py"", line 3801, in to_image
+    return pio.to_image(self, *args, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/opt/pyvenv/lib/python3.13/site-packages/plotly/io/_kaleido.py"", line 345, in to_image
+            raise ValueError(
+    ...<6 lines>...
+            )
+ValueError: 
+Image export using the ""kaleido"" engine requires the Kaleido package,
+which can be installed using pip:
+
+    $ pip install --upgrade kaleido
+
+Plotly pdf export failed: 
+Image export using the ""kaleido"" engine requires the Kaleido package,
+which can be installed using pip:
+
+    $ pip install --upgrade kaleido
+Traceback (most recent call last):
+  File ""/mnt/data/CangaMetaG_App_Final_CORRECTED/app.py"", line 1205, in plotly_image_bytes
+    result = f.to_image(format=fmt, width=width, height=height, scale=effective_scale)
+  File ""/opt/pyvenv/lib/python3.13/site-packages/plotly/basedatatypes.py"", line 3801, in to_image
+    return pio.to_image(self, *args, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/opt/pyvenv/lib/python3.13/site-packages/plotly/io/_kaleido.py"", line 345, in to_image
+            raise ValueError(
+    ...<6 lines>...
+            )
+ValueError: 
+Image export using the ""kaleido"" engine requires the Kaleido package,
+which can be installed using pip:
+
+    $ pip install --upgrade kaleido
+
+Plotly svg export failed: 
+Image export using the ""kaleido"" engine requires the Kaleido package,
+which can be installed using pip:
+
+    $ pip install --upgrade kaleido
+Traceback (most recent call last):
+  File ""/mnt/data/CangaMetaG_App_Final_CORRECTED/app.py"", line 1205, in plotly_image_bytes
+    result = f.to_image(format=fmt, width=width, height=height, scale=effective_scale)
+  File ""/opt/pyvenv/lib/python3.13/site-packages/plotly/basedatatypes.py"", line 3801, in to_image
+    return pio.to_image(self, *args, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File ""/opt/pyvenv/lib/python3.13/site-packages/plotly/io/_kaleido.py"", line 345, in to_image
+            raise ValueError(
+    ...<6 lines>...
+            )
+ValueError: 
+Image export using the ""kaleido"" engine requires the Kaleido package,
+which can be installed using pip:
+
+    $ pip install --upgrade kaleido
+
+"
+st8_references	PASS	
+environment_integrator	PASS	"/mnt/data/CangaMetaG_App_Final_CORRECTED/app.py:9823: UserWarning:
+
+Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+
+"
+code_reproducibility	PASS	"/usr/lib/python3.13/zipfile/__init__.py:1642: UserWarning:
+
+Duplicate name: 'requirements.txt'
+
+/usr/lib/python3.13/zipfile/__init__.py:1642: UserWarning:
+
+Duplicate name: 'README.md'
+
+"
+final_figures	PASS	
+methods_references	PASS	

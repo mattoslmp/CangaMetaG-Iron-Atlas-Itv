@@ -1,0 +1,19 @@
+ClusterBlast scores for NODE_1840_length_9928_cov_6.147270
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg106_1	119	827	+		
+ctg106_2	834	1620	+		
+ctg106_3	1655	2096	+		
+ctg106_4	2206	3124	+		
+ctg106_5	3142	3871	-		
+ctg106_6	3867	5802	-		
+ctg106_7	6002	6674	+		
+ctg106_8	6769	8092	+		
+ctg106_9	8210	9245	+		
+ctg106_10	9480	9927	+		
+
+
+Significant hits: 
+
+
+Details:

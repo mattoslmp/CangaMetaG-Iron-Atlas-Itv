@@ -1,0 +1,4 @@
+domain,factor,PERMANOVA_pseudo_F,PERMANOVA_p_value,PERMANOVA_df_between,PERMANOVA_df_within,PERMANOVA_permutations,dispersion_F,dispersion_p_value,dispersion_df_between,dispersion_df_within,dispersion_permutations
+Archaea,Lake,3.542686889991666,0.012,3,16,999,2.643173987042219,0.233,3,16,999
+Archaea,Season,0.3116687744339551,0.799,1,18,999,3.374510791928065,0.114,1,18,999
+Archaea,LakeSeason,1.8122719249736918,0.101,7,12,999,4.848154722867513,0.379,7,12,999

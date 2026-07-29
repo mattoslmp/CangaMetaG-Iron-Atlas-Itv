@@ -1,0 +1,26 @@
+{
+  "app": {
+    "preserved_figure_files": 608,
+    "preserved_figure_pass": 608,
+    "unexpected_new_figures": 0,
+    "non_target_scripts": 25,
+    "non_target_scripts_pass": 25,
+    "immutable_source_files": 3,
+    "immutable_source_pass": 3,
+    "expected_s40_original_removals": 22,
+    "expected_s40_original_absent": 22
+  },
+  "article": {
+    "preserved_figure_files": 312,
+    "preserved_figure_pass": 312,
+    "unexpected_new_figures": 0,
+    "non_target_scripts": 25,
+    "non_target_scripts_pass": 25,
+    "immutable_source_files": 6,
+    "immutable_source_pass": 6,
+    "expected_s40_original_removals": 11,
+    "expected_s40_original_absent": 11
+  },
+  "overall_status": "PASS",
+  "records": 1012
+}

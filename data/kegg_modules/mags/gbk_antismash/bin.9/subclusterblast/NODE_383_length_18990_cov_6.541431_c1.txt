@@ -1,0 +1,16 @@
+ClusterBlast scores for NODE_383_length_18990_cov_6.541431
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg19_9	13070	14597	-		
+ctg19_10	14648	15758	+		
+ctg19_11	15603	16545	-		
+ctg19_12	16541	17390	-		
+ctg19_13	17398	17665	-		
+ctg19_14	17692	18352	-		
+ctg19_15	18459	18990	+		
+
+
+Significant hits: 
+
+
+Details:

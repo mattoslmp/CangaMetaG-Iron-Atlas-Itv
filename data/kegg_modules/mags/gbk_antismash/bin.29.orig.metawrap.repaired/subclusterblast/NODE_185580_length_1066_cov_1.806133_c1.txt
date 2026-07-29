@@ -1,0 +1,11 @@
+ClusterBlast scores for NODE_185580_length_1066_cov_1.806133
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg795_1	2	395	-		
+ctg795_2	442	1066	-		
+
+
+Significant hits: 
+
+
+Details:

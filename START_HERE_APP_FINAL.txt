@@ -1,0 +1,33 @@
+CANGAMETAG ATLAS — COMPLETE V6 APPLICATION
+
+1. Reconstruct the ZIP from the 29 equal-size parts, or download the complete ZIP.
+2. Extract it into a new, empty directory. Do not extract over an older installation.
+3. Activate the Python environment and install requirements if needed.
+4. Start with:
+
+   bash run_app_no_root.sh --server.port 8502 --server.address 0.0.0.0 --server.headless true
+
+5. Open http://localhost:8502.
+
+The atlas is public by default. Initial administrator credentials are:
+
+   user: admin
+   password: 1727
+
+The administrator may change the password, enable optional access protection, and activate or hide each public module individually.
+
+No root access, TOML file or external credential file is required. Runtime files are stored outside the installation directory.
+
+
+IMPORTANT — COMPLETE PACKAGE
+============================
+Do not copy app.py or app_no_satellite_final.py by themselves. Both depend on
+the packaged src/, data/, tables/, outputs/ and scripts/ directories.
+
+Recommended launch from the extracted project folder:
+  Windows: run_app_windows.bat
+  Linux/macOS/WSL: python run_app.py
+
+Equivalent Streamlit commands:
+  python -m streamlit run app.py
+  python -m streamlit run app_no_satellite_final.py

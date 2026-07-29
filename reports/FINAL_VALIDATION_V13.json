@@ -1,0 +1,990 @@
+{
+  "version": "v13",
+  "passed": true,
+  "passed_checks": 113,
+  "total_checks": 113,
+  "checks": [
+    {
+      "check": "canonical script exists: scripts/final_publication_figures/06_recalculate_rarefaction_alpha_32999.py",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/scripts/final_publication_figures/06_recalculate_rarefaction_alpha_32999.py",
+      "details": null
+    },
+    {
+      "check": "canonical script exists: scripts/figures/generate_s31_s32.py",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/scripts/figures/generate_s31_s32.py",
+      "details": null
+    },
+    {
+      "check": "canonical script exists: scripts/figures/generate_s33_biogeochemical_zscore_revision3.py",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/scripts/figures/generate_s33_biogeochemical_zscore_revision3.py",
+      "details": null
+    },
+    {
+      "check": "canonical script exists: scripts/generate_s38_s41_module_figures.py",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/scripts/generate_s38_s41_module_figures.py",
+      "details": null
+    },
+    {
+      "check": "canonical script exists: scripts/generate_taxonomy_supplementary_figures.py",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/scripts/generate_taxonomy_supplementary_figures.py",
+      "details": null
+    },
+    {
+      "check": "canonical script exists: scripts/figures/build_supplement_pandoc.py",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/scripts/figures/build_supplement_pandoc.py",
+      "details": null
+    },
+    {
+      "check": "S32 exact KO x-axis title",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/scripts/figures/generate_s31_s32.py",
+      "details": null
+    },
+    {
+      "check": "S33 inherits identical KO title",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/scripts/figures/generate_s33_biogeochemical_zscore_revision3.py",
+      "details": null
+    },
+    {
+      "check": "S32 uses 18 KOs per panel",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/scripts/figures/generate_s31_s32.py",
+      "details": null
+    },
+    {
+      "check": "S4 canonical PNG integrity",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure4_alpha_diversity_CDS_32999.png",
+      "details": [
+        10838,
+        6064
+      ]
+    },
+    {
+      "check": "S4 app/article canonical copy identical",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure4_alpha_diversity_CDS_32999.png == /mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure4_alpha_diversity_CDS_32999.png",
+      "details": null
+    },
+    {
+      "check": "S32 canonical PNG integrity",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap.png",
+      "details": [
+        1800,
+        12366
+      ]
+    },
+    {
+      "check": "S32 app/article canonical copy identical",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap.png == /mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap.png",
+      "details": null
+    },
+    {
+      "check": "S33 canonical PNG integrity",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure33_ResBiomarker_Biogeochemical_cycles_zscore_heatmap.png",
+      "details": [
+        1200,
+        8316
+      ]
+    },
+    {
+      "check": "S33 app/article canonical copy identical",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure33_ResBiomarker_Biogeochemical_cycles_zscore_heatmap.png == /mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure33_ResBiomarker_Biogeochemical_cycles_zscore_heatmap.png",
+      "details": null
+    },
+    {
+      "check": "S37 canonical PNG integrity",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure37_MAG_KEGG_module_completeness_heatmap_species_MAGnumber_KEMET_style_3state.png",
+      "details": [
+        5400,
+        3600
+      ]
+    },
+    {
+      "check": "S37 app/article canonical copy identical",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure37_MAG_KEGG_module_completeness_heatmap_species_MAGnumber_KEMET_style_3state.png == /mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure37_MAG_KEGG_module_completeness_heatmap_species_MAGnumber_KEMET_style_3state.png",
+      "details": null
+    },
+    {
+      "check": "S40 canonical PNG integrity",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure40_ST8_external_iron_rich_module_completeness_KEMET_style_3state_heatmap.png",
+      "details": [
+        5550,
+        15450
+      ]
+    },
+    {
+      "check": "S40 app/article canonical copy identical",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure40_ST8_external_iron_rich_module_completeness_KEMET_style_3state_heatmap.png == /mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure40_ST8_external_iron_rich_module_completeness_KEMET_style_3state_heatmap.png",
+      "details": null
+    },
+    {
+      "check": "S51 canonical PNG integrity",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure51_Taxonomy_Bacteria_Order_individual_samples_barplot_100pct.png",
+      "details": [
+        4500,
+        3150
+      ]
+    },
+    {
+      "check": "S51 app/article canonical copy identical",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure51_Taxonomy_Bacteria_Order_individual_samples_barplot_100pct.png == /mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure51_Taxonomy_Bacteria_Order_individual_samples_barplot_100pct.png",
+      "details": null
+    },
+    {
+      "check": "S53 canonical PNG integrity",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure53_Taxonomy_Archaea_Order_individual_samples_barplot_100pct.png",
+      "details": [
+        4500,
+        3150
+      ]
+    },
+    {
+      "check": "S53 app/article canonical copy identical",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure53_Taxonomy_Archaea_Order_individual_samples_barplot_100pct.png == /mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure53_Taxonomy_Archaea_Order_individual_samples_barplot_100pct.png",
+      "details": null
+    },
+    {
+      "check": "S55 canonical PNG integrity",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure55_Taxonomy_Bacteria_Family_individual_samples_barplot_100pct.png",
+      "details": [
+        4500,
+        3150
+      ]
+    },
+    {
+      "check": "S55 app/article canonical copy identical",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure55_Taxonomy_Bacteria_Family_individual_samples_barplot_100pct.png == /mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure55_Taxonomy_Bacteria_Family_individual_samples_barplot_100pct.png",
+      "details": null
+    },
+    {
+      "check": "S57 canonical PNG integrity",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure57_Taxonomy_Archaea_Family_individual_samples_barplot_100pct.png",
+      "details": [
+        4500,
+        3150
+      ]
+    },
+    {
+      "check": "S57 app/article canonical copy identical",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure57_Taxonomy_Archaea_Family_individual_samples_barplot_100pct.png == /mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure57_Taxonomy_Archaea_Family_individual_samples_barplot_100pct.png",
+      "details": null
+    },
+    {
+      "check": "S61 canonical PNG integrity",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure61_Taxonomy_Archaea_Genus_individual_samples_barplot_100pct.png",
+      "details": [
+        4500,
+        3150
+      ]
+    },
+    {
+      "check": "S61 app/article canonical copy identical",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure61_Taxonomy_Archaea_Genus_individual_samples_barplot_100pct.png == /mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure61_Taxonomy_Archaea_Genus_individual_samples_barplot_100pct.png",
+      "details": null
+    },
+    {
+      "check": "S63 canonical PNG integrity",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure63_Taxonomy_Bacteria_Species_individual_samples_barplot_100pct.png",
+      "details": [
+        4500,
+        3150
+      ]
+    },
+    {
+      "check": "S63 app/article canonical copy identical",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure63_Taxonomy_Bacteria_Species_individual_samples_barplot_100pct.png == /mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure63_Taxonomy_Bacteria_Species_individual_samples_barplot_100pct.png",
+      "details": null
+    },
+    {
+      "check": "S65 canonical PNG integrity",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure65_Taxonomy_Archaea_Species_individual_samples_barplot_100pct.png",
+      "details": [
+        4500,
+        3150
+      ]
+    },
+    {
+      "check": "S65 app/article canonical copy identical",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure65_Taxonomy_Archaea_Species_individual_samples_barplot_100pct.png == /mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure65_Taxonomy_Archaea_Species_individual_samples_barplot_100pct.png",
+      "details": null
+    },
+    {
+      "check": "S67 canonical PNG integrity",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure67_lagoon_plus_external_iron_rich_module_completeness_KEMET_style_3state_heatmap.png",
+      "details": [
+        6450,
+        9150
+      ]
+    },
+    {
+      "check": "S67 app/article canonical copy identical",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure67_lagoon_plus_external_iron_rich_module_completeness_KEMET_style_3state_heatmap.png == /mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure67_lagoon_plus_external_iron_rich_module_completeness_KEMET_style_3state_heatmap.png",
+      "details": null
+    },
+    {
+      "check": "S32 final panel count = 10",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures",
+      "details": {
+        "count": 10,
+        "files": [
+          "SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P01.png",
+          "SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P02.png",
+          "SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P03.png",
+          "SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P04.png",
+          "SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P05.png",
+          "SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P06.png",
+          "SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P07.png",
+          "SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P08.png",
+          "SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P09.png",
+          "SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P10.png"
+        ]
+      }
+    },
+    {
+      "check": "S33 final panel count = 10",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures",
+      "details": {
+        "count": 10,
+        "files": [
+          "SupplementaryFigure33_ResBiomarker_Biogeochemical_cycles_zscore_heatmap_P01.png",
+          "SupplementaryFigure33_ResBiomarker_Biogeochemical_cycles_zscore_heatmap_P02.png",
+          "SupplementaryFigure33_ResBiomarker_Biogeochemical_cycles_zscore_heatmap_P03.png",
+          "SupplementaryFigure33_ResBiomarker_Biogeochemical_cycles_zscore_heatmap_P04.png",
+          "SupplementaryFigure33_ResBiomarker_Biogeochemical_cycles_zscore_heatmap_P05.png",
+          "SupplementaryFigure33_ResBiomarker_Biogeochemical_cycles_zscore_heatmap_P06.png",
+          "SupplementaryFigure33_ResBiomarker_Biogeochemical_cycles_zscore_heatmap_P07.png",
+          "SupplementaryFigure33_ResBiomarker_Biogeochemical_cycles_zscore_heatmap_P08.png",
+          "SupplementaryFigure33_ResBiomarker_Biogeochemical_cycles_zscore_heatmap_P09.png",
+          "SupplementaryFigure33_ResBiomarker_Biogeochemical_cycles_zscore_heatmap_P10.png"
+        ]
+      }
+    },
+    {
+      "check": "S37 final panel count = 1",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures",
+      "details": {
+        "count": 1,
+        "files": [
+          "SupplementaryFigure37_MAG_KEGG_module_completeness_heatmap_species_MAGnumber_KEMET_style_3state_P001.png"
+        ]
+      }
+    },
+    {
+      "check": "S40 final panel count = 4",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures",
+      "details": {
+        "count": 4,
+        "files": [
+          "SupplementaryFigure40_ST8_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P001.png",
+          "SupplementaryFigure40_ST8_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P002.png",
+          "SupplementaryFigure40_ST8_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P003.png",
+          "SupplementaryFigure40_ST8_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P004.png"
+        ]
+      }
+    },
+    {
+      "check": "S67 final panel count = 2",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures",
+      "details": {
+        "count": 2,
+        "files": [
+          "SupplementaryFigure67_lagoon_plus_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P001.png",
+          "SupplementaryFigure67_lagoon_plus_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P002.png"
+        ]
+      }
+    },
+    {
+      "check": "module row rule is thematic then at least one Complete",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/validation/module_figures_v11_execution.json",
+      "details": null
+    },
+    {
+      "check": "all valid module states retained",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/validation/module_figures_v11_execution.json",
+      "details": null
+    },
+    {
+      "check": "module palette preserved",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/validation/module_figures_v11_execution.json",
+      "details": null
+    },
+    {
+      "check": "S37 execution panel count",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/validation/module_figures_v11_execution.json",
+      "details": 1
+    },
+    {
+      "check": "S37 P001 no clipped text",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/validation/module_figures_v11_execution.json",
+      "details": null
+    },
+    {
+      "check": "S37 P001 legend below heatmap",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/validation/module_figures_v11_execution.json",
+      "details": null
+    },
+    {
+      "check": "S40 execution panel count",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/validation/module_figures_v11_execution.json",
+      "details": 4
+    },
+    {
+      "check": "S40 P001 no clipped text",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/validation/module_figures_v11_execution.json",
+      "details": null
+    },
+    {
+      "check": "S40 P001 legend below heatmap",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/validation/module_figures_v11_execution.json",
+      "details": null
+    },
+    {
+      "check": "S40 P002 no clipped text",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/validation/module_figures_v11_execution.json",
+      "details": null
+    },
+    {
+      "check": "S40 P002 legend below heatmap",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/validation/module_figures_v11_execution.json",
+      "details": null
+    },
+    {
+      "check": "S40 P003 no clipped text",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/validation/module_figures_v11_execution.json",
+      "details": null
+    },
+    {
+      "check": "S40 P003 legend below heatmap",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/validation/module_figures_v11_execution.json",
+      "details": null
+    },
+    {
+      "check": "S40 P004 no clipped text",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/validation/module_figures_v11_execution.json",
+      "details": null
+    },
+    {
+      "check": "S40 P004 legend below heatmap",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/validation/module_figures_v11_execution.json",
+      "details": null
+    },
+    {
+      "check": "S67 execution panel count",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/validation/module_figures_v11_execution.json",
+      "details": 2
+    },
+    {
+      "check": "S67 P001 no clipped text",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/validation/module_figures_v11_execution.json",
+      "details": null
+    },
+    {
+      "check": "S67 P001 legend below heatmap",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/validation/module_figures_v11_execution.json",
+      "details": null
+    },
+    {
+      "check": "S67 P002 no clipped text",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/validation/module_figures_v11_execution.json",
+      "details": null
+    },
+    {
+      "check": "S67 P002 legend below heatmap",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/validation/module_figures_v11_execution.json",
+      "details": null
+    },
+    {
+      "check": "S67 P001 contains all 87 samples",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/validation/module_figures_v11_execution.json",
+      "details": [
+        1,
+        87
+      ]
+    },
+    {
+      "check": "S67 P001 x labels at 45 degrees",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/validation/module_figures_v11_execution.json",
+      "details": 45
+    },
+    {
+      "check": "S67 P002 contains all 87 samples",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/validation/module_figures_v11_execution.json",
+      "details": [
+        1,
+        87
+      ]
+    },
+    {
+      "check": "S67 P002 x labels at 45 degrees",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/validation/module_figures_v11_execution.json",
+      "details": 45
+    },
+    {
+      "check": "S51 proportion-only adjustment",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/validation/taxonomy_targeted_legibility_v11_execution.json",
+      "details": null
+    },
+    {
+      "check": "S51 all text inside figure",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/validation/taxonomy_targeted_legibility_v11_execution.json",
+      "details": null
+    },
+    {
+      "check": "S51 preserved font sizes",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/validation/taxonomy_targeted_legibility_v11_execution.json",
+      "details": {
+        "all_text_inside_figure": true,
+        "outside_texts": [],
+        "axes_bbox": [
+          142.5,
+          84.0,
+          1147.5,
+          944.9999999999999
+        ],
+        "legend_inside_figure": true,
+        "legend_right_of_plot": true,
+        "figure_inches": [
+          15.0,
+          10.5
+        ],
+        "aspect_ratio": 1.429,
+        "title_font_pt": 17.0,
+        "axis_title_font_pt": 14.5,
+        "tick_font_pt": 12.0,
+        "sample_label_font_pt": 12.5,
+        "legend_font_pt": 11.5,
+        "legend_columns": 1,
+        "panel_count": 1,
+        "proportion_only_adjustment": true,
+        "scientific_values_changed": false
+      }
+    },
+    {
+      "check": "S53 proportion-only adjustment",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/validation/taxonomy_targeted_legibility_v11_execution.json",
+      "details": null
+    },
+    {
+      "check": "S53 all text inside figure",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/validation/taxonomy_targeted_legibility_v11_execution.json",
+      "details": null
+    },
+    {
+      "check": "S53 preserved font sizes",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/validation/taxonomy_targeted_legibility_v11_execution.json",
+      "details": {
+        "all_text_inside_figure": true,
+        "outside_texts": [],
+        "axes_bbox": [
+          142.5,
+          84.0,
+          1147.5,
+          944.9999999999999
+        ],
+        "legend_inside_figure": true,
+        "legend_right_of_plot": true,
+        "figure_inches": [
+          15.0,
+          10.5
+        ],
+        "aspect_ratio": 1.429,
+        "title_font_pt": 17.0,
+        "axis_title_font_pt": 14.5,
+        "tick_font_pt": 12.0,
+        "sample_label_font_pt": 12.5,
+        "legend_font_pt": 11.5,
+        "legend_columns": 1,
+        "panel_count": 1,
+        "proportion_only_adjustment": true,
+        "scientific_values_changed": false
+      }
+    },
+    {
+      "check": "S55 proportion-only adjustment",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/validation/taxonomy_targeted_legibility_v11_execution.json",
+      "details": null
+    },
+    {
+      "check": "S55 all text inside figure",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/validation/taxonomy_targeted_legibility_v11_execution.json",
+      "details": null
+    },
+    {
+      "check": "S55 preserved font sizes",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/validation/taxonomy_targeted_legibility_v11_execution.json",
+      "details": {
+        "all_text_inside_figure": true,
+        "outside_texts": [],
+        "axes_bbox": [
+          142.5,
+          84.0,
+          1147.5,
+          944.9999999999999
+        ],
+        "legend_inside_figure": true,
+        "legend_right_of_plot": true,
+        "figure_inches": [
+          15.0,
+          10.5
+        ],
+        "aspect_ratio": 1.429,
+        "title_font_pt": 17.0,
+        "axis_title_font_pt": 14.5,
+        "tick_font_pt": 12.0,
+        "sample_label_font_pt": 12.5,
+        "legend_font_pt": 11.5,
+        "legend_columns": 1,
+        "panel_count": 1,
+        "proportion_only_adjustment": true,
+        "scientific_values_changed": false
+      }
+    },
+    {
+      "check": "S57 proportion-only adjustment",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/validation/taxonomy_targeted_legibility_v11_execution.json",
+      "details": null
+    },
+    {
+      "check": "S57 all text inside figure",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/validation/taxonomy_targeted_legibility_v11_execution.json",
+      "details": null
+    },
+    {
+      "check": "S57 preserved font sizes",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/validation/taxonomy_targeted_legibility_v11_execution.json",
+      "details": {
+        "all_text_inside_figure": true,
+        "outside_texts": [],
+        "axes_bbox": [
+          142.5,
+          84.0,
+          1147.5,
+          944.9999999999999
+        ],
+        "legend_inside_figure": true,
+        "legend_right_of_plot": true,
+        "figure_inches": [
+          15.0,
+          10.5
+        ],
+        "aspect_ratio": 1.429,
+        "title_font_pt": 17.0,
+        "axis_title_font_pt": 14.5,
+        "tick_font_pt": 12.0,
+        "sample_label_font_pt": 12.5,
+        "legend_font_pt": 11.5,
+        "legend_columns": 1,
+        "panel_count": 1,
+        "proportion_only_adjustment": true,
+        "scientific_values_changed": false
+      }
+    },
+    {
+      "check": "S61 proportion-only adjustment",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/validation/taxonomy_targeted_legibility_v11_execution.json",
+      "details": null
+    },
+    {
+      "check": "S61 all text inside figure",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/validation/taxonomy_targeted_legibility_v11_execution.json",
+      "details": null
+    },
+    {
+      "check": "S61 preserved font sizes",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/validation/taxonomy_targeted_legibility_v11_execution.json",
+      "details": {
+        "all_text_inside_figure": true,
+        "outside_texts": [],
+        "axes_bbox": [
+          142.5,
+          84.0,
+          1147.5,
+          944.9999999999999
+        ],
+        "legend_inside_figure": true,
+        "legend_right_of_plot": true,
+        "figure_inches": [
+          15.0,
+          10.5
+        ],
+        "aspect_ratio": 1.429,
+        "title_font_pt": 17.0,
+        "axis_title_font_pt": 14.5,
+        "tick_font_pt": 12.0,
+        "sample_label_font_pt": 12.5,
+        "legend_font_pt": 11.5,
+        "legend_columns": 1,
+        "panel_count": 1,
+        "proportion_only_adjustment": true,
+        "scientific_values_changed": false
+      }
+    },
+    {
+      "check": "S63 proportion-only adjustment",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/validation/taxonomy_targeted_legibility_v11_execution.json",
+      "details": null
+    },
+    {
+      "check": "S63 all text inside figure",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/validation/taxonomy_targeted_legibility_v11_execution.json",
+      "details": null
+    },
+    {
+      "check": "S63 preserved font sizes",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/validation/taxonomy_targeted_legibility_v11_execution.json",
+      "details": {
+        "all_text_inside_figure": true,
+        "outside_texts": [],
+        "axes_bbox": [
+          142.5,
+          84.0,
+          1147.5,
+          944.9999999999999
+        ],
+        "legend_inside_figure": true,
+        "legend_right_of_plot": true,
+        "figure_inches": [
+          15.0,
+          10.5
+        ],
+        "aspect_ratio": 1.429,
+        "title_font_pt": 17.0,
+        "axis_title_font_pt": 14.5,
+        "tick_font_pt": 12.0,
+        "sample_label_font_pt": 12.5,
+        "legend_font_pt": 11.5,
+        "legend_columns": 1,
+        "panel_count": 1,
+        "proportion_only_adjustment": true,
+        "scientific_values_changed": false
+      }
+    },
+    {
+      "check": "S65 proportion-only adjustment",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/validation/taxonomy_targeted_legibility_v11_execution.json",
+      "details": null
+    },
+    {
+      "check": "S65 all text inside figure",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/validation/taxonomy_targeted_legibility_v11_execution.json",
+      "details": null
+    },
+    {
+      "check": "S65 preserved font sizes",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/validation/taxonomy_targeted_legibility_v11_execution.json",
+      "details": {
+        "all_text_inside_figure": true,
+        "outside_texts": [],
+        "axes_bbox": [
+          142.5,
+          84.0,
+          1147.5,
+          944.9999999999999
+        ],
+        "legend_inside_figure": true,
+        "legend_right_of_plot": true,
+        "figure_inches": [
+          15.0,
+          10.5
+        ],
+        "aspect_ratio": 1.429,
+        "title_font_pt": 17.0,
+        "axis_title_font_pt": 14.5,
+        "tick_font_pt": 12.0,
+        "sample_label_font_pt": 12.5,
+        "legend_font_pt": 11.5,
+        "legend_columns": 1,
+        "panel_count": 1,
+        "proportion_only_adjustment": true,
+        "scientific_values_changed": false
+      }
+    },
+    {
+      "check": "S4 proportion corrected only",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/S4_PROPORTION_ONLY_REGENERATION_REPORT.json",
+      "details": null
+    },
+    {
+      "check": "Supplementary Table 14 exists",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/04_Supplementary_Tables/Supplementary_Table_14_thematic_module_subset.xlsx",
+      "details": null
+    },
+    {
+      "check": "no out-of-scope figure changes",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/qa/scope_diff_final_v13.json",
+      "details": null
+    },
+    {
+      "check": "preserved module_source_matrices.sha256",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/qa/scope_diff_final_v13.json",
+      "details": null
+    },
+    {
+      "check": "preserved supp_tables.sha256",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/qa/scope_diff_final_v13.json",
+      "details": null
+    },
+    {
+      "check": "preserved main_docx.sha256",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/qa/scope_diff_final_v13.json",
+      "details": null
+    },
+    {
+      "check": "editable PAGE fields with no footer image: ARTICLE_FINAL_ISME_SUBMISSION_CLEAN_REVISION4_ORDINATION_CORRECTED.docx",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/qa/final_page_field_audit.json",
+      "details": {
+        "file": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/01_Manuscript/FINAL_SUBMISSION_FILES/ARTICLE_FINAL_ISME_SUBMISSION_CLEAN_REVISION4_ORDINATION_CORRECTED.docx",
+        "footer_count": 2,
+        "total_PAGE_fields": 2,
+        "footer_graphic_markers": 0,
+        "editable_page_numbering": true,
+        "footer_details": [
+          {
+            "footer": "word/footer1.xml",
+            "PAGE_field_count": 1,
+            "embedded_graphic_markers": 0
+          },
+          {
+            "footer": "word/footer2.xml",
+            "PAGE_field_count": 1,
+            "embedded_graphic_markers": 0
+          }
+        ]
+      }
+    },
+    {
+      "check": "editable PAGE fields with no footer image: Supplementary_Information_ISME_REVISION4_ORDINATION_CORRECTED.docx",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/qa/final_page_field_audit.json",
+      "details": {
+        "file": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/01_Manuscript/FINAL_SUBMISSION_FILES/Supplementary_Information_ISME_REVISION4_ORDINATION_CORRECTED.docx",
+        "footer_count": 1,
+        "total_PAGE_fields": 1,
+        "footer_graphic_markers": 0,
+        "editable_page_numbering": true,
+        "footer_details": [
+          {
+            "footer": "word/footer1.xml",
+            "PAGE_field_count": 1,
+            "embedded_graphic_markers": 0
+          }
+        ]
+      }
+    },
+    {
+      "check": "main fully rendered page count",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/qa/render_main",
+      "details": {
+        "pages": 47,
+        "expected": 47
+      }
+    },
+    {
+      "check": "supplement fully rendered page count",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/qa/render_supp_final",
+      "details": {
+        "pages": 98,
+        "expected": 98
+      }
+    },
+    {
+      "check": "100% inspection evidence supplement page 4",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/qa/render_supp_final/page-4.png",
+      "details": null
+    },
+    {
+      "check": "100% inspection evidence supplement page 36",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/qa/render_supp_final/page-36.png",
+      "details": null
+    },
+    {
+      "check": "100% inspection evidence supplement page 45",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/qa/render_supp_final/page-45.png",
+      "details": null
+    },
+    {
+      "check": "100% inspection evidence supplement page 59",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/qa/render_supp_final/page-59.png",
+      "details": null
+    },
+    {
+      "check": "100% inspection evidence supplement page 62",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/qa/render_supp_final/page-62.png",
+      "details": null
+    },
+    {
+      "check": "100% inspection evidence supplement page 65",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/qa/render_supp_final/page-65.png",
+      "details": null
+    },
+    {
+      "check": "100% inspection evidence supplement page 77",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/qa/render_supp_final/page-77.png",
+      "details": null
+    },
+    {
+      "check": "100% inspection evidence supplement page 79",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/qa/render_supp_final/page-79.png",
+      "details": null
+    },
+    {
+      "check": "100% inspection evidence supplement page 81",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/qa/render_supp_final/page-81.png",
+      "details": null
+    },
+    {
+      "check": "100% inspection evidence supplement page 83",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/qa/render_supp_final/page-83.png",
+      "details": null
+    },
+    {
+      "check": "100% inspection evidence supplement page 87",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/qa/render_supp_final/page-87.png",
+      "details": null
+    },
+    {
+      "check": "100% inspection evidence supplement page 89",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/qa/render_supp_final/page-89.png",
+      "details": null
+    },
+    {
+      "check": "100% inspection evidence supplement page 91",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/qa/render_supp_final/page-91.png",
+      "details": null
+    },
+    {
+      "check": "100% inspection evidence supplement page 93",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/qa/render_supp_final/page-93.png",
+      "details": null
+    },
+    {
+      "check": "100% inspection evidence supplement page 94",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/qa/render_supp_final/page-94.png",
+      "details": null
+    },
+    {
+      "check": "native 97-dpi S67 label crop exists",
+      "passed": true,
+      "evidence": "/mnt/data/cangameta_final_v13/qa/s67_page93_labels_native97dpi.png",
+      "details": null
+    },
+    {
+      "check": "corrected scripts and app.py compile",
+      "passed": true,
+      "evidence": "python -m py_compile executed successfully",
+      "details": null
+    },
+    {
+      "check": "live Streamlit launch unavailable only because dependency absent",
+      "passed": true,
+      "evidence": "ModuleNotFoundError: streamlit; source compilation passed",
+      "details": null
+    }
+  ]
+}

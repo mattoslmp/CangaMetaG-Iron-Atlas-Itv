@@ -1,0 +1,299 @@
+LOCUS       NODE_7057_length_5268_cov_7.026856 5268 bp    DNA              UNK 01-JAN-1980
+DEFINITION  NODE_7057_length_5268_cov_7.026856.
+ACCESSION   NODE_7057_length_5268_cov_7
+VERSION     NODE_7057_length_5268_cov_7.26856
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+COMMENT     ##antiSMASH-Data-START##
+            Version     :: 8.0.4
+            Run date    :: 2026-06-19 19:08:17
+            NOTE :: This is a single region extracted from a larger record!
+            Orig. start :: 0
+            Orig. end   :: 5268
+            ##antiSMASH-Data-END##
+FEATURES             Location/Qualifiers
+     region          1..5268
+                     /candidate_cluster_numbers="1"
+                     /contig_edge="True"
+                     /product="terpene-precursor"
+                     /region_number="1"
+                     /rules="(PT_FPPS_like and not PT_HPP)"
+                     /tool="antismash"
+     cand_cluster    1..5268
+                     /candidate_cluster_number="1"
+                     /contig_edge="True"
+                     /detection_rules="(PT_FPPS_like and not PT_HPP)"
+                     /kind="single"
+                     /product="terpene-precursor"
+                     /protoclusters="1"
+                     /tool="antismash"
+     protocluster    1..5268
+                     /aStool="rule-based-clusters"
+                     /category="terpene"
+                     /contig_edge="True"
+                     /core_location="[4239:5136](-)"
+                     /cutoff="10000"
+                     /detection_rule="(PT_FPPS_like and not PT_HPP)"
+                     /neighbourhood="10000"
+                     /product="terpene-precursor"
+                     /protocluster_number="1"
+                     /tool="antismash"
+     proto_core      complement(4240..5136)
+                     /aStool="rule-based-clusters"
+                     /tool="antismash"
+                     /cutoff="10000"
+                     /detection_rule="(PT_FPPS_like and not PT_HPP)"
+                     /neighbourhood="10000"
+                     /product="terpene-precursor"
+                     /protocluster_number="1"
+     misc_feature    252..266
+                     /note="TFBS match to MexT, Global virulence regulator,
+                     confidence: medium, score: 20.1"
+                     /tool="antismash"
+     CDS             630..860
+                     /locus_tag="ctg304_1"
+                     /transl_table=11
+                     /translation="MNQKRFESILSALEGHELTLRERQFVKAVEEYFRENGKVTDQQES
+                     VLEGLYKEKMWIRKAFYSQSYLRKNSAPKAT"
+     CDS             1017..1352
+                     /locus_tag="ctg304_2"
+                     /transl_table=11
+                     /translation="MAPLVHKRRIWWEPVPEASSYGVYVSKDKTLLEPGRFSWEKTPGI
+                     FSKLVIGKTELTVPDEWPEFPTEPGTYYIGVTSRDDVGNQSDPFLLSGLFKFVAPPAPS
+                     RGGIDHF"
+     CDS             1681..2898
+                     /gene_functions="transport (smcogs) SMCOG1137: Major
+                     facilitator superfamily MFS 1"
+                     /gene_kind="transport"
+                     /locus_tag="ctg304_3"
+                     /transl_table=11
+                     /translation="MIHRNGPRLYYGYVIVTVASIMMMMIWGTFNSFGVFFGPLIKEFG
+                     WTRAIASGASALNTMIFGILCVFSAGLSQRLGPRWVMTICSLLLGLGYFLMAKLAGLWD
+                     LYLYFGIFVAIGMSPYIPLLSLVPQWFTTHRGRMNAIVLSGMGLGIVIVPPLTSSMISR
+                     WQWRNSYLVIGIVTLVVMIAASQLLKTPFHPPLKHRKSGPNTAWADPNSEGLTFQQAIR
+                     TREFALLCLLYFSFLFCLVSITVHIVIHAIGRDIPATHAALVLSLIGGACIVGMNVMGN
+                     VADRFSNKIALGVSYFLMGLSLVWLIPARSEWSFYLFSTAFGFAYGGMQVLFSPLVAEL
+                     FGIRSHGVILATGALVGSVGAAMGPIIAGHLYDTFGSYTLAFILLAGLAFVGLVSTFLL
+                     QKRPPI"
+     PFAM_domain     1741..2724
+                     /aSDomain="MFS_1"
+                     /aSTool="clusterhmmer"
+                     /database="35.0"
+                     /db_xref="PF07690.19"
+                     /db_xref="GO:0022857"
+                     /db_xref="GO:0055085"
+                     /description="Major Facilitator Superfamily"
+                     /detection="hmmscan"
+                     /domain_id="clusterhmmer_ctg304_3_0001"
+                     /evalue="2.50E-32"
+                     /gene_ontologies="GO:0022857: transmembrane transporter
+                     activity"
+                     /gene_ontologies="GO:0055085: transmembrane transport"
+                     /label="ctg304_3"
+                     /locus_tag="ctg304_3"
+                     /protein_end="348"
+                     /protein_start="20"
+                     /score="112.3"
+                     /tool="antismash"
+                     /translation="IMMMMIWGTFNSFGVFFGPLIKEFGWTRAIASGASALNTMIFGIL
+                     CVFSAGLSQRLGPRWVMTICSLLLGLGYFLMAKLAGLWDLYLYFGIFVAIGMSPYIPLL
+                     SLVPQWFTTHRGRMNAIVLSGMGLGIVIVPPLTSSMISRWQWRNSYLVIGIVTLVVMIA
+                     ASQLLKTPFHPPLKHRKSGPNTAWADPNSEGLTFQQAIRTREFALLCLLYFSFLFCLVS
+                     ITVHIVIHAIGRDIPATHAALVLSLIGGACIVGMNVMGNVADRFSNKIALGVSYFLMGL
+                     SLVWLIPARSEWSFYLFSTAFGFAYGGMQVLFSPLVAELFGIRSHGV"
+     misc_feature    3016..3029
+                     /note="TFBS match to PerR, Peroxide regulator, confidence:
+                     weak, score: 20.32"
+                     /tool="antismash"
+     misc_feature    complement(3016..3031)
+                     /note="TFBS match to FuR_variant_1, Ferric Uptake
+                     Regulator, confidence: weak, score: 22.15"
+                     /tool="antismash"
+     CDS             3074..4201
+                     /gene_functions="biosynthetic-additional
+                     (rule-based-clusters) Glycos_transf_2"
+                     /gene_kind="biosynthetic-additional"
+                     /locus_tag="ctg304_4"
+                     /sec_met_domain="Glycos_transf_2 (E-value: 1.2e-20,
+                     bitscore: 62.6, seeds: 256, tool: rule-based-clusters)"
+                     /transl_table=11
+                     /translation="MGWNYLAAIGAVLWVVILFLPWRAWGTREYLDSLETPPDPDLSDV
+                     TVLIPARNEAEVIGTALSRLKTQGQGLQIVVVDDRSTDGTVAEAQTAGIKNLRILSGEP
+                     LPSDWSGKLWALEQGFRHVKTPLTLMMDADIELLPGIVHGLRRKMKEDHLHFVSLMAQL
+                     RMISFWERLLMPAFVYFFKMLYPFRLSNSGLKGVAAAAGGCILLETRLIKEIGGFKVIC
+                     HELIDDCALAKRVKSLGCKTWIGLTHSVQSLRSYENLAGIWSMVARTAFFQLRYSVVLL
+                     AGTTAIMLMAFWLPVAGLFFPATSAKVVSACAFAALILTYLPTLKFYRRSEGWAPALPL
+                     IATLYLAMTWASAIRFWAGAGSRWKGRSYGRHGKP"
+     aSDomain        3089..4180
+                     /aSDomain="TIGR03469"
+                     /aSTool="tigrfam"
+                     /description="HpnB: hopene-associated glycosyltransferase
+                     HpnB"
+                     /detection="hmmscan"
+                     /domain_id="TIGRFam_ctg304_4_0001"
+                     /evalue="1.10E-115"
+                     /identifier="TIGR03469"
+                     /label="ctg304_4"
+                     /locus_tag="ctg304_4"
+                     /protein_end="369"
+                     /protein_start="5"
+                     /score="384.7"
+                     /tool="antismash"
+                     /translation="LAAIGAVLWVVILFLPWRAWGTREYLDSLETPPDPDLSDVTVLIP
+                     ARNEAEVIGTALSRLKTQGQGLQIVVVDDRSTDGTVAEAQTAGIKNLRILSGEPLPSDW
+                     SGKLWALEQGFRHVKTPLTLMMDADIELLPGIVHGLRRKMKEDHLHFVSLMAQLRMISF
+                     WERLLMPAFVYFFKMLYPFRLSNSGLKGVAAAAGGCILLETRLIKEIGGFKVICHELID
+                     DCALAKRVKSLGCKTWIGLTHSVQSLRSYENLAGIWSMVARTAFFQLRYSVVLLAGTTA
+                     IMLMAFWLPVAGLFFPATSAKVVSACAFAALILTYLPTLKFYRRSEGWAPALPLIATLY
+                     LAMTWASAIRFWAGAGSRWKGRSY"
+     PFAM_domain     3392..3847
+                     /aSDomain="Glyco_transf_21"
+                     /aSTool="clusterhmmer"
+                     /database="35.0"
+                     /db_xref="PF13506.9"
+                     /db_xref="GO:0016757"
+                     /description="Glycosyl transferase family 21"
+                     /detection="hmmscan"
+                     /domain_id="clusterhmmer_ctg304_4_0002"
+                     /evalue="3.30E-17"
+                     /gene_ontologies="GO:0016757: glycosyltransferase activity"
+                     /label="ctg304_4"
+                     /locus_tag="ctg304_4"
+                     /protein_end="258"
+                     /protein_start="106"
+                     /score="62.7"
+                     /tool="antismash"
+                     /translation="SDWSGKLWALEQGFRHVKTPLTLMMDADIELLPGIVHGLRRKMKE
+                     DHLHFVSLMAQLRMISFWERLLMPAFVYFFKMLYPFRLSNSGLKGVAAAAGGCILLETR
+                     LIKEIGGFKVICHELIDDCALAKRVKSLGCKTWIGLTHSVQSLRSYEN"
+     CDS             complement(4240..5136)
+                     /gene_functions="biosynthetic (rule-based-clusters)
+                     terpene-precursor: PT_FPPS_like"
+                     /gene_functions="biosynthetic-additional (smcogs)
+                     SMCOG1182: Polyprenyl synthetase"
+                     /gene_kind="biosynthetic"
+                     /locus_tag="ctg304_5"
+                     /sec_met_domain="PT_FPPS_like (E-value: 1e-57, bitscore:
+                     183.8, seeds: 145, tool: rule-based-clusters)"
+                     /transl_table=11
+                     /translation="MDIQRYLQEKKERVDAALESYLPRREELTSNLHKAMQHSLFAGGK
+                     RIRPILSIASFEAVGGTGEKILPFACALEMIHTYSLIHDDLPAIDNDDYRRGKPTCHKV
+                     FGEAIALLAGDGLLTEAFRLMTHRPEKEHALSDAALALDLINEVGQAAGVHGMVGGQVV
+                     DVESEGKAVDLPTVQYIHTRKTGAMILASVRVGAKLGGAKDTLLKALTRYGESLGLAFQ
+                     VADDVLNVEGKAALMGKSTGSDLFKGKATYPSVLGVEESKRRAKELVEMAVNALQHFGS
+                     EADPLREMARFVIARQY"
+     PFAM_domain     complement(4321..5046)
+                     /aSDomain="polyprenyl_synt"
+                     /aSTool="clusterhmmer"
+                     /database="35.0"
+                     /db_xref="PF00348.20"
+                     /db_xref="GO:0008299"
+                     /description="Polyprenyl synthetase"
+                     /detection="hmmscan"
+                     /domain_id="clusterhmmer_ctg304_5_0003"
+                     /evalue="2.70E-53"
+                     /gene_ontologies="GO:0008299: isoprenoid biosynthetic
+                     process"
+                     /label="ctg304_5"
+                     /locus_tag="ctg304_5"
+                     /protein_end="272"
+                     /protein_start="30"
+                     /score="180.8"
+                     /tool="antismash"
+                     /translation="NLHKAMQHSLFAGGKRIRPILSIASFEAVGGTGEKILPFACALEM
+                     IHTYSLIHDDLPAIDNDDYRRGKPTCHKVFGEAIALLAGDGLLTEAFRLMTHRPEKEHA
+                     LSDAALALDLINEVGQAAGVHGMVGGQVVDVESEGKAVDLPTVQYIHTRKTGAMILASV
+                     RVGAKLGGAKDTLLKALTRYGESLGLAFQVADDVLNVEGKAALMGKSTGSDLFKGKATY
+                     PSVLGVEESKRRAKELVEMA"
+ORIGIN
+        1 cgcctcttta atcatacctt ctcagaaacc tttctccatc ttggccgatc tcaaagtcat
+       61 ccacaagctc ctttcggatc aacaccctgc ccgagttttt ttcaccctat cgcctgctga
+      121 accataacca ctgaacagat gattcacgtt ttcttcttat aagagaaaca attcaggact
+      181 tttgtggaaa aacgttctac ttctaacctt tgctggatga tcgaatctcc ccaaaaagca
+      241 atatgattgc aatcagttat ctcgatggtg aaaccttggc atagggattg atatgttcat
+      301 caataagggc ttgtttaaat tcgtctcaag ccaaaccatt cattcgagct ggacgttaca
+      361 ggaggagtgt atccataaga tattcgttag agaaggggag ggaaaatggg aggcgcaaca
+      421 acaactgctc ttgtgttcct attactatta tttatgattg gggttttggg tttcatgttc
+      481 ggcaatctgg actaggtgtt gttttgttct ttttcggtcc ccgtccatct gactgatttg
+      541 ttgtagagtc gggaaagggg gtgggaaagt agatcaatca ttgcacgtca gcggatgttt
+      601 ggatgctatg aactgatttg aggacaaaca tgaatcagaa aaggtttgaa agtattctat
+      661 ccgccttaga agggcacgaa ttgacattga gggagaggca attcgttaag gccgtagaag
+      721 agtattttcg tgaaaacggg aaagtaacag atcagcagga atctgtatta gagggtctct
+      781 acaaggaaaa gatgtggatt aggaaggctt tctatagcca gagttatctt cgaaagaact
+      841 ctgctccgaa agccacctag ctgtacccta tggcgagaaa ttgggtgaga agtaatcgcc
+      901 aataaggttt acgggcgtga cggaatccct gcaccttggt cagatcgagg tcgcttaaag
+      961 tagggtgttg tacgaatggt tgagtcgaaa catttgaggg aaagaggaga gggcaaatgg
+     1021 cgccgttggt tcacaaacga aggatttggt gggaacccgt tccggaagca agtagctacg
+     1081 gagtctacgt aagcaaggac aagacccttc tcgaacccgg tcgcttttcg tgggagaaaa
+     1141 cgccgggaat cttttcaaag ctggtcatcg ggaaaacgga gttgaccgta ccggatgagt
+     1201 ggccagaatt tccgacagag cccggaacgt actatatcgg agtcacttcc agagatgacg
+     1261 tagggaatca aagcgacccc ttcttattat ccggactgtt caaattcgtt gctccaccgg
+     1321 ctccgtcgag aggcggaatc gaccatttct aatggaaaca ccctgttaaa attgctgtga
+     1381 cgatataata tttgtcgggt cccattttct gccttgcggg tctaaaaccc ttccttgcct
+     1441 gttgccttgc tcacgggttg acattccact ccagtcttcg ttatattcaa ctcgcctcaa
+     1501 aacgagttct tatcctgatt gtcctttgcc gtttaaaaac ctcgctacgg atagagaagt
+     1561 gaaagagaga cacgcttctt cccaggatag actggaatcc tttcaacgca gaccagagga
+     1621 tcttttggaa aaaagcgtca acgcccgtcg ctgcggcaag ccaaggagaa gaaatagaac
+     1681 gtgattcatc ggaatggccc tcgcctctat tacggatacg tgatcgtcac tgttgcttcc
+     1741 atcatgatga tgatgatctg gggaaccttt aactccttcg gagtattctt cgggccgttg
+     1801 ataaaggaat tcggctggac acgggccatt gcttccggcg cttcagcgtt gaacacgatg
+     1861 atatttggta tcctgtgcgt attctctgcg ggcttgagcc aaaggctcgg cccccgctgg
+     1921 gtgatgacga tctgcagcct cctcctcgga ctcggctatt tcctcatggc aaagctcgcc
+     1981 ggtctatggg atctgtatct ctatttcggt attttcgtgg cgatcggcat gagcccttat
+     2041 attcccttac tttcccttgt cccccaatgg tttactaccc atcgaggcag gatgaacgct
+     2101 atcgtgctat cggggatggg actcggaata gtgatcgtgc cgcctctcac tagctccatg
+     2161 atttcccggt ggcagtggcg gaactcctat cttgtgatcg gaatcgttac tctcgttgtc
+     2221 atgatcgctg cttctcaact tcttaagacc cccttccacc cgccactcaa acatagaaag
+     2281 agcgggccaa atactgcatg ggctgatcca aacagcgaag ggcttacatt ccagcaagca
+     2341 atccgcacca gggagttcgc tttgctctgt ctgctctatt tctcatttct cttctgtctt
+     2401 gtttccatca ccgtgcatat tgtgatccac gccatcggac gggacatccc agcgactcac
+     2461 gctgccctcg tcttgtcgct catcgggggt gcatgcatcg tgggcatgaa cgtcatgggt
+     2521 aacgtcgctg atcgtttcag caacaagatt gcactagggg tcagctattt cttaatgggg
+     2581 ttgtccttgg tctggttgat accggctcgt tccgagtggt ctttctatct cttttcaacg
+     2641 gcctttggct tcgcctatgg cggcatgcag gttctctttt cacctctcgt cgcagagctc
+     2701 tttggcattc ggtcgcacgg cgtcatcctc gccacaggcg cattggtcgg ttcggtcgga
+     2761 gcagcgatgg gcccaatcat cgccggccat ctctatgata cgttcggctc gtataccctc
+     2821 gcgttcatcc tcctcgcagg gctggcattt gtaggcctcg tttcgacgtt tcttcttcaa
+     2881 aagagacctc cgatctaaaa gattcaacag aacgtcccct ttggctgcac acgctcattt
+     2941 ccatcccacc gagcgaccga agacgaaatc ttctttccaa ctcaatgcca gtcttgacag
+     3001 gattctttct tcgactataa tccttatcat tatttgttct tgtatttgtt tctcggattg
+     3061 gcgggtgtag ctcatggggt ggaattatct cgcggcgatc ggtgctgtcc tttgggtagt
+     3121 gatcttattt cttccctggc gtgcttgggg cacgcgtgag tatttggatt ctctcgagac
+     3181 ccctcccgac cctgacttga gcgacgtaac cgtactcatc cctgcgcgaa atgaagcaga
+     3241 agtgatcggt acggcgttgt caaggttgaa gactcaggga caaggccttc agattgtcgt
+     3301 ggtggatgac cgatccacag acggaacggt cgcggaagca cagaccgccg ggataaagaa
+     3361 tttgcgtatt ctctctggag aacccctgcc gtcggattgg agcggcaagc tttgggccct
+     3421 tgagcagggt tttcgccatg tgaagactcc cttgaccctg atgatggacg ccgatattga
+     3481 gttactaccc ggcatcgtcc acgggctccg ccggaaaatg aaagaagacc atcttcattt
+     3541 tgtttctctc atggcgcaat tgcgcatgat cagcttttgg gaacgattac tcatgcctgc
+     3601 ctttgtctat tttttcaaga tgctttatcc atttcgtttg tccaattcag gtttgaaagg
+     3661 agtggccgcc gctgccggag ggtgcatctt gttagaaact cggttgatca aggaaatcgg
+     3721 cggattcaag gtgatctgtc atgaattgat cgatgactgt gcgctagcga aacgagtcaa
+     3781 gtcgctcggt tgcaaaacgt ggattggcct gacccattcg gtccagagcc tgaggtctta
+     3841 tgagaatttg gcgggaatct ggagcatggt ggcgcgcacc gctttttttc agcttcgtta
+     3901 ctcggtggtt ttgctggcag ggacgacagc gatcatgctg atggcattct ggctgcccgt
+     3961 ggcaggattg ttctttccag ccaccagcgc aaaggtcgtt tccgcctgtg cattcgcagc
+     4021 attgatcctg acctatcttc ctactctgaa gttctacaga cggtccgagg ggtgggcccc
+     4081 agctctgccg ctgatcgcta cgctctatct tgccatgacc tgggcgtcgg ccatccggtt
+     4141 ttgggctgga gcagggtcac gctggaaagg aagaagttac gggaggcacg gaaagccgtg
+     4201 atttctacag caaaatggat ccaccagctc gctcatccgt caatattgtc tcgcaataac
+     4261 aaaacgagcc atctctctga gtggatcggc ttccgagccg aaatgttgta aggcgttgac
+     4321 cgccatttcc accaattctt ttgctcgcct tttcgactcc tcaactccca agacggaggg
+     4381 ataggtagct tttcccttga aaaggtcgct tcccgtgctc ttgcccatta aagcggcctt
+     4441 cccttcgaca ttcaggacat catcggcgac ctgaaaggcc agtcccaggc tctccccgta
+     4501 ccgggtcagc gccttgagga gggtgtcttt tgcgcctccc aatttcgctc ccacccgaac
+     4561 cgaagccaaa atcatcgctc ctgttttgcg ggtatgaata tattggacgg tagggagatc
+     4621 gacagctttt ccctctgatt cgacgtccac cacttggccg cctaccatcc cgtggacccc
+     4681 tgccgcctgg ccgacctcgt tgatcaggtc gagggccagc gcggcgtcgc ttaacgcatg
+     4741 ctctttttcg ggccggtggg tcatcagtct gaaagcttcc gtaagaaggc cgtcgcctgc
+     4801 caaaagagcg atcgcctctc caaagacttt gtgacaggtg ggctttcctc ggcggtagtc
+     4861 gtcattatcg atggccggga gatcatcgtg gatgagtgag taggtgtgga tcatctccag
+     4921 agcgcacgca aaaggcagga tcttctctcc cgttcctcct actgcctcaa aggaagcgat
+     4981 ggataaaatg ggacgaattc gttttcctcc cgcgaaaaga ctgtgttgca tcgccttgtg
+     5041 aagattcgac gtgagttcct ctctcctcgg gagataactc tccagggcgg catccactct
+     5101 ctccttcttc tcttgtaagt agcgctggat atccattagg gatgatcaac aggaggaggt
+     5161 tccctatccc ctccgtgcaa gttggccgaa tcaagattcg actttttcgg tcgggtggaa
+     5221 ggccgtgggc cttcgacgaa gtccaaaatt gctctcctca ccttattg
+//

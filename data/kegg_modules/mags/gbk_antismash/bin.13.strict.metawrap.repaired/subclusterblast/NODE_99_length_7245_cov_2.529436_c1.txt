@@ -1,0 +1,20 @@
+ClusterBlast scores for NODE_99_length_7245_cov_2.529436
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg99_1	0	450	+		
+ctg99_2	461	695	+		
+ctg99_3	696	921	+		
+ctg99_4	1185	1563	+		
+ctg99_5	1556	2399	+		
+ctg99_6	2593	3331	+		
+ctg99_7	3383	4064	+		
+ctg99_8	4383	4956	+		
+ctg99_9	5150	6026	+		
+ctg99_10	6045	7044	+		
+ctg99_11	7076	7244	+		
+
+
+Significant hits: 
+
+
+Details:

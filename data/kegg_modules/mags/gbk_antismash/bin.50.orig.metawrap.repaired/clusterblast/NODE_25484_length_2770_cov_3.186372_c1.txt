@@ -1,0 +1,123 @@
+ClusterBlast scores for NODE_25484_length_2770_cov_3.186372
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg262_1	169	742	+		
+ctg262_2	919	2023	+		
+ctg262_3	2039	2768	+		
+
+
+Significant hits: 
+1. NC_019757	Cylindrospermum stagnale PCC 7417, complete sequence
+2. NZ_JYMT01000042	Bradyrhizobium sp. LTSP885 NODE_42, whole genome shotgun sequence
+3. NZ_CP046911	Paraburkholderia acidiphila strain 7Q-K02 chromosome 3, complete sequence
+4. NZ_QJKB01000005	Undibacterium pigrum strain DSM 19792 Ga0244539_105, whole genome shotgun sequence
+5. NZ_AP018441	Undibacterium sp. YM2 chromosome, complete genome
+6. NZ_AP018439	Undibacterium sp. KW1 chromosome, complete genome
+7. NZ_QTJY01000002	Larkinella soli strain MIMbqt9 contig2, whole genome shotgun sequence
+
+
+Details:
+
+>>
+1. NC_019757
+Source: Cylindrospermum stagnale PCC 7417, complete sequence
+Type: lanthipeptide-class-v
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 632.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg262_2	CYLST_RS26275	54	388	99.45504087193461	2.63e-132
+ctg262_3	CYLST_RS26270	50	244	103.29218106995886	2.95e-78
+
+
+
+>>
+2. NZ_JYMT01000042
+Source: Bradyrhizobium sp. LTSP885 NODE_42, whole genome shotgun sequence
+Type: lanthipeptide-class-v
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 576.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg262_2	UP09_RS30755	48	351	100.0	9.33e-118
+ctg262_3	UP09_RS30760	49	225	97.11934156378601	1.11e-70
+
+
+
+>>
+3. NZ_CP046911
+Source: Paraburkholderia acidiphila strain 7Q-K02 chromosome 3, complete sequence
+Type: lanthipeptide-class-v
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 501.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg262_2	FAZ97_RS27005	46	316	100.2724795640327	4.49e-104
+ctg262_3	FAZ97_RS27010	40	185	97.53086419753086	3.41e-55
+
+
+
+>>
+4. NZ_QJKB01000005
+Source: Undibacterium pigrum strain DSM 19792 Ga0244539_105, whole genome shotgun sequence
+Type: lanthipeptide-class-v
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 472.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg262_2	DFR42_RS16060	48	322	99.45504087193461	2.15e-106
+ctg262_3	DFR42_RS16055	36	150	100.8230452674897	1.3e-41
+
+
+
+>>
+5. NZ_AP018441
+Source: Undibacterium sp. YM2 chromosome, complete genome
+Type: lanthipeptide-class-v
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 463.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg262_2	UNDYM_RS23370	47	316	99.1825613079019	5.63e-104
+ctg262_3	UNDYM_RS23375	36	147	97.94238683127571	1e-40
+
+
+
+>>
+6. NZ_AP018439
+Source: Undibacterium sp. KW1 chromosome, complete genome
+Type: lanthipeptide-class-v
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 450.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg262_2	UNDKW_RS23480	46	305	98.9100817438692	6.28e-100
+ctg262_3	UNDKW_RS23485	35	145	97.94238683127571	6.15e-40
+
+
+
+>>
+7. NZ_QTJY01000002
+Source: Larkinella soli strain MIMbqt9 contig2, whole genome shotgun sequence
+Type: lanthipeptide-class-v
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 331.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg262_2	DX909_RS08235	33	228	102.45231607629428	1.33e-69
+ctg262_3	DX909_RS08240	34	103	80.65843621399176	5.7e-24
+

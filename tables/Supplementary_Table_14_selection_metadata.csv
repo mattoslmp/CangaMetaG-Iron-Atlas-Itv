@@ -1,0 +1,7 @@
+Field,Value
+Purpose,"Additional supplementary data documenting the thematic module subset used only for presentation in S37, S38, S40, S41 and S67."
+Original matrices,Preserved unchanged under data/final_kegg_st8_update/.
+Selection stage 1,"Explicit thematic catalogue based on Table S8 KO biomarkers and requested nitrogen, phosphorus, carbon, methane, sulfur, photosynthesis and iron themes."
+Selection stage 2,"Within each matrix, retain a thematic module only when at least one displayed record is Complete."
+Cell display rule,"Display every original state in each retained row: Complete, 1 block missing, and Incomplete; original 2 blocks missing uses the red Incomplete visual class; only true missing data are white."
+Script,scripts/generate_s38_s41_module_figures.py

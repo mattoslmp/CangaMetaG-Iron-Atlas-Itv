@@ -1,0 +1,27 @@
+ClusterBlast scores for NODE_5_length_49508_cov_3.640125
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg5_23	23755	23899	+		
+ctg5_24	23927	24239	+		
+ctg5_25	24996	25311	+		
+ctg5_26	25297	25750	-		
+ctg5_27	25782	26298	-		
+ctg5_28	26327	26867	-		
+ctg5_29	27017	27494	-		
+ctg5_30	27490	28492	-		
+ctg5_31	28572	29310	+		
+ctg5_32	29380	30613	-		
+ctg5_33	30985	31723	-		
+ctg5_34	31722	32730	-		
+ctg5_35	32759	33329	-		
+ctg5_36	33325	33817	-		
+ctg5_37	33862	35524	-		
+ctg5_38	35658	36597	+		
+ctg5_39	36689	37547	+		
+ctg5_40	39257	39722	-		
+
+
+Significant hits: 
+
+
+Details:

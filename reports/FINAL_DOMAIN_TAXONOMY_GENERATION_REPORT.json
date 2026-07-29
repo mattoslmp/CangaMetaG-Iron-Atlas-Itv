@@ -1,0 +1,24 @@
+{
+  "palette_file": "data/taxonomy_palette.json",
+  "chloroflexi": "#7B2CBF",
+  "candidatus_rokubacteria": "#00A6A6",
+  "figures": [
+    "Figure2_taxonomic_phylum_bacteria_horizontal_CDS",
+    "Figure3_taxonomic_phylum_archaea_horizontal_CDS",
+    "Figure4_taxonomic_bacteria_genus_profiles",
+    "Figure5_taxonomic_archaea_genus_profiles",
+    "SupplementaryFigure17_RDA_and_physicochemical_heatmap"
+  ],
+  "bacteria": {
+    "phylum_taxa": 15,
+    "genus_taxa": 19,
+    "nmds_stress": 0.023405931118005048,
+    "rda_p": 0.533
+  },
+  "archaea": {
+    "phylum_taxa": 15,
+    "genus_taxa": 19,
+    "nmds_stress": 0.027111211776092003,
+    "rda_p": 0.651
+  }
+}

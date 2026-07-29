@@ -1,0 +1,10 @@
+ClusterBlast scores for NODE_148598_length_1184_cov_2.592560
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg932_1	35	1184	+		
+
+
+Significant hits: 
+
+
+Details:

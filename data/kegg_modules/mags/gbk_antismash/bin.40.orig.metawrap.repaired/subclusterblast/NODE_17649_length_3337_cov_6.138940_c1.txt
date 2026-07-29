@@ -1,0 +1,13 @@
+ClusterBlast scores for NODE_17649_length_3337_cov_6.138940
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg506_1	119	1310	+		
+ctg506_2	1510	2116	-		
+ctg506_3	2441	2870	+		
+ctg506_4	2901	3336	+		
+
+
+Significant hits: 
+
+
+Details:

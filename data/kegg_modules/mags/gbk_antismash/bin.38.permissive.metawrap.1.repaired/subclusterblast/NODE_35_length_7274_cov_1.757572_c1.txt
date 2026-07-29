@@ -1,0 +1,19 @@
+ClusterBlast scores for NODE_35_length_7274_cov_1.757572
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg35_1	0	879	-		
+ctg35_2	881	1190	-		
+ctg35_3	1173	1698	-		
+ctg35_4	1699	2734	-		
+ctg35_5	2730	3093	-		
+ctg35_6	3401	4307	-		
+ctg35_7	4417	5107	-		
+ctg35_8	5324	6287	+		
+ctg35_9	6292	6616	+		
+ctg35_10	6714	7272	+		
+
+
+Significant hits: 
+
+
+Details:

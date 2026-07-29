@@ -1,0 +1,3 @@
+# Figure-to-script reproducibility manifest
+
+Every active final figure record is listed in `data/final_figure_script_manifest.csv` and expanded panel by panel in `tables/Supplementary_Table_16_final_scripts.*`. The canonical manifest has 81 records: 8 main and 73 supplementary. S40 is represented only by its final environmental-group layout; S67 is represented by both original and environmental-group layouts. Each row records output names, source inputs, responsible script, exact command, purpose, parameters, dependencies, article/application locations and validation state. Superseded original-order S40 graphics are not active manifest entries.

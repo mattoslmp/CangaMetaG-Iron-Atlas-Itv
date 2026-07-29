@@ -1,0 +1,43 @@
+ClusterBlast scores for NODE_150_length_2220_cov_2.037797
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg150_1	2	185	+		
+ctg150_2	435	717	+		
+ctg150_3	1019	2153	+		
+
+
+Significant hits: 
+1. NZ_LT859958	Brevefilum fermentans isolate CAMBI-1 chromosome I, complete sequence
+2. NC_008554	Syntrophobacter fumaroxidans MPOB, complete sequence
+
+
+Details:
+
+>>
+1. NZ_LT859958
+Source: Brevefilum fermentans isolate CAMBI-1 chromosome I, complete sequence
+Type: RRE-containing
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 279.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg150_2	CFX1CAM_RS05405	35	62	87.09677419354838	5.15e-12
+ctg150_3	CFX1CAM_RS05400	38	217	94.6949602122016	2.41e-65
+
+
+
+>>
+2. NC_008554
+Source: Syntrophobacter fumaroxidans MPOB, complete sequence
+Type: RRE-containing
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 330.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg150_2	SFUM_RS23345	49	53	56.98924731182796	2.08e-08
+ctg150_3	SFUM_RS21805	41	277	93.63395225464191	1.69e-88
+

@@ -1,0 +1,17 @@
+check	status	details
+S40_environmental_group_active_only	PASS	Only the environmental-group S40 is distributed as an active figure; original source matrix retained audit-only.
+S67_original_retained	PASS	Original S67 PNG/PDF/SVG and P001/P002 retained.
+S67_environmental_group_retained	PASS	Environmental-group S67 PNG/PDF/SVG and P001/P002 retained.
+S40_cell_equivalence	PASS	35x67; 0 differing cells after restoring original order.
+S67_cell_equivalence	PASS	39x87; 0 differing cells after restoring original order.
+No_axis_swap_or_transposition	PASS	No X/Y swap and no transposition detected.
+App_non_target_figures	PASS	608/608 SHA-256 identical.
+Article_non_target_figures	PASS	312/312 SHA-256 identical.
+S26_S28_preservation	PASS	27/27 SHA-256 identical.
+Script_table	PASS	81 figure records; 97 figure/panel rows; 5 workflow rows; 102 editable rows; 26 unique scripts/workflows.
+Script_table_validation	PASS	102/102 rows passed.
+Canonical_script_validation	PASS	26/26 canonical script/workflow entries passed.
+Article_app_sync	PASS	72/72 mappings SHA-256 identical.
+Supplementary_DOCX	PASS	206 paragraphs; tables 68x9 and 103x20; 105 embedded media; grouped-only S40 and both S67 layouts.
+Supplementary_PDF	PASS	121 A3 landscape pages; layout-reading copy rendered and inspected.
+README_and_commands	PASS	Canonical README files and 81-record command index updated.

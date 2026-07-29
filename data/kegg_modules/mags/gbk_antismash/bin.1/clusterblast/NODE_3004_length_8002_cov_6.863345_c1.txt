@@ -1,0 +1,821 @@
+ClusterBlast scores for NODE_3004_length_8002_cov_6.863345
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg32_1	1	499	-		
+ctg32_2	541	1855	-		
+ctg32_3	1968	3222	+		
+ctg32_4	3235	3907	+		
+ctg32_5	3903	4914	+		
+ctg32_6	4997	5723	+		
+ctg32_7	5732	6056	-		
+ctg32_8	6139	6904	-		
+ctg32_9	7026	8001	+		
+
+
+Significant hits: 
+1. NZ_LWDV01000007	Orenia metallireducens strain Z6 2524618310, whole genome shotgun sequence
+2. NZ_KI912091	Halonatronum saccharophilum DSM 13868 HalsacDRAFT_HSE.2, whole genome shotgun sequence
+3. NZ_FMWL01000008	Acidaminobacter hydrogenoformans DSM 2784, whole genome shotgun sequence
+4. NC_019978	Halobacteroides halobius DSM 5150, complete sequence
+5. NZ_HF570956	Phycicoccus elongatus Lp2, whole genome shotgun sequence
+6. NZ_JTHL01000001	Streptomyces sp. 150FB scaffold00001, whole genome shotgun sequence
+7. NZ_JAPDMW010000003	Paenibacillus alvei strain LF-11/2021 NODE_3_length_632384_cov_46.373152, whole genome shotgun sequence
+8. NZ_CP080467	Alicyclobacillus acidoterrestris strain DSM 3922 chromosome, complete genome
+9. NZ_CP066352	Bradyrhizobium japonicum strain S06B-BJ plasmid p1S06B, complete sequence
+10. NZ_JAMTCF010000016	Actinosynnema pretiosum strain DSM 44132 LV78DRAFT_scaffold00016.16, whole genome shotgun sequence
+11. NZ_CP093846	Streptomyces tubbatahanensis strain DSD3025 chromosome, complete genome
+12. NZ_CP029617	Streptomyces sp. WAC 01529 chromosome, complete genome
+13. NZ_KV917369	Priestia abyssalis strain DSM 25875 Scaffold1, whole genome shotgun sequence
+14. NZ_JAGYPF010000001	Neobacillus rhizophilus strain FJAT-49825 Scaffold1, whole genome shotgun sequence
+15. NZ_CP022278	Neisseria chenwenguii strain 10023 chromosome, complete genome
+16. NZ_CP029481	Microvirga sp. 17 mud 1-3 chromosome, complete genome
+17. NZ_CP119676	Varunaivibrio sulfuroxidans strain TC8 chromosome, complete genome
+18. NZ_CP059564	Alysiella filiformis strain DSM 16848 chromosome, complete genome
+19. NZ_CP085714	Peribacillus asahii strain CK1 chromosome, complete genome
+20. NZ_CP026095	Peribacillus asahii strain OM18 chromosome, complete genome
+21. NZ_CP085720	Peribacillus asahii strain KF4 chromosome, complete genome
+22. NZ_CP085717	Peribacillus asahii strain CMF4 chromosome, complete genome
+23. NZ_LR746496	Acididesulfobacillus acetoxydans isolate PacBioINE chromosome 1
+24. NZ_CP020039	Streptomyces sp. 3211 isolate 3 chromosome, complete genome
+25. NZ_CP020555	Streptomyces sp. Sge12 chromosome, complete genome
+26. NZ_CP018870	Streptomyces sp. TN58 chromosome, complete genome
+27. NZ_CP043638	Streptomyces sp. INR7 chromosome, complete genome
+28. NZ_CP045245	Cellulomonas sp. JZ18 chromosome, complete genome
+29. NZ_CP039291	Cellulomonas shaoxiangyii strain Z28 chromosome, complete genome
+30. NZ_FNOJ01000003	Alicyclobacillus hesperidum strain DSM 12489, whole genome shotgun sequence
+31. NZ_CP087164	Capillimicrobium parvum strain 0166_1 chromosome, complete genome
+32. NZ_CP065956	Methylacidiphilum sp. IT5 chromosome, complete genome
+33. NC_008554	Syntrophobacter fumaroxidans MPOB, complete sequence
+34. NZ_CP037899	Methylacidiphilum kamchatkense Kam1 chromosome, complete genome
+35. NZ_FOYZ01000001	Anaeromicropila populeti strain 743A, whole genome shotgun sequence
+36. NZ_AP018732	Conexivisphaera calida strain NAS-02 chromosome, complete genome
+37. NZ_CP015108	Sporosarcina ureae strain S204 chromosome, complete genome
+38. NZ_VTOK01000003	Alteribacillus sp. YIM 98480 Scaffold3, whole genome shotgun sequence
+39. NZ_CP119138	Alicyclobacillus fastidiosus strain Alicyclobacillus fastidiosus KKP 3000 chromosome, complete genome
+40. NZ_CP104067	Alicyclobacillus fastidiosus strain DSM 17978 chromosome, complete genome
+41. NZ_CP054424	Rhodoferax sp. BAB1 chromosome, complete genome
+42. NC_021917	Cycloclasticus zancles 78-ME, complete sequence
+43. NZ_CP026521	Bacillus sp. MBGLi79 chromosome
+44. NZ_CP018173	Bacillus subtilis strain MJ01 chromosome, complete genome
+45. NZ_CP085397	Peribacillus frigoritolerans strain KF3 chromosome, complete genome
+46. NZ_JAGGQC010000008	Bacillus sp. ISL-78 ISL78_9, whole genome shotgun sequence
+47. NZ_JAGGQV010000001	Bacillus sp. ISL-57 ISL57_2, whole genome shotgun sequence
+48. NZ_CP085395	Peribacillus frigoritolerans strain CK6 chromosome, complete genome
+49. NZ_LN851186	Bacillus testis strain SIT10, whole genome shotgun sequence
+50. NZ_JACHHB010000001	Texcoconibacillus texcoconensis strain DSM 24696 Ga0415234_01, whole genome shotgun sequence
+
+
+Details:
+
+>>
+1. NZ_LWDV01000007
+Source: Orenia metallireducens strain Z6 2524618310, whole genome shotgun sequence
+Type: NRPS,betalactone
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 373.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg32_1	U472_RS04365	42	120	95.18072289156626	7.15e-31
+ctg32_2	U472_RS04370	40	253	83.7528604118993	6.77e-77
+
+
+
+>>
+2. NZ_KI912091
+Source: Halonatronum saccharophilum DSM 13868 HalsacDRAFT_HSE.2, whole genome shotgun sequence
+Type: NRPS,betalactone
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 371.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg32_1	HALSAC_RS0101585	41	119	95.18072289156626	1.91e-30
+ctg32_2	HALSAC_RS0101580	41	252	83.7528604118993	1.88e-76
+
+
+
+>>
+3. NZ_FMWL01000008
+Source: Acidaminobacter hydrogenoformans DSM 2784, whole genome shotgun sequence
+Type: betalactone
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 363.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg32_1	BLP63_RS09295	40	110	93.97590361445783	5.77e-27
+ctg32_2	BLP63_RS09290	40	253	84.43935926773455	1.07e-76
+
+
+
+>>
+4. NC_019978
+Source: Halobacteroides halobius DSM 5150, complete sequence
+Type: betalactone
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 359.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg32_1	HALHA_RS01255	39	114	95.18072289156626	2.73e-28
+ctg32_2	HALHA_RS01250	40	245	82.37986270022884	6.01e-74
+
+
+
+>>
+5. NZ_HF570956
+Source: Phycicoccus elongatus Lp2, whole genome shotgun sequence
+Type: betalactone,crocagin
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 347.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg32_1	BN10_RS08535	41	99	89.1566265060241	1.24e-22
+ctg32_2	BN10_RS08530	40	248	81.46453089244852	2.15e-76
+
+
+
+>>
+6. NZ_JTHL01000001
+Source: Streptomyces sp. 150FB scaffold00001, whole genome shotgun sequence
+Type: NRPS,PKS-like,T1PKS,amglyccycl,phenazine
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 340.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg32_1	QR77_RS16200	39	92	82.53012048192771	2.23e-20
+ctg32_2	QR77_RS16195	41	248	85.58352402745996	1.1e-75
+
+
+
+>>
+7. NZ_JAPDMW010000003
+Source: Paenibacillus alvei strain LF-11/2021 NODE_3_length_632384_cov_46.373152, whole genome shotgun sequence
+Type: phosphonate
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 332.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg32_1	OF778_RS08275	35	91	98.79518072289156	5.85e-20
+ctg32_2	OF778_RS08270	37	241	80.09153318077803	1.47e-73
+
+
+
+>>
+8. NZ_CP080467
+Source: Alicyclobacillus acidoterrestris strain DSM 3922 chromosome, complete genome
+Type: betalactone
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 332.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg32_8	K1I37_RS06710	34	126	94.09448818897637	3.56e-33
+ctg32_9	K1I37_RS06705	38	206	98.15384615384616	7.23e-60
+
+
+
+>>
+9. NZ_CP066352
+Source: Bradyrhizobium japonicum strain S06B-BJ plasmid p1S06B, complete sequence
+Type: hserlactone,phosphonate
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 328.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg32_1	JEY30_RS48125	39	98	98.19277108433735	2.17e-22
+ctg32_2	JEY30_RS48120	37	230	80.77803203661327	2.08e-69
+
+
+
+>>
+10. NZ_JAMTCF010000016
+Source: Actinosynnema pretiosum strain DSM 44132 LV78DRAFT_scaffold00016.16, whole genome shotgun sequence
+Type: NRPS,T1PKS,betalactone,crocagin
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 328.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg32_1	LV78_RS29380	44	92	70.48192771084338	2.07e-20
+ctg32_2	LV78_RS29375	41	236	72.99771167048054	1.13e-71
+
+
+
+>>
+11. NZ_CP093846
+Source: Streptomyces tubbatahanensis strain DSD3025 chromosome, complete genome
+Type: betalactone
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 326.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg32_1	MMF93_RS32385	36	87	96.3855421686747	1.39e-18
+ctg32_2	MMF93_RS32390	40	239	85.81235697940504	1.1e-72
+
+
+
+>>
+12. NZ_CP029617
+Source: Streptomyces sp. WAC 01529 chromosome, complete genome
+Type: phosphonate
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 313.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg32_1	DMA15_RS11175	32	82	98.79518072289156	1.1e-16
+ctg32_2	DMA15_RS11180	38	231	79.17620137299771	4.76e-70
+
+
+
+>>
+13. NZ_KV917369
+Source: Priestia abyssalis strain DSM 25875 Scaffold1, whole genome shotgun sequence
+Type: betalactone
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 272.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg32_8	BK575_RS01590	34	101	81.10236220472441	1.16e-23
+ctg32_9	BK575_RS01585	35	171	90.15384615384615	8.13e-47
+
+
+
+>>
+14. NZ_JAGYPF010000001
+Source: Neobacillus rhizophilus strain FJAT-49825 Scaffold1, whole genome shotgun sequence
+Type: betalactone
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 692.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg32_2	KHA99_RS02960	37	236	84.66819221967964	1.86e-70
+ctg32_9	KHA99_RS03035	34	170	97.84615384615385	2.08e-46
+ctg32_9	KHA99_RS02990	32	153	100.0	5.44e-40
+ctg32_9	KHA99_RS02900	31	133	92.3076923076923	4.85e-33
+
+
+
+>>
+15. NZ_CP022278
+Source: Neisseria chenwenguii strain 10023 chromosome, complete genome
+Type: betalactone
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 441.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg32_2	BG910_RS10275	43	253	79.63386727688787	6.69e-76
+ctg32_9	BG910_RS10310	36	188	97.53846153846155	5.02e-53
+
+
+
+>>
+16. NZ_CP029481
+Source: Microvirga sp. 17 mud 1-3 chromosome, complete genome
+Type: betalactone
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 425.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg32_2	C4E04_RS05835	39	241	86.72768878718536	2.95e-72
+ctg32_9	C4E04_RS05840	34	184	100.30769230769229	1.32e-51
+
+
+
+>>
+17. NZ_CP119676
+Source: Varunaivibrio sulfuroxidans strain TC8 chromosome, complete genome
+Type: betalactone
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 424.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg32_2	P3M64_RS04345	39	237	84.43935926773455	1.52e-70
+ctg32_9	P3M64_RS04310	35	187	92.3076923076923	7.77e-53
+
+
+
+>>
+18. NZ_CP059564
+Source: Alysiella filiformis strain DSM 16848 chromosome, complete genome
+Type: betalactone,terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 420.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg32_2	H3L97_RS09330	43	248	79.63386727688787	3.7e-74
+ctg32_9	H3L97_RS09315	34	172	102.15384615384615	4.29e-47
+
+
+
+>>
+19. NZ_CP085714
+Source: Peribacillus asahii strain CK1 chromosome, complete genome
+Type: betalactone
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 388.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg32_2	LIT37_RS10445	38	239	83.7528604118993	1.33e-71
+ctg32_9	LIT37_RS10540	35	149	92.61538461538461	1.16e-38
+
+
+
+>>
+20. NZ_CP026095
+Source: Peribacillus asahii strain OM18 chromosome, complete genome
+Type: betalactone
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 384.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg32_2	BAOM_RS10170	38	240	83.7528604118993	6.72e-72
+ctg32_9	BAOM_RS10265	34	144	92.61538461538461	5.79e-37
+
+
+
+>>
+21. NZ_CP085720
+Source: Peribacillus asahii strain KF4 chromosome, complete genome
+Type: betalactone
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 383.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg32_2	LIT35_RS10430	37	239	83.7528604118993	1.86e-71
+ctg32_9	LIT35_RS10525	34	144	92.61538461538461	5.79e-37
+
+
+
+>>
+22. NZ_CP085717
+Source: Peribacillus asahii strain CMF4 chromosome, complete genome
+Type: betalactone
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 379.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg32_2	LIS76_RS10380	38	240	83.7528604118993	6.72e-72
+ctg32_9	LIS76_RS10475	33	139	92.0	2.83e-35
+
+
+
+>>
+23. NZ_LR746496
+Source: Acididesulfobacillus acetoxydans isolate PacBioINE chromosome 1
+Type: betalactone
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 361.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg32_2	MNU25_RS08645	39	232	83.7528604118993	2.62e-69
+ctg32_9	MNU25_RS08655	31	129	90.46153846153845	1.75e-31
+
+
+
+>>
+24. NZ_CP020039
+Source: Streptomyces sp. 3211 isolate 3 chromosome, complete genome
+Type: NRPS,T1PKS,betalactone
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 346.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg32_2	B4U39_RS07000	42	270	84.21052631578947	1.08e-84
+ctg32_9	B4U39_RS07075	31	76	74.15384615384616	5.51e-13
+
+
+
+>>
+25. NZ_CP020555
+Source: Streptomyces sp. Sge12 chromosome, complete genome
+Type: NRPS,T1PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 344.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg32_2	B6R96_RS30195	42	268	84.21052631578947	3.03e-84
+ctg32_9	B6R96_RS30120	31	76	74.15384615384616	5.51e-13
+
+
+
+>>
+26. NZ_CP018870
+Source: Streptomyces sp. TN58 chromosome, complete genome
+Type: NRPS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 344.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg32_2	BSL84_RS04785	42	268	84.21052631578947	6.04e-84
+ctg32_9	BSL84_RS04840	31	76	74.15384615384616	5.51e-13
+
+
+
+>>
+27. NZ_CP043638
+Source: Streptomyces sp. INR7 chromosome, complete genome
+Type: NRPS,T1PKS,betalactone
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 343.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg32_2	F1D59_RS30145	42	268	84.21052631578947	6.04e-84
+ctg32_9	F1D59_RS30070	31	75	74.15384615384616	9.92e-13
+
+
+
+>>
+28. NZ_CP045245
+Source: Cellulomonas sp. JZ18 chromosome, complete genome
+Type: T3PKS,betalactone
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 328.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg32_2	GC089_RS12705	31	129	80.32036613272311	2.59e-30
+ctg32_9	GC089_RS12645	39	199	98.46153846153847	3.63e-57
+
+
+
+>>
+29. NZ_CP039291
+Source: Cellulomonas shaoxiangyii strain Z28 chromosome, complete genome
+Type: T3PKS,betalactone
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 327.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg32_2	E5225_RS12180	31	130	82.83752860411899	1.02e-30
+ctg32_9	E5225_RS12120	38	197	98.15384615384616	1.9e-56
+
+
+
+>>
+30. NZ_FNOJ01000003
+Source: Alicyclobacillus hesperidum strain DSM 12489, whole genome shotgun sequence
+Type: betalactone
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 320.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg32_2	BLU70_RS03570	32	154	82.6086956521739	2.11e-39
+ctg32_9	BLU70_RS03525	34	166	97.53846153846155	4.35e-45
+
+
+
+>>
+31. NZ_CP087164
+Source: Capillimicrobium parvum strain 0166_1 chromosome, complete genome
+Type: betalactone
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 305.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg32_2	DSM104329_RS13425	38	224	84.21052631578947	1.22e-65
+ctg32_9	DSM104329_RS13400	31	81	71.07692307692308	1.67e-14
+
+
+
+>>
+32. NZ_CP065956
+Source: Methylacidiphilum sp. IT5 chromosome, complete genome
+Type: betalactone
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 298.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg32_2	EM20IM_RS02695	38	229	83.7528604118993	7.37e-68
+ctg32_9	EM20IM_RS02720	36	69	32.92307692307692	1.61e-10
+
+
+
+>>
+33. NC_008554
+Source: Syntrophobacter fumaroxidans MPOB, complete sequence
+Type: betalactone
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 295.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg32_2	SFUM_RS01565	40	218	78.03203661327231	2.55e-63
+ctg32_9	SFUM_RS01520	40	77	35.07692307692308	2.77e-13
+
+
+
+>>
+34. NZ_CP037899
+Source: Methylacidiphilum kamchatkense Kam1 chromosome, complete genome
+Type: betalactone
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 218.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg32_2	kam1_RS10775	38	151	56.2929061784897	1.38e-40
+ctg32_9	kam1_RS08230	35	67	30.461538461538463	1.97e-10
+
+
+
+>>
+35. NZ_FOYZ01000001
+Source: Anaeromicropila populeti strain 743A, whole genome shotgun sequence
+Type: arylpolyene,betalactone
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 460.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg32_1	BM305_RS01145	37	116	97.59036144578313	2.49e-29
+ctg32_1	BM305_RS01210	35	90	102.40963855421687	1.45e-19
+ctg32_2	BM305_RS01220	41	254	79.40503432494279	1.19e-78
+
+
+
+>>
+36. NZ_AP018732
+Source: Conexivisphaera calida strain NAS-02 chromosome, complete genome
+Type: betalactone
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 426.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg32_2	NAS2_RS04865	39	241	87.4141876430206	3.53e-73
+ctg32_8	NAS2_RS04830	36	94	68.11023622047244	1.29e-20
+ctg32_8	NAS2_RS04930	32	91	94.48818897637796	1.39e-19
+
+
+
+>>
+37. NZ_CP015108
+Source: Sporosarcina ureae strain S204 chromosome, complete genome
+Type: NRP-metallophore,NRPS,betalactone
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 379.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg32_8	SporoS204_RS02565	36	119	84.25196850393701	2.3e-30
+ctg32_9	SporoS204_RS02765	43	260	98.46153846153847	2.04e-80
+
+
+
+>>
+38. NZ_VTOK01000003
+Source: Alteribacillus sp. YIM 98480 Scaffold3, whole genome shotgun sequence
+Type: betalactone
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 353.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg32_8	FZF09_RS05150	35	129	94.09448818897637	4.62e-34
+ctg32_9	FZF09_RS05165	39	224	97.23076923076923	8.18e-67
+
+
+
+>>
+39. NZ_CP119138
+Source: Alicyclobacillus fastidiosus strain Alicyclobacillus fastidiosus KKP 3000 chromosome, complete genome
+Type: betalactone
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 329.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg32_8	PYS47_RS19245	34	123	94.09448818897637	5.39e-32
+ctg32_9	PYS47_RS19255	38	206	99.38461538461539	6.94e-60
+
+
+
+>>
+40. NZ_CP104067
+Source: Alicyclobacillus fastidiosus strain DSM 17978 chromosome, complete genome
+Type: betalactone
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 326.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg32_8	NZD89_RS22410	35	124	94.09448818897637	1.95e-32
+ctg32_9	NZD89_RS22420	38	202	99.07692307692308	1.03e-58
+
+
+
+>>
+41. NZ_CP054424
+Source: Rhodoferax sp. BAB1 chromosome, complete genome
+Type: arylpolyene,betalactone
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 292.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg32_2	HTY51_RS06250	38	214	85.1258581235698	4.62e-62
+ctg32_8	HTY51_RS06340	34	78	72.04724409448819	8.74e-15
+
+
+
+>>
+42. NC_021917
+Source: Cycloclasticus zancles 78-ME, complete sequence
+Type: betalactone
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 267.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg32_1	CYCME_RS11315	36	76	101.80722891566265	1.87e-14
+ctg32_2	CYCME_RS11305	36	191	82.37986270022884	3.12e-53
+
+
+
+>>
+43. NZ_CP026521
+Source: Bacillus sp. MBGLi79 chromosome
+Type: NRPS,betalactone
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 254.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg32_8	C1T29_RS11450	40	122	83.07086614173228	1.09e-31
+ctg32_9	C1T29_RS11470	31	132	93.84615384615384	1.73e-32
+
+
+
+>>
+44. NZ_CP018173
+Source: Bacillus subtilis strain MJ01 chromosome, complete genome
+Type: NRPS,betalactone,transAT-PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 250.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg32_8	BAX60_RS15305	39	119	83.07086614173228	2.3e-30
+ctg32_9	BAX60_RS15325	31	131	93.84615384615384	3.27e-32
+
+
+
+>>
+45. NZ_CP085397
+Source: Peribacillus frigoritolerans strain KF3 chromosome, complete genome
+Type: betalactone
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 230.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg32_8	LHV56_RS11755	34	106	80.70866141732283	2.18e-25
+ctg32_9	LHV56_RS11735	31	124	92.61538461538461	1.77e-29
+
+
+
+>>
+46. NZ_JAGGQC010000008
+Source: Bacillus sp. ISL-78 ISL78_9, whole genome shotgun sequence
+Type: betalactone
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 230.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg32_8	J7I96_RS11530	33	105	82.67716535433071	3.05e-25
+ctg32_9	J7I96_RS11510	31	125	94.46153846153847	6.87e-30
+
+
+
+>>
+47. NZ_JAGGQV010000001
+Source: Bacillus sp. ISL-57 ISL57_2, whole genome shotgun sequence
+Type: betalactone
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 230.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg32_8	J7I90_RS01640	33	105	82.67716535433071	3.05e-25
+ctg32_9	J7I90_RS01620	31	125	94.46153846153847	6.87e-30
+
+
+
+>>
+48. NZ_CP085395
+Source: Peribacillus frigoritolerans strain CK6 chromosome, complete genome
+Type: betalactone
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 227.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg32_8	LIT26_RS13165	33	107	82.67716535433071	1.11e-25
+ctg32_9	LIT26_RS13145	31	120	92.61538461538461	2.18e-28
+
+
+
+>>
+49. NZ_LN851186
+Source: Bacillus testis strain SIT10, whole genome shotgun sequence
+Type: betalactone
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 227.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg32_8	BN1765_RS09630	34	103	80.31496062992126	3.17e-24
+ctg32_9	BN1765_RS09610	31	124	93.23076923076923	1.29e-29
+
+
+
+>>
+50. NZ_JACHHB010000001
+Source: Texcoconibacillus texcoconensis strain DSM 24696 Ga0415234_01, whole genome shotgun sequence
+Type: betalactone
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 225.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg32_8	HNQ41_RS02040	35	106	83.07086614173228	2.18e-25
+ctg32_9	HNQ41_RS02060	31	119	91.38461538461539	7.18e-28
+

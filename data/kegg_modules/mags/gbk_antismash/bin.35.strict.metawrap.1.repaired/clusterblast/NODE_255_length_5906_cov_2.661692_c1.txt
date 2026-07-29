@@ -1,0 +1,885 @@
+ClusterBlast scores for NODE_255_length_5906_cov_2.661692
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg255_1	2	1097	-		
+ctg255_2	1129	1414	-		
+ctg255_3	1421	2171	-		
+ctg255_4	2179	3112	-		
+ctg255_5	3705	4146	+		
+ctg255_6	4219	5074	+		
+ctg255_7	5103	5493	+		
+ctg255_8	5579	5906	+		
+
+
+Significant hits: 
+1. NZ_CP048114	Edaphobacter sp. 12200R-103 chromosome, complete genome
+2. NZ_CP080521	Pseudonocardia sp. DSM 110487 chromosome, complete genome
+3. NZ_JAPDNT010000001	Rhodovastum sp. RN2-1 contig1, whole genome shotgun sequence
+4. NZ_CP034449	Mesorhizobium sp. M2A.F.Ca.ET.046.03.2.1 chromosome, complete genome
+5. NZ_AP024109	Mesorhizobium sp. J8 chromosome, complete genome
+6. NZ_CP034446	Mesorhizobium sp. M2A.F.Ca.ET.043.05.1.1 chromosome, complete genome
+7. NZ_CP029210	Aquabacterium olei strain NBRC 110486 chromosome, complete genome
+8. NZ_AP017308	Leptolyngbya sp. NIES-3755 DNA, complete genome
+9. NZ_RYEV01000004	Steroidobacter soli strain JW-3 Scaffold3_1, whole genome shotgun sequence
+10. NZ_AP025018	Calothrix sp. PCC 7716 chromosome, complete genome
+11. NZ_BLJN01000004	Steroidobacter agaridevorans strain YU21-B sequence04, whole genome shotgun sequence
+12. NZ_BLJO01000001	Steroidobacter agaridevorans strain SA29-B sequence01, whole genome shotgun sequence
+13. NZ_KI912532	Dechloromonas agitata is5 K420DRAFT_scaffold00001.1, whole genome shotgun sequence
+14. NZ_JAACJE010000001	Acidovorax sp. 210-6 XA01_DEHP_1_000000F_arrow, whole genome shotgun sequence
+15. NZ_JACTAH010000001	Thauera sp. CAU 1555 contig1, whole genome shotgun sequence
+16. NZ_CP053383	Halomonas sulfidivorans strain MCCC 1A13718 chromosome, complete genome
+17. NZ_JAHYCA010000001	Halomonas antri strain Y3S6 contig1, whole genome shotgun sequence
+18. NZ_CP053381	Halomonas sulfidoxydans strain MCCC 1A11059 chromosome, complete genome
+19. NZ_CP065435	Halomonas sp. SS10-MC5 chromosome, complete genome
+20. NZ_CP030840	Acidisarcina polymorpha strain SBC82 chromosome, complete genome
+21. NZ_JACHEB010000011	Edaphobacter lichenicola strain X5P2 Ga0401175_11, whole genome shotgun sequence
+22. NC_014963	Terriglobus saanensis SP1PR4, complete sequence
+23. NZ_JACHDZ010000005	Edaphobacter lichenicola strain M8US30 Ga0401170_05, whole genome shotgun sequence
+24. NZ_JACHEA010000001	Edaphobacter lichenicola strain M8UP15 Ga0401174_01, whole genome shotgun sequence
+25. NZ_JACHDY010000001	Edaphobacter lichenicola strain M8UP27 Ga0401168_01, whole genome shotgun sequence
+26. NZ_CP073696	Edaphobacter lichenicola strain DSM 104462 chromosome, complete genome
+27. NZ_CP042806	Terriglobus albidus strain ORNL chromosome, complete genome
+28. NC_016631	Granulicella mallensis MP5ACTX8, complete sequence
+29. NZ_CP042596	Granulicella sp. WH15 chromosome, complete genome
+30. NZ_AUHM01000025	Inquilinus limosus DSM 16000 G537DRAFT_scaffold00021.21_C, whole genome shotgun sequence
+31. NZ_KN676113	Belnapia sp. F-4-1 Scaffold1, whole genome shotgun sequence
+32. NZ_JACIJD010000003	Roseomonas pecuniae strain DSM 25622 Ga0373336_03, whole genome shotgun sequence
+33. NZ_AUDH01000007	Rubritepida flocculans DSM 14296 H596DRAFT_scaffold00007.7_C, whole genome shotgun sequence
+34. NZ_BMKS01000004	Caldovatus sediminis strain CGMCC 1.16330 sequence04, whole genome shotgun sequence
+35. NZ_CP030126	Indioceanicola profundi strain SCSIO 08040 chromosome, complete genome
+36. NZ_JAIHOO010000001	Lysobacter sp. BMK333-48F3 scaffold1_size5224492, whole genome shotgun sequence
+37. NZ_GL876926	Novosphingobium nitrogenifigens DSM 19370 scaffold00002, whole genome shotgun sequence
+38. NZ_CP067420	Skermanella sp. TT6 chromosome, complete genome
+39. NZ_CP029176	Acidibrevibacterium fodinaquatile strain G45-3 chromosome, complete genome
+40. NZ_CP086111	Skermanella rosea strain KEMB 2255-458 chromosome, complete genome
+41. NZ_CP086106	Skermanella mucosa strain KEMB 2255-438 chromosome SKMUc, complete sequence
+42. NZ_CP030265	Skermanella pratensis strain W17 chromosome, complete genome
+43. NZ_AP014704	Methylobacterium aquaticum strain MA-22A chromosome, complete genome
+44. NZ_CP032321	Azospirillum argentinense strain MTCC4035 chromosome, complete genome
+45. NZ_VITH01000007	Azospirillum brasilense strain BR 11650 Ga0314197_107, whole genome shotgun sequence
+46. NZ_CP012914	Azospirillum brasilense strain Sp 7 chromosome, complete genome
+47. NZ_CP059449	Azospirillum brasilense strain 2020WEIHUA_K chromosome, complete genome
+48. NZ_KB900609	Methylobacterium sp. WSM2598 MET2598DRAFT_scaffold1.1, whole genome shotgun sequence
+49. NZ_CP032330	Azospirillum argentinense strain MTCC4036 chromosome
+50. NZ_CP007793	Azospirillum argentinense strain Az39 chromosome, complete genome
+
+
+Details:
+
+>>
+1. NZ_CP048114
+Source: Edaphobacter sp. 12200R-103 chromosome, complete genome
+Type: redox-cofactor
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 984.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg255_1	GWR55_RS09860	56	397	90.13698630136986	6.46e-136
+ctg255_2	GWR55_RS09865	40	61	91.48936170212765	1.76e-11
+ctg255_3	GWR55_RS09870	64	313	96.78714859437751	2.85e-106
+ctg255_4	GWR55_RS09875	40	213	99.67741935483872	1.25e-65
+
+
+
+>>
+2. NZ_CP080521
+Source: Pseudonocardia sp. DSM 110487 chromosome, complete genome
+Type: redox-cofactor
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 839.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg255_1	K1T35_RS29530	50	353	93.42465753424658	9.55e-119
+ctg255_2	K1T35_RS29535	39	53	95.74468085106383	1.7e-08
+ctg255_3	K1T35_RS29540	51	212	89.1566265060241	5.74e-67
+ctg255_4	K1T35_RS29545	43	221	100.96774193548387	1e-68
+
+
+
+>>
+3. NZ_JAPDNT010000001
+Source: Rhodovastum sp. RN2-1 contig1, whole genome shotgun sequence
+Type: redox-cofactor
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 828.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg255_1	OL599_RS01565	53	348	89.58904109589041	7.39e-117
+ctg255_2	OL599_RS01560	46	56	87.2340425531915	1.28e-09
+ctg255_3	OL599_RS01555	51	231	93.97590361445783	2.68e-74
+ctg255_4	OL599_RS01550	40	193	99.03225806451613	7.58e-58
+
+
+
+>>
+4. NZ_CP034449
+Source: Mesorhizobium sp. M2A.F.Ca.ET.046.03.2.1 chromosome, complete genome
+Type: redox-cofactor
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 820.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg255_1	EJ072_RS22135	45	327	98.08219178082192	1.98e-108
+ctg255_2	EJ072_RS22140	44	47	57.446808510638306	4.05e-06
+ctg255_3	EJ072_RS22145	56	243	96.78714859437751	1.05e-78
+ctg255_4	EJ072_RS22150	41	203	102.58064516129033	1.82e-61
+
+
+
+>>
+5. NZ_AP024109
+Source: Mesorhizobium sp. J8 chromosome, complete genome
+Type: redox-cofactor
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 815.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg255_1	MJ8_RS22695	48	328	91.5068493150685	7.74e-109
+ctg255_2	MJ8_RS22690	46	48	57.446808510638306	2.08e-06
+ctg255_3	MJ8_RS22685	55	241	95.18072289156626	3e-78
+ctg255_4	MJ8_RS22680	39	198	101.61290322580645	1.08e-59
+
+
+
+>>
+6. NZ_CP034446
+Source: Mesorhizobium sp. M2A.F.Ca.ET.043.05.1.1 chromosome, complete genome
+Type: redox-cofactor
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 815.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg255_1	EJ069_RS31680	46	327	98.08219178082192	2.99e-108
+ctg255_2	EJ069_RS31685	44	47	57.446808510638306	2.93e-06
+ctg255_3	EJ069_RS31690	54	240	95.18072289156626	8.53e-78
+ctg255_4	EJ069_RS31695	39	201	103.54838709677419	1.44e-60
+
+
+
+>>
+7. NZ_CP029210
+Source: Aquabacterium olei strain NBRC 110486 chromosome, complete genome
+Type: redox-cofactor
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 796.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg255_1	DEH84_RS11965	46	329	96.16438356164385	7.54e-109
+ctg255_2	DEH84_RS11970	34	50	95.74468085106383	2.86e-07
+ctg255_3	DEH84_RS11975	46	186	91.56626506024097	2.66e-56
+ctg255_4	DEH84_RS11980	44	231	103.2258064516129	1.14e-72
+
+
+
+>>
+8. NZ_AP017308
+Source: Leptolyngbya sp. NIES-3755 DNA, complete genome
+Type: redox-cofactor
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 780.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg255_1	LEP3755_RS26410	49	341	93.15068493150685	5.46e-114
+ctg255_2	LEP3755_RS26405	51	47	62.76595744680851	2.22e-06
+ctg255_3	LEP3755_RS26400	50	214	85.14056224899599	1.83e-67
+ctg255_4	LEP3755_RS26395	38	178	102.25806451612902	5.72e-52
+
+
+
+>>
+9. NZ_RYEV01000004
+Source: Steroidobacter soli strain JW-3 Scaffold3_1, whole genome shotgun sequence
+Type: redox-cofactor
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 777.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg255_1	EKO19_RS17835	48	345	96.43835616438356	2.07e-115
+ctg255_2	EKO19_RS17840	42	52	80.85106382978722	5.42e-08
+ctg255_3	EKO19_RS17845	46	189	87.95180722891565	4.27e-58
+ctg255_4	EKO19_RS17850	40	191	101.29032258064517	8.21e-57
+
+
+
+>>
+10. NZ_AP025018
+Source: Calothrix sp. PCC 7716 chromosome, complete genome
+Type: redox-cofactor
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 777.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg255_1	CAL7716_RS42750	47	328	93.97260273972603	4.6e-109
+ctg255_2	CAL7716_RS42745	37	46	91.48936170212765	7.11e-06
+ctg255_3	CAL7716_RS42740	49	211	84.73895582329317	1.35e-66
+ctg255_4	CAL7716_RS42735	38	192	105.16129032258064	2.99e-57
+
+
+
+>>
+11. NZ_BLJN01000004
+Source: Steroidobacter agaridevorans strain YU21-B sequence04, whole genome shotgun sequence
+Type: redox-cofactor
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 762.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg255_1	GYH38_RS19725	48	337	89.86301369863014	3.11e-112
+ctg255_2	GYH38_RS19720	47	50	63.829787234042556	3.05e-07
+ctg255_3	GYH38_RS19715	46	186	81.52610441767068	1.46e-56
+ctg255_4	GYH38_RS19710	38	189	100.96774193548387	2.37e-56
+
+
+
+>>
+12. NZ_BLJO01000001
+Source: Steroidobacter agaridevorans strain SA29-B sequence01, whole genome shotgun sequence
+Type: redox-cofactor
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 761.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg255_1	GYH35_RS03030	48	337	89.86301369863014	3.11e-112
+ctg255_2	GYH35_RS03035	47	50	63.829787234042556	3.05e-07
+ctg255_3	GYH35_RS03040	46	186	81.52610441767068	1.46e-56
+ctg255_4	GYH35_RS03045	38	188	100.96774193548387	6.66e-56
+
+
+
+>>
+13. NZ_KI912532
+Source: Dechloromonas agitata is5 K420DRAFT_scaffold00001.1, whole genome shotgun sequence
+Type: redox-cofactor
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 781.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg255_1	K420_RS0109825	46	315	90.13698630136986	2.19e-103
+ctg255_2	K420_RS0109870	37	46	79.7872340425532	9.62e-06
+ctg255_3	K420_RS18645	45	202	99.19678714859438	7.76e-63
+ctg255_4	K420_RS0109860	39	218	98.70967741935483	3.53e-67
+
+
+
+>>
+14. NZ_JAACJE010000001
+Source: Acidovorax sp. 210-6 XA01_DEHP_1_000000F_arrow, whole genome shotgun sequence
+Type: redox-cofactor
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 778.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg255_1	GWK50_RS13205	46	315	90.13698630136986	2.19e-103
+ctg255_2	GWK50_RS13250	37	46	79.7872340425532	9.62e-06
+ctg255_3	GWK50_RS13240	45	202	99.19678714859438	7.76e-63
+ctg255_4	GWK50_RS13235	39	215	99.67741935483872	2.81e-66
+
+
+
+>>
+15. NZ_JACTAH010000001
+Source: Thauera sp. CAU 1555 contig1, whole genome shotgun sequence
+Type: redox-cofactor
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 1060.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg255_1	IAI53_RS07150	47	336	95.8904109589041	7.11e-112
+ctg255_1	IAI53_RS07070	46	314	89.31506849315069	1.98e-103
+ctg255_3	IAI53_RS07160	48	181	83.53413654618474	1.64e-54
+ctg255_4	IAI53_RS07165	43	229	101.29032258064517	1.25e-71
+
+
+
+>>
+16. NZ_CP053383
+Source: Halomonas sulfidivorans strain MCCC 1A13718 chromosome, complete genome
+Type: redox-cofactor
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 1047.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg255_1	HNO53_RS16620	54	361	93.69863013698631	1.74e-121
+ctg255_1	HNO53_RS16555	45	301	90.13698630136986	2.85e-98
+ctg255_3	HNO53_RS16630	45	176	83.13253012048193	2.17e-52
+ctg255_4	HNO53_RS16635	41	209	101.93548387096773	6.68e-64
+
+
+
+>>
+17. NZ_JAHYCA010000001
+Source: Halomonas antri strain Y3S6 contig1, whole genome shotgun sequence
+Type: redox-cofactor
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 1047.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg255_1	KPL81_RS01890	54	360	93.69863013698631	4.95e-121
+ctg255_1	KPL81_RS01825	45	301	90.13698630136986	2.85e-98
+ctg255_3	KPL81_RS01900	45	175	83.13253012048193	3.07e-52
+ctg255_4	KPL81_RS01905	41	211	101.93548387096773	1.68e-64
+
+
+
+>>
+18. NZ_CP053381
+Source: Halomonas sulfidoxydans strain MCCC 1A11059 chromosome, complete genome
+Type: redox-cofactor
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 1034.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg255_1	HNO51_RS16065	50	346	95.06849315068493	9.48e-116
+ctg255_1	HNO51_RS16005	45	306	90.13698630136986	4.28e-100
+ctg255_3	HNO51_RS16075	45	175	83.13253012048193	4.33e-52
+ctg255_4	HNO51_RS16080	41	207	102.58064516129033	3.76e-63
+
+
+
+>>
+19. NZ_CP065435
+Source: Halomonas sp. SS10-MC5 chromosome, complete genome
+Type: redox-cofactor
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 1031.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg255_1	I4484_RS16125	50	346	95.06849315068493	9.48e-116
+ctg255_1	I4484_RS16065	45	303	90.13698630136986	4.87e-99
+ctg255_3	I4484_RS16135	45	175	83.13253012048193	4.33e-52
+ctg255_4	I4484_RS16140	41	207	102.58064516129033	3.76e-63
+
+
+
+>>
+20. NZ_CP030840
+Source: Acidisarcina polymorpha strain SBC82 chromosome, complete genome
+Type: redox-cofactor
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 925.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg255_1	ACPOL_RS24655	56	390	90.68493150684932	2.45e-133
+ctg255_3	ACPOL_RS24665	64	311	97.99196787148594	2.01e-105
+ctg255_4	ACPOL_RS24670	40	224	99.67741935483872	1.03e-69
+
+
+
+>>
+21. NZ_JACHEB010000011
+Source: Edaphobacter lichenicola strain X5P2 Ga0401175_11, whole genome shotgun sequence
+Type: redox-cofactor
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 924.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg255_1	HDF14_RS20580	54	389	92.87671232876711	9.9e-133
+ctg255_3	HDF14_RS20570	60	294	98.79518072289156	8.81e-99
+ctg255_4	HDF14_RS20565	42	241	99.35483870967742	1.14e-76
+
+
+
+>>
+22. NC_014963
+Source: Terriglobus saanensis SP1PR4, complete sequence
+Type: redox-cofactor
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 916.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg255_1	ACIPR4_RS10460	55	387	89.86301369863014	3.13e-132
+ctg255_3	ACIPR4_RS10450	64	305	96.3855421686747	2.64e-103
+ctg255_4	ACIPR4_RS10445	41	224	100.64516129032258	6.96e-70
+
+
+
+>>
+23. NZ_JACHDZ010000005
+Source: Edaphobacter lichenicola strain M8US30 Ga0401170_05, whole genome shotgun sequence
+Type: redox-cofactor
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 915.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg255_1	HDF10_RS15570	53	392	98.63013698630137	4.27e-134
+ctg255_3	HDF10_RS15555	60	286	95.58232931726907	8.68e-96
+ctg255_4	HDF10_RS15550	42	237	98.38709677419355	5.2e-75
+
+
+
+>>
+24. NZ_JACHEA010000001
+Source: Edaphobacter lichenicola strain M8UP15 Ga0401174_01, whole genome shotgun sequence
+Type: redox-cofactor
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 913.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg255_1	HDF13_RS03630	55	391	92.05479452054794	1.22e-133
+ctg255_3	HDF13_RS03620	59	284	95.98393574297188	7.07e-95
+ctg255_4	HDF13_RS03615	42	238	99.35483870967742	1.84e-75
+
+
+
+>>
+25. NZ_JACHDY010000001
+Source: Edaphobacter lichenicola strain M8UP27 Ga0401168_01, whole genome shotgun sequence
+Type: redox-cofactor
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 907.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg255_1	HDF09_RS01220	53	386	97.80821917808218	8.04e-132
+ctg255_3	HDF09_RS01210	58	281	97.59036144578313	8.17e-94
+ctg255_4	HDF09_RS01205	42	240	98.38709677419355	3.24e-76
+
+
+
+>>
+26. NZ_CP073696
+Source: Edaphobacter lichenicola strain DSM 104462 chromosome, complete genome
+Type: redox-cofactor
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 899.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg255_1	KFE12_RS07135	52	390	97.80821917808218	4.62e-133
+ctg255_3	KFE12_RS07145	59	280	94.37751004016064	1.64e-93
+ctg255_4	KFE12_RS07150	40	229	100.96774193548387	6.24e-72
+
+
+
+>>
+27. NZ_CP042806
+Source: Terriglobus albidus strain ORNL chromosome, complete genome
+Type: redox-cofactor
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 898.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg255_1	FTW19_RS06450	55	392	89.86301369863014	2.63e-134
+ctg255_3	FTW19_RS06440	63	313	96.78714859437751	2.03e-106
+ctg255_4	FTW19_RS06435	42	193	89.6774193548387	3.99e-58
+
+
+
+>>
+28. NC_016631
+Source: Granulicella mallensis MP5ACTX8, complete sequence
+Type: redox-cofactor,terpene
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 897.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg255_1	ACIX8_RS12900	53	372	89.86301369863014	4.63e-126
+ctg255_3	ACIX8_RS12890	64	303	95.18072289156626	1.18e-102
+ctg255_4	ACIX8_RS12885	39	222	100.0	5.82e-69
+
+
+
+>>
+29. NZ_CP042596
+Source: Granulicella sp. WH15 chromosome, complete genome
+Type: redox-cofactor
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 895.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg255_1	FTO74_RS07580	56	395	90.13698630136986	3.41e-135
+ctg255_3	FTO74_RS07590	61	284	91.56626506024097	5.59e-95
+ctg255_4	FTO74_RS07595	41	216	101.61290322580645	1.52e-66
+
+
+
+>>
+30. NZ_AUHM01000025
+Source: Inquilinus limosus DSM 16000 G537DRAFT_scaffold00021.21_C, whole genome shotgun sequence
+Type: redox-cofactor
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 877.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg255_1	G537_RS0121375	53	376	98.08219178082192	1.02e-127
+ctg255_3	G537_RS0121365	60	274	92.3694779116466	4.33e-91
+ctg255_4	G537_RS0121360	42	227	100.64516129032258	5.14e-71
+
+
+
+>>
+31. NZ_KN676113
+Source: Belnapia sp. F-4-1 Scaffold1, whole genome shotgun sequence
+Type: redox-cofactor
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 874.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg255_1	LH62_RS16430	51	362	97.53424657534246	3.84e-122
+ctg255_3	LH62_RS16420	61	294	95.58232931726907	4.95e-99
+ctg255_4	LH62_RS16415	41	218	100.0	3.33e-67
+
+
+
+>>
+32. NZ_JACIJD010000003
+Source: Roseomonas pecuniae strain DSM 25622 Ga0373336_03, whole genome shotgun sequence
+Type: redox-cofactor
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 856.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg255_1	FHS87_RS04550	52	363	95.06849315068493	1.14e-122
+ctg255_3	FHS87_RS04540	60	289	95.98393574297188	3.3e-97
+ctg255_4	FHS87_RS04535	40	204	101.29032258064517	6.12e-62
+
+
+
+>>
+33. NZ_AUDH01000007
+Source: Rubritepida flocculans DSM 14296 H596DRAFT_scaffold00007.7_C, whole genome shotgun sequence
+Type: redox-cofactor
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 852.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg255_1	H596_RS0109045	53	350	90.13698630136986	1.93e-117
+ctg255_3	H596_RS0109055	59	281	95.98393574297188	8.29e-94
+ctg255_4	H596_RS0109060	42	221	100.64516129032258	1.01e-68
+
+
+
+>>
+34. NZ_BMKS01000004
+Source: Caldovatus sediminis strain CGMCC 1.16330 sequence04, whole genome shotgun sequence
+Type: redox-cofactor
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 851.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg255_1	IEX99_RS08450	55	377	91.78082191780823	3.35e-128
+ctg255_3	IEX99_RS08440	60	285	95.18072289156626	2.87e-95
+ctg255_4	IEX99_RS08435	39	189	101.61290322580645	4.55e-56
+
+
+
+>>
+35. NZ_CP030126
+Source: Indioceanicola profundi strain SCSIO 08040 chromosome, complete genome
+Type: redox-cofactor
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 847.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg255_1	DOL89_RS03525	51	365	98.08219178082192	2.03e-123
+ctg255_3	DOL89_RS03515	57	265	95.98393574297188	1.3e-87
+ctg255_4	DOL89_RS03510	41	217	100.64516129032258	5.73e-67
+
+
+
+>>
+36. NZ_JAIHOO010000001
+Source: Lysobacter sp. BMK333-48F3 scaffold1_size5224492, whole genome shotgun sequence
+Type: redox-cofactor
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 842.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg255_1	K4L06_RS12165	51	357	92.32876712328768	8.89e-120
+ctg255_3	K4L06_RS12175	60	288	95.98393574297188	1.81e-96
+ctg255_4	K4L06_RS12180	39	197	101.29032258064517	2.56e-59
+
+
+
+>>
+37. NZ_GL876926
+Source: Novosphingobium nitrogenifigens DSM 19370 scaffold00002, whole genome shotgun sequence
+Type: redox-cofactor
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 841.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg255_1	Y88_RS05990	51	363	92.87671232876711	1.51e-122
+ctg255_3	Y88_RS06000	59	277	96.78714859437751	2.13e-92
+ctg255_4	Y88_RS06005	39	201	101.61290322580645	7.24e-61
+
+
+
+>>
+38. NZ_CP067420
+Source: Skermanella sp. TT6 chromosome, complete genome
+Type: redox-cofactor
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 841.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg255_1	IGS68_RS06420	52	362	92.32876712328768	6.87e-122
+ctg255_3	IGS68_RS06430	55	248	96.3855421686747	6.13e-81
+ctg255_4	IGS68_RS06435	43	231	100.64516129032258	2.2e-72
+
+
+
+>>
+39. NZ_CP029176
+Source: Acidibrevibacterium fodinaquatile strain G45-3 chromosome, complete genome
+Type: redox-cofactor
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 841.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg255_1	DEF76_RS05780	52	360	90.13698630136986	2.43e-121
+ctg255_3	DEF76_RS05770	63	289	92.3694779116466	5.36e-97
+ctg255_4	DEF76_RS05765	38	192	102.90322580645162	2.82e-57
+
+
+
+>>
+40. NZ_CP086111
+Source: Skermanella rosea strain KEMB 2255-458 chromosome, complete genome
+Type: redox-cofactor
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 841.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg255_1	JL101_RS19855	52	360	92.32876712328768	2.77e-121
+ctg255_3	JL101_RS19845	55	250	96.3855421686747	1.07e-81
+ctg255_4	JL101_RS19840	43	231	100.64516129032258	1.56e-72
+
+
+
+>>
+41. NZ_CP086106
+Source: Skermanella mucosa strain KEMB 2255-438 chromosome SKMUc, complete sequence
+Type: redox-cofactor
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 840.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg255_1	JL100_RS21120	52	362	92.32876712328768	3.42e-122
+ctg255_3	JL100_RS21110	55	251	96.3855421686747	5.32e-82
+ctg255_4	JL100_RS21105	43	227	100.64516129032258	4.99e-71
+
+
+
+>>
+42. NZ_CP030265
+Source: Skermanella pratensis strain W17 chromosome, complete genome
+Type: redox-cofactor
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 839.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg255_1	DPR14_RS19625	52	361	92.32876712328768	9.74e-122
+ctg255_3	DPR14_RS19615	55	246	96.3855421686747	4.98e-80
+ctg255_4	DPR14_RS19610	43	232	100.64516129032258	5.51e-73
+
+
+
+>>
+43. NZ_AP014704
+Source: Methylobacterium aquaticum strain MA-22A chromosome, complete genome
+Type: redox-cofactor
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 836.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg255_1	Maq22A_RS04600	54	366	93.15068493150685	1.64e-123
+ctg255_3	Maq22A_RS04610	58	274	96.3855421686747	7.89e-91
+ctg255_4	Maq22A_RS04615	37	196	100.0	8.8e-59
+
+
+
+>>
+44. NZ_CP032321
+Source: Azospirillum argentinense strain MTCC4035 chromosome, complete genome
+Type: redox-cofactor
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 836.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg255_1	D3093_RS01450	49	343	95.8904109589041	1.33e-114
+ctg255_3	D3093_RS01460	55	253	97.99196787148594	7.3e-83
+ctg255_4	D3093_RS01465	45	240	101.93548387096773	4.41e-76
+
+
+
+>>
+45. NZ_VITH01000007
+Source: Azospirillum brasilense strain BR 11650 Ga0314197_107, whole genome shotgun sequence
+Type: redox-cofactor
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 836.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg255_1	FBZ83_RS16725	51	341	91.23287671232877	5.36e-114
+ctg255_3	FBZ83_RS16735	54	252	97.99196787148594	2.08e-82
+ctg255_4	FBZ83_RS16740	45	243	101.93548387096773	3.89e-77
+
+
+
+>>
+46. NZ_CP012914
+Source: Azospirillum brasilense strain Sp 7 chromosome, complete genome
+Type: redox-cofactor
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 835.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg255_1	AMK58_RS06470	51	344	91.23287671232877	4.68e-115
+ctg255_3	AMK58_RS06480	54	252	97.99196787148594	2.08e-82
+ctg255_4	AMK58_RS06485	45	239	101.93548387096773	8.83e-76
+
+
+
+>>
+47. NZ_CP059449
+Source: Azospirillum brasilense strain 2020WEIHUA_K chromosome, complete genome
+Type: redox-cofactor
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 834.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg255_1	H1Q64_RS12555	51	342	91.23287671232877	1.89e-114
+ctg255_3	H1Q64_RS12545	54	251	98.39357429718876	4.18e-82
+ctg255_4	H1Q64_RS12540	45	241	101.93548387096773	2.2e-76
+
+
+
+>>
+48. NZ_KB900609
+Source: Methylobacterium sp. WSM2598 MET2598DRAFT_scaffold1.1, whole genome shotgun sequence
+Type: redox-cofactor
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 833.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg255_1	MET2598_RS0133825	54	369	93.15068493150685	6.88e-125
+ctg255_3	MET2598_RS0133835	56	265	98.39357429718876	2.68e-87
+ctg255_4	MET2598_RS0133840	39	199	100.64516129032258	3.95e-60
+
+
+
+>>
+49. NZ_CP032330
+Source: Azospirillum argentinense strain MTCC4036 chromosome
+Type: redox-cofactor
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 833.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg255_1	D3867_RS03780	49	343	95.8904109589041	1.33e-114
+ctg255_3	D3867_RS03790	54	251	98.39357429718876	5.93e-82
+ctg255_4	D3867_RS03795	45	239	101.93548387096773	1.25e-75
+
+
+
+>>
+50. NZ_CP007793
+Source: Azospirillum argentinense strain Az39 chromosome, complete genome
+Type: redox-cofactor
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 833.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg255_1	ABAZ39_RS07855	51	340	91.23287671232877	1.11e-113
+ctg255_3	ABAZ39_RS07845	54	250	97.99196787148594	1.19e-81
+ctg255_4	ABAZ39_RS07840	45	243	101.93548387096773	5.5e-77
+

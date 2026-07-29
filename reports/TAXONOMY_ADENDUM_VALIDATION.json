@@ -1,0 +1,210 @@
+{
+  "status": "VALIDATED",
+  "checks": [
+    {
+      "check": "central_palette_exists",
+      "status": "VALIDATED",
+      "details": "31069 entries"
+    },
+    {
+      "check": "chloroflexi_vs_rokubacteria",
+      "status": "VALIDATED",
+      "details": "#7B2CBF vs #00A6A6"
+    },
+    {
+      "check": "identified_taxon_colours_unique",
+      "status": "VALIDATED",
+      "details": "No duplicated identified-taxon colours"
+    },
+    {
+      "check": "24_taxonomy_combinations",
+      "status": "VALIDATED",
+      "details": "12/12 domain-level combinations, each with 2 visualisations = 24/24"
+    },
+    {
+      "check": "supplementary_numbering_1_69",
+      "status": "VALIDATED",
+      "details": "range=[1]..[69]; duplicates={}"
+    },
+    {
+      "check": "supplementary_png_pdf_svg",
+      "status": "VALIDATED",
+      "details": "All 69 trios present"
+    },
+    {
+      "check": "obsolete_outputs_removed",
+      "status": "VALIDATED",
+      "details": "No obsolete affected outputs"
+    },
+    {
+      "check": "dynamic_title_logic",
+      "status": "VALIDATED",
+      "details": "Domain, rank and visualisation are composed dynamically"
+    },
+    {
+      "check": "taxonomy_zscore_removed",
+      "status": "VALIDATED",
+      "details": "No z-score control in final taxonomy interface"
+    },
+    {
+      "check": "portable_paths",
+      "status": "VALIDATED",
+      "details": "No local absolute path in app.py"
+    },
+    {
+      "check": "module_combined_is_67",
+      "status": "VALIDATED",
+      "details": "Combined module heatmap renumbered to 67"
+    }
+  ],
+  "taxonomy_combinations": [
+    {
+      "domain": "Bacteria",
+      "taxonomic_level": "Phylum",
+      "rows": 3120,
+      "samples": 20,
+      "min_sum_pct": 100.0,
+      "max_sum_pct": 100.0,
+      "barplot_and_heatmap_trios": true,
+      "dimensions": "4788x2835; 3778x3105",
+      "status": "VALIDATED",
+      "missing": ""
+    },
+    {
+      "domain": "Bacteria",
+      "taxonomic_level": "Class",
+      "rows": 2200,
+      "samples": 20,
+      "min_sum_pct": 99.99999999999999,
+      "max_sum_pct": 100.00000000000001,
+      "barplot_and_heatmap_trios": true,
+      "dimensions": "4665x2835; 3645x3105",
+      "status": "VALIDATED",
+      "missing": ""
+    },
+    {
+      "domain": "Bacteria",
+      "taxonomic_level": "Order",
+      "rows": 4940,
+      "samples": 20,
+      "min_sum_pct": 99.99999999999999,
+      "max_sum_pct": 100.00000000000001,
+      "barplot_and_heatmap_trios": true,
+      "dimensions": "4615x2835; 3679x3105",
+      "status": "VALIDATED",
+      "missing": ""
+    },
+    {
+      "domain": "Bacteria",
+      "taxonomic_level": "Family",
+      "rows": 12340,
+      "samples": 20,
+      "min_sum_pct": 99.99999999999999,
+      "max_sum_pct": 100.00000000000001,
+      "barplot_and_heatmap_trios": true,
+      "dimensions": "4776x2835; 3792x3105",
+      "status": "VALIDATED",
+      "missing": ""
+    },
+    {
+      "domain": "Bacteria",
+      "taxonomic_level": "Genus",
+      "rows": 69240,
+      "samples": 20,
+      "min_sum_pct": 99.99999999999999,
+      "max_sum_pct": 100.00000000000001,
+      "barplot_and_heatmap_trios": true,
+      "dimensions": "4795x2835; 3812x3105",
+      "status": "VALIDATED",
+      "missing": ""
+    },
+    {
+      "domain": "Bacteria",
+      "taxonomic_level": "Species",
+      "rows": 481900,
+      "samples": 20,
+      "min_sum_pct": 100.0,
+      "max_sum_pct": 100.0,
+      "barplot_and_heatmap_trios": true,
+      "dimensions": "5373x2835; 4413x3105",
+      "status": "VALIDATED",
+      "missing": ""
+    },
+    {
+      "domain": "Archaea",
+      "taxonomic_level": "Phylum",
+      "rows": 500,
+      "samples": 20,
+      "min_sum_pct": 100.0,
+      "max_sum_pct": 100.0,
+      "barplot_and_heatmap_trios": true,
+      "dimensions": "4844x2835; 3866x2779",
+      "status": "VALIDATED",
+      "missing": ""
+    },
+    {
+      "domain": "Archaea",
+      "taxonomic_level": "Class",
+      "rows": 460,
+      "samples": 20,
+      "min_sum_pct": 99.99999999999999,
+      "max_sum_pct": 100.00000000000001,
+      "barplot_and_heatmap_trios": true,
+      "dimensions": "4658x2835; 3810x2649",
+      "status": "VALIDATED",
+      "missing": ""
+    },
+    {
+      "domain": "Archaea",
+      "taxonomic_level": "Order",
+      "rows": 820,
+      "samples": 20,
+      "min_sum_pct": 99.99999999999999,
+      "max_sum_pct": 100.00000000000001,
+      "barplot_and_heatmap_trios": true,
+      "dimensions": "4833x2835; 3905x3105",
+      "status": "VALIDATED",
+      "missing": ""
+    },
+    {
+      "domain": "Archaea",
+      "taxonomic_level": "Family",
+      "rows": 1160,
+      "samples": 20,
+      "min_sum_pct": 99.99999999999999,
+      "max_sum_pct": 100.00000000000001,
+      "barplot_and_heatmap_trios": true,
+      "dimensions": "4915x2835; 3942x3105",
+      "status": "VALIDATED",
+      "missing": ""
+    },
+    {
+      "domain": "Archaea",
+      "taxonomic_level": "Genus",
+      "rows": 3960,
+      "samples": 20,
+      "min_sum_pct": 99.99999999999999,
+      "max_sum_pct": 100.00000000000001,
+      "barplot_and_heatmap_trios": true,
+      "dimensions": "4805x2835; 3889x3105",
+      "status": "VALIDATED",
+      "missing": ""
+    },
+    {
+      "domain": "Archaea",
+      "taxonomic_level": "Species",
+      "rows": 26800,
+      "samples": 20,
+      "min_sum_pct": 100.0,
+      "max_sum_pct": 100.0,
+      "barplot_and_heatmap_trios": true,
+      "dimensions": "5471x2835; 4519x3105",
+      "status": "VALIDATED",
+      "missing": ""
+    }
+  ],
+  "visual_review": {
+    "taxonomy_contact_sheet": "Visual inspection completed: correct domain/rank titles, legends and relative-abundance scales.",
+    "module_contact_sheet": "Visual inspection completed: Y labels adjacent to cells, X labels aligned to cell centres, contiguous cells and readable dynamic dimensions."
+  }
+}

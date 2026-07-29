@@ -1,0 +1,12 @@
+ClusterBlast scores for NODE_203_length_2910_cov_3.256618
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg203_1	0	894	-		
+ctg203_2	898	1972	-		
+ctg203_3	1973	2750	-		
+
+
+Significant hits: 
+
+
+Details:

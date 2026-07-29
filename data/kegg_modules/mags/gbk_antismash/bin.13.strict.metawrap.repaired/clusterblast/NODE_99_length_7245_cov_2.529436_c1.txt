@@ -1,0 +1,148 @@
+ClusterBlast scores for NODE_99_length_7245_cov_2.529436
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg99_1	0	450	+		
+ctg99_2	461	695	+		
+ctg99_3	696	921	+		
+ctg99_4	1185	1563	+		
+ctg99_5	1556	2399	+		
+ctg99_6	2593	3331	+		
+ctg99_7	3383	4064	+		
+ctg99_8	4383	4956	+		
+ctg99_9	5150	6026	+		
+ctg99_10	6045	7044	+		
+ctg99_11	7076	7244	+		
+
+
+Significant hits: 
+1. NZ_CP035040	Sinorhizobium fredii strain SMH12 chromosome, complete genome
+2. NZ_QMED01000001	Algibacillus agarilyticus strain RQJ05 RQJ50_scaffold1, whole genome shotgun sequence
+3. NZ_CP047948	Synechococcus sp. A15-127 chromosome, complete genome
+4. NZ_CP017316	Streptomyces rubrolavendulae strain MJM4426 chromosome, complete genome
+5. NZ_CP023696	Streptomyces fradiae ATCC 10745 = DSM 40063 strain ATCC 10745 chromosome, complete genome
+6. NZ_CP066801	Streptomyces sp. HSG2 chromosome, complete genome
+7. NC_019673	Saccharothrix espanaensis DSM 44229, complete sequence
+8. NZ_CP051010	Streptomyces sp. S1D4-11 chromosome, complete genome
+
+
+Details:
+
+>>
+1. NZ_CP035040
+Source: Sinorhizobium fredii strain SMH12 chromosome, complete genome
+Type: NI-siderophore
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 312.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg99_4	EPK84_RS21250	38	66	90.4	7.53e-13
+ctg99_5	EPK84_RS21245	52	246	92.14285714285714	2.82e-79
+
+
+
+>>
+2. NZ_QMED01000001
+Source: Algibacillus agarilyticus strain RQJ05 RQJ50_scaffold1, whole genome shotgun sequence
+Type: phosphonate
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 525.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg99_8	DPX34_RS00845	50	186	92.10526315789474	4.24e-58
+ctg99_10	DPX34_RS00830	52	339	99.69879518072288	2.72e-114
+
+
+
+>>
+3. NZ_CP047948
+Source: Synechococcus sp. A15-127 chromosome, complete genome
+Type: crocagin
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 410.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg99_10	SynA15127_RS11020	53	352	101.20481927710843	3.66e-119
+ctg99_11	SynA15127_RS11010	49	58	98.21428571428571	5.32e-10
+
+
+
+>>
+4. NZ_CP017316
+Source: Streptomyces rubrolavendulae strain MJM4426 chromosome, complete genome
+Type: thioamide-NRP
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 230.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg99_8	A4G23_RS02280	32	105	92.63157894736842	4.93e-26
+ctg99_10	A4G23_RS02300	31	125	97.89156626506023	4e-31
+
+
+
+>>
+5. NZ_CP023696
+Source: Streptomyces fradiae ATCC 10745 = DSM 40063 strain ATCC 10745 chromosome, complete genome
+Type: thioamide-NRP
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 230.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg99_8	CP974_RS02430	32	105	92.63157894736842	4.93e-26
+ctg99_10	CP974_RS02450	31	125	97.89156626506023	4e-31
+
+
+
+>>
+6. NZ_CP066801
+Source: Streptomyces sp. HSG2 chromosome, complete genome
+Type: NRP-metallophore,NRPS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 219.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg99_1	JEK78_RS16790	41	81	77.85234899328859	2.24e-16
+ctg99_5	JEK78_RS16995	38	79	45.0	5.73e-16
+ctg99_5	JEK78_RS16985	36	59	52.142857142857146	1.19e-08
+
+
+
+>>
+7. NC_019673
+Source: Saccharothrix espanaensis DSM 44229, complete sequence
+Type: NRPS,T1PKS,terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 186.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg99_5	BN6_RS27415	38	134	80.0	1.74e-35
+ctg99_11	BN6_RS27345	46	52	96.42857142857143	6.5e-08
+
+
+
+>>
+8. NZ_CP051010
+Source: Streptomyces sp. S1D4-11 chromosome, complete genome
+Type: NI-siderophore,thioamide-NRP
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 180.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg99_8	HEP87_RS37905	34	96	76.84210526315789	6.49e-23
+ctg99_10	HEP87_RS37925	31	84	53.31325301204819	3.21e-16
+

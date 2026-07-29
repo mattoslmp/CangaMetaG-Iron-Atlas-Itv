@@ -1,0 +1,54 @@
+ClusterBlast scores for NODE_656_length_2505_cov_2.686573
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg656_1	2	2504	-		
+
+
+Significant hits: 
+1. BGC0001758.4	rhizomide A/rhizomide B/rhizomide C
+2. BGC0002286.3	ririwpeptide A/ririwpeptide B/ririwpeptide C
+3. BGC0001128.4	gamexpeptide C
+
+
+Details:
+
+>>
+1. BGC0001758.4
+Source: rhizomide A/rhizomide B/rhizomide C
+Type: NRPS:Type I
+Number of proteins with BLAST hits to this cluster: 1
+Cumulative BLAST score: 575.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg656_1	RBRH_RS12370	47	575	77.45803357314148	6.91e-180
+
+
+
+>>
+2. BGC0002286.3
+Source: ririwpeptide A/ririwpeptide B/ririwpeptide C
+Type: NRPS:Type I
+Number of proteins with BLAST hits to this cluster: 1
+Cumulative BLAST score: 463.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg656_1	plu3123	47	463	62.94964028776978	2.94e-141
+
+
+
+>>
+3. BGC0001128.4
+Source: gamexpeptide C
+Type: NRPS:Type I
+Number of proteins with BLAST hits to this cluster: 1
+Cumulative BLAST score: 453.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg656_1	plu3263	46	453	62.829736211031175	1.09e-137
+

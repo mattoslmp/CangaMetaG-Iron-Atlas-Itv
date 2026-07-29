@@ -1,0 +1,452 @@
+ClusterBlast scores for NODE_132_length_3846_cov_2.765190
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg132_1	142	1204	+		
+ctg132_2	1237	1867	+		
+ctg132_3	1867	2140	-		
+ctg132_4	2225	2522	+		
+ctg132_5	2577	3168	+		
+ctg132_6	3134	3626	-		
+
+
+Significant hits: 
+1. NZ_CP030846	Candidatus Nitrosotenuis sp. DW1 chromosome, complete genome
+2. NZ_LT841358	Candidatus Nitrosotalea okcheonensis isolate NCS1 chromosome 1
+3. NZ_MU078702	Nitrosopumilus sp. b2 3, whole genome shotgun sequence
+4. NZ_AP026695	Nitrosopumilus zosterae strain NM25 chromosome, complete genome
+5. NZ_CP035425	Candidatus Nitrosopumilus sp. SW chromosome, complete genome
+6. NZ_CP026994	Nitrosopumilus oxyclinae strain HCE1 chromosome, complete genome
+7. NC_018656	Candidatus Nitrosopumilus sediminis, complete sequence
+8. NZ_CP026995	Nitrosopumilus ureiphilus strain PS0 chromosome, complete genome
+9. NZ_CP026993	Nitrosopumilus cobalaminigenes strain HCA1 chromosome, complete genome
+10. NZ_CP030847	Nitrosarchaeum sp. AC2 chromosome, complete genome
+11. NZ_MU078696	Nitrosopumilus sp. b3 7, whole genome shotgun sequence
+12. NZ_CP011097	Candidatus Nitrosotenuis cloacae strain SAT1 chromosome, complete genome
+13. NZ_CP024808	Candidatus Nitrosotenuis aquarius strain AQ6F chromosome, complete genome
+14. NC_010085	Nitrosopumilus maritimus SCM1, complete sequence
+15. NZ_CP011070	Nitrosopumilus adriaticus strain NF5 chromosome, complete genome
+16. NZ_CP067007	Nitrosopumilus sp. K4 chromosome, complete genome
+17. NZ_CP010868	Nitrosopumilus piranensis strain D3C chromosome, complete genome
+18. NZ_CP021324	Candidatus Nitrosomarinus catalina strain SPOT01 chromosome, complete genome
+19. NC_018719	Candidatus Nitrososphaera gargensis Ga9.2, complete sequence
+20. NZ_CP007174	Candidatus Nitrososphaera evergladensis SR1 chromosome, complete genome
+21. NZ_CP007536	Nitrososphaera viennensis EN76 chromosome, complete genome
+22. NZ_CP012850	Candidatus Nitrosocosmicus oleophilus strain MY3 chromosome, complete genome
+23. NZ_ML675589	Candidatus Nitrosocosmicus arcticus strain Kfb NARC_scaffold12, whole genome shotgun sequence
+24. NC_018655	Candidatus Nitrosopumilus koreensis AR1, complete sequence
+25. NZ_CP018839	Thauera chlorobenzoica strain 3CB1 chromosome, complete genome
+
+
+Details:
+
+>>
+1. NZ_CP030846
+Source: Candidatus Nitrosotenuis sp. DW1 chromosome, complete genome
+Type: phosphonate,ranthipeptide
+Number of proteins with BLAST hits to this cluster: 5
+Cumulative BLAST score: 1228.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg132_1	DSQ19_RS09650	79	534	97.45042492917847	1.46e-190
+ctg132_2	DSQ19_RS09645	65	281	99.04306220095694	5.13e-95
+ctg132_3	DSQ19_RS09640	70	118	88.88888888888889	1.92e-34
+ctg132_5	DSQ19_RS09635	45	175	95.91836734693877	8.61e-54
+ctg132_6	DSQ19_RS09630	39	120	98.15950920245399	2.85e-33
+
+
+
+>>
+2. NZ_LT841358
+Source: Candidatus Nitrosotalea okcheonensis isolate NCS1 chromosome 1
+Type: RRE-containing
+Number of proteins with BLAST hits to this cluster: 5
+Cumulative BLAST score: 1450.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg132_1	BQ3481_RS09925	83	574	100.0	3.52e-206
+ctg132_2	BQ3481_RS09930	82	359	100.0	4.4e-126
+ctg132_3	BQ3481_RS09945	86	139	87.77777777777777	7.63e-43
+ctg132_5	BQ3481_RS09950	56	222	95.91836734693877	3.46e-72
+ctg132_6	BQ3481_RS09955	44	156	99.38650306748467	2.48e-47
+
+
+
+>>
+3. NZ_MU078702
+Source: Nitrosopumilus sp. b2 3, whole genome shotgun sequence
+Type: RRE-containing
+Number of proteins with BLAST hits to this cluster: 5
+Cumulative BLAST score: 1198.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg132_1	C6989_RS03180	77	529	97.73371104815864	2.12e-188
+ctg132_2	C6989_RS03185	67	289	101.43540669856459	2.55e-98
+ctg132_3	C6989_RS03230	75	122	87.77777777777777	3.92e-36
+ctg132_5	C6989_RS03235	37	155	100.51020408163265	6.27e-46
+ctg132_6	C6989_RS03240	32	103	99.38650306748467	1.69e-26
+
+
+
+>>
+4. NZ_AP026695
+Source: Nitrosopumilus zosterae strain NM25 chromosome, complete genome
+Type: RRE-containing,phosphonate
+Number of proteins with BLAST hits to this cluster: 5
+Cumulative BLAST score: 1192.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg132_1	OO712_RS09745	76	531	98.30028328611898	3.68e-189
+ctg132_2	OO712_RS09740	64	282	101.43540669856459	1.99e-95
+ctg132_3	OO712_RS09730	71	117	87.77777777777777	2.65e-34
+ctg132_5	OO712_RS09725	37	153	100.51020408163265	5.05e-45
+ctg132_6	OO712_RS09720	35	109	99.38650306748467	9.17e-29
+
+
+
+>>
+5. NZ_CP035425
+Source: Candidatus Nitrosopumilus sp. SW chromosome, complete genome
+Type: RRE-containing
+Number of proteins with BLAST hits to this cluster: 5
+Cumulative BLAST score: 1189.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg132_1	Nisw_RS04145	77	520	96.60056657223795	4.73e-185
+ctg132_2	Nisw_RS04140	67	289	101.43540669856459	2.55e-98
+ctg132_3	Nisw_RS04130	72	119	87.77777777777777	6.5e-35
+ctg132_5	Nisw_RS04125	37	153	100.51020408163265	5.05e-45
+ctg132_6	Nisw_RS04120	33	108	99.38650306748467	1.88e-28
+
+
+
+>>
+6. NZ_CP026994
+Source: Nitrosopumilus oxyclinae strain HCE1 chromosome, complete genome
+Type: RRE-containing
+Number of proteins with BLAST hits to this cluster: 5
+Cumulative BLAST score: 1176.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg132_1	C5F49_RS00855	74	518	99.43342776203966	2.93e-184
+ctg132_2	C5F49_RS00860	65	285	101.43540669856459	1.71e-96
+ctg132_3	C5F49_RS00890	75	120	87.77777777777777	2.27e-35
+ctg132_5	C5F49_RS00895	35	143	100.51020408163265	2.97e-41
+ctg132_6	C5F49_RS00900	33	110	99.38650306748467	4.72e-29
+
+
+
+>>
+7. NC_018656
+Source: Candidatus Nitrosopumilus sediminis, complete sequence
+Type: RRE-containing
+Number of proteins with BLAST hits to this cluster: 5
+Cumulative BLAST score: 1175.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg132_1	NSED_RS00320	75	523	99.43342776203966	6.22e-186
+ctg132_2	NSED_RS00325	64	283	101.43540669856459	6.94e-96
+ctg132_3	NSED_RS00340	72	118	87.77777777777777	1.86e-34
+ctg132_5	NSED_RS00345	35	145	100.51020408163265	3.71e-42
+ctg132_6	NSED_RS00350	32	106	99.38650306748467	1.06e-27
+
+
+
+>>
+8. NZ_CP026995
+Source: Nitrosopumilus ureiphilus strain PS0 chromosome, complete genome
+Type: ranthipeptide
+Number of proteins with BLAST hits to this cluster: 5
+Cumulative BLAST score: 1175.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg132_1	C5F50_RS00970	76	519	98.30028328611898	1.35e-184
+ctg132_2	C5F50_RS00975	65	286	101.43540669856459	4.21e-97
+ctg132_3	C5F50_RS00990	66	106	87.77777777777777	6.97e-30
+ctg132_5	C5F50_RS00995	35	147	100.51020408163265	6.53e-43
+ctg132_6	C5F50_RS01000	31	117	99.38650306748467	6.48e-32
+
+
+
+>>
+9. NZ_CP026993
+Source: Nitrosopumilus cobalaminigenes strain HCA1 chromosome, complete genome
+Type: RRE-containing
+Number of proteins with BLAST hits to this cluster: 5
+Cumulative BLAST score: 1173.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg132_1	C5F47_RS00835	76	522	97.73371104815864	1.3e-185
+ctg132_2	C5F47_RS00840	66	286	101.43540669856459	2.97e-97
+ctg132_3	C5F47_RS00850	73	116	87.77777777777777	1.08e-33
+ctg132_5	C5F47_RS00855	36	147	100.51020408163265	6.53e-43
+ctg132_6	C5F47_RS00860	31	102	100.61349693251533	3.66e-26
+
+
+
+>>
+10. NZ_CP030847
+Source: Nitrosarchaeum sp. AC2 chromosome, complete genome
+Type: RRE-containing
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1111.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg132_1	DSQ20_RS00995	80	548	97.73371104815864	6.38e-196
+ctg132_2	DSQ20_RS01000	64	279	100.95693779904306	2.08e-94
+ctg132_3	DSQ20_RS01015	73	117	87.77777777777777	3.76e-34
+ctg132_5	DSQ20_RS01020	40	167	100.51020408163265	9.15e-51
+
+
+
+>>
+11. NZ_MU078696
+Source: Nitrosopumilus sp. b3 7, whole genome shotgun sequence
+Type: RRE-containing,phosphonate
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1073.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg132_1	C6990_RS06645	77	524	98.30028328611898	1.42e-186
+ctg132_2	C6990_RS06650	65	283	101.43540669856459	6.94e-96
+ctg132_3	C6990_RS06665	70	115	87.77777777777777	1.53e-33
+ctg132_5	C6990_RS06670	37	151	100.51020408163265	2.03e-44
+
+
+
+>>
+12. NZ_CP011097
+Source: Candidatus Nitrosotenuis cloacae strain SAT1 chromosome, complete genome
+Type: RRE-containing
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 918.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg132_1	SU86_RS00910	78	527	96.88385269121812	8.62e-188
+ctg132_2	SU86_RS00915	64	278	99.04306220095694	8.46e-94
+ctg132_3	SU86_RS00920	68	113	85.55555555555556	1.22e-32
+
+
+
+>>
+13. NZ_CP024808
+Source: Candidatus Nitrosotenuis aquarius strain AQ6F chromosome, complete genome
+Type: RRE-containing
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 911.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg132_1	NAQ_RS06270	78	528	96.88385269121812	4.71e-188
+ctg132_2	NAQ_RS06265	63	278	100.47846889952152	6.16e-94
+ctg132_3	NAQ_RS06260	60	105	85.55555555555556	1.94e-29
+
+
+
+>>
+14. NC_010085
+Source: Nitrosopumilus maritimus SCM1, complete sequence
+Type: RRE-containing,betalactone,phosphonate
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1075.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg132_1	NMAR_RS00870	75	511	96.3172804532578	1.2e-181
+ctg132_2	NMAR_RS00885	66	288	101.43540669856459	7.3e-98
+ctg132_3	NMAR_RS00895	72	119	87.77777777777777	6.5e-35
+ctg132_5	NMAR_RS00900	38	157	100.51020408163265	1.56e-46
+
+
+
+>>
+15. NZ_CP011070
+Source: Nitrosopumilus adriaticus strain NF5 chromosome, complete genome
+Type: RRE-containing
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1062.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg132_1	NADRNF5_RS10115	76	517	96.03399433427762	8e-184
+ctg132_2	NADRNF5_RS10110	64	284	101.43540669856459	2.43e-96
+ctg132_3	NADRNF5_RS10085	70	117	87.77777777777777	5.34e-34
+ctg132_5	NADRNF5_RS10080	36	144	100.51020408163265	1.05e-41
+
+
+
+>>
+16. NZ_CP067007
+Source: Nitrosopumilus sp. K4 chromosome, complete genome
+Type: RRE-containing
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 944.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg132_1	NsoK4_RS08290	78	538	98.01699716713881	3.57e-192
+ctg132_2	NsoK4_RS08285	65	284	101.43540669856459	2.43e-96
+ctg132_3	NsoK4_RS08270	75	122	87.77777777777777	2.76e-36
+
+
+
+>>
+17. NZ_CP010868
+Source: Nitrosopumilus piranensis strain D3C chromosome, complete genome
+Type: RRE-containing
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 817.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg132_1	NPIRD3C_RS02415	77	528	97.73371104815864	4.28e-188
+ctg132_2	NPIRD3C_RS02420	67	289	101.43540669856459	2.55e-98
+
+
+
+>>
+18. NZ_CP021324
+Source: Candidatus Nitrosomarinus catalina strain SPOT01 chromosome, complete genome
+Type: phosphonate,ranthipeptide
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 809.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg132_1	NMSP_RS00780	76	519	97.16713881019831	1.72e-184
+ctg132_2	NMSP_RS00785	66	290	101.91387559808614	1.86e-98
+
+
+
+>>
+19. NC_018719
+Source: Candidatus Nitrososphaera gargensis Ga9.2, complete sequence
+Type: RRE-containing
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 683.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg132_1	NGAR_RS11950	67	452	95.75070821529745	2.41e-158
+ctg132_2	NGAR_RS11955	57	231	91.86602870813397	2.21e-75
+
+
+
+>>
+20. NZ_CP007174
+Source: Candidatus Nitrososphaera evergladensis SR1 chromosome, complete genome
+Type: RRE-containing
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 683.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg132_1	NTE_RS04225	66	448	95.75070821529745	1.22e-156
+ctg132_2	NTE_RS04230	56	235	92.34449760765551	5.03e-77
+
+
+
+>>
+21. NZ_CP007536
+Source: Nitrososphaera viennensis EN76 chromosome, complete genome
+Type: RRE-containing
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 681.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg132_1	NVIE_RS13095	66	449	95.75070821529745	6.49e-157
+ctg132_2	NVIE_RS13100	54	232	92.34449760765551	7.73e-76
+
+
+
+>>
+22. NZ_CP012850
+Source: Candidatus Nitrosocosmicus oleophilus strain MY3 chromosome, complete genome
+Type: RRE-containing
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 634.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg132_1	NMY3_RS08600	60	411	96.60056657223795	5.75e-142
+ctg132_2	NMY3_RS08605	54	223	92.34449760765551	1.87e-72
+
+
+
+>>
+23. NZ_ML675589
+Source: Candidatus Nitrosocosmicus arcticus strain Kfb NARC_scaffold12, whole genome shotgun sequence
+Type: RRE-containing
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 632.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg132_1	NARC_RS10350	60	408	96.60056657223795	8.21e-141
+ctg132_2	NARC_RS10345	54	224	92.34449760765551	1.32e-72
+
+
+
+>>
+24. NC_018655
+Source: Candidatus Nitrosopumilus koreensis AR1, complete sequence
+Type: RRE-containing
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 830.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg132_1	NKOR_RS00550	81	541	97.16713881019831	2.56e-193
+ctg132_2	NKOR_RS00560	66	289	101.43540669856459	2.55e-98
+
+
+
+>>
+25. NZ_CP018839
+Source: Thauera chlorobenzoica strain 3CB1 chromosome, complete genome
+Type: acyl_amino_acids
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 260.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg132_1	Tchl_RS09040	40	186	98.01699716713881	5.73e-54
+ctg132_2	Tchl_RS09085	35	74	45.933014354066984	4.07e-15
+

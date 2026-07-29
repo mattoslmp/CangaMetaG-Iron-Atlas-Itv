@@ -1,0 +1,16 @@
+ClusterBlast scores for NODE_3376_length_7560_cov_3.759094
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg11_1	314	1292	-		
+ctg11_2	1383	3057	-		
+ctg11_3	3222	5112	+		
+ctg11_4	5331	5898	+		
+ctg11_5	6095	6305	+		
+ctg11_6	6323	7088	-		
+ctg11_7	7094	7559	-		
+
+
+Significant hits: 
+
+
+Details:

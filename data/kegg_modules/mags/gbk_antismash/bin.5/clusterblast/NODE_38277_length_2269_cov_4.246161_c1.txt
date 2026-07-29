@@ -1,0 +1,91 @@
+ClusterBlast scores for NODE_38277_length_2269_cov_4.246161
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg139_1	0	591	-		
+ctg139_2	616	1738	-		
+ctg139_3	1685	2267	-		
+
+
+Significant hits: 
+1. NC_018681	Nocardia brasiliensis ATCC 700358, complete sequence
+2. NZ_MUXN01000023	Amycolatopsis azurea DSM 43854 contig_23, whole genome shotgun sequence
+3. NZ_AZWO01000025	Salinispora pacifica CNR114 B118DRAFT_scaffold_22.23_C, whole genome shotgun sequence
+4. NZ_KB905359	Salinispora pacifica DSM 45544 Salpac3DRAFT_Scaffold1.1, whole genome shotgun sequence
+5. NZ_CP014213	Methanosphaera sp. BMS chromosome, complete genome
+
+
+Details:
+
+>>
+1. NC_018681
+Source: Nocardia brasiliensis ATCC 700358, complete sequence
+Type: PKS-like,T3PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 256.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg139_1	O3I_RS07970	38	52	37.055837563451774	7.83e-06
+ctg139_2	O3I_RS08045	36	204	96.7828418230563	1.18e-60
+
+
+
+>>
+2. NZ_MUXN01000023
+Source: Amycolatopsis azurea DSM 43854 contig_23, whole genome shotgun sequence
+Type: NRPS,NRPS-like,T1PKS,T3PKS,terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 253.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg139_1	B0293_RS28825	39	53	38.07106598984771	2.41e-06
+ctg139_2	B0293_RS28810	34	200	96.51474530831099	7.35e-59
+
+
+
+>>
+3. NZ_AZWO01000025
+Source: Salinispora pacifica CNR114 B118DRAFT_scaffold_22.23_C, whole genome shotgun sequence
+Type: NRPS-like,T3PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 237.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg139_1	B118_RS0116715	38	52	40.609137055837564	5.65e-06
+ctg139_2	B118_RS0116635	34	185	97.58713136729223	4.25e-53
+
+
+
+>>
+4. NZ_KB905359
+Source: Salinispora pacifica DSM 45544 Salpac3DRAFT_Scaffold1.1, whole genome shotgun sequence
+Type: NRPS-like,T3PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 237.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg139_1	SALPAC3_RS0109315	38	52	40.609137055837564	5.65e-06
+ctg139_2	SALPAC3_RS0109395	34	185	97.58713136729223	4.25e-53
+
+
+
+>>
+5. NZ_CP014213
+Source: Methanosphaera sp. BMS chromosome, complete genome
+Type: NRPS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 460.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg139_2	AW729_RS01840	48	321	96.51474530831099	2.78e-106
+ctg139_3	AW729_RS01835	42	139	93.26424870466322	7.08e-39
+

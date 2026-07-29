@@ -1,0 +1,921 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+  "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" width="1296pt" height="835.2pt" viewBox="0 0 1296 835.2" xmlns="http://www.w3.org/2000/svg" version="1.1">
+ <metadata>
+  <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+   <cc:Work>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:date>2026-07-26T09:11:53.810776</dc:date>
+    <dc:format>image/svg+xml</dc:format>
+    <dc:creator>
+     <cc:Agent>
+      <dc:title>Matplotlib v3.10.8, https://matplotlib.org/</dc:title>
+     </cc:Agent>
+    </dc:creator>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <defs>
+  <style type="text/css">*{stroke-linejoin: round; stroke-linecap: butt}</style>
+ </defs>
+ <g id="figure_1">
+  <g id="patch_1">
+   <path d="M 0 835.2 
+L 1296 835.2 
+L 1296 0 
+L 0 0 
+z
+" style="fill: #ffffff"/>
+  </g>
+  <g id="axes_1">
+   <g id="patch_2">
+    <path d="M 375.84 768.384 
+L 706.987059 768.384 
+L 706.987059 50.112 
+L 375.84 50.112 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="patch_3">
+    <path d="M 541.413529 735.735273 
+L 406.656621 735.735273 
+L 406.656621 705.828042 
+L 541.413529 705.828042 
+z
+" clip-path="url(#pa1cd07250c)" style="fill: #b2182b; stroke: #222222; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_4">
+    <path d="M 541.413529 694.197452 
+L 424.927975 694.197452 
+L 424.927975 664.290221 
+L 541.413529 664.290221 
+z
+" clip-path="url(#pa1cd07250c)" style="fill: #b2182b; stroke: #222222; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_5">
+    <path d="M 541.413529 652.659631 
+L 430.493977 652.659631 
+L 430.493977 622.7524 
+L 541.413529 622.7524 
+z
+" clip-path="url(#pa1cd07250c)" style="fill: #b2182b; stroke: #222222; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_6">
+    <path d="M 541.413529 611.12181 
+L 438.545923 611.12181 
+L 438.545923 581.214579 
+L 541.413529 581.214579 
+z
+" clip-path="url(#pa1cd07250c)" style="fill: #b2182b; stroke: #222222; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_7">
+    <path d="M 541.413529 569.583989 
+L 442.367682 569.583989 
+L 442.367682 539.676758 
+L 541.413529 539.676758 
+z
+" clip-path="url(#pa1cd07250c)" style="fill: #b2182b; stroke: #222222; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_8">
+    <path d="M 541.413529 528.046168 
+L 628.402857 528.046168 
+L 628.402857 498.138937 
+L 541.413529 498.138937 
+z
+" clip-path="url(#pa1cd07250c)" style="fill: #2166ac; stroke: #222222; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_9">
+    <path d="M 541.413529 486.508347 
+L 629.505018 486.508347 
+L 629.505018 456.601116 
+L 541.413529 456.601116 
+z
+" clip-path="url(#pa1cd07250c)" style="fill: #2166ac; stroke: #222222; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_10">
+    <path d="M 541.413529 444.970526 
+L 638.667391 444.970526 
+L 638.667391 415.063295 
+L 541.413529 415.063295 
+z
+" clip-path="url(#pa1cd07250c)" style="fill: #2166ac; stroke: #222222; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_11">
+    <path d="M 541.413529 403.432705 
+L 639.95275 403.432705 
+L 639.95275 373.525474 
+L 541.413529 373.525474 
+z
+" clip-path="url(#pa1cd07250c)" style="fill: #2166ac; stroke: #222222; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_12">
+    <path d="M 541.413529 361.894884 
+L 640.459377 361.894884 
+L 640.459377 331.987653 
+L 541.413529 331.987653 
+z
+" clip-path="url(#pa1cd07250c)" style="fill: #2166ac; stroke: #222222; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_13">
+    <path d="M 541.413529 320.357063 
+L 643.958639 320.357063 
+L 643.958639 290.449832 
+L 541.413529 290.449832 
+z
+" clip-path="url(#pa1cd07250c)" style="fill: #2166ac; stroke: #222222; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_14">
+    <path d="M 541.413529 278.819242 
+L 644.281136 278.819242 
+L 644.281136 248.912011 
+L 541.413529 248.912011 
+z
+" clip-path="url(#pa1cd07250c)" style="fill: #2166ac; stroke: #222222; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_15">
+    <path d="M 541.413529 237.281421 
+L 652.333082 237.281421 
+L 652.333082 207.37419 
+L 541.413529 207.37419 
+z
+" clip-path="url(#pa1cd07250c)" style="fill: #2166ac; stroke: #222222; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_16">
+    <path d="M 541.413529 195.7436 
+L 652.944269 195.7436 
+L 652.944269 165.836369 
+L 541.413529 165.836369 
+z
+" clip-path="url(#pa1cd07250c)" style="fill: #2166ac; stroke: #222222; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_17">
+    <path d="M 541.413529 154.205779 
+L 657.899084 154.205779 
+L 657.899084 124.298548 
+L 541.413529 124.298548 
+z
+" clip-path="url(#pa1cd07250c)" style="fill: #2166ac; stroke: #222222; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_18">
+    <path d="M 541.413529 112.667958 
+L 676.170438 112.667958 
+L 676.170438 82.760727 
+L 541.413529 82.760727 
+z
+" clip-path="url(#pa1cd07250c)" style="fill: #2166ac; stroke: #222222; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="matplotlib.axis_1">
+    <g id="xtick_1">
+     <g id="line2d_1">
+      <path d="M 387.330425 768.384 
+L 387.330425 50.112 
+" clip-path="url(#pa1cd07250c)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.18; stroke-width: 0.7; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_2">
+      <defs>
+       <path id="m9feabf18b1" d="M 0 0 
+L 0 3.5 
+" style="stroke: #000000; stroke-width: 0.8"/>
+      </defs>
+      <g>
+       <use xlink:href="#m9feabf18b1" x="387.330425" y="768.384" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_1">
+      <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle" x="387.330425" y="784.502125" transform="rotate(-0 387.330425 784.502125)">−6</text>
+     </g>
+    </g>
+    <g id="xtick_2">
+     <g id="line2d_3">
+      <path d="M 438.69146 768.384 
+L 438.69146 50.112 
+" clip-path="url(#pa1cd07250c)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.18; stroke-width: 0.7; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_4">
+      <g>
+       <use xlink:href="#m9feabf18b1" x="438.69146" y="768.384" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_2">
+      <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle" x="438.69146" y="784.502125" transform="rotate(-0 438.69146 784.502125)">−4</text>
+     </g>
+    </g>
+    <g id="xtick_3">
+     <g id="line2d_5">
+      <path d="M 490.052495 768.384 
+L 490.052495 50.112 
+" clip-path="url(#pa1cd07250c)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.18; stroke-width: 0.7; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_6">
+      <g>
+       <use xlink:href="#m9feabf18b1" x="490.052495" y="768.384" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_3">
+      <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle" x="490.052495" y="784.502125" transform="rotate(-0 490.052495 784.502125)">−2</text>
+     </g>
+    </g>
+    <g id="xtick_4">
+     <g id="line2d_7">
+      <path d="M 541.413529 768.384 
+L 541.413529 50.112 
+" clip-path="url(#pa1cd07250c)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.18; stroke-width: 0.7; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_8">
+      <g>
+       <use xlink:href="#m9feabf18b1" x="541.413529" y="768.384" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_4">
+      <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle" x="541.413529" y="784.502125" transform="rotate(-0 541.413529 784.502125)">0</text>
+     </g>
+    </g>
+    <g id="xtick_5">
+     <g id="line2d_9">
+      <path d="M 592.774564 768.384 
+L 592.774564 50.112 
+" clip-path="url(#pa1cd07250c)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.18; stroke-width: 0.7; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_10">
+      <g>
+       <use xlink:href="#m9feabf18b1" x="592.774564" y="768.384" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_5">
+      <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle" x="592.774564" y="784.502125" transform="rotate(-0 592.774564 784.502125)">2</text>
+     </g>
+    </g>
+    <g id="xtick_6">
+     <g id="line2d_11">
+      <path d="M 644.135599 768.384 
+L 644.135599 50.112 
+" clip-path="url(#pa1cd07250c)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.18; stroke-width: 0.7; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_12">
+      <g>
+       <use xlink:href="#m9feabf18b1" x="644.135599" y="768.384" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_6">
+      <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle" x="644.135599" y="784.502125" transform="rotate(-0 644.135599 784.502125)">4</text>
+     </g>
+    </g>
+    <g id="xtick_7">
+     <g id="line2d_13">
+      <path d="M 695.496634 768.384 
+L 695.496634 50.112 
+" clip-path="url(#pa1cd07250c)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.18; stroke-width: 0.7; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_14">
+      <g>
+       <use xlink:href="#m9feabf18b1" x="695.496634" y="768.384" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_7">
+      <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle" x="695.496634" y="784.502125" transform="rotate(-0 695.496634 784.502125)">6</text>
+     </g>
+    </g>
+    <g id="text_8">
+     <text style="font-weight: 700; font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: middle" x="541.413529" y="801.635562" transform="rotate(-0 541.413529 801.635562)">log2 fold change</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_2">
+    <g id="ytick_1">
+     <g id="line2d_15"/>
+     <g id="text_9">
+      <text style="font-size: 9.6px; font-family: 'DejaVu Sans'" transform="translate(207.3035 714.846127)">K00392: sir — Sulfur metabolism:</text>
+      <text style="font-size: 9.6px; font-family: 'DejaVu Sans'" transform="translate(225.5 724.720687)">Assimilatory sulfate reduction</text>
+      <text style="font-size: 9.6px; font-family: 'DejaVu Sans'" transform="translate(306.92 734.595247)">VI.D vs AM.D</text>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_16"/>
+     <g id="text_10">
+      <text style="font-size: 9.6px; font-family: 'DejaVu Sans'" transform="translate(179.2385 673.308306)">K15876: nrfH — Nitrogen: Dissimilatory</text>
+      <text style="font-size: 9.6px; font-family: 'DejaVu Sans'" transform="translate(288.2915 683.182866)">nitrate reduction</text>
+      <text style="font-size: 9.6px; font-family: 'DejaVu Sans'" transform="translate(307.379 693.057426)">TIA.D vs TI.D</text>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_17"/>
+     <g id="text_11">
+      <text style="font-size: 9.6px; font-family: 'DejaVu Sans'" transform="translate(208.4825 631.770485)">K01965: pccA — Carbon Fixation:</text>
+      <text style="font-size: 9.6px; font-family: 'DejaVu Sans'" transform="translate(227.543 641.645045)">3-Hydroxypropionate bi-cycle</text>
+      <text style="font-size: 9.6px; font-family: 'DejaVu Sans'" transform="translate(313.0745 651.519605)">VI.D vs TI.D</text>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_18"/>
+     <g id="text_12">
+      <text style="font-size: 9.6px; font-family: 'DejaVu Sans'" transform="translate(187.811 590.232664)">K00185: dmsC — Anaerobic oxidative</text>
+      <text style="font-size: 9.6px; font-family: 'DejaVu Sans'" transform="translate(291.167 600.107224)">phosphorylation</text>
+      <text style="font-size: 9.6px; font-family: 'DejaVu Sans'" transform="translate(306.92 609.981784)">AM.D vs VI.D</text>
+     </g>
+    </g>
+    <g id="ytick_5">
+     <g id="line2d_19"/>
+     <g id="text_13">
+      <text style="font-size: 9.6px; font-family: 'DejaVu Sans'" transform="translate(175.2395 543.757563)">K02567: napA — Nitrogen: Dissimilatory</text>
+      <text style="font-size: 9.6px; font-family: 'DejaVu Sans'" transform="translate(204.188 553.632123)">nitrate reduction - Denitrification -</text>
+      <text style="font-size: 9.6px; font-family: 'DejaVu Sans'" transform="translate(313.0175 563.506683)">Nitrification</text>
+      <text style="font-size: 9.6px; font-family: 'DejaVu Sans'" transform="translate(313.0745 573.381243)">VI.D vs TI.D</text>
+     </g>
+    </g>
+    <g id="ytick_6">
+     <g id="line2d_20"/>
+     <g id="text_14">
+      <text style="font-size: 9.6px; font-family: 'DejaVu Sans'" transform="translate(143.42 507.157022)">K10946: pmoC-amoC — Nitrification - Methane</text>
+      <text style="font-size: 9.6px; font-family: 'DejaVu Sans'" transform="translate(242.5595 517.031582)">oxidation - Methanotrophs</text>
+      <text style="font-size: 9.6px; font-family: 'DejaVu Sans'" transform="translate(307.379 526.906142)">TI.D vs TIA.D</text>
+     </g>
+    </g>
+    <g id="ytick_7">
+     <g id="line2d_21"/>
+     <g id="text_15">
+      <text style="font-size: 9.6px; font-family: 'DejaVu Sans'" transform="translate(187.811 465.619201)">K00185: dmsC — Anaerobic oxidative</text>
+      <text style="font-size: 9.6px; font-family: 'DejaVu Sans'" transform="translate(291.167 475.493761)">phosphorylation</text>
+      <text style="font-size: 9.6px; font-family: 'DejaVu Sans'" transform="translate(307.6235 485.368321)">TI.D vs AM.D</text>
+     </g>
+    </g>
+    <g id="ytick_8">
+     <g id="line2d_22"/>
+     <g id="text_16">
+      <text style="font-size: 9.6px; font-family: 'DejaVu Sans'" transform="translate(206.978 429.01866)">K00583: mtrG — Methanogenesis</text>
+      <text style="font-size: 9.6px; font-family: 'DejaVu Sans'" transform="translate(313.0745 438.89322)">VI.D vs TI.D</text>
+     </g>
+    </g>
+    <g id="ytick_9">
+     <g id="line2d_23"/>
+     <g id="text_17">
+      <text style="font-size: 9.6px; font-family: 'DejaVu Sans'" transform="translate(179.267 382.54356)">K05301: E1.8.2.1 — Sulfur metabolism:</text>
+      <text style="font-size: 9.6px; font-family: 'DejaVu Sans'" transform="translate(287.9225 392.41812)">Sulfite oxydation</text>
+      <text style="font-size: 9.6px; font-family: 'DejaVu Sans'" transform="translate(307.379 402.29268)">TI.D vs TIA.D</text>
+     </g>
+    </g>
+    <g id="ytick_10">
+     <g id="line2d_24"/>
+     <g id="text_18">
+      <text style="font-size: 9.6px; font-family: 'DejaVu Sans'" transform="translate(175.2395 336.068459)">K02567: napA — Nitrogen: Dissimilatory</text>
+      <text style="font-size: 9.6px; font-family: 'DejaVu Sans'" transform="translate(204.188 345.943019)">nitrate reduction - Denitrification -</text>
+      <text style="font-size: 9.6px; font-family: 'DejaVu Sans'" transform="translate(313.0175 355.817579)">Nitrification</text>
+      <text style="font-size: 9.6px; font-family: 'DejaVu Sans'" transform="translate(313.0745 365.692139)">TI.D vs VI.D</text>
+     </g>
+    </g>
+    <g id="ytick_11">
+     <g id="line2d_25"/>
+     <g id="text_19">
+      <text style="font-size: 9.6px; font-family: 'DejaVu Sans'" transform="translate(211.6235 299.467918)">K19745: acuI — Carbon Fixation:</text>
+      <text style="font-size: 9.6px; font-family: 'DejaVu Sans'" transform="translate(227.543 309.342478)">3-Hydroxypropionate bi-cycle</text>
+      <text style="font-size: 9.6px; font-family: 'DejaVu Sans'" transform="translate(313.0745 319.217038)">TI.D vs VI.D</text>
+     </g>
+    </g>
+    <g id="ytick_12">
+     <g id="line2d_26"/>
+     <g id="text_20">
+      <text style="font-size: 9.6px; font-family: 'DejaVu Sans'" transform="translate(187.811 257.930097)">K00185: dmsC — Anaerobic oxidative</text>
+      <text style="font-size: 9.6px; font-family: 'DejaVu Sans'" transform="translate(291.167 267.804657)">phosphorylation</text>
+      <text style="font-size: 9.6px; font-family: 'DejaVu Sans'" transform="translate(306.92 277.679217)">VI.D vs AM.D</text>
+     </g>
+    </g>
+    <g id="ytick_13">
+     <g id="line2d_27"/>
+     <g id="text_21">
+      <text style="font-size: 9.6px; font-family: 'DejaVu Sans'" transform="translate(208.4825 216.392276)">K01965: pccA — Carbon Fixation:</text>
+      <text style="font-size: 9.6px; font-family: 'DejaVu Sans'" transform="translate(227.543 226.266836)">3-Hydroxypropionate bi-cycle</text>
+      <text style="font-size: 9.6px; font-family: 'DejaVu Sans'" transform="translate(313.0745 236.141396)">TI.D vs VI.D</text>
+     </g>
+    </g>
+    <g id="ytick_14">
+     <g id="line2d_28"/>
+     <g id="text_22">
+      <text style="font-size: 9.6px; font-family: 'DejaVu Sans'" transform="translate(200.1245 174.854455)">K00380: cysJ — Sulfur metabolism:</text>
+      <text style="font-size: 9.6px; font-family: 'DejaVu Sans'" transform="translate(225.5 184.729015)">Assimilatory sulfate reduction</text>
+      <text style="font-size: 9.6px; font-family: 'DejaVu Sans'" transform="translate(307.379 194.603575)">TI.D vs TIA.D</text>
+     </g>
+    </g>
+    <g id="ytick_15">
+     <g id="line2d_29"/>
+     <g id="text_23">
+      <text style="font-size: 9.6px; font-family: 'DejaVu Sans'" transform="translate(179.2385 133.316634)">K15876: nrfH — Nitrogen: Dissimilatory</text>
+      <text style="font-size: 9.6px; font-family: 'DejaVu Sans'" transform="translate(288.2915 143.191194)">nitrate reduction</text>
+      <text style="font-size: 9.6px; font-family: 'DejaVu Sans'" transform="translate(307.379 153.065754)">TI.D vs TIA.D</text>
+     </g>
+    </g>
+    <g id="ytick_16">
+     <g id="line2d_30"/>
+     <g id="text_24">
+      <text style="font-size: 9.6px; font-family: 'DejaVu Sans'" transform="translate(207.3035 91.778813)">K00392: sir — Sulfur metabolism:</text>
+      <text style="font-size: 9.6px; font-family: 'DejaVu Sans'" transform="translate(225.5 101.653373)">Assimilatory sulfate reduction</text>
+      <text style="font-size: 9.6px; font-family: 'DejaVu Sans'" transform="translate(306.92 111.527933)">AM.D vs VI.D</text>
+     </g>
+    </g>
+   </g>
+   <g id="line2d_31">
+    <path d="M 541.413529 768.384 
+L 541.413529 50.112 
+" clip-path="url(#pa1cd07250c)" style="fill: none; stroke: #000000; stroke-width: 1.2; stroke-linecap: square"/>
+   </g>
+   <g id="patch_19">
+    <path d="M 375.84 768.384 
+L 706.987059 768.384 
+" style="fill: none; stroke: #000000; stroke-width: 1.2; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_25">
+    <text style="font-weight: 700; font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="404.088569" y="723.679001" transform="rotate(-0 404.088569 723.679001)">-5.25</text>
+   </g>
+   <g id="text_26">
+    <text style="font-weight: 700; font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="422.359923" y="682.14118" transform="rotate(-0 422.359923 682.14118)">-4.54</text>
+   </g>
+   <g id="text_27">
+    <text style="font-weight: 700; font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="427.925925" y="640.603359" transform="rotate(-0 427.925925 640.603359)">-4.32</text>
+   </g>
+   <g id="text_28">
+    <text style="font-weight: 700; font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="435.977871" y="599.065538" transform="rotate(-0 435.977871 599.065538)">-4.01</text>
+   </g>
+   <g id="text_29">
+    <text style="font-weight: 700; font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="439.79963" y="557.527717" transform="rotate(-0 439.79963 557.527717)">-3.86</text>
+   </g>
+   <g id="text_30">
+    <text style="font-weight: 700; font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: start" x="630.970909" y="515.989896" transform="rotate(-0 630.970909 515.989896)">+3.39</text>
+   </g>
+   <g id="text_31">
+    <text style="font-weight: 700; font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: start" x="632.07307" y="474.452075" transform="rotate(-0 632.07307 474.452075)">+3.43</text>
+   </g>
+   <g id="text_32">
+    <text style="font-weight: 700; font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: start" x="641.235443" y="432.914254" transform="rotate(-0 641.235443 432.914254)">+3.79</text>
+   </g>
+   <g id="text_33">
+    <text style="font-weight: 700; font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: start" x="642.520802" y="391.376433" transform="rotate(-0 642.520802 391.376433)">+3.84</text>
+   </g>
+   <g id="text_34">
+    <text style="font-weight: 700; font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: start" x="643.027429" y="349.838612" transform="rotate(-0 643.027429 349.838612)">+3.86</text>
+   </g>
+   <g id="text_35">
+    <text style="font-weight: 700; font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: start" x="646.526691" y="308.300791" transform="rotate(-0 646.526691 308.300791)">+3.99</text>
+   </g>
+   <g id="text_36">
+    <text style="font-weight: 700; font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: start" x="646.849187" y="266.76297" transform="rotate(-0 646.849187 266.76297)">+4.01</text>
+   </g>
+   <g id="text_37">
+    <text style="font-weight: 700; font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: start" x="654.901134" y="225.225149" transform="rotate(-0 654.901134 225.225149)">+4.32</text>
+   </g>
+   <g id="text_38">
+    <text style="font-weight: 700; font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: start" x="655.512321" y="183.687328" transform="rotate(-0 655.512321 183.687328)">+4.34</text>
+   </g>
+   <g id="text_39">
+    <text style="font-weight: 700; font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: start" x="660.467135" y="142.149508" transform="rotate(-0 660.467135 142.149508)">+4.54</text>
+   </g>
+   <g id="text_40">
+    <text style="font-weight: 700; font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: start" x="678.73849" y="100.611687" transform="rotate(-0 678.73849 100.611687)">+5.25</text>
+   </g>
+   <g id="text_41">
+    <text style="font-weight: 700; font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start" x="375.84" y="38.112" transform="rotate(-0 375.84 38.112)">A  Dry-season contrasts</text>
+   </g>
+  </g>
+  <g id="axes_2">
+   <g id="patch_20">
+    <path d="M 945.412941 768.384 
+L 1276.56 768.384 
+L 1276.56 50.112 
+L 945.412941 50.112 
+z
+" style="fill: #ffffff"/>
+   </g>
+   <g id="patch_21">
+    <path d="M 1110.986471 735.735273 
+L 978.327473 735.735273 
+L 978.327473 705.828042 
+L 1110.986471 705.828042 
+z
+" clip-path="url(#pebe25094eb)" style="fill: #b2182b; stroke: #222222; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_22">
+    <path d="M 1110.986471 694.197452 
+L 984.018244 694.197452 
+L 984.018244 664.290221 
+L 1110.986471 664.290221 
+z
+" clip-path="url(#pebe25094eb)" style="fill: #b2182b; stroke: #222222; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_23">
+    <path d="M 1110.986471 652.659631 
+L 996.967578 652.659631 
+L 996.967578 622.7524 
+L 1110.986471 622.7524 
+z
+" clip-path="url(#pebe25094eb)" style="fill: #b2182b; stroke: #222222; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_24">
+    <path d="M 1110.986471 611.12181 
+L 1000.883354 611.12181 
+L 1000.883354 581.214579 
+L 1110.986471 581.214579 
+z
+" clip-path="url(#pebe25094eb)" style="fill: #b2182b; stroke: #222222; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_25">
+    <path d="M 1110.986471 569.583989 
+L 1002.10595 569.583989 
+L 1002.10595 539.676758 
+L 1110.986471 539.676758 
+z
+" clip-path="url(#pebe25094eb)" style="fill: #b2182b; stroke: #222222; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_26">
+    <path d="M 1110.986471 528.046168 
+L 1215.604289 528.046168 
+L 1215.604289 498.138937 
+L 1110.986471 498.138937 
+z
+" clip-path="url(#pebe25094eb)" style="fill: #2166ac; stroke: #222222; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_27">
+    <path d="M 1110.986471 486.508347 
+L 1219.866991 486.508347 
+L 1219.866991 456.601116 
+L 1110.986471 456.601116 
+z
+" clip-path="url(#pebe25094eb)" style="fill: #2166ac; stroke: #222222; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_28">
+    <path d="M 1110.986471 444.970526 
+L 1220.580431 444.970526 
+L 1220.580431 415.063295 
+L 1110.986471 415.063295 
+z
+" clip-path="url(#pebe25094eb)" style="fill: #2166ac; stroke: #222222; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_29">
+    <path d="M 1110.986471 403.432705 
+L 1220.580568 403.432705 
+L 1220.580568 373.525474 
+L 1110.986471 373.525474 
+z
+" clip-path="url(#pebe25094eb)" style="fill: #2166ac; stroke: #222222; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_30">
+    <path d="M 1110.986471 361.894884 
+L 1220.610979 361.894884 
+L 1220.610979 331.987653 
+L 1110.986471 331.987653 
+z
+" clip-path="url(#pebe25094eb)" style="fill: #2166ac; stroke: #222222; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_31">
+    <path d="M 1110.986471 320.357063 
+L 1221.089587 320.357063 
+L 1221.089587 290.449832 
+L 1110.986471 290.449832 
+z
+" clip-path="url(#pebe25094eb)" style="fill: #2166ac; stroke: #222222; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_32">
+    <path d="M 1110.986471 278.819242 
+L 1221.146985 278.819242 
+L 1221.146985 248.912011 
+L 1110.986471 248.912011 
+z
+" clip-path="url(#pebe25094eb)" style="fill: #2166ac; stroke: #222222; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_33">
+    <path d="M 1110.986471 237.281421 
+L 1227.242801 237.281421 
+L 1227.242801 207.37419 
+L 1110.986471 207.37419 
+z
+" clip-path="url(#pebe25094eb)" style="fill: #2166ac; stroke: #222222; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_34">
+    <path d="M 1110.986471 195.7436 
+L 1229.424405 195.7436 
+L 1229.424405 165.836369 
+L 1110.986471 165.836369 
+z
+" clip-path="url(#pebe25094eb)" style="fill: #2166ac; stroke: #222222; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_35">
+    <path d="M 1110.986471 154.205779 
+L 1237.954697 154.205779 
+L 1237.954697 124.298548 
+L 1110.986471 124.298548 
+z
+" clip-path="url(#pebe25094eb)" style="fill: #2166ac; stroke: #222222; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="patch_36">
+    <path d="M 1110.986471 112.667958 
+L 1243.645468 112.667958 
+L 1243.645468 82.760727 
+L 1110.986471 82.760727 
+z
+" clip-path="url(#pebe25094eb)" style="fill: #2166ac; stroke: #222222; stroke-width: 0.5; stroke-linejoin: miter"/>
+   </g>
+   <g id="matplotlib.axis_3">
+    <g id="xtick_8">
+     <g id="line2d_32">
+      <path d="M 946.413813 768.384 
+L 946.413813 50.112 
+" clip-path="url(#pebe25094eb)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.18; stroke-width: 0.7; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_33">
+      <g>
+       <use xlink:href="#m9feabf18b1" x="946.413813" y="768.384" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_42">
+      <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle" x="946.413813" y="784.502125" transform="rotate(-0 946.413813 784.502125)">−6</text>
+     </g>
+    </g>
+    <g id="xtick_9">
+     <g id="line2d_34">
+      <path d="M 1001.271365 768.384 
+L 1001.271365 50.112 
+" clip-path="url(#pebe25094eb)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.18; stroke-width: 0.7; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_35">
+      <g>
+       <use xlink:href="#m9feabf18b1" x="1001.271365" y="768.384" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_43">
+      <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle" x="1001.271365" y="784.502125" transform="rotate(-0 1001.271365 784.502125)">−4</text>
+     </g>
+    </g>
+    <g id="xtick_10">
+     <g id="line2d_36">
+      <path d="M 1056.128918 768.384 
+L 1056.128918 50.112 
+" clip-path="url(#pebe25094eb)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.18; stroke-width: 0.7; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_37">
+      <g>
+       <use xlink:href="#m9feabf18b1" x="1056.128918" y="768.384" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_44">
+      <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle" x="1056.128918" y="784.502125" transform="rotate(-0 1056.128918 784.502125)">−2</text>
+     </g>
+    </g>
+    <g id="xtick_11">
+     <g id="line2d_38">
+      <path d="M 1110.986471 768.384 
+L 1110.986471 50.112 
+" clip-path="url(#pebe25094eb)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.18; stroke-width: 0.7; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_39">
+      <g>
+       <use xlink:href="#m9feabf18b1" x="1110.986471" y="768.384" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_45">
+      <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle" x="1110.986471" y="784.502125" transform="rotate(-0 1110.986471 784.502125)">0</text>
+     </g>
+    </g>
+    <g id="xtick_12">
+     <g id="line2d_40">
+      <path d="M 1165.844023 768.384 
+L 1165.844023 50.112 
+" clip-path="url(#pebe25094eb)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.18; stroke-width: 0.7; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_41">
+      <g>
+       <use xlink:href="#m9feabf18b1" x="1165.844023" y="768.384" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_46">
+      <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle" x="1165.844023" y="784.502125" transform="rotate(-0 1165.844023 784.502125)">2</text>
+     </g>
+    </g>
+    <g id="xtick_13">
+     <g id="line2d_42">
+      <path d="M 1220.701576 768.384 
+L 1220.701576 50.112 
+" clip-path="url(#pebe25094eb)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.18; stroke-width: 0.7; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_43">
+      <g>
+       <use xlink:href="#m9feabf18b1" x="1220.701576" y="768.384" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_47">
+      <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle" x="1220.701576" y="784.502125" transform="rotate(-0 1220.701576 784.502125)">4</text>
+     </g>
+    </g>
+    <g id="xtick_14">
+     <g id="line2d_44">
+      <path d="M 1275.559129 768.384 
+L 1275.559129 50.112 
+" clip-path="url(#pebe25094eb)" style="fill: none; stroke: #b0b0b0; stroke-opacity: 0.18; stroke-width: 0.7; stroke-linecap: square"/>
+     </g>
+     <g id="line2d_45">
+      <g>
+       <use xlink:href="#m9feabf18b1" x="1275.559129" y="768.384" style="stroke: #000000; stroke-width: 0.8"/>
+      </g>
+     </g>
+     <g id="text_48">
+      <text style="font-size: 12px; font-family: 'DejaVu Sans'; text-anchor: middle" x="1275.559129" y="784.502125" transform="rotate(-0 1275.559129 784.502125)">6</text>
+     </g>
+    </g>
+    <g id="text_49">
+     <text style="font-weight: 700; font-size: 14px; font-family: 'DejaVu Sans'; text-anchor: middle" x="1110.986471" y="801.635562" transform="rotate(-0 1110.986471 801.635562)">log2 fold change</text>
+    </g>
+   </g>
+   <g id="matplotlib.axis_4">
+    <g id="ytick_17">
+     <g id="line2d_46"/>
+     <g id="text_50">
+      <text style="font-size: 9.6px; font-family: 'DejaVu Sans'" transform="translate(740.444441 719.783407)">K00376: nosZ — Nitrogen: Denitrification</text>
+      <text style="font-size: 9.6px; font-family: 'DejaVu Sans'" transform="translate(872.240441 729.657967)">TIA.R vs AM.R</text>
+     </g>
+    </g>
+    <g id="ytick_18">
+     <g id="line2d_47"/>
+     <g id="text_51">
+      <text style="font-size: 9.6px; font-family: 'DejaVu Sans'" transform="translate(769.697441 673.308306)">K00381: cysI — Sulfur metabolism:</text>
+      <text style="font-size: 9.6px; font-family: 'DejaVu Sans'" transform="translate(795.072941 683.182866)">Assimilatory sulfate reduction</text>
+      <text style="font-size: 9.6px; font-family: 'DejaVu Sans'" transform="translate(877.935941 693.057426)">VI.R vs AM.R</text>
+     </g>
+    </g>
+    <g id="ytick_19">
+     <g id="line2d_48"/>
+     <g id="text_52">
+      <text style="font-size: 9.6px; font-family: 'DejaVu Sans'" transform="translate(776.876441 631.770485)">K00392: sir — Sulfur metabolism:</text>
+      <text style="font-size: 9.6px; font-family: 'DejaVu Sans'" transform="translate(795.072941 641.645045)">Assimilatory sulfate reduction</text>
+      <text style="font-size: 9.6px; font-family: 'DejaVu Sans'" transform="translate(878.639441 651.519605)">TI.R vs AM.R</text>
+     </g>
+    </g>
+    <g id="ytick_20">
+     <g id="line2d_49"/>
+     <g id="text_53">
+      <text style="font-size: 9.6px; font-family: 'DejaVu Sans'" transform="translate(744.812441 585.295384)">K02567: napA — Nitrogen: Dissimilatory</text>
+      <text style="font-size: 9.6px; font-family: 'DejaVu Sans'" transform="translate(773.760941 595.169944)">nitrate reduction - Denitrification -</text>
+      <text style="font-size: 9.6px; font-family: 'DejaVu Sans'" transform="translate(882.590441 605.044504)">Nitrification</text>
+      <text style="font-size: 9.6px; font-family: 'DejaVu Sans'" transform="translate(884.090441 614.919064)">VI.R vs TI.R</text>
+     </g>
+    </g>
+    <g id="ytick_21">
+     <g id="line2d_50"/>
+     <g id="text_54">
+      <text style="font-size: 9.6px; font-family: 'DejaVu Sans'" transform="translate(740.444441 553.632123)">K00376: nosZ — Nitrogen: Denitrification</text>
+      <text style="font-size: 9.6px; font-family: 'DejaVu Sans'" transform="translate(877.935941 563.506683)">VI.R vs AM.R</text>
+     </g>
+    </g>
+    <g id="ytick_22">
+     <g id="line2d_51"/>
+     <g id="text_55">
+      <text style="font-size: 9.6px; font-family: 'DejaVu Sans'" transform="translate(742.175441 507.157022)">K22622: soxD — Sulfur metabolism: SOX</text>
+      <text style="font-size: 9.6px; font-family: 'DejaVu Sans'" transform="translate(818.682941 517.031582)">(sulfur-oxidation) system</text>
+      <text style="font-size: 9.6px; font-family: 'DejaVu Sans'" transform="translate(872.240441 526.906142)">AM.R vs TIA.R</text>
+     </g>
+    </g>
+    <g id="ytick_23">
+     <g id="line2d_52"/>
+     <g id="text_56">
+      <text style="font-size: 9.6px; font-family: 'DejaVu Sans'" transform="translate(740.444441 470.556481)">K00376: nosZ — Nitrogen: Denitrification</text>
+      <text style="font-size: 9.6px; font-family: 'DejaVu Sans'" transform="translate(877.935941 480.431041)">AM.R vs VI.R</text>
+     </g>
+    </g>
+    <g id="ytick_24">
+     <g id="line2d_53"/>
+     <g id="text_57">
+      <text style="font-size: 9.6px; font-family: 'DejaVu Sans'" transform="translate(745.187441 429.01866)">K15864: nirS — Nitrogen: Denitrification</text>
+      <text style="font-size: 9.6px; font-family: 'DejaVu Sans'" transform="translate(877.691441 438.89322)">TIA.R vs VI.R</text>
+     </g>
+    </g>
+    <g id="ytick_25">
+     <g id="line2d_54"/>
+     <g id="text_58">
+      <text style="font-size: 9.6px; font-family: 'DejaVu Sans'" transform="translate(743.703941 382.54356)">K17226: soxY — Sulfur metabolism: SOX</text>
+      <text style="font-size: 9.6px; font-family: 'DejaVu Sans'" transform="translate(818.682941 392.41812)">(sulfur-oxidation) system</text>
+      <text style="font-size: 9.6px; font-family: 'DejaVu Sans'" transform="translate(877.691441 402.29268)">TIA.R vs VI.R</text>
+     </g>
+    </g>
+    <g id="ytick_26">
+     <g id="line2d_55"/>
+     <g id="text_59">
+      <text style="font-size: 9.6px; font-family: 'DejaVu Sans'" transform="translate(748.811441 341.005739)">K15876: nrfH — Nitrogen: Dissimilatory</text>
+      <text style="font-size: 9.6px; font-family: 'DejaVu Sans'" transform="translate(857.864441 350.880299)">nitrate reduction</text>
+      <text style="font-size: 9.6px; font-family: 'DejaVu Sans'" transform="translate(877.691441 360.754859)">TIA.R vs VI.R</text>
+     </g>
+    </g>
+    <g id="ytick_27">
+     <g id="line2d_56"/>
+     <g id="text_60">
+      <text style="font-size: 9.6px; font-family: 'DejaVu Sans'" transform="translate(744.812441 294.530638)">K02567: napA — Nitrogen: Dissimilatory</text>
+      <text style="font-size: 9.6px; font-family: 'DejaVu Sans'" transform="translate(773.760941 304.405198)">nitrate reduction - Denitrification -</text>
+      <text style="font-size: 9.6px; font-family: 'DejaVu Sans'" transform="translate(882.590441 314.279758)">Nitrification</text>
+      <text style="font-size: 9.6px; font-family: 'DejaVu Sans'" transform="translate(884.090441 324.154318)">TI.R vs VI.R</text>
+     </g>
+    </g>
+    <g id="ytick_28">
+     <g id="line2d_57"/>
+     <g id="text_61">
+      <text style="font-size: 9.6px; font-family: 'DejaVu Sans'" transform="translate(769.697441 257.930097)">K00380: cysJ — Sulfur metabolism:</text>
+      <text style="font-size: 9.6px; font-family: 'DejaVu Sans'" transform="translate(795.072941 267.804657)">Assimilatory sulfate reduction</text>
+      <text style="font-size: 9.6px; font-family: 'DejaVu Sans'" transform="translate(872.240441 277.679217)">AM.R vs TIA.R</text>
+     </g>
+    </g>
+    <g id="ytick_29">
+     <g id="line2d_58"/>
+     <g id="text_62">
+      <text style="font-size: 9.6px; font-family: 'DejaVu Sans'" transform="translate(748.839941 216.392276)">K05301: E1.8.2.1 — Sulfur metabolism:</text>
+      <text style="font-size: 9.6px; font-family: 'DejaVu Sans'" transform="translate(857.495441 226.266836)">Sulfite oxydation</text>
+      <text style="font-size: 9.6px; font-family: 'DejaVu Sans'" transform="translate(884.090441 236.141396)">TI.R vs VI.R</text>
+     </g>
+    </g>
+    <g id="ytick_30">
+     <g id="line2d_59"/>
+     <g id="text_63">
+      <text style="font-size: 9.6px; font-family: 'DejaVu Sans'" transform="translate(737.699441 174.854455)">K15024: pduL — Carbon Fixation: Acetate</text>
+      <text style="font-size: 9.6px; font-family: 'DejaVu Sans'" transform="translate(886.868441 184.729015)">production</text>
+      <text style="font-size: 9.6px; font-family: 'DejaVu Sans'" transform="translate(877.691441 194.603575)">TIA.R vs VI.R</text>
+     </g>
+    </g>
+    <g id="ytick_31">
+     <g id="line2d_60"/>
+     <g id="text_64">
+      <text style="font-size: 9.6px; font-family: 'DejaVu Sans'" transform="translate(769.697441 133.316634)">K00381: cysI — Sulfur metabolism:</text>
+      <text style="font-size: 9.6px; font-family: 'DejaVu Sans'" transform="translate(795.072941 143.191194)">Assimilatory sulfate reduction</text>
+      <text style="font-size: 9.6px; font-family: 'DejaVu Sans'" transform="translate(877.935941 153.065754)">AM.R vs VI.R</text>
+     </g>
+    </g>
+    <g id="ytick_32">
+     <g id="line2d_61"/>
+     <g id="text_65">
+      <text style="font-size: 9.6px; font-family: 'DejaVu Sans'" transform="translate(740.444441 96.716093)">K00376: nosZ — Nitrogen: Denitrification</text>
+      <text style="font-size: 9.6px; font-family: 'DejaVu Sans'" transform="translate(872.240441 106.590653)">AM.R vs TIA.R</text>
+     </g>
+    </g>
+   </g>
+   <g id="line2d_62">
+    <path d="M 1110.986471 768.384 
+L 1110.986471 50.112 
+" clip-path="url(#pebe25094eb)" style="fill: none; stroke: #000000; stroke-width: 1.2; stroke-linecap: square"/>
+   </g>
+   <g id="patch_37">
+    <path d="M 945.412941 768.384 
+L 1276.56 768.384 
+" style="fill: none; stroke: #000000; stroke-width: 1.2; stroke-linejoin: miter; stroke-linecap: square"/>
+   </g>
+   <g id="text_66">
+    <text style="font-weight: 700; font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="975.584595" y="723.679001" transform="rotate(-0 975.584595 723.679001)">-4.84</text>
+   </g>
+   <g id="text_67">
+    <text style="font-weight: 700; font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="981.275367" y="682.14118" transform="rotate(-0 981.275367 682.14118)">-4.63</text>
+   </g>
+   <g id="text_68">
+    <text style="font-weight: 700; font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="994.224701" y="640.603359" transform="rotate(-0 994.224701 640.603359)">-4.16</text>
+   </g>
+   <g id="text_69">
+    <text style="font-weight: 700; font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="998.140476" y="599.065538" transform="rotate(-0 998.140476 599.065538)">-4.01</text>
+   </g>
+   <g id="text_70">
+    <text style="font-weight: 700; font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: end" x="999.363073" y="557.527717" transform="rotate(-0 999.363073 557.527717)">-3.97</text>
+   </g>
+   <g id="text_71">
+    <text style="font-weight: 700; font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: start" x="1218.347167" y="515.989896" transform="rotate(-0 1218.347167 515.989896)">+3.81</text>
+   </g>
+   <g id="text_72">
+    <text style="font-weight: 700; font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: start" x="1222.609869" y="474.452075" transform="rotate(-0 1222.609869 474.452075)">+3.97</text>
+   </g>
+   <g id="text_73">
+    <text style="font-weight: 700; font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: start" x="1223.323308" y="432.914254" transform="rotate(-0 1223.323308 432.914254)">+4.00</text>
+   </g>
+   <g id="text_74">
+    <text style="font-weight: 700; font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: start" x="1223.323446" y="391.376433" transform="rotate(-0 1223.323446 391.376433)">+4.00</text>
+   </g>
+   <g id="text_75">
+    <text style="font-weight: 700; font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: start" x="1223.353856" y="349.838612" transform="rotate(-0 1223.353856 349.838612)">+4.00</text>
+   </g>
+   <g id="text_76">
+    <text style="font-weight: 700; font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: start" x="1223.832465" y="308.300791" transform="rotate(-0 1223.832465 308.300791)">+4.01</text>
+   </g>
+   <g id="text_77">
+    <text style="font-weight: 700; font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: start" x="1223.889863" y="266.76297" transform="rotate(-0 1223.889863 266.76297)">+4.02</text>
+   </g>
+   <g id="text_78">
+    <text style="font-weight: 700; font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: start" x="1229.985678" y="225.225149" transform="rotate(-0 1229.985678 225.225149)">+4.24</text>
+   </g>
+   <g id="text_79">
+    <text style="font-weight: 700; font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: start" x="1232.167283" y="183.687328" transform="rotate(-0 1232.167283 183.687328)">+4.32</text>
+   </g>
+   <g id="text_80">
+    <text style="font-weight: 700; font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: start" x="1240.697574" y="142.149508" transform="rotate(-0 1240.697574 142.149508)">+4.63</text>
+   </g>
+   <g id="text_81">
+    <text style="font-weight: 700; font-size: 10.5px; font-family: 'DejaVu Sans'; text-anchor: start" x="1246.388346" y="100.611687" transform="rotate(-0 1246.388346 100.611687)">+4.84</text>
+   </g>
+   <g id="text_82">
+    <text style="font-weight: 700; font-size: 18px; font-family: 'DejaVu Sans'; text-anchor: start" x="945.412941" y="38.112" transform="rotate(-0 945.412941 38.112)">B  Rainy-season contrasts</text>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <clipPath id="pa1cd07250c">
+   <rect x="375.84" y="50.112" width="331.147059" height="718.272"/>
+  </clipPath>
+  <clipPath id="pebe25094eb">
+   <rect x="945.412941" y="50.112" width="331.147059" height="718.272"/>
+  </clipPath>
+ </defs>
+</svg>

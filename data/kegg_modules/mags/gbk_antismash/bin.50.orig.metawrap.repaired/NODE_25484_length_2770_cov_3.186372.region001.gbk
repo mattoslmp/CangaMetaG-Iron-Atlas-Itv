@@ -1,0 +1,174 @@
+LOCUS       NODE_25484_length_2770_cov_3.186372 2770 bp    DNA              UNK 01-JAN-1980
+DEFINITION  NODE_25484_length_2770_cov_3.186372.
+ACCESSION   NODE_25484_length_2770_cov_3
+VERSION     NODE_25484_length_2770_cov_3.186372
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+COMMENT     ##antiSMASH-Data-START##
+            Version     :: 8.0.4
+            Run date    :: 2026-06-19 20:35:17
+            NOTE :: This is a single region extracted from a larger record!
+            Orig. start :: 0
+            Orig. end   :: 2770
+            ##antiSMASH-Data-END##
+FEATURES             Location/Qualifiers
+     region          1..2770
+                     /candidate_cluster_numbers="1"
+                     /contig_edge="True"
+                     /product="lanthipeptide-class-v"
+                     /region_number="1"
+                     /rules="(APH and HopA1)"
+                     /tool="antismash"
+     cand_cluster    1..2770
+                     /candidate_cluster_number="1"
+                     /contig_edge="True"
+                     /detection_rules="(APH and HopA1)"
+                     /kind="single"
+                     /product="lanthipeptide-class-v"
+                     /protoclusters="1"
+                     /tool="antismash"
+     protocluster    1..2770
+                     /aStool="rule-based-clusters"
+                     /category="RiPP"
+                     /contig_edge="True"
+                     /core_location="[919:2768](+)"
+                     /cutoff="20000"
+                     /detection_rule="(APH and HopA1)"
+                     /neighbourhood="20000"
+                     /product="lanthipeptide-class-v"
+                     /protocluster_number="1"
+                     /tool="antismash"
+     proto_core      920..2768
+                     /aStool="rule-based-clusters"
+                     /tool="antismash"
+                     /cutoff="20000"
+                     /detection_rule="(APH and HopA1)"
+                     /neighbourhood="20000"
+                     /product="lanthipeptide-class-v"
+                     /protocluster_number="1"
+     CDS             170..742
+                     /locus_tag="ctg262_1"
+                     /transl_table=11
+                     /translation="MSNSRSYNPAVLRSNNSGAALSDGTLALLSIAARAMPYKAADLPT
+                     PDATSRLSVTCNLPVASRGLSSLGSNRVPATYATCRLSVARGVPVTTRDLPALSRDRLP
+                     AAHLTCGLSVVCNLPITSRGLSALRGSGLSTDIGGLPNPASPLWPFGGNPLPVDSGMPI
+                     HRRLSFGRMYSSRRGWRAIGVLTEVIL"
+     CDS             920..2023
+                     /gene_functions="biosynthetic (rule-based-clusters)
+                     lanthipeptide-class-v: APH"
+                     /gene_kind="biosynthetic"
+                     /locus_tag="ctg262_2"
+                     /sec_met_domain="APH (E-value: 2.7e-14, bitscore: 41.3,
+                     seeds: 156, tool: rule-based-clusters)"
+                     /transl_table=11
+                     /translation="MILTTNNVFYYLLERGLITFESVADGDFMVVDATRRNRNFKVIRK
+                     ENPSYFVKQIKDWEPQAISTLQSEARCYWLAQKNGDLNSLAALMPKYYLYDNTRNVLVT
+                     ELLTEGENLSEYHRRLGRFPLEVAAELGRALASYHREAKRKFESDAQTAAFPKRVPWIL
+                     SVHQLGGYLFGTGSQANSQLLGIIQKYPEFQQRLDELRSHWRTDSLIHGDIKWDNFLVR
+                     PKEGKPEELDFKLVDWEMADMGDPCWDAGAVFQAYLSFWIFSIRMAENVPITELIDQAQ
+                     YPLEHMQPAIRMFWTTYLDQLSGGISQASKQLLERSVAYAAARMIQTVYEYMYYSAQIT
+                     ANALCLLQVSLNILNSPQEAISELLHL"
+     misc_feature    complement(935..946)
+                     /note="TFBS match to CcpA, Catabolite control protein A,
+                     confidence: medium, score: 18.34"
+                     /tool="antismash"
+     PFAM_domain     1022..1681
+                     /aSDomain="APH"
+                     /aSTool="clusterhmmer"
+                     /database="35.0"
+                     /db_xref="PF01636.26"
+                     /description="Phosphotransferase enzyme family"
+                     /detection="hmmscan"
+                     /domain_id="clusterhmmer_ctg262_2_0001"
+                     /evalue="4.60E-10"
+                     /label="ctg262_2"
+                     /locus_tag="ctg262_2"
+                     /protein_end="254"
+                     /protein_start="34"
+                     /score="39.9"
+                     /tool="antismash"
+                     /translation="RRNRNFKVIRKENPSYFVKQIKDWEPQAISTLQSEARCYWLAQKN
+                     GDLNSLAALMPKYYLYDNTRNVLVTELLTEGENLSEYHRRLGRFPLEVAAELGRALASY
+                     HREAKRKFESDAQTAAFPKRVPWILSVHQLGGYLFGTGSQANSQLLGIIQKYPEFQQRL
+                     DELRSHWRTDSLIHGDIKWDNFLVRPKEGKPEELDFKLVDWEMADMGDPCWDAGAVF"
+     CDS             2040..2768
+                     /gene_functions="biosynthetic (rule-based-clusters)
+                     lanthipeptide-class-v: HopA1"
+                     /gene_kind="biosynthetic"
+                     /locus_tag="ctg262_3"
+                     /sec_met_domain="HopA1 (E-value: 9.6e-22, bitscore: 65.2,
+                     seeds: 25, tool: rule-based-clusters)"
+                     /transl_table=11
+                     /translation="MNNKLRLELAKIFRAVTILSPTSFSFAGRTITQTEGTPAPLPGLS
+                     SPASPLISPLQQTLYRYCYCLKFDGTLPEEPPVATADDNLAAALSEANCSRQRWDPGWQ
+                     VQQMLPSGQILAHKYGFVRMFWPGEFISLDGPGLPPRVGTRINVFLPKESLTMQPGYYF
+                     AFGEDVADQQDDYNLVRFYFHVTPTGALSLVRSTSEQLNRFQIPFRCKCPGLRPLYQRL
+                     DTAVVYVNKRFYRITAELLQD"
+     PFAM_domain     2505..2765
+                     /aSDomain="HopA1"
+                     /aSTool="clusterhmmer"
+                     /database="35.0"
+                     /db_xref="PF17914.4"
+                     /description="HopA1 effector protein family"
+                     /detection="hmmscan"
+                     /domain_id="clusterhmmer_ctg262_3_0002"
+                     /evalue="1.60E-17"
+                     /label="ctg262_3"
+                     /locus_tag="ctg262_3"
+                     /protein_end="242"
+                     /protein_start="155"
+                     /score="63.9"
+                     /tool="antismash"
+                     /translation="TMQPGYYFAFGEDVADQQDDYNLVRFYFHVTPTGALSLVRSTSEQ
+                     LNRFQIPFRCKCPGLRPLYQRLDTAVVYVNKRFYRITAELLQ"
+ORIGIN
+        1 caattccggc ctgcccatcc atcggtggct gtccatctgc ggcgtgcaca cctccaggag
+       61 gaggcggggc tccgcagttc ttcgcagccc cctttccgcc taacacctcc ccgccgatct
+      121 gcgtggcaac ggtcccggcg gtttgtcatc agtcgctctt cgggcccgca tgtccaacag
+      181 ccggtcctac aatcctgccg tgttgcgctc caacaattcc ggggccgcat tgtccgacgg
+      241 caccctcgct ctgctgtcca tcgctgcccg tgccatgcca tacaaggccg ccgatttgcc
+      301 cacccccgac gcaacatcca ggttgtccgt cacatgtaat ctgcccgtcg caagtcgtgg
+      361 tctgtcatcc ctcggtagca atcgcgtgcc cgccacctac gcaacatgta ggttgtccgt
+      421 cgcacgtggt gtgcccgtca caactcgtga tctgccagcc ctcagtcgcg atcgcctgcc
+      481 cgccgcccac cttacatgcg ggttgtccgt cgtttgcaat ttgcccatca caagtcgtgg
+      541 tctgtcagcc ctccgtggta gtggtctgtc cacagacatt ggcggattgc ccaacccagc
+      601 cagtcctctg tggcccttcg gtggcaatcc cttgccagtc gattccggca tgcccatcca
+      661 tcggaggctg tccttcggcc gcatgtactc ctccaggagg gggtggaggg ccattggggt
+      721 tttgactgag gtgattctgt aacgcataat gcttgagtgg taagccctca tccttcaggg
+      781 ggcgaggctt accactcttt tttatcctca aggtgggcga cttgctgaat cccatagttc
+      841 cgttgccatc tttcgcggct aattgggcca tcgaaagcca tcgagaccct aagcagaacg
+      901 gtaccttcgc gaattaatta tgattcttac caccaataac gttttctatt acttgcttga
+      961 gcgcggtctg attacgtttg aatcggtggc cgacggcgat ttcatggttg tcgacgcgac
+     1021 gcgccgaaac cggaatttca aggtcatccg aaaagaaaat ccgagctact tcgtcaaaca
+     1081 gatcaaggac tgggagccac aagccatctc cacgctgcaa tctgaagcaa gatgctactg
+     1141 gctcgcacaa aagaatgggg atttgaactc gctggctgcg ctcatgccaa aatactacct
+     1201 ttacgacaac acacgcaatg tcctggtcac cgaactccta accgaagggg aaaacctgtc
+     1261 ggaatatcac cgccgcttgg gaaggttccc gttggaagtt gcagccgagc tgggtcgggc
+     1321 attggcgagc taccatcggg aggccaaaag aaagtttgag agtgatgctc agacggcggc
+     1381 ttttcctaag agggttccgt ggattctctc cgttcatcag ctgggcggct atctcttcgg
+     1441 tacaggaagt caagctaatt cccaactgct gggtatcatc cagaaatatc ccgaatttca
+     1501 gcagaggttg gacgaacttc gaagtcattg gcggacggac agcctcattc acggggatat
+     1561 caagtgggac aacttcctgg ttcggccgaa ggaagggaaa ccggaggaac tcgatttcaa
+     1621 gctggtggac tgggagatgg cggatatggg tgacccctgc tgggacgccg gggcggtctt
+     1681 ccaggcgtat ctatcattct ggattttttc aattcggatg gcggaaaacg tgccgatcac
+     1741 agaactcatc gaccaggcac aatatcccct cgaacacatg caacctgcca tccgcatgtt
+     1801 ctggacaacc tatttagacc aattgtcagg tggcatcagc caggccagca agcaactgct
+     1861 cgagcgaagc gtcgcatacg cagcggcccg catgatccag acagtttacg agtatatgta
+     1921 ctactcggcc cagatcacgg caaatgccct ctgtcttctt caggttagtc tcaatatttt
+     1981 gaacagccca caggaagcga tcagcgagtt gctccacttg tagaaggcaa gcgatctaaa
+     2041 tgaacaacaa gttacgcttg gagttggcaa agatatttcg cgccgtcacg attctctcgc
+     2101 ctacctcctt ttcatttgca gggagaacca tcacgcaaac ggaggggaca ccggctccat
+     2161 tgcctggcct atcctcgccc gcttctccgt tgatctcgcc gttacagcaa actctttatc
+     2221 gctactgcta ttgcctgaag ttcgatggga ctctgccaga ggagccgccc gtggctactg
+     2281 ccgatgacaa tctggcggct gcactctccg aggcaaattg cagccgtcag cgctgggacc
+     2341 cgggctggca agtccaacag atgctgccct cagggcaaat cctggcgcac aaatacggat
+     2401 ttgttcgcat gttctggccc ggggagttta tctcgctgga tgggcccggc ctgccccccc
+     2461 gagttgggac gcggattaac gtcttcctcc ccaaggaatc ccttacaatg caaccaggat
+     2521 attattttgc cttcggagag gatgtggctg atcagcagga cgactacaac ctcgttcggt
+     2581 tttattttca cgtgacgccc accggcgcgc tttcgctggt tcggtcgacc agtgagcagc
+     2641 tcaatcgttt tcaaatcccg tttcggtgta agtgccccgg cctgcggccg ctgtaccagc
+     2701 gtctggatac ggcagtggtc tatgtgaata agaggtttta cagaatcacc gcggaactgc
+     2761 tgcaggatgt
+//

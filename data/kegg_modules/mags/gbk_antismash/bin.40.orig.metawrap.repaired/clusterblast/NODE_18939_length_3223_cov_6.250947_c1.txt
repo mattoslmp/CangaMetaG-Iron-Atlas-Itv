@@ -1,0 +1,94 @@
+ClusterBlast scores for NODE_18939_length_3223_cov_6.250947
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg521_1	1	1144	-		
+ctg521_2	1140	1434	-		
+ctg521_3	1646	2060	-		
+ctg521_4	2178	2478	+		
+ctg521_5	3124	3223	+		
+
+
+Significant hits: 
+1. NZ_CP061799	Desulfonema limicola strain 5ac10 chromosome, complete genome
+2. NC_013665	Methanocella paludicola SANAE, complete sequence
+3. NZ_CP036172	Methanofollis aquaemaris strain N2F9704 chromosome, complete genome
+4. NC_008554	Syntrophobacter fumaroxidans MPOB, complete sequence
+5. NC_010803	Chlorobium limicola DSM 245, complete sequence
+
+
+Details:
+
+>>
+1. NZ_CP061799
+Source: Desulfonema limicola strain 5ac10 chromosome, complete genome
+Type: RRE-containing
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 542.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg521_1	dnl_RS06985	56	356	78.21522309711287	1.75e-120
+ctg521_1	dnl_RS06980	61	90	17.585301837270343	3.36e-20
+ctg521_2	dnl_RS06975	51	96	90.72164948453609	2.19e-25
+
+
+
+>>
+2. NC_013665
+Source: Methanocella paludicola SANAE, complete sequence
+Type: ranthipeptide
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 519.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg521_1	MCP_RS04545	55	418	94.22572178477691	5.45e-144
+ctg521_2	MCP_RS04550	49	101	91.75257731958763	1.79e-27
+
+
+
+>>
+3. NZ_CP036172
+Source: Methanofollis aquaemaris strain N2F9704 chromosome, complete genome
+Type: ranthipeptide
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 509.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg521_1	RJ40_RS03870	53	405	95.01312335958005	5.91e-139
+ctg521_2	RJ40_RS03875	53	104	89.69072164948454	9.35e-29
+
+
+
+>>
+4. NC_008554
+Source: Syntrophobacter fumaroxidans MPOB, complete sequence
+Type: ranthipeptide
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 504.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg521_1	SFUM_RS11370	54	409	94.48818897637796	1.74e-140
+ctg521_2	SFUM_RS11375	47	95	89.69072164948454	8.89e-25
+
+
+
+>>
+5. NC_010803
+Source: Chlorobium limicola DSM 245, complete sequence
+Type: ranthipeptide
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 503.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg521_1	CLIM_RS09615	52	412	95.2755905511811	9.59e-142
+ctg521_2	CLIM_RS09600	45	91	89.69072164948454	2.25e-23
+

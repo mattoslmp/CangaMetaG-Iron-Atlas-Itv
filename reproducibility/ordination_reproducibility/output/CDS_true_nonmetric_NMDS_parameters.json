@@ -1,0 +1,18 @@
+{
+  "analysis": "Supplementary Figure 3 CDS-based NMDS",
+  "raw_samples": 20,
+  "included_samples": 20,
+  "excluded_samples": 0,
+  "transformation": "square root of sample-wise relative CDS proportions",
+  "dissimilarity": "Bray-Curtis",
+  "dimensions": 2,
+  "nonmetric": true,
+  "n_init": 20,
+  "max_iter": 1000,
+  "seed": 42,
+  "normalized_stress": true,
+  "stress_1": 0.06250206107088367,
+  "iterations": 131,
+  "converged": true,
+  "distance_rank_correlation": 0.9833020596867388
+}

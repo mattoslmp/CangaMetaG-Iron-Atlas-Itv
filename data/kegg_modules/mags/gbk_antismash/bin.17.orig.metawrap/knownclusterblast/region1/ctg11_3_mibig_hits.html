@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>AFV25480.1</td>
+              <td>BotRMT1</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000469.6">BGC0000469.6</a></td>
+              <td>ribosomal:RiPP:Bottromycin</td>
+              <td>26.0</td>
+              <td>100.3</td>
+              <td>171.0</td>
+              <td>2.74e-45</td>
+          </tr>
+    
+          <tr>
+              <td>CBG72695.1</td>
+              <td>conserved_hypothetical_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001157.6">BGC0001157.6</a></td>
+              <td>ribosomal:RiPP:Bottromycin</td>
+              <td>31.0</td>
+              <td>72.0</td>
+              <td>168.0</td>
+              <td>3.41e-44</td>
+          </tr>
+    
+          <tr>
+              <td>AFV25488.1</td>
+              <td>BotRMT3</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000469.6">BGC0000469.6</a></td>
+              <td>ribosomal:RiPP:Bottromycin</td>
+              <td>27.0</td>
+              <td>100.3</td>
+              <td>166.0</td>
+              <td>2.27e-43</td>
+          </tr>
+    
+          <tr>
+              <td>CCM09442.1</td>
+              <td></td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000468.5">BGC0000468.5</a></td>
+              <td>ribosomal:RiPP:Bottromycin</td>
+              <td>27.0</td>
+              <td>99.5</td>
+              <td>165.0</td>
+              <td>3.41e-43</td>
+          </tr>
+    
+          <tr>
+              <td>CCM09450.1</td>
+              <td></td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000468.5">BGC0000468.5</a></td>
+              <td>ribosomal:RiPP:Bottromycin</td>
+              <td>27.0</td>
+              <td>100.3</td>
+              <td>164.0</td>
+              <td>7.41e-43</td>
+          </tr>
+    
+          <tr>
+              <td>CBG72687.1</td>
+              <td>conserved_hypothetical_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001157.6">BGC0001157.6</a></td>
+              <td>ribosomal:RiPP:Bottromycin</td>
+              <td>26.0</td>
+              <td>100.5</td>
+              <td>158.0</td>
+              <td>7.73e-41</td>
+          </tr>
+    
+          <tr>
+              <td>BAP82649.1</td>
+              <td>radical_SAM_domain_containing_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001148.5">BGC0001148.5</a></td>
+              <td>NRPS:Type I+ribosomal:RiPP</td>
+              <td>26.0</td>
+              <td>88.2</td>
+              <td>149.0</td>
+              <td>1.11e-37</td>
+          </tr>
+    
+          <tr>
+              <td>AFS60637.1</td>
+              <td>C-methyltransferase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000598.5">BGC0000598.5</a></td>
+              <td>ribosomal:RiPP:Proteusin</td>
+              <td>26.0</td>
+              <td>71.5</td>
+              <td>149.0</td>
+              <td>1.17e-37</td>
+          </tr>
+    
+          <tr>
+              <td>WP_030578095.1</td>
+              <td>RiPP_maturation_radical_SAM_C-methyltransferase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001753.3">BGC0001753.3</a></td>
+              <td>ribosomal:RiPP</td>
+              <td>28.0</td>
+              <td>47.2</td>
+              <td>134.0</td>
+              <td>1.13e-32</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

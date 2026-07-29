@@ -1,0 +1,12 @@
+check,status,details
+central_palette_exists,VALIDATED,31069 entries
+chloroflexi_vs_rokubacteria,VALIDATED,#7B2CBF vs #00A6A6
+identified_taxon_colours_unique,VALIDATED,No duplicated identified-taxon colours
+24_taxonomy_combinations,VALIDATED,"12/12 domain-level combinations, each with 2 visualisations = 24/24"
+supplementary_numbering_1_69,VALIDATED,range=[1]..[69]; duplicates={}
+supplementary_png_pdf_svg,VALIDATED,All 69 trios present
+obsolete_outputs_removed,VALIDATED,No obsolete affected outputs
+dynamic_title_logic,VALIDATED,"Domain, rank and visualisation are composed dynamically"
+taxonomy_zscore_removed,VALIDATED,No z-score control in final taxonomy interface
+portable_paths,VALIDATED,No local absolute path in app.py
+module_combined_is_67,VALIDATED,Combined module heatmap renumbered to 67

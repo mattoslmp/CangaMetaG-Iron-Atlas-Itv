@@ -1,0 +1,68 @@
+{
+  "source_workbook": "tables/Supplementary_table_8_final_restructured_filled.xlsx",
+  "source_sha256": "c4fdf2fbafe8ebb412029188ddc501c1e782dd9ddbbc98acad8b79e29222bff6",
+  "sheets": [
+    "Planilha1",
+    "metadata",
+    "Phylum_30+_GTDB",
+    "Order_60+_GTDB",
+    "Family_60+_GTDB",
+    "EC-number",
+    "ko",
+    "ST8 — all KO biomarkers",
+    "pfam",
+    "ST8- Iron metabolism KO -marker",
+    "ST8 — selected sediments",
+    "ST8-Iron metabolism - selected",
+    "Taxonomy_summary_by_group",
+    "KO_group_summary",
+    "Iron_KO_group_summary",
+    "KO_Amazonia_vs_groups",
+    "Iron_Amazonia_vs_groups",
+    "ST8_study_references"
+  ],
+  "exports": [
+    {
+      "sheet": "metadata",
+      "csv": "st8_metadata_curated.csv",
+      "rows": 67,
+      "columns": 143
+    },
+    {
+      "sheet": "Taxonomy_summary_by_group",
+      "csv": "st8_taxonomy_summary_by_group.csv",
+      "rows": 10032,
+      "columns": 9
+    },
+    {
+      "sheet": "KO_group_summary",
+      "csv": "st8_ko_group_summary.csv",
+      "rows": 2079,
+      "columns": 9
+    },
+    {
+      "sheet": "Iron_KO_group_summary",
+      "csv": "st8_iron_ko_group_summary.csv",
+      "rows": 1441,
+      "columns": 9
+    },
+    {
+      "sheet": "KO_Amazonia_vs_groups",
+      "csv": "st8_ko_amazonia_vs_groups.csv",
+      "rows": 2079,
+      "columns": 10
+    },
+    {
+      "sheet": "Iron_Amazonia_vs_groups",
+      "csv": "st8_iron_amazonia_vs_groups.csv",
+      "rows": 1441,
+      "columns": 10
+    },
+    {
+      "sheet": "ST8_study_references",
+      "csv": "st8_study_references.csv",
+      "rows": 12,
+      "columns": 17
+    }
+  ]
+}

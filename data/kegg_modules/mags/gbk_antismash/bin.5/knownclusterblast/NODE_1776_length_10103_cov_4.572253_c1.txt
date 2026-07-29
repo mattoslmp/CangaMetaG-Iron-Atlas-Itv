@@ -1,0 +1,22 @@
+ClusterBlast scores for NODE_1776_length_10103_cov_4.572253
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg1_1	1	199	-		
+ctg1_2	638	1382	+		
+ctg1_3	1469	2063	+		
+ctg1_4	2228	2786	-		
+ctg1_5	3116	3374	-		
+ctg1_6	3370	3769	-		
+ctg1_7	3872	5102	-		
+ctg1_8	5111	5612	-		
+ctg1_9	5632	6730	-		
+ctg1_10	6729	7827	-		
+ctg1_11	7833	8634	-		
+ctg1_12	8680	9079	-		
+ctg1_13	9069	10101	-		
+
+
+Significant hits: 
+
+
+Details:

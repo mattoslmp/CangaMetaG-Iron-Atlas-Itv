@@ -1,0 +1,6 @@
+title,xTicks,yTicks,annotations,legendTitleOverlap,width,height,name,undefined,pass
+"KO biomarker boxplots by pathway, lake and sample",10,8,[],False,1650,906,browser_ko_boxplot_with_statistics,False,True
+"Iron KO marker boxplots by category, lake and season",8,8,"['Dry season', 'Rainy season']",False,2356,900,browser_iron_boxplot_with_statistics,False,True
+Amazonian lake annotations (Supplementary Table 6) — KO,20,80,[],False,1810,2540,functional_KO,False,True
+Amazonian lake annotations (Supplementary Table 6) — EC number,20,80,[],False,1810,2540,functional_EC number,False,True
+Amazonian lake annotations (Supplementary Table 6) — PFAM,20,80,[],False,1810,2540,functional_PFAM,False,True

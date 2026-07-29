@@ -1,0 +1,30 @@
+check,status,detail
+author_Leandro de Mattos Pereira,PASS,
+author_José Augusto Pires Bittencourt,PASS,
+author_Vitor Cirilo Araujo Santos,PASS,
+author_Ronnie Alves,PASS,
+author_Eder Pires,PASS,
+author_Prafulla Kumar Sahoo,PASS,
+author_José Tasso Felix Guimarães,PASS,
+author_Bruno Garcia Simões,PASS,
+author_Renato R. Moreira-Oliveira,PASS,
+author_Guilherme Oliveira,PASS,
+author_Gisele Lopes Nunes,PASS,
+affiliation,PASS,
+correspondence,PASS,
+abstract,PASS,
+english_module_name,PASS,
+no_undefined_title_literal,PASS,
+audit_expander,PASS,
+legacy_not_in_ui_roots,PASS,
+KO_20_samples,PASS,"['AM.P1.D', 'AM.P1.R', 'AM.P2.D', 'AM.P2.R', 'TIA.P1.D', 'TIA.P1.R', 'TIA.P2.D', 'TIA.P2.R', 'TI.P1.D', 'TI.P1.R', 'TI.P2.D', 'TI.P2.R', 'TI.P3.D', 'TI.P3.R', 'TI.P4.D', 'TI.P4.R', 'VI.P1.D', 'VI.P1.R', 'VI.P2.D', 'VI.P2.R']"
+KO_exact_values,PASS,"shape=(100, 20)"
+EC number_20_samples,PASS,"['AM.P1.D', 'AM.P1.R', 'AM.P2.D', 'AM.P2.R', 'TIA.P1.D', 'TIA.P1.R', 'TIA.P2.D', 'TIA.P2.R', 'TI.P1.D', 'TI.P1.R', 'TI.P2.D', 'TI.P2.R', 'TI.P3.D', 'TI.P3.R', 'TI.P4.D', 'TI.P4.R', 'VI.P1.D', 'VI.P1.R', 'VI.P2.D', 'VI.P2.R']"
+EC number_exact_values,PASS,"shape=(100, 20)"
+PFAM_20_samples,PASS,"['AM.P1.D', 'AM.P1.R', 'AM.P2.D', 'AM.P2.R', 'TIA.P1.D', 'TIA.P1.R', 'TIA.P2.D', 'TIA.P2.R', 'TI.P1.D', 'TI.P1.R', 'TI.P2.D', 'TI.P2.R', 'TI.P3.D', 'TI.P3.R', 'TI.P4.D', 'TI.P4.R', 'VI.P1.D', 'VI.P1.R', 'VI.P2.D', 'VI.P2.R']"
+PFAM_exact_values,PASS,"shape=(100, 20)"
+KO_boxplot_unique_units,PASS,rows=820
+KO_boxplot_exact_aggregation,PASS,rows=820
+iron_boxplot_unique_units,PASS,rows=400
+boxplot_titles_present,PASS,
+legend_position_preserved,PASS,

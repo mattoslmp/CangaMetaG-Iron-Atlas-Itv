@@ -1,0 +1,9 @@
+{
+  "n_bins_expected": 50,
+  "n_bins_with_archives_selected": 46,
+  "n_bins_declared_no_clusters": 7,
+  "n_bins_with_detected_regions": 44,
+  "n_total_regions": 155,
+  "n_total_protoclusters": 158,
+  "declared_no_cluster_bins": "MAG.2, MAG.5, MAG.20, MAG.32, MAG.44, MAG.47, MAG.49"
+}

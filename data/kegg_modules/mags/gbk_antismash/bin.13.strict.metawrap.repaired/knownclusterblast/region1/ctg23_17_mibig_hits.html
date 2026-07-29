@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>AMK48232.1</td>
+              <td>siderophore_export_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001351.3">BGC0001351.3</a></td>
+              <td>NRPS:Type I</td>
+              <td>26.0</td>
+              <td>92.3</td>
+              <td>122.0</td>
+              <td>1.43e-30</td>
+          </tr>
+    
+          <tr>
+              <td>QIE08743.1</td>
+              <td>major_facilitator_transporter</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002544.3">BGC0002544.3</a></td>
+              <td>NRPS:Type I</td>
+              <td>26.0</td>
+              <td>99.1</td>
+              <td>117.0</td>
+              <td>7.23e-29</td>
+          </tr>
+    
+          <tr>
+              <td>EFL06870.1</td>
+              <td>major_facilitator_superfamily_transporter_multidrug_resistance_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000300.5">BGC0000300.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>26.0</td>
+              <td>85.1</td>
+              <td>96.0</td>
+              <td>1.79e-21</td>
+          </tr>
+    
+          <tr>
+              <td>BAH33411.1</td>
+              <td>putative_siderophore_export_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000371.5">BGC0000371.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>25.0</td>
+              <td>86.7</td>
+              <td>86.0</td>
+              <td>1.04e-17</td>
+          </tr>
+    
+          <tr>
+              <td>RGP42807.1</td>
+              <td>MFS_transporter</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002696.2">BGC0002696.2</a></td>
+              <td>NRPS:Type I</td>
+              <td>25.0</td>
+              <td>86.7</td>
+              <td>86.0</td>
+              <td>1.04e-17</td>
+          </tr>
+    
+          <tr>
+              <td>KGA48519.1</td>
+              <td>major_Facilitator_Superfamily_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002413.3">BGC0002413.3</a></td>
+              <td>NRPS:Type I</td>
+              <td>23.0</td>
+              <td>87.2</td>
+              <td>74.0</td>
+              <td>6.1e-14</td>
+          </tr>
+    
+          <tr>
+              <td>AXB34671.1</td>
+              <td>enterobactin_transporter_EntS</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002415.2">BGC0002415.2</a></td>
+              <td>NRPS:Type I</td>
+              <td>22.0</td>
+              <td>82.5</td>
+              <td>68.0</td>
+              <td>6.16e-12</td>
+          </tr>
+    
+          <tr>
+              <td>CCM09440.1</td>
+              <td></td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000468.5">BGC0000468.5</a></td>
+              <td>ribosomal:RiPP:Bottromycin</td>
+              <td>25.0</td>
+              <td>100.9</td>
+              <td>66.0</td>
+              <td>2.03e-11</td>
+          </tr>
+    
+          <tr>
+              <td>AFV25478.1</td>
+              <td>BotT</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000469.6">BGC0000469.6</a></td>
+              <td>ribosomal:RiPP:Bottromycin</td>
+              <td>26.0</td>
+              <td>94.9</td>
+              <td>63.0</td>
+              <td>2.55e-10</td>
+          </tr>
+    
+          <tr>
+              <td>MBX9445651.1</td>
+              <td>enterobactin_transporter_EntS</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002414.3">BGC0002414.3</a></td>
+              <td>NRPS:Type I</td>
+              <td>23.0</td>
+              <td>81.6</td>
+              <td>59.0</td>
+              <td>4.29e-09</td>
+          </tr>
+    
+          <tr>
+              <td>CAJ45638.1</td>
+              <td>putative_siderophore_exporter</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000454.5">BGC0000454.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>21.0</td>
+              <td>88.3</td>
+              <td>58.0</td>
+              <td>1.03e-08</td>
+          </tr>
+    
+          <tr>
+              <td>AFU90407.1</td>
+              <td>MFS-family/H+_antiporter</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000470.6">BGC0000470.6</a></td>
+              <td>ribosomal:RiPP:Bottromycin</td>
+              <td>26.0</td>
+              <td>85.3</td>
+              <td>55.0</td>
+              <td>9.56e-08</td>
+          </tr>
+    
+          <tr>
+              <td>AAQ59909.1</td>
+              <td>probable_POT_family_transport_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002680.2">BGC0002680.2</a></td>
+              <td>NRPS:Type I</td>
+              <td>22.0</td>
+              <td>92.1</td>
+              <td>50.0</td>
+              <td>2.16e-06</td>
+          </tr>
+    
+          <tr>
+              <td>ALA99200.1</td>
+              <td>CreC</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001295.5">BGC0001295.5</a></td>
+              <td>other:other</td>
+              <td>23.0</td>
+              <td>96.3</td>
+              <td>49.0</td>
+              <td>7.07e-06</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

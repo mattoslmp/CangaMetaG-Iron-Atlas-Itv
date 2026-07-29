@@ -1,0 +1,18 @@
+ClusterBlast scores for NODE_2704_length_8351_cov_5.440574
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg46_1	2	473	+		
+ctg46_2	569	1475	-		
+ctg46_3	1471	2062	-		
+ctg46_4	2063	4451	-		
+ctg46_5	4608	4935	+		
+ctg46_6	4924	5596	-		
+ctg46_7	5669	6701	-		
+ctg46_8	6726	7725	-		
+ctg46_9	7854	8349	-		
+
+
+Significant hits: 
+
+
+Details:

@@ -1,0 +1,114 @@
+ClusterBlast scores for NODE_2704_length_8351_cov_5.440574
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg46_1	2	473	+		
+ctg46_2	569	1475	-		
+ctg46_3	1471	2062	-		
+ctg46_4	2063	4451	-		
+ctg46_5	4608	4935	+		
+ctg46_6	4924	5596	-		
+ctg46_7	5669	6701	-		
+ctg46_8	6726	7725	-		
+ctg46_9	7854	8349	-		
+
+
+Significant hits: 
+1. NZ_KK211102	Desulfitibacter alkalitolerans DSM 16504 K364DRAFT_scaffold00003.3, whole genome shotgun sequence
+2. NZ_CP072793	Thiothrix unzii strain A1 chromosome, complete genome
+3. NZ_CP072800	Candidatus Thiothrix anitrata isolate A52 chromosome, complete genome
+4. NZ_CP104208	Psychrodesulfovibrio sp. FT415 chromosome, complete genome
+5. NZ_CP087381	Desulfovibrio subterraneus strain ND17 chromosome, complete genome
+6. NZ_CP040751	Salidesulfovibrio onnuriiensis strain IOR2 chromosome, complete genome
+
+
+Details:
+
+>>
+1. NZ_KK211102
+Source: Desulfitibacter alkalitolerans DSM 16504 K364DRAFT_scaffold00003.3, whole genome shotgun sequence
+Type: cyclic-lactone-autoinducer
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 913.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg46_2	K364_RS0114560	41	229	96.01328903654485	3.75e-72
+ctg46_3	K364_RS24285	38	140	90.3061224489796	4.01e-40
+ctg46_4	K364_RS0114555	45	544	82.76729559748428	3.86e-183
+
+
+
+>>
+2. NZ_CP072793
+Source: Thiothrix unzii strain A1 chromosome, complete genome
+Type: resorcinol
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 297.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg46_2	J9260_RS16775	36	207	97.00996677740864	2.96e-63
+ctg46_3	J9260_RS16780	34	90	88.26530612244898	2.34e-20
+
+
+
+>>
+3. NZ_CP072800
+Source: Candidatus Thiothrix anitrata isolate A52 chromosome, complete genome
+Type: resorcinol
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 296.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg46_2	J8380_RS05655	36	207	97.00996677740864	2.96e-63
+ctg46_3	J8380_RS05660	32	89	88.26530612244898	9.02e-20
+
+
+
+>>
+4. NZ_CP104208
+Source: Psychrodesulfovibrio sp. FT415 chromosome, complete genome
+Type: NRPS-like
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 717.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg46_2	N1030_RS03920	40	219	98.00664451827242	3.15e-68
+ctg46_4	N1030_RS03915	43	498	76.85534591194968	2.84e-165
+
+
+
+>>
+5. NZ_CP087381
+Source: Desulfovibrio subterraneus strain ND17 chromosome, complete genome
+Type: NRPS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 708.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg46_2	LN040_RS10960	40	219	98.00664451827242	6.29e-68
+ctg46_4	LN040_RS10955	42	489	76.85534591194968	1.57e-161
+
+
+
+>>
+6. NZ_CP040751
+Source: Salidesulfovibrio onnuriiensis strain IOR2 chromosome, complete genome
+Type: arylpolyene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 604.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg46_3	FGL65_RS14155	31	97	87.75510204081633	2.01e-23
+ctg46_4	FGL65_RS14165	44	507	77.10691823899371	1.48e-168
+

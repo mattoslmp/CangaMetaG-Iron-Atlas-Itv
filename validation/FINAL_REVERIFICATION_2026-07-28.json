@@ -1,0 +1,13 @@
+{
+  "executed_utc": "2026-07-28T06:03:44+00:00",
+  "status": "PASS",
+  "checks": 32,
+  "browser_cases": 8,
+  "navigation_pages": 14,
+  "content_checks": 18,
+  "known_failures_in_audited_scope": 0,
+  "streamlit_server_tested": false,
+  "reason": "Pinned Streamlit package unavailable in the audit package index.",
+  "residual_issues_found_and_fixed": 5,
+  "final_logs": "validation/final_run_logs"
+}

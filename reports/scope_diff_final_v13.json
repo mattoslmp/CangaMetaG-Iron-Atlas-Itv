@@ -1,0 +1,2884 @@
+{
+  "app_final_figures.sha256": {
+    "unchanged": 225,
+    "changed": [
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap.pdf",
+        "figure": 32,
+        "allowed": true,
+        "before": "679c0d8c7b8368b2be2ff0be9a2a7900590438433858858e0e4dd24ecb899d6c",
+        "after": "d4a9762f44b8b9404aecace3b2ea75b7946d86ddb77c00a6630060958ada03cc"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap.png",
+        "figure": 32,
+        "allowed": true,
+        "before": "846e6ce52d8923f3d5c3db7c06f01dd0422cbf48c2bbdf28ffd63b1842748ebb",
+        "after": "72d7a9d60ac15223ef20bd4c198c0b17ec7a426f22a9ccdee0f7cc0c2c456715"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap.svg",
+        "figure": 32,
+        "allowed": true,
+        "before": "ca9ff3598651efec17b08d687f382688d048b300c817c48a2168b3d8ac07f458",
+        "after": "62319ff9f9441d62609fff4ac101cfa010bb4571dae4889cd87ddaaa63929652"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P01.png",
+        "figure": 32,
+        "allowed": true,
+        "before": "846e6ce52d8923f3d5c3db7c06f01dd0422cbf48c2bbdf28ffd63b1842748ebb",
+        "after": "351b0e9d36647a2cd78ed40f3f791d9b06d508d6dbcb1e9fe4b364051e0aa3e9"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P01.svg",
+        "figure": 32,
+        "allowed": true,
+        "before": "854b1b7ced397ec4c78c49946426649eea78302c6c9ddba2fab2e3088418f757",
+        "after": "00592699185499b9bb796b1c5a4c9fb05a6e100b8ba4c67eca13d71570f2d7f1"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P02.png",
+        "figure": 32,
+        "allowed": true,
+        "before": "df79b3ee70d460d1e95aef86ac34294b1de7272fa349c8af968dad11abfa2578",
+        "after": "1e9a66afa29f0a8dc2a551563438c6d6eaf62c63d354c11498f5ebce4b85bbca"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P02.svg",
+        "figure": 32,
+        "allowed": true,
+        "before": "a0c94af4b9eed2d797ed3d020d53ad8761dad2a22a25eb4a0356c3f05495c53a",
+        "after": "bbccd97ab57b782c6d0546783c3d8187395840889eb5ac782b0e784fc40c4fd3"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P03.png",
+        "figure": 32,
+        "allowed": true,
+        "before": "fd36f86146433d578ddd1421507cb2cc0e2f499716afe83dd9e8be00ffd6cf12",
+        "after": "7cf19a3f2c1b05bf96764f03c7064d7def78b558841602a257f3573fe08974a1"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P03.svg",
+        "figure": 32,
+        "allowed": true,
+        "before": "33263abd34908c930ebf998d70875eeac36b29be38e81ce46d5e80dfef809794",
+        "after": "8458da67b17a4778ddef98e59912d758da0d43a32b9338cac10e202909c68076"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P04.png",
+        "figure": 32,
+        "allowed": true,
+        "before": "deb67a0865a0838a9577bf1ba5779da8c8b2777ee4b47eaca0edba43d73b99ab",
+        "after": "45a8d30f03efc67da609fd43b6aad817f64fbb55bf7e91a5b7d900c73c75460d"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P04.svg",
+        "figure": 32,
+        "allowed": true,
+        "before": "884a4cc03082c6859c076c1b7b388a2d531275c343590712b66586905c5e3b18",
+        "after": "aae2dbac1251ef7fc81673b526289b907b36eedb9eed1462ec20e5598e0f7f99"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P05.png",
+        "figure": 32,
+        "allowed": true,
+        "before": "ae8ffadf212e020752ed7f4740e2fcdfe6d5dfe48fc4717e9abb270e1fc0f312",
+        "after": "a7e696a67aea53eb1a57173ad09e83faed7828bb1278f367d0f03befdc0d04c3"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P05.svg",
+        "figure": 32,
+        "allowed": true,
+        "before": "0ba09773878e1dab5b4e37cfbea1c6cd72afb2abf9c34e604ec24461a3cc2955",
+        "after": "9dbf8d76563c296c6f8a06a39ffdb89b6564503c93c80bbcf8fa4f5e903080da"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P06.png",
+        "figure": 32,
+        "allowed": true,
+        "before": "d918942c7c9b1d8850b7835d46053f0746e8751e2f97496fab5325a2d89068ac",
+        "after": "9cbdf6ad0b189aef381c9815e4e1fe56e43a88e6cf0b7eaa384ca9833a6d2cbd"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P06.svg",
+        "figure": 32,
+        "allowed": true,
+        "before": "2d0977fb0f1da4f03c2bdf312d9e5e879a2c891064ef05d09584fac7c7d25ef1",
+        "after": "131905ab89a95ac535358e82ef073ae8871352252f41dcd362d4ddcd489dd554"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P07.png",
+        "figure": 32,
+        "allowed": true,
+        "before": "a666b282e8b1fb845bb2779e9eb53a61f9a16f53942f19849525ae98b857b358",
+        "after": "6fd14e6e746e425a8a3166b895f72f348db0db0162466a6fced2d934a419af04"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P07.svg",
+        "figure": 32,
+        "allowed": true,
+        "before": "6de78e09303b3906b07d7b5436d6e80de97f1c76ed9f740f594742937cf79fa1",
+        "after": "d05fb45161240ba79acddb3ec5f1df0cb2524b36076aba03048a517eba6fbaaf"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P08.png",
+        "figure": 32,
+        "allowed": true,
+        "before": "9d855258aa9a10c218c0a34c555128ba2b07c06941d4423a8e4d5a040433e873",
+        "after": "4f35ae6d43cd55bad0af60e413f1c06d66a2bb9d02cfb6511ef2c38404e666da"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P08.svg",
+        "figure": 32,
+        "allowed": true,
+        "before": "3a7cd276316a9cca5e983e0da5e8da418f71d813bf402ecb193af9e50b4dafd9",
+        "after": "8bb6e209e1546548203e914e83fe8eac46b92d4722b5b099ea76aa406fb770ba"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P09.png",
+        "figure": 32,
+        "allowed": true,
+        "before": "f0359a79b58fd7ea5c1c35a5297b14a3dbf580cec3d9e74a23b537581740ed11",
+        "after": "63c71637a000f16539e650fabe120a52379ba26c43428e05e4b25f843a7be881"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P10.png",
+        "figure": 32,
+        "allowed": true,
+        "before": "597a54839c9954ff7da2c7f61f2b90dcf56ab8af7cdffb6ec58343a692964950",
+        "after": "2438dd2a346e32dc2b1ea28bbcb4cf65262b2f7c2713413aa7b6e59361ba5944"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure33_ResBiomarker_Biogeochemical_cycles_zscore_heatmap.pdf",
+        "figure": 33,
+        "allowed": true,
+        "before": "a99db45135cc718be46d701e3432cae300f2be84c083b4ea0f7a37a871df00cc",
+        "after": "cddb2c09dd559e93a9891f4acfc6b93f3fbdf5bcaa308410b85d8850550f437a"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure33_ResBiomarker_Biogeochemical_cycles_zscore_heatmap.png",
+        "figure": 33,
+        "allowed": true,
+        "before": "1341045183dc6acf1506cca58baea222d30fd2165e55027eda87e6d1c865c5e4",
+        "after": "d3356a34a49d2525ca56bb73e096ac3832320cb707e000792ee67a00b3c12190"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure33_ResBiomarker_Biogeochemical_cycles_zscore_heatmap.svg",
+        "figure": 33,
+        "allowed": true,
+        "before": "5735577db3bb60c4e852bfd2be6427a31f40eb641981fb14af70ba8ffd967462",
+        "after": "0608c411fdbcb27cfda54ff814daca636be6dcd004e23a7eceaa4be720a1e9ff"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure33_ResBiomarker_Biogeochemical_cycles_zscore_heatmap_P01.png",
+        "figure": 33,
+        "allowed": true,
+        "before": "1341045183dc6acf1506cca58baea222d30fd2165e55027eda87e6d1c865c5e4",
+        "after": "79ba1e7cc96eb3747a608bf724d5c7d07b2a72bbda3925e07845d5da1f62c13e"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure33_ResBiomarker_Biogeochemical_cycles_zscore_heatmap_P01.svg",
+        "figure": 33,
+        "allowed": true,
+        "before": "5735577db3bb60c4e852bfd2be6427a31f40eb641981fb14af70ba8ffd967462",
+        "after": "27b8831db2e09d52ccc9adefca4185d032e6897382c08d1e63304f8e9b902ea8"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure33_ResBiomarker_Biogeochemical_cycles_zscore_heatmap_P02.png",
+        "figure": 33,
+        "allowed": true,
+        "before": "c5e0d8002f0d7e7aa8e807515d8a0c771661648d5308c8bb0977b141033555e5",
+        "after": "c49e7b3da181cdc66d097669d519810c0943c8ae0be5f65d7ac2891ed8787e42"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure33_ResBiomarker_Biogeochemical_cycles_zscore_heatmap_P02.svg",
+        "figure": 33,
+        "allowed": true,
+        "before": "488c1b1c87caeaa21c96104cc5e4e0aba79685ec3c7c8c3e55b8a215dbfd3c8b",
+        "after": "e1cbf574c5a7f07d15ef38ef22e1ea98331396aa13785ff895bd7487dad1b2d8"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure33_ResBiomarker_Biogeochemical_cycles_zscore_heatmap_P03.png",
+        "figure": 33,
+        "allowed": true,
+        "before": "332f06c56f2c3c3bc3e352ed2b1c8675e4c459474948c1f450417e935a6981ed",
+        "after": "008d2ae4ebe82f719a00c8328eabbc6442afd4326170bcbd98b409d8d6c58651"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure33_ResBiomarker_Biogeochemical_cycles_zscore_heatmap_P03.svg",
+        "figure": 33,
+        "allowed": true,
+        "before": "004f3436274c8ddb1393122f3afe73af6baf0dbbb527f61b0ed672dc25e83f61",
+        "after": "4c6b7796c7260cb2605d9c570c546f24a181f70e710e199595a31c63ab8357cc"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure33_ResBiomarker_Biogeochemical_cycles_zscore_heatmap_P04.png",
+        "figure": 33,
+        "allowed": true,
+        "before": "5f3abede84ee6965449790234551f3e918a5092a9110d5c3719831845752704c",
+        "after": "ce43c5af831110774032316d87288fc9ad03c775c7f28fb41f114323b4d991f5"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure33_ResBiomarker_Biogeochemical_cycles_zscore_heatmap_P04.svg",
+        "figure": 33,
+        "allowed": true,
+        "before": "782a4c3e0ecebda5eba2a9a4d22049bb572e33ff5c0ff501110a86fd35621975",
+        "after": "bd9997c004fafb3a6a6702d5e79dafbe2b8d90ed59eb8379a8262df5c8287820"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure33_ResBiomarker_Biogeochemical_cycles_zscore_heatmap_P05.png",
+        "figure": 33,
+        "allowed": true,
+        "before": "f00bb586ce4e8e4b999e9cc1ed9a52fe1733ae43a092f9cf2b6f2ab57f021bda",
+        "after": "95435719ae7a0eb6a6f1c560ce41a0508612b76e03ca0bf4b55e90c0aa137aba"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure33_ResBiomarker_Biogeochemical_cycles_zscore_heatmap_P05.svg",
+        "figure": 33,
+        "allowed": true,
+        "before": "b0ba7b4fe79745a7e9d31c15c1b34c798b813d20f8f65fe07ff391a5bd6dd5da",
+        "after": "3403f5e40c84d14b3e72892249369dc82cdffa154c071776e8e1216c2262d243"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure33_ResBiomarker_Biogeochemical_cycles_zscore_heatmap_P06.png",
+        "figure": 33,
+        "allowed": true,
+        "before": "4ee97a23b871356fc268a9c10f44949fc72e4223a6382e22773a36129f2adb67",
+        "after": "499a2df8453aac3af4e1e26e42829eb30a1ca4a5cc691c86b8938881ab405402"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure33_ResBiomarker_Biogeochemical_cycles_zscore_heatmap_P06.svg",
+        "figure": 33,
+        "allowed": true,
+        "before": "03c42a8263425eb077fc956f8e0ba3eaee6eaa0429a43733291d08eaf7c76ec5",
+        "after": "7eeb26d276b5408e32a4427372acbab2e1c6375718bc94cafe24d6a4164f54ae"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure33_ResBiomarker_Biogeochemical_cycles_zscore_heatmap_P07.png",
+        "figure": 33,
+        "allowed": true,
+        "before": "74b1b624d3e7c4f2de852fe6b334ff360fea8504fff306034db0583282eaa2c0",
+        "after": "3dfe96a1c27ef85473ff42262b63c43e4cd50f6bd2365e366b2b81170736c953"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure33_ResBiomarker_Biogeochemical_cycles_zscore_heatmap_P07.svg",
+        "figure": 33,
+        "allowed": true,
+        "before": "997867d72bd4f5ad07389bbc2922c07be87ca899b2ce42028b017183f6f49105",
+        "after": "9ec50daf4f6c0135b7177001be705c0f44ed1c7e988c055c6692c8e8ab3493c4"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure33_ResBiomarker_Biogeochemical_cycles_zscore_heatmap_P08.png",
+        "figure": 33,
+        "allowed": true,
+        "before": "aafd5c9260bd71a2eb0cb5d54d65beef01da369886123aa0838193260be5956b",
+        "after": "a94aafc9d974094a1b3fc3bf520a2328ebf70e9e202fc972aa75f3c671e70b33"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure33_ResBiomarker_Biogeochemical_cycles_zscore_heatmap_P08.svg",
+        "figure": 33,
+        "allowed": true,
+        "before": "9fe8acd6eed925a117d81c816a78a759158593caef271367d0a670abd072b4f9",
+        "after": "c9a75317f65a844f066dc054558121aa35e11704dfa4537f779b488e834f227c"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure33_ResBiomarker_Biogeochemical_cycles_zscore_heatmap_P09.png",
+        "figure": 33,
+        "allowed": true,
+        "before": "5e2a784c42f9372e46c49a8542d3698c3b681a00365c2e57946bd300a28c135e",
+        "after": "215f84e7943f32e1aa0fbaddca78d239746579934d4fa485a6286f166ad71565"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure33_ResBiomarker_Biogeochemical_cycles_zscore_heatmap_P09.svg",
+        "figure": 33,
+        "allowed": true,
+        "before": "3643e7dbf99cb3513df2c6946f2929f4b24088a2663766dfd6501b2490e7eb28",
+        "after": "020418e2422c63740293621d681fecdcb8823c2d59158519ea7759730d5df2f5"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure33_ResBiomarker_Biogeochemical_cycles_zscore_heatmap_P10.png",
+        "figure": 33,
+        "allowed": true,
+        "before": "3e83bda3ccd0c5996d8e514548835bea420d7cd7dd8102d6ef89f3137e63dee4",
+        "after": "7ae9108acf75a2375dd0171b70cd5c8ed7a26e4f5836fc247a7c0ac27155c5af"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure33_ResBiomarker_Biogeochemical_cycles_zscore_heatmap_P10.svg",
+        "figure": 33,
+        "allowed": true,
+        "before": "2d42710191c6b29ed0da7a67e90db20f28bbeef7b02f7406d122d14bb07a783f",
+        "after": "1facd22502f42d3f687000f1843918f01902bea52e96facc12ef9876d951a51a"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure37_MAG_KEGG_module_completeness_heatmap_species_MAGnumber_KEMET_style_3state.pdf",
+        "figure": 37,
+        "allowed": true,
+        "before": "7def014d628b37405f093286cd239cbf4460c6e061633afd2e8942d356ef5c87",
+        "after": "e3ab12d6e8f8bc28c12c352b39eb309dccfae13b70ecd141c937b3e8ef0bc086"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure37_MAG_KEGG_module_completeness_heatmap_species_MAGnumber_KEMET_style_3state.png",
+        "figure": 37,
+        "allowed": true,
+        "before": "0787db2fa1168db67d367cca5d6be961df218560efb3909b5d96141c2c7b51cb",
+        "after": "9a8764fa55b4919b152a93bd813c63080b7234c06b90673faff36eb645ff9c5f"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure37_MAG_KEGG_module_completeness_heatmap_species_MAGnumber_KEMET_style_3state.svg",
+        "figure": 37,
+        "allowed": true,
+        "before": "25d3e77ec80765302d4fad4fec9a9a9e66aa28d29b62206d71685868d297efdd",
+        "after": "5c104dd4b662548ee5e2bea0bb11154df5c5d8324215f3f59e491eaa6db3ebd6"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure37_MAG_KEGG_module_completeness_heatmap_species_MAGnumber_KEMET_style_3state_P001.pdf",
+        "figure": 37,
+        "allowed": true,
+        "before": "7def014d628b37405f093286cd239cbf4460c6e061633afd2e8942d356ef5c87",
+        "after": "4cf95de5d988d5f4dfa2723783fe5ff2ff2d89d8d63c0926915690208919d936"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure37_MAG_KEGG_module_completeness_heatmap_species_MAGnumber_KEMET_style_3state_P001.png",
+        "figure": 37,
+        "allowed": true,
+        "before": "0787db2fa1168db67d367cca5d6be961df218560efb3909b5d96141c2c7b51cb",
+        "after": "f1382472168a111094e3a3f69941725ad3edbcb21a7fa3265e7cf1230111c83f"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure37_MAG_KEGG_module_completeness_heatmap_species_MAGnumber_KEMET_style_3state_P001.svg",
+        "figure": 37,
+        "allowed": true,
+        "before": "25d3e77ec80765302d4fad4fec9a9a9e66aa28d29b62206d71685868d297efdd",
+        "after": "8bfbb109933b5a89338a686a3230df83551398d18b916d20dd40a4472aef33c0"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure37_MAG_KEGG_module_completeness_heatmap_species_MAGnumber_KEMET_style_3state_multipage.pdf",
+        "figure": 37,
+        "allowed": true,
+        "before": "40f19825df05cc9207bd37bbaf0211ad3efe02c1241462592187e23c8a071805",
+        "after": "e3ab12d6e8f8bc28c12c352b39eb309dccfae13b70ecd141c937b3e8ef0bc086"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure40_ST8_external_iron_rich_module_completeness_KEMET_style_3state_heatmap.pdf",
+        "figure": 40,
+        "allowed": true,
+        "before": "a2bb8c662c1648fd765cbbcd89cfd605a55ab9fd8ff192552ce62acf260e465f",
+        "after": "515f2a4eb40d02aadde127a0aa20dc28d19d38e5f111c33ccc27137cb5657087"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure40_ST8_external_iron_rich_module_completeness_KEMET_style_3state_heatmap.png",
+        "figure": 40,
+        "allowed": true,
+        "before": "c75aeba2ccd16866ac7c5f7d5b788553227d6e7b9d3ce09f2a8084c0a6bc3a56",
+        "after": "971547ab40dbabb3b0552dbb1a41212eedfcc9a27f927dc120457dce21c03778"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure40_ST8_external_iron_rich_module_completeness_KEMET_style_3state_heatmap.svg",
+        "figure": 40,
+        "allowed": true,
+        "before": "e2429dbe9da552af06c11a27f014dfc7c479cb8dcee9ed035e23badf6b56760c",
+        "after": "b5edbf84db566b0596752d780f59360dfa8b3e34da0a96b7b63760a7c0e02799"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure40_ST8_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P001.pdf",
+        "figure": 40,
+        "allowed": true,
+        "before": "a2bb8c662c1648fd765cbbcd89cfd605a55ab9fd8ff192552ce62acf260e465f",
+        "after": "593a7cde0d3bc2b8f1e2ce64602da948f0184fa44bf96e9627b647ae7308210e"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure40_ST8_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P001.png",
+        "figure": 40,
+        "allowed": true,
+        "before": "c75aeba2ccd16866ac7c5f7d5b788553227d6e7b9d3ce09f2a8084c0a6bc3a56",
+        "after": "67d2fa37fb903dfc1bf4d33a84458b154375e6e3646a888e4bb623e77e9fee38"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure40_ST8_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P001.svg",
+        "figure": 40,
+        "allowed": true,
+        "before": "e2429dbe9da552af06c11a27f014dfc7c479cb8dcee9ed035e23badf6b56760c",
+        "after": "229a9e33e5ef1defaa3c76c21e41e7e39766d38854d76a1b47897f330fc219ca"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure40_ST8_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P002.pdf",
+        "figure": 40,
+        "allowed": true,
+        "before": "74e26ee7c26e810507f960848e9c2b025454acdd2ae0c1d52e7fa37ab9f0a323",
+        "after": "6c9f5205205cf0b8617327e3c2119b1e7b176975b2d694d5ac0b6cbc1299ef81"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure40_ST8_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P002.png",
+        "figure": 40,
+        "allowed": true,
+        "before": "91f5214a10e5082b344d40cdd72723358e4f018d74197fc80f39ccfae64eb69b",
+        "after": "429ef05950540d3de082fb086e6714c5f55bcff0160e779010b0816b0b22895b"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure40_ST8_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P002.svg",
+        "figure": 40,
+        "allowed": true,
+        "before": "daf17acc07fee2a11ebe01906ddd81f414f824f5c21a265884adf9e69629ffb1",
+        "after": "a52d879450dac05a537a15a833d1e54316dd6f7d8fc3a470eab67699f756bc21"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure40_ST8_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P003.pdf",
+        "figure": 40,
+        "allowed": true,
+        "before": "326b10b99f8ef49f6fb96c147e84e932147b8916ae28cd6d2ff8c42a5b3ac224",
+        "after": "a4896d1a582875815a9b43f7d1d0673f8ea4def9034bb0ffec6adc86126fcf13"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure40_ST8_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P003.png",
+        "figure": 40,
+        "allowed": true,
+        "before": "7e1475d36bedfadbd6b22f5447480cb46cc2371614d7e55a6a28d42b84a0fc6d",
+        "after": "18b3d0cfb71cdd2401871d9a915334452dd29e40d1b9a83d72e27041a8eabfee"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure40_ST8_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P003.svg",
+        "figure": 40,
+        "allowed": true,
+        "before": "f5aec54ebb5ac5c1a9af3a6bcde33fe14a4db5b027320e89d863f3796020e00b",
+        "after": "3acc32b0e34b0c203745959ddd93218afcd65e1c8c3c445be37a56bd6871e95f"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure40_ST8_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P004.pdf",
+        "figure": 40,
+        "allowed": true,
+        "before": "bd073d22bbce7a87369880e2803aaa2cd8d8ceabcbe58a62382ea45528e082c9",
+        "after": "c7a6fbcd185eff086d56cfebd95a7e8a410addaab51922837bde7874342abdd4"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure40_ST8_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P004.png",
+        "figure": 40,
+        "allowed": true,
+        "before": "a8168cfaff9a49a460eb2379afa64bf4c32d10cbac52a1e06f9628d4db95acf4",
+        "after": "d4bd15a2f86ce013b6c7382e151f17bc6cd4f0ff85d496fa08540583b2fd2396"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure40_ST8_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P004.svg",
+        "figure": 40,
+        "allowed": true,
+        "before": "470fa40f41af67669e4ae3eb70fd6d12efc9c05acd018bccede5e88f8435de90",
+        "after": "47ed7d57c4381459961a1e0d1ee93cd9971694b390be9b370d4c0a837cef7951"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure40_ST8_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_multipage.pdf",
+        "figure": 40,
+        "allowed": true,
+        "before": "49590c5f7424f87d103a8177881ba936c1c6c408eab8a3a7ed70139d70ab217e",
+        "after": "515f2a4eb40d02aadde127a0aa20dc28d19d38e5f111c33ccc27137cb5657087"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure4_alpha_diversity_CDS_32999.pdf",
+        "figure": 4,
+        "allowed": true,
+        "before": "2034184efe63d0551aa6bf0e12bd582b4b44211add2babbe77c09653f4bf954e",
+        "after": "1b79e7b67c51c8882c86815ed071c407aa949e5688207328c9bf321397ba1e11"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure4_alpha_diversity_CDS_32999.png",
+        "figure": 4,
+        "allowed": true,
+        "before": "37ce88a7ba80be0a5509de492862f012af022b06d81be21b8dd365004b82be0f",
+        "after": "a9da7db35146af4046cd1a7302cdf6bbe6af27f16e24da71f196bb1cd1baee0b"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure4_alpha_diversity_CDS_32999.svg",
+        "figure": 4,
+        "allowed": true,
+        "before": "8a472bf4cd18b29cac46d0cc58cab895cdd1e7963463c7e2c99197d9830be47c",
+        "after": "3ade243c8584a7a750e9faffedbe93a71c43331ea42563d56cdcfc37c847c89f"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure51_Taxonomy_Bacteria_Order_individual_samples_barplot_100pct.pdf",
+        "figure": 51,
+        "allowed": true,
+        "before": "fa3766cd43c724638f80a9a7313699edf5b037b637934ccafbf52d80af1e33aa",
+        "after": "e55ddbf29c33ec68885f04d5d73cde90368ea7668a13c3aae480d14314d1db96"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure51_Taxonomy_Bacteria_Order_individual_samples_barplot_100pct.png",
+        "figure": 51,
+        "allowed": true,
+        "before": "e1acc11b728b5bdb8cbb531a68e1d906c0382b9bad51bd9896ea833599793d0d",
+        "after": "138a930e4b8d3273a06c30f67c505ac2b7752f4d8fe62797dcaf790ed34f2003"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure51_Taxonomy_Bacteria_Order_individual_samples_barplot_100pct.svg",
+        "figure": 51,
+        "allowed": true,
+        "before": "f19bf76a666f6ef4ac2dfd54cb20a4562e30a84f5b8e6079fa348c1d9bf55616",
+        "after": "2685f2e72ccc6f75e366652bdd15b8615c7fb753afe38f66df7daa45a0a4da87"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure53_Taxonomy_Archaea_Order_individual_samples_barplot_100pct.pdf",
+        "figure": 53,
+        "allowed": true,
+        "before": "1693c6a614fe3dfbcf13aaeb0f4b84abc6bbd52bdd4c3cff079e987fbaa5eccc",
+        "after": "d278d2f345edb24bf7002003b157bd4f0798df7ee5866c1d317a00c6c9c43580"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure53_Taxonomy_Archaea_Order_individual_samples_barplot_100pct.png",
+        "figure": 53,
+        "allowed": true,
+        "before": "3d5239f0d717f085f9f84b2a4b77179d2158b5342b6b83fb1b4ce8f7b49da98a",
+        "after": "a070811c3d8de5cb0409b3404a723123a0b91e5c7ea9b525c9528eb5fac0947c"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure53_Taxonomy_Archaea_Order_individual_samples_barplot_100pct.svg",
+        "figure": 53,
+        "allowed": true,
+        "before": "bf4490bd96247958b6310286cef7a2d99818c35d89f38277467130745cbf9b3a",
+        "after": "9e4af5d1a48cd62e98a38b4ac709765643f63d91d3ba0ee2cf57b74be1800e87"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure55_Taxonomy_Bacteria_Family_individual_samples_barplot_100pct.pdf",
+        "figure": 55,
+        "allowed": true,
+        "before": "449108b6cb184bd6d4b32d16865d930692a737075d62ae2ac852d1b6e41a9a69",
+        "after": "e508e93236c62fc641d71d2adbb8ecdce841ce4d3cca6914bbc0b5b4e71b666b"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure55_Taxonomy_Bacteria_Family_individual_samples_barplot_100pct.png",
+        "figure": 55,
+        "allowed": true,
+        "before": "e470dd33852a731de8636964444e88f58dfb7f5c2ddacadfc95a1b9b7e0e905d",
+        "after": "dd8de3050e61d571e3ffce3136dce36d4baf8dce344861effed7739d9592558a"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure55_Taxonomy_Bacteria_Family_individual_samples_barplot_100pct.svg",
+        "figure": 55,
+        "allowed": true,
+        "before": "931ff807fdd461fbeaaec2999df510936b147ccbc1ad1208433151537dae3383",
+        "after": "efcd7811a889945fc07445e28a9b97523f540c960cc858ad639ca6b072fdb1c1"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure57_Taxonomy_Archaea_Family_individual_samples_barplot_100pct.pdf",
+        "figure": 57,
+        "allowed": true,
+        "before": "3164b13e466fe85d0bcecb3a9f90fff06772fd1b68b55813b1791cda5f6089f1",
+        "after": "3c8bd4ff12f742763c255879febcf946637521127a076595e128e4c4e393544d"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure57_Taxonomy_Archaea_Family_individual_samples_barplot_100pct.png",
+        "figure": 57,
+        "allowed": true,
+        "before": "36c1b94e40510d88bba69f992bbe5d9b494e2fe4bfa8c9c701c0a6125a10f3fa",
+        "after": "acf1bb2cc797ed037d0d49d6161076f7284bc2ef8f95129c868464192de52ecd"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure57_Taxonomy_Archaea_Family_individual_samples_barplot_100pct.svg",
+        "figure": 57,
+        "allowed": true,
+        "before": "58a810f75330342cd046fff46acfbf448afd1c2331fd9eaab2a7f522c0d857bd",
+        "after": "c89da876ac06d340437f3af174f336e4eaeeac33b26e01ef5f3210ba64a28c8c"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure61_Taxonomy_Archaea_Genus_individual_samples_barplot_100pct.pdf",
+        "figure": 61,
+        "allowed": true,
+        "before": "2e3fa77e8c50e596cade48d3c1c150e76e46f3a7e6b92a37988ae80c1d473222",
+        "after": "b8fe731f38b2df2f27b0591a251c8576cb3c814f60cf075756ff0571cce00194"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure61_Taxonomy_Archaea_Genus_individual_samples_barplot_100pct.png",
+        "figure": 61,
+        "allowed": true,
+        "before": "b31602dfacd19fbffc7f2156debe44df5a36251f05f92ab425038c7825f3f803",
+        "after": "fca869310fc041fcd6a7e58f8de91ea1388e59a44c3676ed0fbbb0851ec19755"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure61_Taxonomy_Archaea_Genus_individual_samples_barplot_100pct.svg",
+        "figure": 61,
+        "allowed": true,
+        "before": "6e7edc1b560f1ac5efe4f354136fc56501953ebe11d925cdbd378774e95a3c7c",
+        "after": "18c2d8482822697a5a590c4bab53ea059c89757704aea0f6828f258aad47fdba"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure63_Taxonomy_Bacteria_Species_individual_samples_barplot_100pct.pdf",
+        "figure": 63,
+        "allowed": true,
+        "before": "fce4b6a137b3b7234444431f5483ae2b6f5ffb2f4dd9a4cdba514ff863d2c292",
+        "after": "5227d037075616380a622d2bf3523c4cc971f80d86c523ac293dee09bf7b4147"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure63_Taxonomy_Bacteria_Species_individual_samples_barplot_100pct.png",
+        "figure": 63,
+        "allowed": true,
+        "before": "84607d318f7091d61ff97d3d83ffb007e72687795e7d4fc1353d2f7d53fc3ee4",
+        "after": "ac3b2d26e624d9a0becb61a5ae8516e9fe658fa046087302edd3c3c9c239a5eb"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure63_Taxonomy_Bacteria_Species_individual_samples_barplot_100pct.svg",
+        "figure": 63,
+        "allowed": true,
+        "before": "560cf6790fa40863081783daf1f8733b27ed72743ac7697cc0b0bef2dc78b5ad",
+        "after": "607c9baeccacc81205d9b6910ad6865e83796078cd92eae9e2acbb208e14fe0b"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure65_Taxonomy_Archaea_Species_individual_samples_barplot_100pct.pdf",
+        "figure": 65,
+        "allowed": true,
+        "before": "0b9fb77043e846e20bc11e4cc9bb5f86617a4dc01ea5fbf1a6829888a0b9f1ac",
+        "after": "895a6496a471c2906ba85703f4eef55ac6e4745e2ee2095333428957d156a289"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure65_Taxonomy_Archaea_Species_individual_samples_barplot_100pct.png",
+        "figure": 65,
+        "allowed": true,
+        "before": "b7d8852787186f53328c02d1b2ac3a28da87bd04d42a93703ecbaf22690b8962",
+        "after": "6edd75c751fe6e2f5b8ccbbd49c9bccc7d78c375bba79756a5c3585e55f2030c"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure65_Taxonomy_Archaea_Species_individual_samples_barplot_100pct.svg",
+        "figure": 65,
+        "allowed": true,
+        "before": "8bf78a1b5da2d70ab3dc2a10ff3b2f4e67cd64133ed85bef4686d06933f49668",
+        "after": "86340260c7ac80002e2de00a5dec33e3a03c51584f8c9cdc8881d203d9e4f313"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure67_lagoon_plus_external_iron_rich_module_completeness_KEMET_style_3state_heatmap.pdf",
+        "figure": 67,
+        "allowed": true,
+        "before": "17ae57ee7458b2147b7684002656534f7d737a05fedd41cedebbf106c1043771",
+        "after": "c5052dc5753e632f953e2e4c8cdf55e6aa022d7f69542be679ad2ed6281d1868"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure67_lagoon_plus_external_iron_rich_module_completeness_KEMET_style_3state_heatmap.png",
+        "figure": 67,
+        "allowed": true,
+        "before": "8107f5c4cbd0a9c9d9e863ee1b74090e2444f5f99897ad6f2e6681d33b0a9cc7",
+        "after": "36a71ddbce45f4ea5dce5cad9459fde06ce71601ded1044fca621d7317a10fa3"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure67_lagoon_plus_external_iron_rich_module_completeness_KEMET_style_3state_heatmap.svg",
+        "figure": 67,
+        "allowed": true,
+        "before": "7bfeafddecfc20cd756ecc5ca6d4102672971c46661ded8c82886ae1dd2c562d",
+        "after": "0c9962d3fa4cc5a4597f84d150befeaf1be9d2e16afbe70609078c7dd619f2f4"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure67_lagoon_plus_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P001.pdf",
+        "figure": 67,
+        "allowed": true,
+        "before": "17ae57ee7458b2147b7684002656534f7d737a05fedd41cedebbf106c1043771",
+        "after": "8c45d0a44121e28e9a817cc21ff51092609eda6fef41ac8410f6b2db097a0e05"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure67_lagoon_plus_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P001.png",
+        "figure": 67,
+        "allowed": true,
+        "before": "8107f5c4cbd0a9c9d9e863ee1b74090e2444f5f99897ad6f2e6681d33b0a9cc7",
+        "after": "c86b3549837aab5ff1af94a3143db1e67c41c2472b2aecb8e6b34ea1be2b86a2"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure67_lagoon_plus_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P001.svg",
+        "figure": 67,
+        "allowed": true,
+        "before": "7bfeafddecfc20cd756ecc5ca6d4102672971c46661ded8c82886ae1dd2c562d",
+        "after": "629963fcd5571672c284a8d05102765aa9c20ba675ea5f8ade7ad5e3292d0c99"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure67_lagoon_plus_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P002.pdf",
+        "figure": 67,
+        "allowed": true,
+        "before": "0eb8a547c148a9c48b8c3d2dd41640e8105c2afac22439676588123ae42b2464",
+        "after": "096985fdda4e95edb63e756cc35d4c548c7a1c8534f888e4ea0be2072edacdaa"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure67_lagoon_plus_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P002.png",
+        "figure": 67,
+        "allowed": true,
+        "before": "0e25df8c6c91f88b74ceea066437f0dec93abdcff68d89b103f03f752c428dc9",
+        "after": "b507ab8aa0f815b00aae00439f262abd27f01eb20597eacfcb1f82c0e84fe4ff"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure67_lagoon_plus_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P002.svg",
+        "figure": 67,
+        "allowed": true,
+        "before": "7006cce584721427aeb8e7cfd4743d3d7b3eb138c8e9421bae446d0ce4348a3b",
+        "after": "61123f9a6812b4f3024ebc156c0cb6306f653a42811ce01d050df51a84b71345"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure67_lagoon_plus_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_multipage.pdf",
+        "figure": 67,
+        "allowed": true,
+        "before": "e6444c5ce277ce89d5e21a2269e7df4e6c29cc9fa4196c8f9f32ad02f9810041",
+        "after": "c5052dc5753e632f953e2e4c8cdf55e6aa022d7f69542be679ad2ed6281d1868"
+      }
+    ],
+    "missing": [
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P01.pdf",
+        "figure": 32,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P02.pdf",
+        "figure": 32,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P03.pdf",
+        "figure": 32,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P04.pdf",
+        "figure": 32,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P05.pdf",
+        "figure": 32,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P06.pdf",
+        "figure": 32,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P07.pdf",
+        "figure": 32,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P08.pdf",
+        "figure": 32,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P11.png",
+        "figure": 32,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P12.png",
+        "figure": 32,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P13.png",
+        "figure": 32,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P14.png",
+        "figure": 32,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P15.png",
+        "figure": 32,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P16.png",
+        "figure": 32,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P17.png",
+        "figure": 32,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P18.png",
+        "figure": 32,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P19.png",
+        "figure": 32,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P20.png",
+        "figure": 32,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P21.png",
+        "figure": 32,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P22.png",
+        "figure": 32,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure40_ST8_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P005.pdf",
+        "figure": 40,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure40_ST8_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P005.png",
+        "figure": 40,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure40_ST8_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P005.svg",
+        "figure": 40,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure40_ST8_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P006.pdf",
+        "figure": 40,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure40_ST8_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P006.png",
+        "figure": 40,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure40_ST8_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P006.svg",
+        "figure": 40,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure40_ST8_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P007.pdf",
+        "figure": 40,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure40_ST8_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P007.png",
+        "figure": 40,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure40_ST8_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P007.svg",
+        "figure": 40,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure40_ST8_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P008.pdf",
+        "figure": 40,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure40_ST8_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P008.png",
+        "figure": 40,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure40_ST8_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P008.svg",
+        "figure": 40,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure67_lagoon_plus_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P003.pdf",
+        "figure": 67,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure67_lagoon_plus_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P003.png",
+        "figure": 67,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure67_lagoon_plus_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P003.svg",
+        "figure": 67,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure67_lagoon_plus_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P004.pdf",
+        "figure": 67,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure67_lagoon_plus_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P004.png",
+        "figure": 67,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure67_lagoon_plus_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P004.svg",
+        "figure": 67,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure67_lagoon_plus_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P005.pdf",
+        "figure": 67,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure67_lagoon_plus_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P005.png",
+        "figure": 67,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure67_lagoon_plus_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P005.svg",
+        "figure": 67,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure67_lagoon_plus_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P006.pdf",
+        "figure": 67,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure67_lagoon_plus_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P006.png",
+        "figure": 67,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure67_lagoon_plus_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P006.svg",
+        "figure": 67,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure67_lagoon_plus_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P007.pdf",
+        "figure": 67,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure67_lagoon_plus_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P007.png",
+        "figure": 67,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure67_lagoon_plus_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P007.svg",
+        "figure": 67,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure67_lagoon_plus_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P008.pdf",
+        "figure": 67,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure67_lagoon_plus_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P008.png",
+        "figure": 67,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure67_lagoon_plus_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P008.svg",
+        "figure": 67,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure67_lagoon_plus_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P009.pdf",
+        "figure": 67,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure67_lagoon_plus_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P009.png",
+        "figure": 67,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure67_lagoon_plus_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P009.svg",
+        "figure": 67,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure67_lagoon_plus_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P010.pdf",
+        "figure": 67,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure67_lagoon_plus_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P010.png",
+        "figure": 67,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/final_publication_figures/SupplementaryFigure67_lagoon_plus_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P010.svg",
+        "figure": 67,
+        "allowed": true
+      }
+    ],
+    "unexpected_changed": [],
+    "unexpected_missing": []
+  },
+  "app_supp_figures.sha256": {
+    "unchanged": 196,
+    "changed": [
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/app_supplementary_figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap.pdf",
+        "figure": 32,
+        "allowed": true,
+        "before": "d3a2e5ea6cbfae9c95cc6d8ff4e5f09c6541c1d6b21f9c0fe6d35dc418bb6515",
+        "after": "d4a9762f44b8b9404aecace3b2ea75b7946d86ddb77c00a6630060958ada03cc"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/app_supplementary_figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap.png",
+        "figure": 32,
+        "allowed": true,
+        "before": "846e6ce52d8923f3d5c3db7c06f01dd0422cbf48c2bbdf28ffd63b1842748ebb",
+        "after": "72d7a9d60ac15223ef20bd4c198c0b17ec7a426f22a9ccdee0f7cc0c2c456715"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/app_supplementary_figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap.svg",
+        "figure": 32,
+        "allowed": true,
+        "before": "ca9ff3598651efec17b08d687f382688d048b300c817c48a2168b3d8ac07f458",
+        "after": "62319ff9f9441d62609fff4ac101cfa010bb4571dae4889cd87ddaaa63929652"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/app_supplementary_figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P01.png",
+        "figure": 32,
+        "allowed": true,
+        "before": "846e6ce52d8923f3d5c3db7c06f01dd0422cbf48c2bbdf28ffd63b1842748ebb",
+        "after": "351b0e9d36647a2cd78ed40f3f791d9b06d508d6dbcb1e9fe4b364051e0aa3e9"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/app_supplementary_figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P01.svg",
+        "figure": 32,
+        "allowed": true,
+        "before": "854b1b7ced397ec4c78c49946426649eea78302c6c9ddba2fab2e3088418f757",
+        "after": "00592699185499b9bb796b1c5a4c9fb05a6e100b8ba4c67eca13d71570f2d7f1"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/app_supplementary_figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P02.png",
+        "figure": 32,
+        "allowed": true,
+        "before": "df79b3ee70d460d1e95aef86ac34294b1de7272fa349c8af968dad11abfa2578",
+        "after": "1e9a66afa29f0a8dc2a551563438c6d6eaf62c63d354c11498f5ebce4b85bbca"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/app_supplementary_figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P02.svg",
+        "figure": 32,
+        "allowed": true,
+        "before": "a0c94af4b9eed2d797ed3d020d53ad8761dad2a22a25eb4a0356c3f05495c53a",
+        "after": "bbccd97ab57b782c6d0546783c3d8187395840889eb5ac782b0e784fc40c4fd3"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/app_supplementary_figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P03.png",
+        "figure": 32,
+        "allowed": true,
+        "before": "fd36f86146433d578ddd1421507cb2cc0e2f499716afe83dd9e8be00ffd6cf12",
+        "after": "7cf19a3f2c1b05bf96764f03c7064d7def78b558841602a257f3573fe08974a1"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/app_supplementary_figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P03.svg",
+        "figure": 32,
+        "allowed": true,
+        "before": "33263abd34908c930ebf998d70875eeac36b29be38e81ce46d5e80dfef809794",
+        "after": "8458da67b17a4778ddef98e59912d758da0d43a32b9338cac10e202909c68076"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/app_supplementary_figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P04.png",
+        "figure": 32,
+        "allowed": true,
+        "before": "deb67a0865a0838a9577bf1ba5779da8c8b2777ee4b47eaca0edba43d73b99ab",
+        "after": "45a8d30f03efc67da609fd43b6aad817f64fbb55bf7e91a5b7d900c73c75460d"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/app_supplementary_figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P04.svg",
+        "figure": 32,
+        "allowed": true,
+        "before": "884a4cc03082c6859c076c1b7b388a2d531275c343590712b66586905c5e3b18",
+        "after": "aae2dbac1251ef7fc81673b526289b907b36eedb9eed1462ec20e5598e0f7f99"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/app_supplementary_figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P05.png",
+        "figure": 32,
+        "allowed": true,
+        "before": "ae8ffadf212e020752ed7f4740e2fcdfe6d5dfe48fc4717e9abb270e1fc0f312",
+        "after": "a7e696a67aea53eb1a57173ad09e83faed7828bb1278f367d0f03befdc0d04c3"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/app_supplementary_figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P05.svg",
+        "figure": 32,
+        "allowed": true,
+        "before": "0ba09773878e1dab5b4e37cfbea1c6cd72afb2abf9c34e604ec24461a3cc2955",
+        "after": "9dbf8d76563c296c6f8a06a39ffdb89b6564503c93c80bbcf8fa4f5e903080da"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/app_supplementary_figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P06.png",
+        "figure": 32,
+        "allowed": true,
+        "before": "d918942c7c9b1d8850b7835d46053f0746e8751e2f97496fab5325a2d89068ac",
+        "after": "9cbdf6ad0b189aef381c9815e4e1fe56e43a88e6cf0b7eaa384ca9833a6d2cbd"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/app_supplementary_figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P06.svg",
+        "figure": 32,
+        "allowed": true,
+        "before": "2d0977fb0f1da4f03c2bdf312d9e5e879a2c891064ef05d09584fac7c7d25ef1",
+        "after": "131905ab89a95ac535358e82ef073ae8871352252f41dcd362d4ddcd489dd554"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/app_supplementary_figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P07.png",
+        "figure": 32,
+        "allowed": true,
+        "before": "a666b282e8b1fb845bb2779e9eb53a61f9a16f53942f19849525ae98b857b358",
+        "after": "6fd14e6e746e425a8a3166b895f72f348db0db0162466a6fced2d934a419af04"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/app_supplementary_figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P07.svg",
+        "figure": 32,
+        "allowed": true,
+        "before": "6de78e09303b3906b07d7b5436d6e80de97f1c76ed9f740f594742937cf79fa1",
+        "after": "d05fb45161240ba79acddb3ec5f1df0cb2524b36076aba03048a517eba6fbaaf"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/app_supplementary_figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P08.png",
+        "figure": 32,
+        "allowed": true,
+        "before": "9d855258aa9a10c218c0a34c555128ba2b07c06941d4423a8e4d5a040433e873",
+        "after": "4f35ae6d43cd55bad0af60e413f1c06d66a2bb9d02cfb6511ef2c38404e666da"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/app_supplementary_figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P08.svg",
+        "figure": 32,
+        "allowed": true,
+        "before": "3a7cd276316a9cca5e983e0da5e8da418f71d813bf402ecb193af9e50b4dafd9",
+        "after": "8bb6e209e1546548203e914e83fe8eac46b92d4722b5b099ea76aa406fb770ba"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/app_supplementary_figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P09.png",
+        "figure": 32,
+        "allowed": true,
+        "before": "f0359a79b58fd7ea5c1c35a5297b14a3dbf580cec3d9e74a23b537581740ed11",
+        "after": "63c71637a000f16539e650fabe120a52379ba26c43428e05e4b25f843a7be881"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/app_supplementary_figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P10.png",
+        "figure": 32,
+        "allowed": true,
+        "before": "597a54839c9954ff7da2c7f61f2b90dcf56ab8af7cdffb6ec58343a692964950",
+        "after": "2438dd2a346e32dc2b1ea28bbcb4cf65262b2f7c2713413aa7b6e59361ba5944"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/app_supplementary_figures/SupplementaryFigure33_ResBiomarker_Biogeochemical_cycles_zscore_heatmap.pdf",
+        "figure": 33,
+        "allowed": true,
+        "before": "a99db45135cc718be46d701e3432cae300f2be84c083b4ea0f7a37a871df00cc",
+        "after": "cddb2c09dd559e93a9891f4acfc6b93f3fbdf5bcaa308410b85d8850550f437a"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/app_supplementary_figures/SupplementaryFigure33_ResBiomarker_Biogeochemical_cycles_zscore_heatmap.png",
+        "figure": 33,
+        "allowed": true,
+        "before": "1341045183dc6acf1506cca58baea222d30fd2165e55027eda87e6d1c865c5e4",
+        "after": "d3356a34a49d2525ca56bb73e096ac3832320cb707e000792ee67a00b3c12190"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/app_supplementary_figures/SupplementaryFigure33_ResBiomarker_Biogeochemical_cycles_zscore_heatmap.svg",
+        "figure": 33,
+        "allowed": true,
+        "before": "5735577db3bb60c4e852bfd2be6427a31f40eb641981fb14af70ba8ffd967462",
+        "after": "0608c411fdbcb27cfda54ff814daca636be6dcd004e23a7eceaa4be720a1e9ff"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/app_supplementary_figures/SupplementaryFigure33_ResBiomarker_Biogeochemical_cycles_zscore_heatmap_P01.png",
+        "figure": 33,
+        "allowed": true,
+        "before": "1341045183dc6acf1506cca58baea222d30fd2165e55027eda87e6d1c865c5e4",
+        "after": "79ba1e7cc96eb3747a608bf724d5c7d07b2a72bbda3925e07845d5da1f62c13e"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/app_supplementary_figures/SupplementaryFigure33_ResBiomarker_Biogeochemical_cycles_zscore_heatmap_P01.svg",
+        "figure": 33,
+        "allowed": true,
+        "before": "5735577db3bb60c4e852bfd2be6427a31f40eb641981fb14af70ba8ffd967462",
+        "after": "27b8831db2e09d52ccc9adefca4185d032e6897382c08d1e63304f8e9b902ea8"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/app_supplementary_figures/SupplementaryFigure33_ResBiomarker_Biogeochemical_cycles_zscore_heatmap_P02.png",
+        "figure": 33,
+        "allowed": true,
+        "before": "c5e0d8002f0d7e7aa8e807515d8a0c771661648d5308c8bb0977b141033555e5",
+        "after": "c49e7b3da181cdc66d097669d519810c0943c8ae0be5f65d7ac2891ed8787e42"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/app_supplementary_figures/SupplementaryFigure33_ResBiomarker_Biogeochemical_cycles_zscore_heatmap_P02.svg",
+        "figure": 33,
+        "allowed": true,
+        "before": "488c1b1c87caeaa21c96104cc5e4e0aba79685ec3c7c8c3e55b8a215dbfd3c8b",
+        "after": "e1cbf574c5a7f07d15ef38ef22e1ea98331396aa13785ff895bd7487dad1b2d8"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/app_supplementary_figures/SupplementaryFigure33_ResBiomarker_Biogeochemical_cycles_zscore_heatmap_P03.png",
+        "figure": 33,
+        "allowed": true,
+        "before": "332f06c56f2c3c3bc3e352ed2b1c8675e4c459474948c1f450417e935a6981ed",
+        "after": "008d2ae4ebe82f719a00c8328eabbc6442afd4326170bcbd98b409d8d6c58651"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/app_supplementary_figures/SupplementaryFigure33_ResBiomarker_Biogeochemical_cycles_zscore_heatmap_P03.svg",
+        "figure": 33,
+        "allowed": true,
+        "before": "004f3436274c8ddb1393122f3afe73af6baf0dbbb527f61b0ed672dc25e83f61",
+        "after": "4c6b7796c7260cb2605d9c570c546f24a181f70e710e199595a31c63ab8357cc"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/app_supplementary_figures/SupplementaryFigure33_ResBiomarker_Biogeochemical_cycles_zscore_heatmap_P04.png",
+        "figure": 33,
+        "allowed": true,
+        "before": "5f3abede84ee6965449790234551f3e918a5092a9110d5c3719831845752704c",
+        "after": "ce43c5af831110774032316d87288fc9ad03c775c7f28fb41f114323b4d991f5"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/app_supplementary_figures/SupplementaryFigure33_ResBiomarker_Biogeochemical_cycles_zscore_heatmap_P04.svg",
+        "figure": 33,
+        "allowed": true,
+        "before": "782a4c3e0ecebda5eba2a9a4d22049bb572e33ff5c0ff501110a86fd35621975",
+        "after": "bd9997c004fafb3a6a6702d5e79dafbe2b8d90ed59eb8379a8262df5c8287820"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/app_supplementary_figures/SupplementaryFigure33_ResBiomarker_Biogeochemical_cycles_zscore_heatmap_P05.png",
+        "figure": 33,
+        "allowed": true,
+        "before": "f00bb586ce4e8e4b999e9cc1ed9a52fe1733ae43a092f9cf2b6f2ab57f021bda",
+        "after": "95435719ae7a0eb6a6f1c560ce41a0508612b76e03ca0bf4b55e90c0aa137aba"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/app_supplementary_figures/SupplementaryFigure33_ResBiomarker_Biogeochemical_cycles_zscore_heatmap_P05.svg",
+        "figure": 33,
+        "allowed": true,
+        "before": "b0ba7b4fe79745a7e9d31c15c1b34c798b813d20f8f65fe07ff391a5bd6dd5da",
+        "after": "3403f5e40c84d14b3e72892249369dc82cdffa154c071776e8e1216c2262d243"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/app_supplementary_figures/SupplementaryFigure33_ResBiomarker_Biogeochemical_cycles_zscore_heatmap_P06.png",
+        "figure": 33,
+        "allowed": true,
+        "before": "4ee97a23b871356fc268a9c10f44949fc72e4223a6382e22773a36129f2adb67",
+        "after": "499a2df8453aac3af4e1e26e42829eb30a1ca4a5cc691c86b8938881ab405402"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/app_supplementary_figures/SupplementaryFigure33_ResBiomarker_Biogeochemical_cycles_zscore_heatmap_P06.svg",
+        "figure": 33,
+        "allowed": true,
+        "before": "03c42a8263425eb077fc956f8e0ba3eaee6eaa0429a43733291d08eaf7c76ec5",
+        "after": "7eeb26d276b5408e32a4427372acbab2e1c6375718bc94cafe24d6a4164f54ae"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/app_supplementary_figures/SupplementaryFigure33_ResBiomarker_Biogeochemical_cycles_zscore_heatmap_P07.png",
+        "figure": 33,
+        "allowed": true,
+        "before": "74b1b624d3e7c4f2de852fe6b334ff360fea8504fff306034db0583282eaa2c0",
+        "after": "3dfe96a1c27ef85473ff42262b63c43e4cd50f6bd2365e366b2b81170736c953"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/app_supplementary_figures/SupplementaryFigure33_ResBiomarker_Biogeochemical_cycles_zscore_heatmap_P07.svg",
+        "figure": 33,
+        "allowed": true,
+        "before": "997867d72bd4f5ad07389bbc2922c07be87ca899b2ce42028b017183f6f49105",
+        "after": "9ec50daf4f6c0135b7177001be705c0f44ed1c7e988c055c6692c8e8ab3493c4"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/app_supplementary_figures/SupplementaryFigure33_ResBiomarker_Biogeochemical_cycles_zscore_heatmap_P08.png",
+        "figure": 33,
+        "allowed": true,
+        "before": "aafd5c9260bd71a2eb0cb5d54d65beef01da369886123aa0838193260be5956b",
+        "after": "a94aafc9d974094a1b3fc3bf520a2328ebf70e9e202fc972aa75f3c671e70b33"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/app_supplementary_figures/SupplementaryFigure33_ResBiomarker_Biogeochemical_cycles_zscore_heatmap_P08.svg",
+        "figure": 33,
+        "allowed": true,
+        "before": "9fe8acd6eed925a117d81c816a78a759158593caef271367d0a670abd072b4f9",
+        "after": "c9a75317f65a844f066dc054558121aa35e11704dfa4537f779b488e834f227c"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/app_supplementary_figures/SupplementaryFigure33_ResBiomarker_Biogeochemical_cycles_zscore_heatmap_P09.png",
+        "figure": 33,
+        "allowed": true,
+        "before": "5e2a784c42f9372e46c49a8542d3698c3b681a00365c2e57946bd300a28c135e",
+        "after": "215f84e7943f32e1aa0fbaddca78d239746579934d4fa485a6286f166ad71565"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/app_supplementary_figures/SupplementaryFigure33_ResBiomarker_Biogeochemical_cycles_zscore_heatmap_P09.svg",
+        "figure": 33,
+        "allowed": true,
+        "before": "3643e7dbf99cb3513df2c6946f2929f4b24088a2663766dfd6501b2490e7eb28",
+        "after": "020418e2422c63740293621d681fecdcb8823c2d59158519ea7759730d5df2f5"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/app_supplementary_figures/SupplementaryFigure33_ResBiomarker_Biogeochemical_cycles_zscore_heatmap_P10.png",
+        "figure": 33,
+        "allowed": true,
+        "before": "3e83bda3ccd0c5996d8e514548835bea420d7cd7dd8102d6ef89f3137e63dee4",
+        "after": "7ae9108acf75a2375dd0171b70cd5c8ed7a26e4f5836fc247a7c0ac27155c5af"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/app_supplementary_figures/SupplementaryFigure33_ResBiomarker_Biogeochemical_cycles_zscore_heatmap_P10.svg",
+        "figure": 33,
+        "allowed": true,
+        "before": "2d42710191c6b29ed0da7a67e90db20f28bbeef7b02f7406d122d14bb07a783f",
+        "after": "1facd22502f42d3f687000f1843918f01902bea52e96facc12ef9876d951a51a"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/app_supplementary_figures/SupplementaryFigure37_MAG_KEGG_module_completeness_heatmap_species_MAGnumber_KEMET_style_3state.pdf",
+        "figure": 37,
+        "allowed": true,
+        "before": "f9efb132e5d585604d2dce4fcf818f181d4305ae28b49d36a6e4970d2f378ef3",
+        "after": "e3ab12d6e8f8bc28c12c352b39eb309dccfae13b70ecd141c937b3e8ef0bc086"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/app_supplementary_figures/SupplementaryFigure37_MAG_KEGG_module_completeness_heatmap_species_MAGnumber_KEMET_style_3state.png",
+        "figure": 37,
+        "allowed": true,
+        "before": "174f232dd4181c1998fcdac172239d5e1426adf6b7cea2f990e24791ebca1959",
+        "after": "9a8764fa55b4919b152a93bd813c63080b7234c06b90673faff36eb645ff9c5f"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/app_supplementary_figures/SupplementaryFigure37_MAG_KEGG_module_completeness_heatmap_species_MAGnumber_KEMET_style_3state.svg",
+        "figure": 37,
+        "allowed": true,
+        "before": "410eb10d7b3c42236d2787e44729cc5cd4c30118022ea90a1dd502589657bb5a",
+        "after": "5c104dd4b662548ee5e2bea0bb11154df5c5d8324215f3f59e491eaa6db3ebd6"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/app_supplementary_figures/SupplementaryFigure40_ST8_external_iron_rich_module_completeness_KEMET_style_3state_heatmap.pdf",
+        "figure": 40,
+        "allowed": true,
+        "before": "43ca8c9c4eba344f740405850b4cd295e0a8b879536cc005d9e168913db330fb",
+        "after": "515f2a4eb40d02aadde127a0aa20dc28d19d38e5f111c33ccc27137cb5657087"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/app_supplementary_figures/SupplementaryFigure40_ST8_external_iron_rich_module_completeness_KEMET_style_3state_heatmap.png",
+        "figure": 40,
+        "allowed": true,
+        "before": "34a682120d12249c37bd655439d57bc4ffc60fd4275657e53fa5fefeac7dc8a7",
+        "after": "971547ab40dbabb3b0552dbb1a41212eedfcc9a27f927dc120457dce21c03778"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/app_supplementary_figures/SupplementaryFigure40_ST8_external_iron_rich_module_completeness_KEMET_style_3state_heatmap.svg",
+        "figure": 40,
+        "allowed": true,
+        "before": "6c9db2dbc68f8bb36a2cacbcceaceed0727108050bffc6fdd696af0783eb2177",
+        "after": "b5edbf84db566b0596752d780f59360dfa8b3e34da0a96b7b63760a7c0e02799"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/app_supplementary_figures/SupplementaryFigure4_alpha_diversity_CDS_32999.pdf",
+        "figure": 4,
+        "allowed": true,
+        "before": "2034184efe63d0551aa6bf0e12bd582b4b44211add2babbe77c09653f4bf954e",
+        "after": "1b79e7b67c51c8882c86815ed071c407aa949e5688207328c9bf321397ba1e11"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/app_supplementary_figures/SupplementaryFigure4_alpha_diversity_CDS_32999.png",
+        "figure": 4,
+        "allowed": true,
+        "before": "37ce88a7ba80be0a5509de492862f012af022b06d81be21b8dd365004b82be0f",
+        "after": "a9da7db35146af4046cd1a7302cdf6bbe6af27f16e24da71f196bb1cd1baee0b"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/app_supplementary_figures/SupplementaryFigure4_alpha_diversity_CDS_32999.svg",
+        "figure": 4,
+        "allowed": true,
+        "before": "8a472bf4cd18b29cac46d0cc58cab895cdd1e7963463c7e2c99197d9830be47c",
+        "after": "3ade243c8584a7a750e9faffedbe93a71c43331ea42563d56cdcfc37c847c89f"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/app_supplementary_figures/SupplementaryFigure51_Taxonomy_Bacteria_Order_individual_samples_barplot_100pct.pdf",
+        "figure": 51,
+        "allowed": true,
+        "before": "fa3766cd43c724638f80a9a7313699edf5b037b637934ccafbf52d80af1e33aa",
+        "after": "e55ddbf29c33ec68885f04d5d73cde90368ea7668a13c3aae480d14314d1db96"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/app_supplementary_figures/SupplementaryFigure51_Taxonomy_Bacteria_Order_individual_samples_barplot_100pct.png",
+        "figure": 51,
+        "allowed": true,
+        "before": "e1acc11b728b5bdb8cbb531a68e1d906c0382b9bad51bd9896ea833599793d0d",
+        "after": "138a930e4b8d3273a06c30f67c505ac2b7752f4d8fe62797dcaf790ed34f2003"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/app_supplementary_figures/SupplementaryFigure51_Taxonomy_Bacteria_Order_individual_samples_barplot_100pct.svg",
+        "figure": 51,
+        "allowed": true,
+        "before": "f19bf76a666f6ef4ac2dfd54cb20a4562e30a84f5b8e6079fa348c1d9bf55616",
+        "after": "2685f2e72ccc6f75e366652bdd15b8615c7fb753afe38f66df7daa45a0a4da87"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/app_supplementary_figures/SupplementaryFigure53_Taxonomy_Archaea_Order_individual_samples_barplot_100pct.pdf",
+        "figure": 53,
+        "allowed": true,
+        "before": "1693c6a614fe3dfbcf13aaeb0f4b84abc6bbd52bdd4c3cff079e987fbaa5eccc",
+        "after": "d278d2f345edb24bf7002003b157bd4f0798df7ee5866c1d317a00c6c9c43580"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/app_supplementary_figures/SupplementaryFigure53_Taxonomy_Archaea_Order_individual_samples_barplot_100pct.png",
+        "figure": 53,
+        "allowed": true,
+        "before": "3d5239f0d717f085f9f84b2a4b77179d2158b5342b6b83fb1b4ce8f7b49da98a",
+        "after": "a070811c3d8de5cb0409b3404a723123a0b91e5c7ea9b525c9528eb5fac0947c"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/app_supplementary_figures/SupplementaryFigure53_Taxonomy_Archaea_Order_individual_samples_barplot_100pct.svg",
+        "figure": 53,
+        "allowed": true,
+        "before": "bf4490bd96247958b6310286cef7a2d99818c35d89f38277467130745cbf9b3a",
+        "after": "9e4af5d1a48cd62e98a38b4ac709765643f63d91d3ba0ee2cf57b74be1800e87"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/app_supplementary_figures/SupplementaryFigure55_Taxonomy_Bacteria_Family_individual_samples_barplot_100pct.pdf",
+        "figure": 55,
+        "allowed": true,
+        "before": "449108b6cb184bd6d4b32d16865d930692a737075d62ae2ac852d1b6e41a9a69",
+        "after": "e508e93236c62fc641d71d2adbb8ecdce841ce4d3cca6914bbc0b5b4e71b666b"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/app_supplementary_figures/SupplementaryFigure55_Taxonomy_Bacteria_Family_individual_samples_barplot_100pct.png",
+        "figure": 55,
+        "allowed": true,
+        "before": "e470dd33852a731de8636964444e88f58dfb7f5c2ddacadfc95a1b9b7e0e905d",
+        "after": "dd8de3050e61d571e3ffce3136dce36d4baf8dce344861effed7739d9592558a"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/app_supplementary_figures/SupplementaryFigure55_Taxonomy_Bacteria_Family_individual_samples_barplot_100pct.svg",
+        "figure": 55,
+        "allowed": true,
+        "before": "931ff807fdd461fbeaaec2999df510936b147ccbc1ad1208433151537dae3383",
+        "after": "efcd7811a889945fc07445e28a9b97523f540c960cc858ad639ca6b072fdb1c1"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/app_supplementary_figures/SupplementaryFigure57_Taxonomy_Archaea_Family_individual_samples_barplot_100pct.pdf",
+        "figure": 57,
+        "allowed": true,
+        "before": "3164b13e466fe85d0bcecb3a9f90fff06772fd1b68b55813b1791cda5f6089f1",
+        "after": "3c8bd4ff12f742763c255879febcf946637521127a076595e128e4c4e393544d"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/app_supplementary_figures/SupplementaryFigure57_Taxonomy_Archaea_Family_individual_samples_barplot_100pct.png",
+        "figure": 57,
+        "allowed": true,
+        "before": "36c1b94e40510d88bba69f992bbe5d9b494e2fe4bfa8c9c701c0a6125a10f3fa",
+        "after": "acf1bb2cc797ed037d0d49d6161076f7284bc2ef8f95129c868464192de52ecd"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/app_supplementary_figures/SupplementaryFigure57_Taxonomy_Archaea_Family_individual_samples_barplot_100pct.svg",
+        "figure": 57,
+        "allowed": true,
+        "before": "58a810f75330342cd046fff46acfbf448afd1c2331fd9eaab2a7f522c0d857bd",
+        "after": "c89da876ac06d340437f3af174f336e4eaeeac33b26e01ef5f3210ba64a28c8c"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/app_supplementary_figures/SupplementaryFigure61_Taxonomy_Archaea_Genus_individual_samples_barplot_100pct.pdf",
+        "figure": 61,
+        "allowed": true,
+        "before": "2e3fa77e8c50e596cade48d3c1c150e76e46f3a7e6b92a37988ae80c1d473222",
+        "after": "b8fe731f38b2df2f27b0591a251c8576cb3c814f60cf075756ff0571cce00194"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/app_supplementary_figures/SupplementaryFigure61_Taxonomy_Archaea_Genus_individual_samples_barplot_100pct.png",
+        "figure": 61,
+        "allowed": true,
+        "before": "b31602dfacd19fbffc7f2156debe44df5a36251f05f92ab425038c7825f3f803",
+        "after": "fca869310fc041fcd6a7e58f8de91ea1388e59a44c3676ed0fbbb0851ec19755"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/app_supplementary_figures/SupplementaryFigure61_Taxonomy_Archaea_Genus_individual_samples_barplot_100pct.svg",
+        "figure": 61,
+        "allowed": true,
+        "before": "6e7edc1b560f1ac5efe4f354136fc56501953ebe11d925cdbd378774e95a3c7c",
+        "after": "18c2d8482822697a5a590c4bab53ea059c89757704aea0f6828f258aad47fdba"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/app_supplementary_figures/SupplementaryFigure63_Taxonomy_Bacteria_Species_individual_samples_barplot_100pct.pdf",
+        "figure": 63,
+        "allowed": true,
+        "before": "fce4b6a137b3b7234444431f5483ae2b6f5ffb2f4dd9a4cdba514ff863d2c292",
+        "after": "5227d037075616380a622d2bf3523c4cc971f80d86c523ac293dee09bf7b4147"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/app_supplementary_figures/SupplementaryFigure63_Taxonomy_Bacteria_Species_individual_samples_barplot_100pct.png",
+        "figure": 63,
+        "allowed": true,
+        "before": "84607d318f7091d61ff97d3d83ffb007e72687795e7d4fc1353d2f7d53fc3ee4",
+        "after": "ac3b2d26e624d9a0becb61a5ae8516e9fe658fa046087302edd3c3c9c239a5eb"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/app_supplementary_figures/SupplementaryFigure63_Taxonomy_Bacteria_Species_individual_samples_barplot_100pct.svg",
+        "figure": 63,
+        "allowed": true,
+        "before": "560cf6790fa40863081783daf1f8733b27ed72743ac7697cc0b0bef2dc78b5ad",
+        "after": "607c9baeccacc81205d9b6910ad6865e83796078cd92eae9e2acbb208e14fe0b"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/app_supplementary_figures/SupplementaryFigure65_Taxonomy_Archaea_Species_individual_samples_barplot_100pct.pdf",
+        "figure": 65,
+        "allowed": true,
+        "before": "0b9fb77043e846e20bc11e4cc9bb5f86617a4dc01ea5fbf1a6829888a0b9f1ac",
+        "after": "895a6496a471c2906ba85703f4eef55ac6e4745e2ee2095333428957d156a289"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/app_supplementary_figures/SupplementaryFigure65_Taxonomy_Archaea_Species_individual_samples_barplot_100pct.png",
+        "figure": 65,
+        "allowed": true,
+        "before": "b7d8852787186f53328c02d1b2ac3a28da87bd04d42a93703ecbaf22690b8962",
+        "after": "6edd75c751fe6e2f5b8ccbbd49c9bccc7d78c375bba79756a5c3585e55f2030c"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/app_supplementary_figures/SupplementaryFigure65_Taxonomy_Archaea_Species_individual_samples_barplot_100pct.svg",
+        "figure": 65,
+        "allowed": true,
+        "before": "8bf78a1b5da2d70ab3dc2a10ff3b2f4e67cd64133ed85bef4686d06933f49668",
+        "after": "86340260c7ac80002e2de00a5dec33e3a03c51584f8c9cdc8881d203d9e4f313"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/app_supplementary_figures/SupplementaryFigure67_lagoon_plus_external_iron_rich_module_completeness_KEMET_style_3state_heatmap.pdf",
+        "figure": 67,
+        "allowed": true,
+        "before": "42739ed6aad625b7915782f3d27b5de979dc3ae76e80457afc5b368ec712b6bf",
+        "after": "c5052dc5753e632f953e2e4c8cdf55e6aa022d7f69542be679ad2ed6281d1868"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/app_supplementary_figures/SupplementaryFigure67_lagoon_plus_external_iron_rich_module_completeness_KEMET_style_3state_heatmap.png",
+        "figure": 67,
+        "allowed": true,
+        "before": "ef3b212baf6f66927a70978f1c0afc6b433cab45c21f8de9f791fbbb39edd687",
+        "after": "36a71ddbce45f4ea5dce5cad9459fde06ce71601ded1044fca621d7317a10fa3"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/app_supplementary_figures/SupplementaryFigure67_lagoon_plus_external_iron_rich_module_completeness_KEMET_style_3state_heatmap.svg",
+        "figure": 67,
+        "allowed": true,
+        "before": "e54cd4eac85b76bdcb4c36d199df17cf03f94f4d7ef6cab85aaee4af38892762",
+        "after": "0c9962d3fa4cc5a4597f84d150befeaf1be9d2e16afbe70609078c7dd619f2f4"
+      }
+    ],
+    "missing": [
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/app_supplementary_figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P01.pdf",
+        "figure": 32,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/app_supplementary_figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P02.pdf",
+        "figure": 32,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/app_supplementary_figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P03.pdf",
+        "figure": 32,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/app_supplementary_figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P04.pdf",
+        "figure": 32,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/app_supplementary_figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P05.pdf",
+        "figure": 32,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/app_supplementary_figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P06.pdf",
+        "figure": 32,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/app_supplementary_figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P07.pdf",
+        "figure": 32,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/app_supplementary_figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P08.pdf",
+        "figure": 32,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/app_supplementary_figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P11.png",
+        "figure": 32,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/app_supplementary_figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P12.png",
+        "figure": 32,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/app_supplementary_figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P13.png",
+        "figure": 32,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/app_supplementary_figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P14.png",
+        "figure": 32,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/app_supplementary_figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P15.png",
+        "figure": 32,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/app_supplementary_figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P16.png",
+        "figure": 32,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/app_supplementary_figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P17.png",
+        "figure": 32,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/app_supplementary_figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P18.png",
+        "figure": 32,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/app_supplementary_figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P19.png",
+        "figure": 32,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/app_supplementary_figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P20.png",
+        "figure": 32,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/app_supplementary_figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P21.png",
+        "figure": 32,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/outputs/app_supplementary_figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P22.png",
+        "figure": 32,
+        "allowed": true
+      }
+    ],
+    "unexpected_changed": [],
+    "unexpected_missing": []
+  },
+  "article_supp_figures.sha256": {
+    "unchanged": 201,
+    "changed": [
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap.pdf",
+        "figure": 32,
+        "allowed": true,
+        "before": "679c0d8c7b8368b2be2ff0be9a2a7900590438433858858e0e4dd24ecb899d6c",
+        "after": "d4a9762f44b8b9404aecace3b2ea75b7946d86ddb77c00a6630060958ada03cc"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap.png",
+        "figure": 32,
+        "allowed": true,
+        "before": "846e6ce52d8923f3d5c3db7c06f01dd0422cbf48c2bbdf28ffd63b1842748ebb",
+        "after": "72d7a9d60ac15223ef20bd4c198c0b17ec7a426f22a9ccdee0f7cc0c2c456715"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap.svg",
+        "figure": 32,
+        "allowed": true,
+        "before": "ca9ff3598651efec17b08d687f382688d048b300c817c48a2168b3d8ac07f458",
+        "after": "62319ff9f9441d62609fff4ac101cfa010bb4571dae4889cd87ddaaa63929652"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P01.png",
+        "figure": 32,
+        "allowed": true,
+        "before": "846e6ce52d8923f3d5c3db7c06f01dd0422cbf48c2bbdf28ffd63b1842748ebb",
+        "after": "351b0e9d36647a2cd78ed40f3f791d9b06d508d6dbcb1e9fe4b364051e0aa3e9"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P01.svg",
+        "figure": 32,
+        "allowed": true,
+        "before": "854b1b7ced397ec4c78c49946426649eea78302c6c9ddba2fab2e3088418f757",
+        "after": "00592699185499b9bb796b1c5a4c9fb05a6e100b8ba4c67eca13d71570f2d7f1"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P02.png",
+        "figure": 32,
+        "allowed": true,
+        "before": "df79b3ee70d460d1e95aef86ac34294b1de7272fa349c8af968dad11abfa2578",
+        "after": "1e9a66afa29f0a8dc2a551563438c6d6eaf62c63d354c11498f5ebce4b85bbca"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P02.svg",
+        "figure": 32,
+        "allowed": true,
+        "before": "a0c94af4b9eed2d797ed3d020d53ad8761dad2a22a25eb4a0356c3f05495c53a",
+        "after": "bbccd97ab57b782c6d0546783c3d8187395840889eb5ac782b0e784fc40c4fd3"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P03.png",
+        "figure": 32,
+        "allowed": true,
+        "before": "fd36f86146433d578ddd1421507cb2cc0e2f499716afe83dd9e8be00ffd6cf12",
+        "after": "7cf19a3f2c1b05bf96764f03c7064d7def78b558841602a257f3573fe08974a1"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P03.svg",
+        "figure": 32,
+        "allowed": true,
+        "before": "33263abd34908c930ebf998d70875eeac36b29be38e81ce46d5e80dfef809794",
+        "after": "8458da67b17a4778ddef98e59912d758da0d43a32b9338cac10e202909c68076"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P04.png",
+        "figure": 32,
+        "allowed": true,
+        "before": "deb67a0865a0838a9577bf1ba5779da8c8b2777ee4b47eaca0edba43d73b99ab",
+        "after": "45a8d30f03efc67da609fd43b6aad817f64fbb55bf7e91a5b7d900c73c75460d"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P04.svg",
+        "figure": 32,
+        "allowed": true,
+        "before": "884a4cc03082c6859c076c1b7b388a2d531275c343590712b66586905c5e3b18",
+        "after": "aae2dbac1251ef7fc81673b526289b907b36eedb9eed1462ec20e5598e0f7f99"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P05.png",
+        "figure": 32,
+        "allowed": true,
+        "before": "ae8ffadf212e020752ed7f4740e2fcdfe6d5dfe48fc4717e9abb270e1fc0f312",
+        "after": "a7e696a67aea53eb1a57173ad09e83faed7828bb1278f367d0f03befdc0d04c3"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P05.svg",
+        "figure": 32,
+        "allowed": true,
+        "before": "0ba09773878e1dab5b4e37cfbea1c6cd72afb2abf9c34e604ec24461a3cc2955",
+        "after": "9dbf8d76563c296c6f8a06a39ffdb89b6564503c93c80bbcf8fa4f5e903080da"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P06.png",
+        "figure": 32,
+        "allowed": true,
+        "before": "d918942c7c9b1d8850b7835d46053f0746e8751e2f97496fab5325a2d89068ac",
+        "after": "9cbdf6ad0b189aef381c9815e4e1fe56e43a88e6cf0b7eaa384ca9833a6d2cbd"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P06.svg",
+        "figure": 32,
+        "allowed": true,
+        "before": "2d0977fb0f1da4f03c2bdf312d9e5e879a2c891064ef05d09584fac7c7d25ef1",
+        "after": "131905ab89a95ac535358e82ef073ae8871352252f41dcd362d4ddcd489dd554"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P07.png",
+        "figure": 32,
+        "allowed": true,
+        "before": "a666b282e8b1fb845bb2779e9eb53a61f9a16f53942f19849525ae98b857b358",
+        "after": "6fd14e6e746e425a8a3166b895f72f348db0db0162466a6fced2d934a419af04"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P07.svg",
+        "figure": 32,
+        "allowed": true,
+        "before": "6de78e09303b3906b07d7b5436d6e80de97f1c76ed9f740f594742937cf79fa1",
+        "after": "d05fb45161240ba79acddb3ec5f1df0cb2524b36076aba03048a517eba6fbaaf"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P08.png",
+        "figure": 32,
+        "allowed": true,
+        "before": "9d855258aa9a10c218c0a34c555128ba2b07c06941d4423a8e4d5a040433e873",
+        "after": "4f35ae6d43cd55bad0af60e413f1c06d66a2bb9d02cfb6511ef2c38404e666da"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P08.svg",
+        "figure": 32,
+        "allowed": true,
+        "before": "3a7cd276316a9cca5e983e0da5e8da418f71d813bf402ecb193af9e50b4dafd9",
+        "after": "8bb6e209e1546548203e914e83fe8eac46b92d4722b5b099ea76aa406fb770ba"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P09.png",
+        "figure": 32,
+        "allowed": true,
+        "before": "f0359a79b58fd7ea5c1c35a5297b14a3dbf580cec3d9e74a23b537581740ed11",
+        "after": "63c71637a000f16539e650fabe120a52379ba26c43428e05e4b25f843a7be881"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P10.png",
+        "figure": 32,
+        "allowed": true,
+        "before": "597a54839c9954ff7da2c7f61f2b90dcf56ab8af7cdffb6ec58343a692964950",
+        "after": "2438dd2a346e32dc2b1ea28bbcb4cf65262b2f7c2713413aa7b6e59361ba5944"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure33_ResBiomarker_Biogeochemical_cycles_zscore_heatmap.pdf",
+        "figure": 33,
+        "allowed": true,
+        "before": "a99db45135cc718be46d701e3432cae300f2be84c083b4ea0f7a37a871df00cc",
+        "after": "cddb2c09dd559e93a9891f4acfc6b93f3fbdf5bcaa308410b85d8850550f437a"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure33_ResBiomarker_Biogeochemical_cycles_zscore_heatmap.png",
+        "figure": 33,
+        "allowed": true,
+        "before": "1341045183dc6acf1506cca58baea222d30fd2165e55027eda87e6d1c865c5e4",
+        "after": "d3356a34a49d2525ca56bb73e096ac3832320cb707e000792ee67a00b3c12190"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure33_ResBiomarker_Biogeochemical_cycles_zscore_heatmap.svg",
+        "figure": 33,
+        "allowed": true,
+        "before": "5735577db3bb60c4e852bfd2be6427a31f40eb641981fb14af70ba8ffd967462",
+        "after": "0608c411fdbcb27cfda54ff814daca636be6dcd004e23a7eceaa4be720a1e9ff"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure33_ResBiomarker_Biogeochemical_cycles_zscore_heatmap_P01.png",
+        "figure": 33,
+        "allowed": true,
+        "before": "1341045183dc6acf1506cca58baea222d30fd2165e55027eda87e6d1c865c5e4",
+        "after": "79ba1e7cc96eb3747a608bf724d5c7d07b2a72bbda3925e07845d5da1f62c13e"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure33_ResBiomarker_Biogeochemical_cycles_zscore_heatmap_P01.svg",
+        "figure": 33,
+        "allowed": true,
+        "before": "5735577db3bb60c4e852bfd2be6427a31f40eb641981fb14af70ba8ffd967462",
+        "after": "27b8831db2e09d52ccc9adefca4185d032e6897382c08d1e63304f8e9b902ea8"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure33_ResBiomarker_Biogeochemical_cycles_zscore_heatmap_P02.png",
+        "figure": 33,
+        "allowed": true,
+        "before": "c5e0d8002f0d7e7aa8e807515d8a0c771661648d5308c8bb0977b141033555e5",
+        "after": "c49e7b3da181cdc66d097669d519810c0943c8ae0be5f65d7ac2891ed8787e42"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure33_ResBiomarker_Biogeochemical_cycles_zscore_heatmap_P02.svg",
+        "figure": 33,
+        "allowed": true,
+        "before": "488c1b1c87caeaa21c96104cc5e4e0aba79685ec3c7c8c3e55b8a215dbfd3c8b",
+        "after": "e1cbf574c5a7f07d15ef38ef22e1ea98331396aa13785ff895bd7487dad1b2d8"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure33_ResBiomarker_Biogeochemical_cycles_zscore_heatmap_P03.png",
+        "figure": 33,
+        "allowed": true,
+        "before": "332f06c56f2c3c3bc3e352ed2b1c8675e4c459474948c1f450417e935a6981ed",
+        "after": "008d2ae4ebe82f719a00c8328eabbc6442afd4326170bcbd98b409d8d6c58651"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure33_ResBiomarker_Biogeochemical_cycles_zscore_heatmap_P03.svg",
+        "figure": 33,
+        "allowed": true,
+        "before": "004f3436274c8ddb1393122f3afe73af6baf0dbbb527f61b0ed672dc25e83f61",
+        "after": "4c6b7796c7260cb2605d9c570c546f24a181f70e710e199595a31c63ab8357cc"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure33_ResBiomarker_Biogeochemical_cycles_zscore_heatmap_P04.png",
+        "figure": 33,
+        "allowed": true,
+        "before": "5f3abede84ee6965449790234551f3e918a5092a9110d5c3719831845752704c",
+        "after": "ce43c5af831110774032316d87288fc9ad03c775c7f28fb41f114323b4d991f5"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure33_ResBiomarker_Biogeochemical_cycles_zscore_heatmap_P04.svg",
+        "figure": 33,
+        "allowed": true,
+        "before": "782a4c3e0ecebda5eba2a9a4d22049bb572e33ff5c0ff501110a86fd35621975",
+        "after": "bd9997c004fafb3a6a6702d5e79dafbe2b8d90ed59eb8379a8262df5c8287820"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure33_ResBiomarker_Biogeochemical_cycles_zscore_heatmap_P05.png",
+        "figure": 33,
+        "allowed": true,
+        "before": "f00bb586ce4e8e4b999e9cc1ed9a52fe1733ae43a092f9cf2b6f2ab57f021bda",
+        "after": "95435719ae7a0eb6a6f1c560ce41a0508612b76e03ca0bf4b55e90c0aa137aba"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure33_ResBiomarker_Biogeochemical_cycles_zscore_heatmap_P05.svg",
+        "figure": 33,
+        "allowed": true,
+        "before": "b0ba7b4fe79745a7e9d31c15c1b34c798b813d20f8f65fe07ff391a5bd6dd5da",
+        "after": "3403f5e40c84d14b3e72892249369dc82cdffa154c071776e8e1216c2262d243"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure33_ResBiomarker_Biogeochemical_cycles_zscore_heatmap_P06.png",
+        "figure": 33,
+        "allowed": true,
+        "before": "4ee97a23b871356fc268a9c10f44949fc72e4223a6382e22773a36129f2adb67",
+        "after": "499a2df8453aac3af4e1e26e42829eb30a1ca4a5cc691c86b8938881ab405402"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure33_ResBiomarker_Biogeochemical_cycles_zscore_heatmap_P06.svg",
+        "figure": 33,
+        "allowed": true,
+        "before": "03c42a8263425eb077fc956f8e0ba3eaee6eaa0429a43733291d08eaf7c76ec5",
+        "after": "7eeb26d276b5408e32a4427372acbab2e1c6375718bc94cafe24d6a4164f54ae"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure33_ResBiomarker_Biogeochemical_cycles_zscore_heatmap_P07.png",
+        "figure": 33,
+        "allowed": true,
+        "before": "74b1b624d3e7c4f2de852fe6b334ff360fea8504fff306034db0583282eaa2c0",
+        "after": "3dfe96a1c27ef85473ff42262b63c43e4cd50f6bd2365e366b2b81170736c953"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure33_ResBiomarker_Biogeochemical_cycles_zscore_heatmap_P07.svg",
+        "figure": 33,
+        "allowed": true,
+        "before": "997867d72bd4f5ad07389bbc2922c07be87ca899b2ce42028b017183f6f49105",
+        "after": "9ec50daf4f6c0135b7177001be705c0f44ed1c7e988c055c6692c8e8ab3493c4"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure33_ResBiomarker_Biogeochemical_cycles_zscore_heatmap_P08.png",
+        "figure": 33,
+        "allowed": true,
+        "before": "aafd5c9260bd71a2eb0cb5d54d65beef01da369886123aa0838193260be5956b",
+        "after": "a94aafc9d974094a1b3fc3bf520a2328ebf70e9e202fc972aa75f3c671e70b33"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure33_ResBiomarker_Biogeochemical_cycles_zscore_heatmap_P08.svg",
+        "figure": 33,
+        "allowed": true,
+        "before": "9fe8acd6eed925a117d81c816a78a759158593caef271367d0a670abd072b4f9",
+        "after": "c9a75317f65a844f066dc054558121aa35e11704dfa4537f779b488e834f227c"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure33_ResBiomarker_Biogeochemical_cycles_zscore_heatmap_P09.png",
+        "figure": 33,
+        "allowed": true,
+        "before": "5e2a784c42f9372e46c49a8542d3698c3b681a00365c2e57946bd300a28c135e",
+        "after": "215f84e7943f32e1aa0fbaddca78d239746579934d4fa485a6286f166ad71565"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure33_ResBiomarker_Biogeochemical_cycles_zscore_heatmap_P09.svg",
+        "figure": 33,
+        "allowed": true,
+        "before": "3643e7dbf99cb3513df2c6946f2929f4b24088a2663766dfd6501b2490e7eb28",
+        "after": "020418e2422c63740293621d681fecdcb8823c2d59158519ea7759730d5df2f5"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure33_ResBiomarker_Biogeochemical_cycles_zscore_heatmap_P10.png",
+        "figure": 33,
+        "allowed": true,
+        "before": "3e83bda3ccd0c5996d8e514548835bea420d7cd7dd8102d6ef89f3137e63dee4",
+        "after": "7ae9108acf75a2375dd0171b70cd5c8ed7a26e4f5836fc247a7c0ac27155c5af"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure33_ResBiomarker_Biogeochemical_cycles_zscore_heatmap_P10.svg",
+        "figure": 33,
+        "allowed": true,
+        "before": "2d42710191c6b29ed0da7a67e90db20f28bbeef7b02f7406d122d14bb07a783f",
+        "after": "1facd22502f42d3f687000f1843918f01902bea52e96facc12ef9876d951a51a"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure37_MAG_KEGG_module_completeness_heatmap_species_MAGnumber_KEMET_style_3state.pdf",
+        "figure": 37,
+        "allowed": true,
+        "before": "7def014d628b37405f093286cd239cbf4460c6e061633afd2e8942d356ef5c87",
+        "after": "e3ab12d6e8f8bc28c12c352b39eb309dccfae13b70ecd141c937b3e8ef0bc086"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure37_MAG_KEGG_module_completeness_heatmap_species_MAGnumber_KEMET_style_3state.png",
+        "figure": 37,
+        "allowed": true,
+        "before": "0787db2fa1168db67d367cca5d6be961df218560efb3909b5d96141c2c7b51cb",
+        "after": "9a8764fa55b4919b152a93bd813c63080b7234c06b90673faff36eb645ff9c5f"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure37_MAG_KEGG_module_completeness_heatmap_species_MAGnumber_KEMET_style_3state.svg",
+        "figure": 37,
+        "allowed": true,
+        "before": "25d3e77ec80765302d4fad4fec9a9a9e66aa28d29b62206d71685868d297efdd",
+        "after": "5c104dd4b662548ee5e2bea0bb11154df5c5d8324215f3f59e491eaa6db3ebd6"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure37_MAG_KEGG_module_completeness_heatmap_species_MAGnumber_KEMET_style_3state_P001.pdf",
+        "figure": 37,
+        "allowed": true,
+        "before": "7def014d628b37405f093286cd239cbf4460c6e061633afd2e8942d356ef5c87",
+        "after": "4cf95de5d988d5f4dfa2723783fe5ff2ff2d89d8d63c0926915690208919d936"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure37_MAG_KEGG_module_completeness_heatmap_species_MAGnumber_KEMET_style_3state_P001.png",
+        "figure": 37,
+        "allowed": true,
+        "before": "0787db2fa1168db67d367cca5d6be961df218560efb3909b5d96141c2c7b51cb",
+        "after": "f1382472168a111094e3a3f69941725ad3edbcb21a7fa3265e7cf1230111c83f"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure37_MAG_KEGG_module_completeness_heatmap_species_MAGnumber_KEMET_style_3state_P001.svg",
+        "figure": 37,
+        "allowed": true,
+        "before": "25d3e77ec80765302d4fad4fec9a9a9e66aa28d29b62206d71685868d297efdd",
+        "after": "8bfbb109933b5a89338a686a3230df83551398d18b916d20dd40a4472aef33c0"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure37_MAG_KEGG_module_completeness_heatmap_species_MAGnumber_KEMET_style_3state_multipage.pdf",
+        "figure": 37,
+        "allowed": true,
+        "before": "40f19825df05cc9207bd37bbaf0211ad3efe02c1241462592187e23c8a071805",
+        "after": "e3ab12d6e8f8bc28c12c352b39eb309dccfae13b70ecd141c937b3e8ef0bc086"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure40_ST8_external_iron_rich_module_completeness_KEMET_style_3state_heatmap.pdf",
+        "figure": 40,
+        "allowed": true,
+        "before": "a2bb8c662c1648fd765cbbcd89cfd605a55ab9fd8ff192552ce62acf260e465f",
+        "after": "515f2a4eb40d02aadde127a0aa20dc28d19d38e5f111c33ccc27137cb5657087"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure40_ST8_external_iron_rich_module_completeness_KEMET_style_3state_heatmap.png",
+        "figure": 40,
+        "allowed": true,
+        "before": "c75aeba2ccd16866ac7c5f7d5b788553227d6e7b9d3ce09f2a8084c0a6bc3a56",
+        "after": "971547ab40dbabb3b0552dbb1a41212eedfcc9a27f927dc120457dce21c03778"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure40_ST8_external_iron_rich_module_completeness_KEMET_style_3state_heatmap.svg",
+        "figure": 40,
+        "allowed": true,
+        "before": "e2429dbe9da552af06c11a27f014dfc7c479cb8dcee9ed035e23badf6b56760c",
+        "after": "b5edbf84db566b0596752d780f59360dfa8b3e34da0a96b7b63760a7c0e02799"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure40_ST8_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P001.pdf",
+        "figure": 40,
+        "allowed": true,
+        "before": "a2bb8c662c1648fd765cbbcd89cfd605a55ab9fd8ff192552ce62acf260e465f",
+        "after": "593a7cde0d3bc2b8f1e2ce64602da948f0184fa44bf96e9627b647ae7308210e"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure40_ST8_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P001.png",
+        "figure": 40,
+        "allowed": true,
+        "before": "c75aeba2ccd16866ac7c5f7d5b788553227d6e7b9d3ce09f2a8084c0a6bc3a56",
+        "after": "67d2fa37fb903dfc1bf4d33a84458b154375e6e3646a888e4bb623e77e9fee38"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure40_ST8_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P001.svg",
+        "figure": 40,
+        "allowed": true,
+        "before": "e2429dbe9da552af06c11a27f014dfc7c479cb8dcee9ed035e23badf6b56760c",
+        "after": "229a9e33e5ef1defaa3c76c21e41e7e39766d38854d76a1b47897f330fc219ca"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure40_ST8_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P002.pdf",
+        "figure": 40,
+        "allowed": true,
+        "before": "74e26ee7c26e810507f960848e9c2b025454acdd2ae0c1d52e7fa37ab9f0a323",
+        "after": "6c9f5205205cf0b8617327e3c2119b1e7b176975b2d694d5ac0b6cbc1299ef81"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure40_ST8_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P002.png",
+        "figure": 40,
+        "allowed": true,
+        "before": "91f5214a10e5082b344d40cdd72723358e4f018d74197fc80f39ccfae64eb69b",
+        "after": "429ef05950540d3de082fb086e6714c5f55bcff0160e779010b0816b0b22895b"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure40_ST8_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P002.svg",
+        "figure": 40,
+        "allowed": true,
+        "before": "daf17acc07fee2a11ebe01906ddd81f414f824f5c21a265884adf9e69629ffb1",
+        "after": "a52d879450dac05a537a15a833d1e54316dd6f7d8fc3a470eab67699f756bc21"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure40_ST8_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P003.pdf",
+        "figure": 40,
+        "allowed": true,
+        "before": "326b10b99f8ef49f6fb96c147e84e932147b8916ae28cd6d2ff8c42a5b3ac224",
+        "after": "a4896d1a582875815a9b43f7d1d0673f8ea4def9034bb0ffec6adc86126fcf13"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure40_ST8_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P003.png",
+        "figure": 40,
+        "allowed": true,
+        "before": "7e1475d36bedfadbd6b22f5447480cb46cc2371614d7e55a6a28d42b84a0fc6d",
+        "after": "18b3d0cfb71cdd2401871d9a915334452dd29e40d1b9a83d72e27041a8eabfee"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure40_ST8_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P003.svg",
+        "figure": 40,
+        "allowed": true,
+        "before": "f5aec54ebb5ac5c1a9af3a6bcde33fe14a4db5b027320e89d863f3796020e00b",
+        "after": "3acc32b0e34b0c203745959ddd93218afcd65e1c8c3c445be37a56bd6871e95f"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure40_ST8_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P004.pdf",
+        "figure": 40,
+        "allowed": true,
+        "before": "bd073d22bbce7a87369880e2803aaa2cd8d8ceabcbe58a62382ea45528e082c9",
+        "after": "c7a6fbcd185eff086d56cfebd95a7e8a410addaab51922837bde7874342abdd4"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure40_ST8_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P004.png",
+        "figure": 40,
+        "allowed": true,
+        "before": "a8168cfaff9a49a460eb2379afa64bf4c32d10cbac52a1e06f9628d4db95acf4",
+        "after": "d4bd15a2f86ce013b6c7382e151f17bc6cd4f0ff85d496fa08540583b2fd2396"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure40_ST8_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P004.svg",
+        "figure": 40,
+        "allowed": true,
+        "before": "470fa40f41af67669e4ae3eb70fd6d12efc9c05acd018bccede5e88f8435de90",
+        "after": "47ed7d57c4381459961a1e0d1ee93cd9971694b390be9b370d4c0a837cef7951"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure40_ST8_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_multipage.pdf",
+        "figure": 40,
+        "allowed": true,
+        "before": "49590c5f7424f87d103a8177881ba936c1c6c408eab8a3a7ed70139d70ab217e",
+        "after": "515f2a4eb40d02aadde127a0aa20dc28d19d38e5f111c33ccc27137cb5657087"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure4_alpha_diversity_CDS_32999.pdf",
+        "figure": 4,
+        "allowed": true,
+        "before": "2034184efe63d0551aa6bf0e12bd582b4b44211add2babbe77c09653f4bf954e",
+        "after": "987275e62c1be0a10bf6cb0c26d8a3054e2cfa1ca7c21339dd669b288e6cb5f9"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure4_alpha_diversity_CDS_32999.png",
+        "figure": 4,
+        "allowed": true,
+        "before": "37ce88a7ba80be0a5509de492862f012af022b06d81be21b8dd365004b82be0f",
+        "after": "a9da7db35146af4046cd1a7302cdf6bbe6af27f16e24da71f196bb1cd1baee0b"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure4_alpha_diversity_CDS_32999.svg",
+        "figure": 4,
+        "allowed": true,
+        "before": "8a472bf4cd18b29cac46d0cc58cab895cdd1e7963463c7e2c99197d9830be47c",
+        "after": "cb4ef1fee713b9c094899894472e04d13b1d52706498a1aab2c14036607a2b63"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure51_Taxonomy_Bacteria_Order_individual_samples_barplot_100pct.pdf",
+        "figure": 51,
+        "allowed": true,
+        "before": "fa3766cd43c724638f80a9a7313699edf5b037b637934ccafbf52d80af1e33aa",
+        "after": "e55ddbf29c33ec68885f04d5d73cde90368ea7668a13c3aae480d14314d1db96"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure51_Taxonomy_Bacteria_Order_individual_samples_barplot_100pct.png",
+        "figure": 51,
+        "allowed": true,
+        "before": "e1acc11b728b5bdb8cbb531a68e1d906c0382b9bad51bd9896ea833599793d0d",
+        "after": "138a930e4b8d3273a06c30f67c505ac2b7752f4d8fe62797dcaf790ed34f2003"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure51_Taxonomy_Bacteria_Order_individual_samples_barplot_100pct.svg",
+        "figure": 51,
+        "allowed": true,
+        "before": "f19bf76a666f6ef4ac2dfd54cb20a4562e30a84f5b8e6079fa348c1d9bf55616",
+        "after": "2685f2e72ccc6f75e366652bdd15b8615c7fb753afe38f66df7daa45a0a4da87"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure53_Taxonomy_Archaea_Order_individual_samples_barplot_100pct.pdf",
+        "figure": 53,
+        "allowed": true,
+        "before": "1693c6a614fe3dfbcf13aaeb0f4b84abc6bbd52bdd4c3cff079e987fbaa5eccc",
+        "after": "d278d2f345edb24bf7002003b157bd4f0798df7ee5866c1d317a00c6c9c43580"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure53_Taxonomy_Archaea_Order_individual_samples_barplot_100pct.png",
+        "figure": 53,
+        "allowed": true,
+        "before": "3d5239f0d717f085f9f84b2a4b77179d2158b5342b6b83fb1b4ce8f7b49da98a",
+        "after": "a070811c3d8de5cb0409b3404a723123a0b91e5c7ea9b525c9528eb5fac0947c"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure53_Taxonomy_Archaea_Order_individual_samples_barplot_100pct.svg",
+        "figure": 53,
+        "allowed": true,
+        "before": "bf4490bd96247958b6310286cef7a2d99818c35d89f38277467130745cbf9b3a",
+        "after": "9e4af5d1a48cd62e98a38b4ac709765643f63d91d3ba0ee2cf57b74be1800e87"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure55_Taxonomy_Bacteria_Family_individual_samples_barplot_100pct.pdf",
+        "figure": 55,
+        "allowed": true,
+        "before": "449108b6cb184bd6d4b32d16865d930692a737075d62ae2ac852d1b6e41a9a69",
+        "after": "e508e93236c62fc641d71d2adbb8ecdce841ce4d3cca6914bbc0b5b4e71b666b"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure55_Taxonomy_Bacteria_Family_individual_samples_barplot_100pct.png",
+        "figure": 55,
+        "allowed": true,
+        "before": "e470dd33852a731de8636964444e88f58dfb7f5c2ddacadfc95a1b9b7e0e905d",
+        "after": "dd8de3050e61d571e3ffce3136dce36d4baf8dce344861effed7739d9592558a"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure55_Taxonomy_Bacteria_Family_individual_samples_barplot_100pct.svg",
+        "figure": 55,
+        "allowed": true,
+        "before": "931ff807fdd461fbeaaec2999df510936b147ccbc1ad1208433151537dae3383",
+        "after": "efcd7811a889945fc07445e28a9b97523f540c960cc858ad639ca6b072fdb1c1"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure57_Taxonomy_Archaea_Family_individual_samples_barplot_100pct.pdf",
+        "figure": 57,
+        "allowed": true,
+        "before": "3164b13e466fe85d0bcecb3a9f90fff06772fd1b68b55813b1791cda5f6089f1",
+        "after": "3c8bd4ff12f742763c255879febcf946637521127a076595e128e4c4e393544d"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure57_Taxonomy_Archaea_Family_individual_samples_barplot_100pct.png",
+        "figure": 57,
+        "allowed": true,
+        "before": "36c1b94e40510d88bba69f992bbe5d9b494e2fe4bfa8c9c701c0a6125a10f3fa",
+        "after": "acf1bb2cc797ed037d0d49d6161076f7284bc2ef8f95129c868464192de52ecd"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure57_Taxonomy_Archaea_Family_individual_samples_barplot_100pct.svg",
+        "figure": 57,
+        "allowed": true,
+        "before": "58a810f75330342cd046fff46acfbf448afd1c2331fd9eaab2a7f522c0d857bd",
+        "after": "c89da876ac06d340437f3af174f336e4eaeeac33b26e01ef5f3210ba64a28c8c"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure61_Taxonomy_Archaea_Genus_individual_samples_barplot_100pct.pdf",
+        "figure": 61,
+        "allowed": true,
+        "before": "2e3fa77e8c50e596cade48d3c1c150e76e46f3a7e6b92a37988ae80c1d473222",
+        "after": "b8fe731f38b2df2f27b0591a251c8576cb3c814f60cf075756ff0571cce00194"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure61_Taxonomy_Archaea_Genus_individual_samples_barplot_100pct.png",
+        "figure": 61,
+        "allowed": true,
+        "before": "b31602dfacd19fbffc7f2156debe44df5a36251f05f92ab425038c7825f3f803",
+        "after": "fca869310fc041fcd6a7e58f8de91ea1388e59a44c3676ed0fbbb0851ec19755"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure61_Taxonomy_Archaea_Genus_individual_samples_barplot_100pct.svg",
+        "figure": 61,
+        "allowed": true,
+        "before": "6e7edc1b560f1ac5efe4f354136fc56501953ebe11d925cdbd378774e95a3c7c",
+        "after": "18c2d8482822697a5a590c4bab53ea059c89757704aea0f6828f258aad47fdba"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure63_Taxonomy_Bacteria_Species_individual_samples_barplot_100pct.pdf",
+        "figure": 63,
+        "allowed": true,
+        "before": "fce4b6a137b3b7234444431f5483ae2b6f5ffb2f4dd9a4cdba514ff863d2c292",
+        "after": "5227d037075616380a622d2bf3523c4cc971f80d86c523ac293dee09bf7b4147"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure63_Taxonomy_Bacteria_Species_individual_samples_barplot_100pct.png",
+        "figure": 63,
+        "allowed": true,
+        "before": "84607d318f7091d61ff97d3d83ffb007e72687795e7d4fc1353d2f7d53fc3ee4",
+        "after": "ac3b2d26e624d9a0becb61a5ae8516e9fe658fa046087302edd3c3c9c239a5eb"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure63_Taxonomy_Bacteria_Species_individual_samples_barplot_100pct.svg",
+        "figure": 63,
+        "allowed": true,
+        "before": "560cf6790fa40863081783daf1f8733b27ed72743ac7697cc0b0bef2dc78b5ad",
+        "after": "607c9baeccacc81205d9b6910ad6865e83796078cd92eae9e2acbb208e14fe0b"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure65_Taxonomy_Archaea_Species_individual_samples_barplot_100pct.pdf",
+        "figure": 65,
+        "allowed": true,
+        "before": "0b9fb77043e846e20bc11e4cc9bb5f86617a4dc01ea5fbf1a6829888a0b9f1ac",
+        "after": "895a6496a471c2906ba85703f4eef55ac6e4745e2ee2095333428957d156a289"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure65_Taxonomy_Archaea_Species_individual_samples_barplot_100pct.png",
+        "figure": 65,
+        "allowed": true,
+        "before": "b7d8852787186f53328c02d1b2ac3a28da87bd04d42a93703ecbaf22690b8962",
+        "after": "6edd75c751fe6e2f5b8ccbbd49c9bccc7d78c375bba79756a5c3585e55f2030c"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure65_Taxonomy_Archaea_Species_individual_samples_barplot_100pct.svg",
+        "figure": 65,
+        "allowed": true,
+        "before": "8bf78a1b5da2d70ab3dc2a10ff3b2f4e67cd64133ed85bef4686d06933f49668",
+        "after": "86340260c7ac80002e2de00a5dec33e3a03c51584f8c9cdc8881d203d9e4f313"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure67_lagoon_plus_external_iron_rich_module_completeness_KEMET_style_3state_heatmap.pdf",
+        "figure": 67,
+        "allowed": true,
+        "before": "17ae57ee7458b2147b7684002656534f7d737a05fedd41cedebbf106c1043771",
+        "after": "c5052dc5753e632f953e2e4c8cdf55e6aa022d7f69542be679ad2ed6281d1868"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure67_lagoon_plus_external_iron_rich_module_completeness_KEMET_style_3state_heatmap.png",
+        "figure": 67,
+        "allowed": true,
+        "before": "8107f5c4cbd0a9c9d9e863ee1b74090e2444f5f99897ad6f2e6681d33b0a9cc7",
+        "after": "36a71ddbce45f4ea5dce5cad9459fde06ce71601ded1044fca621d7317a10fa3"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure67_lagoon_plus_external_iron_rich_module_completeness_KEMET_style_3state_heatmap.svg",
+        "figure": 67,
+        "allowed": true,
+        "before": "7bfeafddecfc20cd756ecc5ca6d4102672971c46661ded8c82886ae1dd2c562d",
+        "after": "0c9962d3fa4cc5a4597f84d150befeaf1be9d2e16afbe70609078c7dd619f2f4"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure67_lagoon_plus_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P001.pdf",
+        "figure": 67,
+        "allowed": true,
+        "before": "17ae57ee7458b2147b7684002656534f7d737a05fedd41cedebbf106c1043771",
+        "after": "8c45d0a44121e28e9a817cc21ff51092609eda6fef41ac8410f6b2db097a0e05"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure67_lagoon_plus_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P001.png",
+        "figure": 67,
+        "allowed": true,
+        "before": "8107f5c4cbd0a9c9d9e863ee1b74090e2444f5f99897ad6f2e6681d33b0a9cc7",
+        "after": "c86b3549837aab5ff1af94a3143db1e67c41c2472b2aecb8e6b34ea1be2b86a2"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure67_lagoon_plus_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P001.svg",
+        "figure": 67,
+        "allowed": true,
+        "before": "7bfeafddecfc20cd756ecc5ca6d4102672971c46661ded8c82886ae1dd2c562d",
+        "after": "629963fcd5571672c284a8d05102765aa9c20ba675ea5f8ade7ad5e3292d0c99"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure67_lagoon_plus_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P002.pdf",
+        "figure": 67,
+        "allowed": true,
+        "before": "0eb8a547c148a9c48b8c3d2dd41640e8105c2afac22439676588123ae42b2464",
+        "after": "096985fdda4e95edb63e756cc35d4c548c7a1c8534f888e4ea0be2072edacdaa"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure67_lagoon_plus_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P002.png",
+        "figure": 67,
+        "allowed": true,
+        "before": "0e25df8c6c91f88b74ceea066437f0dec93abdcff68d89b103f03f752c428dc9",
+        "after": "b507ab8aa0f815b00aae00439f262abd27f01eb20597eacfcb1f82c0e84fe4ff"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure67_lagoon_plus_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P002.svg",
+        "figure": 67,
+        "allowed": true,
+        "before": "7006cce584721427aeb8e7cfd4743d3d7b3eb138c8e9421bae446d0ce4348a3b",
+        "after": "61123f9a6812b4f3024ebc156c0cb6306f653a42811ce01d050df51a84b71345"
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure67_lagoon_plus_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_multipage.pdf",
+        "figure": 67,
+        "allowed": true,
+        "before": "e6444c5ce277ce89d5e21a2269e7df4e6c29cc9fa4196c8f9f32ad02f9810041",
+        "after": "c5052dc5753e632f953e2e4c8cdf55e6aa022d7f69542be679ad2ed6281d1868"
+      }
+    ],
+    "missing": [
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P01.pdf",
+        "figure": 32,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P02.pdf",
+        "figure": 32,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P03.pdf",
+        "figure": 32,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P04.pdf",
+        "figure": 32,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P05.pdf",
+        "figure": 32,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P06.pdf",
+        "figure": 32,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P07.pdf",
+        "figure": 32,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P08.pdf",
+        "figure": 32,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P11.png",
+        "figure": 32,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P12.png",
+        "figure": 32,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P13.png",
+        "figure": 32,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P14.png",
+        "figure": 32,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P15.png",
+        "figure": 32,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P16.png",
+        "figure": 32,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P17.png",
+        "figure": 32,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P18.png",
+        "figure": 32,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P19.png",
+        "figure": 32,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P20.png",
+        "figure": 32,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P21.png",
+        "figure": 32,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure32_ResBiomarker_Biogeochemical_cycles_raw_heatmap_P22.png",
+        "figure": 32,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure40_ST8_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P005.pdf",
+        "figure": 40,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure40_ST8_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P005.png",
+        "figure": 40,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure40_ST8_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P005.svg",
+        "figure": 40,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure40_ST8_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P006.pdf",
+        "figure": 40,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure40_ST8_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P006.png",
+        "figure": 40,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure40_ST8_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P006.svg",
+        "figure": 40,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure40_ST8_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P007.pdf",
+        "figure": 40,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure40_ST8_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P007.png",
+        "figure": 40,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure40_ST8_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P007.svg",
+        "figure": 40,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure40_ST8_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P008.pdf",
+        "figure": 40,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure40_ST8_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P008.png",
+        "figure": 40,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure40_ST8_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P008.svg",
+        "figure": 40,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure67_lagoon_plus_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P003.pdf",
+        "figure": 67,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure67_lagoon_plus_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P003.png",
+        "figure": 67,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure67_lagoon_plus_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P003.svg",
+        "figure": 67,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure67_lagoon_plus_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P004.pdf",
+        "figure": 67,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure67_lagoon_plus_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P004.png",
+        "figure": 67,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure67_lagoon_plus_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P004.svg",
+        "figure": 67,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure67_lagoon_plus_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P005.pdf",
+        "figure": 67,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure67_lagoon_plus_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P005.png",
+        "figure": 67,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure67_lagoon_plus_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P005.svg",
+        "figure": 67,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure67_lagoon_plus_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P006.pdf",
+        "figure": 67,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure67_lagoon_plus_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P006.png",
+        "figure": 67,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure67_lagoon_plus_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P006.svg",
+        "figure": 67,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure67_lagoon_plus_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P007.pdf",
+        "figure": 67,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure67_lagoon_plus_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P007.png",
+        "figure": 67,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure67_lagoon_plus_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P007.svg",
+        "figure": 67,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure67_lagoon_plus_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P008.pdf",
+        "figure": 67,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure67_lagoon_plus_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P008.png",
+        "figure": 67,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure67_lagoon_plus_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P008.svg",
+        "figure": 67,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure67_lagoon_plus_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P009.pdf",
+        "figure": 67,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure67_lagoon_plus_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P009.png",
+        "figure": 67,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure67_lagoon_plus_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P009.svg",
+        "figure": 67,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure67_lagoon_plus_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P010.pdf",
+        "figure": 67,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure67_lagoon_plus_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P010.png",
+        "figure": 67,
+        "allowed": true
+      },
+      {
+        "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/03_Supplementary_Figures/SupplementaryFigure67_lagoon_plus_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_P010.svg",
+        "figure": 67,
+        "allowed": true
+      }
+    ],
+    "unexpected_changed": [],
+    "unexpected_missing": []
+  },
+  "exact_integrity": {
+    "module_source_matrices.sha256": {
+      "passed": true,
+      "details": [
+        {
+          "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/data/final_kegg_st8_update/Combined_lagoon_plus_external_iron_rich_module_completeness_SCORE_3state.csv",
+          "exists": true,
+          "expected": "097bf79b7c830bf309d1acf4f253f91d94a5cd39415b4e3106f6e33607ad4433",
+          "actual": "097bf79b7c830bf309d1acf4f253f91d94a5cd39415b4e3106f6e33607ad4433",
+          "same": true
+        },
+        {
+          "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/data/final_kegg_st8_update/Combined_lagoon_plus_external_iron_rich_module_completeness_STATUS_3state.csv",
+          "exists": true,
+          "expected": "5d6a050924cce8fe97347fe3fb8c0227eb1bf4a2d198771d9e2f2058f45e070a",
+          "actual": "5d6a050924cce8fe97347fe3fb8c0227eb1bf4a2d198771d9e2f2058f45e070a",
+          "same": true
+        },
+        {
+          "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/data/final_kegg_st8_update/FINAL_KEGG_ST8_UPDATE_REPORT.json",
+          "exists": true,
+          "expected": "38f58e54b06d778f9df0d97c302b2432bad9702a002f3883533ad71883db9a67",
+          "actual": "38f58e54b06d778f9df0d97c302b2432bad9702a002f3883533ad71883db9a67",
+          "same": true
+        },
+        {
+          "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/data/final_kegg_st8_update/KEGG_module_completeness_matrix_validation_20260708.csv",
+          "exists": true,
+          "expected": "b11fc34952b4b66d53613c4fa1108dcfee6861175ed59921ca0612a1bbed0eb5",
+          "actual": "b11fc34952b4b66d53613c4fa1108dcfee6861175ed59921ca0612a1bbed0eb5",
+          "same": true
+        },
+        {
+          "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/data/final_kegg_st8_update/KEMET_lagoon_all_metagenomes_module_completeness_SCORE_3state.csv",
+          "exists": true,
+          "expected": "ff8ee059c0cda74e9678e3484a76cd07d5f42c824f9d5fea84609b162dff5c7e",
+          "actual": "ff8ee059c0cda74e9678e3484a76cd07d5f42c824f9d5fea84609b162dff5c7e",
+          "same": true
+        },
+        {
+          "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/data/final_kegg_st8_update/KEMET_lagoon_all_metagenomes_module_completeness_STATUS_3state.csv",
+          "exists": true,
+          "expected": "77fde99096e48ac1ed8f10d6dd0cc24f3d367b66e8f9c1c1ed4187a97200ac11",
+          "actual": "77fde99096e48ac1ed8f10d6dd0cc24f3d367b66e8f9c1c1ed4187a97200ac11",
+          "same": true
+        },
+        {
+          "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/data/final_kegg_st8_update/KEMET_module_KO_sets_extracted_from_lagoon_reportKMC.csv",
+          "exists": true,
+          "expected": "b23291508c88b91ab911dc143a0806e6c12cd9109916f8e71c2ed4af4a891479",
+          "actual": "b23291508c88b91ab911dc143a0806e6c12cd9109916f8e71c2ed4af4a891479",
+          "same": true
+        },
+        {
+          "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/data/final_kegg_st8_update/MAG_KEGG_module_completeness_SCORE_species_MAGnumber_3state.csv",
+          "exists": true,
+          "expected": "711d8a29d6c29e2edbbc55121e88a40d9cdc5f2d5976cb6149677e468e44d86d",
+          "actual": "711d8a29d6c29e2edbbc55121e88a40d9cdc5f2d5976cb6149677e468e44d86d",
+          "same": true
+        },
+        {
+          "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/data/final_kegg_st8_update/MAG_KEGG_module_completeness_STATUS_species_MAGnumber_3state.csv",
+          "exists": true,
+          "expected": "f667cdeca4462ebc12e58efaac8bc99f08bd7afebc44ae9950cafdfd77af1d6a",
+          "actual": "f667cdeca4462ebc12e58efaac8bc99f08bd7afebc44ae9950cafdfd77af1d6a",
+          "same": true
+        },
+        {
+          "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/data/final_kegg_st8_update/MAG_KEGG_module_completeness_all_modules_validation_20260708.json",
+          "exists": true,
+          "expected": "19973c73f31a67dc6fdda662969d4b241ce77ff6481e523a962f1039b3f68b41",
+          "actual": "19973c73f31a67dc6fdda662969d4b241ce77ff6481e523a962f1039b3f68b41",
+          "same": true
+        },
+        {
+          "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/data/final_kegg_st8_update/MAG_KEGG_module_completeness_display_labels_species_MAGnumber.csv",
+          "exists": true,
+          "expected": "f667cdeca4462ebc12e58efaac8bc99f08bd7afebc44ae9950cafdfd77af1d6a",
+          "actual": "f667cdeca4462ebc12e58efaac8bc99f08bd7afebc44ae9950cafdfd77af1d6a",
+          "same": true
+        },
+        {
+          "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/data/final_kegg_st8_update/ST8_external_iron_rich_module_completeness_LONG_3state_from_KO.csv",
+          "exists": true,
+          "expected": "2644bdac1909b1d68245e99da88d36b222e2dc09bd92130f690e87013f9d706d",
+          "actual": "2644bdac1909b1d68245e99da88d36b222e2dc09bd92130f690e87013f9d706d",
+          "same": true
+        },
+        {
+          "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/data/final_kegg_st8_update/ST8_external_iron_rich_module_completeness_SCORE_3state_from_KO.csv",
+          "exists": true,
+          "expected": "0daea123ad9c6b83c9ee72d9e106a090e1d34d720c25accad2ee22908cf3b32f",
+          "actual": "0daea123ad9c6b83c9ee72d9e106a090e1d34d720c25accad2ee22908cf3b32f",
+          "same": true
+        },
+        {
+          "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/data/final_kegg_st8_update/ST8_external_iron_rich_module_completeness_STATUS_3state_from_KO.csv",
+          "exists": true,
+          "expected": "a5ce171d9e44b52c1ec21b471cd3852e0e928e8953457df59db14325e94dceed",
+          "actual": "a5ce171d9e44b52c1ec21b471cd3852e0e928e8953457df59db14325e94dceed",
+          "same": true
+        },
+        {
+          "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/data/final_kegg_st8_update/ST8_external_iron_rich_module_completeness_summary_by_sample_3state.csv",
+          "exists": true,
+          "expected": "e3369e9349f020baae1281b1f103c152e662a3fa7c858c27be0f23fbf5b11eff",
+          "actual": "e3369e9349f020baae1281b1f103c152e662a3fa7c858c27be0f23fbf5b11eff",
+          "same": true
+        },
+        {
+          "path": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/data/final_kegg_st8_update/Supplementary_table_8-Other-metagenomic-Iron-rich-environment(17).xlsx",
+          "exists": true,
+          "expected": "925e9917ccdd7defb286a77ef89fd4e8d1eca7c0ec698e4c76d18f8cd8d414d3",
+          "actual": "925e9917ccdd7defb286a77ef89fd4e8d1eca7c0ec698e4c76d18f8cd8d414d3",
+          "same": true
+        }
+      ]
+    },
+    "supp_tables.sha256": {
+      "passed": true,
+      "details": [
+        {
+          "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/04_Supplementary_Tables/Supplementary_Table_1.xlsx",
+          "exists": true,
+          "expected": "cf5d57961213555d61531813c25874726e47cfe845cc64d773e9e0fb08fe3ddc",
+          "actual": "cf5d57961213555d61531813c25874726e47cfe845cc64d773e9e0fb08fe3ddc",
+          "same": true
+        },
+        {
+          "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/04_Supplementary_Tables/Supplementary_Table_10.xlsx",
+          "exists": true,
+          "expected": "7dc19af122813f3c3efeae676ce7a517d6874e308a7565fe3fe9aa612adeef0a",
+          "actual": "7dc19af122813f3c3efeae676ce7a517d6874e308a7565fe3fe9aa612adeef0a",
+          "same": true
+        },
+        {
+          "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/04_Supplementary_Tables/Supplementary_Table_11.xlsx",
+          "exists": true,
+          "expected": "5ece2dc92ebcb9d6abbcce6e9bccd029dcb22151f9637fae396fd71eeba171d0",
+          "actual": "5ece2dc92ebcb9d6abbcce6e9bccd029dcb22151f9637fae396fd71eeba171d0",
+          "same": true
+        },
+        {
+          "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/04_Supplementary_Tables/Supplementary_Table_12_external_iron_rich_environments.csv",
+          "exists": true,
+          "expected": "19574e9c2721150c7b9c99f1269d4d1f87a0329799b8192d0ff51334b402d462",
+          "actual": "19574e9c2721150c7b9c99f1269d4d1f87a0329799b8192d0ff51334b402d462",
+          "same": true
+        },
+        {
+          "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/04_Supplementary_Tables/Supplementary_Table_12_external_iron_rich_environments.xlsx",
+          "exists": true,
+          "expected": "35065f658bff446c5d4b6e0375ceeac808509737f736dc6334b504f14ea87b7a",
+          "actual": "35065f658bff446c5d4b6e0375ceeac808509737f736dc6334b504f14ea87b7a",
+          "same": true
+        },
+        {
+          "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/04_Supplementary_Tables/Supplementary_Table_13_module_completeness_display_audit.xlsx",
+          "exists": true,
+          "expected": "de36024e05da3ef3ae9c2db2f10a5b450ebbb6401efd4b45fe5ef3365d20b3fe",
+          "actual": "de36024e05da3ef3ae9c2db2f10a5b450ebbb6401efd4b45fe5ef3365d20b3fe",
+          "same": true
+        },
+        {
+          "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/04_Supplementary_Tables/Supplementary_Table_14_thematic_module_subset.xlsx",
+          "exists": true,
+          "expected": "4957758d2bd453afb22f21a7cc6b16b7062a3307d922d47b4184433ca5100ae2",
+          "actual": "4957758d2bd453afb22f21a7cc6b16b7062a3307d922d47b4184433ca5100ae2",
+          "same": true
+        },
+        {
+          "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/04_Supplementary_Tables/Supplementary_Table_2.xlsx",
+          "exists": true,
+          "expected": "f41d41604c29165db37d0a4d44446ce3959495a722a5bc801920051cc83e97c8",
+          "actual": "f41d41604c29165db37d0a4d44446ce3959495a722a5bc801920051cc83e97c8",
+          "same": true
+        },
+        {
+          "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/04_Supplementary_Tables/Supplementary_Table_3.xlsx",
+          "exists": true,
+          "expected": "d28c56a1fcb5c938256007a49518054668d2874dc1e571635b282c5e0099aef4",
+          "actual": "d28c56a1fcb5c938256007a49518054668d2874dc1e571635b282c5e0099aef4",
+          "same": true
+        },
+        {
+          "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/04_Supplementary_Tables/Supplementary_Table_4.xlsx",
+          "exists": true,
+          "expected": "fed188b8ba06e9d17f5767efa05c7ffa6b6dce87d88d6b7d53ddd6060727dea2",
+          "actual": "fed188b8ba06e9d17f5767efa05c7ffa6b6dce87d88d6b7d53ddd6060727dea2",
+          "same": true
+        },
+        {
+          "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/04_Supplementary_Tables/Supplementary_Table_5.xlsx",
+          "exists": true,
+          "expected": "9817a39a323aa75201fa3d3acdac2f8eb3952b99889934a67f1e8c664f698bee",
+          "actual": "9817a39a323aa75201fa3d3acdac2f8eb3952b99889934a67f1e8c664f698bee",
+          "same": true
+        },
+        {
+          "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/04_Supplementary_Tables/Supplementary_Table_6.xlsx",
+          "exists": true,
+          "expected": "b10a51a835b41c4bdee0ec2fd0d230f8f38536050376da71081753050af629a8",
+          "actual": "b10a51a835b41c4bdee0ec2fd0d230f8f38536050376da71081753050af629a8",
+          "same": true
+        },
+        {
+          "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/04_Supplementary_Tables/Supplementary_Table_7.xlsx",
+          "exists": true,
+          "expected": "ebeb483321a1b804d39cb9a96ec3426282115c813921131a6a027af08947f0a5",
+          "actual": "ebeb483321a1b804d39cb9a96ec3426282115c813921131a6a027af08947f0a5",
+          "same": true
+        },
+        {
+          "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/04_Supplementary_Tables/Supplementary_Table_8.xlsx",
+          "exists": true,
+          "expected": "c4fdf2fbafe8ebb412029188ddc501c1e782dd9ddbbc98acad8b79e29222bff6",
+          "actual": "c4fdf2fbafe8ebb412029188ddc501c1e782dd9ddbbc98acad8b79e29222bff6",
+          "same": true
+        },
+        {
+          "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/04_Supplementary_Tables/Supplementary_Table_9.xlsx",
+          "exists": true,
+          "expected": "eda7865986c379e6573e80b76e5b79c6e96ea6571be53ffe9e188920fb138681",
+          "actual": "eda7865986c379e6573e80b76e5b79c6e96ea6571be53ffe9e188920fb138681",
+          "same": true
+        }
+      ]
+    },
+    "main_docx.sha256": {
+      "passed": true,
+      "details": [
+        {
+          "path": "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/01_Manuscript/FINAL_SUBMISSION_FILES/ARTICLE_FINAL_ISME_SUBMISSION_CLEAN_REVISION4_ORDINATION_CORRECTED.docx",
+          "exists": true,
+          "expected": "4f250777860a844f927a62c0e38c3ecb4a968af0aef08ffe5c19d121132c8f91",
+          "actual": "4f250777860a844f927a62c0e38c3ecb4a968af0aef08ffe5c19d121132c8f91",
+          "same": true
+        }
+      ]
+    }
+  },
+  "passed": true
+}

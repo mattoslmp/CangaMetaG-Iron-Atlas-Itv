@@ -1,0 +1,25 @@
+ClusterBlast scores for NODE_29_length_15804_cov_3.045145
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg29_2	1322	1889	+		
+ctg29_3	2036	2396	+		
+ctg29_4	2397	3432	+		
+ctg29_5	3428	5504	+		
+ctg29_6	5484	5739	+		
+ctg29_7	5735	6062	+		
+ctg29_8	6226	7789	+		
+ctg29_9	7778	8570	+		
+ctg29_10	8571	9903	+		
+ctg29_11	9899	10193	+		
+ctg29_12	10196	11066	+		
+ctg29_13	11058	12936	+		
+ctg29_14	12932	13739	+		
+ctg29_15	13722	14580	+		
+ctg29_16	14588	15479	+		
+ctg29_17	15468	15795	+		
+
+
+Significant hits: 
+
+
+Details:

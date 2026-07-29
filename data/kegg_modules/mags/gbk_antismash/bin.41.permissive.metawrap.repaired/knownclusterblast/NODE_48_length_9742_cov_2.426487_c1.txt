@@ -1,0 +1,17 @@
+ClusterBlast scores for NODE_48_length_9742_cov_2.426487
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg48_1	0	759	-		
+ctg48_2	850	1732	-		
+ctg48_3	1876	2908	-		
+ctg48_4	2904	3705	-		
+ctg48_5	3737	5699	-		
+ctg48_6	5728	6898	-		
+ctg48_7	7210	8791	+		
+ctg48_8	9046	9742	-		
+
+
+Significant hits: 
+
+
+Details:

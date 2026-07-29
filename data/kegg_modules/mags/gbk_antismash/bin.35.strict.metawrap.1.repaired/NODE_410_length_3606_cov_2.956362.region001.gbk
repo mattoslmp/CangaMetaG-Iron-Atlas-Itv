@@ -1,0 +1,306 @@
+LOCUS       NODE_410_length_3606_cov_2.956362 3606 bp    DNA              UNK 01-JAN-1980
+DEFINITION  NODE_410_length_3606_cov_2.956362.
+ACCESSION   NODE_410_length_3606_cov_2
+VERSION     NODE_410_length_3606_cov_2.956362
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+COMMENT     ##antiSMASH-Data-START##
+            Version     :: 8.0.4
+            Run date    :: 2026-06-19 17:39:17
+            NOTE :: This is a single region extracted from a larger record!
+            Orig. start :: 0
+            Orig. end   :: 3606
+            ##antiSMASH-Data-END##
+FEATURES             Location/Qualifiers
+     region          1..3606
+                     /candidate_cluster_numbers="1"
+                     /contig_edge="True"
+                     /product="terpene"
+                     /region_number="1"
+                     /rules="(PT_phytoene_like or phytoene_synt or Lycopene_cycl
+                     or Lycopene_cycl_fung or T1TS or T1TS_KS or T2TS or TS_UbiA
+                     or TS_Pyr4)"
+                     /tool="antismash"
+     cand_cluster    1..3606
+                     /candidate_cluster_number="1"
+                     /contig_edge="True"
+                     /detection_rules="(PT_phytoene_like or phytoene_synt or
+                     Lycopene_cycl or Lycopene_cycl_fung or T1TS or T1TS_KS or
+                     T2TS or TS_UbiA or TS_Pyr4)"
+                     /kind="single"
+                     /product="terpene"
+                     /protoclusters="1"
+                     /tool="antismash"
+     protocluster    1..3606
+                     /aStool="rule-based-clusters"
+                     /category="terpene"
+                     /contig_edge="True"
+                     /core_location="[3122:3605](+)"
+                     /cutoff="20000"
+                     /detection_rule="(PT_phytoene_like or phytoene_synt or
+                     Lycopene_cycl or Lycopene_cycl_fung or T1TS or T1TS_KS or
+                     T2TS or TS_UbiA or TS_Pyr4)"
+                     /neighbourhood="10000"
+                     /product="terpene"
+                     /protocluster_number="1"
+                     /tool="antismash"
+     proto_core      3123..3605
+                     /aStool="rule-based-clusters"
+                     /tool="antismash"
+                     /cutoff="20000"
+                     /detection_rule="(PT_phytoene_like or phytoene_synt or
+                     Lycopene_cycl or Lycopene_cycl_fung or T1TS or T1TS_KS or
+                     T2TS or TS_UbiA or TS_Pyr4)"
+                     /neighbourhood="10000"
+                     /product="terpene"
+                     /protocluster_number="1"
+     CDS             complement(3..197)
+                     /locus_tag="ctg410_1"
+                     /transl_table=11
+                     /translation="MTETTTPATEKPPISAAARIGWAVLIVATLYVCYFSHLGAIGFVG
+                     PDEPRYAWIARDMAETGDWV"
+     CDS             292..1200
+                     /locus_tag="ctg410_2"
+                     /transl_table=11
+                     /translation="MKEWLQYAAVWLILKGLGVLPRSVARSLAAGITRILYALLPRLQK
+                     TAEVNLRIAFPDLSDRQRRAIVRGMLRNLGWMAAEFARFPKYNKGNIEGIVVLDGHENF
+                     LEAQKRGKGVLVLTGHIGAWELSSFAHALYGYPLHYMARPIENAKIDTLVNGYRCLSGN
+                     QPIFKNESARVMLKVLKDAGTIGILADQNTMPEEAVFVDFFGKAASTTTGIARVALHTD
+                     AAVVPGYVIWDDRLGKYRLRFEPPVELMRTGDPERDILENTQEFTKVLEAIIRKYPDQW
+                     IWVHGRWNTRPKGEPPLYDFS"
+     PFAM_domain     304..1161
+                     /aSDomain="Lip_A_acyltrans"
+                     /aSTool="clusterhmmer"
+                     /database="35.0"
+                     /db_xref="PF03279.16"
+                     /db_xref="GO:0016020"
+                     /db_xref="GO:0016740"
+                     /description="Bacterial lipid A biosynthesis
+                     acyltransferase"
+                     /detection="hmmscan"
+                     /domain_id="clusterhmmer_ctg410_2_0001"
+                     /evalue="1.20E-55"
+                     /gene_ontologies="GO:0016020: membrane"
+                     /gene_ontologies="GO:0016740: transferase activity"
+                     /label="ctg410_2"
+                     /locus_tag="ctg410_2"
+                     /protein_end="290"
+                     /protein_start="4"
+                     /score="188.9"
+                     /tool="antismash"
+                     /translation="LQYAAVWLILKGLGVLPRSVARSLAAGITRILYALLPRLQKTAEV
+                     NLRIAFPDLSDRQRRAIVRGMLRNLGWMAAEFARFPKYNKGNIEGIVVLDGHENFLEAQ
+                     KRGKGVLVLTGHIGAWELSSFAHALYGYPLHYMARPIENAKIDTLVNGYRCLSGNQPIF
+                     KNESARVMLKVLKDAGTIGILADQNTMPEEAVFVDFFGKAASTTTGIARVALHTDAAVV
+                     PGYVIWDDRLGKYRLRFEPPVELMRTGDPERDILENTQEFTKVLEAIIRKYPDQWIWVH
+                     GRWNT"
+     CDS             1209..2228
+                     /locus_tag="ctg410_3"
+                     /transl_table=11
+                     /translation="MKRTVKELAEAIGAKLEGDGALEIAGVAAPERAGARDLIYVESAK
+                     HTARVSASAALCVVAGESLRLPGKTVLRSAQPKVAFARAAALLLERTPIATGIHPSAIV
+                     APLARVAEGASVGPYAVIGEDTHIGAGTQIGAHSVIGAGCWIGEQCRIHPRVTLYNSVR
+                     IGHRVEIHSGAVIGADGFGYAFGEGKYWKFPQAGIVEIGDDVEIGANATIDRGSLDDTR
+                     IAEGVKLDNLVHVGHNVQIGAHTVIAAQTGISGSSVLGHHVVVGGQVGIADHCTLENHA
+                     IAGAQAGIPTGKTIREGQTVWGTPAREIGKFKEIYVWYTRLPELGARIKELESKLGGK"
+     aSDomain        1227..2192
+                     /aSDomain="TIGR01853"
+                     /aSTool="tigrfam"
+                     /description="lipid_A_lpxD: UDP-3-O-[3-hydroxymyristoyl]
+                     glucosamine N-acyltransferase LpxD"
+                     /detection="hmmscan"
+                     /domain_id="TIGRFam_ctg410_3_0001"
+                     /evalue="1.60E-99"
+                     /identifier="TIGR01853"
+                     /label="ctg410_3"
+                     /locus_tag="ctg410_3"
+                     /protein_end="328"
+                     /protein_start="6"
+                     /score="330.9"
+                     /tool="antismash"
+                     /translation="ELAEAIGAKLEGDGALEIAGVAAPERAGARDLIYVESAKHTARVS
+                     ASAALCVVAGESLRLPGKTVLRSAQPKVAFARAAALLLERTPIATGIHPSAIVAPLARV
+                     AEGASVGPYAVIGEDTHIGAGTQIGAHSVIGAGCWIGEQCRIHPRVTLYNSVRIGHRVE
+                     IHSGAVIGADGFGYAFGEGKYWKFPQAGIVEIGDDVEIGANATIDRGSLDDTRIAEGVK
+                     LDNLVHVGHNVQIGAHTVIAAQTGISGSSVLGHHVVVGGQVGIADHCTLENHAIAGAQA
+                     GIPTGKTIREGQTVWGTPAREIGKFKEIYVWYTRLPELGAR"
+     PFAM_domain     1272..1469
+                     /aSDomain="LpxD"
+                     /aSTool="clusterhmmer"
+                     /database="35.0"
+                     /db_xref="PF04613.17"
+                     /db_xref="GO:0009245"
+                     /db_xref="GO:0016747"
+                     /description="UDP-3-O-[3-hydroxymyristoyl] glucosamine
+                     N-acyltransferase, LpxD"
+                     /detection="hmmscan"
+                     /domain_id="clusterhmmer_ctg410_3_0002"
+                     /evalue="4.70E-10"
+                     /gene_ontologies="GO:0009245: lipid A biosynthetic process"
+                     /gene_ontologies="GO:0016747: acyltransferase activity,
+                     transferring groups other than amino-acyl groups"
+                     /label="ctg410_3"
+                     /locus_tag="ctg410_3"
+                     /protein_end="87"
+                     /protein_start="21"
+                     /score="39.3"
+                     /tool="antismash"
+                     /translation="LEIAGVAAPERAGARDLIYVESAKHTARVSASAALCVVAGESLRL
+                     PGKTVLRSAQPKVAFARAAAL"
+     PFAM_domain     1536..1631
+                     /aSDomain="Hexapep"
+                     /aSTool="clusterhmmer"
+                     /database="35.0"
+                     /db_xref="PF00132.27"
+                     /description="Bacterial transferase hexapeptide (six
+                     repeats)"
+                     /detection="hmmscan"
+                     /domain_id="clusterhmmer_ctg410_3_0003"
+                     /evalue="3.70E-07"
+                     /label="ctg410_3"
+                     /locus_tag="ctg410_3"
+                     /protein_end="141"
+                     /protein_start="109"
+                     /score="29.8"
+                     /tool="antismash"
+                     /translation="VAEGASVGPYAVIGEDTHIGAGTQIGAHSVIG"
+     PFAM_domain     1635..1739
+                     /aSDomain="Hexapep"
+                     /aSTool="clusterhmmer"
+                     /database="35.0"
+                     /db_xref="PF00132.27"
+                     /description="Bacterial transferase hexapeptide (six
+                     repeats)"
+                     /detection="hmmscan"
+                     /domain_id="clusterhmmer_ctg410_3_0004"
+                     /evalue="1.30E-08"
+                     /label="ctg410_3"
+                     /locus_tag="ctg410_3"
+                     /protein_end="177"
+                     /protein_start="142"
+                     /score="34.3"
+                     /tool="antismash"
+                     /translation="GCWIGEQCRIHPRVTLYNSVRIGHRVEIHSGAVIG"
+     PFAM_domain     1866..1973
+                     /aSDomain="Hexapep"
+                     /aSTool="clusterhmmer"
+                     /database="35.0"
+                     /db_xref="PF00132.27"
+                     /description="Bacterial transferase hexapeptide (six
+                     repeats)"
+                     /detection="hmmscan"
+                     /domain_id="clusterhmmer_ctg410_3_0005"
+                     /evalue="1.90E-07"
+                     /label="ctg410_3"
+                     /locus_tag="ctg410_3"
+                     /protein_end="255"
+                     /protein_start="219"
+                     /score="30.7"
+                     /tool="antismash"
+                     /translation="DTRIAEGVKLDNLVHVGHNVQIGAHTVIAAQTGISG"
+     CDS             2215..2907
+                     /locus_tag="ctg410_4"
+                     /transl_table=11
+                     /translation="MAANKKNASARWRVIVVGGHTRSIGKTQLVCDVISAFSDANWIAG
+                     KITQYGHGVCAQNGENCDCAPTEHVCALDWETHTDTGTDSARFLLAGARRSFWLRTKQG
+                     FLAEGLPLLRAALADTSPDATGELPPLIVESNSLLQFLKPSLYFAVVDLGKEDFKDSAR
+                     VALDRADAIVFRGSATSFPAASPAWTKLPSRLLREKPSVSQQEGEPLPEPLHVLVHRAL
+                     QGTGTVSL"
+     misc_feature    3025..3040
+                     /note="TFBS match to CRP, Cyclic AMP receptor protein,
+                     confidence: strong, score: 18.39"
+                     /tool="antismash"
+     CDS             3123..3605
+                     /gene_functions="biosynthetic (rule-based-clusters)
+                     terpene: T2TS"
+                     /gene_kind="biosynthetic"
+                     /locus_tag="ctg410_5"
+                     /sec_met_domain="T2TS (E-value: 4.5e-28, bitscore: 86.3,
+                     seeds: 58, tool: rule-based-clusters)"
+                     /transl_table=11
+                     /translation="MASIARMGEETPVAPAPVPWQQQDWAERLEKSIEQGTNHLLSIQS
+                     EHGYWQGELEADTTLESDYIYYLHVLDKADPQRIAKLANYVRRRQLPDGGWSIYPGGPS
+                     ELNATCKAYFALKLAGDSIDAPHMAQARETVHRLGGLEHSNSYVRFYLALVGAVGWE"
+     PFAM_domain     3219..3605
+                     /aSDomain="SQHop_cyclase_N"
+                     /aSTool="clusterhmmer"
+                     /database="35.0"
+                     /db_xref="PF13249.9"
+                     /description="Squalene-hopene cyclase N-terminal domain"
+                     /detection="hmmscan"
+                     /domain_id="clusterhmmer_ctg410_5_0006"
+                     /evalue="7.20E-47"
+                     /label="ctg410_5"
+                     /locus_tag="ctg410_5"
+                     /protein_end="161"
+                     /protein_start="32"
+                     /score="160.0"
+                     /tool="antismash"
+                     /translation="IEQGTNHLLSIQSEHGYWQGELEADTTLESDYIYYLHVLDKADPQ
+                     RIAKLANYVRRRQLPDGGWSIYPGGPSELNATCKAYFALKLAGDSIDAPHMAQARETVH
+                     RLGGLEHSNSYVRFYLALVGAVGWE"
+ORIGIN
+        1 gtgacccagt cgccggtctc ggccatatct cttgcgatcc aggcgtagcg cggttcatcc
+       61 ggccccacaa atccgatggc tccgaggtgg ctgaaatagc agacataaag agtcgcaacg
+      121 atgaggacag cccacccgat gcgggcggcg gcgctgatgg gcggcttttc ggtggcaggc
+      181 gtggttgttt cagtcacgga aatttgagtc taacatcgaa ccactatctt ccagcgccgg
+      241 acctcttgca tactgtcgcc cgatggcatt cttattccaa ttggtcccac gatgaaggaa
+      301 tggctccaat acgcggcagt atggctcatt ctgaaggggc tgggtgtgtt gccgcggtcc
+      361 gtcgcgcgaa gtctggcggc ggggatcacg cggatcctct acgccctgct gcctcgattg
+      421 cagaagaccg cagaggtgaa tctgcgaatc gcgtttccgg acttgagcga taggcagcgc
+      481 agagccatcg ttcgcggtat gctgcgcaat ctgggctgga tggccgccga attcgcccgc
+      541 tttccgaaat acaacaaggg caatatcgaa ggaatcgtcg tcctcgacgg gcacgaaaat
+      601 ttcctggaag cacaaaagcg tggcaaaggc gtgctggtcc tcaccggtca catcggcgcg
+      661 tgggaactat cctcatttgc acacgctctt tacggctacc cgctgcacta catggcacgc
+      721 ccgatcgaaa acgccaagat cgacaccttg gtcaatggct accgctgttt gtccggcaat
+      781 cagccgattt tcaagaatga gtcggcgcgc gtgatgctca aggttctgaa agacgcagga
+      841 accattggca tccttgcgga ccagaacacc atgccggaag aagcggtctt cgtggatttc
+      901 ttcggaaaag cggcgagcac gaccacggga atcgctcgcg tggcgctcca caccgatgcc
+      961 gctgtcgtgc ccgggtatgt gatttgggat gaccgcctcg gcaaatatcg cctgcgtttc
+     1021 gagccgcccg tggaattgat gcgaaccggt gacccggagc gcgacatcct cgaaaacaca
+     1081 caggaattta ccaaagtgct ggaagcaatc attcgaaaat atcctgacca gtggatctgg
+     1141 gtacacggcc gctggaatac gcggccaaaa ggcgagccgc cgctctacga tttttcgtga
+     1201 ggctgacaat gaaacgaact gtaaaagaat tggctgaggc cattggcgca aagctcgaag
+     1261 gggacggcgc tctggaaatt gccggcgtgg ccgcgccgga acgcgccgga gcgcgcgatt
+     1321 tgatttacgt cgaatccgcg aagcacaccg cgcgggtctc tgcttctgcc gcgctttgcg
+     1381 tggttgctgg cgaaagtctt cgtctgcctg gcaagacggt attgcggagc gcacagccca
+     1441 aggtggcgtt cgccagggcg gcagcgttgc tcctcgaacg cacgccgatt gcaacgggga
+     1501 ttcatcccag cgccatcgtg gctccactcg cgcgcgtcgc tgaaggcgca agcgtcggtc
+     1561 cttacgccgt gattggagaa gacacgcaca tcggcgccgg cacgcaaatc ggtgcgcatt
+     1621 ccgtgatcgg cgcgggctgc tggattggcg agcaatgccg gattcacccg cgcgtgactc
+     1681 tctacaacag cgttcgaatc ggtcatcgcg tcgagattca ttccggagcc gtgatcggcg
+     1741 ccgacggatt cggctatgcc ttcggtgaag ggaagtactg gaaatttccg caggccggga
+     1801 ttgtcgaaat tggcgatgac gtcgaaattg gcgcgaacgc cacgatcgat cgcggctcgc
+     1861 tcgacgacac gcgcatcgcc gaaggagtaa aattggataa cctggtgcat gtcgggcata
+     1921 acgtgcagat cggcgcacat acggtgattg ccgcgcagac tggaatttct ggctcgagtg
+     1981 tgctcggaca tcacgtcgtg gtcggggggc aagtgggaat cgcagaccac tgcaccctgg
+     2041 aaaaccacgc gattgccgga gcgcaggcgg ggatccccac cggcaagacg attcgcgagg
+     2101 gacaaaccgt ttggggtaca cccgcgcggg aaattggcaa gttcaaagaa atttacgtct
+     2161 ggtatacaag actcccggaa ttgggcgcgc gcatcaaaga attagagagc aaacttggcg
+     2221 gcaaataaaa agaacgcgtc cgcacgctgg cgtgtaattg tcgtcggcgg ccacacccgc
+     2281 agcatcggga agacgcaact agtgtgcgac gtgatttccg cgttttccga tgcaaactgg
+     2341 atcgccggaa agattacgca gtatgggcac ggcgtgtgcg cgcagaacgg tgaaaattgc
+     2401 gattgcgcac ccaccgaaca cgtctgcgcc ctcgactggg agacgcatac ggacacgggc
+     2461 acggatagcg cccgttttct cctggctggg gcccgccgct cgttctggct taggaccaag
+     2521 caaggatttc tcgcggaagg cctgcctcta ctgagagcgg ccctggcgga tacaagtccg
+     2581 gatgccacag gcgagctgcc cccgttaatc gtggaaagca attccttgct gcagtttctc
+     2641 aagccgagcc tctattttgc ggtcgttgat ctcggcaagg aagatttcaa ggactccgcc
+     2701 cgcgtcgcct tggaccgcgc ggatgccatt gtgtttcgtg gatcggccac ttcgtttcct
+     2761 gcggcatctc cggcctggac caagctcccc tcccgcttgc ttcgcgaaaa accctccgta
+     2821 tcacagcagg aaggagagcc cttgcccgag cctctgcatg tacttgttca tagggccctg
+     2881 caaggcacgg gaactgtttc gctttgagaa cgctcgtcgc cgctgctgca tcttagccgt
+     2941 tgaccatgag ccggaaggca gcgataattg agtagtaccg atgttactgg aactctaaca
+     3001 aatgtaccgt tcggttgcgg tgcatgtgat tggcatcacg ttggttagag gattttctgt
+     3061 ggcgcgtcgg gcgggcctgc tgaacgcgcc aagttgatct ccatgctctg gggggagcat
+     3121 tcatggcctc gatcgcccga atgggagaag agaccccggt tgcaccggcg ccagttcctt
+     3181 ggcagcagca agattgggcc gagcgcctcg aaaagtccat tgagcagggc acgaatcatc
+     3241 ttctatcgat tcaatccgag cacggctatt ggcagggcga actcgaagcc gacaccaccc
+     3301 tcgaatccga ttacatctac tacttacacg ttttagacaa ggctgatcct cagcgcatcg
+     3361 ccaaactggc caactacgtt cgccggcgtc aactgcccga tggcggttgg agcatctacc
+     3421 cgggcgggcc ttccgagctg aacgccactt gcaaagccta tttcgcacta aagttggcag
+     3481 gggactcgat tgatgcgccg catatggcgc aggcccggga aacggtccat cgccttggtg
+     3541 gcctcgagca ttccaactct tacgtccgtt tctacttggc gctggtcggc gcggtgggct
+     3601 gggaac
+//

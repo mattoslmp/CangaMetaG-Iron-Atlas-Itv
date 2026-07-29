@@ -1,0 +1,133 @@
+ClusterBlast scores for NODE_26_length_18041_cov_2.640225
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg26_5	3619	11020	-		
+ctg26_6	11009	11945	-		
+ctg26_7	12145	13432	-		
+ctg26_8	13451	13772	-		
+ctg26_9	14014	14761	+		
+ctg26_10	15034	15739	+		
+ctg26_11	15735	17439	+		
+ctg26_12	17445	17661	+		
+ctg26_13	17714	18041	+		
+
+
+Significant hits: 
+1. NZ_CP072637	Chloracidobacterium sp. 2 chromosome 2, complete sequence
+2. NZ_CP072647	Chloracidobacterium sp. MS 40/45 chromosome 2, complete sequence
+3. NZ_CP072635	Chloracidobacterium sp. D chromosome 2, complete sequence
+4. NC_016025	Chloracidobacterium thermophilum B chromosome 2, complete sequence
+5. NZ_AP023367	Anaerocolumna cellulosilytica strain SN021 chromosome, complete genome
+6. NC_008554	Syntrophobacter fumaroxidans MPOB, complete sequence
+7. NC_008554	Syntrophobacter fumaroxidans MPOB, complete sequence
+
+
+Details:
+
+>>
+1. NZ_CP072637
+Source: Chloracidobacterium sp. 2 chromosome 2, complete sequence
+Type: ranthipeptide
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 953.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg26_5	J8C03_RS15445	37	451	35.360908353609084	9.21e-133
+ctg26_7	J8C03_RS15465	53	438	95.7943925233645	1.87e-150
+ctg26_8	J8C03_RS15470	40	64	80.18867924528303	1.08e-12
+
+
+
+>>
+2. NZ_CP072647
+Source: Chloracidobacterium sp. MS 40/45 chromosome 2, complete sequence
+Type: ranthipeptide
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 937.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg26_5	J8C02_RS11845	36	440	35.27980535279806	7.9e-126
+ctg26_7	J8C02_RS11860	52	433	96.26168224299066	1.75e-148
+ctg26_8	J8C02_RS11865	40	64	80.18867924528303	1.08e-12
+
+
+
+>>
+3. NZ_CP072635
+Source: Chloracidobacterium sp. D chromosome 2, complete sequence
+Type: ranthipeptide
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 920.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg26_5	J8C01_RS11755	35	418	35.360908353609084	2.49e-118
+ctg26_7	J8C01_RS11735	53	437	95.7943925233645	7.56e-150
+ctg26_8	J8C01_RS11730	40	65	80.18867924528303	5.38e-13
+
+
+
+>>
+4. NC_016025
+Source: Chloracidobacterium thermophilum B chromosome 2, complete sequence
+Type: ranthipeptide
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 918.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg26_5	CABTHER_RS14285	35	416	35.360908353609084	9.99e-118
+ctg26_7	CABTHER_RS16285	52	437	96.26168224299066	7.56e-150
+ctg26_8	CABTHER_RS16840	41	65	80.18867924528303	7.62e-13
+
+
+
+>>
+5. NZ_AP023367
+Source: Anaerocolumna cellulosilytica strain SN021 chromosome, complete genome
+Type: RRE-containing
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 205.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg26_7	acsn021_RS20980	31	156	86.6822429906542	1.62e-41
+ctg26_8	acsn021_RS20985	37	49	73.58490566037736	8.64e-07
+
+
+
+>>
+6. NC_008554
+Source: Syntrophobacter fumaroxidans MPOB, complete sequence
+Type: RRE-containing
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 537.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg26_5	SFUM_RS21800	47	265	20.35685320356853	1.42e-69
+ctg26_7	SFUM_RS21805	41	272	83.17757009345794	5.56e-86
+
+
+
+>>
+7. NC_008554
+Source: Syntrophobacter fumaroxidans MPOB, complete sequence
+Type: RRE-containing
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 313.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg26_6	SFUM_RS20665	39	124	53.054662379421224	2.96e-31
+ctg26_7	SFUM_RS20655	32	189	78.73831775700934	7.16e-54
+

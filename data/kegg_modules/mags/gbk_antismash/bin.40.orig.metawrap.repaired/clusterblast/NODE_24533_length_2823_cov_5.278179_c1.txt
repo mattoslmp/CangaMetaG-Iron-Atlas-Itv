@@ -1,0 +1,45 @@
+ClusterBlast scores for NODE_24533_length_2823_cov_5.278179
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg584_1	1	178	-		
+ctg584_2	216	381	-		
+ctg584_3	616	1654	-		
+ctg584_4	1655	1961	-		
+ctg584_5	1953	2772	-		
+
+
+Significant hits: 
+1. NC_016631	Granulicella mallensis MP5ACTX8, complete sequence
+2. NZ_JAJOZK010000007	Thermomonas sp. SYSU G04041 NODE_13_length_164842_cov_168.382683, whole genome shotgun sequence
+
+
+Details:
+
+>>
+1. NC_016631
+Source: Granulicella mallensis MP5ACTX8, complete sequence
+Type: ranthipeptide
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 357.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg584_3	ACIX8_RS07370	43	280	96.52173913043478	1.75e-90
+ctg584_4	ACIX8_RS07365	44	77	81.1881188118812	1.18e-17
+
+
+
+>>
+2. NZ_JAJOZK010000007
+Source: Thermomonas sp. SYSU G04041 NODE_13_length_164842_cov_168.382683, whole genome shotgun sequence
+Type: ranthipeptide
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 421.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg584_3	ML340_RS08255	45	283	93.33333333333333	1.36e-91
+ctg584_5	ML340_RS08245	32	138	99.63235294117648	2.41e-37
+

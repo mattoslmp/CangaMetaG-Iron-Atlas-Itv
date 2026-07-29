@@ -1,0 +1,17 @@
+ClusterBlast scores for NODE_1182_length_12158_cov_6.294555
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg74_1	1	901	-		
+ctg74_2	897	5559	-		
+ctg74_3	5743	6631	+		
+ctg74_4	6627	8886	-		
+ctg74_5	9135	10224	-		
+ctg74_6	10330	11266	-		
+ctg74_7	11284	11638	-		
+ctg74_8	11662	12157	+		
+
+
+Significant hits: 
+
+
+Details:

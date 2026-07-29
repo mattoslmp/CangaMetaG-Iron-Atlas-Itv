@@ -1,0 +1,10 @@
+ClusterBlast scores for fig2024843.108.peg.498
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg130_1	0	1002	+		
+
+
+Significant hits: 
+
+
+Details:

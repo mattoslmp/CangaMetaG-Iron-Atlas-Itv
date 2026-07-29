@@ -1,0 +1,256 @@
+{
+  "generated_utc": "2026-07-22T14:58:41.401905+00:00",
+  "rda": [
+    {
+      "Domain": "Bacteria",
+      "NMDS_raw_samples": 20,
+      "NMDS_Stress1": 0.0649824738261954,
+      "NMDS_iterations": 185,
+      "NMDS_converged": true,
+      "NMDS_rank_correlation": 0.984860930686227,
+      "RDA_raw_metagenomes": 20,
+      "RDA_positions": 10,
+      "RDA_R2": 0.6706464754765119,
+      "RDA_adjusted_R2": 0.0119394264295357,
+      "RDA_pseudo_F": 1.018125548294663,
+      "RDA_global_P": 0.537,
+      "RDA1_percent": 73.16105218976237,
+      "RDA2_percent": 21.14755846004457,
+      "RDA1_axis_P": 0.338,
+      "RDA2_axis_P": 0.677
+    },
+    {
+      "Domain": "Archaea",
+      "NMDS_raw_samples": 20,
+      "NMDS_Stress1": 0.0537932610580576,
+      "NMDS_iterations": 183,
+      "NMDS_converged": true,
+      "NMDS_rank_correlation": 0.9835609967326696,
+      "RDA_raw_metagenomes": 20,
+      "RDA_positions": 10,
+      "RDA_R2": 0.6057625487634657,
+      "RDA_adjusted_R2": -0.1827123537096029,
+      "RDA_pseudo_F": 0.7682711863922088,
+      "RDA_global_P": 0.698,
+      "RDA1_percent": 77.17487391584177,
+      "RDA2_percent": 11.972993030607284,
+      "RDA1_axis_P": 0.577,
+      "RDA2_axis_P": 0.909
+    }
+  ],
+  "nmds_permanova": [
+    {
+      "analysis": "CDS_all_OTUs",
+      "factor": "Lake",
+      "PERMANOVA_pseudo_F": 1.6442465131615709,
+      "PERMANOVA_p_value": 0.026,
+      "PERMANOVA_df_between": 3,
+      "PERMANOVA_df_within": 16,
+      "PERMANOVA_permutations": 999,
+      "dispersion_F": 1.708787961138055,
+      "dispersion_p_value": 0.459,
+      "dispersion_df_between": 3,
+      "dispersion_df_within": 16,
+      "dispersion_permutations": 999,
+      "domain": NaN
+    },
+    {
+      "analysis": "CDS_all_OTUs",
+      "factor": "Season",
+      "PERMANOVA_pseudo_F": 0.705192655542427,
+      "PERMANOVA_p_value": 0.875,
+      "PERMANOVA_df_between": 1,
+      "PERMANOVA_df_within": 18,
+      "PERMANOVA_permutations": 999,
+      "dispersion_F": 4.925379184081188,
+      "dispersion_p_value": 0.047,
+      "dispersion_df_between": 1,
+      "dispersion_df_within": 18,
+      "dispersion_permutations": 999,
+      "domain": NaN
+    },
+    {
+      "analysis": "CDS_all_OTUs",
+      "factor": "LakeSeason",
+      "PERMANOVA_pseudo_F": 1.160211418477432,
+      "PERMANOVA_p_value": 0.19,
+      "PERMANOVA_df_between": 7,
+      "PERMANOVA_df_within": 12,
+      "PERMANOVA_permutations": 999,
+      "dispersion_F": 4.485865570656609,
+      "dispersion_p_value": 0.535,
+      "dispersion_df_between": 7,
+      "dispersion_df_within": 12,
+      "dispersion_permutations": 999,
+      "domain": NaN
+    },
+    {
+      "analysis": NaN,
+      "factor": "Lake",
+      "PERMANOVA_pseudo_F": 2.818825977802069,
+      "PERMANOVA_p_value": 0.018,
+      "PERMANOVA_df_between": 3,
+      "PERMANOVA_df_within": 16,
+      "PERMANOVA_permutations": 999,
+      "dispersion_F": 6.152229499078603,
+      "dispersion_p_value": 0.039,
+      "dispersion_df_between": 3,
+      "dispersion_df_within": 16,
+      "dispersion_permutations": 999,
+      "domain": "Bacteria"
+    },
+    {
+      "analysis": NaN,
+      "factor": "Season",
+      "PERMANOVA_pseudo_F": 0.5285507107725108,
+      "PERMANOVA_p_value": 0.66,
+      "PERMANOVA_df_between": 1,
+      "PERMANOVA_df_within": 18,
+      "PERMANOVA_permutations": 999,
+      "dispersion_F": 3.610199517985409,
+      "dispersion_p_value": 0.15,
+      "dispersion_df_between": 1,
+      "dispersion_df_within": 18,
+      "dispersion_permutations": 999,
+      "domain": "Bacteria"
+    },
+    {
+      "analysis": NaN,
+      "factor": "LakeSeason",
+      "PERMANOVA_pseudo_F": 1.4379598846057309,
+      "PERMANOVA_p_value": 0.188,
+      "PERMANOVA_df_between": 7,
+      "PERMANOVA_df_within": 12,
+      "PERMANOVA_permutations": 999,
+      "dispersion_F": 4.07386964516762,
+      "dispersion_p_value": 0.537,
+      "dispersion_df_between": 7,
+      "dispersion_df_within": 12,
+      "dispersion_permutations": 999,
+      "domain": "Bacteria"
+    },
+    {
+      "analysis": NaN,
+      "factor": "Lake",
+      "PERMANOVA_pseudo_F": 3.542686889991666,
+      "PERMANOVA_p_value": 0.012,
+      "PERMANOVA_df_between": 3,
+      "PERMANOVA_df_within": 16,
+      "PERMANOVA_permutations": 999,
+      "dispersion_F": 2.643173987042219,
+      "dispersion_p_value": 0.233,
+      "dispersion_df_between": 3,
+      "dispersion_df_within": 16,
+      "dispersion_permutations": 999,
+      "domain": "Archaea"
+    },
+    {
+      "analysis": NaN,
+      "factor": "Season",
+      "PERMANOVA_pseudo_F": 0.3116687744339551,
+      "PERMANOVA_p_value": 0.799,
+      "PERMANOVA_df_between": 1,
+      "PERMANOVA_df_within": 18,
+      "PERMANOVA_permutations": 999,
+      "dispersion_F": 3.374510791928065,
+      "dispersion_p_value": 0.114,
+      "dispersion_df_between": 1,
+      "dispersion_df_within": 18,
+      "dispersion_permutations": 999,
+      "domain": "Archaea"
+    },
+    {
+      "analysis": NaN,
+      "factor": "LakeSeason",
+      "PERMANOVA_pseudo_F": 1.812271924973692,
+      "PERMANOVA_p_value": 0.101,
+      "PERMANOVA_df_between": 7,
+      "PERMANOVA_df_within": 12,
+      "PERMANOVA_permutations": 999,
+      "dispersion_F": 4.848154722867513,
+      "dispersion_p_value": 0.379,
+      "dispersion_df_between": 7,
+      "dispersion_df_within": 12,
+      "dispersion_permutations": 999,
+      "domain": "Archaea"
+    }
+  ],
+  "supplementary_figure_3_nmds": {
+    "analysis": "Supplementary Figure 3 CDS-based NMDS",
+    "raw_samples": 20,
+    "included_samples": 20,
+    "excluded_samples": 0,
+    "transformation": "square root of sample-wise relative CDS proportions",
+    "dissimilarity": "Bray-Curtis",
+    "dimensions": 2,
+    "nonmetric": true,
+    "n_init": 20,
+    "max_iter": 1000,
+    "seed": 42,
+    "normalized_stress": true,
+    "stress_1": 0.06250206107088367,
+    "iterations": 131,
+    "converged": true,
+    "distance_rank_correlation": 0.9833020596867388
+  },
+  "vif": [
+    {
+      "variable": "LOI",
+      "R2_against_other_predictors": 0.8196687729180709,
+      "VIF": 5.54535127488305
+    },
+    {
+      "variable": "SiO2",
+      "R2_against_other_predictors": 0.4582777762248869,
+      "VIF": 1.8459645111682428
+    },
+    {
+      "variable": "Al2O3",
+      "R2_against_other_predictors": 0.7617832515418552,
+      "VIF": 4.197857650532503
+    },
+    {
+      "variable": "TOT/S",
+      "R2_against_other_predictors": 0.6440696060755483,
+      "VIF": 2.809538092473934
+    },
+    {
+      "variable": "Cu",
+      "R2_against_other_predictors": 0.6179069436692473,
+      "VIF": 2.6171634983451937
+    },
+    {
+      "variable": "Pb",
+      "R2_against_other_predictors": 0.831836530630296,
+      "VIF": 5.946594725644722
+    }
+  ],
+  "sample_accounting": {
+    "raw_metagenomes_per_domain": 20,
+    "nmds_included_per_domain": 20,
+    "nmds_excluded_per_domain": 0,
+    "rda_raw_metagenomes_per_domain": 20,
+    "rda_unique_position_points_per_domain": 10,
+    "rda_excluded_per_domain": 0,
+    "reason_for_ten_rda_points": "Physicochemistry is independently available for ten sampling positions. Dry and rainy metagenomes are pooled by position before RDA; each pair maps to the same scientifically calculated position score."
+  },
+  "script_audit": {
+    "unique_plotting_scripts": 23,
+    "all_exist_in_app": true,
+    "all_exist_in_article_mirror": true,
+    "all_commands_relative_and_resolved": true,
+    "all_python_scripts_syntax_ok": true,
+    "missing_local_imports": 0
+  },
+  "figure_preservation": {
+    "non_target_files_checked": 379,
+    "non_target_unexpected_changes": 0,
+    "target_files_regenerated": 106
+  },
+  "scientific_conclusion": {
+    "NMDS": "Corrected. Supplementary Figure 3 and the domain-level panels use true non-metric MDS, not metric MDS. All 20 samples are included and drawn. Stress-1 is 0.063 for the CDS-level analysis, 0.065 for Bacteria and 0.054 for Archaea.",
+    "RDA": "Reproduced and sample-accounted. All 20 metagenomes are represented through ten pooled sampling-position points. Both global RDA models and individual axes are non-significant and must be interpreted as exploratory.",
+    "Bacteria_PERMANOVA_caution": "The lake PERMANOVA is significant (P=0.018), but dispersion also differs (P=0.039), so location and dispersion effects cannot be cleanly separated.",
+    "Archaea_PERMANOVA": "The lake PERMANOVA is significant (P=0.012), while the dispersion test is not significant (P=0.233). Season and lake-season interaction are not significant."
+  }
+}

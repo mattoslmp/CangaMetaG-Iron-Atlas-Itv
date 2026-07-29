@@ -1,0 +1,811 @@
+ClusterBlast scores for NODE_41380_length_2184_cov_3.001879
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg154_1	2	173	+		
+ctg154_2	306	972	-		
+ctg154_3	968	2183	-		
+
+
+Significant hits: 
+1. NZ_JMIY01000003	Candidatus Methanoperedens nitroreducens strain ANME-2d ANME2D_Contig_3.3, whole genome shotgun sequence
+2. NZ_CP009508	Methanosarcina siciliae C2J chromosome, complete genome
+3. NZ_CP009506	Methanosarcina siciliae T4/M chromosome, complete genome
+4. NZ_CP009507	Methanosarcina siciliae HI350 chromosome, complete genome
+5. NC_003552	Methanosarcina acetivorans C2A, complete sequence
+6. NZ_CP009518	Methanococcoides methylutens MM1 chromosome, complete genome
+7. NZ_CP009501	Methanosarcina thermophila TM-1 chromosome, complete genome
+8. NZ_CP009526	Methanosarcina barkeri str. Wiesmoor chromosome, complete genome
+9. NZ_CP009517	Methanosarcina barkeri 3 chromosome, complete genome
+10. NZ_CP008746	Methanosarcina barkeri CM1 chromosome, complete genome
+11. NZ_CP009530	Methanosarcina barkeri 227 chromosome, complete genome
+12. NZ_CP009524	Methanosarcina sp. Kolksee chromosome, complete genome
+13. NZ_CP009520	Methanosarcina vacuolata Z-761 chromosome, complete genome
+14. NZ_CP032683	Methanosarcina flavescens strain E03.2 chromosome, complete genome
+15. NZ_CP009528	Methanosarcina barkeri MS chromosome, complete genome
+16. NZ_CP009515	Methanosarcina lacustris Z-7289 chromosome, complete genome
+17. NZ_CP073710	Methanococcoides orientis strain LMO-1 chromosome, complete genome
+18. NZ_CP009503	Methanosarcina sp. WWM596 chromosome, complete genome
+19. NZ_CP009504	Methanosarcina sp. WH1 chromosome, complete genome
+20. NZ_JJOY01000040	Methanosarcina sp. 2.H.T.1A.6 scaffold17_1_size91011-refined, whole genome shotgun sequence
+21. NZ_CP009516	Methanosarcina horonobensis HB-1 = JCM 15518 strain HB-1 chromosome, complete genome
+22. NZ_AP019780	Methanosarcina mazei strain TMA chromosome, complete genome
+23. NZ_CP029709	Methanosarcina mazei strain JL01 chromosome
+24. NC_003901	Methanosarcina mazei Go1, complete sequence
+25. NZ_CP009511	Methanosarcina mazei SarPi chromosome, complete genome
+26. NZ_CP009512	Methanosarcina mazei S-6 chromosome, complete genome
+27. NZ_CP009513	Methanosarcina mazei LYC chromosome, complete genome
+28. NZ_CP009514	Methanosarcina mazei C16 chromosome, complete genome
+29. NC_019977	Methanomethylovorans hollandica DSM 15978, complete sequence
+30. NZ_CP009509	Methanosarcina mazei WWM610 chromosome, complete genome
+31. NZ_CP042908	Methanosarcina mazei strain zm-15 chromosome, complete genome
+32. NC_015676	Methanosalsum zhilinae DSM 4017, complete sequence
+33. NC_020389	Methanosarcina mazei Tuc01, complete sequence
+34. NZ_JJOV01000031	Methanosarcina sp. 2.H.A.1B.4 scaffold3_1_size185154-refined, whole genome shotgun sequence
+35. NC_007955	Methanococcoides burtonii DSM 6242, complete sequence
+36. NZ_CP058215	Methanolobus zinderi strain DSM 21339 chromosome, complete genome
+37. NZ_CP009505	Methanosarcina sp. MTP4 chromosome, complete genome
+38. NC_014253	Methanohalobium evestigatum Z-7303, complete sequence
+39. NZ_CP017881	Methanohalophilus portucalensis strain FDF-1T chromosome
+40. NZ_CP017921	Methanohalophilus halophilus strain Z-7982 chromosome, complete genome
+41. NC_014002	Methanohalophilus mahii DSM 5219, complete sequence
+42. NC_013665	Methanocella paludicola SANAE, complete sequence
+43. NC_009464	Methanocella arvoryzae MRE50, complete sequence
+44. NC_017034	Methanocella conradii HZ254, complete sequence
+45. NZ_KL543983	Methermicoccus shengliensis DSM 18856 BP07DRAFT_scaffold00003.3, whole genome shotgun sequence
+46. NZ_AP011952	Methanothermobacter sp. CaT2 chromosome, complete genome
+47. NZ_CP064337	Methanothermobacter thermautotrophicus strain Z-245 chromosome, complete genome
+48. NZ_QREL01000001	Methanothermobacter defluvii strain DSM 7466 Ga0215653_11, whole genome shotgun sequence
+49. NZ_CP043480	Methanothermobacter sp. THM-2 chromosome, complete genome
+50. NC_018227	Methanoculleus bourgensis MS2 chromosome I, complete sequence
+
+
+Details:
+
+>>
+1. NZ_JMIY01000003
+Source: Candidatus Methanoperedens nitroreducens strain ANME-2d ANME2D_Contig_3.3, whole genome shotgun sequence
+Type: thioamitides
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 931.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg154_2	ANME2D_RS07890	69	296	97.73755656108597	1.17e-100
+ctg154_3	ANME2D_RS07895	81	635	100.4950495049505	2.17e-228
+
+
+
+>>
+2. NZ_CP009508
+Source: Methanosarcina siciliae C2J chromosome, complete genome
+Type: thioamitides,thiopeptide
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 685.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg154_2	MSSAC_RS00845	50	221	97.28506787330316	4.55e-71
+ctg154_3	MSSAC_RS00850	61	464	99.25742574257426	9.65e-161
+
+
+
+>>
+3. NZ_CP009506
+Source: Methanosarcina siciliae T4/M chromosome, complete genome
+Type: thioamitides,thiopeptide
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 683.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg154_2	MSSIT_RS00790	49	219	97.28506787330316	2.29e-70
+ctg154_3	MSSIT_RS00795	61	464	99.25742574257426	9.65e-161
+
+
+
+>>
+4. NZ_CP009507
+Source: Methanosarcina siciliae HI350 chromosome, complete genome
+Type: thioamitides,thiopeptide
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 683.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg154_2	MSSIH_RS00745	49	219	97.28506787330316	2.29e-70
+ctg154_3	MSSIH_RS00750	61	464	99.25742574257426	9.65e-161
+
+
+
+>>
+5. NC_003552
+Source: Methanosarcina acetivorans C2A, complete sequence
+Type: thioamitides,thiopeptide
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 682.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg154_2	MA_RS00880	50	218	97.28506787330316	7.42e-70
+ctg154_3	MA_RS00885	61	464	99.25742574257426	9.65e-161
+
+
+
+>>
+6. NZ_CP009518
+Source: Methanococcoides methylutens MM1 chromosome, complete genome
+Type: thioamitides
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 681.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg154_2	MCMEM_RS01425	56	218	97.73755656108597	4.18e-70
+ctg154_3	MCMEM_RS01420	62	463	99.25742574257426	2.08e-160
+
+
+
+>>
+7. NZ_CP009501
+Source: Methanosarcina thermophila TM-1 chromosome, complete genome
+Type: thioamitides
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 680.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg154_2	MSTHT_RS10265	52	220	97.28506787330316	8.03e-71
+ctg154_3	MSTHT_RS10270	61	460	99.25742574257426	2.24e-159
+
+
+
+>>
+8. NZ_CP009526
+Source: Methanosarcina barkeri str. Wiesmoor chromosome, complete genome
+Type: thioamitides,thiopeptide
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 679.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg154_2	MSBRW_RS00955	52	221	97.28506787330316	6.44e-71
+ctg154_3	MSBRW_RS00960	60	458	99.25742574257426	1.28e-158
+
+
+
+>>
+9. NZ_CP009517
+Source: Methanosarcina barkeri 3 chromosome, complete genome
+Type: thioamitides,thiopeptide
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 677.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg154_2	MSBR3_RS12165	50	218	97.28506787330316	6.52e-70
+ctg154_3	MSBR3_RS12160	60	459	99.25742574257426	6.39e-159
+
+
+
+>>
+10. NZ_CP008746
+Source: Methanosarcina barkeri CM1 chromosome, complete genome
+Type: thioamitides,thiopeptide
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 676.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg154_2	MCM1_RS12770	51	218	97.28506787330316	1.05e-69
+ctg154_3	MCM1_RS12765	60	458	99.25742574257426	1.76e-158
+
+
+
+>>
+11. NZ_CP009530
+Source: Methanosarcina barkeri 227 chromosome, complete genome
+Type: thioamitides,thiopeptide
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 676.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg154_2	MSBR2_RS11680	51	218	97.28506787330316	1.05e-69
+ctg154_3	MSBR2_RS11675	60	458	99.25742574257426	1.76e-158
+
+
+
+>>
+12. NZ_CP009524
+Source: Methanosarcina sp. Kolksee chromosome, complete genome
+Type: thioamitides
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 676.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg154_2	MSKOL_RS17610	51	217	97.28506787330316	2.11e-69
+ctg154_3	MSKOL_RS17605	60	459	99.25742574257426	6.39e-159
+
+
+
+>>
+13. NZ_CP009520
+Source: Methanosarcina vacuolata Z-761 chromosome, complete genome
+Type: thioamitides
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 675.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg154_2	MSVAZ_RS17720	52	220	97.28506787330316	1.3e-70
+ctg154_3	MSVAZ_RS17715	60	455	99.25742574257426	2.1e-157
+
+
+
+>>
+14. NZ_CP032683
+Source: Methanosarcina flavescens strain E03.2 chromosome, complete genome
+Type: thioamitides
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 675.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg154_2	AOB57_RS08945	50	214	97.28506787330316	1.51e-68
+ctg154_3	AOB57_RS08950	61	461	99.25742574257426	7.85e-160
+
+
+
+>>
+15. NZ_CP009528
+Source: Methanosarcina barkeri MS chromosome, complete genome
+Type: thioamitides,thiopeptide
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 674.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg154_2	MSBRM_RS00910	51	216	97.28506787330316	4.25e-69
+ctg154_3	MSBRM_RS00915	60	458	99.25742574257426	1.76e-158
+
+
+
+>>
+16. NZ_CP009515
+Source: Methanosarcina lacustris Z-7289 chromosome, complete genome
+Type: thioamitides
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 673.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg154_2	MSLAZ_RS16550	50	216	97.28506787330316	3.98e-69
+ctg154_3	MSLAZ_RS16545	60	457	99.25742574257426	2.58e-158
+
+
+
+>>
+17. NZ_CP073710
+Source: Methanococcoides orientis strain LMO-1 chromosome, complete genome
+Type: thioamitides,thiopeptide
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 671.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg154_2	J7W08_RS11425	54	211	97.73755656108597	2.24e-67
+ctg154_3	J7W08_RS11420	62	460	99.5049504950495	2.4e-159
+
+
+
+>>
+18. NZ_CP009503
+Source: Methanosarcina sp. WWM596 chromosome, complete genome
+Type: thioamitides,thiopeptide
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 670.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg154_2	MSWHS_RS17470	51	219	97.28506787330316	1.72e-70
+ctg154_3	MSWHS_RS17465	59	451	99.25742574257426	6.9e-156
+
+
+
+>>
+19. NZ_CP009504
+Source: Methanosarcina sp. WH1 chromosome, complete genome
+Type: thioamitides,thiopeptide
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 670.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg154_2	MSWH1_RS16510	51	219	97.28506787330316	1.72e-70
+ctg154_3	MSWH1_RS16505	59	451	99.25742574257426	6.9e-156
+
+
+
+>>
+20. NZ_JJOY01000040
+Source: Methanosarcina sp. 2.H.T.1A.6 scaffold17_1_size91011-refined, whole genome shotgun sequence
+Type: thioamitides
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 670.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg154_2	EO98_RS11470	50	216	97.28506787330316	2.64e-69
+ctg154_3	EO98_RS11465	59	454	99.25742574257426	5.99e-157
+
+
+
+>>
+21. NZ_CP009516
+Source: Methanosarcina horonobensis HB-1 = JCM 15518 strain HB-1 chromosome, complete genome
+Type: thioamitides,thiopeptide
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 668.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg154_2	MSHOH_RS21090	48	212	97.28506787330316	1.31e-67
+ctg154_3	MSHOH_RS21085	60	456	99.5049504950495	1.48e-157
+
+
+
+>>
+22. NZ_AP019780
+Source: Methanosarcina mazei strain TMA chromosome, complete genome
+Type: thioamitides,thiopeptide
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 668.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg154_2	MmazTMA_RS14640	49	212	97.28506787330316	2.1e-67
+ctg154_3	MmazTMA_RS14635	59	456	99.25742574257426	1.48e-157
+
+
+
+>>
+23. NZ_CP029709
+Source: Methanosarcina mazei strain JL01 chromosome
+Type: thioamitides,thiopeptide
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 668.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg154_2	DKM28_RS12615	49	212	97.28506787330316	2.1e-67
+ctg154_3	DKM28_RS12610	59	456	99.25742574257426	1.48e-157
+
+
+
+>>
+24. NC_003901
+Source: Methanosarcina mazei Go1, complete sequence
+Type: thioamitides,thiopeptide
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 667.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg154_2	MM_RS07530	49	212	97.28506787330316	1.31e-67
+ctg154_3	MM_RS07535	59	455	99.25742574257426	2.98e-157
+
+
+
+>>
+25. NZ_CP009511
+Source: Methanosarcina mazei SarPi chromosome, complete genome
+Type: thioamitides,thiopeptide
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 667.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg154_2	MSMAP_RS16525	49	212	97.28506787330316	1.31e-67
+ctg154_3	MSMAP_RS16520	59	455	99.25742574257426	2.98e-157
+
+
+
+>>
+26. NZ_CP009512
+Source: Methanosarcina mazei S-6 chromosome, complete genome
+Type: thioamitides,thiopeptide
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 667.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg154_2	MSMAS_RS17070	49	212	97.28506787330316	1.31e-67
+ctg154_3	MSMAS_RS17065	59	455	99.25742574257426	2.98e-157
+
+
+
+>>
+27. NZ_CP009513
+Source: Methanosarcina mazei LYC chromosome, complete genome
+Type: thioamitides,thiopeptide
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 667.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg154_2	MSMAL_RS17090	49	212	97.28506787330316	1.31e-67
+ctg154_3	MSMAL_RS17085	59	455	99.25742574257426	2.98e-157
+
+
+
+>>
+28. NZ_CP009514
+Source: Methanosarcina mazei C16 chromosome, complete genome
+Type: thioamitides,thiopeptide
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 667.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg154_2	MSMAC_RS17035	49	212	97.28506787330316	1.31e-67
+ctg154_3	MSMAC_RS17030	59	455	99.25742574257426	2.98e-157
+
+
+
+>>
+29. NC_019977
+Source: Methanomethylovorans hollandica DSM 15978, complete sequence
+Type: thioamitides,thiopeptide
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 666.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg154_2	METHO_RS10410	52	218	98.19004524886877	5.95e-70
+ctg154_3	METHO_RS10405	59	448	98.51485148514851	1.17e-154
+
+
+
+>>
+30. NZ_CP009509
+Source: Methanosarcina mazei WWM610 chromosome, complete genome
+Type: thioamitides,thiopeptide
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 666.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg154_2	MSMAW_RS17150	49	212	97.28506787330316	1.31e-67
+ctg154_3	MSMAW_RS17155	59	454	99.25742574257426	5.99e-157
+
+
+
+>>
+31. NZ_CP042908
+Source: Methanosarcina mazei strain zm-15 chromosome, complete genome
+Type: thioamitides,thiopeptide
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 666.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg154_2	FQU78_RS17400	49	212	97.28506787330316	1.31e-67
+ctg154_3	FQU78_RS17395	59	454	99.25742574257426	5.99e-157
+
+
+
+>>
+32. NC_015676
+Source: Methanosalsum zhilinae DSM 4017, complete sequence
+Type: thioamitides,thiopeptide
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 664.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg154_2	MZHIL_RS07615	53	213	97.28506787330316	6.93e-68
+ctg154_3	MZHIL_RS07610	58	451	99.5049504950495	9.78e-156
+
+
+
+>>
+33. NC_020389
+Source: Methanosarcina mazei Tuc01, complete sequence
+Type: thioamitides,thiopeptide
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 663.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg154_2	MMTUC01_RS06965	49	212	97.28506787330316	2.1e-67
+ctg154_3	MMTUC01_RS06970	58	451	99.25742574257426	6.9e-156
+
+
+
+>>
+34. NZ_JJOV01000031
+Source: Methanosarcina sp. 2.H.A.1B.4 scaffold3_1_size185154-refined, whole genome shotgun sequence
+Type: thioamitides,thiopeptide
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 660.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg154_2	EO92_RS04975	49	208	97.28506787330316	5.69e-66
+ctg154_3	EO92_RS04970	59	452	99.25742574257426	2.42e-156
+
+
+
+>>
+35. NC_007955
+Source: Methanococcoides burtonii DSM 6242, complete sequence
+Type: thioamitides,thiopeptide
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 659.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg154_2	MBUR_RS10705	53	208	97.73755656108597	3.42e-66
+ctg154_3	MBUR_RS10700	59	451	99.25742574257426	7.39e-156
+
+
+
+>>
+36. NZ_CP058215
+Source: Methanolobus zinderi strain DSM 21339 chromosome, complete genome
+Type: thioamitides,thiopeptide
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 649.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg154_2	HWN40_RS10935	50	204	96.83257918552036	1.44e-64
+ctg154_3	HWN40_RS10930	58	445	100.4950495049505	1.91e-153
+
+
+
+>>
+37. NZ_CP009505
+Source: Methanosarcina sp. MTP4 chromosome, complete genome
+Type: thioamitides,thiopeptide
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 648.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg154_2	MSMTP_RS16995	52	214	97.28506787330316	1.51e-68
+ctg154_3	MSMTP_RS16990	57	434	99.5049504950495	6.51e-149
+
+
+
+>>
+38. NC_014253
+Source: Methanohalobium evestigatum Z-7303, complete sequence
+Type: thioamitides
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 643.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg154_2	METEV_RS10425	50	211	97.28506787330316	4.95e-67
+ctg154_3	METEV_RS10420	57	432	98.26732673267327	1.98e-148
+
+
+
+>>
+39. NZ_CP017881
+Source: Methanohalophilus portucalensis strain FDF-1T chromosome
+Type: thioamitides,thiopeptide
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 626.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg154_2	BKM01_RS06235	49	194	97.28506787330316	9.99e-61
+ctg154_3	BKM01_RS06230	58	432	99.5049504950495	2.81e-148
+
+
+
+>>
+40. NZ_CP017921
+Source: Methanohalophilus halophilus strain Z-7982 chromosome, complete genome
+Type: thioamitides,thiopeptide
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 625.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg154_2	BHR79_RS02215	48	191	97.73755656108597	1.62e-59
+ctg154_3	BHR79_RS02220	59	434	98.51485148514851	3.46e-149
+
+
+
+>>
+41. NC_014002
+Source: Methanohalophilus mahii DSM 5219, complete sequence
+Type: thioamitides,thiopeptide
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 620.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg154_2	MMAH_RS01315	48	189	97.73755656108597	9.25e-59
+ctg154_3	MMAH_RS01310	58	431	98.51485148514851	8.01e-148
+
+
+
+>>
+42. NC_013665
+Source: Methanocella paludicola SANAE, complete sequence
+Type: thioamitides
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 590.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg154_2	MCP_RS02825	47	210	97.28506787330316	9.32e-67
+ctg154_3	MCP_RS02820	52	380	98.01980198019803	4.94e-128
+
+
+
+>>
+43. NC_009464
+Source: Methanocella arvoryzae MRE50, complete sequence
+Type: thioamitides,thiopeptide
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 578.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg154_2	RCI_RS05230	47	201	97.28506787330316	3.78e-63
+ctg154_3	RCI_RS05235	51	377	97.77227722772277	1.23e-126
+
+
+
+>>
+44. NC_017034
+Source: Methanocella conradii HZ254, complete sequence
+Type: thioamitides,thiopeptide
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 576.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg154_2	MTC_RS04810	47	196	98.64253393665159	2.25e-61
+ctg154_3	MTC_RS04815	51	380	98.01980198019803	3.37e-128
+
+
+
+>>
+45. NZ_KL543983
+Source: Methermicoccus shengliensis DSM 18856 BP07DRAFT_scaffold00003.3, whole genome shotgun sequence
+Type: thioamitides,thiopeptide
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 537.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg154_2	BP07_RS07670	45	180	96.83257918552036	6.49e-55
+ctg154_3	BP07_RS07665	51	357	99.75247524752476	3.98e-119
+
+
+
+>>
+46. NZ_AP011952
+Source: Methanothermobacter sp. CaT2 chromosome, complete genome
+Type: thioamitides,thiopeptide
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 526.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg154_2	MTCT_RS04540	52	202	98.19004524886877	1.37e-63
+ctg154_3	MTCT_RS04535	47	324	99.75247524752476	3.04e-106
+
+
+
+>>
+47. NZ_CP064337
+Source: Methanothermobacter thermautotrophicus strain Z-245 chromosome, complete genome
+Type: thioamitides,thiopeptide
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 522.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg154_2	ISG36_RS04805	51	199	97.28506787330316	2.23e-62
+ctg154_3	ISG36_RS04800	47	323	99.75247524752476	6.1e-106
+
+
+
+>>
+48. NZ_QREL01000001
+Source: Methanothermobacter defluvii strain DSM 7466 Ga0215653_11, whole genome shotgun sequence
+Type: thioamitides
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 517.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg154_2	C7452_RS01890	50	196	98.19004524886877	2.9e-61
+ctg154_3	C7452_RS01895	46	321	99.5049504950495	3.25e-105
+
+
+
+>>
+49. NZ_CP043480
+Source: Methanothermobacter sp. THM-2 chromosome, complete genome
+Type: thioamitides,thiopeptide
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 514.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg154_2	FZP68_RS04095	50	192	97.28506787330316	1.66e-59
+ctg154_3	FZP68_RS04100	46	322	99.75247524752476	2.52e-105
+
+
+
+>>
+50. NC_018227
+Source: Methanoculleus bourgensis MS2 chromosome I, complete sequence
+Type: thioamitides
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 510.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg154_2	BN140_RS10755	48	185	96.83257918552036	9.28e-57
+ctg154_3	BN140_RS10750	47	325	97.77227722772277	2.09e-106
+

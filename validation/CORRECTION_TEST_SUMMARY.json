@@ -1,0 +1,27 @@
+{
+  "date": "2026-07-28",
+  "overall_status": "PASS",
+  "python_compilation": "PASS",
+  "runtime_check": "PASS",
+  "content_checks": {
+    "passed": 18,
+    "total": 18
+  },
+  "headless_navigation": {
+    "passed": 14,
+    "total": 14
+  },
+  "audit_corrections": {
+    "passed": 25,
+    "total": 25
+  },
+  "chromium_visual_regression": {
+    "passed": 5,
+    "total": 5,
+    "network_blocked": true
+  },
+  "article_ordination_regeneration": "PASS",
+  "canonical_ordination_module": "src.publication_ordination",
+  "streamlit_live_server_tested": false,
+  "streamlit_live_server_reason": "Streamlit is not installed in the validation environment; package requirements include it."
+}

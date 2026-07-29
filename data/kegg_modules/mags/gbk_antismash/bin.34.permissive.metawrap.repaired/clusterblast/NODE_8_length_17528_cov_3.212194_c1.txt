@@ -1,0 +1,855 @@
+ClusterBlast scores for NODE_8_length_17528_cov_3.212194
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg8_1	1	100	+		
+ctg8_2	99	504	+		
+ctg8_3	893	1592	+		
+ctg8_4	1629	2889	+		
+ctg8_5	2892	3240	-		
+ctg8_6	3227	3797	-		
+ctg8_7	3967	4849	+		
+ctg8_8	5074	6637	+		
+ctg8_9	6708	7179	-		
+ctg8_10	7248	8124	+		
+ctg8_11	8291	9221	+		
+ctg8_12	9240	9696	+		
+ctg8_13	9716	10580	-		
+ctg8_14	11156	12239	+		
+ctg8_15	12305	13346	+		
+ctg8_16	13342	14185	-		
+ctg8_17	14682	15387	+		
+ctg8_18	15383	16004	-		
+ctg8_19	16023	16827	-		
+ctg8_20	16926	17391	-		
+ctg8_21	17406	17526	-		
+
+
+Significant hits: 
+1. NZ_KB235898	Kamptonema formosum PCC 6407 Oscil6407scaffold_1, whole genome shotgun sequence
+2. NZ_RSCM01000017	Trichormus variabilis SAG 1403-4b sequence17, whole genome shotgun sequence
+3. NC_019757	Cylindrospermum stagnale PCC 7417, complete sequence
+4. NZ_CP114779	Prochlorococcus marinus str. MIT 0919 chromosome, complete genome
+5. NC_009976	Prochlorococcus marinus str. MIT 9211, complete sequence
+6. NZ_CP114780	Prochlorococcus marinus str. MIT 0918 chromosome, complete genome
+7. NC_005042	Prochlorococcus marinus subsp. marinus str. CCMP1375, complete sequence
+8. NC_009091	Prochlorococcus marinus str. MIT 9301, complete sequence
+9. NC_008816	Prochlorococcus marinus str. AS9601, complete sequence
+10. NZ_CP018344	Prochlorococcus sp. RS50 chromosome
+11. NC_009840	Prochlorococcus marinus str. MIT 9215, complete sequence
+12. NC_007577	Prochlorococcus marinus str. MIT 9312, complete sequence
+13. NZ_JAAORF010000002	Prochlorococcus marinus XMU1405 contig_2, whole genome shotgun sequence
+14. NZ_DS999537	Prochlorococcus marinus str. MIT 9202 scf_1109798535001, whole genome shotgun sequence
+15. NC_005072	Prochlorococcus marinus subsp. pastoris str. CCMP1986, complete sequence
+16. NZ_JAAORH010000001	Prochlorococcus marinus XMU1410 contig_1, whole genome shotgun sequence
+17. NZ_CP007753	Prochlorococcus sp. MIT 0604 chromosome, complete genome
+18. NZ_CP047953	Synechococcus sp. Minos11 chromosome, complete genome
+19. NZ_CP114778	Prochlorococcus marinus str. MIT 1013 chromosome, complete genome
+20. NZ_CP114782	Prochlorococcus marinus str. MIT 0913 chromosome, complete genome
+21. NZ_CP114783	Prochlorococcus marinus str. MIT 0912 chromosome, complete genome
+22. NC_007335	Prochlorococcus marinus str. NATL2A, complete sequence
+23. NZ_CP114777	Prochlorococcus marinus str. MIT 1214 chromosome, complete genome
+24. NC_008819	Prochlorococcus marinus str. NATL1A, complete sequence
+25. NZ_CP114781	Prochlorococcus marinus str. MIT 0915 chromosome, complete genome
+26. NZ_CP007754	Prochlorococcus sp. MIT 0801 chromosome, complete genome
+27. NZ_CP114784	Prochlorococcus marinus str. MIT 0917 chromosome, complete genome
+28. NC_019697	Chamaesiphon minutus PCC 6605, complete sequence
+29. NZ_JAAORJ010000002	Prochlorococcus marinus XMU1412 contig_2, whole genome shotgun sequence
+30. NC_008817	Prochlorococcus marinus str. MIT 9515, complete sequence
+31. NZ_KI912149	Fischerella sp. PCC 9605 FIS9605DRAFT_scaffold2.2, whole genome shotgun sequence
+32. NZ_CP054698	Nostoc edaphicum CCNP1411 chromosome, complete genome
+33. NZ_CP026692	Nostoc sp. 'Lobaria pulmonaria (5183) cyanobiont' strain 5183 chromosome, complete genome
+34. NZ_KE650771	Fischerella sp. PCC 9431 Fis9431DRAFT_Scaffold1.2, whole genome shotgun sequence
+35. NZ_KQ976354	Scytonema hofmannii PCC 7110 Scaffold1, whole genome shotgun sequence
+36. NZ_CP031970	Streptococcus suis strain SFJ44 chromosome, complete genome
+37. NZ_CP069079	Streptococcus parasuis strain BS26 chromosome, complete genome
+38. NZ_CP076721	Streptococcus parasuis strain H35 chromosome, complete genome
+39. NZ_CP073632	Streptococcus parasuis strain NN1 chromosome, complete genome
+40. NZ_CP086728	Streptococcus parasuis strain SS20 chromosome, complete genome
+41. NZ_JABTZF010000001	Streptococcus suis strain SC2B29-1 NODE_1_length_238270_cov_190.63, whole genome shotgun sequence
+42. NZ_CP104396	Ligilactobacillus agilis strain AM_LB6 chromosome, complete genome
+43. NZ_CP016766	Ligilactobacillus agilis strain La3 chromosome, complete genome
+44. NZ_AP018400	Streptococcus ruminantium strain GUT-187 chromosome, complete genome
+45. NZ_AP025331	Streptococcus ruminantium strain GUT-183 chromosome, complete genome
+46. NZ_BCET01000009	Streptococcus ruminantium strain MO430, whole genome shotgun sequence
+47. NZ_BCFD01000023	Streptococcus ruminantium strain MO591, whole genome shotgun sequence
+48. NZ_CP019557	Streptococcus sp. DAT741 chromosome, complete genome
+49. NZ_CP049761	Ligilactobacillus agilis strain L6 chromosome
+50. NZ_AP025332	Streptococcus ruminantium strain GUT-184 chromosome, complete genome
+
+
+Details:
+
+>>
+1. NZ_KB235898
+Source: Kamptonema formosum PCC 6407 Oscil6407scaffold_1, whole genome shotgun sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1149.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg8_9	OSCIL6407_RS0102830	45	98	82.05128205128204	9.22e-25
+ctg8_10	OSCIL6407_RS0102825	73	400	97.9381443298969	1.47e-139
+ctg8_11	OSCIL6407_RS0102820	77	443	94.8220064724919	4.94e-156
+ctg8_12	OSCIL6407_RS0102815	72	208	100.66225165562915	3.22e-68
+
+
+
+>>
+2. NZ_RSCM01000017
+Source: Trichormus variabilis SAG 1403-4b sequence17, whole genome shotgun sequence
+Type: NRPS
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1099.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg8_9	DSM107003_RS21705	37	77	78.2051282051282	1.6e-16
+ctg8_10	DSM107003_RS21710	72	399	96.56357388316151	3.07e-139
+ctg8_11	DSM107003_RS21715	71	429	100.32362459546927	2.18e-150
+ctg8_12	DSM107003_RS21720	68	194	94.70198675496688	1.34e-62
+
+
+
+>>
+3. NC_019757
+Source: Cylindrospermum stagnale PCC 7417, complete sequence
+Type: NRPS-like,lanthipeptide-class-ii
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 1020.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg8_10	CYLST_RS07695	73	393	97.59450171821305	8.34e-137
+ctg8_11	CYLST_RS07690	71	421	100.32362459546927	4.84e-147
+ctg8_12	CYLST_RS07685	68	206	100.0	2.56e-67
+
+
+
+>>
+4. NZ_CP114779
+Source: Prochlorococcus marinus str. MIT 0919 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 734.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg8_10	O5635_RS02815	54	292	96.56357388316151	8.84e-97
+ctg8_11	O5635_RS02810	60	334	95.14563106796116	5.44e-113
+ctg8_12	O5635_RS02805	47	108	95.36423841059603	2.2e-28
+
+
+
+>>
+5. NC_009976
+Source: Prochlorococcus marinus str. MIT 9211, complete sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 715.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg8_10	P9211_RS05465	57	287	98.28178694158075	6.63e-95
+ctg8_11	P9211_RS05460	60	331	94.8220064724919	6.27e-112
+ctg8_12	P9211_RS05455	47	97	95.36423841059603	4.98e-24
+
+
+
+>>
+6. NZ_CP114780
+Source: Prochlorococcus marinus str. MIT 0918 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 713.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg8_10	O5636_RS00975	54	285	96.56357388316151	5.37e-94
+ctg8_11	O5636_RS00980	59	322	94.8220064724919	1.93e-108
+ctg8_12	O5636_RS00985	48	106	94.70198675496688	1.24e-27
+
+
+
+>>
+7. NC_005042
+Source: Prochlorococcus marinus subsp. marinus str. CCMP1375, complete sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 710.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg8_10	PRO_RS05575	54	285	96.56357388316151	7.61e-94
+ctg8_11	PRO_RS05570	61	330	94.1747572815534	2.54e-111
+ctg8_12	PRO_RS05565	43	95	94.03973509933775	2.8e-23
+
+
+
+>>
+8. NC_009091
+Source: Prochlorococcus marinus str. MIT 9301, complete sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 708.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg8_10	P9301_RS14680	50	273	97.2508591065292	2.33e-89
+ctg8_11	P9301_RS14685	61	330	94.1747572815534	1.73e-111
+ctg8_12	P9301_RS14690	44	105	98.01324503311258	1.28e-27
+
+
+
+>>
+9. NC_008816
+Source: Prochlorococcus marinus str. AS9601, complete sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 704.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg8_10	A9601_RS14690	50	276	97.2508591065292	2.03e-90
+ctg8_11	A9601_RS14695	59	322	95.14563106796116	3.89e-108
+ctg8_12	A9601_RS14700	43	106	92.71523178807946	6.38e-28
+
+
+
+>>
+10. NZ_CP018344
+Source: Prochlorococcus sp. RS50 chromosome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 703.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg8_10	BSR22_RS08765	50	272	97.2508591065292	6.61e-89
+ctg8_11	BSR22_RS08770	60	326	95.14563106796116	5.88e-110
+ctg8_12	BSR22_RS08775	41	105	96.02649006622516	1.8e-27
+
+
+
+>>
+11. NC_009840
+Source: Prochlorococcus marinus str. MIT 9215, complete sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 701.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg8_10	P9215_RS05730	50	271	97.2508591065292	1.33e-88
+ctg8_11	P9215_RS05735	60	327	95.14563106796116	4.15e-110
+ctg8_12	P9215_RS05740	42	103	96.02649006622516	7.22e-27
+
+
+
+>>
+12. NC_007577
+Source: Prochlorococcus marinus str. MIT 9312, complete sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 701.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg8_10	PMT9312_RS05560	50	271	97.2508591065292	1.88e-88
+ctg8_11	PMT9312_RS05565	60	327	95.14563106796116	2.06e-110
+ctg8_12	PMT9312_RS05570	41	103	96.02649006622516	1.02e-26
+
+
+
+>>
+13. NZ_JAAORF010000002
+Source: Prochlorococcus marinus XMU1405 contig_2, whole genome shotgun sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 701.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg8_10	HA148_RS05630	49	265	97.2508591065292	3.5e-86
+ctg8_11	HA148_RS05635	60	329	95.14563106796116	3.6e-111
+ctg8_12	HA148_RS05640	43	107	96.02649006622516	4.51e-28
+
+
+
+>>
+14. NZ_DS999537
+Source: Prochlorococcus marinus str. MIT 9202 scf_1109798535001, whole genome shotgun sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 700.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg8_10	P9202_RS00290	49	270	97.2508591065292	2.67e-88
+ctg8_11	P9202_RS00295	60	327	95.14563106796116	2.06e-110
+ctg8_12	P9202_RS00300	42	103	96.02649006622516	7.22e-27
+
+
+
+>>
+15. NC_005072
+Source: Prochlorococcus marinus subsp. pastoris str. CCMP1986, complete sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 697.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg8_10	TX50_RS05740	49	267	97.2508591065292	4.33e-87
+ctg8_11	TX50_RS05745	58	315	95.14563106796116	2.08e-105
+ctg8_12	TX50_RS05750	45	115	98.01324503311258	2.17e-31
+
+
+
+>>
+16. NZ_JAAORH010000001
+Source: Prochlorococcus marinus XMU1410 contig_1, whole genome shotgun sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 694.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg8_10	HA147_RS05585	48	265	97.2508591065292	3.5e-86
+ctg8_11	HA147_RS05590	60	328	95.46925566343042	1.45e-110
+ctg8_12	HA147_RS05595	40	101	98.01324503311258	8.15e-26
+
+
+
+>>
+17. NZ_CP007753
+Source: Prochlorococcus sp. MIT 0604 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 693.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg8_10	EW14_RS05690	48	264	97.2508591065292	7.01e-86
+ctg8_11	EW14_RS05695	60	327	95.14563106796116	2.93e-110
+ctg8_12	EW14_RS05700	41	102	96.02649006622516	2.04e-26
+
+
+
+>>
+18. NZ_CP047953
+Source: Synechococcus sp. Minos11 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 734.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg8_10	SynMINOS11_RS03885	57	299	98.96907216494846	9.57e-100
+ctg8_11	SynMINOS11_RS03895	63	343	94.1747572815534	1.24e-116
+ctg8_12	SynMINOS11_RS03900	43	92	96.02649006622516	4.97e-22
+
+
+
+>>
+19. NZ_CP114778
+Source: Prochlorococcus marinus str. MIT 1013 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 636.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg8_10	O5633_RS04450	57	296	97.2508591065292	3.18e-98
+ctg8_11	O5633_RS04445	62	340	94.1747572815534	1.96e-115
+
+
+
+>>
+20. NZ_CP114782
+Source: Prochlorococcus marinus str. MIT 0913 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 635.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg8_10	O5638_RS04145	58	296	97.2508591065292	3.18e-98
+ctg8_11	O5638_RS04140	61	339	95.79288025889967	3.94e-115
+
+
+
+>>
+21. NZ_CP114783
+Source: Prochlorococcus marinus str. MIT 0912 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 635.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg8_10	O5640_RS04205	58	296	97.2508591065292	3.18e-98
+ctg8_11	O5640_RS04200	61	339	95.79288025889967	3.94e-115
+
+
+
+>>
+22. NC_007335
+Source: Prochlorococcus marinus str. NATL2A, complete sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 635.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg8_10	PMN2A_RS06580	57	293	97.2508591065292	5.19e-97
+ctg8_11	PMN2A_RS06575	63	342	94.1747572815534	3.42e-116
+
+
+
+>>
+23. NZ_CP114777
+Source: Prochlorococcus marinus str. MIT 1214 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 634.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg8_10	O5639_RS03880	58	296	97.2508591065292	3.18e-98
+ctg8_11	O5639_RS03875	61	338	95.79288025889967	1.6e-114
+
+
+
+>>
+24. NC_008819
+Source: Prochlorococcus marinus str. NATL1A, complete sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 633.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg8_10	NATL1_RS06785	57	295	97.2508591065292	6.4e-98
+ctg8_11	NATL1_RS06780	62	338	94.1747572815534	7.94e-115
+
+
+
+>>
+25. NZ_CP114781
+Source: Prochlorococcus marinus str. MIT 0915 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 633.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg8_10	O5634_RS04165	57	293	97.2508591065292	3.66e-97
+ctg8_11	O5634_RS04160	62	340	94.1747572815534	1.38e-115
+
+
+
+>>
+26. NZ_CP007754
+Source: Prochlorococcus sp. MIT 0801 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 632.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg8_10	EW15_RS06925	56	295	96.90721649484536	4.51e-98
+ctg8_11	EW15_RS06920	62	337	94.1747572815534	3.21e-114
+
+
+
+>>
+27. NZ_CP114784
+Source: Prochlorococcus marinus str. MIT 0917 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 632.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg8_10	O5637_RS03890	57	295	97.2508591065292	6.4e-98
+ctg8_11	O5637_RS03885	62	337	94.1747572815534	4.55e-114
+
+
+
+>>
+28. NC_019697
+Source: Chamaesiphon minutus PCC 6605, complete sequence
+Type: NRP-metallophore,NRPS,T1PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 603.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg8_11	CHA6605_RS12665	72	414	95.46925566343042	1.14e-144
+ctg8_12	CHA6605_RS12660	66	189	94.70198675496688	2.57e-60
+
+
+
+>>
+29. NZ_JAAORJ010000002
+Source: Prochlorococcus marinus XMU1412 contig_2, whole genome shotgun sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 597.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg8_10	HA152_RS05815	50	272	97.2508591065292	4.67e-89
+ctg8_11	HA152_RS05820	59	325	95.14563106796116	2.38e-109
+
+
+
+>>
+30. NC_008817
+Source: Prochlorococcus marinus str. MIT 9515, complete sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 578.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg8_10	P9515_RS05600	48	256	97.2508591065292	1.05e-82
+ctg8_11	P9515_RS05605	59	322	94.8220064724919	1.93e-108
+
+
+
+>>
+31. NZ_KI912149
+Source: Fischerella sp. PCC 9605 FIS9605DRAFT_scaffold2.2, whole genome shotgun sequence
+Type: NRPS-like
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1068.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg8_17	FIS9605_RS37345	58	267	93.58974358974359	5.78e-89
+ctg8_18	FIS9605_RS0117850	62	238	99.51456310679612	2.13e-78
+ctg8_19	FIS9605_RS0117845	69	391	100.0	1.15e-136
+ctg8_20	FIS9605_RS0117835	74	172	77.92207792207793	2.64e-53
+
+
+
+>>
+32. NZ_CP054698
+Source: Nostoc edaphicum CCNP1411 chromosome, complete genome
+Type: NRPS,NRPS-like,T1PKS
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1083.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg8_17	HUN01_RS08665	57	263	93.58974358974359	3.54e-87
+ctg8_18	HUN01_RS08655	65	253	99.02912621359224	4.08e-84
+ctg8_19	HUN01_RS08650	70	395	100.0	1.78e-138
+ctg8_20	HUN01_RS08645	65	172	95.45454545454545	1.69e-53
+
+
+
+>>
+33. NZ_CP026692
+Source: Nostoc sp. 'Lobaria pulmonaria (5183) cyanobiont' strain 5183 chromosome, complete genome
+Type: NRPS,NRPS-like,T1PKS
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1067.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg8_17	NLP_RS02735	57	257	90.17094017094017	4.73e-85
+ctg8_18	NLP_RS02725	65	249	100.0	1.35e-82
+ctg8_19	NLP_RS02720	70	395	100.0	1.78e-138
+ctg8_20	NLP_RS02715	66	166	93.5064935064935	4.54e-51
+
+
+
+>>
+34. NZ_KE650771
+Source: Fischerella sp. PCC 9431 Fis9431DRAFT_Scaffold1.2, whole genome shotgun sequence
+Type: other
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 902.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg8_11	FIS9431_RS0129020	68	390	94.8220064724919	1.68e-134
+ctg8_14	FIS9431_RS0129140	72	512	100.0	1.3e-181
+
+
+
+>>
+35. NZ_KQ976354
+Source: Scytonema hofmannii PCC 7110 Scaffold1, whole genome shotgun sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 673.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg8_8	WA1_RS47110	60	264	44.230769230769226	1.87e-83
+ctg8_11	WA1_RS47105	72	409	94.1747572815534	2.7e-142
+
+
+
+>>
+36. NZ_CP031970
+Source: Streptococcus suis strain SFJ44 chromosome, complete genome
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 474.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg8_10	D2A30_RS07935	51	269	96.90721649484536	6.61e-88
+ctg8_11	D2A30_RS07915	48	205	79.28802588996764	1.61e-62
+
+
+
+>>
+37. NZ_CP069079
+Source: Streptococcus parasuis strain BS26 chromosome, complete genome
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 473.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg8_10	JOA01_RS07450	51	269	96.90721649484536	4.66e-88
+ctg8_11	JOA01_RS07430	48	204	79.28802588996764	4.53e-62
+
+
+
+>>
+38. NZ_CP076721
+Source: Streptococcus parasuis strain H35 chromosome, complete genome
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 473.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg8_10	KQ224_RS09200	51	269	96.90721649484536	4.66e-88
+ctg8_11	KQ224_RS09220	48	204	79.28802588996764	4.53e-62
+
+
+
+>>
+39. NZ_CP073632
+Source: Streptococcus parasuis strain NN1 chromosome, complete genome
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 472.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg8_10	KEM15_RS07950	51	269	96.90721649484536	4.66e-88
+ctg8_11	KEM15_RS07930	48	203	79.28802588996764	9.04e-62
+
+
+
+>>
+40. NZ_CP086728
+Source: Streptococcus parasuis strain SS20 chromosome, complete genome
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 471.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg8_10	LOD77_RS07750	51	269	96.90721649484536	4.66e-88
+ctg8_11	LOD77_RS07730	47	202	79.28802588996764	1.28e-61
+
+
+
+>>
+41. NZ_JABTZF010000001
+Source: Streptococcus suis strain SC2B29-1 NODE_1_length_238270_cov_190.63, whole genome shotgun sequence
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 471.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg8_10	HRQ40_RS00620	51	269	96.90721649484536	4.66e-88
+ctg8_11	HRQ40_RS00600	47	202	79.28802588996764	2.55e-61
+
+
+
+>>
+42. NZ_CP104396
+Source: Ligilactobacillus agilis strain AM_LB6 chromosome, complete genome
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 468.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg8_10	N4562_RS06695	50	266	94.84536082474226	8.35e-87
+ctg8_11	N4562_RS06680	45	202	88.67313915857605	3.22e-61
+
+
+
+>>
+43. NZ_CP016766
+Source: Ligilactobacillus agilis strain La3 chromosome, complete genome
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 467.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg8_10	BEN83_RS16545	50	266	94.84536082474226	5.89e-87
+ctg8_11	BEN83_RS16530	44	201	88.67313915857605	9.08e-61
+
+
+
+>>
+44. NZ_AP018400
+Source: Streptococcus ruminantium strain GUT-187 chromosome, complete genome
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 466.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg8_10	SR187_RS02380	51	265	94.15807560137456	2.96e-86
+ctg8_11	SR187_RS02400	49	201	79.28802588996764	7.4e-61
+
+
+
+>>
+45. NZ_AP025331
+Source: Streptococcus ruminantium strain GUT-183 chromosome, complete genome
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 466.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg8_10	SUT_RS02620	51	265	94.15807560137456	2.96e-86
+ctg8_11	SUT_RS02640	49	201	79.28802588996764	5.24e-61
+
+
+
+>>
+46. NZ_BCET01000009
+Source: Streptococcus ruminantium strain MO430, whole genome shotgun sequence
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 466.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg8_10	GOZ37_RS02480	51	265	94.15807560137456	2.96e-86
+ctg8_11	GOZ37_RS02460	49	201	79.28802588996764	7.4e-61
+
+
+
+>>
+47. NZ_BCFD01000023
+Source: Streptococcus ruminantium strain MO591, whole genome shotgun sequence
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 466.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg8_10	GOZ31_RS03935	51	265	94.15807560137456	2.96e-86
+ctg8_11	GOZ31_RS03915	49	201	79.28802588996764	5.24e-61
+
+
+
+>>
+48. NZ_CP019557
+Source: Streptococcus sp. DAT741 chromosome, complete genome
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 466.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg8_10	BZG42_RS02365	51	265	94.15807560137456	2.96e-86
+ctg8_11	BZG42_RS02385	49	201	79.28802588996764	5.24e-61
+
+
+
+>>
+49. NZ_CP049761
+Source: Ligilactobacillus agilis strain L6 chromosome
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 465.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg8_10	G8B22_RS07040	51	267	94.84536082474226	2.94e-87
+ctg8_11	G8B22_RS07055	44	198	88.67313915857605	7.2e-60
+
+
+
+>>
+50. NZ_AP025332
+Source: Streptococcus ruminantium strain GUT-184 chromosome, complete genome
+Type: T3PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 465.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg8_10	L6419_RS02565	51	264	94.15807560137456	5.93e-86
+ctg8_11	L6419_RS02585	49	201	79.28802588996764	7.4e-61
+

@@ -1,0 +1,17 @@
+ClusterBlast scores for NODE_255_length_5906_cov_2.661692
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg255_1	2	1097	-		
+ctg255_2	1129	1414	-		
+ctg255_3	1421	2171	-		
+ctg255_4	2179	3112	-		
+ctg255_5	3705	4146	+		
+ctg255_6	4219	5074	+		
+ctg255_7	5103	5493	+		
+ctg255_8	5579	5906	+		
+
+
+Significant hits: 
+
+
+Details:

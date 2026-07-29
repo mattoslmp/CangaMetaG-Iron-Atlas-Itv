@@ -1,0 +1,24 @@
+product,n_regions,n_MAGs,MAGs
+CDPS,1,1,MAG.34
+NAPAA,1,1,MAG.8
+NRPS,9,2,MAG.15; MAG.34
+NRPS-like,16,9,MAG.4; MAG.9; MAG.13; MAG.15; MAG.26; MAG.34; MAG.35; MAG.43; MAG.45
+RRE-containing,10,9,MAG.3; MAG.8; MAG.13; MAG.15; MAG.21; MAG.23; MAG.25; MAG.26; MAG.35
+RiPP-like,6,5,MAG.4; MAG.9; MAG.10; MAG.17; MAG.26
+T1PKS,2,2,MAG.26; MAG.34
+T3PKS,7,7,MAG.4; MAG.7; MAG.9; MAG.15; MAG.34; MAG.35; MAG.43
+arylpolyene,1,1,MAG.40
+betalactone,7,6,MAG.1; MAG.7; MAG.9; MAG.31; MAG.40; MAG.41
+darobactin,1,1,MAG.13
+hserlactone,1,1,MAG.18
+ladderane,1,1,MAG.40
+lanthipeptide-class-ii,1,1,MAG.35
+lanthipeptide-class-v,1,1,MAG.50
+lassopeptide,1,1,MAG.34
+nucleoside,2,2,MAG.19; MAG.30
+phosphonate,1,1,MAG.18
+ranthipeptide,6,4,MAG.4; MAG.13; MAG.40; MAG.43
+redox-cofactor,2,2,MAG.8; MAG.35
+terpene,25,16,MAG.4; MAG.8; MAG.11; MAG.13; MAG.14; MAG.15; MAG.22; MAG.26; MAG.27; MAG.30; MAG.33; MAG.34; MAG.35; MAG.37; MAG.40; MAG.43
+terpene-precursor,44,32,MAG.6; MAG.7; MAG.8; MAG.9; MAG.10; MAG.12; MAG.14; MAG.16; MAG.17; MAG.18; MAG.19; MAG.22; MAG.23; MAG.24; MAG.25; MAG.26; MAG.27; MAG.28; MAG.29; MAG.33; MAG.34; MAG.35; MAG.36; MAG.37; MAG.38; MAG.39; MAG.41; MAG.42; MAG.43; MAG.45; MAG.46; MAG.48
+triceptide,3,2,MAG.8; MAG.13

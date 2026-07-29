@@ -1,0 +1,14 @@
+ClusterBlast scores for NODE_25366_length_2777_cov_3.578986
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg493_1	2	758	-		
+ctg493_2	840	1179	-		
+ctg493_3	1502	2144	+		
+ctg493_4	2220	2493	+		
+ctg493_5	2542	2776	+		
+
+
+Significant hits: 
+
+
+Details:

@@ -1,0 +1,15 @@
+ClusterBlast scores for NODE_461_length_3608_cov_3.781365
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg461_1	1	256	+		
+ctg461_2	248	833	+		
+ctg461_3	1295	1499	+		
+ctg461_4	1522	1963	+		
+ctg461_5	2027	2729	-		
+ctg461_6	2831	3608	-		
+
+
+Significant hits: 
+
+
+Details:

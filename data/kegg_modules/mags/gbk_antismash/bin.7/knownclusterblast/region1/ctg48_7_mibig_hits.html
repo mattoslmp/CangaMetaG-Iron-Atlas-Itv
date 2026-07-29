@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>ANA09449.1</td>
+              <td>PriG</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001483.4">BGC0001483.4</a></td>
+              <td>other:other</td>
+              <td>40.0</td>
+              <td>99.3</td>
+              <td>280.0</td>
+              <td>2.57e-90</td>
+          </tr>
+    
+          <tr>
+              <td>AXM43049.1</td>
+              <td>enolase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001945.3">BGC0001945.3</a></td>
+              <td>NRPS:Type I</td>
+              <td>37.0</td>
+              <td>102.4</td>
+              <td>261.0</td>
+              <td>7.86e-83</td>
+          </tr>
+    
+          <tr>
+              <td>WP_020636807.1</td>
+              <td>phosphopyruvate_hydratase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002011.3">BGC0002011.3</a></td>
+              <td>PKS</td>
+              <td>37.0</td>
+              <td>102.1</td>
+              <td>252.0</td>
+              <td>1.5e-79</td>
+          </tr>
+    
+          <tr>
+              <td>AXG46179.1</td>
+              <td>enolase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002713.2">BGC0002713.2</a></td>
+              <td>NRPS:Type I</td>
+              <td>37.0</td>
+              <td>103.6</td>
+              <td>249.0</td>
+              <td>2.76e-78</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

@@ -1,0 +1,822 @@
+ClusterBlast scores for NODE_1776_length_10103_cov_4.572253
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg1_1	1	199	-		
+ctg1_2	638	1382	+		
+ctg1_3	1469	2063	+		
+ctg1_4	2228	2786	-		
+ctg1_5	3116	3374	-		
+ctg1_6	3370	3769	-		
+ctg1_7	3872	5102	-		
+ctg1_8	5111	5612	-		
+ctg1_9	5632	6730	-		
+ctg1_10	6729	7827	-		
+ctg1_11	7833	8634	-		
+ctg1_12	8680	9079	-		
+ctg1_13	9069	10101	-		
+
+
+Significant hits: 
+1. NZ_CP014213	Methanosphaera sp. BMS chromosome, complete genome
+2. NZ_JACIDO010000006	Aureimonas phyllosphaerae strain DSM 25024 Ga0373234_06, whole genome shotgun sequence
+3. NZ_CP007509	Stutzerimonas decontaminans strain 19SMN4 chromosome, complete genome
+4. NZ_RHQL01000001	Stutzerimonas xanthomarina strain PX_177 NODE_1_length_853214_cov_16.2064, whole genome shotgun sequence
+5. NZ_CP086067	Stutzerimonas chloritidismutans strain 6L11 chromosome, complete genome
+6. NZ_WIFO01000001	Stutzerimonas stutzeri strain KOL14.W.495.96 Scaffold_1_length_265509_pilon, whole genome shotgun sequence
+7. NC_018028	Stutzerimonas stutzeri CCUG 29243, complete sequence
+8. NZ_CP090366	Stutzerimonas kunmingensis strain 7850S chromosome, complete genome
+9. NC_019936	Stutzerimonas stutzeri RCH2, complete sequence
+10. NZ_KK020676	Stutzerimonas stutzeri KOS6 scaffold2, whole genome shotgun sequence
+11. NZ_LN614762	Stutzerimonas xanthomarina strain S11, whole genome shotgun sequence
+12. NZ_CP066045	Stutzerimonas stutzeri strain FDAARGOS_1065 chromosome, complete genome
+13. NZ_WIFX01000001	Stutzerimonas stutzeri strain KOL14.W.45.12 Scaffold_1_length_732826_pilon, whole genome shotgun sequence
+14. NZ_CP062167	Aureimonas sp. OT7 chromosome, complete genome
+15. NZ_AP025032	Aureimonas sp. SA4125 chromosome, complete genome
+16. NZ_VTPZ01000002	Pseudomonas profundi strain M5 Scaffold2, whole genome shotgun sequence
+17. NZ_SPNT01000001	Nitratireductor sp. XY-223 NODE_1_length_1418466_cov_52.905788, whole genome shotgun sequence
+18. NZ_CP048629	Pseudomonas sp. OIL-1 chromosome, complete genome
+19. NZ_CP028271	Mixta intestinalis strain SRCM103226 chromosome, complete genome
+20. NZ_CP026377	Mixta gaviniae strain DSM 22758 chromosome, complete genome
+21. NZ_CP028273	Mixta theicola strain SRCM103227 chromosome, complete genome
+22. NZ_VHQI01000002	Mixta tenebrionis strain BIT-26 Scaffold2, whole genome shotgun sequence
+23. NZ_RJVB01000008	Erwinia sp. JUb26 Ga0304838_108, whole genome shotgun sequence
+24. NZ_CP009747	Pseudomonas parafulva strain CRS01-1 chromosome, complete genome
+25. NZ_BMNN01000005	Halopseudomonas pertucinogena strain JCM 11590 sequence05, whole genome shotgun sequence
+26. NZ_CP026378	Mixta calida strain DSM 22759 chromosome, complete genome
+27. NZ_CP031641	Pseudomonas parafulva strain JBCS1880 chromosome, complete genome
+28. NZ_CP059692	Aureimonas mangrovi strain LMG 31693 chromosome, complete genome
+29. NZ_AP025592	Anaeromyxobacter paludicola strain Red630 chromosome, complete genome
+30. NZ_JANFDE010000002	Streptomyces umbrinus strain CECT 3212 Ga0436942_02, whole genome shotgun sequence
+31. NZ_MUXN01000023	Amycolatopsis azurea DSM 43854 contig_23, whole genome shotgun sequence
+32. NW_015971642	Fonsecaea multimorphosa CBS 102226 unplaced genomic scaffold supercont1.8, whole genome shotgun sequence
+33. NW_006912944	Cladophialophora psammophila CBS 110553 aczJe-supercont1.23, whole genome shotgun sequence
+34. NW_015971583	Cladophialophora bantiana CBS 173.52 unplaced genomic scaffold supercont1.9, whole genome shotgun sequence
+35. NW_013550612	Fonsecaea pedrosoi CBS 271.37 unplaced genomic scaffold supercont1.4, whole genome shotgun sequence
+36. NW_013566982	Aureobasidium subglaciale EXF-2481 unplaced genomic scaffold scaffold_13, whole genome shotgun sequence
+37. NW_013581202	Aureobasidium namibiae CBS 147.97 unplaced genomic scaffold scaffold_7, whole genome shotgun sequence
+38. NW_024470057	Aureobasidium melanogenum CBS 110374 unplaced genomic scaffold scaffold_5, whole genome shotgun sequence
+39. NW_016017383	Sphaerulina musiva SO2202 unplaced genomic scaffold SEPMUscaffold_1, whole genome shotgun sequence
+40. NW_006911259	Baudoinia panamericana UAMH 10762 unplaced genomic scaffold BAUCOscaffold_3, whole genome shotgun sequence
+41. NW_006921532	Pseudocercospora fijiensis CIRAD86 unplaced genomic scaffold MYCFIscaffold_1, whole genome shotgun sequence
+42. NC_015676	Methanosalsum zhilinae DSM 4017, complete sequence
+43. NC_019977	Methanomethylovorans hollandica DSM 15978, complete sequence
+44. NZ_CP058215	Methanolobus zinderi strain DSM 21339 chromosome, complete genome
+45. NC_000961	Pyrococcus horikoshii OT3, complete sequence
+46. NC_015474	Pyrococcus sp. NA2, complete sequence
+47. NZ_BMLQ01000009	Citricoccus zhacaiensis strain CGMCC 1.7064 sequence09, whole genome shotgun sequence
+48. NZ_LR732817	Citricoccus sp. K5 isolate Citricoccus sp. K5, whole genome shotgun sequence
+49. NC_018000	Sinorhizobium fredii USDA 257, complete sequence
+50. NZ_CP029231	Sinorhizobium fredii CCBAU 45436 chromosome, complete genome
+
+
+Details:
+
+>>
+1. NZ_CP014213
+Source: Methanosphaera sp. BMS chromosome, complete genome
+Type: NRPS
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 653.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_9	AW729_RS01850	34	165	80.54794520547945	7.19e-46
+ctg1_10	AW729_RS01840	49	322	98.63013698630137	1.48e-106
+ctg1_11	AW729_RS01835	40	166	99.24812030075188	1.83e-48
+
+
+
+>>
+2. NZ_JACIDO010000006
+Source: Aureimonas phyllosphaerae strain DSM 25024 Ga0373234_06, whole genome shotgun sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 360.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_9	GGR05_RS15010	33	89	54.794520547945204	9.09e-18
+ctg1_10	GGR05_RS15015	46	271	93.15068493150685	1.15e-86
+
+
+
+>>
+3. NZ_CP007509
+Source: Stutzerimonas decontaminans strain 19SMN4 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 343.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_9	UIB01_RS01840	33	74	53.15068493150685	1.23e-12
+ctg1_10	UIB01_RS01845	47	269	91.23287671232877	6.31e-86
+
+
+
+>>
+4. NZ_RHQL01000001
+Source: Stutzerimonas xanthomarina strain PX_177 NODE_1_length_853214_cov_16.2064, whole genome shotgun sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 341.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_9	EGJ28_RS02380	31	77	61.09589041095891	1.46e-13
+ctg1_10	EGJ28_RS02375	46	264	91.23287671232877	5.71e-84
+
+
+
+>>
+5. NZ_CP086067
+Source: Stutzerimonas chloritidismutans strain 6L11 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 341.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_9	LLJ08_RS02040	32	75	53.15068493150685	6.69e-13
+ctg1_10	LLJ08_RS02045	47	266	91.23287671232877	5.05e-85
+
+
+
+>>
+6. NZ_WIFO01000001
+Source: Stutzerimonas stutzeri strain KOL14.W.495.96 Scaffold_1_length_265509_pilon, whole genome shotgun sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 340.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_9	GFL09_RS00120	32	76	53.15068493150685	1.98e-13
+ctg1_10	GFL09_RS00125	46	264	91.23287671232877	5.71e-84
+
+
+
+>>
+7. NC_018028
+Source: Stutzerimonas stutzeri CCUG 29243, complete sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 340.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_9	A458_RS23825	31	76	61.09589041095891	2.69e-13
+ctg1_10	A458_RS23830	46	264	91.23287671232877	4.04e-84
+
+
+
+>>
+8. NZ_CP090366
+Source: Stutzerimonas kunmingensis strain 7850S chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 340.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_9	LW136_RS02045	31	76	61.09589041095891	2.69e-13
+ctg1_10	LW136_RS02050	46	264	91.23287671232877	5.71e-84
+
+
+
+>>
+9. NC_019936
+Source: Stutzerimonas stutzeri RCH2, complete sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 340.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_9	PSEST_RS01980	31	74	53.15068493150685	9.07e-13
+ctg1_10	PSEST_RS01985	47	266	91.23287671232877	5.05e-85
+
+
+
+>>
+10. NZ_KK020676
+Source: Stutzerimonas stutzeri KOS6 scaffold2, whole genome shotgun sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 339.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_9	B597_RS31110	32	75	53.15068493150685	6.69e-13
+ctg1_10	B597_RS31105	46	264	91.23287671232877	4.04e-84
+
+
+
+>>
+11. NZ_LN614762
+Source: Stutzerimonas xanthomarina strain S11, whole genome shotgun sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 338.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_9	PXNS11_RS02180	31	76	61.09589041095891	3.65e-13
+ctg1_10	PXNS11_RS02185	46	262	91.23287671232877	3.22e-83
+
+
+
+>>
+12. NZ_CP066045
+Source: Stutzerimonas stutzeri strain FDAARGOS_1065 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 338.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_9	I6I22_RS20780	32	75	53.15068493150685	4.94e-13
+ctg1_10	I6I22_RS20775	46	263	91.23287671232877	8.07e-84
+
+
+
+>>
+13. NZ_WIFX01000001
+Source: Stutzerimonas stutzeri strain KOL14.W.45.12 Scaffold_1_length_732826_pilon, whole genome shotgun sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 338.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_9	GFK97_RS02570	31	74	53.15068493150685	9.07e-13
+ctg1_10	GFK97_RS02575	46	264	91.23287671232877	4.04e-84
+
+
+
+>>
+14. NZ_CP062167
+Source: Aureimonas sp. OT7 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 336.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_9	IGS74_RS06965	34	89	54.24657534246575	1.19e-17
+ctg1_10	IGS74_RS06970	43	247	90.95890410958904	1.65e-77
+
+
+
+>>
+15. NZ_AP025032
+Source: Aureimonas sp. SA4125 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 333.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_9	Sa4125_RS02030	31	69	53.15068493150685	7.1e-11
+ctg1_10	Sa4125_RS02035	45	264	92.32876712328768	6.65e-84
+
+
+
+>>
+16. NZ_VTPZ01000002
+Source: Pseudomonas profundi strain M5 Scaffold2, whole genome shotgun sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 332.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_9	FZE95_RS04855	32	84	50.95890410958904	6.1e-16
+ctg1_10	FZE95_RS04860	42	248	94.79452054794521	1.36e-77
+
+
+
+>>
+17. NZ_SPNT01000001
+Source: Nitratireductor sp. XY-223 NODE_1_length_1418466_cov_52.905788, whole genome shotgun sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 330.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_9	E4M07_RS29480	31	79	56.71232876712329	8.08e-14
+ctg1_10	E4M07_RS04930	46	251	90.68493150684932	5.95e-79
+
+
+
+>>
+18. NZ_CP048629
+Source: Pseudomonas sp. OIL-1 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 329.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_9	G3M63_RS18580	32	84	50.95890410958904	6.1e-16
+ctg1_10	G3M63_RS18575	42	245	94.79452054794521	1.08e-76
+
+
+
+>>
+19. NZ_CP028271
+Source: Mixta intestinalis strain SRCM103226 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 327.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_9	C7M51_RS21030	31	75	61.64383561643836	8.09e-13
+ctg1_10	C7M51_RS21035	46	252	90.41095890410958	1.79e-79
+
+
+
+>>
+20. NZ_CP026377
+Source: Mixta gaviniae strain DSM 22758 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 323.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_9	C2E15_RS03070	31	78	61.64383561643836	6.2e-14
+ctg1_10	C2E15_RS03075	44	245	93.69863013698631	1.35e-76
+
+
+
+>>
+21. NZ_CP028273
+Source: Mixta theicola strain SRCM103227 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 323.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_9	C7M52_RS14455	31	75	61.64383561643836	5.98e-13
+ctg1_10	C7M52_RS14450	44	248	92.87671232876711	5.68e-78
+
+
+
+>>
+22. NZ_VHQI01000002
+Source: Mixta tenebrionis strain BIT-26 Scaffold2, whole genome shotgun sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 323.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_9	FKM52_RS04090	31	75	61.64383561643836	5.98e-13
+ctg1_10	FKM52_RS04095	44	248	92.87671232876711	5.68e-78
+
+
+
+>>
+23. NZ_RJVB01000008
+Source: Erwinia sp. JUb26 Ga0304838_108, whole genome shotgun sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 322.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_9	EC836_RS19750	31	74	56.43835616438356	1.82e-12
+ctg1_10	EC836_RS19755	45	248	89.58904109589041	7.33e-78
+
+
+
+>>
+24. NZ_CP009747
+Source: Pseudomonas parafulva strain CRS01-1 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 319.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_9	NJ69_RS06710	32	76	53.97260273972603	3.46e-13
+ctg1_10	NJ69_RS06705	42	243	91.78082191780823	1.11e-75
+
+
+
+>>
+25. NZ_BMNN01000005
+Source: Halopseudomonas pertucinogena strain JCM 11590 sequence05, whole genome shotgun sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 318.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_9	IEW63_RS11560	32	78	55.89041095890411	5.2e-14
+ctg1_10	IEW63_RS11565	42	240	93.69863013698631	1.36e-74
+
+
+
+>>
+26. NZ_CP026378
+Source: Mixta calida strain DSM 22759 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 316.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_9	C2E16_RS03175	31	75	60.273972602739725	5.21e-13
+ctg1_10	C2E16_RS03180	43	241	93.69863013698631	4.28e-75
+
+
+
+>>
+27. NZ_CP031641
+Source: Pseudomonas parafulva strain JBCS1880 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 315.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_9	DZC75_RS09520	32	76	53.97260273972603	3.46e-13
+ctg1_10	DZC75_RS09515	42	239	92.05479452054794	2.55e-74
+
+
+
+>>
+28. NZ_CP059692
+Source: Aureimonas mangrovi strain LMG 31693 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 307.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_9	H1343_RS05560	32	73	51.23287671232877	2.62e-12
+ctg1_10	H1343_RS05565	42	234	88.21917808219179	1.08e-72
+
+
+
+>>
+29. NZ_AP025592
+Source: Anaeromyxobacter paludicola strain Red630 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 312.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_9	AMPC_RS10670	33	93	61.917808219178085	3.03e-19
+ctg1_10	AMPC_RS10715	39	219	91.78082191780823	1.99e-66
+
+
+
+>>
+30. NZ_JANFDE010000002
+Source: Streptomyces umbrinus strain CECT 3212 Ga0436942_02, whole genome shotgun sequence
+Type: T3PKS,terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 270.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_9	FHS35_RS10230	31	78	58.63013698630137	1.1e-13
+ctg1_10	FHS35_RS10270	34	192	98.08219178082192	5.12e-56
+
+
+
+>>
+31. NZ_MUXN01000023
+Source: Amycolatopsis azurea DSM 43854 contig_23, whole genome shotgun sequence
+Type: NRPS,NRPS-like,T1PKS,T3PKS,terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 244.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_9	B0293_RS28825	37	54	23.835616438356162	5.79e-06
+ctg1_10	B0293_RS28810	32	190	98.63013698630137	4.17e-55
+
+
+
+>>
+32. NW_015971642
+Source: Fonsecaea multimorphosa CBS 102226 unplaced genomic scaffold supercont1.8, whole genome shotgun sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 215.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_4	Z520_04730	33	91	84.86486486486487	1.98e-20
+ctg1_9	Z520_04724	34	124	73.42465753424658	8.27e-30
+
+
+
+>>
+33. NW_006912944
+Source: Cladophialophora psammophila CBS 110553 aczJe-supercont1.23, whole genome shotgun sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 213.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_4	A1O5_11089	34	91	84.86486486486487	3.86e-20
+ctg1_9	A1O5_11096	34	122	71.23287671232876	3.01e-29
+
+
+
+>>
+34. NW_015971583
+Source: Cladophialophora bantiana CBS 173.52 unplaced genomic scaffold supercont1.9, whole genome shotgun sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 213.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_4	Z519_06889	34	91	84.86486486486487	3.86e-20
+ctg1_9	Z519_06896	34	122	71.23287671232876	2.18e-29
+
+
+
+>>
+35. NW_013550612
+Source: Fonsecaea pedrosoi CBS 271.37 unplaced genomic scaffold supercont1.4, whole genome shotgun sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 212.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_4	Z517_05810	33	89	84.86486486486487	2.04e-19
+ctg1_9	Z517_05803	34	123	71.23287671232876	1.46e-29
+
+
+
+>>
+36. NW_013566982
+Source: Aureobasidium subglaciale EXF-2481 unplaced genomic scaffold scaffold_13, whole genome shotgun sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 174.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_6	AUEXF2481DRAFT_30301	39	57	44.696969696969695	1.77e-08
+ctg1_9	AUEXF2481DRAFT_66524	33	117	67.94520547945206	8.35e-28
+
+
+
+>>
+37. NW_013581202
+Source: Aureobasidium namibiae CBS 147.97 unplaced genomic scaffold scaffold_7, whole genome shotgun sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 173.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_6	M436DRAFT_63192	40	56	43.93939393939394	2.52e-08
+ctg1_9	M436DRAFT_44663	34	117	61.917808219178085	4.51e-28
+
+
+
+>>
+38. NW_024470057
+Source: Aureobasidium melanogenum CBS 110374 unplaced genomic scaffold scaffold_5, whole genome shotgun sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 172.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_6	M437DRAFT_73718	45	53	30.303030303030305	4.62e-07
+ctg1_9	M437DRAFT_73717	33	119	67.94520547945206	8.01e-29
+
+
+
+>>
+39. NW_016017383
+Source: Sphaerulina musiva SO2202 unplaced genomic scaffold SEPMUscaffold_1, whole genome shotgun sequence
+Type: NRPS,terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 167.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_6	SEPMUDRAFT_32937	43	52	30.303030303030305	4.26e-07
+ctg1_9	SEPMUDRAFT_122379	31	115	72.6027397260274	2.94e-26
+
+
+
+>>
+40. NW_006911259
+Source: Baudoinia panamericana UAMH 10762 unplaced genomic scaffold BAUCOscaffold_3, whole genome shotgun sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 166.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_6	BAUCODRAFT_55619	40	51	30.303030303030305	8.03e-07
+ctg1_9	BAUCODRAFT_64741	32	115	75.34246575342466	3.16e-27
+
+
+
+>>
+41. NW_006921532
+Source: Pseudocercospora fijiensis CIRAD86 unplaced genomic scaffold MYCFIscaffold_1, whole genome shotgun sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 165.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_6	MYCFIDRAFT_101681	40	52	30.303030303030305	9.6e-07
+ctg1_9	MYCFIDRAFT_54584	32	113	73.6986301369863	2.15e-25
+
+
+
+>>
+42. NC_015676
+Source: Methanosalsum zhilinae DSM 4017, complete sequence
+Type: thioamitides,thiopeptide
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 415.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_12	MZHIL_RS07740	55	127	95.45454545454545	1.71e-36
+ctg1_13	MZHIL_RS07745	46	288	99.41690962099126	3.76e-93
+
+
+
+>>
+43. NC_019977
+Source: Methanomethylovorans hollandica DSM 15978, complete sequence
+Type: thioamitides,thiopeptide
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 411.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_12	METHO_RS10370	51	127	93.93939393939394	7.56e-37
+ctg1_13	METHO_RS10365	46	284	100.0	1.17e-91
+
+
+
+>>
+44. NZ_CP058215
+Source: Methanolobus zinderi strain DSM 21339 chromosome, complete genome
+Type: thioamitides,thiopeptide
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 400.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_12	HWN40_RS10880	55	127	93.18181818181817	1.14e-36
+ctg1_13	HWN40_RS10875	44	273	100.29154518950438	4.58e-87
+
+
+
+>>
+45. NC_000961
+Source: Pyrococcus horikoshii OT3, complete sequence
+Type: RRE-containing
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 399.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_12	PH_RS01570	51	123	90.15151515151516	5e-35
+ctg1_13	PH_RS01575	46	276	98.54227405247813	1.37e-88
+
+
+
+>>
+46. NC_015474
+Source: Pyrococcus sp. NA2, complete sequence
+Type: RRE-containing
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 379.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_12	PNA2_RS04905	49	119	96.96969696969697	1.16e-33
+ctg1_13	PNA2_RS04910	44	260	98.83381924198251	2.67e-82
+
+
+
+>>
+47. NZ_BMLQ01000009
+Source: Citricoccus zhacaiensis strain CGMCC 1.7064 sequence09, whole genome shotgun sequence
+Type: redox-cofactor
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 300.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_12	IEX49_RS13945	39	81	96.21212121212122	2.88e-18
+ctg1_13	IEX49_RS13950	42	219	87.46355685131195	6.26e-66
+
+
+
+>>
+48. NZ_LR732817
+Source: Citricoccus sp. K5 isolate Citricoccus sp. K5, whole genome shotgun sequence
+Type: redox-cofactor
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 300.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_12	BOSE125_RS05525	38	79	96.21212121212122	1.14e-17
+ctg1_13	BOSE125_RS05520	43	221	87.46355685131195	1.13e-66
+
+
+
+>>
+49. NC_018000
+Source: Sinorhizobium fredii USDA 257, complete sequence
+Type: acyl_amino_acids
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 255.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_12	USDA257_RS26105	40	74	74.24242424242425	8.5e-16
+ctg1_13	USDA257_RS26110	33	181	103.2069970845481	1.46e-51
+
+
+
+>>
+50. NZ_CP029231
+Source: Sinorhizobium fredii CCBAU 45436 chromosome, complete genome
+Type: acyl_amino_acids
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 243.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg1_12	AB395_RS15745	40	73	74.24242424242425	2.39e-15
+ctg1_13	AB395_RS15750	32	170	103.2069970845481	3.66e-47
+

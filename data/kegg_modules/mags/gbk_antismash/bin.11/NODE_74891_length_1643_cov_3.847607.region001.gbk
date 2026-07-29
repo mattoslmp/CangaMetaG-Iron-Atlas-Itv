@@ -1,0 +1,148 @@
+LOCUS       NODE_74891_length_1643_cov_3.847607 1643 bp    DNA              UNK 01-JAN-1980
+DEFINITION  NODE_74891_length_1643_cov_3.847607.
+ACCESSION   NODE_74891_length_1643_cov_3
+VERSION     NODE_74891_length_1643_cov_3.847607
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+COMMENT     ##antiSMASH-Data-START##
+            Version     :: 8.0.4
+            Run date    :: 2026-07-02 19:28:04
+            NOTE :: This is a single region extracted from a larger record!
+            Orig. start :: 0
+            Orig. end   :: 1643
+            ##antiSMASH-Data-END##
+FEATURES             Location/Qualifiers
+     region          1..1643
+                     /candidate_cluster_numbers="1"
+                     /contig_edge="True"
+                     /product="terpene-precursor"
+                     /region_number="1"
+                     /rules="(PT_FPPS_like and not PT_HPP)"
+                     /tool="antismash"
+     cand_cluster    1..1643
+                     /candidate_cluster_number="1"
+                     /contig_edge="True"
+                     /detection_rules="(PT_FPPS_like and not PT_HPP)"
+                     /kind="single"
+                     /product="terpene-precursor"
+                     /protoclusters="1"
+                     /tool="antismash"
+     protocluster    1..1643
+                     /aStool="rule-based-clusters"
+                     /category="terpene"
+                     /contig_edge="True"
+                     /core_location="[298:1297](-)"
+                     /cutoff="10000"
+                     /detection_rule="(PT_FPPS_like and not PT_HPP)"
+                     /neighbourhood="10000"
+                     /product="terpene-precursor"
+                     /protocluster_number="1"
+                     /tool="antismash"
+     proto_core      complement(299..1297)
+                     /aStool="rule-based-clusters"
+                     /tool="antismash"
+                     /cutoff="10000"
+                     /detection_rule="(PT_FPPS_like and not PT_HPP)"
+                     /neighbourhood="10000"
+                     /product="terpene-precursor"
+                     /protocluster_number="1"
+     CDS             complement(3..287)
+                     /locus_tag="ctg383_1"
+                     /transl_table=11
+                     /translation="MEGPELHNLVMKWALKNALEHASKAAEPAVISKVIGERPELRARL
+                     RELGPLIREMVGAVNVMGAKEQRERLEEIAPELLERRKIAEARGLPPLQG"
+     CDS             complement(299..1297)
+                     /gene_functions="biosynthetic (rule-based-clusters)
+                     terpene-precursor: PT_FPPS_like"
+                     /gene_functions="biosynthetic-additional (smcogs)
+                     SMCOG1182: Polyprenyl synthetase"
+                     /gene_kind="biosynthetic"
+                     /locus_tag="ctg383_2"
+                     /sec_met_domain="PT_FPPS_like (E-value: 1.5e-68, bitscore:
+                     218.6, seeds: 145, tool: rule-based-clusters)"
+                     /transl_table=11
+                     /translation="MMADLLEEVSLVADLVNGQFKRLASDHSDELSQVAFHLIKLGGKR
+                     LRPFVLMKCCELVGGSVEDALPAAVSIELLHNFTLIHDDVMDKDDFRHGAPTVHKVYGE
+                     PAAIIAGDMLFALVFKHVCEAFWKRNVPSSITQRVVEVLSEAAITVCEGQWMDMSLQNR
+                     RDTTEETYLSLIAKKTGHLYRASALIGGIVGGAKGEALRSLSTFGERVGQAFQVADDLL
+                     GAVGDSKKTGKPVGSDMRNGKSTIIFLHALRTATPENRRIILKAFGNQEASKEEVAAAV
+                     EALGRTGSIEYGKGMARQLSEQAKAELAYFPDSVNRSLLHQFSDFVVSRAF"
+     PFAM_domain     complement(449..1213)
+                     /aSDomain="polyprenyl_synt"
+                     /aSTool="clusterhmmer"
+                     /database="35.0"
+                     /db_xref="PF00348.20"
+                     /db_xref="GO:0008299"
+                     /description="Polyprenyl synthetase"
+                     /detection="hmmscan"
+                     /domain_id="clusterhmmer_ctg383_2_0001"
+                     /evalue="9.80E-67"
+                     /gene_ontologies="GO:0008299: isoprenoid biosynthetic
+                     process"
+                     /label="ctg383_2"
+                     /locus_tag="ctg383_2"
+                     /protein_end="283"
+                     /protein_start="28"
+                     /score="224.8"
+                     /tool="antismash"
+                     /translation="DELSQVAFHLIKLGGKRLRPFVLMKCCELVGGSVEDALPAAVSIE
+                     LLHNFTLIHDDVMDKDDFRHGAPTVHKVYGEPAAIIAGDMLFALVFKHVCEAFWKRNVP
+                     SSITQRVVEVLSEAAITVCEGQWMDMSLQNRRDTTEETYLSLIAKKTGHLYRASALIGG
+                     IVGGAKGEALRSLSTFGERVGQAFQVADDLLGAVGDSKKTGKPVGSDMRNGKSTIIFLH
+                     ALRTATPENRRIILKAFGNQEASKEEVAAAVEA"
+     CDS             complement(1352..1642)
+                     /locus_tag="ctg383_3"
+                     /transl_table=11
+                     /translation="MCSGGVRTGLDASKALALGATCVGVALPLLRRANAGVKAVREWLD
+                     AFNDELRLSMFLAGAPSTGEMMRRPIVITGPMRDWLSARGIDVDAYAQRKG"
+     PFAM_domain     complement(1439..1642)
+                     /aSDomain="FMN_dh"
+                     /aSTool="clusterhmmer"
+                     /database="35.0"
+                     /db_xref="PF01070.21"
+                     /db_xref="GO:0016491"
+                     /description="FMN-dependent dehydrogenase"
+                     /detection="hmmscan"
+                     /domain_id="clusterhmmer_ctg383_3_0002"
+                     /evalue="1.90E-13"
+                     /gene_ontologies="GO:0016491: oxidoreductase activity"
+                     /label="ctg383_3"
+                     /locus_tag="ctg383_3"
+                     /protein_end="68"
+                     /protein_start="0"
+                     /score="50.3"
+                     /tool="antismash"
+                     /translation="MCSGGVRTGLDASKALALGATCVGVALPLLRRANAGVKAVREWLD
+                     AFNDELRLSMFLAGAPSTGEMMR"
+ORIGIN
+        1 gccccctgca ggggaggtag gcccctggcc tcggcgattt ttctcctttc cagcagctcg
+       61 ggagcgatct cctcaaggcg ctccctctgc tccttggcgc ccatgacatt cacagcccct
+      121 accatctcgc ggattaatgg ccccagctcc ctaaggcggg ccctcagctc gggcctttcg
+      181 cctatcacct tggagatgac ggcgggctcc gcggccttgc tggcgtgctc cagcgcattc
+      241 ttgagcgccc acttcatgac gaggttgtgc agctcggggc cctccaaact cctaccccct
+      301 aaaatgccct ggagaccacg aagtcggaga actgatgcag caacgaccta ttcacggaat
+      361 ccggaaaata ggccagctcg gccttcgcct gttcagagag ctgccttgcc atgccctttc
+      421 cgtactctat ggagcccgtc ctcccgaggg cctccaccgc cgctgccacc tcctccttcg
+      481 aggcctcttg gttcccgaag gccttcagta tgatcctgcg gttctcgggc gtggccgtcc
+      541 tcagcgcatg gaggaagatg atcgtcgact tgccattcct catgtcgctg cctacgggct
+      601 ttccggtctt cttggagtcc cccaccgcac ccaggagatc gtccgcgacc tggaaggcct
+      661 gtcccaccct ctccccgaag gtggataggc tcctgagggc ctcgcccttg gcgccgccca
+      721 cgattccccc tatgagcgcc gaggcgcgat aaagatgtcc cgtcttcttg gctatgaggg
+      781 aaagataggt ctcctccgtg gtgtccctcc tgttctgaag gctcatgtcc atccattggc
+      841 cctcgcagac ggttatggcc gcctccgaca gcacctccac gaccctctgg gtaatggatg
+      901 aaggcacgtt cctcttccag aaggcctcgc acacgtgctt gaagacgagg gcgaacagca
+      961 tatcgcccgc gatgatggcg gccggttcgc cgtagacctt gtgaaccgtg ggggcaccgt
+     1021 gccggaaatc gtccttgtcc atgacatcgt cgtgtatgag cgtgaagtta tggaggagtt
+     1081 cgatggatac cgccgcgggg agggcatcct caacgcttcc gcccacgagt tcacagcatt
+     1141 tcatgagcac gaagggcctg agcctcttgc cccccagttt tatcaggtgg aaggccacct
+     1201 gcgagagctc atcggaatgg tccgaggcca gtcgcttgaa ttggccattc accaggtcgg
+     1261 ccaccaggga gacctcctcg aggagatctg ccatcatagc cgccctccgc cggtccaggg
+     1321 acccgtaggg atatccgccc tcatgatcgg cctatccctt cctttgcgca taagcatcca
+     1381 catcgatccc cctggcggag agccagtccc tcatggggcc tgtgatcacg atcgggcgcc
+     1441 tcatcatctc gccggtcgat ggcgctcccg ccaggaacat ggagagcctc agctcatcgt
+     1501 tgaaggcatc gagccattcc ctcacggcct tgacgccggc attggccctc ctcaagaggg
+     1561 gcaaggccac tcccacgcac gtggccccca gggccagggc cttggaggcg tcgagcccgg
+     1621 tcctcactcc ccccgagcag atc
+//

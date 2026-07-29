@@ -1,0 +1,11 @@
+{
+  "Domain": "Bacteria",
+  "Taxonomic level": "Genus",
+  "Visualization": "Relative-abundance heatmap",
+  "Expected dynamic title": "Bacteria — Genus — Relative-abundance heatmap",
+  "Dynamic title found": true,
+  "Exceptions": 0,
+  "Status": "VALIDATED",
+  "Elapsed seconds": 29.29,
+  "Details": ""
+}

@@ -1,0 +1,27 @@
+ClusterBlast scores for NODE_14_length_48778_cov_3.346523
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg14_24	23747	24341	+		
+ctg14_25	24366	25509	+		
+ctg14_26	25924	27832	+		
+ctg14_27	27853	29527	+		
+ctg14_28	29530	30331	-		
+ctg14_29	30352	31978	-		
+ctg14_30	32310	33204	-		
+ctg14_31	33193	34204	-		
+ctg14_32	34193	34544	-		
+ctg14_33	34618	34942	-		
+ctg14_34	35002	36946	-		
+ctg14_35	36951	38172	-		
+ctg14_36	38187	38715	-		
+ctg14_37	38714	39611	-		
+ctg14_38	39607	40534	-		
+ctg14_39	40546	41128	-		
+ctg14_40	41403	42120	-		
+ctg14_41	42116	44246	-		
+
+
+Significant hits: 
+
+
+Details:

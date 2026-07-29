@@ -1,0 +1,77 @@
+ClusterBlast scores for NODE_410_length_3606_cov_2.956362
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg410_1	2	197	-		
+ctg410_2	291	1200	+		
+ctg410_3	1208	2228	+		
+ctg410_4	2214	2907	+		
+ctg410_5	3122	3605	+		
+
+
+Significant hits: 
+1. NC_009494	Legionella pneumophila str. Corby, complete sequence
+2. NZ_JAPXHX010000009	Legionella pneumophila strain L10-091 L10_091_contig000010, whole genome shotgun sequence
+3. NZ_LT632615	Legionella pneumophila strain ST23 isolate ST23 chromosome 1, complete sequence
+4. NZ_CP012019	Legionella pneumophila subsp. pneumophila strain Toronto-20052 chromosome, complete genome
+
+
+Details:
+
+>>
+1. NC_009494
+Source: Legionella pneumophila str. Corby, complete sequence
+Type: lassopeptide
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 185.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg410_2	LPC_RS15710	31	86	76.49006622516556	2.96e-17
+ctg410_3	LPC_RS15730	55	99	27.728613569321535	3.66e-21
+
+
+
+>>
+2. NZ_JAPXHX010000009
+Source: Legionella pneumophila strain L10-091 L10_091_contig000010, whole genome shotgun sequence
+Type: lassopeptide
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 185.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg410_2	O6E59_RS06310	31	86	76.49006622516556	2.96e-17
+ctg410_3	O6E59_RS06330	55	99	27.728613569321535	3.66e-21
+
+
+
+>>
+3. NZ_LT632615
+Source: Legionella pneumophila strain ST23 isolate ST23 chromosome 1, complete sequence
+Type: lassopeptide
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 185.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg410_2	BQ6063_RS15665	31	86	76.49006622516556	2.96e-17
+ctg410_3	BQ6063_RS15685	55	99	27.728613569321535	3.66e-21
+
+
+
+>>
+4. NZ_CP012019
+Source: Legionella pneumophila subsp. pneumophila strain Toronto-20052 chromosome, complete genome
+Type: lassopeptide
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 183.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg410_2	lpt_RS15655	31	86	76.49006622516556	2.96e-17
+ctg410_3	lpt_RS15675	54	97	28.31858407079646	1.3e-20
+

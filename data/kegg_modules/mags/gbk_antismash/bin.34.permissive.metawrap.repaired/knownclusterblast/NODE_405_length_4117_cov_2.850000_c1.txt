@@ -1,0 +1,13 @@
+ClusterBlast scores for NODE_405_length_4117_cov_2.850000
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg405_1	30	591	-		
+ctg405_2	726	2637	+		
+ctg405_3	2923	3460	-		
+ctg405_4	3509	4115	-		
+
+
+Significant hits: 
+
+
+Details:

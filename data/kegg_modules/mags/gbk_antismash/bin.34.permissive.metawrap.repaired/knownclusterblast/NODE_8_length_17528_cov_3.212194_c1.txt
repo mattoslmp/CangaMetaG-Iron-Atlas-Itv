@@ -1,0 +1,30 @@
+ClusterBlast scores for NODE_8_length_17528_cov_3.212194
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg8_1	1	100	+		
+ctg8_2	99	504	+		
+ctg8_3	893	1592	+		
+ctg8_4	1629	2889	+		
+ctg8_5	2892	3240	-		
+ctg8_6	3227	3797	-		
+ctg8_7	3967	4849	+		
+ctg8_8	5074	6637	+		
+ctg8_9	6708	7179	-		
+ctg8_10	7248	8124	+		
+ctg8_11	8291	9221	+		
+ctg8_12	9240	9696	+		
+ctg8_13	9716	10580	-		
+ctg8_14	11156	12239	+		
+ctg8_15	12305	13346	+		
+ctg8_16	13342	14185	-		
+ctg8_17	14682	15387	+		
+ctg8_18	15383	16004	-		
+ctg8_19	16023	16827	-		
+ctg8_20	16926	17391	-		
+ctg8_21	17406	17526	-		
+
+
+Significant hits: 
+
+
+Details:

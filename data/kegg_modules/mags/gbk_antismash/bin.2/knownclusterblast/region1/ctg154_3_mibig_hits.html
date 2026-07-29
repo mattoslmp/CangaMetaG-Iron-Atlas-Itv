@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>BBC15204.1</td>
+              <td>YcaO-like_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001696.5">BGC0001696.5</a></td>
+              <td>ribosomal:RiPP</td>
+              <td>33.0</td>
+              <td>105.0</td>
+              <td>152.0</td>
+              <td>2.83e-41</td>
+          </tr>
+    
+          <tr>
+              <td>ATJ00798.1</td>
+              <td>hypothetical_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001802.5">BGC0001802.5</a></td>
+              <td>ribosomal:RiPP:Thioamidide</td>
+              <td>33.0</td>
+              <td>105.4</td>
+              <td>151.0</td>
+              <td>5.44e-41</td>
+          </tr>
+    
+          <tr>
+              <td>WP_030193566.1</td>
+              <td>YcaO-like_family_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002669.2">BGC0002669.2</a></td>
+              <td>ribosomal:RiPP</td>
+              <td>32.0</td>
+              <td>105.4</td>
+              <td>150.0</td>
+              <td>7.55e-41</td>
+          </tr>
+    
+          <tr>
+              <td>KPC82021.1</td>
+              <td>hypothetical_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002560.3">BGC0002560.3</a></td>
+              <td>ribosomal:RiPP</td>
+              <td>32.0</td>
+              <td>105.9</td>
+              <td>143.0</td>
+              <td>4.01e-38</td>
+          </tr>
+    
+          <tr>
+              <td>ctg1_3</td>
+              <td></td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001849.4">BGC0001849.4</a></td>
+              <td>ribosomal:unmodified</td>
+              <td>31.0</td>
+              <td>104.7</td>
+              <td>136.0</td>
+              <td>1.68e-35</td>
+          </tr>
+    
+          <tr>
+              <td>BAN83923.1</td>
+              <td>hypothetical_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000625.5">BGC0000625.5</a></td>
+              <td>ribosomal:RiPP</td>
+              <td>28.0</td>
+              <td>106.2</td>
+              <td>134.0</td>
+              <td>1.23e-34</td>
+          </tr>
+    
+          <tr>
+              <td>NQE92415.1</td>
+              <td>YcaO-like_family_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002120.3">BGC0002120.3</a></td>
+              <td>ribosomal:RiPP:Lanthipeptide</td>
+              <td>31.0</td>
+              <td>98.8</td>
+              <td>132.0</td>
+              <td>1.72e-34</td>
+          </tr>
+    
+          <tr>
+              <td>WP_091614389.1</td>
+              <td>YcaO-like_family_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001471.5">BGC0001471.5</a></td>
+              <td>ribosomal:RiPP:Thiopeptide</td>
+              <td>31.0</td>
+              <td>96.5</td>
+              <td>127.0</td>
+              <td>9.07e-33</td>
+          </tr>
+    
+          <tr>
+              <td>PYC80225.1</td>
+              <td>hypothetical_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001474.4">BGC0001474.4</a></td>
+              <td>ribosomal:RiPP:Thiopeptide</td>
+              <td>31.0</td>
+              <td>97.8</td>
+              <td>123.0</td>
+              <td>4.5e-31</td>
+          </tr>
+    
+          <tr>
+              <td>PYC67537.1</td>
+              <td>hypothetical_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001473.4">BGC0001473.4</a></td>
+              <td>ribosomal:RiPP:Thiopeptide</td>
+              <td>35.0</td>
+              <td>76.5</td>
+              <td>117.0</td>
+              <td>4.31e-29</td>
+          </tr>
+    
+          <tr>
+              <td>QGA72585.1</td>
+              <td>MusD</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002485.2">BGC0002485.2</a></td>
+              <td>ribosomal:RiPP+other:other</td>
+              <td>31.0</td>
+              <td>59.9</td>
+              <td>97.0</td>
+              <td>2.6e-21</td>
+          </tr>
+    
+          <tr>
+              <td>QGA72600.1</td>
+              <td>MusD</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002551.2">BGC0002551.2</a></td>
+              <td>other:other+ribosomal:RiPP+terpene</td>
+              <td>29.0</td>
+              <td>77.5</td>
+              <td>96.0</td>
+              <td>8.37e-21</td>
+          </tr>
+    
+          <tr>
+              <td>AAF73450.1</td>
+              <td>AknN</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000193.3">BGC0000193.3</a></td>
+              <td>PKS</td>
+              <td>32.0</td>
+              <td>59.7</td>
+              <td>93.0</td>
+              <td>4.32e-20</td>
+          </tr>
+    
+          <tr>
+              <td>AAY21153.1</td>
+              <td>adenylation/heterocyclization_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000475.5">BGC0000475.5</a></td>
+              <td>ribosomal:RiPP:Cyanobactin</td>
+              <td>28.0</td>
+              <td>61.4</td>
+              <td>87.0</td>
+              <td>6.73e-18</td>
+          </tr>
+    
+          <tr>
+              <td>ACA04483.1</td>
+              <td>TenD</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000480.5">BGC0000480.5</a></td>
+              <td>ribosomal:RiPP:Cyanobactin</td>
+              <td>26.0</td>
+              <td>84.4</td>
+              <td>86.0</td>
+              <td>8.95e-18</td>
+          </tr>
+    
+          <tr>
+              <td>AFZ08005.1</td>
+              <td>bacteriocin_biosynthesis_cyclodehydratase_domain_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000471.4">BGC0000471.4</a></td>
+              <td>ribosomal:RiPP:Cyanobactin</td>
+              <td>27.0</td>
+              <td>61.6</td>
+              <td>84.0</td>
+              <td>3.79e-17</td>
+          </tr>
+    
+          <tr>
+              <td>BAE46919.2</td>
+              <td>goadsporin_biosynthetic_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000565.5">BGC0000565.5</a></td>
+              <td>ribosomal:RiPP:LAP</td>
+              <td>25.0</td>
+              <td>88.9</td>
+              <td>82.0</td>
+              <td>2.13e-16</td>
+          </tr>
+    
+          <tr>
+              <td>ACA04490.1</td>
+              <td>TruD</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000477.3">BGC0000477.3</a></td>
+              <td>ribosomal:RiPP:Cyanobactin</td>
+              <td>23.0</td>
+              <td>87.1</td>
+              <td>82.0</td>
+              <td>2.87e-16</td>
+          </tr>
+    
+          <tr>
+              <td>CAP64338.1</td>
+              <td>adenylation/heterocyclization_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000474.4">BGC0000474.4</a></td>
+              <td>ribosomal:RiPP:Cyanobactin</td>
+              <td>30.0</td>
+              <td>59.7</td>
+              <td>79.0</td>
+              <td>1.6e-15</td>
+          </tr>
+    
+          <tr>
+              <td>CCH92967.1</td>
+              <td>conserved_hypothetical_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000483.5">BGC0000483.5</a></td>
+              <td>ribosomal:RiPP:Cyanobactin</td>
+              <td>25.0</td>
+              <td>61.6</td>
+              <td>79.0</td>
+              <td>2.84e-15</td>
+          </tr>
+    
+          <tr>
+              <td>CAO82084.1</td>
+              <td>adenylation/heterocyclization_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000473.4">BGC0000473.4</a></td>
+              <td>ribosomal:RiPP:Cyanobactin</td>
+              <td>29.0</td>
+              <td>59.7</td>
+              <td>78.0</td>
+              <td>5.05e-15</td>
+          </tr>
+    
+          <tr>
+              <td>EMF00381.1</td>
+              <td>hypothetical_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001145.5">BGC0001145.5</a></td>
+              <td>ribosomal:RiPP:Thiopeptide</td>
+              <td>32.0</td>
+              <td>44.6</td>
+              <td>69.0</td>
+              <td>4.31e-12</td>
+          </tr>
+    
+          <tr>
+              <td>ACS50130.1</td>
+              <td>putative_docking_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000603.5">BGC0000603.5</a></td>
+              <td>ribosomal:RiPP:Thiopeptide</td>
+              <td>30.0</td>
+              <td>50.0</td>
+              <td>67.0</td>
+              <td>1.04e-11</td>
+          </tr>
+    
+          <tr>
+              <td>QAZ50818.1</td>
+              <td>hypothetical_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002311.3">BGC0002311.3</a></td>
+              <td>ribosomal:RiPP</td>
+              <td>29.0</td>
+              <td>57.4</td>
+              <td>66.0</td>
+              <td>1.74e-11</td>
+          </tr>
+    
+          <tr>
+              <td>ACR48336.1</td>
+              <td>NosG</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000610.5">BGC0000610.5</a></td>
+              <td>ribosomal:RiPP:Thiopeptide</td>
+              <td>31.0</td>
+              <td>39.4</td>
+              <td>66.0</td>
+              <td>3.17e-11</td>
+          </tr>
+    
+          <tr>
+              <td>AGY49593.1</td>
+              <td>PbtG</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001155.5">BGC0001155.5</a></td>
+              <td>ribosomal:RiPP:Thiopeptide</td>
+              <td>29.0</td>
+              <td>64.4</td>
+              <td>64.0</td>
+              <td>1.21e-10</td>
+          </tr>
+    
+          <tr>
+              <td>ACS83772.1</td>
+              <td>cyclodehydratase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000604.4">BGC0000604.4</a></td>
+              <td>ribosomal:RiPP:Thiopeptide</td>
+              <td>29.0</td>
+              <td>64.4</td>
+              <td>63.0</td>
+              <td>2.14e-10</td>
+          </tr>
+    
+          <tr>
+              <td>ABC02784.1</td>
+              <td>hypothetical_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000809.3">BGC0000809.3</a></td>
+              <td>other:other</td>
+              <td>28.0</td>
+              <td>71.3</td>
+              <td>63.0</td>
+              <td>2.22e-10</td>
+          </tr>
+    
+          <tr>
+              <td>ADG87282.1</td>
+              <td>protein_of_unknown_function_DUF181</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001860.4">BGC0001860.4</a></td>
+              <td>ribosomal:RiPP:Thiopeptide</td>
+              <td>26.0</td>
+              <td>62.9</td>
+              <td>63.0</td>
+              <td>3.05e-10</td>
+          </tr>
+    
+          <tr>
+              <td>ADR01083.1</td>
+              <td>NocG</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000609.3">BGC0000609.3</a></td>
+              <td>ribosomal:RiPP:Thiopeptide</td>
+              <td>27.0</td>
+              <td>57.9</td>
+              <td>62.0</td>
+              <td>3.96e-10</td>
+          </tr>
+    
+          <tr>
+              <td>AQM75233.1</td>
+              <td>NosG</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001707.5">BGC0001707.5</a></td>
+              <td>ribosomal:RiPP</td>
+              <td>32.0</td>
+              <td>37.9</td>
+              <td>61.0</td>
+              <td>8.89e-10</td>
+          </tr>
+    
+          <tr>
+              <td>WP_234313350.1</td>
+              <td>YcaO-like_family_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001753.3">BGC0001753.3</a></td>
+              <td>ribosomal:RiPP</td>
+              <td>26.0</td>
+              <td>56.4</td>
+              <td>61.0</td>
+              <td>9.24e-10</td>
+          </tr>
+    
+          <tr>
+              <td>BBA31819.1</td>
+              <td>YcaO_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001797.3">BGC0001797.3</a></td>
+              <td>ribosomal:RiPP</td>
+              <td>29.0</td>
+              <td>60.4</td>
+              <td>61.0</td>
+              <td>1.31e-09</td>
+          </tr>
+    
+          <tr>
+              <td>AID54694.1</td>
+              <td>cyclodehydratase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001146.5">BGC0001146.5</a></td>
+              <td>ribosomal:RiPP:Thiopeptide</td>
+              <td>28.0</td>
+              <td>57.9</td>
+              <td>61.0</td>
+              <td>1.65e-09</td>
+          </tr>
+    
+          <tr>
+              <td>AGN11668.1</td>
+              <td>BerG2</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001472.5">BGC0001472.5</a></td>
+              <td>ribosomal:RiPP</td>
+              <td>29.0</td>
+              <td>59.7</td>
+              <td>59.0</td>
+              <td>3e-09</td>
+          </tr>
+    
+          <tr>
+              <td>QVN25649.1</td>
+              <td>cyclodehydratase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002363.3">BGC0002363.3</a></td>
+              <td>ribosomal:RiPP</td>
+              <td>29.0</td>
+              <td>59.9</td>
+              <td>58.0</td>
+              <td>7.04e-09</td>
+          </tr>
+    
+          <tr>
+              <td>WP_199814150.1</td>
+              <td>YcaO-like_family_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001753.3">BGC0001753.3</a></td>
+              <td>ribosomal:RiPP</td>
+              <td>27.0</td>
+              <td>84.2</td>
+              <td>56.0</td>
+              <td>3.4e-08</td>
+          </tr>
+    
+          <tr>
+              <td>AGY49581.1</td>
+              <td>PbtG1</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001155.5">BGC0001155.5</a></td>
+              <td>ribosomal:RiPP:Thiopeptide</td>
+              <td>33.0</td>
+              <td>37.1</td>
+              <td>56.0</td>
+              <td>3.52e-08</td>
+          </tr>
+    
+          <tr>
+              <td>ACS83760.1</td>
+              <td>cyclodehydratase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000604.4">BGC0000604.4</a></td>
+              <td>ribosomal:RiPP:Thiopeptide</td>
+              <td>31.0</td>
+              <td>35.9</td>
+              <td>53.0</td>
+              <td>4.48e-07</td>
+          </tr>
+    
+          <tr>
+              <td>ADO67772.1</td>
+              <td>TpaC</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000615.4">BGC0000615.4</a></td>
+              <td>ribosomal:RiPP:Thiopeptide</td>
+              <td>31.0</td>
+              <td>40.6</td>
+              <td>51.0</td>
+              <td>1.15e-06</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

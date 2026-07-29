@@ -1,0 +1,45 @@
+ClusterBlast scores for NODE_33213_length_2432_cov_4.398822
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg219_1	0	312	+		
+ctg219_2	366	1293	+		
+ctg219_3	1300	1432	-		
+ctg219_4	1605	1968	+		
+ctg219_5	1964	2432	+		
+
+
+Significant hits: 
+1. NZ_CP080409	Nocardioides panacisoli strain DP1N28-12 chromosome, complete genome
+2. NZ_FOMK01000001	Chitinophaga sp. CF118, whole genome shotgun sequence
+
+
+Details:
+
+>>
+1. NZ_CP080409
+Source: Nocardioides panacisoli strain DP1N28-12 chromosome, complete genome
+Type: NRPS-like
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 184.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg219_2	KUV85_RS16020	32	112	94.15584415584416	1.31e-26
+ctg219_5	KUV85_RS15985	37	72	82.6923076923077	2.15e-13
+
+
+
+>>
+2. NZ_FOMK01000001
+Source: Chitinophaga sp. CF118, whole genome shotgun sequence
+Type: NRPS,PKS-like,T3PKS,transAT-PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 126.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg219_4	BM176_RS05415	31	49	72.5	5.18e-06
+ctg219_5	BM176_RS05385	42	77	80.12820512820514	2.86e-15
+

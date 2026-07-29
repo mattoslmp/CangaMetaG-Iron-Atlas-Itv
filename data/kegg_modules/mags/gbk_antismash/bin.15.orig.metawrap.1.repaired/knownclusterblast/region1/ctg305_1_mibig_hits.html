@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" type="text/css" href="../../css/style.css">
+
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script type="text/javascript" src="../../js/jquery.tablesorter.min.js"></script>
+
+<script type="text/javascript" >
+var counter = 1;
+function addInput(divName){
+     var newdiv = document.createElement('div');
+     newdiv.innerHTML = "<b>Locus " + (counter + 1) + "</b><br> GenBank accession: <input type='text' required name='myInputs[]'> Start nt: <input type='number' name='myStartCoords[]' placeholder='N/A'> End nt: <input type='number' name='myEndCoords[]' placeholder='N/A'> <br><br>";
+     document.getElementById(divName).appendChild(newdiv);
+     counter++;
+}
+</script>
+
+<script>
+$(document).ready(function()
+    {
+        $("#myTable").tablesorter();
+    }
+);
+
+</script>
+<style>
+table {
+    border-width: thin;
+    border-spacing: 2px;
+    border-style: none;
+    border-color: black;
+}
+</style>
+</head>
+<body>
+    <table id="myTable" class="tablesorter" border=1>
+    <thead>
+    <tr>
+        <th>MIBiG Protein</th>
+        <th>Description</th>
+        <th>MIBiG Cluster</th>
+        <th>MiBiG Product</th>
+        <th>% ID</th>
+        <th>% Coverage</th>
+        <th>BLAST Score</th>
+        <th>E-value</th>
+    </tr>
+    </thead>
+    <tbody>
+    
+          <tr>
+              <td>AZM58099.1</td>
+              <td>type_III_polyketide_synthase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002314.3">BGC0002314.3</a></td>
+              <td>NRPS:Type I</td>
+              <td>36.0</td>
+              <td>100.6</td>
+              <td>101.0</td>
+              <td>9.62e-26</td>
+          </tr>
+    
+          <tr>
+              <td>ALK27905.1</td>
+              <td>putative_3,5-dihydroxyphenylacetyl-CoA_Synthetase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001233.5">BGC0001233.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>31.0</td>
+              <td>101.7</td>
+              <td>95.0</td>
+              <td>4.04e-23</td>
+          </tr>
+    
+          <tr>
+              <td>AAM80548.1</td>
+              <td>DpgA</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000290.5">BGC0000290.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>33.0</td>
+              <td>97.1</td>
+              <td>90.0</td>
+              <td>1.98e-21</td>
+          </tr>
+    
+          <tr>
+              <td>QYC40276.1</td>
+              <td>Type_III_polyketide_syntase_DpgA</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0002344.2">BGC0002344.2</a></td>
+              <td>NRPS:Type I</td>
+              <td>34.0</td>
+              <td>96.5</td>
+              <td>89.0</td>
+              <td>4.44e-21</td>
+          </tr>
+    
+          <tr>
+              <td>CAD91226.1</td>
+              <td>putative_DpgA_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000289.5">BGC0000289.5</a></td>
+              <td>NRPS:Type I+saccharide:hybrid/tailoring</td>
+              <td>32.0</td>
+              <td>101.2</td>
+              <td>85.0</td>
+              <td>1.13e-19</td>
+          </tr>
+    
+          <tr>
+              <td>BAG17301.1</td>
+              <td>type-III_PKS</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000282.3">BGC0000282.3</a></td>
+              <td>PKS:Type III</td>
+              <td>32.0</td>
+              <td>95.9</td>
+              <td>85.0</td>
+              <td>1.31e-19</td>
+          </tr>
+    
+          <tr>
+              <td>ACC40920.1</td>
+              <td>chalcone_synthase,_Pks10</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001665.3">BGC0001665.3</a></td>
+              <td>PKS</td>
+              <td>31.0</td>
+              <td>95.3</td>
+              <td>83.0</td>
+              <td>6.73e-19</td>
+          </tr>
+    
+          <tr>
+              <td>ACC40924.1</td>
+              <td>chalcone_synthase,_Pks11_1</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001665.3">BGC0001665.3</a></td>
+              <td>PKS</td>
+              <td>31.0</td>
+              <td>97.7</td>
+              <td>81.0</td>
+              <td>3.35e-18</td>
+          </tr>
+    
+          <tr>
+              <td>CAC48378.1</td>
+              <td>dihydroxyphenylacetic_acid_synthase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000311.6">BGC0000311.6</a></td>
+              <td>saccharide+NRPS:Type I</td>
+              <td>32.0</td>
+              <td>101.2</td>
+              <td>81.0</td>
+              <td>3.8e-18</td>
+          </tr>
+    
+          <tr>
+              <td>ONK09688.1</td>
+              <td>Alpha-pyrone_synthesis_polyketide_synthase-like_Pks11</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001647.3">BGC0001647.3</a></td>
+              <td>PKS</td>
+              <td>29.0</td>
+              <td>94.8</td>
+              <td>80.0</td>
+              <td>8.58e-18</td>
+          </tr>
+    
+          <tr>
+              <td>AQZ69234.1</td>
+              <td>type_III_polyketide_synthase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001635.4">BGC0001635.4</a></td>
+              <td>NRPS:Type I+PKS</td>
+              <td>31.0</td>
+              <td>95.9</td>
+              <td>79.0</td>
+              <td>1.28e-17</td>
+          </tr>
+    
+          <tr>
+              <td>AIE77085.1</td>
+              <td>dihydroxyphenylacetic_acid_synthase-like_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000418.5">BGC0000418.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>30.0</td>
+              <td>101.2</td>
+              <td>78.0</td>
+              <td>3.4e-17</td>
+          </tr>
+    
+          <tr>
+              <td>OLZ50907.1</td>
+              <td>type_III_polyketide_synthase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001461.5">BGC0001461.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>31.0</td>
+              <td>101.2</td>
+              <td>77.0</td>
+              <td>6.42e-17</td>
+          </tr>
+    
+          <tr>
+              <td>OLZ52434.1</td>
+              <td>type_III_polyketide_synthase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001462.5">BGC0001462.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>31.0</td>
+              <td>101.2</td>
+              <td>77.0</td>
+              <td>8.81e-17</td>
+          </tr>
+    
+          <tr>
+              <td>AYA22309.1</td>
+              <td>DpgA</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001955.4">BGC0001955.4</a></td>
+              <td>saccharide+NRPS:Type I</td>
+              <td>31.0</td>
+              <td>101.2</td>
+              <td>77.0</td>
+              <td>9.09e-17</td>
+          </tr>
+    
+          <tr>
+              <td>OKA09444.1</td>
+              <td>type_III_polyketide_synthase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001459.5">BGC0001459.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>29.0</td>
+              <td>101.2</td>
+              <td>77.0</td>
+              <td>1.21e-16</td>
+          </tr>
+    
+          <tr>
+              <td>AEI58888.1</td>
+              <td>dihydrophenylactic_synthase</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000455.6">BGC0000455.6</a></td>
+              <td>saccharide+NRPS:Type I</td>
+              <td>31.0</td>
+              <td>101.2</td>
+              <td>77.0</td>
+              <td>1.25e-16</td>
+          </tr>
+    
+          <tr>
+              <td>AIG79215.1</td>
+              <td>chalcone_and_stilbene_synthases-like_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000419.5">BGC0000419.5</a></td>
+              <td>NRPS:Type I+saccharide</td>
+              <td>31.0</td>
+              <td>104.1</td>
+              <td>76.0</td>
+              <td>2.28e-16</td>
+          </tr>
+    
+          <tr>
+              <td>EME52965.1</td>
+              <td>chalcone_and_stilbene_synthases-like_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001460.5">BGC0001460.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>30.0</td>
+              <td>94.2</td>
+              <td>72.0</td>
+              <td>3.45e-15</td>
+          </tr>
+    
+          <tr>
+              <td>CAE53371.1</td>
+              <td>DpgA_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000440.5">BGC0000440.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>29.0</td>
+              <td>98.3</td>
+              <td>70.0</td>
+              <td>2.61e-14</td>
+          </tr>
+    
+          <tr>
+              <td>CAG15029.1</td>
+              <td>DpgA_protein</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0000441.4">BGC0000441.4</a></td>
+              <td>NRPS:Type I</td>
+              <td>29.0</td>
+              <td>98.3</td>
+              <td>70.0</td>
+              <td>2.61e-14</td>
+          </tr>
+    
+          <tr>
+              <td>AGS77340.1</td>
+              <td>DpgA</td>
+              <td><a target="_new" href="https://mibig.secondarymetabolites.org/go/BGC0001178.5">BGC0001178.5</a></td>
+              <td>NRPS:Type I</td>
+              <td>27.0</td>
+              <td>96.5</td>
+              <td>69.0</td>
+              <td>9.12e-14</td>
+          </tr>
+    
+    </tbody>
+  </table>
+</body>

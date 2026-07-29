@@ -1,0 +1,921 @@
+ClusterBlast scores for NODE_1840_length_9928_cov_6.147270
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg106_1	119	827	+		
+ctg106_2	834	1620	+		
+ctg106_3	1655	2096	+		
+ctg106_4	2206	3124	+		
+ctg106_5	3142	3871	-		
+ctg106_6	3867	5802	-		
+ctg106_7	6002	6674	+		
+ctg106_8	6769	8092	+		
+ctg106_9	8210	9245	+		
+ctg106_10	9480	9927	+		
+
+
+Significant hits: 
+1. NZ_LN885086	Candidatus Nitrospira inopinata isolate ENR4 chromosome 1, complete sequence
+2. NC_015850	Acidithiobacillus caldus SM-1, complete sequence
+3. NZ_CP005986	Acidithiobacillus caldus ATCC 51756 chromosome, complete genome
+4. NZ_CP019434	Acidihalobacter ferrooxydans strain V8 chromosome
+5. NZ_FNQL01000005	Nitrosospira multiformis strain Nl4, whole genome shotgun sequence
+6. NC_007614	Nitrosospira multiformis ATCC 25196, complete sequence
+7. NZ_CP011801	Nitrospira moscoviensis strain NSP M-1 chromosome, complete genome
+8. NZ_LT828648	Nitrospira japonica isolate Genome sequencing of Nitrospira japonica strain NJ11 chromosome I, complete sequence
+9. NZ_AP022671	Nitrospira sp. KM1 chromosome, complete genome
+10. NZ_AUHM01000006	Inquilinus limosus DSM 16000 G537DRAFT_scaffold00005.5_C, whole genome shotgun sequence
+11. NZ_CM003770	Burkholderia sp. MSMB1588 chromosome 2, whole genome shotgun sequence
+12. NC_021174	Burkholderia thailandensis MSMB121 chromosome 2, complete sequence
+13. NZ_CP009548	Burkholderia sp. 2002721687 chromosome II, complete sequence
+14. NZ_CP008910	Burkholderia pseudomallei MSHR5848 chromosome 2, complete sequence
+15. NZ_CP013418	Burkholderia savannae strain MSMB0266 chromosome 2, complete sequence
+16. NZ_OW622535	Burkholderia mallei strain 34 isolate 34 chromosome molecule
+17. NZ_CP009234	Burkholderia pseudomallei MSHR62 chromosome 2, complete sequence
+18. NZ_KN150980	Burkholderia pseudomallei strain BES scaffold13, whole genome shotgun sequence
+19. NZ_KN322990	Burkholderia pseudomallei MSHR543 scaffold1, whole genome shotgun sequence
+20. NZ_KN323069	Burkholderia pseudomallei MSHR456 scaffold2, whole genome shotgun sequence
+21. NZ_RKJT01000002	Burkholderia pseudomallei strain FDAARGOS_591 chromosome II map unlocalized unitig_1_quiver_quiver_pilon, whole genome shotgun sequence
+22. NC_021877	Burkholderia pseudomallei MSHR305 chromosome 2, complete sequence
+23. NZ_CP016639	Burkholderia pseudomallei strain M1 chromosome 2, complete sequence
+24. NZ_CP071750	Burkholderia pseudomallei strain VBM21885 chromosome 2, complete sequence
+25. NZ_CP071762	Burkholderia pseudomallei strain VBP23831 chromosome 2, complete sequence
+26. NZ_KN323017	Burkholderia pseudomallei ABCPW 91 scaffold2, whole genome shotgun sequence
+27. NZ_KN323064	Burkholderia pseudomallei MSHR733 scaffold2, whole genome shotgun sequence
+28. NZ_KN322999	Burkholderia pseudomallei MSHR4300 scaffold2, whole genome shotgun sequence
+29. NC_022658	Burkholderia pseudomallei NCTC 13179 chromosome 2, complete sequence
+30. NZ_CM003197	Burkholderia pseudomallei MSHR1328 chromosome II, whole genome shotgun sequence
+31. NZ_CP004002	Burkholderia pseudomallei NCTC 13178 chromosome 2, complete sequence
+32. NZ_CP004004	Burkholderia pseudomallei NAU20B-16 chromosome 2, complete sequence
+33. NZ_CP004378	Burkholderia pseudomallei NAU35A-3 chromosome 2, complete sequence
+34. NZ_CP008779	Burkholderia pseudomallei strain MSHR1655 chromosome 2, complete sequence
+35. NZ_CP009152	Burkholderia pseudomallei MSHR3965 chromosome 2, complete sequence
+36. NZ_CP009163	Burkholderia pseudomallei K42 chromosome 2, complete sequence
+37. NZ_CP009272	Burkholderia pseudomallei MSHR1153 chromosome 2
+38. NZ_CP012042	Burkholderia pseudomallei strain Bp1651 chromosome 2, complete sequence
+39. NZ_CP017047	Burkholderia pseudomallei strain MSHR6755 chromosome 2, complete sequence
+40. NZ_CP018382	Burkholderia pseudomallei strain 2008724758 chromosome 2, complete sequence
+41. NZ_CP023776	Burkholderia pseudomallei strain BPHN1 chromosome 2, complete sequence
+42. NZ_CP069361	Burkholderia pseudomallei strain VB29710 chromosome 2, complete sequence
+43. NZ_CP071747	Burkholderia pseudomallei strain VBM21822 chromosome 2, complete sequence
+44. NZ_CP071755	Burkholderia pseudomallei strain VBP364 chromosome 2, complete sequence
+45. NZ_CWJC01000002	Burkholderia pseudomallei strain HA, whole genome shotgun sequence
+46. NZ_KN150938	Burkholderia pseudomallei strain BDE scaffold2, whole genome shotgun sequence
+47. NZ_KN150939	Burkholderia pseudomallei strain BDT scaffold1, whole genome shotgun sequence
+48. NZ_KN150944	Burkholderia pseudomallei strain BGH scaffold2, whole genome shotgun sequence
+49. NZ_KN150952	Burkholderia pseudomallei strain BEC scaffold1, whole genome shotgun sequence
+50. NZ_KN322989	Burkholderia pseudomallei MSHR4304 scaffold2, whole genome shotgun sequence
+
+
+Details:
+
+>>
+1. NZ_LN885086
+Source: Candidatus Nitrospira inopinata isolate ENR4 chromosome 1, complete sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 5
+Cumulative BLAST score: 1217.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg106_1	NITINOP_RS07230	63	281	93.61702127659575	4.81e-94
+ctg106_2	NITINOP_RS07235	48	228	91.18773946360153	1.84e-72
+ctg106_3	NITINOP_RS07240	52	151	100.0	7.33e-46
+ctg106_5	NITINOP_RS07225	32	63	83.05785123966942	1.85e-09
+ctg106_6	NITINOP_RS07220	42	494	99.53416149068323	9.51e-165
+
+
+
+>>
+2. NC_015850
+Source: Acidithiobacillus caldus SM-1, complete sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 5
+Cumulative BLAST score: 1391.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg106_1	ATC_RS11250	34	119	82.97872340425532	1.35e-29
+ctg106_2	ATC_RS11255	45	197	86.97318007662835	1.82e-60
+ctg106_5	ATC_RS11200	38	116	91.32231404958677	1.39e-29
+ctg106_6	ATC_RS11205	60	752	97.98136645962732	4.38e-267
+ctg106_9	ATC_RS11170	40	207	94.18604651162791	3.54e-62
+
+
+
+>>
+3. NZ_CP005986
+Source: Acidithiobacillus caldus ATCC 51756 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 5
+Cumulative BLAST score: 1391.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg106_1	ACAty_RS10460	34	119	82.97872340425532	1.35e-29
+ctg106_2	ACAty_RS10465	45	197	86.97318007662835	1.82e-60
+ctg106_5	ACAty_RS10410	38	116	91.32231404958677	1.39e-29
+ctg106_6	ACAty_RS10415	60	752	97.98136645962732	4.38e-267
+ctg106_9	ACAty_RS10380	40	207	94.18604651162791	3.54e-62
+
+
+
+>>
+4. NZ_CP019434
+Source: Acidihalobacter ferrooxydans strain V8 chromosome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1202.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg106_1	BW247_RS04705	32	89	69.36170212765957	1.03e-19
+ctg106_2	BW247_RS04700	38	179	92.33716475095785	1.32e-53
+ctg106_5	BW247_RS04715	40	132	93.80165289256198	9.22e-36
+ctg106_6	BW247_RS04720	62	802	97.82608695652173	2.19e-286
+
+
+
+>>
+5. NZ_FNQL01000005
+Source: Nitrosospira multiformis strain Nl4, whole genome shotgun sequence
+Type: RiPP-like,terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1204.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg106_4	BLV78_RS06650	36	120	66.22950819672131	3.91e-30
+ctg106_5	BLV78_RS06640	34	106	95.0413223140496	1.7e-25
+ctg106_6	BLV78_RS06645	63	807	96.58385093167702	8.24e-289
+ctg106_7	BLV78_RS06660	45	171	86.54708520179372	2.09e-51
+
+
+
+>>
+6. NC_007614
+Source: Nitrosospira multiformis ATCC 25196, complete sequence
+Type: RiPP-like,terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1203.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg106_4	NMUL_RS13320	36	120	66.22950819672131	3.91e-30
+ctg106_5	NMUL_RS13310	34	105	95.0413223140496	2.86e-25
+ctg106_6	NMUL_RS13315	63	806	96.58385093167702	2.06e-288
+ctg106_7	NMUL_RS13335	45	172	86.54708520179372	5.21e-52
+
+
+
+>>
+7. NZ_CP011801
+Source: Nitrospira moscoviensis strain NSP M-1 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1188.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg106_1	NITMOv2_RS03335	62	295	99.57446808510639	2.32e-99
+ctg106_2	NITMOv2_RS03340	47	228	91.18773946360153	1.3e-72
+ctg106_3	NITMOv2_RS03345	50	151	100.0	1.04e-45
+ctg106_6	NITMOv2_RS03325	44	514	99.53416149068323	1.52e-172
+
+
+
+>>
+8. NZ_LT828648
+Source: Nitrospira japonica isolate Genome sequencing of Nitrospira japonica strain NJ11 chromosome I, complete sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1147.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg106_1	NSJP_RS08405	60	281	99.57446808510639	4.81e-94
+ctg106_2	NSJP_RS08410	48	228	91.18773946360153	8.87e-73
+ctg106_3	NSJP_RS08415	51	150	100.0	2.09e-45
+ctg106_6	NSJP_RS08395	43	488	99.68944099378882	1.8e-162
+
+
+
+>>
+9. NZ_AP022671
+Source: Nitrospira sp. KM1 chromosome, complete genome
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1144.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg106_1	W02_RS15035	60	281	99.57446808510639	6.83e-94
+ctg106_2	W02_RS15040	49	228	91.18773946360153	9.46e-73
+ctg106_3	W02_RS15045	51	154	100.0	4.46e-47
+ctg106_6	W02_RS15025	42	481	99.68944099378882	1.69e-159
+
+
+
+>>
+10. NZ_AUHM01000006
+Source: Inquilinus limosus DSM 16000 G537DRAFT_scaffold00005.5_C, whole genome shotgun sequence
+Type: phosphonate,terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1071.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg106_4	G537_RS37390	36	129	69.18032786885246	2.36e-33
+ctg106_5	G537_RS37380	37	90	82.64462809917356	1.2e-19
+ctg106_6	G537_RS0110840	51	628	96.8944099378882	3.04e-218
+ctg106_9	G537_RS37360	41	224	89.82558139534885	8.8e-69
+
+
+
+>>
+11. NZ_CM003770
+Source: Burkholderia sp. MSMB1588 chromosome 2, whole genome shotgun sequence
+Type: hglE-KS,terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1016.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg106_2	WS92_RS03080	31	143	86.59003831417624	1.17e-39
+ctg106_4	WS92_RS03060	40	129	64.59016393442623	7.83e-33
+ctg106_5	WS92_RS03095	34	81	69.83471074380165	4.64e-16
+ctg106_6	WS92_RS03100	53	663	97.67080745341616	1.05e-231
+
+
+
+>>
+12. NC_021174
+Source: Burkholderia thailandensis MSMB121 chromosome 2, complete sequence
+Type: hglE-KS,terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1014.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg106_2	BTI_RS23830	31	143	86.59003831417624	1.17e-39
+ctg106_4	BTI_RS23850	40	129	64.59016393442623	1.06e-32
+ctg106_5	BTI_RS23815	34	81	69.83471074380165	4.64e-16
+ctg106_6	BTI_RS23810	53	661	97.67080745341616	8.52e-231
+
+
+
+>>
+13. NZ_CP009548
+Source: Burkholderia sp. 2002721687 chromosome II, complete sequence
+Type: hglE-KS,terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1013.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg106_2	BW21_RS04455	31	143	86.59003831417624	1.17e-39
+ctg106_4	BW21_RS04475	40	129	64.59016393442623	9.99e-33
+ctg106_5	BW21_RS04440	34	81	69.83471074380165	4.64e-16
+ctg106_6	BW21_RS04435	53	660	97.67080745341616	1.71e-230
+
+
+
+>>
+14. NZ_CP008910
+Source: Burkholderia pseudomallei MSHR5848 chromosome 2, complete sequence
+Type: hglE-KS,terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1012.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg106_2	DP65_RS25855	31	142	86.59003831417624	1.65e-39
+ctg106_4	DP65_RS25875	39	130	64.91803278688525	2.63e-33
+ctg106_5	DP65_RS25840	34	78	69.83471074380165	4.57e-15
+ctg106_6	DP65_RS25835	53	662	97.67080745341616	1.26e-231
+
+
+
+>>
+15. NZ_CP013418
+Source: Burkholderia savannae strain MSMB0266 chromosome 2, complete sequence
+Type: hglE-KS,terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1012.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg106_2	WS78_RS30530	31	142	91.18773946360153	3.28e-39
+ctg106_4	WS78_RS30510	40	130	64.91803278688525	2.87e-33
+ctg106_5	WS78_RS30545	33	78	71.900826446281	3.3e-15
+ctg106_6	WS78_RS30550	51	662	102.01863354037266	1.98e-231
+
+
+
+>>
+16. NZ_OW622535
+Source: Burkholderia mallei strain 34 isolate 34 chromosome molecule
+Type: hglE-KS,terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1012.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg106_2	NIU15_RS02575	31	142	86.59003831417624	3.28e-39
+ctg106_4	NIU15_RS02595	39	130	64.91803278688525	2.19e-33
+ctg106_5	NIU15_RS02555	34	78	69.83471074380165	3.3e-15
+ctg106_6	NIU15_RS02550	53	662	97.67080745341616	1.26e-231
+
+
+
+>>
+17. NZ_CP009234
+Source: Burkholderia pseudomallei MSHR62 chromosome 2, complete sequence
+Type: hglE-KS,terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1011.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg106_2	Y028_RS00690	31	142	86.59003831417624	3.28e-39
+ctg106_4	Y028_RS00670	39	130	64.91803278688525	3.33e-33
+ctg106_5	Y028_RS00705	34	76	69.83471074380165	1.68e-14
+ctg106_6	Y028_RS00710	53	663	97.67080745341616	8.89e-232
+
+
+
+>>
+18. NZ_KN150980
+Source: Burkholderia pseudomallei strain BES scaffold13, whole genome shotgun sequence
+Type: NRPS-like,hglE-KS,terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1011.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg106_2	DP49_RS27240	31	142	86.59003831417624	3.28e-39
+ctg106_4	DP49_RS27260	39	130	64.91803278688525	2.63e-33
+ctg106_5	DP49_RS27225	34	76	69.83471074380165	1.68e-14
+ctg106_6	DP49_RS27220	53	663	97.67080745341616	6.28e-232
+
+
+
+>>
+19. NZ_KN322990
+Source: Burkholderia pseudomallei MSHR543 scaffold1, whole genome shotgun sequence
+Type: hglE-KS,terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1011.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg106_2	Y038_RS15840	31	142	86.59003831417624	3.28e-39
+ctg106_4	Y038_RS15820	39	130	64.91803278688525	2.19e-33
+ctg106_5	Y038_RS15855	34	76	69.83471074380165	1.68e-14
+ctg106_6	Y038_RS15860	53	663	97.67080745341616	8.89e-232
+
+
+
+>>
+20. NZ_KN323069
+Source: Burkholderia pseudomallei MSHR456 scaffold2, whole genome shotgun sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1011.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg106_2	Y048_RS23275	31	142	86.59003831417624	3.28e-39
+ctg106_4	Y048_RS23255	39	130	64.91803278688525	2.47e-33
+ctg106_5	Y048_RS23290	33	77	71.900826446281	1.21e-14
+ctg106_6	Y048_RS23295	53	662	97.67080745341616	1.79e-231
+
+
+
+>>
+21. NZ_RKJT01000002
+Source: Burkholderia pseudomallei strain FDAARGOS_591 chromosome II map unlocalized unitig_1_quiver_quiver_pilon, whole genome shotgun sequence
+Type: hglE-KS,terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1011.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg106_2	EGT86_RS26060	31	142	86.59003831417624	3.28e-39
+ctg106_4	EGT86_RS26080	39	130	64.91803278688525	2.79e-33
+ctg106_5	EGT86_RS26040	34	76	69.83471074380165	1.68e-14
+ctg106_6	EGT86_RS26035	53	663	97.67080745341616	8.89e-232
+
+
+
+>>
+22. NC_021877
+Source: Burkholderia pseudomallei MSHR305 chromosome 2, complete sequence
+Type: hglE-KS,terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1010.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg106_2	BDL_RS11810	31	142	86.59003831417624	1.65e-39
+ctg106_4	BDL_RS11790	39	130	64.91803278688525	1.93e-33
+ctg106_5	BDL_RS11825	34	76	69.83471074380165	1.68e-14
+ctg106_6	BDL_RS11830	53	662	97.67080745341616	1.26e-231
+
+
+
+>>
+23. NZ_CP016639
+Source: Burkholderia pseudomallei strain M1 chromosome 2, complete sequence
+Type: terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1010.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg106_2	A7U58_RS21235	31	142	86.59003831417624	1.65e-39
+ctg106_4	A7U58_RS21255	39	130	64.91803278688525	1.63e-33
+ctg106_5	A7U58_RS21220	34	76	69.83471074380165	1.68e-14
+ctg106_6	A7U58_RS21215	53	662	97.67080745341616	1.26e-231
+
+
+
+>>
+24. NZ_CP071750
+Source: Burkholderia pseudomallei strain VBM21885 chromosome 2, complete sequence
+Type: hglE-KS,terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1010.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg106_2	J3B47_RS22190	31	142	86.59003831417624	1.65e-39
+ctg106_4	J3B47_RS22170	39	130	64.91803278688525	2.96e-33
+ctg106_5	J3B47_RS22205	34	76	69.83471074380165	1.68e-14
+ctg106_6	J3B47_RS22210	53	662	97.67080745341616	1.26e-231
+
+
+
+>>
+25. NZ_CP071762
+Source: Burkholderia pseudomallei strain VBP23831 chromosome 2, complete sequence
+Type: hglE-KS,terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1010.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg106_2	J3L14_RS26025	31	142	86.59003831417624	1.65e-39
+ctg106_4	J3L14_RS26005	39	130	64.91803278688525	2.47e-33
+ctg106_5	J3L14_RS26040	34	76	69.83471074380165	1.68e-14
+ctg106_6	J3L14_RS26045	53	662	97.67080745341616	1.26e-231
+
+
+
+>>
+26. NZ_KN323017
+Source: Burkholderia pseudomallei ABCPW 91 scaffold2, whole genome shotgun sequence
+Type: hglE-KS,terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1010.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg106_2	X898_RS22215	31	142	86.59003831417624	1.65e-39
+ctg106_4	X898_RS22195	39	130	64.91803278688525	2.47e-33
+ctg106_5	X898_RS22230	34	76	69.83471074380165	1.68e-14
+ctg106_6	X898_RS22235	53	662	97.67080745341616	1.79e-231
+
+
+
+>>
+27. NZ_KN323064
+Source: Burkholderia pseudomallei MSHR733 scaffold2, whole genome shotgun sequence
+Type: hglE-KS,terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1010.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg106_2	Y602_RS23040	31	142	86.59003831417624	1.65e-39
+ctg106_4	Y602_RS23020	39	130	64.91803278688525	3.21e-33
+ctg106_5	Y602_RS23055	34	76	69.83471074380165	1.68e-14
+ctg106_6	Y602_RS23060	53	662	97.67080745341616	2.53e-231
+
+
+
+>>
+28. NZ_KN322999
+Source: Burkholderia pseudomallei MSHR4300 scaffold2, whole genome shotgun sequence
+Type: hglE-KS,terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1010.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg106_2	X881_RS24325	31	142	86.59003831417624	2.33e-39
+ctg106_4	X881_RS24345	39	130	64.91803278688525	2.33e-33
+ctg106_5	X881_RS24310	34	76	69.83471074380165	1.68e-14
+ctg106_6	X881_RS24305	53	662	97.67080745341616	1.26e-231
+
+
+
+>>
+29. NC_022658
+Source: Burkholderia pseudomallei NCTC 13179 chromosome 2, complete sequence
+Type: hglE-KS,terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1010.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg106_2	BBK_RS26200	31	142	86.59003831417624	3.28e-39
+ctg106_4	BBK_RS26180	39	130	64.91803278688525	1.93e-33
+ctg106_5	BBK_RS26220	34	76	69.83471074380165	1.68e-14
+ctg106_6	BBK_RS26225	53	662	97.67080745341616	1.26e-231
+
+
+
+>>
+30. NZ_CM003197
+Source: Burkholderia pseudomallei MSHR1328 chromosome II, whole genome shotgun sequence
+Type: hglE-KS,terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1010.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg106_2	BBL_RS27140	31	142	86.59003831417624	3.28e-39
+ctg106_4	BBL_RS27120	39	130	64.91803278688525	2.47e-33
+ctg106_5	BBL_RS27155	34	76	69.83471074380165	1.68e-14
+ctg106_6	BBL_RS27160	53	662	97.67080745341616	1.26e-231
+
+
+
+>>
+31. NZ_CP004002
+Source: Burkholderia pseudomallei NCTC 13178 chromosome 2, complete sequence
+Type: hglE-KS,terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1010.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg106_2	BBJ_RS18255	31	142	86.59003831417624	3.28e-39
+ctg106_4	BBJ_RS18235	39	130	64.91803278688525	2.33e-33
+ctg106_5	BBJ_RS18270	34	76	69.83471074380165	1.68e-14
+ctg106_6	BBJ_RS18275	53	662	97.67080745341616	1.26e-231
+
+
+
+>>
+32. NZ_CP004004
+Source: Burkholderia pseudomallei NAU20B-16 chromosome 2, complete sequence
+Type: hglE-KS,terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1010.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg106_2	BBS_RS19040	31	142	86.59003831417624	3.28e-39
+ctg106_4	BBS_RS19060	39	130	64.91803278688525	2.19e-33
+ctg106_5	BBS_RS19025	34	76	69.83471074380165	3.22e-14
+ctg106_6	BBS_RS19020	53	662	97.67080745341616	1.26e-231
+
+
+
+>>
+33. NZ_CP004378
+Source: Burkholderia pseudomallei NAU35A-3 chromosome 2, complete sequence
+Type: hglE-KS,terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1010.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg106_2	BBU_RS18875	31	142	86.59003831417624	3.28e-39
+ctg106_4	BBU_RS18895	39	130	64.91803278688525	2.19e-33
+ctg106_5	BBU_RS18860	34	76	69.83471074380165	1.68e-14
+ctg106_6	BBU_RS18855	53	662	97.67080745341616	1.26e-231
+
+
+
+>>
+34. NZ_CP008779
+Source: Burkholderia pseudomallei strain MSHR1655 chromosome 2, complete sequence
+Type: hglE-KS,terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1010.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg106_2	DP51_RS09035	31	142	86.59003831417624	3.28e-39
+ctg106_4	DP51_RS09055	39	130	64.91803278688525	2.63e-33
+ctg106_5	DP51_RS09020	34	76	69.83471074380165	1.68e-14
+ctg106_6	DP51_RS09015	53	662	97.67080745341616	1.26e-231
+
+
+
+>>
+35. NZ_CP009152
+Source: Burkholderia pseudomallei MSHR3965 chromosome 2, complete sequence
+Type: hglE-KS,terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1010.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg106_2	X978_RS00240	31	142	86.59003831417624	3.28e-39
+ctg106_4	X978_RS00220	39	130	64.91803278688525	1.63e-33
+ctg106_5	X978_RS00255	34	76	69.83471074380165	1.68e-14
+ctg106_6	X978_RS00260	53	662	97.67080745341616	1.26e-231
+
+
+
+>>
+36. NZ_CP009163
+Source: Burkholderia pseudomallei K42 chromosome 2, complete sequence
+Type: hglE-KS,terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1010.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg106_2	X993_RS24010	31	142	86.59003831417624	3.28e-39
+ctg106_4	X993_RS24030	39	130	64.91803278688525	2.33e-33
+ctg106_5	X993_RS23995	34	76	69.83471074380165	1.68e-14
+ctg106_6	X993_RS23990	53	662	97.67080745341616	1.26e-231
+
+
+
+>>
+37. NZ_CP009272
+Source: Burkholderia pseudomallei MSHR1153 chromosome 2
+Type: hglE-KS,terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1010.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg106_2	Y603_RS25195	31	142	86.59003831417624	3.28e-39
+ctg106_4	Y603_RS25175	39	130	64.91803278688525	2.47e-33
+ctg106_5	Y603_RS25210	34	76	69.83471074380165	1.68e-14
+ctg106_6	Y603_RS25215	53	662	97.67080745341616	1.26e-231
+
+
+
+>>
+38. NZ_CP012042
+Source: Burkholderia pseudomallei strain Bp1651 chromosome 2, complete sequence
+Type: hglE-KS,terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1010.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg106_2	TR70_RS25185	31	142	86.59003831417624	3.28e-39
+ctg106_4	TR70_RS25165	39	130	64.91803278688525	3.74e-33
+ctg106_5	TR70_RS25200	34	76	69.83471074380165	2.32e-14
+ctg106_6	TR70_RS25205	53	662	97.67080745341616	1.26e-231
+
+
+
+>>
+39. NZ_CP017047
+Source: Burkholderia pseudomallei strain MSHR6755 chromosome 2, complete sequence
+Type: hglE-KS,terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1010.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg106_2	BGI49_RS29990	31	142	86.59003831417624	3.28e-39
+ctg106_4	BGI49_RS29970	39	130	64.91803278688525	2.96e-33
+ctg106_5	BGI49_RS30010	34	76	69.83471074380165	1.68e-14
+ctg106_6	BGI49_RS30015	53	662	97.67080745341616	1.26e-231
+
+
+
+>>
+40. NZ_CP018382
+Source: Burkholderia pseudomallei strain 2008724758 chromosome 2, complete sequence
+Type: hglE-KS,terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1010.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg106_2	BOC43_RS04600	31	142	86.59003831417624	3.28e-39
+ctg106_4	BOC43_RS04580	39	130	64.91803278688525	1.53e-33
+ctg106_5	BOC43_RS04620	34	76	69.83471074380165	1.68e-14
+ctg106_6	BOC43_RS04625	53	662	97.67080745341616	1.26e-231
+
+
+
+>>
+41. NZ_CP023776
+Source: Burkholderia pseudomallei strain BPHN1 chromosome 2, complete sequence
+Type: hglE-KS,terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1010.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg106_2	CNX72_RS22450	31	142	86.59003831417624	3.28e-39
+ctg106_4	CNX72_RS22430	39	130	64.91803278688525	1.53e-33
+ctg106_5	CNX72_RS22470	34	76	69.83471074380165	1.68e-14
+ctg106_6	CNX72_RS22475	53	662	97.67080745341616	1.26e-231
+
+
+
+>>
+42. NZ_CP069361
+Source: Burkholderia pseudomallei strain VB29710 chromosome 2, complete sequence
+Type: hglE-KS,terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1010.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg106_2	JQX71_RS32170	31	142	86.59003831417624	3.28e-39
+ctg106_4	JQX71_RS32190	39	130	64.91803278688525	1.85e-33
+ctg106_5	JQX71_RS32155	34	76	69.83471074380165	1.68e-14
+ctg106_6	JQX71_RS32150	53	662	97.67080745341616	1.79e-231
+
+
+
+>>
+43. NZ_CP071747
+Source: Burkholderia pseudomallei strain VBM21822 chromosome 2, complete sequence
+Type: hglE-KS,terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1010.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg106_2	J3B45_RS25380	31	142	86.59003831417624	3.28e-39
+ctg106_4	J3B45_RS25360	39	130	64.91803278688525	3.74e-33
+ctg106_5	J3B45_RS25395	34	76	69.83471074380165	1.68e-14
+ctg106_6	J3B45_RS25400	53	662	97.67080745341616	1.26e-231
+
+
+
+>>
+44. NZ_CP071755
+Source: Burkholderia pseudomallei strain VBP364 chromosome 2, complete sequence
+Type: hglE-KS,terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1010.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg106_2	J3D99_RS22000	31	142	86.59003831417624	3.28e-39
+ctg106_4	J3D99_RS22020	39	130	64.91803278688525	2.06e-33
+ctg106_5	J3D99_RS21985	34	76	69.83471074380165	1.68e-14
+ctg106_6	J3D99_RS21980	53	662	97.67080745341616	1.26e-231
+
+
+
+>>
+45. NZ_CWJC01000002
+Source: Burkholderia pseudomallei strain HA, whole genome shotgun sequence
+Type: hglE-KS,terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1010.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg106_2	AFJ43_RS04735	31	142	86.59003831417624	3.28e-39
+ctg106_4	AFJ43_RS04755	39	130	64.91803278688525	1.93e-33
+ctg106_5	AFJ43_RS04720	34	76	69.83471074380165	3.22e-14
+ctg106_6	AFJ43_RS04715	53	662	97.67080745341616	1.26e-231
+
+
+
+>>
+46. NZ_KN150938
+Source: Burkholderia pseudomallei strain BDE scaffold2, whole genome shotgun sequence
+Type: hglE-KS,terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1010.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg106_2	DO63_RS25825	31	142	86.59003831417624	3.28e-39
+ctg106_4	DO63_RS25845	39	130	64.91803278688525	1.93e-33
+ctg106_5	DO63_RS25810	34	76	69.83471074380165	1.68e-14
+ctg106_6	DO63_RS25805	53	662	97.67080745341616	1.26e-231
+
+
+
+>>
+47. NZ_KN150939
+Source: Burkholderia pseudomallei strain BDT scaffold1, whole genome shotgun sequence
+Type: hglE-KS,terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1010.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg106_2	DO66_RS07355	31	142	86.59003831417624	3.28e-39
+ctg106_4	DO66_RS07375	39	130	64.91803278688525	3.53e-33
+ctg106_5	DO66_RS07340	34	76	69.83471074380165	1.68e-14
+ctg106_6	DO66_RS07335	53	662	97.67080745341616	1.26e-231
+
+
+
+>>
+48. NZ_KN150944
+Source: Burkholderia pseudomallei strain BGH scaffold2, whole genome shotgun sequence
+Type: hglE-KS,terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1010.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg106_2	DP57_RS22445	31	142	86.59003831417624	3.28e-39
+ctg106_4	DP57_RS22425	39	130	64.91803278688525	2.63e-33
+ctg106_5	DP57_RS22460	34	76	69.83471074380165	1.68e-14
+ctg106_6	DP57_RS22465	53	662	97.67080745341616	2.53e-231
+
+
+
+>>
+49. NZ_KN150952
+Source: Burkholderia pseudomallei strain BEC scaffold1, whole genome shotgun sequence
+Type: hglE-KS,terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1010.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg106_2	DO72_RS03975	31	142	86.59003831417624	3.28e-39
+ctg106_4	DO72_RS03955	39	130	64.91803278688525	1.53e-33
+ctg106_5	DO72_RS03990	34	76	69.83471074380165	1.68e-14
+ctg106_6	DO72_RS03995	53	662	97.67080745341616	1.26e-231
+
+
+
+>>
+50. NZ_KN322989
+Source: Burkholderia pseudomallei MSHR4304 scaffold2, whole genome shotgun sequence
+Type: hglE-KS,terpene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 1010.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg106_2	X883_RS27870	31	142	86.59003831417624	3.28e-39
+ctg106_4	X883_RS27850	39	130	64.91803278688525	3.33e-33
+ctg106_5	X883_RS27885	34	76	69.83471074380165	1.68e-14
+ctg106_6	X883_RS27890	53	662	97.67080745341616	1.26e-231
+

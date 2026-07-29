@@ -1,0 +1,204 @@
+LOCUS       NODE_41380_length_2184_cov_3.001879 2184 bp    DNA              UNK 01-JAN-1980
+DEFINITION  NODE_41380_length_2184_cov_3.001879.
+ACCESSION   NODE_41380_length_2184_cov_3
+VERSION     NODE_41380_length_2184_cov_3.1879
+KEYWORDS    .
+SOURCE      .
+  ORGANISM  .
+            .
+COMMENT     ##antiSMASH-Data-START##
+            Version     :: 8.0.4
+            Run date    :: 2026-07-02 19:23:45
+            NOTE :: This is a single region extracted from a larger record!
+            Orig. start :: 0
+            Orig. end   :: 2184
+            ##antiSMASH-Data-END##
+FEATURES             Location/Qualifiers
+     region          1..2184
+                     /candidate_cluster_numbers="1"
+                     /contig_edge="True"
+                     /product="thioamitides"
+                     /region_number="1"
+                     /rules="((YcaO or TIGR03604) and TfuA)"
+                     /tool="antismash"
+     cand_cluster    1..2184
+                     /candidate_cluster_number="1"
+                     /contig_edge="True"
+                     /detection_rules="((YcaO or TIGR03604) and TfuA)"
+                     /kind="single"
+                     /product="thioamitides"
+                     /protoclusters="1"
+                     /tool="antismash"
+     protocluster    1..2184
+                     /aStool="rule-based-clusters"
+                     /category="RiPP"
+                     /contig_edge="True"
+                     /core_location="[306:2183](-)"
+                     /cutoff="20000"
+                     /detection_rule="((YcaO or TIGR03604) and TfuA)"
+                     /neighbourhood="10000"
+                     /product="thioamitides"
+                     /protocluster_number="1"
+                     /tool="antismash"
+     proto_core      complement(307..2183)
+                     /aStool="rule-based-clusters"
+                     /tool="antismash"
+                     /cutoff="20000"
+                     /detection_rule="((YcaO or TIGR03604) and TfuA)"
+                     /neighbourhood="10000"
+                     /product="thioamitides"
+                     /protocluster_number="1"
+     CDS             3..173
+                     /locus_tag="ctg154_1"
+                     /transl_table=11
+                     /translation="MSESLLVVHNKEGFRAKKNARVLQLLFFMMEEEVKEGYSGIYQKE
+                     NVQIDKMPPSP"
+     CDS             complement(307..972)
+                     /gene_functions="biosynthetic (rule-based-clusters)
+                     thioamitides: TfuA"
+                     /gene_kind="biosynthetic"
+                     /locus_tag="ctg154_2"
+                     /sec_met_domain="TfuA (E-value: 2e-47, bitscore: 147.6,
+                     seeds: 78, tool: rule-based-clusters)"
+                     /transl_table=11
+                     /translation="MRIVVFTGTSISHTEAGKILEAEYRPPVKRDDIKRLIKYTPGTIK
+                     IIGIIDGVFFDSAAVAHREIIEAIKSGITVVGGGSMGALRASELDSYGMIGVGRIYEMY
+                     RTGILESDDEVAVTFDGETGEPLSIPLVNIRMTIDSSKEKGLFTNEQAVSIIDIARKMF
+                     YPDRNYRNILLKSLEYGVITDSEMHELAVFFEENEVDMKRQDAILVLKKIKELKHLLI"
+     PFAM_domain     complement(472..822)
+                     /aSDomain="TfuA"
+                     /aSTool="clusterhmmer"
+                     /database="35.0"
+                     /db_xref="PF07812.15"
+                     /description="TfuA-like protein"
+                     /detection="hmmscan"
+                     /domain_id="clusterhmmer_ctg154_2_0001"
+                     /evalue="2.70E-44"
+                     /label="ctg154_2"
+                     /locus_tag="ctg154_2"
+                     /protein_end="167"
+                     /protein_start="50"
+                     /score="149.9"
+                     /tool="antismash"
+                     /translation="DGVFFDSAAVAHREIIEAIKSGITVVGGGSMGALRASELDSYGMI
+                     GVGRIYEMYRTGILESDDEVAVTFDGETGEPLSIPLVNIRMTIDSSKEKGLFTNEQAVS
+                     IIDIARKMFYPDR"
+     CDS             complement(969..2183)
+                     /gene_functions="biosynthetic (rule-based-clusters)
+                     thioamitides: YcaO"
+                     /gene_kind="biosynthetic"
+                     /locus_tag="ctg154_3"
+                     /sec_met_domain="YcaO (E-value: 2.7e-80, bitscore: 258.2,
+                     seeds: 127, tool: rule-based-clusters)"
+                     /transl_table=11
+                     /translation="MIKYLKGTQRVLDPETTLANTTKLLPEIGVTRIANITDLDRVGIP
+                     VFSAIRPSAAAGAISIYSGKGATETNARISAIMESFERCLAEQPEVCANLKGAELEVKS
+                     VTDTFESLSESYPAVYPDALLVPQPVSEFTNLDWVMGEDIMNDVEVFVPANAVYHPYDP
+                     VSANKLFRSNTNGLASGNTIEEAVLHGLLEVIERDALSIAEYTRNPGKEIVLSECDGLN
+                     YELKKKMEDTGIVVKLWLLDSDVDIPTVVAALDDTVLKDPALLVMGAGSHLSPEIAVMR
+                     ALTEAAQSRVVQIHGAREDTDREQVVRTFGYDHMKKLNSYWYQELERVEMDKLKDASSD
+                     TPFANIQTVLELLDGIADGTIIANLSRGVDIPVIRAIIPGFELYTLDRERKGERIRKKK
+                     KRVAR"
+     aSDomain        complement(999..2162)
+                     /aSDomain="TIGR03266"
+                     /aSTool="tigrfam"
+                     /description="methan_mark_1: putative methanogenesis marker
+                     protein 1"
+                     /detection="hmmscan"
+                     /domain_id="TIGRFam_ctg154_3_0001"
+                     /evalue="2.10E-150"
+                     /identifier="TIGR03266"
+                     /label="ctg154_3"
+                     /locus_tag="ctg154_3"
+                     /protein_end="395"
+                     /protein_start="7"
+                     /score="498.8"
+                     /tool="antismash"
+                     /translation="TQRVLDPETTLANTTKLLPEIGVTRIANITDLDRVGIPVFSAIRP
+                     SAAAGAISIYSGKGATETNARISAIMESFERCLAEQPEVCANLKGAELEVKSVTDTFES
+                     LSESYPAVYPDALLVPQPVSEFTNLDWVMGEDIMNDVEVFVPANAVYHPYDPVSANKLF
+                     RSNTNGLASGNTIEEAVLHGLLEVIERDALSIAEYTRNPGKEIVLSECDGLNYELKKKM
+                     EDTGIVVKLWLLDSDVDIPTVVAALDDTVLKDPALLVMGAGSHLSPEIAVMRALTEAAQ
+                     SRVVQIHGAREDTDREQVVRTFGYDHMKKLNSYWYQELERVEMDKLKDASSDTPFANIQ
+                     TVLELLDGIADGTIIANLSRGVDIPVIRAIIPGFELYTLDRERKGERI"
+     aSDomain        complement(1005..2144)
+                     /aSDomain="TIGR00702"
+                     /aSTool="tigrfam"
+                     /description="TIGR00702: YcaO-type kinase domain"
+                     /detection="hmmscan"
+                     /domain_id="TIGRFam_ctg154_3_0002"
+                     /evalue="1.20E-88"
+                     /identifier="TIGR00702"
+                     /label="ctg154_3"
+                     /locus_tag="ctg154_3"
+                     /protein_end="393"
+                     /protein_start="13"
+                     /score="295.7"
+                     /tool="antismash"
+                     /translation="PETTLANTTKLLPEIGVTRIANITDLDRVGIPVFSAIRPSAAAGA
+                     ISIYSGKGATETNARISAIMESFERCLAEQPEVCANLKGAELEVKSVTDTFESLSESYP
+                     AVYPDALLVPQPVSEFTNLDWVMGEDIMNDVEVFVPANAVYHPYDPVSANKLFRSNTNG
+                     LASGNTIEEAVLHGLLEVIERDALSIAEYTRNPGKEIVLSECDGLNYELKKKMEDTGIV
+                     VKLWLLDSDVDIPTVVAALDDTVLKDPALLVMGAGSHLSPEIAVMRALTEAAQSRVVQI
+                     HGAREDTDREQVVRTFGYDHMKKLNSYWYQELERVEMDKLKDASSDTPFANIQTVLELL
+                     DGIADGTIIANLSRGVDIPVIRAIIPGFELYTLDRERKGE"
+     PFAM_domain     complement(1038..1997)
+                     /aSDomain="YcaO"
+                     /aSTool="clusterhmmer"
+                     /database="35.0"
+                     /db_xref="PF02624.19"
+                     /description="YcaO cyclodehydratase, ATP-ad Mg2+-binding"
+                     /detection="hmmscan"
+                     /domain_id="clusterhmmer_ctg154_3_0002"
+                     /evalue="6.00E-80"
+                     /label="ctg154_3"
+                     /locus_tag="ctg154_3"
+                     /protein_end="382"
+                     /protein_start="62"
+                     /score="269.1"
+                     /tool="antismash"
+                     /translation="SGKGATETNARISAIMESFERCLAEQPEVCANLKGAELEVKSVTD
+                     TFESLSESYPAVYPDALLVPQPVSEFTNLDWVMGEDIMNDVEVFVPANAVYHPYDPVSA
+                     NKLFRSNTNGLASGNTIEEAVLHGLLEVIERDALSIAEYTRNPGKEIVLSECDGLNYEL
+                     KKKMEDTGIVVKLWLLDSDVDIPTVVAALDDTVLKDPALLVMGAGSHLSPEIAVMRALT
+                     EAAQSRVVQIHGAREDTDREQVVRTFGYDHMKKLNSYWYQELERVEMDKLKDASSDTPF
+                     ANIQTVLELLDGIADGTIIANLSRGVDIPVIRAIIPGFE"
+ORIGIN
+        1 gccggagcga gagcctgctc gtagttcata ataaagaagg cttcagggcg aagaagaacg
+       61 cgagggtact ccaattgcta tttttcatga tggaagaaga agtcaaagaa gggtattcag
+      121 gaatatacca gaaagagaac gtccaaatcg acaaaatgcc gccttcacct taacacattt
+      181 acataacctt taagagatcg ggaaatcgtc atctttatat acaataggga agtaattgtg
+      241 gtcgatgggc aggaaacttt tttatacact aacccccact ccccaacctg tccatcattt
+      301 tatcccttag atcaacagat gctttagttc tttaattttt ttaagtacaa gaatcgcatc
+      361 ctgccgcttc atatccactt cgttttcctc aaaaaaaacc gccaattcat gcatctctga
+      421 atccgtgatg accccgtatt caagagattt caaaagtata ttcctgtaat tcctgtcagg
+      481 atagaacatt ttccgggcaa tatctattat cgaaaccgcc tgttcattag taaacagtcc
+      541 tttttctttt gaagagtcga tggtcatcct gatattgacg agcgggatgg aaagcggctc
+      601 accggtttct ccatcaaacg taaccgcaac ctcatcatca gattcaagaa ttcctgtcct
+      661 gtacatctca tatatcctgc caacaccgat catgccgtag gaatccagct cagatgcacg
+      721 cagcgctccc atgcttcctc caccgacaac cgttatgcca ctctttatcg cttcgattat
+      781 ctcacgatga gctacagcag cgctatcgaa aaaaacccca tcgattatcc cgattatttt
+      841 tattgtgccg ggtgtatact ttatgagtct tttaatatca tcccgcttaa caggaggcct
+      901 gtactcggct tcaaggattt ttccagcttc ggtatgactg atactcgtgc ctgtaaagac
+      961 cactatcctc atcttgctac tctcttcttc tttttacgaa tgcgctcccc cttcctctcg
+     1021 cgatcaagcg tatacagttc aaatcccgga attatagctc tgatgaccgg gatatccacc
+     1081 cctcttgaaa ggttcgcaat aatggtgccg tctgcgatcc catcgaggag ctcaagtacg
+     1141 gtctgtatgt tggcaaaagg cgtgtcgctc gacgcgtcct taagcttatc catctccacc
+     1201 ctttcaagct cctgatacca gtagctgttc aatttcttca tgtgatcata gccgaatgtc
+     1261 ctgacaacct gttccctgtc tgtatcctcc cgggctccgt gtatctggac gacacggctc
+     1321 tgggcggctt cggtcagcgc cctcattact gctatctcag gcgacaggtg agatcctgcg
+     1381 cccatcacga gaagtgcggg gtcttttagc acggtgtcat caagtgcagc tacgactgtg
+     1441 ggaatatcaa catcagagtc gagaagccat agtttgacaa caatcccggt atcctccatt
+     1501 tttttcttaa gttcataatt caatccatca cattctgata gcacgatctc tttccctgga
+     1561 ttcctggtat actcagcaat gctcagcgca tccctctcta tcacttcaag aagaccatgg
+     1621 agaactgcct cttcgatagt gtttcccgat gcaagaccgt tggtgttgct cctgaaaagc
+     1681 ttatttgcgc taactgggtc ataaggatgg taaacggcgt ttgccggcac gaacacttca
+     1741 acatcgttca taatatcctc acccatcacc cagtctaggt tcgtgaactc agaaacaggc
+     1801 tgcgggacaa gaagtgcatc tggatatacc gctggatagc tctcagatag tgattcaaaa
+     1861 gtatcagtga cactttttac ctcaagttca gcgcctttga ggttggcaca gacctcaggc
+     1921 tgctctgcga ggcatcgttc aaaactttcc atgatggctg atatcctggc attcgtttcg
+     1981 gtcgcgcctt ttccggagta tatggatatg gcgccggctg ccgcactggg cctgatggct
+     2041 gaaaaaaccg gtatgccgac gcggtcaagg tcggtgatgt ttgcgatgcg agttactccg
+     2101 atttccggca ggagcttcgt tgtatttgca agtgtggttt cagggtcaag tacgcgctgt
+     2161 gtgcctttga gatatttgat attc
+//

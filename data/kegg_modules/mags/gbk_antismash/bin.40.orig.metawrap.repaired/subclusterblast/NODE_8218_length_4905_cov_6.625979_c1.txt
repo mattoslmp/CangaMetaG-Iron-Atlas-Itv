@@ -1,0 +1,12 @@
+ClusterBlast scores for NODE_8218_length_4905_cov_6.625979
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg335_1	2	1319	+		
+ctg335_2	1345	2968	+		
+ctg335_3	3290	4784	+		
+
+
+Significant hits: 
+
+
+Details:

@@ -1,0 +1,73 @@
+[
+  {
+    "canonical": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/scripts/figures/generate_s31_s32.py",
+    "sha256": "0fc28137a5649162a644b7e2ebb4ad340a561c07b7057470c9cf1a3fd7b395f1",
+    "mirrors_updated": [
+      "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/06_Scripts_and_Reproducibility/REVISION4_COMPLETE_SCRIPTS/scripts/figures/generate_s31_s32.py",
+      "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/06_Scripts_and_Reproducibility/scripts/figures/generate_s31_s32.py",
+      "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/06_Scripts_and_Reproducibility/article_scripts_revision3/all_individual_scripts/figures/generate_s31_s32.py",
+      "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/scripts/project_scripts/figures/generate_s31_s32.py",
+      "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/scripts/all_individual_scripts/figures/generate_s31_s32.py"
+    ]
+  },
+  {
+    "canonical": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/scripts/figures/generate_s33_biogeochemical_zscore_revision3.py",
+    "sha256": "46c43d7b759ffdcd602508fde0e068044f4b7a6f6bddecebff54f11749be60a9",
+    "mirrors_updated": [
+      "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/06_Scripts_and_Reproducibility/REVISION4_COMPLETE_SCRIPTS/scripts/figures/generate_s33_biogeochemical_zscore_revision3.py",
+      "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/06_Scripts_and_Reproducibility/article_scripts_revision3/biogeochemical_markers/generate_s33_biogeochemical_zscore_revision3.py",
+      "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/06_Scripts_and_Reproducibility/article_scripts_revision3/all_individual_scripts/figures/generate_s33_biogeochemical_zscore_revision3.py",
+      "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/scripts/biogeochemical_markers/generate_s33_biogeochemical_zscore_revision3.py",
+      "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/scripts/project_scripts/figures/generate_s33_biogeochemical_zscore_revision3.py",
+      "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/scripts/all_individual_scripts/figures/generate_s33_biogeochemical_zscore_revision3.py"
+    ]
+  },
+  {
+    "canonical": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/scripts/generate_s38_s41_module_figures.py",
+    "sha256": "aa449ac191d25978495273e31af28e8b3220cef44fee00831941d4bc44de2894",
+    "mirrors_updated": [
+      "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/scripts/generate_s38_s41_module_figures.py",
+      "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/06_Scripts_and_Reproducibility/scripts/generate_s38_s41_module_figures.py",
+      "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/06_Scripts_and_Reproducibility/REVISION4_COMPLETE_SCRIPTS/scripts/generate_s38_s41_module_figures.py",
+      "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/scripts/module_heatmaps/regenerate_module_figures_filtered_v9.py",
+      "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/scripts/all_individual_scripts/generate_s38_s41_module_figures.py",
+      "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/scripts/project_scripts/generate_s38_s41_module_figures.py"
+    ]
+  },
+  {
+    "canonical": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/scripts/generate_taxonomy_supplementary_figures.py",
+    "sha256": "ce5c42cc70e14a79fd1d1b69288f3c7342af8e486d1e97167e1ed6e620967ec3",
+    "mirrors_updated": [
+      "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/scripts/generate_taxonomy_supplementary_figures.py",
+      "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/06_Scripts_and_Reproducibility/scripts/generate_taxonomy_supplementary_figures.py",
+      "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/06_Scripts_and_Reproducibility/app_scripts/generate_taxonomy_supplementary_figures.py",
+      "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/06_Scripts_and_Reproducibility/REVISION4_COMPLETE_SCRIPTS/scripts/generate_taxonomy_supplementary_figures.py",
+      "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/06_Scripts_and_Reproducibility/article_scripts_revision3/all_individual_scripts/generate_taxonomy_supplementary_figures.py",
+      "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/scripts/all_individual_scripts/generate_taxonomy_supplementary_figures.py",
+      "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/scripts/project_scripts/generate_taxonomy_supplementary_figures.py"
+    ]
+  },
+  {
+    "canonical": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/scripts/final_publication_figures/06_recalculate_rarefaction_alpha_32999.py",
+    "sha256": "d280615c85e37fb37b2993ea1a772ef24c07463e7592d73664f434824b68f20b",
+    "mirrors_updated": [
+      "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/06_Scripts_and_Reproducibility/REVISION4_COMPLETE_SCRIPTS/scripts/final_publication_figures/06_recalculate_rarefaction_alpha_32999.py",
+      "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/06_Scripts_and_Reproducibility/scripts/final_publication_figures/06_recalculate_rarefaction_alpha_32999.py",
+      "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/06_Scripts_and_Reproducibility/article_scripts_revision3/all_individual_scripts/final_publication_figures/06_recalculate_rarefaction_alpha_32999.py",
+      "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/scripts/project_scripts/final_publication_figures/06_recalculate_rarefaction_alpha_32999.py",
+      "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/scripts/all_individual_scripts/final_publication_figures/06_recalculate_rarefaction_alpha_32999.py"
+    ]
+  },
+  {
+    "canonical": "/mnt/data/cangameta_final_v13/app/app/CangaMetaG_App_Final/scripts/figures/build_supplement_pandoc.py",
+    "sha256": "a7df343b571e110b619a5e30ca638a7ad460339743560821a4c7ac8dac80bb43",
+    "mirrors_updated": [
+      "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/06_Scripts_and_Reproducibility/scripts/build_supplement_pandoc.py",
+      "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/06_Scripts_and_Reproducibility/REVISION4_COMPLETE_SCRIPTS/scripts/figures/build_supplement_pandoc.py",
+      "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/06_Scripts_and_Reproducibility/scripts/figures/build_supplement_pandoc.py",
+      "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/06_Scripts_and_Reproducibility/article_scripts_revision3/all_individual_scripts/figures/build_supplement_pandoc.py",
+      "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/scripts/project_scripts/figures/build_supplement_pandoc.py",
+      "/mnt/data/cangameta_final_v13/article/article/CangaMetaG_Article_Final/scripts/all_individual_scripts/figures/build_supplement_pandoc.py"
+    ]
+  }
+]

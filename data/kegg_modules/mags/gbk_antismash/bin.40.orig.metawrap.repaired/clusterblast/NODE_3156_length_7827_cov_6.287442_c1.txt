@@ -1,0 +1,878 @@
+ClusterBlast scores for NODE_3156_length_7827_cov_6.287442
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg169_1	2	263	+		
+ctg169_2	566	1790	+		
+ctg169_3	1777	2257	+		
+ctg169_4	2375	3755	+		
+ctg169_5	3723	5124	+		
+ctg169_6	5276	6023	+		
+ctg169_7	6197	6656	-		
+ctg169_8	6649	7825	-		
+
+
+Significant hits: 
+1. NC_009483	Geotalea uraniireducens Rf4, complete sequence
+2. NZ_VLLN01000012	Geobacter argillaceus strain ATCC BAA-1139 Ga0052872_scaffold00012.12, whole genome shotgun sequence
+3. NZ_CP049055	Candidatus Kuenenia stuttgartiensis strain CSTR1 chromosome, complete genome
+4. NZ_LT934425	Candidatus Kuenenia stuttgartiensis isolate kuenenia_mbr1_ru-nijmegen chromosome Kuenenia_stuttgartiensis_MBR1, complete sequence
+5. NC_008609	Pelobacter propionicus DSM 2379, complete sequence
+6. NZ_CP092109	Geoalkalibacter sp. SAP-1 chromosome
+7. NZ_AP024355	Desulfuromonas versatilis strain NIT-T3 chromosome, complete genome
+8. NZ_AWNK01000005	Chrysiogenes arsenatis DSM 11915 contig_5, whole genome shotgun sequence
+9. NZ_CP015080	Desulfuromonas sp. DDH964 chromosome, complete genome
+10. NZ_AUCW01000015	Desulfogranum mediterraneum DSM 13871 G494DRAFT_scaffold00011.11_C, whole genome shotgun sequence
+11. NZ_CP010802	Desulfuromonas soudanensis strain WTL chromosome, complete genome
+12. NZ_AP024086	Desulfomarina profundi strain KT2 chromosome, complete genome
+13. NZ_QPJT01000005	Anaerobacterium chartisolvens strain DSM 27016 Ga0244570_105, whole genome shotgun sequence
+14. NC_016629	Desulfocurvibacter africanus subsp. africanus str. Walvis Bay, complete sequence
+15. NZ_CP050699	Desulfosediminicola ganghwensis strain IMCC35004 chromosome, complete genome
+16. NC_014216	Desulfurivibrio alkaliphilus AHT 2, complete sequence
+17. NZ_FNQN01000001	Desulfuromusa kysingii strain DSM 7343, whole genome shotgun sequence
+18. NZ_KI912608	Desulfonatronum lacustre DSM 10312 scaffold1, whole genome shotgun sequence
+19. NZ_JXMS01000018	Halodesulfovibrio spirochaetisodalis strain JC271 contig18, whole genome shotgun sequence
+20. NZ_QEKH01000012	Victivallis vadensis strain DSM 14823 Ga0215691_112, whole genome shotgun sequence
+21. NZ_ACJN02000003	Desulfonatronospira thiodismutans ASO3-1 ctg19, whole genome shotgun sequence
+22. NZ_CP058649	Vallitalea pronyensis strain FatNI3 chromosome, complete genome
+23. NZ_QICS01000001	Lachnotalea glycerini strain DSM 28816 Ga0215715_101, whole genome shotgun sequence
+24. NZ_JHYD01000003	Ruminiclostridium cellobioparum DSM 1351 = ATCC 15832 T344DRAFT_scaffold00003.3_C, whole genome shotgun sequence
+25. NC_013959	Sideroxydans lithotrophicus ES-1, complete sequence
+26. NZ_BMBA01000001	Clostridium zeae strain CSC2 sequence01, whole genome shotgun sequence
+27. NZ_CP021255	Desulfobulbus oralis strain HOT041/ORNL chromosome, complete genome
+28. NZ_PPFX01000010	Geothermobacter hydrogeniphilus strain HR-1 NODE_10_length_95487_cov_196.432, whole genome shotgun sequence
+29. NZ_CP087952	Desulfosarcina sp. BuS5 chromosome, complete genome
+30. NZ_CP050698	Desulfosediminicola flagellatus strain IMCC35005 chromosome, complete genome
+31. NZ_CP067393	Entomomonas asaccharolytica strain F2A chromosome, complete genome
+32. NZ_CP049055	Candidatus Kuenenia stuttgartiensis strain CSTR1 chromosome, complete genome
+33. NZ_LT934425	Candidatus Kuenenia stuttgartiensis isolate kuenenia_mbr1_ru-nijmegen chromosome Kuenenia_stuttgartiensis_MBR1, complete sequence
+34. NZ_CP029254	Streptomyces spongiicola strain HNM0071 chromosome, complete genome
+35. NC_020304	Desulfocapsa sulfexigens DSM 10523, complete sequence
+36. NZ_AP021876	Desulfosarcina ovata subsp. sediminis strain 28bB2T chromosome, complete genome
+37. NZ_AP021879	Desulfosarcina ovata subsp. ovata strain oXyS1 chromosome
+38. NZ_JAIHBQ010000001	Streptomyces lateritius strain Z1-26 tig00001, whole genome shotgun sequence
+39. NZ_CP060825	Streptomyces genisteinicus strain CRPJ-33 chromosome
+40. NZ_CP046907	Streptomyces sp. SCUT-3 chromosome, complete genome
+41. NZ_CP097322	Streptomyces sp. RerS4 chromosome, complete genome
+42. NZ_JALGBX010000012	Streptomyces sp. AP-93 NODE_12_length_259729_cov_284.178655, whole genome shotgun sequence
+43. NZ_CP086120	Streptomyces sp. 1_25 chromosome, complete genome
+44. NZ_JAHTIK010000001	Kitasatospora sp. DSM 101779 AL-KSAMP_AS10_SC01, whole genome shotgun sequence
+45. NZ_CP050692	Streptomyces antibioticus strain DSM 41481 chromosome, complete genome
+46. NC_016582	Streptomyces bingchenggensis BCW-1, complete sequence
+47. NZ_KV861368	Streptomyces albidoflavus strain OsiLf-2 Scaffold10, whole genome shotgun sequence
+48. NZ_CP113103	Streptomyces sp. NA13 chromosome, complete genome
+49. NZ_JAHUVY010000001	Streptomyces albidoflavus strain LGO-A19 A19_AS2_SC1, whole genome shotgun sequence
+50. NZ_OX371412	Streptomyces albidoflavus strain CCOS 2040 isolate Stup19_F108 chromosome 1
+
+
+Details:
+
+>>
+1. NC_009483
+Source: Geotalea uraniireducens Rf4, complete sequence
+Type: ladderane
+Number of proteins with BLAST hits to this cluster: 5
+Cumulative BLAST score: 1503.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg169_2	GURA_RS18375	37	191	85.5036855036855	5.02e-55
+ctg169_4	GURA_RS18405	39	295	87.14596949891067	1.44e-93
+ctg169_5	GURA_RS18390	52	487	99.35622317596567	1.79e-168
+ctg169_6	GURA_RS18385	52	247	99.19354838709677	1.27e-80
+ctg169_8	GURA_RS18405	41	283	90.53708439897699	5.07e-90
+
+
+
+>>
+2. NZ_VLLN01000012
+Source: Geobacter argillaceus strain ATCC BAA-1139 Ga0052872_scaffold00012.12, whole genome shotgun sequence
+Type: ladderane
+Number of proteins with BLAST hits to this cluster: 5
+Cumulative BLAST score: 1474.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg169_2	JN12_RS11145	35	167	83.78378378378379	3.1e-46
+ctg169_4	JN12_RS11190	39	293	91.72113289760348	7.61e-93
+ctg169_5	JN12_RS11160	51	478	99.35622317596567	6.72e-165
+ctg169_6	JN12_RS11155	50	251	99.19354838709677	3.86e-82
+ctg169_8	JN12_RS11190	41	285	90.28132992327366	6.01e-91
+
+
+
+>>
+3. NZ_CP049055
+Source: Candidatus Kuenenia stuttgartiensis strain CSTR1 chromosome, complete genome
+Type: ladderane
+Number of proteins with BLAST hits to this cluster: 5
+Cumulative BLAST score: 1459.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg169_2	KsCSTR_RS06980	32	185	96.31449631449631	3.2e-52
+ctg169_4	KsCSTR_RS07020	40	325	98.0392156862745	5.01e-105
+ctg169_5	KsCSTR_RS06945	44	407	97.42489270386267	3.1e-137
+ctg169_6	KsCSTR_RS06940	49	236	99.19354838709677	2.52e-76
+ctg169_8	KsCSTR_RS07020	43	306	90.28132992327366	1.2e-98
+
+
+
+>>
+4. NZ_LT934425
+Source: Candidatus Kuenenia stuttgartiensis isolate kuenenia_mbr1_ru-nijmegen chromosome Kuenenia_stuttgartiensis_MBR1, complete sequence
+Type: ladderane
+Number of proteins with BLAST hits to this cluster: 5
+Cumulative BLAST score: 1457.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg169_2	KSMBR1_RS03885	32	185	96.31449631449631	3.2e-52
+ctg169_4	KSMBR1_RS03845	40	326	98.0392156862745	1.77e-105
+ctg169_5	KSMBR1_RS03920	44	407	97.42489270386267	3.1e-137
+ctg169_6	KSMBR1_RS03925	49	236	99.19354838709677	2.52e-76
+ctg169_8	KSMBR1_RS03845	43	303	90.28132992327366	9.56e-98
+
+
+
+>>
+5. NC_008609
+Source: Pelobacter propionicus DSM 2379, complete sequence
+Type: arylpolyene
+Number of proteins with BLAST hits to this cluster: 5
+Cumulative BLAST score: 1024.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg169_2	PPRO_RS04450	31	147	97.54299754299754	3.84e-38
+ctg169_4	PPRO_RS04510	34	207	85.62091503267973	6.01e-60
+ctg169_5	PPRO_RS04515	34	295	97.21030042918454	2.44e-93
+ctg169_6	PPRO_RS04440	41	174	96.7741935483871	7.42e-52
+ctg169_8	PPRO_RS04510	36	201	90.53708439897699	1.54e-58
+
+
+
+>>
+6. NZ_CP092109
+Source: Geoalkalibacter sp. SAP-1 chromosome
+Type: arylpolyene,resorcinol
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 676.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg169_4	L9S41_RS04435	34	213	85.62091503267973	3.86e-62
+ctg169_5	L9S41_RS04430	35	278	98.71244635193133	1.56e-86
+ctg169_8	L9S41_RS04435	33	185	87.21227621483376	2.33e-52
+
+
+
+>>
+7. NZ_AP024355
+Source: Desulfuromonas versatilis strain NIT-T3 chromosome, complete genome
+Type: arylpolyene,resorcinol
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 675.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg169_4	DESUT3_RS01350	35	216	85.83877995642702	1.83e-63
+ctg169_5	DESUT3_RS01355	34	271	96.99570815450643	6.7e-84
+ctg169_8	DESUT3_RS01350	35	188	87.21227621483376	2.2e-53
+
+
+
+>>
+8. NZ_AWNK01000005
+Source: Chrysiogenes arsenatis DSM 11915 contig_5, whole genome shotgun sequence
+Type: arylpolyene,resorcinol
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 664.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg169_4	P304_RS0103695	34	214	85.62091503267973	9.48e-63
+ctg169_5	P304_RS0103690	33	263	98.71244635193133	4.14e-81
+ctg169_8	P304_RS0103695	34	187	86.95652173913044	2.94e-53
+
+
+
+>>
+9. NZ_CP015080
+Source: Desulfuromonas sp. DDH964 chromosome, complete genome
+Type: arylpolyene,resorcinol
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 655.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg169_4	DBW_RS08655	34	201	85.62091503267973	1.82e-57
+ctg169_5	DBW_RS08660	35	267	96.99570815450643	1.95e-82
+ctg169_8	DBW_RS08655	35	187	86.95652173913044	4.12e-53
+
+
+
+>>
+10. NZ_AUCW01000015
+Source: Desulfogranum mediterraneum DSM 13871 G494DRAFT_scaffold00011.11_C, whole genome shotgun sequence
+Type: arylpolyene
+Number of proteins with BLAST hits to this cluster: 4
+Cumulative BLAST score: 851.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg169_4	G494_RS0107400	32	198	87.58169934640523	1.34e-56
+ctg169_5	G494_RS0107435	34	266	99.35622317596567	3.66e-82
+ctg169_6	G494_RS0107415	42	198	97.58064516129032	2.85e-61
+ctg169_8	G494_RS0107400	33	189	92.32736572890026	5.32e-54
+
+
+
+>>
+11. NZ_CP010802
+Source: Desulfuromonas soudanensis strain WTL chromosome, complete genome
+Type: arylpolyene,resorcinol
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 651.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg169_4	DSOUD_RS06055	33	203	85.62091503267973	2.4e-58
+ctg169_5	DSOUD_RS06060	35	275	96.99570815450643	2.17e-85
+ctg169_6	DSOUD_RS05975	41	173	97.17741935483872	1.15e-51
+
+
+
+>>
+12. NZ_AP024086
+Source: Desulfomarina profundi strain KT2 chromosome, complete genome
+Type: arylpolyene,resorcinol
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 637.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg169_4	LO777_RS11830	34	199	85.18518518518519	9.32e-57
+ctg169_5	LO777_RS11825	35	273	96.56652360515021	8.57e-85
+ctg169_6	LO777_RS11790	40	165	98.79032258064517	5.1e-48
+
+
+
+>>
+13. NZ_QPJT01000005
+Source: Anaerobacterium chartisolvens strain DSM 27016 Ga0244570_105, whole genome shotgun sequence
+Type: NRPS,T1PKS
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 728.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg169_2	DFR58_RS06090	31	201	93.85749385749385	1.84e-58
+ctg169_4	DFR58_RS06020	38	272	88.01742919389977	5.83e-85
+ctg169_8	DFR58_RS06020	38	255	88.23529411764706	2.64e-79
+
+
+
+>>
+14. NC_016629
+Source: Desulfocurvibacter africanus subsp. africanus str. Walvis Bay, complete sequence
+Type: arylpolyene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 522.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg169_4	DESAF_RS18410	35	232	84.9673202614379	1.55e-69
+ctg169_5	DESAF_RS18415	35	290	96.99570815450643	3.6e-91
+
+
+
+>>
+15. NZ_CP050699
+Source: Desulfosediminicola ganghwensis strain IMCC35004 chromosome, complete genome
+Type: arylpolyene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 499.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg169_4	FCL45_RS23050	34	211	88.01742919389977	2.66e-61
+ctg169_5	FCL45_RS23045	35	288	97.63948497854076	1.59e-90
+
+
+
+>>
+16. NC_014216
+Source: Desulfurivibrio alkaliphilus AHT 2, complete sequence
+Type: arylpolyene,resorcinol
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 485.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg169_4	DAAHT2_RS05745	34	204	85.40305010893246	1.22e-58
+ctg169_5	DAAHT2_RS05740	36	281	99.14163090128756	5.34e-88
+
+
+
+>>
+17. NZ_FNQN01000001
+Source: Desulfuromusa kysingii strain DSM 7343, whole genome shotgun sequence
+Type: arylpolyene,resorcinol
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 484.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg169_4	BLU87_RS00995	34	220	85.62091503267973	7.8e-65
+ctg169_5	BLU87_RS01000	34	264	92.27467811158799	2.53e-81
+
+
+
+>>
+18. NZ_KI912608
+Source: Desulfonatronum lacustre DSM 10312 scaffold1, whole genome shotgun sequence
+Type: arylpolyene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 472.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg169_4	DESLA_RS0117515	32	200	86.27450980392157	2.94e-57
+ctg169_5	DESLA_RS21275	33	272	97.21030042918454	1.37e-83
+
+
+
+>>
+19. NZ_JXMS01000018
+Source: Halodesulfovibrio spirochaetisodalis strain JC271 contig18, whole genome shotgun sequence
+Type: arylpolyene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 464.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg169_4	SP90_RS10675	32	205	86.9281045751634	3.17e-59
+ctg169_5	SP90_RS10670	33	259	90.12875536480686	2.07e-79
+
+
+
+>>
+20. NZ_QEKH01000012
+Source: Victivallis vadensis strain DSM 14823 Ga0215691_112, whole genome shotgun sequence
+Type: arylpolyene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 462.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg169_4	C8D82_RS08760	36	228	84.9673202614379	5.88e-68
+ctg169_5	C8D82_RS08765	32	234	89.69957081545064	8.62e-70
+
+
+
+>>
+21. NZ_ACJN02000003
+Source: Desulfonatronospira thiodismutans ASO3-1 ctg19, whole genome shotgun sequence
+Type: arylpolyene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 459.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg169_4	DTHIO_RS13480	32	200	85.62091503267973	2.42e-57
+ctg169_5	DTHIO_RS13475	33	259	96.99570815450643	1.34e-79
+
+
+
+>>
+22. NZ_CP058649
+Source: Vallitalea pronyensis strain FatNI3 chromosome, complete genome
+Type: NRPS,NRPS-like,arylpolyene,ladderane,prodigiosin
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 1326.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg169_4	HZI73_RS05910	35	241	88.67102396514161	6.3e-73
+ctg169_4	HZI73_RS05915	34	238	84.53159041394336	1.19e-71
+ctg169_4	HZI73_RS05895	34	233	90.19607843137256	9.22e-70
+ctg169_6	HZI73_RS05950	39	187	99.19354838709677	7.6e-57
+ctg169_8	HZI73_RS05915	35	227	89.51406649616368	3.25e-68
+ctg169_8	HZI73_RS05895	31	200	90.02557544757033	6.57e-58
+
+
+
+>>
+23. NZ_QICS01000001
+Source: Lachnotalea glycerini strain DSM 28816 Ga0215715_101, whole genome shotgun sequence
+Type: PKS-like,T3PKS,arylpolyene,cyclic-lactone-autoinducer,ladderane,transAT-PKS
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 1127.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg169_4	C8E03_RS01100	38	289	86.05664488017429	3.31e-91
+ctg169_4	C8E03_RS01145	33	238	92.15686274509804	1.02e-71
+ctg169_6	C8E03_RS01040	37	171	96.37096774193549	9.98e-51
+ctg169_8	C8E03_RS01145	37	219	85.16624040920716	2.56e-65
+ctg169_8	C8E03_RS00980	33	210	88.7468030690537	1.33e-61
+
+
+
+>>
+24. NZ_JHYD01000003
+Source: Ruminiclostridium cellobioparum DSM 1351 = ATCC 15832 T344DRAFT_scaffold00003.3_C, whole genome shotgun sequence
+Type: ladderane
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 1120.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg169_4	T344_RS27565	35	250	89.54248366013073	2.44e-76
+ctg169_4	T344_RS0104285	37	249	92.37472766884531	1.13e-75
+ctg169_6	T344_RS0104270	43	197	99.19354838709677	9.14e-61
+ctg169_8	T344_RS0104235	33	213	89.00255754475704	1.06e-62
+ctg169_8	T344_RS0104240	34	211	89.769820971867	5.97e-62
+
+
+
+>>
+25. NC_013959
+Source: Sideroxydans lithotrophicus ES-1, complete sequence
+Type: arylpolyene,resorcinol
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 705.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg169_4	SLIT_RS01740	38	291	97.38562091503267	3.76e-92
+ctg169_6	SLIT_RS01760	39	150	96.7741935483871	1.06e-42
+ctg169_8	SLIT_RS01740	40	264	99.48849104859335	2.53e-82
+
+
+
+>>
+26. NZ_BMBA01000001
+Source: Clostridium zeae strain CSC2 sequence01, whole genome shotgun sequence
+Type: ladderane
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 705.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg169_4	J3477_RS06925	39	291	84.74945533769062	4.81e-92
+ctg169_6	J3477_RS06875	36	153	97.17741935483872	7.09e-44
+ctg169_8	J3477_RS06925	38	261	88.49104859335038	1.84e-81
+
+
+
+>>
+27. NZ_CP021255
+Source: Desulfobulbus oralis strain HOT041/ORNL chromosome, complete genome
+Type: arylpolyene
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 639.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg169_4	CAY53_RS11725	33	202	87.58169934640523	3.28e-58
+ctg169_5	CAY53_RS11760	34	268	98.71244635193133	8.79e-83
+ctg169_6	CAY53_RS11740	38	169	97.17741935483872	7.73e-50
+
+
+
+>>
+28. NZ_PPFX01000010
+Source: Geothermobacter hydrogeniphilus strain HR-1 NODE_10_length_95487_cov_196.432, whole genome shotgun sequence
+Type: arylpolyene,resorcinol
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 623.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg169_5	C2E25_RS06205	33	259	96.99570815450643	2.73e-79
+ctg169_6	C2E25_RS06280	42	172	96.7741935483871	4.71e-51
+ctg169_8	C2E25_RS06210	35	192	90.02557544757033	4.87e-55
+
+
+
+>>
+29. NZ_CP087952
+Source: Desulfosarcina sp. BuS5 chromosome, complete genome
+Type: arylpolyene
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 618.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg169_5	BuS5_RS02155	32	263	99.14163090128756	8.21e-81
+ctg169_6	BuS5_RS02250	39	163	99.59677419354838	1.38e-47
+ctg169_8	BuS5_RS02150	36	192	87.21227621483376	6.67e-55
+
+
+
+>>
+30. NZ_CP050698
+Source: Desulfosediminicola flagellatus strain IMCC35005 chromosome, complete genome
+Type: arylpolyene
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 600.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg169_5	FCL46_RS22935	32	261	98.71244635193133	2.49e-80
+ctg169_6	FCL46_RS22970	40	168	99.59677419354838	1.12e-49
+ctg169_8	FCL46_RS22930	33	171	88.7468030690537	5.21e-47
+
+
+
+>>
+31. NZ_CP067393
+Source: Entomomonas asaccharolytica strain F2A chromosome, complete genome
+Type: NRPS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 922.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg169_4	JHT90_RS05960	39	281	93.24618736383442	4.97e-88
+ctg169_4	JHT90_RS05965	35	232	86.05664488017429	4.43e-69
+ctg169_4	JHT90_RS05975	38	72	19.389978213507625	1.96e-13
+ctg169_8	JHT90_RS05960	39	263	94.37340153452686	6.04e-82
+ctg169_8	JHT90_RS05975	58	74	14.066496163682865	4.23e-14
+
+
+
+>>
+32. NZ_CP049055
+Source: Candidatus Kuenenia stuttgartiensis strain CSTR1 chromosome, complete genome
+Type: ladderane
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 677.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg169_2	KsCSTR_RS08275	36	224	100.0	3.56e-67
+ctg169_2	KsCSTR_RS08270	33	215	96.31449631449631	1.1e-63
+ctg169_4	KsCSTR_RS08285	36	238	96.73202614379085	7.15e-71
+
+
+
+>>
+33. NZ_LT934425
+Source: Candidatus Kuenenia stuttgartiensis isolate kuenenia_mbr1_ru-nijmegen chromosome Kuenenia_stuttgartiensis_MBR1, complete sequence
+Type: ladderane
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 677.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg169_2	KSMBR1_RS17445	36	224	100.0	3.56e-67
+ctg169_2	KSMBR1_RS17440	33	215	96.31449631449631	1.1e-63
+ctg169_4	KSMBR1_RS17455	36	238	96.73202614379085	7.15e-71
+
+
+
+>>
+34. NZ_CP029254
+Source: Streptomyces spongiicola strain HNM0071 chromosome, complete genome
+Type: NI-siderophore,T2PKS
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 565.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg169_1	DDQ41_RS07260	42	49	58.139534883720934	2.86e-06
+ctg169_2	DDQ41_RS07350	32	184	99.26289926289927	6.66e-52
+ctg169_6	DDQ41_RS07330	37	170	97.98387096774194	2.9e-50
+ctg169_6	DDQ41_RS07400	38	162	102.01612903225808	4.49e-47
+
+
+
+>>
+35. NC_020304
+Source: Desulfocapsa sulfexigens DSM 10523, complete sequence
+Type: arylpolyene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 475.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg169_4	UWK_RS00655	32	202	88.23529411764706	3.28e-58
+ctg169_5	UWK_RS00700	34	273	97.42489270386267	7.02e-85
+
+
+
+>>
+36. NZ_AP021876
+Source: Desulfosarcina ovata subsp. sediminis strain 28bB2T chromosome, complete genome
+Type: arylpolyene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 450.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg169_4	GN113_RS10790	32	181	85.62091503267973	8.28e-50
+ctg169_5	GN113_RS10825	34	269	98.71244635193133	3.23e-83
+
+
+
+>>
+37. NZ_AP021879
+Source: Desulfosarcina ovata subsp. ovata strain oXyS1 chromosome
+Type: arylpolyene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 448.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg169_4	GN112_RS10120	32	179	85.62091503267973	2.25e-49
+ctg169_5	GN112_RS10155	34	269	98.71244635193133	2.29e-83
+
+
+
+>>
+38. NZ_JAIHBQ010000001
+Source: Streptomyces lateritius strain Z1-26 tig00001, whole genome shotgun sequence
+Type: HR-T2PKS
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 434.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg169_1	K4902_RS03780	32	49	75.5813953488372	4.05e-06
+ctg169_2	K4902_RS03745	34	188	97.54299754299754	2.67e-53
+ctg169_6	K4902_RS03660	43	197	97.17741935483872	8.34e-61
+
+
+
+>>
+39. NZ_CP060825
+Source: Streptomyces genisteinicus strain CRPJ-33 chromosome
+Type: arylpolyene
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 433.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg169_1	IAG43_RS17185	34	49	75.5813953488372	4.05e-06
+ctg169_2	IAG43_RS17220	33	189	100.49140049140048	1.36e-53
+ctg169_6	IAG43_RS17305	42	195	97.17741935483872	4.74e-60
+
+
+
+>>
+40. NZ_CP046907
+Source: Streptomyces sp. SCUT-3 chromosome, complete genome
+Type: NRP-metallophore,NRPS,T2PKS
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 361.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg169_1	GQS52_RS05100	37	48	59.30232558139535	9.98e-06
+ctg169_2	GQS52_RS04900	32	174	100.24570024570025	5.84e-48
+ctg169_6	GQS52_RS05105	34	139	99.59677419354838	3.95e-38
+
+
+
+>>
+41. NZ_CP097322
+Source: Streptomyces sp. RerS4 chromosome, complete genome
+Type: HR-T2PKS,NRPS,T2PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 820.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg169_2	M4D82_RS25335	31	172	99.01719901719902	1.91e-47
+ctg169_2	M4D82_RS25565	31	171	97.2972972972973	8.28e-47
+ctg169_6	M4D82_RS25575	41	178	96.7741935483871	1.47e-53
+ctg169_6	M4D82_RS25345	38	167	96.7741935483871	4.75e-49
+ctg169_6	M4D82_RS25380	37	132	102.01612903225808	1.35e-35
+
+
+
+>>
+42. NZ_JALGBX010000012
+Source: Streptomyces sp. AP-93 NODE_12_length_259729_cov_284.178655, whole genome shotgun sequence
+Type: HR-T2PKS,NRPS,T2PKS,lanthipeptide-class-iii
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 538.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg169_2	MTF69_RS21180	34	182	98.77149877149877	5.24e-51
+ctg169_2	MTF69_RS20715	32	166	95.0859950859951	5.68e-45
+ctg169_6	MTF69_RS20775	41	190	96.7741935483871	5.5e-58
+
+
+
+>>
+43. NZ_CP086120
+Source: Streptomyces sp. 1_25 chromosome, complete genome
+Type: arylpolyene
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 533.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg169_2	test1122_RS22380	34	171	97.54299754299754	6.52e-47
+ctg169_2	test1122_RS22315	31	164	98.03439803439802	3.99e-44
+ctg169_6	test1122_RS22350	42	198	96.7741935483871	3.13e-61
+
+
+
+>>
+44. NZ_JAHTIK010000001
+Source: Kitasatospora sp. DSM 101779 AL-KSAMP_AS10_SC01, whole genome shotgun sequence
+Type: HR-T2PKS,T2PKS,aminocoumarin
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 531.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg169_2	KSNIM_RS26540	32	179	96.56019656019656	9.18e-50
+ctg169_2	KSNIM_RS26485	33	177	100.0	5.61e-49
+ctg169_6	KSNIM_RS26370	38	175	96.7741935483871	3.23e-52
+
+
+
+>>
+45. NZ_CP050692
+Source: Streptomyces antibioticus strain DSM 41481 chromosome, complete genome
+Type: T2PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 530.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg169_2	HCX60_RS17380	32	187	99.26289926289927	8.84e-53
+ctg169_6	HCX60_RS17400	40	179	97.98387096774194	7.14e-54
+ctg169_6	HCX60_RS17330	38	164	102.01612903225808	7.98e-48
+
+
+
+>>
+46. NC_016582
+Source: Streptomyces bingchenggensis BCW-1, complete sequence
+Type: NRPS,PKS-like,RiPP-like,T2PKS,oligosaccharide
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 523.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg169_2	SBI_RS33410	31	174	99.26289926289927	5.86e-48
+ctg169_2	SBI_RS33650	31	165	100.982800982801	2.46e-44
+ctg169_6	SBI_RS33400	39	184	96.7741935483871	2.39e-55
+
+
+
+>>
+47. NZ_KV861368
+Source: Streptomyces albidoflavus strain OsiLf-2 Scaffold10, whole genome shotgun sequence
+Type: NRPS,T2PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 521.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg169_2	BGV78_RS06595	32	185	99.26289926289927	4.76e-52
+ctg169_6	BGV78_RS06575	39	172	96.37096774193549	3.64e-51
+ctg169_6	BGV78_RS06645	39	164	102.01612903225808	7.98e-48
+
+
+
+>>
+48. NZ_CP113103
+Source: Streptomyces sp. NA13 chromosome, complete genome
+Type: T2PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 520.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg169_2	OSU72_RS14170	32	184	99.5085995085995	1.3e-51
+ctg169_6	OSU72_RS14190	39	172	96.37096774193549	3.64e-51
+ctg169_6	OSU72_RS14120	39	164	102.01612903225808	7.98e-48
+
+
+
+>>
+49. NZ_JAHUVY010000001
+Source: Streptomyces albidoflavus strain LGO-A19 A19_AS2_SC1, whole genome shotgun sequence
+Type: NRPS,T2PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 519.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg169_2	STALF3_RS14385	32	184	99.26289926289927	6.66e-52
+ctg169_6	STALF3_RS14405	38	172	95.96774193548387	3.64e-51
+ctg169_6	STALF3_RS14335	38	163	102.01612903225808	1.13e-47
+
+
+
+>>
+50. NZ_OX371412
+Source: Streptomyces albidoflavus strain CCOS 2040 isolate Stup19_F108 chromosome 1
+Type: NRPS,T2PKS
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 519.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg169_2	OZE77_RS14435	32	184	99.26289926289927	6.66e-52
+ctg169_6	OZE77_RS14455	38	172	95.96774193548387	3.64e-51
+ctg169_6	OZE77_RS14385	38	163	102.01612903225808	1.13e-47
+

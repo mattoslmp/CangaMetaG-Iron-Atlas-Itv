@@ -1,0 +1,11 @@
+{
+  "Domain": "Bacteria",
+  "Taxonomic level": "Genus",
+  "Visualization": "Barplot by individual sample",
+  "Expected dynamic title": "Bacteria — Genus — Barplot by individual sample",
+  "Dynamic title found": true,
+  "Exceptions": 0,
+  "Status": "VALIDATED",
+  "Elapsed seconds": 30.53,
+  "Details": ""
+}

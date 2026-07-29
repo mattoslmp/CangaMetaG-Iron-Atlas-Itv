@@ -1,0 +1,12 @@
+ClusterBlast scores for NODE_26577_length_2715_cov_2.978571
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg305_1	0	516	-		
+ctg305_2	633	1848	-		
+ctg305_3	1792	2713	-		
+
+
+Significant hits: 
+
+
+Details:

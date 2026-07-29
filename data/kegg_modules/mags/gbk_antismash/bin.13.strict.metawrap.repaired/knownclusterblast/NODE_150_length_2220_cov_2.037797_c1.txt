@@ -1,0 +1,12 @@
+ClusterBlast scores for NODE_150_length_2220_cov_2.037797
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg150_1	2	185	+		
+ctg150_2	435	717	+		
+ctg150_3	1019	2153	+		
+
+
+Significant hits: 
+
+
+Details:

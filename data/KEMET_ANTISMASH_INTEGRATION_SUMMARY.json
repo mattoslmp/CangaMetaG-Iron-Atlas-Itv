@@ -1,0 +1,21 @@
+{
+  "mags": {
+    "source": "reportKMC_*.tsv",
+    "samples": 47,
+    "modules": 448,
+    "report_files": 47,
+    "report_rows": 21504
+  },
+  "metagenomes": {
+    "source": "reportKMC_*.tsv",
+    "samples": 20,
+    "modules": 448,
+    "report_files": 20,
+    "report_rows": 9408
+  },
+  "MAG_genome_quality": {
+    "MAGs_with_CheckM_completeness": 50,
+    "table": "outputs/kegg_modules/MAG_genome_quality_completeness_table.csv",
+    "interactive_html": "outputs/kegg_modules/MAG_genome_quality_completeness_interactive.html"
+  }
+}

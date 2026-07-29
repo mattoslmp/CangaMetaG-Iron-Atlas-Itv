@@ -1,0 +1,56 @@
+Module,Thermoplasmata RBG-16-68-12 - MAG01,Unclassified MAG - MAG02,Candidatus Aminicenantes  - MAG03,Acidobacteria bacterium U - MAG04,Candidatus Bathyarchaeota - MAG05,Candidatus Bathyarchaeota - MAG06,Candidatus Bathyarchaeota - MAG07,Trebonia kvetii - MAG08,Anaeromyxobacter sp. Red267 - MAG09,Candidatus Bathyarchaeota - MAG10,Nitrososphaeria archeon E - MAG11,Dehalococcoides mccartyi - MAG12,Nitrospirales bacterium L - MAG13,Spirochaetes bacterium RB - MAG14,Bacteroidota UBA6906 - MAG15,Candidatus Bathyarchaeota - MAG16,Thermoplasmata archaeon S - MAG17,Dehalococcoidia bacterium - MAG18,Euryarchaeota archaeon RB - MAG19,Candidatus Bathyarchaeota - MAG20,Candidatus Bathyarchaeota - MAG21,Candidatus Bathyarchaeota - MAG22,Candidatus Bathyarchaeota - MAG24,Nitrosotalea sp - MAG25,Burkholderiales bacterium - MAG26,Planctomycetes bacterium  - MAG27,Unclassified MAG - MAG28,Candidatus Aminicenantes  - MAG29,Anaerolineales bacterium - MAG30,Thermoflexales bacterium - MAG31,Lokiarchaeia archaeon - MAG32,Thermoflexales bacterium  - MAG33,Hydrococcus - MAG34,Acidobacteria bacterium U - MAG35,Candidatus Bathyarchaeota - MAG36,Euryarchaeota archaeon RB - MAG37,Candidatus Bathyarchaeota - MAG38,Lokiarchaeia archaeon - MAG39,Desulfobacterota bacteriu - MAG40,Dehalococcoidia bacterium - MAG41,Dehalococcoidia bacterium - MAG42,Acidobacteria bacterium U - MAG43,Anaerolineae bacterium UB - MAG44,Candidatus Aminicenantes  - MAG45,Candidatus Methanopereden - MAG46,Unclassified MAG - MAG47,Lokiarchaeia archaeon - MAG48
+M00916 | Pyridoxal-P_biosynthesis,2,0,0,2,0,0,0,0,0,0,0,2,0,0,0,0,0,2,2,0,0,0,0,2,0,2,0,0,2,2,0,2,0,2,0,2,0,0,0,0,0,2,0,0,0,0,0
+"M00010 | Citrate cycle, first carbon oxidation, oxaloacetate => 2-oxoglutarate",0,0,0,0,0,0,0,2,2,0,0,0,2,2,2,0,0,0,0,0,0,0,0,2,2,2,0,2,2,0,0,2,2,2,2,0,0,0,2,0,0,2,0,2,0,0,0
+"M00086 | beta-Oxidation, acyl-CoA synthesis",2,2,2,0,0,0,2,2,2,0,0,2,2,2,2,0,0,2,2,2,2,2,0,0,2,2,2,2,2,2,2,2,2,0,2,2,2,2,2,2,2,0,2,2,2,2,2
+"M00028 | Ornithine biosynthesis, glutamate => ornithine",0,0,0,0,0,0,0,2,2,0,0,2,2,1,1,0,0,2,0,0,0,0,0,0,2,0,0,0,0,0,0,0,2,2,0,0,0,0,1,2,0,2,1,0,0,0,0
+M00793 | dTDP-L-rhamnose biosynthesis,1,1,2,0,0,2,2,0,0,0,0,0,1,0,0,0,0,0,2,0,0,0,0,0,2,2,0,0,1,2,1,0,2,1,0,0,0,0,1,0,0,0,0,2,0,0,0
+"M00854 | Glycogen biosynthesis, glucose-1P => glycogen/starch",0,0,0,0,0,0,0,2,2,0,0,2,2,0,2,0,0,2,0,0,0,0,0,0,2,0,0,0,0,0,0,0,2,2,0,0,0,0,0,0,0,2,2,0,0,0,0
+"M00082 | Fatty acid biosynthesis, initiation",0,0,0,0,0,0,0,2,2,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,2,0,2,0,0,0
+"M00021 | Cysteine biosynthesis, serine => cysteine",0,0,0,0,0,0,0,0,2,0,0,2,0,2,2,0,0,2,0,0,0,0,0,0,2,0,0,0,0,0,0,0,2,0,0,0,0,0,2,2,2,0,2,0,0,0,0
+"M00007 | Pentose phosphate pathway, non-oxidative phase, fructose 6P => ribose 5P",0,0,2,2,0,2,0,2,2,0,0,1,2,2,2,0,1,2,2,0,0,0,0,1,1,2,0,2,2,2,0,2,2,2,0,2,0,0,2,1,1,2,1,2,0,0,0
+"M00022 | Shikimate pathway, phosphoenolpyruvate + erythrose-4P => chorismate",0,0,0,0,0,0,0,0,2,0,0,1,2,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,2,1,0,0,0,0,0,1,0,2,0,0,0,0,0
+"M00045 | Histidine degradation, histidine => N-formiminoglutamate => glutamate",0,0,2,0,0,2,2,0,0,0,0,0,0,0,1,0,0,0,2,0,0,0,0,0,0,2,1,0,2,0,0,0,0,2,1,2,0,2,2,0,0,2,0,0,0,0,0
+"M00432 | Leucine biosynthesis, 2-oxoisovalerate => 2-oxoisocaproate",2,0,0,2,0,0,0,2,2,0,0,2,2,0,0,2,0,2,2,0,0,0,0,0,2,0,0,0,0,2,0,0,2,0,0,2,0,0,0,2,0,0,0,0,0,0,0
+"M00307 | Pyruvate oxidation, pyruvate => acetyl-CoA",2,0,2,2,2,0,2,2,2,2,0,2,2,2,2,2,2,2,0,2,2,2,2,0,2,2,2,2,2,2,2,2,2,2,2,2,0,2,2,2,2,0,2,2,2,2,0
+"M00005 | PRPP biosynthesis, ribose 5P => PRPP",2,2,2,2,2,2,2,2,2,2,2,2,2,2,0,0,2,2,0,2,2,2,2,0,2,0,2,2,2,2,2,2,2,2,2,2,2,2,2,2,0,2,0,2,2,2,0
+"M00023 | Tryptophan biosynthesis, chorismate => tryptophan",0,0,0,2,0,0,0,1,0,0,0,1,1,0,1,0,0,2,0,0,0,0,0,1,1,0,0,0,0,0,0,0,2,2,0,0,0,0,0,0,0,1,0,0,0,0,0
+M00063 | CMP-KDO biosynthesis,0,0,1,1,0,0,0,0,1,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,2,2,0,0,0,0,0,0,0,1,0,0,0,0,2,0,0,2,0,2,0,0,0
+"M00580 | Pentose phosphate pathway, archaea, fructose 6P => ribose 5P",0,2,0,0,0,0,2,0,0,0,0,0,0,0,0,0,2,0,2,0,0,2,0,0,0,0,0,0,0,2,0,0,0,0,0,2,0,2,0,0,0,0,0,0,0,0,0
+"M00015 | Proline biosynthesis, glutamate => proline",0,0,0,0,0,0,0,2,2,0,0,2,2,2,0,0,0,2,0,0,0,0,0,0,2,0,0,0,0,0,0,0,2,0,0,0,0,0,2,0,0,0,0,0,0,0,0
+"M00338 | Cysteine biosynthesis, homocysteine + serine => cysteine",2,0,0,0,0,2,0,0,2,0,0,0,0,0,2,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,2,0,0,0,0,0,0,0,0,0,0,0
+"M00006 | Pentose phosphate pathway, oxidative phase, glucose 6P => ribulose 5P",0,0,0,0,0,0,0,2,0,0,0,0,2,0,2,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,2,0,0,0,0,0,2,0,0,0,0,0,0,0,0
+"M00554 | Nucleotide sugar biosynthesis, galactose => UDP-galactose",0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,2,0,0,0,0,2,0,0,0,0,0,0,0,2,0,2,0,0,0
+"M00120 | Coenzyme A biosynthesis, pantothenate => CoA",0,0,1,1,0,0,0,2,1,0,0,2,2,0,0,0,0,2,0,0,0,0,0,0,1,1,0,1,2,0,0,0,1,2,0,0,0,0,2,0,1,1,0,2,0,0,0
+"M00096 | C5 isoprenoid biosynthesis, non-mevalonate pathway",0,0,1,0,0,0,0,1,1,0,0,1,1,0,1,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,2,1,0,0,0,0,1,1,1,1,0,1,0,0,0
+"M00844 | Arginine biosynthesis, ornithine => arginine",0,0,0,2,0,2,0,0,2,0,0,2,2,2,2,0,0,2,0,0,0,0,0,2,2,0,0,0,0,0,0,2,2,2,0,0,2,0,2,0,0,2,2,0,0,0,0
+"M00026 | Histidine biosynthesis, PRPP => histidine",0,0,0,0,0,0,0,1,2,0,0,1,1,1,0,0,0,1,0,0,0,0,0,0,2,0,0,0,0,0,0,0,1,0,0,0,1,0,1,0,0,0,0,0,0,0,0
+"M00880 | Molybdenum cofactor biosynthesis, GTP => molybdenum cofactor",1,0,0,2,0,0,2,1,1,1,0,1,1,1,0,0,0,2,0,1,1,0,1,0,2,1,0,0,2,1,0,0,2,1,0,1,0,0,0,1,0,1,2,0,1,0,0
+"M00125 | Riboflavin biosynthesis, GTP => riboflavin/FMN/FAD",0,0,0,0,0,0,0,1,1,0,0,1,1,0,0,0,0,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,1,0,0,0,0,0,0,1,1,0,0,1,0,0,0
+"M00083 | Fatty acid biosynthesis, elongation",0,0,1,2,0,0,0,0,1,0,0,0,2,0,2,0,0,2,0,0,0,0,0,0,2,1,0,0,1,0,0,1,2,1,0,0,0,0,2,1,0,2,0,1,0,0,0
+M00087 | beta-Oxidation,0,0,0,2,0,0,0,0,2,0,0,1,0,0,0,0,0,2,0,0,0,0,0,0,2,0,0,0,1,0,1,1,0,2,0,0,0,0,2,1,0,1,2,0,0,0,0
+"M00018 | Threonine biosynthesis, aspartate => homoserine => threonine",0,0,0,0,0,1,0,2,1,0,0,1,1,1,0,0,0,1,0,0,0,2,0,1,2,0,0,0,0,0,0,1,2,0,0,0,1,0,1,1,1,0,2,0,0,0,0
+"M00093 | Phosphatidylethanolamine (PE) biosynthesis, PA => PS => PE",0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,2,0,2,0,0,0
+"M00019 | Valine/isoleucine biosynthesis, pyruvate => valine / 2-oxobutanoate => isoleucine",0,1,0,0,0,0,0,2,0,0,1,2,2,1,0,0,0,2,0,0,0,0,0,2,2,0,0,0,0,0,0,2,2,2,0,0,0,0,2,1,0,0,0,0,0,0,0
+"M00365 | C10-C20 isoprenoid biosynthesis, archaea",0,0,0,0,0,2,0,0,0,2,0,0,0,0,0,0,2,0,2,0,2,0,0,0,0,0,0,0,2,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0
+"M00855 | Glycogen degradation, glycogen => glucose-6P",0,0,0,0,0,0,0,2,2,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,2,2,0,0,0,0,0,0,0,0,0,2,0,0,0,0
+"M00527 | Lysine biosynthesis, DAP aminotransferase pathway, aspartate => lysine",0,1,0,0,0,0,0,0,1,0,0,1,2,0,0,0,0,1,0,0,0,0,0,0,1,2,0,0,0,0,0,0,2,0,0,0,0,0,1,1,1,0,0,0,0,0,0
+"M00169 | CAM (Crassulacean acid metabolism), light",0,0,0,0,0,0,0,0,2,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,0,0,0,0,0
+"M00549 | Nucleotide sugar biosynthesis, glucose => UDP-glucose",0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,2,0,0,0
+"M00123 | Biotin biosynthesis, pimeloyl-ACP/CoA => biotin",0,0,0,2,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,2,2,0,0,0,0,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+M00926 | Heme_biosynthesis_bacteria,0,0,0,0,0,0,0,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,1,1,0,1,0,0,0,0,0,1,0,0,0,0,0
+M00012 | Glyoxylate cycle,0,0,0,0,0,1,0,2,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,2,1,0,0,0,0,0,0,0,1,0,0,0,0,0
+M00004 | Pentose phosphate pathway (Pentose phosphate cycle),0,0,0,0,0,0,0,1,0,0,0,0,2,1,2,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,1,2,1,0,0,0,0,1,0,0,0,0,0,0,0,0
+"M00526 | Lysine biosynthesis, DAP dehydrogenase pathway, aspartate => lysine",0,1,0,0,0,0,0,1,1,0,0,1,1,0,0,0,0,1,0,0,0,0,0,0,1,1,0,0,0,0,0,0,1,0,0,0,0,0,1,1,1,0,0,0,0,0,0
+"M00048 | Inosine monophosphate biosynthesis, PRPP + glutamine => IMP",1,0,0,1,0,2,0,2,2,0,0,1,2,1,2,0,1,1,1,0,0,0,0,1,2,1,0,1,0,1,0,0,2,1,1,1,1,0,1,0,0,2,0,2,0,0,0
+"M00570 | Isoleucine biosynthesis, threonine => 2-oxobutanoate => isoleucine",0,0,0,0,0,0,0,2,0,0,0,1,1,0,0,0,0,1,0,0,0,0,0,2,2,0,0,0,0,0,0,2,1,2,0,0,0,0,2,0,0,0,0,0,0,0,0
+"M00140 | C1-unit interconversion, prokaryotes",1,0,2,1,0,2,0,2,2,0,1,0,1,1,1,0,2,1,2,0,0,0,0,0,0,1,0,2,1,2,0,0,1,2,0,2,1,0,0,2,0,2,0,1,0,0,0
+M00064 | ADP-L-glycero-D-manno-heptose biosynthesis,0,0,1,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,2,1,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1,0,0,0
+"M00121 | Heme biosynthesis, plants and bacteria, glutamate => heme",0,0,0,0,0,0,0,1,1,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,1,1,1,0,1,0,0,0,0,0,1,0,0,0,0,0
+"M00115 | NAD biosynthesis, aspartate => NAD",0,0,2,0,0,0,0,0,1,0,0,2,2,0,0,0,0,2,0,0,0,0,0,0,0,0,0,1,2,0,0,1,2,1,0,0,0,0,0,1,0,1,0,0,0,0,0
+"M00016 | Lysine biosynthesis, succinyl-DAP pathway, aspartate => lysine",0,1,0,0,0,0,0,1,2,0,0,1,1,0,0,0,0,1,0,0,0,0,0,0,2,0,0,0,0,0,0,0,1,0,0,0,0,0,1,1,1,0,0,0,0,0,0
+"M00579 | Phosphate acetyltransferase-acetate kinase pathway, acetyl-CoA => acetate",0,0,0,0,0,0,0,0,0,0,0,0,0,2,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2,0,0,0,0,0,2,0,0,0,0,0,0,0,0
+"M00846 | Siroheme biosynthesis, glutamate => siroheme",0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,0,0
+"M00024 | Phenylalanine biosynthesis, chorismate => phenylalanine",0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00364 | C10-C20 isoprenoid biosynthesis, bacteria",0,0,0,0,0,2,0,0,0,2,0,0,0,0,2,0,2,0,2,0,2,2,0,0,0,2,0,0,2,0,0,2,2,0,0,0,0,0,0,0,0,0,0,0,2,0,0
+"M00741 | Propanoyl-CoA metabolism, propanoyl-CoA => succinyl-CoA",0,0,0,0,0,0,0,2,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+"M00052 | Pyrimidine ribonucleotide biosynthesis, UMP => UDP/UTP,CDP/CTP",2,0,0,0,0,2,0,0,2,0,0,2,2,0,0,0,2,2,2,0,0,0,0,2,2,2,0,0,2,0,2,0,2,0,0,2,0,2,2,0,0,2,0,2,0,0,0

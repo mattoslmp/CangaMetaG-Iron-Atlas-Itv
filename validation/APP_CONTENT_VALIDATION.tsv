@@ -1,0 +1,19 @@
+check	status	rows	samples
+functional_table6_KO	PASS	8045	20
+functional_table6_EC number	PASS	2914	20
+functional_table6_PFAM	PASS	8238	20
+functional_table8_KO	PASS	12144	67
+functional_table8_EC number	PASS	3514	67
+functional_table8_PFAM	PASS	100	67
+functional_combined_KO	PASS	20189	87
+functional_combined_EC number	PASS	3905	87
+functional_combined_PFAM	PASS	8258	87
+st8_complete_columns	PASS	189	87
+st8_external_records	PASS	67	67
+st8_sediment_subset	PASS	14	34
+taxonomy_publication_ids	PASS	4320	20
+ordination_hover_metadata	PASS	20	20
+kegg_dynamic_mag	PASS	448	47
+kegg_dynamic_metagenome	PASS	448	20
+streamlit_width_and_arrow	PASS	3	2
+streamlit_community_layout	PASS	1	1

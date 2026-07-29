@@ -1,0 +1,30 @@
+ClusterBlast scores for NODE_280_length_21721_cov_6.557556
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg14_1	2	554	-		
+ctg14_2	556	1354	-		
+ctg14_3	1387	2086	+		
+ctg14_4	2141	2972	-		
+ctg14_5	3288	5490	-		
+ctg14_6	5547	5754	+		
+ctg14_7	5772	6978	+		
+ctg14_8	7001	8960	+		
+ctg14_9	8970	9663	-		
+ctg14_10	9772	10765	-		
+ctg14_11	10773	11637	-		
+ctg14_12	11633	12053	-		
+ctg14_13	12049	12604	-		
+ctg14_14	12691	13690	-		
+ctg14_15	13783	14884	-		
+ctg14_16	14880	16653	-		
+ctg14_17	16657	16915	-		
+ctg14_18	16911	17520	-		
+ctg14_19	17513	18578	-		
+ctg14_20	18712	20734	-		
+ctg14_21	20879	21719	+		
+
+
+Significant hits: 
+
+
+Details:

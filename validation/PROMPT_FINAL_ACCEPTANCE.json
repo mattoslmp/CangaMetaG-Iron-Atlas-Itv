@@ -1,0 +1,117 @@
+{
+  "passed": true,
+  "passed_checks": 22,
+  "total_checks": 22,
+  "checks": [
+    {
+      "check": "figure_reproduction_commands_preserved",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "final_delivery_summary_removed",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "redundant_root_markdown_removed",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "kaleido_dependency_documented",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "playwright_dependency_documented",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "chromium_system_dependency_documented",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "browser_discovery_implemented",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "invalid_visible_text_validation_implemented",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "figure_specific_audit_expander_implemented",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "boxplot_missing_values_not_filled_with_zero",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "boxplot_descriptive_statistics_implemented",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "boxplot_points_visible_by_default",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "boxplot_quartile_whisker_validation",
+      "status": "PASS",
+      "detail": "{\"q1\": true, \"median\": true, \"q3\": true, \"lower_whisker\": true, \"upper_whisker\": true, \"outlier_count\": true, \"missing_preserved\": true}"
+    },
+    {
+      "check": "png_svg_pdf_exports_valid",
+      "status": "PASS",
+      "detail": "[{\"format\": \"png\", \"path\": \"validation/plotly_export_validation/plotly_export_validation.png\", \"bytes\": 44249, \"backend\": \"chromium-playwright\", \"valid\": true, \"dimensions\": [2800, 1800]}, {\"format\": \"svg\", \"path\": \"validation/plotly_export_validation/plotly_export_validation.svg\", \"bytes\": 6408, \"backend\": \"chromium-playwright\", \"valid\": true, \"contains_required_title\": true, \"contains_required_axis_label\": true}, {\"format\": \"pdf\", \"path\": \"validation/plotly_export_validation/plotly_export_validation.pdf\", \"bytes\": 8804, \"backend\": \"chromium-playwright\", \"valid\": true, \"pages\": 1, \"media_box_points\": [1050.0, 675.12]}]"
+    },
+    {
+      "check": "all_lake_sample_labels_in_exports",
+      "status": "PASS",
+      "detail": "[{\"annotation_type\":\"KO\",\"expected_labels\":20,\"present_labels\":20,\"missing_labels\":null,\"backend\":\"chromium-playwright\",\"pass\":true},{\"annotation_type\":\"EC number\",\"expected_labels\":20,\"present_labels\":20,\"missing_labels\":null,\"backend\":\"chromium-playwright\",\"pass\":true},{\"annotation_type\":\"PFAM\",\"expected_labels\":20,\"present_labels\":20,\"missing_labels\":null,\"backend\":\"chromium-playwright\",\"pass\":true}]"
+    },
+    {
+      "check": "visual_browser_validation",
+      "status": "PASS",
+      "detail": "[{\"title\":\"KO biomarker boxplots by pathway, lake and sample\",\"xTicks\":10,\"yTicks\":8,\"annotations\":\"[]\",\"legendTitleOverlap\":false,\"width\":1650,\"height\":906,\"name\":\"browser_ko_boxplot_with_statistics\",\"undefined\":false,\"pass\":true},{\"title\":\"Iron KO marker boxplots by category, lake and season\",\"xTicks\":8,\"yTicks\":8,\"annotations\":\"['Dry season', 'Rainy season']\",\"legendTitleOverlap\":false,\"width\":2356,\"height\":900,\"name\":\"browser_iron_boxplot_with_statistics\",\"undefined\":false,\"pass\":true},{\"title\":\"Amazonian lake annotations (Supplementary Table 6) \\u2014 KO\",\"xTicks\":20,\"yTicks\":80,\"annotations\":\"[]\",\"legendTitleOverlap\":false,\"width\":1810,\"height\":2540,\"name\":\"functional_KO\",\"undefined\":false,\"pass\":true},{\"title\":\"Amazonian lake annotations (Supplementary Table 6) \\u2014 EC number\",\"xTicks\":20,\"yTicks\":80,\"annotations\":\"[]\",\"legendTitleOverlap\":false,\"width\":1810,\"height\":2540,\"name\":\"functional_EC number\",\"undefined\":false,\"pass\":true},{\"title\":\"Amazonian lake annotations (Supplementary Table 6) \\u2014 PFAM\",\"xTicks\":20,\"yTicks\":80,\"annotations\":\"[]\",\"legendTitleOverlap\":false,\"width\":1810,\"height\":2540,\"name\":\"functional_PFAM\",\"undefined\":false,\"pass\":true}]"
+    },
+    {
+      "check": "all_app_pages_navigate",
+      "status": "PASS",
+      "detail": "[{\"page\":\"article_atlas\",\"status\":\"PASS\"},{\"page\":\"mags_genomes\",\"status\":\"PASS\"},{\"page\":\"kegg_modules\",\"status\":\"PASS\"},{\"page\":\"taxonomy\",\"status\":\"PASS\"},{\"page\":\"ko_biomarkers\",\"status\":\"PASS\"},{\"page\":\"iron_metals\",\"status\":\"PASS\"},{\"page\":\"differential_abundance\",\"status\":\"PASS\"},{\"page\":\"iron_environment_comparison\",\"status\":\"PASS\"},{\"page\":\"img_functional\",\"status\":\"PASS\"},{\"page\":\"st8_references\",\"status\":\"PASS\"},{\"page\":\"environment_integrator\",\"status\":\"PASS\"},{\"page\":\"code_reproducibility\",\"status\":\"PASS\"},{\"page\":\"final_figures\",\"status\":\"PASS\"},{\"page\":\"methods_references\",\"status\":\"PASS\"}]"
+    },
+    {
+      "check": "previous_requested_corrections_still_pass",
+      "status": "PASS",
+      "detail": "29/29"
+    },
+    {
+      "check": "no_unrequested_static_figure_changes",
+      "status": "PASS",
+      "detail": "{\"UNCHANGED\": 1731, \"MODIFIED_REQUESTED_TARGET\": 2, \"MODIFIED_UNREQUESTED\": 0, \"MISSING\": 0, \"total\": 1733}"
+    },
+    {
+      "check": "forbidden_file_absent_FINAL_DELIVERY_SUMMARY.md",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "forbidden_file_absent_PROMPT_IMPLEMENTATION.md",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "forbidden_file_absent_VALIDATION_SUMMARY.md",
+      "status": "PASS",
+      "detail": ""
+    }
+  ]
+}

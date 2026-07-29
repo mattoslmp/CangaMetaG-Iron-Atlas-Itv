@@ -1,0 +1,16 @@
+{
+  "stress_1": 0.06498247382619542,
+  "iterations": 185,
+  "converged": true,
+  "rank_correlation_observed_vs_ordination_distances": 0.984860930686227,
+  "domain": "Bacteria",
+  "n_samples": 20,
+  "transformation": "square root of sample-wise relative proportions",
+  "dissimilarity": "Bray-Curtis",
+  "dimensions": 2,
+  "nonmetric": true,
+  "n_init": 20,
+  "max_iter": 1000,
+  "seed": 42,
+  "normalized_stress": true
+}

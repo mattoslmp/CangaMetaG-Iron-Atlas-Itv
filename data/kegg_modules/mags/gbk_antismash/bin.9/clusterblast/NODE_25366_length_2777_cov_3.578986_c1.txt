@@ -1,0 +1,110 @@
+ClusterBlast scores for NODE_25366_length_2777_cov_3.578986
+
+Table of genes, locations, strands and annotations of query cluster:
+ctg493_1	2	758	-		
+ctg493_2	840	1179	-		
+ctg493_3	1502	2144	+		
+ctg493_4	2220	2493	+		
+ctg493_5	2542	2776	+		
+
+
+Significant hits: 
+1. NC_009675	Anaeromyxobacter sp. Fw109-5, complete sequence
+2. NZ_CP088920	Rhodanobacter denitrificans strain FW104-10F02 chromosome, complete genome
+3. NC_018697	Cycloclasticus sp. P1, complete sequence
+4. NC_021917	Cycloclasticus zancles 78-ME, complete sequence
+5. NZ_CP023664	Cycloclasticus sp. PY97N chromosome, complete genome
+6. NZ_KE386572	Geminicoccus roseus DSM 18922 GemroDRAFT_scaffold1.1, whole genome shotgun sequence
+
+
+Details:
+
+>>
+1. NC_009675
+Source: Anaeromyxobacter sp. Fw109-5, complete sequence
+Type: RiPP-like
+Number of proteins with BLAST hits to this cluster: 3
+Cumulative BLAST score: 487.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg493_3	ANAE109_RS07935	70	291	100.0	1e-98
+ctg493_4	ANAE109_RS07930	49	72	104.44444444444446	2.2e-16
+ctg493_5	ANAE109_RS07925	78	124	92.3076923076923	7.58e-35
+
+
+
+>>
+2. NZ_CP088920
+Source: Rhodanobacter denitrificans strain FW104-10F02 chromosome, complete genome
+Type: RiPP-like
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 174.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg493_1	LRK32_RS08815	38	114	93.65079365079364	8.43e-27
+ctg493_5	LRK32_RS08790	45	60	76.92307692307693	3.19e-10
+
+
+
+>>
+3. NC_018697
+Source: Cycloclasticus sp. P1, complete sequence
+Type: RiPP-like
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 151.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg493_2	Q91_RS09435	48	99	84.82142857142857	2.87e-26
+ctg493_5	Q91_RS09460	40	52	97.43589743589743	2.96e-07
+
+
+
+>>
+4. NC_021917
+Source: Cycloclasticus zancles 78-ME, complete sequence
+Type: RiPP-like
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 151.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg493_2	CYCME_RS02895	48	99	84.82142857142857	2.87e-26
+ctg493_5	CYCME_RS02870	40	52	97.43589743589743	2.96e-07
+
+
+
+>>
+5. NZ_CP023664
+Source: Cycloclasticus sp. PY97N chromosome, complete genome
+Type: RiPP-like
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 151.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg493_2	CPC19_RS03505	48	99	84.82142857142857	2.87e-26
+ctg493_5	CPC19_RS03480	40	52	97.43589743589743	2.96e-07
+
+
+
+>>
+6. NZ_KE386572
+Source: Geminicoccus roseus DSM 18922 GemroDRAFT_scaffold1.1, whole genome shotgun sequence
+Type: redox-cofactor
+Number of proteins with BLAST hits to this cluster: 2
+Cumulative BLAST score: 186.0
+
+Table of genes, locations, strands and annotations of subject cluster:
+
+Table of Blast hits (query gene, subject gene, %identity, blast score, %coverage, e-value):
+ctg493_1	GEMRO_RS0114840	33	99	86.11111111111111	1.01e-21
+ctg493_2	GEMRO_RS0114830	39	87	83.03571428571429	1.76e-19
+

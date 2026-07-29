@@ -1,0 +1,235 @@
+name: Apply atlas presentation and workflow cleanup
+
+on:
+  push:
+    paths:
+      - '.github/workflows/app_presentation_and_workflow_cleanup.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  apply:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          lfs: true
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install plotting dependency
+        run: python -m pip install --upgrade matplotlib
+
+      - name: Update app presentation and workflow layout
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          app_path = Path('app.py')
+          text = app_path.read_text(encoding='utf-8')
+
+          # Remove result-persistence notices from public presentation areas.
+          persistence_block = '''  st.caption(txt(
+            "Os resultados ambientais vigentes são preservados no diretório de estado gravável do usuário até que ele limpe os dados ou apague o cache.",
+            "Active environmental results are preserved in the user-writable state directory until the user clears the data or deletes the cache."
+          ))
+          '''
+          text = text.replace(persistence_block, '')
+
+          navigation_block = '''st.caption(txt(
+            "A navegação agora é persistente: trocar de módulo não apaga resultados vigentes; resultados ambientais ficam salvos até limpar dados ou apagar cache.",
+            "Navigation is now persistent: changing modules does not delete active results; environmental results remain saved until clear-data/delete-cache is used."
+          ))
+          '''
+          text = text.replace(navigation_block, '')
+
+          # Replace vague marker citations and an uncontextualized sample table with
+          # scientific interpretation, novelty and seasonal sample context.
+          old_block = '''  m1, m2, m3, m4, m5, m6 = st.columns(6)
+            m1.metric(txt("Amostras do artigo", "Article samples"), meta["sample.id"].nunique() if "sample.id" in meta.columns else len(meta))
+            m2.metric(txt("KOs únicos", "Unique KOs"), markers["KO"].astype(str).str.extract(r"(K\\d{5})", expand=False).nunique() if not markers.empty and "KO" in markers.columns else 0)
+            m3.metric("Salazar markers", int(markers["Study"].astype(str).str.contains("Salazar", case=False, na=False).sum()) if "Study" in markers.columns else 0)
+            m4.metric("New markers", int(markers["Study"].astype(str).str.contains("New marker", case=False, na=False).sum()) if "Study" in markers.columns else 0)
+            m5.metric(txt("Ambientes IMG/M", "IMG/M environments"), iron_meta["sample_id"].nunique() if not iron_meta.empty and "sample_id" in iron_meta.columns else len(iron_meta))
+            m6.metric(txt("MAGs", "MAGs"), len(load_sheet("table7", "bins-identificados")))
+
+            c1, c2 = st.columns([0.52, 0.48])
+            with c1:
+              st.markdown("#### " + txt("Citações e rastreabilidade", "Citations and traceability"))
+              st.success(f"**Salazar_et_al_2019 markers:** {SALAZAR_CITATION}")
+              st.info(f"**New marker:** {ARTICLE_CITATION}")
+              st.markdown(
+                txt(
+                  "**IMG/M source:** os metadados dos ambientes ricos em ferro vêm da aba `Iron-rich-environment` da Supplementary Table 8, derivada do portal Integrated Microbial Genomes with Microbiome Samples mantido pelo JGI.",
+                  "**IMG/M source:** metadata for iron-rich environments come from the `Iron-rich-environment` sheet in Supplementary Table 8, derived from the Integrated Microbial Genomes with Microbiome Samples portal maintained by JGI."
+                )
+              )
+              if available_gbk_count() == 0:
+                st.warning(
+                  txt(
+                    "Os FASTA foram incluídos, mas nenhum GBK/GBFF foi encontrado. Para ativar downloads de GBK, coloque arquivos em `data/mags/gbk/` ou em `Annotation/MAG1`, `Annotation/MAG2`, ...",
+                    "FASTA files are included, but no GBK/GBFF files were found. To enable GBK downloads, place files in `data/mags/gbk/` or in `Annotation/MAG1`, `Annotation/MAG2`, ..."
+                  )
+                )
+            with c2:
+              st.markdown("#### " + txt("Amostras e datas da Supplementary Table 1", "Samples and dates from Supplementary Table 1"))
+              cols = [c for c in ["sample.id", "collection_date", "lat", "lon", "environment_feature", "lake", "season"] if c in meta.columns]
+              show_table(meta[cols], "metadata_preview", height=320)
+              csv_button(meta, "article_sample_dates_coordinates.csv", txt("Baixar datas/coordenadas", "Download dates/coordinates"))
+          '''
+
+          new_block = '''  salazar_unique = int(
+            markers.loc[
+              markers["Study"].astype(str).str.contains("Salazar", case=False, na=False),
+              "KO",
+            ].astype(str).str.extract(r"(K\\d{5})", expand=False).dropna().nunique()
+          ) if (not markers.empty and {"Study", "KO"}.issubset(markers.columns)) else 0
+          iron_unique = int(
+            markers.loc[
+              markers["Study"].astype(str).str.contains("New marker", case=False, na=False),
+              "KO",
+            ].astype(str).str.extract(r"(K\\d{5})", expand=False).dropna().nunique()
+          ) if (not markers.empty and {"Study", "KO"}.issubset(markers.columns)) else 0
+
+          m1, m2, m3, m4, m5, m6 = st.columns(6)
+          m1.metric(txt("Amostras do artigo", "Article samples"), meta["sample.id"].nunique() if "sample.id" in meta.columns else len(meta))
+          m2.metric(txt("KOs únicos", "Unique KOs"), markers["KO"].astype(str).str.extract(r"(K\\d{5})", expand=False).nunique() if not markers.empty and "KO" in markers.columns else 0)
+          m3.metric(txt("KOs derivados de Salazar", "Salazar-derived KOs"), salazar_unique)
+          m4.metric(txt("KOs associados ao ferro", "Iron-associated KOs"), iron_unique)
+          m5.metric(txt("Ambientes IMG/M", "IMG/M environments"), iron_meta["sample_id"].nunique() if not iron_meta.empty and "sample_id" in iron_meta.columns else len(iron_meta))
+          m6.metric(txt("MAGs", "MAGs"), len(load_sheet("table7", "bins-identificados")))
+
+          c1, c2 = st.columns([0.52, 0.48])
+          with c1:
+            st.markdown("#### " + txt("Atualização dos biomarcadores e rastreabilidade", "Biomarker update and traceability"))
+            st.markdown(txt(
+              f"**Salazar et al. (2019)** forneceram a estrutura de referência para genes marcadores de ciclos biogeoquímicos usada neste atlas. O conjunto empacotado contém **{salazar_unique} KOs biogeoquímicos únicos derivados dessa referência**. A publicação atual **atualiza e amplia** esse quadro, consolidando um painel de **195 biomarcadores biogeoquímicos**, dos quais **171 foram detectados** nas amostras do estudo, e acrescentando um painel dedicado de **132 biomarcadores associados ao ferro**. Na versão empacotada do atlas, **{iron_unique} KOs únicos** estão representados explicitamente na matriz focada em ferro/metais. Dessa forma, o estudo não apenas reutiliza a referência de Salazar: ele a expande para sedimentos tropicais ferruginosos e mantém a proveniência de cada marcador.",
+              f"**Salazar et al. (2019)** provided the reference framework for biogeochemical-cycle marker genes used in this atlas. The packaged dataset contains **{salazar_unique} unique biogeochemical KOs derived from that reference**. The present publication **updates and expands** the framework by consolidating a panel of **195 biogeochemical biomarkers**, of which **171 were detected** in the study samples, and by adding a dedicated panel of **132 iron-associated biomarkers**. In the packaged atlas release, **{iron_unique} unique KOs** are represented explicitly in the iron/metals-focused matrix. The study therefore does not merely reuse the Salazar reference; it extends it to tropical ferruginous sediments while preserving marker-level provenance."
+            ))
+            st.caption(txt(
+              f"Referências rastreadas no banco: {SALAZAR_CITATION} Publicação atual: {ARTICLE_CITATION}",
+              f"References traced in the database: {SALAZAR_CITATION} Current publication: {ARTICLE_CITATION}"
+            ))
+            st.markdown(
+              txt(
+                "**IMG/M source:** os metadados dos ambientes ricos em ferro vêm da aba `Iron-rich-environment` da Supplementary Table 8, derivada do portal Integrated Microbial Genomes with Microbiome Samples mantido pelo JGI.",
+                "**IMG/M source:** metadata for iron-rich environments come from the `Iron-rich-environment` sheet in Supplementary Table 8, derived from the Integrated Microbial Genomes with Microbiome Samples portal maintained by JGI."
+              )
+            )
+            if available_gbk_count() == 0:
+              st.warning(
+                txt(
+                  "Os FASTA foram incluídos, mas nenhum GBK/GBFF foi encontrado. Para ativar downloads de GBK, coloque arquivos em `data/mags/gbk/` ou em `Annotation/MAG1`, `Annotation/MAG2`, ...",
+                  "FASTA files are included, but no GBK/GBFF files were found. To enable GBK downloads, place files in `data/mags/gbk/` or in `Annotation/MAG1`, `Annotation/MAG2`, ..."
+                )
+              )
+          with c2:
+            st.markdown("#### " + txt("Amostras, sazonalidade e novidade do estudo", "Study samples, seasonality and novelty"))
+            total_samples = int(meta["sample.id"].nunique()) if "sample.id" in meta.columns else len(meta)
+            n_lakes = int(meta["lake"].dropna().astype(str).nunique()) if "lake" in meta.columns else 0
+            n_dry = int((meta["season"].astype(str).str.lower() == "dry").sum()) if "season" in meta.columns else 0
+            n_rainy = int((meta["season"].astype(str).str.lower() == "rainy").sum()) if "season" in meta.columns else 0
+            lake_names = ", ".join(sorted(meta["lake"].dropna().astype(str).unique())) if "lake" in meta.columns else ""
+            st.markdown(txt(
+              f"O estudo inclui **{total_samples} amostras de sedimento** provenientes de **{n_lakes} lagoas lateríticas amazônicas** — **{lake_names}** — com coletas nos períodos **seco e chuvoso**. A novidade do atlas é integrar, para essas mesmas amostras, os metadados de coleta e estação, os perfis taxonômicos, os biomarcadores KO dos ciclos biogeoquímicos, os biomarcadores associados ao ferro, os módulos KEGG/KEMET, os MAGs e a comparação com outros ambientes ricos em ferro. A tabela detalhada abaixo mantém explicitamente a **estação do ano de cada amostra**.",
+              f"The study includes **{total_samples} sediment samples** from **{n_lakes} Amazonian lateritic lakes** — **{lake_names}** — collected during **dry and rainy seasons**. The novelty of the atlas is the integration, for these same samples, of collection and seasonal metadata, taxonomic profiles, biogeochemical-cycle KO biomarkers, iron-associated biomarkers, KEGG/KEMET modules, MAGs and comparisons with other iron-rich environments. The detailed table below explicitly retains the **season assigned to every sample**."
+            ))
+            if not meta.empty and {"sample.id", "lake", "season"}.issubset(meta.columns):
+              sample_summary = (
+                meta[["sample.id", "lake", "season"]]
+                .drop_duplicates()
+                .assign(
+                  dry=lambda frame: (frame["season"].astype(str).str.lower() == "dry").astype(int),
+                  rainy=lambda frame: (frame["season"].astype(str).str.lower() == "rainy").astype(int),
+                )
+                .groupby("lake", as_index=False)
+                .agg(
+                  samples=("sample.id", "nunique"),
+                  dry_samples=("dry", "sum"),
+                  rainy_samples=("rainy", "sum"),
+                )
+              )
+              show_table(sample_summary, "metadata_lake_season_summary", height=190)
+            st.caption(txt(
+              f"Distribuição sazonal: **{n_dry} amostras do período seco** e **{n_rainy} amostras do período chuvoso**.",
+              f"Seasonal distribution: **{n_dry} dry-season samples** and **{n_rainy} rainy-season samples**."
+            ))
+            cols = [c for c in ["sample.id", "collection_date", "lake", "season", "lat", "lon", "environment_feature"] if c in meta.columns]
+            show_table(meta[cols], "metadata_preview", height=320)
+            csv_button(meta, "article_sample_dates_coordinates.csv", txt("Baixar datas/coordenadas", "Download dates/coordinates"))
+          '''
+
+          if old_block not in text:
+            raise RuntimeError('Expected overview citation/sample block was not found.')
+          text = text.replace(old_block, new_block)
+
+          # Remove execution-only instructions from the MAG result-presentation module.
+          antismash_caption = '''  st.caption(txt(
+            "Coloque cada diretório antiSMASH já descompactado em data/kegg_modules/mags/gbk_antismash/. O nome pode conter strict, orig, permissive, metawrap, repaired, números de reparo ou marcadores como (1); o app converte automaticamente tudo para MAG.<número>.",
+            "Place each extracted antiSMASH directory under data/kegg_modules/mags/gbk_antismash/. Names may contain strict, orig, permissive, metawrap, repaired, repair counters or markers such as (1); the app automatically maps all of them to MAG.<number>."
+          ))
+          '''
+          if antismash_caption not in text:
+            raise RuntimeError('Expected antiSMASH presentation caption was not found.')
+          text = text.replace(antismash_caption, '')
+
+          # Keep the same instruction only in Final figures & scripts > Methods / execution.
+          execution_anchor = '''    st.markdown("### Quick execution")
+              st.code("python -m pip install -r requirements.txt\\nstreamlit run app.py", language="bash")
+          '''
+          execution_insert = '''    st.markdown("### Quick execution")
+            st.code("python -m pip install -r requirements.txt\\nstreamlit run app.py", language="bash")
+            st.markdown("### " + txt("Preparação dos diretórios antiSMASH", "antiSMASH directory preparation"))
+            st.info(txt(
+              "Coloque cada diretório antiSMASH já descompactado em `data/kegg_modules/mags/gbk_antismash/`. Os nomes podem conter `strict`, `orig`, `permissive`, `metawrap`, `repaired`, contadores de reparo ou marcadores como `(1)`; durante a leitura, o app normaliza esses nomes para `MAG.<número>`.",
+              "Place each extracted antiSMASH directory under `data/kegg_modules/mags/gbk_antismash/`. Names may contain `strict`, `orig`, `permissive`, `metawrap`, `repaired`, repair counters or markers such as `(1)`; during loading, the app normalizes these names to `MAG.<number>`."
+            ))
+          '''
+          if execution_anchor not in text:
+            raise RuntimeError('Expected Methods / execution anchor was not found.')
+          text = text.replace(execution_anchor, execution_insert)
+
+          app_path.write_text(text, encoding='utf-8')
+
+          # Preserve the current workflow design and only separate the numbered
+          # circles from titles so no text or geometry overlaps them.
+          workflow_path = Path('scripts/generate_atlas_workflow_figure.py')
+          workflow = workflow_path.read_text(encoding='utf-8')
+          workflow = workflow.replace(
+            "  title_x = x + 0.04 if number is not None else x + w / 2\n",
+            "  title_x = x + 0.062 if number is not None else x + w / 2\n",
+          )
+          workflow = workflow.replace(
+            "    cx = x + 0.025\n    cy = y + h - 0.030\n    ax.add_patch(Circle((cx, cy), 0.017, facecolor=edge, edgecolor='none', zorder=4))\n",
+            "    cx = x + 0.027\n    cy = y + h - 0.030\n    ax.add_patch(Circle((cx, cy), 0.014, facecolor=edge, edgecolor='none', zorder=4))\n",
+          )
+          workflow_path.write_text(workflow, encoding='utf-8')
+          PY
+
+      - name: Validate Python syntax
+        run: python -m py_compile app.py scripts/generate_atlas_workflow_figure.py
+
+      - name: Regenerate workflow figure
+        run: python scripts/generate_atlas_workflow_figure.py
+
+      - name: Commit corrected app and workflow outputs
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add app.py scripts/generate_atlas_workflow_figure.py
+          git add outputs/final_publication_figures/SupplementaryFigure29_complete_computational_workflow.*
+          git add outputs/app_supplementary_figures/SupplementaryFigure29_complete_computational_workflow.*
+          git add outputs/article_highres_figures/SupplementaryFigure29_complete_computational_workflow.*
+          if git diff --cached --quiet; then
+            echo 'No changes to commit.'
+          else
+            git commit -m 'Improve atlas overview and separate workflow numbering'
+            git push
+          fi

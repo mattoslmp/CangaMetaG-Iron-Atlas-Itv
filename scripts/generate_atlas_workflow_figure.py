@@ -41,12 +41,12 @@ def rounded_box(ax, x, y, w, h, face, edge, title, body=None, number=None, title
     facecolor=face,
     zorder=2,
   ))
-  title_x = x + 0.04 if number is not None else x + w / 2
+  title_x = x + 0.062 if number is not None else x + w / 2
   title_ha = 'left' if number is not None else 'center'
   if number is not None:
-    cx = x + 0.025
+    cx = x + 0.027
     cy = y + h - 0.030
-    ax.add_patch(Circle((cx, cy), 0.017, facecolor=edge, edgecolor='none', zorder=4))
+    ax.add_patch(Circle((cx, cy), 0.014, facecolor=edge, edgecolor='none', zorder=4))
     ax.text(cx, cy, str(number), ha='center', va='center', fontsize=9.2, color='white', fontweight='bold', zorder=5)
   ax.text(
     title_x,

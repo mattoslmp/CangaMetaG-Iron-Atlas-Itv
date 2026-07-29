@@ -1,56 +1,248 @@
 from pathlib import Path
+import shutil
+
 import matplotlib.pyplot as plt
-from matplotlib.patches import FancyBboxPatch, FancyArrowPatch
+from matplotlib.patches import FancyArrowPatch, FancyBboxPatch, Circle
+
 
 BASE_DIR = Path(__file__).resolve().parents[1]
-OUT_DIR = BASE_DIR / 'outputs' / 'article_highres_figures'
-OUT_DIR.mkdir(parents=True, exist_ok=True)
-
-boxes = [
-  (0.05, 0.78, 0.25, 0.12, '1. Input datasets', 'Supplementary Tables 1–9\nCurated Atlas metadata\nBV-BRC / IMG/M support files'),
-  (0.38, 0.78, 0.24, 0.12, '2. Harmonization', 'Sample IDs, KO tables,\npathway links, GTDB taxonomy,\nverified Amazonian coordinates'),
-  (0.70, 0.78, 0.25, 0.12, '3. Core atlas tables', 'Iron-Rich Metagenomic Atlas\nall KO / iron KO matrices\nmetadata and study references'),
-  (0.06, 0.48, 0.26, 0.14, '4. Analyses', 'Taxonomic profiles\nDifferential abundance\nKO/iron contrasts\nmarker abundance summaries'),
-  (0.38, 0.48, 0.24, 0.14, '5. Environmental integration', 'Coordinates and dates\nGoogle/coordinate-check maps\nNASA POWER / CHIRPS / SoilGrids\nSentinel / Earthdata'),
-  (0.70, 0.48, 0.25, 0.14, '6. Atlas outputs', 'Interactive app panels\nDownloadable linked tables\nHigh-readability heatmaps\npublication figures'),
-  (0.24, 0.18, 0.26, 0.14, '7. Manuscript figures', 'Main Figures 1–11\nSupplementary Figures 1–22\nPNG / SVG / TIFF exports'),
-  (0.56, 0.18, 0.28, 0.14, '8. Reproducibility', 'Python scripts in scripts/\nModules in src/\nFigure manifest + execution commands'),
+OUTPUT_STEM = 'SupplementaryFigure29_complete_computational_workflow'
+OUTPUT_DIRS = [
+  BASE_DIR / 'outputs' / 'final_publication_figures',
+  BASE_DIR / 'outputs' / 'app_supplementary_figures',
+  BASE_DIR / 'outputs' / 'article_highres_figures',
 ]
 
-fig = plt.figure(figsize=(15, 10), dpi=300)
-ax = fig.add_axes([0, 0, 1, 1])
-ax.set_axis_off()
-ax.text(0.5, 0.965, 'Supplementary Figure 22. Workflow of the Iron-Rich Environment Metagenomic Atlas app and figure-generation pipeline',
-        ha='center', va='top', fontsize=16, fontweight='bold')
-ax.text(0.5, 0.935, 'All elements are generated directly from the curated supplementary tables and app code; no fabricated scientific data are introduced in the workflow.',
-        ha='center', va='top', fontsize=10)
+COLORS = {
+  'ink': '#123534',
+  'muted': '#475569',
+  'teal': '#008A83',
+  'teal_dark': '#075E5A',
+  'teal_soft': '#E8F5F3',
+  'gold': '#F2B705',
+  'gold_soft': '#FFF6D8',
+  'blue': '#2563EB',
+  'blue_soft': '#EAF2FF',
+  'violet': '#7C3AED',
+  'violet_soft': '#F1EBFF',
+  'rose': '#BE123C',
+  'rose_soft': '#FFF0F4',
+  'gray_soft': '#F8FAFC',
+  'white': '#FFFFFF',
+}
 
-face = '#E8F5F3'
-edge = '#0E6251'
-for x, y, w, h, title, body in boxes:
-    ax.add_patch(FancyBboxPatch((x, y), w, h, boxstyle='round,pad=0.012,rounding_size=0.02', linewidth=2.0, edgecolor=edge, facecolor=face))
-    ax.text(x + w / 2, y + h * 0.70, title, ha='center', va='center', fontsize=12, fontweight='bold')
-    ax.text(x + w / 2, y + h * 0.36, body, ha='center', va='center', fontsize=10)
 
-arrows = [
-    ((0.30, 0.84), (0.38, 0.84)), ((0.62, 0.84), (0.70, 0.84)),
-    ((0.19, 0.78), (0.19, 0.62)), ((0.50, 0.78), (0.50, 0.62)), ((0.82, 0.78), (0.82, 0.62)),
-    ((0.32, 0.55), (0.38, 0.55)), ((0.62, 0.55), (0.70, 0.55)),
-    ((0.19, 0.48), (0.32, 0.32)), ((0.50, 0.48), (0.37, 0.32)), ((0.82, 0.48), (0.70, 0.32)),
-    ((0.50, 0.48), (0.70, 0.32)), ((0.50, 0.25), (0.56, 0.25)),
-]
-for (x1, y1), (x2, y2) in arrows:
-    ax.add_patch(FancyArrowPatch((x1, y1), (x2, y2), arrowstyle='-|>', mutation_scale=18, linewidth=2, color='#1565C0'))
+def rounded_box(ax, x, y, w, h, face, edge, title, body=None, number=None, title_size=12.5, body_size=10.0):
+  ax.add_patch(FancyBboxPatch(
+    (x, y), w, h,
+    boxstyle='round,pad=0.012,rounding_size=0.018',
+    linewidth=1.8,
+    edgecolor=edge,
+    facecolor=face,
+    zorder=2,
+  ))
+  title_x = x + 0.04 if number is not None else x + w / 2
+  title_ha = 'left' if number is not None else 'center'
+  if number is not None:
+    cx = x + 0.025
+    cy = y + h - 0.030
+    ax.add_patch(Circle((cx, cy), 0.017, facecolor=edge, edgecolor='none', zorder=4))
+    ax.text(cx, cy, str(number), ha='center', va='center', fontsize=9.2, color='white', fontweight='bold', zorder=5)
+  ax.text(
+    title_x,
+    y + h - 0.030,
+    title,
+    ha=title_ha,
+    va='center',
+    fontsize=title_size,
+    color=COLORS['ink'],
+    fontweight='bold',
+    zorder=5,
+  )
+  if body:
+    ax.text(
+      x + w / 2,
+      y + h * 0.42,
+      body,
+      ha='center',
+      va='center',
+      fontsize=body_size,
+      color=COLORS['muted'],
+      linespacing=1.35,
+      zorder=5,
+    )
 
-ax.text(0.5, 0.06, 'Key scripts: rebuild_supplementary_table8_final.py | generate_article_figures_high_readability.py | generate_st8_final_article_figures.py | export_publication_figure_formats.py',
-        ha='center', va='center', fontsize=10)
 
-png = OUT_DIR / 'SuppFigure22_Iron_Rich_Atlas_workflow.png'
-svg = OUT_DIR / 'SuppFigure22_Iron_Rich_Atlas_workflow.svg'
-tif = OUT_DIR / 'SuppFigure22_Iron_Rich_Atlas_workflow.tiff'
-fig.savefig(png, dpi=300, bbox_inches='tight')
-fig.savefig(svg, dpi=300, bbox_inches='tight')
-fig.savefig(tif, dpi=300, bbox_inches='tight')
-print(png)
-print(svg)
-print(tif)
+def pill(ax, x, y, w, text, face, edge, text_color=None, fontsize=9.3):
+  h = 0.042
+  ax.add_patch(FancyBboxPatch(
+    (x, y), w, h,
+    boxstyle='round,pad=0.008,rounding_size=0.021',
+    linewidth=1.1,
+    edgecolor=edge,
+    facecolor=face,
+    zorder=4,
+  ))
+  ax.text(
+    x + w / 2,
+    y + h / 2,
+    text,
+    ha='center',
+    va='center',
+    fontsize=fontsize,
+    color=text_color or COLORS['ink'],
+    fontweight='semibold',
+    zorder=5,
+  )
+
+
+def arrow(ax, start, end, color=None, rad=0.0):
+  ax.add_patch(FancyArrowPatch(
+    start,
+    end,
+    arrowstyle='-|>',
+    mutation_scale=16,
+    linewidth=1.8,
+    color=color or COLORS['teal'],
+    connectionstyle=f'arc3,rad={rad}',
+    shrinkA=4,
+    shrinkB=4,
+    zorder=1,
+  ))
+
+
+def build_figure():
+  fig = plt.figure(figsize=(16, 10), dpi=300, facecolor='white')
+  ax = fig.add_axes([0, 0, 1, 1])
+  ax.set_xlim(0, 1)
+  ax.set_ylim(0, 1)
+  ax.set_axis_off()
+
+  ax.text(
+    0.5,
+    0.965,
+    'Computational workflow of the CangaMetaG Iron-Rich Metagenomic Atlas',
+    ha='center',
+    va='top',
+    fontsize=19,
+    color=COLORS['ink'],
+    fontweight='bold',
+  )
+  ax.text(
+    0.5,
+    0.928,
+    'From curated scientific data layers to interactive exploration, publication figures, and reproducible analysis scripts',
+    ha='center',
+    va='top',
+    fontsize=11.2,
+    color=COLORS['muted'],
+  )
+
+  # Semantic input categories are clearer than generic table numbers.
+  rounded_box(
+    ax, 0.035, 0.625, 0.265, 0.235,
+    COLORS['teal_soft'], COLORS['teal'],
+    'Scientific data layers',
+    number=1,
+  )
+  pill(ax, 0.060, 0.775, 0.105, 'Study metadata', COLORS['white'], COLORS['teal'])
+  pill(ax, 0.175, 0.775, 0.100, 'Sample context', COLORS['white'], COLORS['teal'])
+  pill(ax, 0.060, 0.715, 0.105, 'Taxonomic profiles', COLORS['white'], COLORS['teal'])
+  pill(ax, 0.175, 0.715, 0.100, 'KO profiles', COLORS['white'], COLORS['teal'])
+  pill(ax, 0.060, 0.655, 0.105, 'MAG annotations', COLORS['white'], COLORS['teal'])
+  pill(ax, 0.175, 0.655, 0.100, 'Iron-rich studies', COLORS['white'], COLORS['teal'])
+
+  rounded_box(
+    ax, 0.365, 0.625, 0.265, 0.235,
+    COLORS['blue_soft'], COLORS['blue'],
+    'Curation and harmonization',
+    'Canonical sample and MAG identifiers\nTaxonomy and metadata standardization\nKO, pathway, and module mapping\nCross-study provenance and reference links',
+    number=2,
+  )
+
+  rounded_box(
+    ax, 0.695, 0.625, 0.270, 0.235,
+    COLORS['gold_soft'], '#C58B00',
+    'Atlas-ready scientific matrices',
+    'Consistent taxonomic abundance tables\nBiogeochemical and iron-related KO matrices\nKEGG/KEMET module-completeness matrices\nGenome-resolved and cross-environment datasets',
+    number=3,
+  )
+
+  arrow(ax, (0.300, 0.742), (0.365, 0.742), COLORS['teal'])
+  arrow(ax, (0.630, 0.742), (0.695, 0.742), COLORS['blue'])
+
+  ax.text(0.5, 0.565, 'Analytical modules', ha='center', va='center', fontsize=14, color=COLORS['ink'], fontweight='bold')
+
+  modules = [
+    (0.035, 'Taxonomic ecology', 'Community composition\nAlpha and beta diversity\nNMDS, PCoA, PCA, and RDA', COLORS['teal_soft'], COLORS['teal']),
+    (0.275, 'Functional potential', 'Biogeochemical markers\nIron metabolism\nDifferential abundance', COLORS['blue_soft'], COLORS['blue']),
+    (0.515, 'Genome-resolved atlas', 'MAG quality and taxonomy\nGenome annotation\nBiosynthetic gene clusters', COLORS['violet_soft'], COLORS['violet']),
+    (0.755, 'Comparative context', 'Amazonian versus external\niron-rich environments\nStudy-linked interpretation', COLORS['rose_soft'], COLORS['rose']),
+  ]
+  for x, title, body, face, edge in modules:
+    rounded_box(ax, x, 0.355, 0.210, 0.165, face, edge, title, body, title_size=11.5, body_size=9.5)
+    arrow(ax, (x + 0.105, 0.625), (x + 0.105, 0.520), edge)
+
+  rounded_box(
+    ax, 0.095, 0.115, 0.245, 0.150,
+    COLORS['gray_soft'], COLORS['teal_dark'],
+    'Interactive application',
+    'Searchable tables and filters\nInteractive figures and linked resources\nDownloadable scientific results',
+    number=4,
+  )
+  rounded_box(
+    ax, 0.380, 0.115, 0.240, 0.150,
+    COLORS['gray_soft'], COLORS['teal_dark'],
+    'Publication outputs',
+    'Main and supplementary figures\nSource-data tables\nHigh-resolution PNG, PDF, and SVG',
+    number=5,
+  )
+  rounded_box(
+    ax, 0.660, 0.115, 0.245, 0.150,
+    COLORS['gray_soft'], COLORS['teal_dark'],
+    'Reproducible code',
+    'Figure-generation scripts\nReusable modules in src/\nDocumented commands and dependencies',
+    number=6,
+  )
+
+  for x in [0.140, 0.380, 0.620, 0.860]:
+    target_x = 0.215 if x < 0.25 else 0.500 if x < 0.65 else 0.785
+    arrow(ax, (x, 0.355), (target_x, 0.265), COLORS['teal_dark'], rad=0.05 if x in [0.140, 0.860] else 0.0)
+
+  ax.text(
+    0.5,
+    0.055,
+    'Input provenance is described by scientific content rather than table number; exact source-file and figure mappings remain available in the repository documentation.',
+    ha='center',
+    va='center',
+    fontsize=9.5,
+    color=COLORS['muted'],
+  )
+
+  return fig
+
+
+def save_figure(fig):
+  primary_dir = OUTPUT_DIRS[0]
+  primary_dir.mkdir(parents=True, exist_ok=True)
+  primary_files = {}
+  for suffix in ('png', 'pdf', 'svg'):
+    path = primary_dir / f'{OUTPUT_STEM}.{suffix}'
+    fig.savefig(path, dpi=300, bbox_inches='tight', facecolor='white')
+    primary_files[suffix] = path
+
+  for directory in OUTPUT_DIRS[1:]:
+    directory.mkdir(parents=True, exist_ok=True)
+    for suffix, source in primary_files.items():
+      target = directory / f'{OUTPUT_STEM}.{suffix}'
+      shutil.copy2(source, target)
+
+  for directory in OUTPUT_DIRS:
+    for suffix in ('png', 'pdf', 'svg'):
+      print(directory / f'{OUTPUT_STEM}.{suffix}')
+
+
+if __name__ == '__main__':
+  figure = build_figure()
+  save_figure(figure)
+  plt.close(figure)

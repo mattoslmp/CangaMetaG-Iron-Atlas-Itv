@@ -3849,14 +3849,129 @@ If only the visitor public IP is available, the app tries to resolve country/cit
         st.rerun()
 
 
+def _clean_column_label(value: object, position: int) -> str:
+  label = str(value).strip() if value is not None and not pd.isna(value) else ""
+  if not label or label.lower() == "nan":
+    label = f"column_{position + 1}"
+  return label
+
+
+def _deduplicate_column_labels(values) -> list[str]:
+  labels: list[str] = []
+  seen: dict[str, int] = {}
+  for position, value in enumerate(values):
+    base = _clean_column_label(value, position)
+    count = seen.get(base, 0)
+    seen[base] = count + 1
+    labels.append(base if count == 0 else f"{base}_{count + 1}")
+  return labels
+
+
+def _mag_sort_column(df: pd.DataFrame) -> str | None:
+  if df is None or df.empty:
+    return None
+  preferred = {
+    "mag", "mag id", "mag_id", "mag identifier", "bin", "bin id",
+    "bin_id", "bin name", "genome", "genome id", "genome_id",
+  }
+  for column in df.columns:
+    if str(column).strip().lower() in preferred:
+      return str(column)
+  best_column = None
+  best_count = 0
+  for column in df.columns:
+    numbers = df[column].map(mag_number)
+    count = int(numbers.notna().sum())
+    if count > best_count:
+      best_column = str(column)
+      best_count = count
+  return best_column if best_count > 0 else None
+
+
 def sort_mags_table(df: pd.DataFrame) -> pd.DataFrame:
+  """Return a clean natural MAG order: MAG1, MAG2, ..., MAG10."""
   if df is None or df.empty:
     return df
   out = df.copy()
-  if "MAG" in out.columns:
-    out["MAG_number"] = out["MAG"].map(mag_number)
-    out = out.sort_values(["MAG_number", "MAG"], na_position="last").reset_index(drop=True)
-  return out
+  mag_column = _mag_sort_column(out)
+  if mag_column is None:
+    return out.reset_index(drop=True)
+  numbers = out[mag_column].map(mag_number)
+  valid = numbers.notna()
+  out.loc[valid, mag_column] = numbers.loc[valid].map(lambda value: f"MAG{int(value)}")
+  out["__MAG_sort_number"] = numbers
+  out["__MAG_sort_text"] = out[mag_column].astype(str)
+  out = out.sort_values(
+    ["__MAG_sort_number", "__MAG_sort_text"],
+    kind="stable",
+    na_position="last",
+  ).drop(columns=["__MAG_sort_number", "__MAG_sort_text"])
+  return out.reset_index(drop=True)
+
+
+def _classification_header_score(row: pd.Series) -> tuple[int, int]:
+  values = [str(value).strip() for value in row.tolist() if value is not None and not pd.isna(value) and str(value).strip()]
+  tokens = " | ".join(values).lower()
+  keywords = (
+    "mag", "bin", "classification", "lineage", "taxonomy", "taxon",
+    "ena", "accession", "domain", "phylum", "class", "order",
+    "family", "genus", "species", "kaiju", "confidence", "rrna",
+  )
+  score = sum(1 for keyword in keywords if keyword in tokens)
+  return score, len(values)
+
+
+def prepare_mag_classification_table(df: pd.DataFrame) -> pd.DataFrame:
+  """Repair embedded headers/title rows and sort MAGs numerically."""
+  if df is None or df.empty:
+    return pd.DataFrame()
+  out = df.copy().dropna(axis=0, how="all").dropna(axis=1, how="all")
+  if out.empty:
+    return out
+
+  scored = [(_classification_header_score(row), idx) for idx, row in out.iterrows()]
+  candidates = [item for item in scored if item[0][0] >= 2 and item[0][1] >= 2]
+  if candidates:
+    (_, _), header_idx = max(candidates, key=lambda item: (item[0][0], item[0][1], item[1]))
+    headers = _deduplicate_column_labels(out.loc[header_idx].tolist())
+    before = out.loc[out.index < header_idx].copy()
+    after = out.loc[out.index > header_idx].copy()
+    out = pd.concat([before, after], ignore_index=True)
+    out.columns = headers
+  else:
+    out.columns = _deduplicate_column_labels(out.columns)
+
+  def is_title_or_repeated_header(row: pd.Series) -> bool:
+    values = [str(value).strip() for value in row.tolist() if value is not None and not pd.isna(value) and str(value).strip()]
+    if not values:
+      return True
+    combined = " | ".join(values).lower()
+    if len(values) == 1 and any(term in combined for term in (
+      "taxonomic classification", "classification and ena", "kaiju classification",
+      "rrna machinery", "gtdb-tk", "bin.classification",
+    )):
+      return True
+    row_score, nonempty = _classification_header_score(row)
+    return nonempty >= 2 and row_score >= 3 and all(
+      str(value).strip() in set(out.columns) for value in values
+    )
+
+  out = out.loc[~out.apply(is_title_or_repeated_header, axis=1)].copy()
+  out = out.dropna(axis=0, how="all").dropna(axis=1, how="all")
+  return sort_mags_table(out)
+
+
+def load_mag_classification_sheet(sheet_name: str) -> pd.DataFrame:
+  """Read MAG classification sheets without assuming the header is the first row."""
+  relative = TABLE_FILES.get("table7", "data/Supplementary_table_7-MAGS-Quality-Genome_Lineage-Classification.xlsx")
+  workbook = BASE_DIR / relative
+  if not workbook.exists():
+    return prepare_mag_classification_table(load_sheet("table7", sheet_name))
+  try:
+    raw = pd.read_excel(workbook, sheet_name=sheet_name, header=None)
+    return prepare_mag_classification_table(raw)
+  except Exception:
+    return prepare_mag_classification_table(load_sheet("table7", sheet_name))
 
 
 def is_all_mags(value: object) -> bool:
@@ -6662,25 +6777,30 @@ def mags_tab():
         st.info(txt("Sem pasta de anotação BV-BRC/PATRIC para este MAG. Exemplo esperado: `Annotation/MAG1/`.", "No BV-BRC/PATRIC annotation folder for this MAG. Expected example: `Annotation/MAG1/`."))
 
   st.divider()
-  st.markdown("#### " + txt("Classificação taxonômica e acesso ENA vinculados ao MAG selecionado", "Taxonomic classification and ENA accession linked to the selected MAG"))
-  class_tabs = st.tabs(["bin.classification", "GTDB-Tk bacteria", "GTDB-Tk archaea", "Kaiju Classification / rRNA machinery >=70 CI"])
-  class_tables = [
-    ("table7", "bin.classification"),
-    ("table7", "Gtdbtk.bac120-r89"),
-    ("table7", "Gtdbtk.ar122"),
-    ("table7", "(5) rRNA machinery-bins>=70 CI"),
+  st.markdown("#### " + txt("Classificação taxonômica e acessos ENA dos MAGs", "MAG taxonomic classification and ENA accessions"))
+  st.caption(txt(
+    "As tabelas abaixo preservam os dados do artigo e apresentam os MAGs em ordem numérica natural: MAG1, MAG2, MAG3, ...",
+    "The tables below preserve the article data and display MAGs in natural numeric order: MAG1, MAG2, MAG3, ...",
+  ))
+  class_specs = [
+    ("bin.classification", txt("Classificação taxonômica dos bins e acessos ENA", "Bin taxonomic classification and ENA accessions")),
+    ("Gtdbtk.bac120-r89", txt("Classificação GTDB-Tk — Bacteria", "GTDB-Tk classification — Bacteria")),
+    ("Gtdbtk.ar122", txt("Classificação GTDB-Tk — Archaea", "GTDB-Tk classification — Archaea")),
+    ("(5) rRNA machinery-bins>=70 CI", txt("Classificação Kaiju e maquinaria de rRNA (bins ≥70 CI)", "Kaiju classification and rRNA machinery (bins ≥70 CI)")),
   ]
-  for tab, (tk, sh) in zip(class_tabs, class_tables):
+  class_tabs = st.tabs([title for _, title in class_specs])
+  for tab, (sheet_name, table_title) in zip(class_tabs, class_specs):
     with tab:
-      df = load_sheet(tk, sh)
-      focused = filter_table_by_mag(df, selected_mag)
+      st.markdown(f"##### {table_title}")
+      df = load_mag_classification_sheet(sheet_name)
+      focused = sort_mags_table(filter_table_by_mag(df, selected_mag))
       if focused.empty and not is_all_mags(selected_mag):
         st.warning(txt(f"Nenhum registro encontrado para {canonical_mag_id(selected_mag)} nesta aba.", f"No records found for {canonical_mag_id(selected_mag)} in this sheet."))
       else:
-        caption = txt("Mostrando todos os MAGs", "Showing all MAGs") if is_all_mags(selected_mag) else txt(f"Mostrando apenas registros vinculados a {canonical_mag_id(selected_mag)}", f"Showing only records linked to {canonical_mag_id(selected_mag)}")
+        caption = txt("Mostrando todos os MAGs em ordem numérica", "Showing all MAGs in numeric order") if is_all_mags(selected_mag) else txt(f"Mostrando apenas registros vinculados a {canonical_mag_id(selected_mag)}", f"Showing only records linked to {canonical_mag_id(selected_mag)}")
         st.caption(caption)
-        show_table(focused, f"class_{sh}_{selected_mag}", height=520)
-        csv_button(focused, f"{sh}_{canonical_mag_id(selected_mag) if not is_all_mags(selected_mag) else 'all_MAGs'}.csv".replace("/", "_"), txt("Baixar tabela filtrada", "Download filtered table"))
+        show_table(focused, f"class_{sheet_name}_{selected_mag}", height=520)
+        csv_button(focused, f"{sheet_name}_{canonical_mag_id(selected_mag) if not is_all_mags(selected_mag) else 'all_MAGs'}.csv".replace("/", "_"), txt("Baixar tabela filtrada", "Download filtered table"))
 
   st.divider()
   st.markdown("#### " + txt("Resultados antiSMASH por MAG", "antiSMASH results by MAG"))
@@ -9737,16 +9857,6 @@ def show_environmental_results(results: dict):
 
   state_label = metadata.get("status", "available")
   saved_at = metadata.get("saved_at", "")
-  st.markdown(
-    f"""
-    <div class='persistent-state-note'>
-      <b>{txt('Dados vigentes preservados', 'Active data preserved')}</b><br>
-      {txt('Estes resultados ficam salvos em disco e não desaparecem ao trocar de aba, recarregar a página ou navegar por outros módulos. Eles só são removidos pelos botões de limpar dados/apagar cache.', 'These results are saved on disk and do not disappear when changing tabs, reloading the page or navigating through other modules. They are removed only by the clear-data/delete-cache buttons.')}<br>
-      <b>Status:</b> {html_lib.escape(str(state_label))} &nbsp; | &nbsp; <b>Saved:</b> {html_lib.escape(str(saved_at or 'session'))} &nbsp; | &nbsp; <b>App:</b> v{APP_VERSION} &nbsp; | &nbsp; <b>DB:</b> v{DATABASE_VERSION}
-    </div>
-    """,
-    unsafe_allow_html=True,
-  )
   if is_admin_authenticated():
     b1, b2, b3 = st.columns([0.28, 0.28, 0.44])
     with b1:

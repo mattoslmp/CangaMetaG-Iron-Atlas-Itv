@@ -1,20 +1,160 @@
+# CangaMetaG — Iron-Rich Amazonian Lateritic Lake Metagenomic Atlas
 
-# CangaMetaG — complete computational reproducibility
+**CangaMetaG** is an interactive scientific atlas for exploring microbial diversity and functional potential in iron-rich Amazonian lateritic lake sediments. The repository contains the Streamlit application, curated datasets, publication figures, supplementary tables, and reproducible scripts associated with the study.
 
-## Canonical package and strict preservation scope
+## Abstract
 
-`CangaMetaG_App_Final/` is the canonical execution root. `CangaMetaG_Article_Final/` contains synchronized publication outputs, source-data/audit files, scripts, validation reports and Supplementary Table 16.
+Iron-rich lateritic lakes in the Amazon contain microbial communities adapted to highly mineralized and geochemically distinctive sediments. CangaMetaG integrates metagenomic and metatranscriptomic information to support the exploration of taxonomic diversity, community structure, functional markers, iron-related metabolism, biogeochemical pathways, metagenome-assembled genomes, and biosynthetic gene clusters.
 
+The web application provides interactive access to the study data through tables, filters, heatmaps, taxonomic profiles, diversity analyses, ordinations, functional annotations, KEGG/KEMET module summaries, MAG information, and downloadable publication resources. The repository also preserves the computational scripts needed to reproduce the main and supplementary figures associated with the manuscript.
 
-## Environment
+## Authors
+
+- Leandro de Mattos Pereira
+- José Augusto Pires Bittencourt
+- Vitor Cirilo Araujo Santos
+- Ronnie Alves
+- Eder Pires
+- Prafulla Kumar Sahoo
+- José Tasso Felix Guimarães
+- Bruno Garcia Simões
+- Renato R. Moreira-Oliveira
+- Guilherme Oliveira
+- Gisele Lopes Nunes
+
+**Institution:** Instituto Tecnológico Vale, Belém, Pará, Brazil.
+
+**Corresponding authors**
+
+- Gisele Lopes Nunes — `gisele.nunes@itv.org`
+- Leandro de Mattos Pereira — `leandro.pereira@pq.itv.org`
+
+## Main scientific components
+
+CangaMetaG brings together the principal analytical components of the study:
+
+- taxonomic profiles of Bacteria and Archaea;
+- alpha- and beta-diversity analyses;
+- rarefaction, NMDS, PCoA, PCA, and RDA visualizations;
+- functional annotation and KEGG Orthology exploration;
+- iron-metabolism and biogeochemical marker analyses;
+- KEGG/KEMET module-completeness matrices;
+- metagenome-assembled genome quality, taxonomy, abundance, and annotation;
+- antiSMASH biosynthetic gene-cluster results;
+- publication figures, supplementary figures, and source tables;
+- interactive filtering and download of scientific results.
+
+## Repository organization
+
+```text
+CangaMetaG-Iron-Atlas-Itv/
+├── app.py                         # Main Streamlit application
+├── src/                           # Reusable application and analysis modules
+├── scripts/                       # Figure, table, document, and workflow scripts
+├── data/                          # Curated input data and derived scientific matrices
+├── tables/                        # Main and supplementary tables
+├── outputs/                       # Figures and files displayed or distributed by the app
+├── requirements.txt               # Python dependencies
+├── packages.txt                   # Linux packages used during cloud deployment
+├── environment.yml                # Conda environment specification
+├── FIGURE_REPRODUCTION_COMMANDS.md
+└── STREAMLIT_COMMUNITY_CLOUD.md
+```
+
+### `app.py`
+
+Entry point of the Streamlit application. It assembles the interface and connects the scientific modules, datasets, figures, tables, and download resources.
+
+### `src/`
+
+Contains the reusable Python modules used by the application. These modules are organized by scientific or operational responsibility, including:
+
+- taxonomic data processing and visualization;
+- ordination and diversity analyses;
+- functional annotation;
+- KEGG and KEMET modules;
+- MAG annotation and genome organization;
+- antiSMASH result visualization;
+- integrated omics analyses;
+- sample metadata and runtime path management;
+- Plotly export and visual-quality utilities.
+
+### `data/`
+
+Contains the scientific input files used by the application and figure-generation workflows. This includes taxonomic matrices, functional tables, sample metadata, MAG information, KEGG/KEMET results, publication source data, and derived matrices.
+
+### `tables/`
+
+Contains editable main and supplementary tables distributed with the project, primarily in CSV and Excel formats.
+
+### `outputs/`
+
+Contains publication-quality figures and the image resources displayed by the application. The repository keeps article figures and application-display assets in separate output locations so that each has a clear purpose.
+
+## Organization of the scripts
+
+The `scripts/` directory is organized by function rather than by execution order.
+
+### General scripts in `scripts/`
+
+These scripts coordinate broader tasks that involve multiple datasets or figure groups. Examples include:
+
+- generation of the Amazonian sampling map;
+- taxonomic figure production;
+- consolidation of publication figures;
+- generation of the computational workflow figure;
+- construction of figure-to-script reference tables;
+- synchronization of article and application outputs.
+
+### `scripts/figures/`
+
+Contains focused generators for individual main figures or defined groups of supplementary figures. These scripts are the preferred entry points when reproducing a specific figure or a closely related set of panels.
+
+Representative workflows include:
+
+- bacterial and archaeal taxonomic profiles;
+- MAG quality and abundance figures;
+- KO differential-abundance figures;
+- biogeochemical-marker heatmaps;
+- KEGG/KEMET module-completeness heatmaps;
+- integrated environmental and taxonomic visualizations.
+
+### `scripts/final_publication_figures/`
+
+Contains specialized routines used for final publication analyses and figures, including rarefaction, diversity calculations, and other figure-specific processing steps.
+
+### `scripts/documents/`
+
+Contains scripts used to assemble or update manuscript-related documents and supplementary material from the repository data, tables, and final figures.
+
+### Figure-to-script index
+
+The exact relationship among each figure, its script, command, and input files is documented in:
+
+[`FIGURE_REPRODUCTION_COMMANDS.md`](FIGURE_REPRODUCTION_COMMANDS.md)
+
+## Run the application locally
+
+### 1. Clone the repository
+
+The repository uses Git LFS for large scientific assets.
 
 ```bash
-cd CangaMetaG_App_Final
+git lfs install
+git clone https://github.com/mattoslmp/CangaMetaG-Iron-Atlas-Itv.git
+cd CangaMetaG-Iron-Atlas-Itv
+```
+
+### 2. Create the environment
+
+Using Conda:
+
+```bash
 conda env create -f environment.yml
 conda activate cangametag-reproducibility
 ```
 
-Alternative:
+Or using a Python virtual environment:
 
 ```bash
 python -m venv .venv
@@ -23,144 +163,62 @@ python -m pip install --upgrade pip
 python -m pip install -r requirements.txt
 ```
 
-## Directory organization
+On Windows PowerShell, activate the virtual environment with:
 
-- `scripts/`: canonical final generators plus validation/document workflows.
-- `data/module_figure_inputs/`: immutable S40/S67 categorical matrices and environmental-group metadata.
-- `data/final_publication_derived/`: final status matrices and explicit active column-order files.
-- `outputs/final_publication_figures/`: article-compatible PNG/PDF/SVG outputs.
-- `outputs/app_supplementary_figures/`: application-display copies.
-- `validation/`: cell-level comparisons, preservation audits, script-table checks and cross-package hashes.
-- `tables/`: editable Supplementary Table 16 in CSV, XLSX and DOCX.
-- `FIGURE_REPRODUCTION_COMMANDS.md`: exact command/input/output mapping for every final figure record.
-
-## Generate final S40 and S67 outputs
-
-```bash
-python scripts/figures/generate_environmental_group_heatmaps.py --root .
+```powershell
+.venv\Scripts\Activate.ps1
 ```
 
-Active outputs:
-
-- S40 environmental-group final: `outputs/final_publication_figures/SupplementaryFigure40_ST8_external_iron_rich_module_completeness_by_environmental_group*`
-- S67 original: `outputs/final_publication_figures/SupplementaryFigure67_lagoon_plus_external_iron_rich_module_completeness_KEMET_style_3state_heatmap*`
-- S67 environmental-group alternative: `outputs/final_publication_figures/SupplementaryFigure67_lagoon_plus_external_iron_rich_module_completeness_by_environmental_group*`
-
-The script reconstructs the original-order S40 matrix in memory only for audit. It removes any superseded active original-order S40 PNG/PDF/SVG and derived order/status aliases. The immutable source table remains at:
-
-```text
-data/module_figure_inputs/SupplementaryFigure40_ST8_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_thematic_status.csv
-```
-
-## Compare the source and grouped matrices
-
-```bash
-python scripts/validation/compare_environmental_group_heatmaps.py --root .
-```
-
-Outputs:
-
-- `validation/environmental_group_heatmap_comparison.tsv`
-- `validation/environmental_group_heatmap_comparison.md`
-- `validation/environmental_group_heatmap_comparison.json`
-
-A PASS requires equal dimensions, identical module/sample sets without duplicates, identical completeness-state counts, no transposition, and every cell identical after restoring the original column order. The environmental-group metadata control only the stable column permutation.
-
-## Build the complete script table
-
-```bash
-python scripts/build_complete_figure_script_table.py \
-  --root . \
-  --article-root ../CangaMetaG_Article_Final
-```
-
-The canonical delivery table contains **81 final figure records**, **97 figure/panel rows**, **5 workflow rows**, **102 editable data rows** and **26 unique script/workflow paths** across 20 editable fields. Files:
-
-- `tables/Supplementary_Table_16_final_scripts.csv`
-- `tables/Supplementary_Table_16_final_scripts.xlsx`
-- `tables/Supplementary_Table_16_final_scripts.docx`
-- `validation/complete_figure_script_table_validation.tsv`
-- `validation/complete_figure_script_table_summary.json`
-
-The XLSX is an editable filtered table. The Word version is an editable A3 landscape table with a repeated header.
-
-## Update Supplementary Information and synchronize packages
-
-```bash
-python scripts/documents/update_supplementary_information.py \
-  --app-root . \
-  --article-root ../CangaMetaG_Article_Final
-
-python scripts/synchronize_article_app_outputs.py \
-  --app-root . \
-  --article-root ../CangaMetaG_Article_Final
-```
-
-The document workflow inserts grouped-only S40 P001/P002, original S67 P001/P002, grouped S67 P001/P002 and the complete editable Table 16. It does not edit publication images manually. The synchronization workflow copies only target/reproducibility outputs and verifies article/application identities.
-
-## Run the application
+### 3. Start CangaMetaG
 
 ```bash
 streamlit run app.py
 ```
 
-The KEGG/KEMET module area exposes the final environmental-group S40, both S67 layouts, source/order tables and equivalence reports. It does not expose a superseded original-order S40 graphic.
-
-## Reproduce every figure
-
-See `FIGURE_REPRODUCTION_COMMANDS.md` and `tables/Supplementary_Table_16_final_scripts.*`. The command index includes all **81 final figure records**: 8 main records and 73 supplementary records, including grouped-only S40 and both S67 layouts. Multipage figures are expanded panel by panel in Table 16.
-
-## Preservation verification
-
-Final validation includes:
-
-- byte/hash comparison of all non-target article and application figure files against the corrected incoming ZIPs;
-- explicit verification that S26, S27 and S28 files, axes/order and names are unchanged;
-- comparison of S40/S67 matrices after identifier-based order restoration;
-- script/input/output existence and Python compilation checks;
-- application/article target synchronization checks;
-- smoke regeneration showing that the final script renders no original-order S40 and reproduces all active PNG pixels exactly.
-
-Reports are under `validation/` in the app and `07_Validation_and_Manifests/` in the article.
-
-## Complete end-to-end commands
-
-Extract the two roots side by side, then run:
-
-```bash
-cd CangaMetaG_App_Final
-python -m py_compile app.py $(find scripts -type f -name '*.py' -print)
-python scripts/figures/generate_environmental_group_heatmaps.py --root .
-python scripts/validation/compare_environmental_group_heatmaps.py --root .
-python scripts/build_complete_figure_script_table.py --root . --article-root ../CangaMetaG_Article_Final
-python scripts/documents/update_supplementary_information.py --app-root . --article-root ../CangaMetaG_Article_Final
-python scripts/synchronize_article_app_outputs.py --app-root . --article-root ../CangaMetaG_Article_Final
-streamlit run app.py
-```
-
-Expected layout:
+The local application will normally be available at:
 
 ```text
-parent_directory/
-├── CangaMetaG_App_Final/
-└── CangaMetaG_Article_Final/
+http://localhost:8501
 ```
-
-
-## Runtime startup fix and validation
-
-This package contains the complete `src` module tree required by `app.py`. Before launching, run:
-
-```bash
-python scripts/check_app_runtime.py
-python -m streamlit run app.py
-```
-
-On Windows, after installing `requirements.txt`, double-click `run_app_windows.bat` or execute it from Command Prompt. The detailed correction report is `APP_RUNTIME_FIX_REPORT.md`.
 
 ## Streamlit Community Cloud
 
-Deployment configuration and pre-deployment checks are documented in
-[`STREAMLIT_COMMUNITY_CLOUD.md`](STREAMLIT_COMMUNITY_CLOUD.md). The app uses
-Python 3.12, the root `requirements.txt`, `.streamlit/config.toml`, and
-repository-relative data paths.
+Recommended deployment configuration:
+
+```text
+Repository: mattoslmp/CangaMetaG-Iron-Atlas-Itv
+Branch: main
+Main file path: app.py
+Python version: 3.12
+```
+
+Detailed deployment instructions are available in:
+
+[`STREAMLIT_COMMUNITY_CLOUD.md`](STREAMLIT_COMMUNITY_CLOUD.md)
+
+Public application address:
+
+[https://cangametag-iron-atlas-itv.streamlit.app](https://cangametag-iron-atlas-itv.streamlit.app)
+
+## Reproducing publication figures
+
+Commands for the main and supplementary figures are indexed in `FIGURE_REPRODUCTION_COMMANDS.md`. Run the commands from the repository root so that all relative data and output paths are resolved consistently.
+
+Example:
+
+```bash
+python scripts/generate_amazon_coordinate_figure.py --base-dir .
+python scripts/generate_final_domain_taxonomy_figures.py --base-dir .
+python scripts/figures/generate_figure7.py --base-dir .
+python scripts/figures/generate_figure8.py --base-dir .
+```
+
+## Associated manuscript
+
+**Pereira et al.** *Iron-rich Amazonian lateritic lake sediments harbor diverse microbial communities with biogeochemical potential relevant to carbon and methane cycling.*
+
+This repository contains the interactive atlas and computational resources associated with the manuscript.
+
+## Scientific use
+
+When using CangaMetaG data, figures, scripts, or the interactive atlas, cite the associated manuscript and this repository. Dataset-specific provenance and references are maintained within the application and the supplementary resources.

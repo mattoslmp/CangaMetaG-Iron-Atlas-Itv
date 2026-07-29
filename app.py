@@ -4281,7 +4281,6 @@ def overview_tab():
   st.markdown(
     f"""
     <div class="itv-card">
-      <h2 style="margin-top:0;color:#0f3f3c;">{html_lib.escape(str(title))}</h2>
       <p style="font-size:1.02rem;color:#1f2937;"><b>{txt("Autores", "Authors")}:</b> {html_lib.escape(str(authors))}</p>
       <p style="font-size:1.0rem;color:#1f2937;"><b>{txt("Afiliação", "Affiliation")}:</b> {html_lib.escape(str(affiliation))}</p>
       <p style="font-size:1.0rem;color:#1f2937;"><b>{txt("Correspondência", "Correspondence")}:</b> {html_lib.escape(str(correspondence))}</p>

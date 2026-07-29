@@ -2431,7 +2431,7 @@ def site_access_gate() -> None:
   <div class="gate-shell">
     <div class="gate-card">
       <div class="gate-kicker">Instituto Tecnológico Vale • Environmental genomics</div>
-      <h1>Metagenomic analysis of microbial communities and biogeochemical cycling potential in Amazonian lateritic lakes: an Iron-Rich Environment Metagenomic Atlas</h1>
+      <h1>Iron-rich Amazonian lateritic lake sediments harbor diverse microbial communities with biogeochemical potential relevant to carbon and methane cycling</h1>
       <p>Account access was enabled by an administrator. There is no shared public password.</p>
     </div>
   </div>
@@ -4345,7 +4345,6 @@ def page_header():
 <div class="hero">
   <div class="itv-kicker">{txt('Ciência aplicada para um futuro sustentável', 'Applied science for a sustainable future')}</div>
   <h1>{APP_TITLE}</h1>
-  <p><b>{txt('Análise metagenômica de comunidades microbianas e do potencial de ciclagem biogeoquímica em lagoas lateríticas amazônicas.', 'Metagenomic analysis of microbial communities and biogeochemical cycling potential in Amazonian lateritic lakes.')}</b></p>
   <p>{txt('Banco interativo do artigo para taxonomia, biomarcadores KO, ciclos biogeoquímicos, metabolismo de ferro, MAGs, abundância diferencial e contexto ambiental das lagoas lateríticas de Carajás.', 'Interactive article database for taxonomy, KO biomarkers, biogeochemical cycles, iron metabolism, MAGs, differential abundance and environmental context of Carajás lateritic lakes.')}</p>
   <div class="authors"><b>{txt('Autores', 'Authors')}:</b> {DEFAULT_ARTICLE_AUTHORS}</div>
   <div class="authors"><b>{txt('Afiliação', 'Affiliation')}:</b> {DEFAULT_ARTICLE_AFFILIATION}</div>
@@ -11303,7 +11302,6 @@ def references_methods_tab():
     if final_methods_doc.exists():
       download_text_file_button(final_methods_doc, txt("Baixar métodos visuais e estatísticos completos", "Download complete visual and statistical methods"))
 
-  st.markdown("### " + txt("Identificação completa do artigo", "Complete article identification"))
   st.markdown(f"**{txt('Título', 'Title')}:** {article_field('title', DEFAULT_ARTICLE_TITLE)}")
   st.markdown(f"**{txt('Autores', 'Authors')}:** {normalize_authors_string(article_field('authors', DEFAULT_ARTICLE_AUTHORS))}")
   st.markdown(f"**{txt('Afiliação', 'Affiliation')}:** {article_field('affiliation', DEFAULT_ARTICLE_AFFILIATION)}")
@@ -11348,7 +11346,6 @@ def references_methods_tab():
     {"Dataset": "antiSMASH BGC organization", "Spreadsheet": "Complete antiSMASH output directories", "Sheets": "index.html, regions.js, CSS/JS, GBK files", "Use": "Embedded antiSMASH report and complete-run ZIP in MAGs & genomes"},
     {"Dataset": "IMG/JGI functional annotations", "Spreadsheet": "Supplementary Tables 6 and 8", "Sheets": "Detailed-Statistics2-by-Genome; KO; EC-numbers; PFAM; metadata; ko; EC-number; pfam", "Use": "Absolute-count and row-z-score heatmaps for KO, EC/enzyme and PFAM annotations, linked to sample ID, taxon_oid and GOLD Analysis Project ID"},
     {"Dataset": "Amazonian Lateritic Lakes vs Other Iron-Rich Environments", "Spreadsheet": "Supplementary Table 8 + data/st8_study_references.csv", "Sheets": "Iron-rich-environment; Phylum-taxonomy; Res-KO-Biomarkers-C-N-S; ST8 — all KO biomarkers; ST8 — selected sediments; ST8- Iron metabolism KO -marker; ST8-Iron metabolism - selected", "Use": "Supplementary Table 8-derived heatmaps, metadata map, linked IMG/M environmental metadata, Phylum-taxonomy summaries, KO contrast summaries, iron-metabolism z-score profiles and study-level reference links"},
-    {"Dataset": "Environmental layers", "Spreadsheet": "Supplementary Table 1 + downloaded APIs", "Sheets": "collection.date, latitude, longitude", "Use": "NASA POWER, CHIRPS, SoilGrids, Sentinel-1/2, Sentinel-6 and NASA Earthdata/CMR complementary products for selected article dates/coordinates"},
   ])
   show_table(sources, "methods_sources_table", height=360)
   st.markdown("### " + txt("Critérios analíticos", "Analytical criteria"))
@@ -11366,7 +11363,6 @@ def references_methods_tab():
 - The broad iron-rich score combines total count and detection fraction across the full environment panel.
 - The Amazonian-lake score combines positive Amazonia-vs-other log2 ratio, mean Amazonian count and detection fraction in AM/TI/TIA/VI samples.
 - Coordinates and collection dates are read from Supplementary Table 1 and Supplementary Table 8. Missing coordinates or dates remain NA.
-- Satellite/environmental layers are downloaded only when the user requests them and when the selected source returns data for the article coordinates/dates. Sentinel-1/2 use Copernicus/Sentinel Hub; Sentinel-6 uses NASA CMR/PO.DAAC granule metadata and links; NASA Earthdata/CMR adds complementary IMERG/MERRA-2/MODIS/SMAP/PO.DAAC metadata/files with local-first cache and no simulated environmental values.
     """,
     """
 - KO, EC/enzyme and PFAM heatmaps use the exact count matrices from Supplementary Tables 6 and 8.
@@ -11380,7 +11376,6 @@ def references_methods_tab():
 - The broad iron-rich score combines total count and detection fraction across the full environment panel.
 - The Amazonian-lake score combines positive Amazonia-vs-other log2 ratio, mean Amazonian count and detection fraction in AM/TI/TIA/VI samples.
 - Coordinates and collection dates are read from Supplementary Table 1 and Supplementary Table 8. Missing coordinates or dates remain NA.
-- Satellite/environmental layers are downloaded only when the user requests them and when the selected source returns data for the article coordinates/dates. Sentinel-1/2 use Copernicus/Sentinel Hub; Sentinel-6 uses NASA CMR/PO.DAAC granule metadata and links; NASA Earthdata/CMR adds complementary IMERG/MERRA-2/MODIS/SMAP/PO.DAAC metadata/files with local-first cache and no simulated environmental values.
     """
   ))
   st.markdown("### " + txt("Métodos das figuras: tabela, método e código", "Figure methods: table, method and code"))
@@ -11452,13 +11447,6 @@ def references_methods_tab():
     {"Reference": "Palù et al. (2022) — KEMET", "Use in database": "KEGG module evaluation and microbial genome/metagenome annotation expansion; reportKMC parsing and module-completeness display", "DOI/URL": "https://doi.org/10.1016/j.csbj.2022.03.015"},
     {"Reference": "Blin et al. (2023) — antiSMASH 7.0", "Use in database": "BGC prediction and in-app visualization of complete antiSMASH reports for MAGs", "DOI/URL": "https://doi.org/10.1093/nar/gkad344"},
     {"Reference": "BV-BRC / PATRIC genome annotation service", "Use in database": "Official MAG annotation pages, Genome IDs, feature tables and local Annotation/MAGx folders downloaded by admin with BV-BRC CLI", "DOI/URL": "https://www.bv-brc.org/"},
-    {"Reference": "Copernicus Data Space Ecosystem / Sentinel Hub APIs", "Use in database": "Sentinel-1/Sentinel-2 coverage and statistical downloads for article coordinates/dates; admin-only credentials and persistent local cache", "DOI/URL": "https://documentation.dataspace.copernicus.eu/APIs/SentinelHub.html"},
-    {"Reference": "NASA Earthdata CMR / earthaccess", "Use in database": "Optional complementary search/download of article-date gridded products and granule metadata using EARTHDATA_TOKEN or ~/.netrc", "DOI/URL": "https://earthaccess.readthedocs.io/"},
-    {"Reference": "GPM IMERG / GES DISC", "Use in database": "Complementary precipitation metadata/files for article coordinates and collection windows", "DOI/URL": "https://gpm.nasa.gov/data/imerg"},
-    {"Reference": "MERRA-2 / GES DISC", "Use in database": "Complementary atmospheric variables such as temperature, humidity, wind, radiation and surface fluxes for the article context", "DOI/URL": "https://gmao.gsfc.nasa.gov/gmao-products/merra-2/"},
-    {"Reference": "MODIS Vegetation Indices and Land Surface Temperature / LP DAAC", "Use in database": "Long-term NDVI/EVI/LST context complementary to Sentinel-2, used only when available for the article coordinates/dates", "DOI/URL": "https://lpdaac.usgs.gov/"},
-    {"Reference": "SMAP / NSIDC", "Use in database": "Soil moisture context complementary to SoilGrids, precipitation and vegetation layers", "DOI/URL": "https://nsidc.org/data/smap"},
-    {"Reference": "PO.DAAC / Sentinel-6 Jason-CS", "Use in database": "Altimetry and sea-level granule metadata/links for relevant aquatic or coastal context; no simulated altimetry values", "DOI/URL": "https://podaac.jpl.nasa.gov/Sentinel-6"},
     {"Reference": "NASA POWER", "Use in database": "Public API source for point-based climate variables used by the environmental integrator", "DOI/URL": "https://power.larc.nasa.gov/"},
     {"Reference": "CHIRPS", "Use in database": "Rainfall time-series context when selected by admin and available for the article dates/coordinates", "DOI/URL": "https://www.chc.ucsb.edu/data/chirps"},
     {"Reference": "SoilGrids / ISRIC", "Use in database": "Soil property context for mapped coordinates; public REST/API values remain cached locally", "DOI/URL": "https://soilgrids.org/"},

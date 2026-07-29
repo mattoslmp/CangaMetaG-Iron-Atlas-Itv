@@ -1,0 +1,92 @@
+name: Cleanup app title and satellite text
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+jobs:
+  cleanup:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Apply requested text cleanup
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          path = Path('app.py')
+          text = path.read_text(encoding='utf-8')
+
+          desired_title = 'Iron-rich Amazonian lateritic lake sediments harbor diverse microbial communities with biogeochemical potential relevant to carbon and methane cycling'
+
+          replacements = {
+            '<h1>Metagenomic analysis of microbial communities and biogeochemical cycling potential in Amazonian lateritic lakes: an Iron-Rich Environment Metagenomic Atlas</h1>': f'<h1>{desired_title}</h1>',
+            "  <p><b>{txt('Análise metagenômica de comunidades microbianas e do potencial de ciclagem biogeoquímica em lagoas lateríticas amazônicas.', 'Metagenomic analysis of microbial communities and biogeochemical cycling potential in Amazonian lateritic lakes.')}</b></p>\n": '',
+            '  st.markdown("### " + txt("Identificação completa do artigo", "Complete article identification"))\n': '',
+            '- Satellite/environmental layers are downloaded only when the user requests them and when the selected source returns data for the article coordinates/dates. Sentinel-1/2 use Copernicus/Sentinel Hub; Sentinel-6 uses NASA CMR/PO.DAAC granule metadata and links; NASA Earthdata/CMR adds complementary IMERG/MERRA-2/MODIS/SMAP/PO.DAAC metadata/files with local-first cache and no simulated environmental values.\n': '',
+            '    {"Dataset": "Environmental layers", "Spreadsheet": "Supplementary Table 1 + downloaded APIs", "Sheets": "collection.date, latitude, longitude", "Use": "NASA POWER, CHIRPS, SoilGrids, Sentinel-1/2, Sentinel-6 and NASA Earthdata/CMR complementary products for selected article dates/coordinates"},\n': '',
+            '    {"Reference": "Copernicus Data Space Ecosystem / Sentinel Hub APIs", "Use in database": "Sentinel-1/Sentinel-2 coverage and statistical downloads for article coordinates/dates; admin-only credentials and persistent local cache", "DOI/URL": "https://documentation.dataspace.copernicus.eu/APIs/SentinelHub.html"},\n': '',
+            '    {"Reference": "NASA Earthdata CMR / earthaccess", "Use in database": "Optional complementary search/download of article-date gridded products and granule metadata using EARTHDATA_TOKEN or ~/.netrc", "DOI/URL": "https://earthaccess.readthedocs.io/"},\n': '',
+            '    {"Reference": "GPM IMERG / GES DISC", "Use in database": "Complementary precipitation metadata/files for article coordinates and collection windows", "DOI/URL": "https://gpm.nasa.gov/data/imerg"},\n': '',
+            '    {"Reference": "MERRA-2 / GES DISC", "Use in database": "Complementary atmospheric variables such as temperature, humidity, wind, radiation and surface fluxes for the article context", "DOI/URL": "https://gmao.gsfc.nasa.gov/gmao-products/merra-2/"},\n': '',
+            '    {"Reference": "MODIS Vegetation Indices and Land Surface Temperature / LP DAAC", "Use in database": "Long-term NDVI/EVI/LST context complementary to Sentinel-2, used only when available for the article coordinates/dates", "DOI/URL": "https://lpdaac.usgs.gov/"},\n': '',
+            '    {"Reference": "SMAP / NSIDC", "Use in database": "Soil moisture context complementary to SoilGrids, precipitation and vegetation layers", "DOI/URL": "https://nsidc.org/data/smap"},\n': '',
+            '    {"Reference": "PO.DAAC / Sentinel-6 Jason-CS", "Use in database": "Altimetry and sea-level granule metadata/links for relevant aquatic or coastal context; no simulated altimetry values", "DOI/URL": "https://podaac.jpl.nasa.gov/Sentinel-6"},\n': '',
+          }
+
+          changed = False
+          for old, new in replacements.items():
+            if old in text:
+              text = text.replace(old, new)
+              changed = True
+
+          # Guard against a title override that differs from the article title.
+          import re
+          text, n = re.subn(
+            r"APP_TITLE\s*=\s*['\"][^'\"]+['\"]",
+            f"APP_TITLE = '{desired_title}'",
+            text,
+            count=1,
+          )
+          changed = changed or bool(n)
+
+          path.write_text(text, encoding='utf-8')
+
+          forbidden = [
+            'Metagenomic analysis of microbial communities and biogeochemical cycling potential in Amazonian lateritic lakes.',
+            'Complete article identification',
+            'Satellite/environmental layers are downloaded only when the user requests them',
+            'Copernicus Data Space Ecosystem / Sentinel Hub APIs',
+            'PO.DAAC / Sentinel-6 Jason-CS',
+          ]
+          remaining = [item for item in forbidden if item in text]
+          if remaining:
+            raise SystemExit(f'Cleanup incomplete; remaining strings: {remaining}')
+
+          if desired_title not in text:
+            raise SystemExit('Desired article title is missing after cleanup.')
+          PY
+
+          python -m py_compile app.py
+
+      - name: Commit correction
+        shell: bash
+        run: |
+          if git diff --quiet -- app.py; then
+            echo "No changes needed."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add app.py
+          git commit -m "Remove duplicate subtitle and obsolete satellite references [skip ci]"
+          git push origin main

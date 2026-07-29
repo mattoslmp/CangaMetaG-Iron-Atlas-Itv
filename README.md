@@ -1,4 +1,3 @@
-> **Atualização de 28/07/2026:** RDA e NMDS do artigo e do aplicativo agora usam o mesmo módulo científico (`src/publication_ordination.py`). As 25 correções da auditoria foram implementadas e validadas. Consulte [`CORRECTIONS_2026-07-28.md`](CORRECTIONS_2026-07-28.md).
 
 # CangaMetaG — complete computational reproducibility
 
@@ -6,13 +5,6 @@
 
 `CangaMetaG_App_Final/` is the canonical execution root. `CangaMetaG_Article_Final/` contains synchronized publication outputs, source-data/audit files, scripts, validation reports and Supplementary Table 16.
 
-This delivery changes only the explicitly requested S40/S67 environmental-group workflow, its documentation, its application entries, the editable script table and the Supplementary Information. Every other main and supplementary figure is preserved with its previous filename, numbering, panel order, dimensions, proportions, axes, category/sample order, colours, labels and scientific content. No global style or plotting change is applied. Figures S26–S28 remain in their already approved order and were not regenerated or reordered.
-
-Final layout policy:
-
-- **S40:** only the version organized by `environmental group` is an active publication/application figure. The immutable original-order matrix is retained solely as an audit reference for cell-by-cell equivalence testing and is not distributed as an active S40 graphic.
-- **S67:** both the original layout and the version organized by `environmental group` remain available.
-- No X/Y axis is exchanged, no matrix is transposed, and no module, sample, record or categorical status is removed, duplicated, recalculated, normalized or transformed.
 
 ## Environment
 

@@ -167,41 +167,115 @@ if MARKER not in source:
       panel = panel.replace(old_caption, new_caption, 1)
     source = source[:panel_start] + panel + source[panel_end:]
 
-  old_coordinate_block = '''  with st.expander(txt("Coordinates, lake points and environment reference links", "Coordinates, lake points and environment reference links"), expanded=True):
-    st.caption(txt(
-      "Cada linha mantém a coordenada original disponível. Os links abrem Google Maps/Earth e uma consulta de referência sobre o ambiente/amostra quando houver texto suficiente.",
-      "Each row keeps the available original coordinate. Links open Google Maps/Earth and a reference search for the environment/sample when enough text is available."
-    ))
-    show_table(valid[coordinate_cols].drop_duplicates(), f"{key}_coordinates_reference_links", height=360)
-    csv_button(valid[coordinate_cols].drop_duplicates(), f"{key}_coordinates_reference_links.csv", txt("Baixar coordenadas e links", "Download coordinates and links"))'''
-  new_coordinate_block = '''  with st.expander(txt("Coordinates, lake points and environment reference links", "Coordinates, lake points and environment reference links"), expanded=True):
-    coordinate_table = valid[coordinate_cols].drop_duplicates().copy()
-    coordinate_row_text = coordinate_table.astype(str).agg(" | ".join, axis=1)
-    embedded_title_mask = coordinate_row_text.str.contains(
-      r"Supplementary\\s*Table\\s*8.*external\\s*iron[-\\s]*rich",
-      case=False,
-      regex=True,
-      na=False,
+  map_function_start = source.find("def show_high_quality_sample_map(")
+  map_function_end = source.find("\ndef _clean_link_text", map_function_start)
+  coordinate_start = source.find(
+    "  coordinate_table = valid[coordinate_cols].drop_duplicates().copy()\n",
+    map_function_start,
+    map_function_end,
+  )
+  coordinate_end = source.find("\n  center_lat =", coordinate_start, map_function_end)
+  if coordinate_start >= 0 and coordinate_end >= 0:
+    coordinate_replacement = r'''  coordinate_table = valid[coordinate_cols].drop_duplicates().copy()
+  coordinate_caption = txt(
+    "Cada linha mantém a coordenada original disponível. Os links abrem Google Maps/Earth e a fonte ambiental ou IMG/JGI quando ela está registrada nos dados.",
+    "Each row keeps the available original coordinate. Links open Google Maps/Earth and the environmental or IMG/JGI source when it is recorded in the data.",
+  )
+  source_column = "Map source" if "Map source" in coordinate_table.columns else None
+  if source_column:
+    source_values = coordinate_table[source_column].fillna("").astype(str)
+    study_coordinates = coordinate_table.loc[
+      source_values.str.contains("Study area and sampling design", case=False, na=False)
+    ].copy()
+    external_coordinates = coordinate_table.loc[
+      source_values.str.contains("Supplementary Table 8", case=False, na=False)
+    ].copy()
+    other_coordinates = coordinate_table.loc[
+      ~coordinate_table.index.isin(study_coordinates.index)
+      & ~coordinate_table.index.isin(external_coordinates.index)
+    ].copy()
+  else:
+    study_coordinates = pd.DataFrame(columns=coordinate_table.columns)
+    external_coordinates = pd.DataFrame(columns=coordinate_table.columns)
+    other_coordinates = coordinate_table.copy()
+
+  def _render_coordinate_source_table(
+    frame: pd.DataFrame,
+    title_pt: str,
+    title_en: str,
+    suffix: str,
+  ) -> None:
+    if frame is None or frame.empty:
+      return
+    display_frame = frame.drop(columns=["Map source"], errors="ignore").reset_index(drop=True)
+    st.markdown("##### " + txt(title_pt, title_en))
+    st.caption(coordinate_caption)
+    show_table(display_frame, f"{key}_{suffix}", height=420)
+    csv_button(
+      display_frame,
+      f"{key}_{suffix}.csv",
+      txt("Baixar coordenadas e links", "Download coordinates and links"),
     )
-    if bool(embedded_title_mask.any()):
-      st.markdown("##### " + txt(
+
+  if overview_mode:
+    st.markdown(
+      '''<div style="margin:1rem 0 .45rem 0;padding:.78rem 1rem;border-radius:14px;
+      background:#FFF7D6;border-left:7px solid #D97706;border-top:1px solid #F2C94C;
+      border-right:1px solid #F2C94C;border-bottom:1px solid #F2C94C;
+      font-size:1.08rem;font-weight:900;color:#7C2D12;">★ Coordinate source tables</div>''',
+      unsafe_allow_html=True,
+    )
+    _render_coordinate_source_table(
+      study_coordinates,
+      "Área do estudo e amostras das lagoas — Brasil",
+      "Study area and lake samples — Brazil",
+      "study_lake_coordinate_table",
+    )
+    _render_coordinate_source_table(
+      external_coordinates,
+      "Supplementary Table 8 — ambientes externos ricos em ferro",
+      "Supplementary Table 8 — external iron-rich environments",
+      "supplementary_table_8_external_iron_rich_coordinates",
+    )
+    _render_coordinate_source_table(
+      other_coordinates,
+      "Outras coordenadas registradas",
+      "Other recorded coordinates",
+      "other_coordinate_sources",
+    )
+    if not external_coordinates.empty:
+      render_iron_environment_characteristics(
+        external_coordinates,
+        key=f"{key}_iron_environment_characteristics",
+      )
+  else:
+    with st.expander(
+      txt(
+        "Coordenadas, pontos das lagoas e links de referência ambiental",
+        "Coordinates, lake points and environment reference links",
+      ),
+      expanded=True,
+    ):
+      _render_coordinate_source_table(
+        study_coordinates,
+        "Área do estudo e amostras das lagoas — Brasil",
+        "Study area and lake samples — Brazil",
+        "study_lake_coordinate_table",
+      )
+      _render_coordinate_source_table(
+        external_coordinates,
         "Supplementary Table 8 — ambientes externos ricos em ferro",
         "Supplementary Table 8 — external iron-rich environments",
-      ))
-      coordinate_table = coordinate_table.loc[~embedded_title_mask].reset_index(drop=True)
-    else:
-      st.markdown("##### " + txt(
-        "Coordenadas das amostras e ambientes",
-        "Sample and environment coordinates",
-      ))
-    st.caption(txt(
-      "Cada linha mantém a coordenada original disponível. Os links abrem Google Maps/Earth e a fonte ambiental ou IMG/JGI quando ela está registrada nos dados.",
-      "Each row keeps the available original coordinate. Links open Google Maps/Earth and the environmental or IMG/JGI source when it is recorded in the data."
-    ))
-    show_table(coordinate_table, f"{key}_coordinates_reference_links", height=360)
-    csv_button(coordinate_table, f"{key}_coordinates_reference_links.csv", txt("Baixar coordenadas e links", "Download coordinates and links"))'''
-  if old_coordinate_block in source:
-    source = source.replace(old_coordinate_block, new_coordinate_block, 1)
+        "supplementary_table_8_external_iron_rich_coordinates",
+      )
+      _render_coordinate_source_table(
+        other_coordinates,
+        "Outras coordenadas registradas",
+        "Other recorded coordinates",
+        "other_coordinate_sources",
+      )
+'''
+    source = source[:coordinate_start] + coordinate_replacement + source[coordinate_end:]
 
   old_kegg_loop = '''  for fig_name, fig_caption, status_csv, full_status_csv, panel_key in kegg_figures:
     _display_kegg_completeness_panel(figure_dir / fig_name, fig_caption, status_csv, panel_key, full_status_csv=full_status_csv)'''

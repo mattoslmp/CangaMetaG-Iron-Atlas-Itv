@@ -180,14 +180,21 @@ def repository_mag_download_panel(
   except Exception:
     selected_is_safe = False
   if selected_is_safe:
-    st.download_button(
-      txt("Baixar arquivo selecionado", "Download selected file"),
-      data=selected_path.read_bytes(),
-      file_name=selected_path.name,
-      mime="application/octet-stream",
-      key=f"repository_file_download_{safe_filename(mag_id)}_{safe_filename(selected_relative)}",
-      width="stretch",
-    )
+    selected_size = selected_path.stat().st_size
+    if selected_size > 750 * 1024**2:
+      st.warning(txt(
+        "Este arquivo ultrapassa 750 MiB e não será carregado na memória do Streamlit. Divida-o ou disponibilize-o por um armazenamento externo.",
+        "This file exceeds 750 MiB and will not be loaded into Streamlit memory. Split it or provide it through external storage.",
+      ))
+    else:
+      st.download_button(
+        txt("Baixar arquivo selecionado", "Download selected file"),
+        data=selected_path.read_bytes(),
+        file_name=selected_path.name,
+        mime="application/octet-stream",
+        key=f"repository_file_download_{safe_filename(mag_id)}_{safe_filename(selected_relative)}",
+        width="stretch",
+      )
 
   prepare_zip = st.checkbox(
     txt(
@@ -260,8 +267,10 @@ def bvbrc_cli_sync_panel(mag_options: list[str]):
 '''
     source = source[:panel_start] + replacement + source[panel_end + 1:]
 
+  mags_start = source.find("def mags_tab():\n")
   auto_start = source.find(
-    '    selected_local_status = bvbrc_local_annotation_status(selected_mag, st.session_state.get("bvbrc_local_annotation_dir", "Annotation"))\n'
+    '    selected_local_status = bvbrc_local_annotation_status(selected_mag, st.session_state.get("bvbrc_local_annotation_dir", "Annotation"))\n',
+    mags_start,
   )
   public_link_anchor = source.find(
     "    public_link = public_link_for_mag(selected_mag)\n",
@@ -270,9 +279,17 @@ def bvbrc_cli_sync_panel(mag_options: list[str]):
   if auto_start >= 0 and public_link_anchor >= 0:
     source = source[:auto_start] + source[public_link_anchor:]
 
-  downloads_start = source.find("    d1, d2, d3 = st.columns(3)\n")
+  mags_start = source.find("def mags_tab():\n")
+  selected_assets_start = source.find(
+    "    public_link = public_link_for_mag(selected_mag)\n",
+    mags_start,
+  )
+  downloads_start = source.find(
+    "    d1, d2, d3 = st.columns(3)\n",
+    selected_assets_start,
+  )
   downloads_end = source.find("\n\n  st.divider()", downloads_start)
-  if downloads_start >= 0 and downloads_end >= 0:
+  if selected_assets_start >= 0 and downloads_start >= 0 and downloads_end >= 0:
     downloads = '''    repository_mag_download_panel(
       selected_mag=selected_mag,
       folder=folder,

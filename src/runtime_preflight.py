@@ -3,14 +3,35 @@ from __future__ import annotations
 import importlib.util
 import inspect
 from pathlib import Path
-from typing import Any
+from typing import Any, Callable
 
 
 _PATCH_STATE = {
+  "overview_map_pending": False,
   "overview_map_injected": False,
   "taxonomy_map_pending": False,
   "taxonomy_map_injected": False,
 }
+
+
+class _ExitHookContext:
+  """Proxy a Streamlit context and run a callback after its container closes."""
+
+  def __init__(self, context: Any, after_exit: Callable[[], None] | None = None) -> None:
+    self._context = context
+    self._after_exit = after_exit
+
+  def __enter__(self):
+    return self._context.__enter__()
+
+  def __exit__(self, exc_type, exc_value, traceback):
+    result = self._context.__exit__(exc_type, exc_value, traceback)
+    if exc_type is None and self._after_exit is not None:
+      self._after_exit()
+    return result
+
+  def __getattr__(self, name: str):
+    return getattr(self._context, name)
 
 
 def _caller_context() -> tuple[dict[str, Any], dict[str, Any]]:
@@ -34,13 +55,13 @@ def _is_portuguese() -> bool:
 
 
 def _render_overview_sampling_figure(st) -> None:
-  if _PATCH_STATE["overview_map_injected"]:
+  if not _PATCH_STATE["overview_map_pending"] or _PATCH_STATE["overview_map_injected"]:
     return
+  _PATCH_STATE["overview_map_pending"] = False
   _PATCH_STATE["overview_map_injected"] = True
 
   project_root = Path(__file__).resolve().parents[1]
   figure_path = project_root / "outputs" / "final_publication_figures" / "Figure1_sampling_map.png"
-  root = getattr(st, "_main", st)
   if _is_portuguese():
     title = "Área de estudo e desenho amostral"
     caption = (
@@ -59,15 +80,15 @@ def _render_overview_sampling_figure(st) -> None:
     )
     missing = "Figure 1 sampling map was not found in the canonical final-figures directory."
 
-  root.markdown(f"### {title}")
+  st.markdown(f"### {title}")
   if figure_path.exists():
-    root.image(str(figure_path), width="stretch", caption=caption)
+    st.image(str(figure_path), width="stretch", caption=caption)
   else:
-    root.warning(missing)
+    st.warning(missing)
 
 
 def _render_taxonomy_sampling_map(st) -> None:
-  if _PATCH_STATE["taxonomy_map_injected"]:
+  if not _PATCH_STATE["taxonomy_map_pending"] or _PATCH_STATE["taxonomy_map_injected"]:
     return
   _PATCH_STATE["taxonomy_map_pending"] = False
   _PATCH_STATE["taxonomy_map_injected"] = True
@@ -88,12 +109,12 @@ def _render_taxonomy_sampling_map(st) -> None:
 
 
 def _install_streamlit_layout_hooks(st) -> None:
-  if getattr(st, "_cangametag_sampling_layout_hooks", False):
+  if getattr(st, "_cangametag_sampling_layout_hooks_v2", False):
     return
 
   original_download_button = st.download_button
-  original_markdown = st.markdown
   original_expander = st.expander
+  original_columns = st.columns
 
   def download_button_wrapper(*args, **kwargs):
     result = original_download_button(*args, **kwargs)
@@ -102,38 +123,39 @@ def _install_streamlit_layout_hooks(st) -> None:
       file_name = args[2]
     file_name = str(file_name or "")
     if file_name == "article_sample_dates_coordinates.csv":
-      _render_overview_sampling_figure(st)
+      _PATCH_STATE["overview_map_pending"] = True
     elif file_name == "taxonomy_sample_metadata.csv":
       _PATCH_STATE["taxonomy_map_pending"] = True
     return result
-
-  def markdown_wrapper(*args, **kwargs):
-    body = args[0] if args else kwargs.get("body", "")
-    body_text = str(body)
-    taxonomy_heading = (
-      "Figuras taxonômicas finais usadas no artigo" in body_text
-      or "Final taxonomy figures used in the article" in body_text
-    )
-    if _PATCH_STATE["taxonomy_map_pending"] and taxonomy_heading:
-      _render_taxonomy_sampling_map(st)
-    return original_markdown(*args, **kwargs)
 
   def expander_wrapper(label, *args, **kwargs):
     replacements = {
       "Amostras, datas, coordenadas e environment_feature": "Amostras, datas e coordenadas geográficas",
       "Samples, dates, coordinates and environment_feature": "Samples, collection dates and geographic coordinates",
     }
-    return original_expander(replacements.get(str(label), label), *args, **kwargs)
+    visible_label = replacements.get(str(label), label)
+    context = original_expander(visible_label, *args, **kwargs)
+    if str(visible_label) in replacements.values():
+      return _ExitHookContext(context, lambda: _render_taxonomy_sampling_map(st))
+    return context
+
+  def columns_wrapper(*args, **kwargs):
+    columns = original_columns(*args, **kwargs)
+    return [
+      _ExitHookContext(column, lambda: _render_overview_sampling_figure(st))
+      for column in columns
+    ]
 
   st.download_button = download_button_wrapper
-  st.markdown = markdown_wrapper
   st.expander = expander_wrapper
-  st._cangametag_sampling_layout_hooks = True
+  st.columns = columns_wrapper
+  st._cangametag_sampling_layout_hooks_v2 = True
 
 
 def streamlit_dependency_guard(st) -> None:
-  """Validate optional packages and install the app-only sampling layout hooks."""
+  """Validate optional packages and install the sampling-layout hooks."""
   _PATCH_STATE.update({
+    "overview_map_pending": False,
     "overview_map_injected": False,
     "taxonomy_map_pending": False,
     "taxonomy_map_injected": False,

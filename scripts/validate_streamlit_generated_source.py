@@ -60,7 +60,8 @@ def main() -> int:
 
   required = [
     "def _bvbrc_public_workspace_inventory(",
-    '"Workspace.get_archive_url"',
+    '"get_archive_url"',
+    '"get_download_url"',
     "Deliberately do not send Authorization",
     "Download {mag_id} directly from BV-BRC",
     "No personal credential will be used",
@@ -73,13 +74,16 @@ def main() -> int:
       + "; ".join(missing)
     )
 
+  direct_start = source.find("def _bvbrc_public_rpc")
+  direct_end = source.find("def mags_tab():", direct_start)
+  direct_layer = source[direct_start:direct_end]
   forbidden_auth = [
     'headers["Authorization"]',
     "headers['Authorization']",
     "BVBRC_TOKEN",
     "KB_AUTH_TOKEN",
   ]
-  leaked = [text for text in forbidden_auth if text in source[source.find("def _bvbrc_public_rpc"):source.find("def mags_tab():")]]
+  leaked = [text for text in forbidden_auth if text in direct_layer]
   if leaked:
     raise RuntimeError(
       "Anonymous BV-BRC download layer unexpectedly references authentication: "

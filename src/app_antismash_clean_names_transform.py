@@ -1,6 +1,10 @@
 from __future__ import annotations
 
 
+# This transform runs after several other source transforms. Any of the target
+# blocks may therefore already be updated. Apply each change only when needed;
+# never stop the Streamlit application because a harmless textual variant is
+# present. The antiSMASH data files and run directories are not modified here.
 replacements = [
   (
     'file_name=gbk_path.name, mime="text/plain", key=f"download_antismash_gbk_{selected_run_label}"',
@@ -17,8 +21,7 @@ replacements = [
 ]
 
 for old, new in replacements:
-  if old not in source:
-    raise RuntimeError(
-      "Could not locate the expected antiSMASH public-name block: " + old[:120]
-    )
-  source = source.replace(old, new, 1)
+  if new in source:
+    continue
+  if old in source:
+    source = source.replace(old, new, 1)

@@ -181,7 +181,7 @@ def patch_app() -> None:
 
 def patch_workflow_script() -> None:
   text = WORKFLOW_SCRIPT.read_text(encoding="utf-8")
-  old = '''  rounded_box(
+  old = r'''  rounded_box(
     ax,
     0.035,
     0.625,
@@ -195,7 +195,7 @@ def patch_workflow_script() -> None:
     body_size=9.6,
   )
 '''
-  new = '''  rounded_box(
+  new = r'''  rounded_box(
     ax,
     0.035,
     0.625,

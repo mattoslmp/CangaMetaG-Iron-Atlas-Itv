@@ -1,1 +1,0 @@
-Trigger the one-time workflow that fixes the atlas workflow layout, language cards, KEGG controls, multi-page figure display and taxonomy palette synchronization.

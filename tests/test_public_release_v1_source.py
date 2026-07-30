@@ -67,3 +67,30 @@ def test_workflow_traceability_heatmaps_and_integrity_repairs() -> None:
   assert "Heatmaps remain visible" in source
   assert "_manifest_asset_present" in source
   assert 'st.warning(txt(\n      f"O painel combinado contém' in source
+
+
+def test_s67_external_environment_labels_do_not_overlap() -> None:
+  source = generated_source()
+  assert "CANGAMETAG_KEGG_S67_AXIS_READABILITY_V2" in source
+  helper = source[
+    source.index("def _kegg_s67_compact_label("):
+    source.index("def _kegg_scope_rows(")
+  ]
+  assert 'width=16' in helper
+  assert 'return "<br>".join(lines)' in helper
+  assert '"Hydrotherm Fe rich": "Hydrothermal Fe-rich"' in helper
+  assert '"Freshwater microbial communitie": "Freshwater microbial community"' in helper
+  assert "def _kegg_reorder_full_matrix_like_grouped_source(" in helper
+  assert 'key_prefix.endswith("_environmental_group")' in helper
+  assert 'reordered.sort_index(axis=1).equals(full_status.sort_index(axis=1))' in helper
+
+  panel = source[
+    source.index("def _display_kegg_completeness_panel("):
+    source.index("def kegg_modules_tab():")
+  ]
+  assert 'cell_w = 104 if n_cols <= 50 else 94 if n_cols <= 90 else 86' in panel
+  assert 'tickangle=0' in panel
+  assert 'tickmode="array"' in panel
+  assert 'title="Lake metagenomes and external iron-rich environments"' in panel
+  assert "cada ambiente externo aparece em linhas curtas" in panel
+  assert "tickangle=-65" not in panel

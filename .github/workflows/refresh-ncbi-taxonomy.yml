@@ -1,0 +1,74 @@
+name: Refresh NCBI taxonomy figures
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "src/article_taxonomy.py"
+      - "src/ncbi_taxonomy_harmonization.py"
+      - "src/taxonomy_palette.py"
+      - "scripts/taxonomy/harmonize_ncbi_taxonomy_and_regenerate.py"
+      - "scripts/generate_final_domain_taxonomy_figures.py"
+      - "data/resultado.cds.otu.tab"
+      - "data/resultado.cds.tax.tab"
+      - "data/ncbi_taxonomy_name_updates.csv"
+      - ".github/workflows/refresh-ncbi-taxonomy.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    if: ${{ github.event_name == 'workflow_dispatch' || !contains(github.event.head_commit.message, '[skip taxonomy-refresh]') }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+
+    steps:
+      - name: Checkout repository and LFS assets
+        uses: actions/checkout@v4
+        with:
+          lfs: true
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install taxonomy and figure dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install pandas numpy scipy scikit-learn matplotlib pillow plotly openpyxl pytest
+
+      - name: Refresh NCBI names and regenerate canonical taxonomy figures
+        run: |
+          python scripts/taxonomy/harmonize_ncbi_taxonomy_and_regenerate.py \
+            --download-taxdump
+
+      - name: Validate app generation and article correspondence
+        run: |
+          python -m pytest -q \
+            tests/test_taxonomy_article_alignment.py \
+            tests/test_public_release_v1.py
+          python scripts/validate_generated_streamlit_source.py
+
+      - name: Commit regenerated scientific assets
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add \
+            data/ncbi_taxonomy_name_updates.csv \
+            data/resultado.cds.tax.ncbi_current.tab \
+            data/taxonomy_palette.json \
+            data/final_publication_derived/ \
+            outputs/final_publication_figures/ \
+            reports/NCBI_TAXONOMY_HARMONIZATION_REPORT.json \
+            reports/FINAL_DOMAIN_TAXONOMY_GENERATION_REPORT.json
+          if git diff --cached --quiet; then
+            echo "No taxonomy or figure changes were produced."
+          else
+            git commit -m "Refresh current NCBI taxonomy figures [skip taxonomy-refresh]"
+            git push origin HEAD:main
+          fi

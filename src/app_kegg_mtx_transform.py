@@ -66,7 +66,8 @@ kegg_scope_replacement = '''    entity_plural = "MAGs" if key_prefix == "kegg_ma
           sample_identifier = str(row.get("sample_id_created_this_study", row.get("sample_id", ""))).strip()
           sra_run = str(row.get("SRA Run", row.get("SRA ID", ""))).strip()
           display_identifier = img_identifier or sample_identifier or matrix_column
-          mtx_label_map[matrix_column] = f"{study} | {display_identifier}" if study else display_identifier
+          study_axis = study if len(study) <= 48 else study[:45].rstrip() + "…"
+          mtx_label_map[matrix_column] = f"{display_identifier}<br>{study_axis}" if study_axis else display_identifier
           mtx_hover_map[matrix_column] = "<br>".join([
             f"<b>Study:</b> {study or 'not reported'}",
             f"<b>Sample:</b> {sample_name or 'not reported'}",
@@ -137,6 +138,65 @@ source = replace_once(
   "KEGG metatranscriptome hover metadata",
 )
 
+# Dedicated MTX geometry. Values and row/column selection remain untouched;
+# only the pixel geometry and axis presentation change.
+kegg_geometry_anchor = '''    n_rows, n_cols = view_original.shape
+    cell_w = 44 if n_cols <= 24 else 40 if n_cols <= 40 else 34
+    cell_h = 34 if n_rows <= 180 else 30
+'''
+kegg_geometry_replacement = '''    n_rows, n_cols = view_original.shape
+    cell_w = 44 if n_cols <= 24 else 40 if n_cols <= 40 else 34
+    cell_h = 34 if n_rows <= 180 else 30
+    if scope == "metatranscriptome_only":
+      cell_w = 112 if n_cols <= 16 else 96 if n_cols <= 28 else 78
+      cell_h = 40 if n_rows <= 140 else 34
+'''
+source = replace_once(source, kegg_geometry_anchor, kegg_geometry_replacement, "KEGG MTX cell geometry")
+
+kegg_layout_anchor = '''    fig.update_layout(
+      width=max(1250, min(16000, 650 + cell_w * n_cols)),
+      height=max(720, min(26000, 300 + cell_h * n_rows)),
+      margin=dict(l=760, r=180, t=70, b=330),
+      font=dict(size=13, color="#111827"),
+'''
+kegg_layout_replacement = '''    fig.update_layout(
+      width=max(1650 if scope == "metatranscriptome_only" else 1250, min(16000, 720 + cell_w * n_cols)),
+      height=max(980 if scope == "metatranscriptome_only" else 720, min(26000, 340 + cell_h * n_rows)),
+      margin=dict(
+        l=780,
+        r=210 if scope == "metatranscriptome_only" else 180,
+        t=90 if scope == "metatranscriptome_only" else 70,
+        b=430 if scope == "metatranscriptome_only" else 330,
+      ),
+      font=dict(size=13, color="#111827"),
+'''
+source = replace_once(source, kegg_layout_anchor, kegg_layout_replacement, "KEGG MTX layout geometry")
+
+kegg_axes_anchor = '''    fig.update_xaxes(tickangle=-55, tickfont=dict(size=11), automargin=True, title="Sample / MAG")
+    fig.update_yaxes(tickfont=dict(size=11), automargin=True, tickmode="array", tickvals=y_labels, ticktext=y_labels, title="KEGG module")
+'''
+kegg_axes_replacement = '''    if scope == "metatranscriptome_only":
+      fig.update_xaxes(
+        tickangle=-45,
+        tickfont=dict(size=12),
+        automargin=True,
+        title="Metatranscriptome — IMG/JGI identifier and study",
+        constrain="domain",
+      )
+      fig.update_yaxes(
+        tickfont=dict(size=12),
+        automargin=True,
+        tickmode="array",
+        tickvals=y_labels,
+        ticktext=y_labels,
+        title="KEGG module",
+      )
+    else:
+      fig.update_xaxes(tickangle=-55, tickfont=dict(size=11), automargin=True, title="Sample / MAG")
+      fig.update_yaxes(tickfont=dict(size=11), automargin=True, tickmode="array", tickvals=y_labels, ticktext=y_labels, title="KEGG module")
+'''
+source = replace_once(source, kegg_axes_anchor, kegg_axes_replacement, "KEGG MTX axis geometry")
+
 kegg_table_anchor = '''    table_out = view_original.reset_index().rename(columns={view_original.index.name or first_col: "KEGG module"})
     source_table_out = full_status.reset_index().rename(columns={full_status.index.name or first_col: "KEGG module"})
     st.markdown("###### Source table used for this panel")
@@ -161,10 +221,10 @@ kegg_table_replacement = '''    table_out = view_original.reset_index().rename(c
       source_filename = f"{key_prefix}_complete_source_matrix.csv"
     st.markdown("###### Source table used for this panel")
     st.caption(source_caption)
-    show_table(source_table_out, f"{key_prefix}_source_status_matrix_v12_{scope}", height=460)
+    show_table(source_table_out, f"{key_prefix}_source_status_matrix_v13_{scope}", height=520 if scope == "metatranscriptome_only" else 460)
     if scope == "metatranscriptome_only" and not mtx_metadata_view.empty:
       st.markdown("###### Metatranscriptome studies and identifiers")
-      show_table(mtx_metadata_view, f"{key_prefix}_metatranscriptome_metadata_v1", height=420)
+      show_table(mtx_metadata_view, f"{key_prefix}_metatranscriptome_metadata_v2", height=440)
       csv_button(
         mtx_metadata_view,
         f"{key_prefix}_metatranscriptome_studies_identifiers.csv",
@@ -172,7 +232,7 @@ kegg_table_replacement = '''    table_out = view_original.reset_index().rename(c
         context=f"{key_prefix}_mtx_metadata",
       )
     with st.expander("Displayed subset table", expanded=False):
-      show_table(table_out, f"{key_prefix}_status_matrix_v12_{scope}_{module_count}", height=360)
+      show_table(table_out, f"{key_prefix}_status_matrix_v13_{scope}_{module_count}", height=400)
     d1, d2 = st.columns(2)
     with d1:
       csv_button(table_out, f"{key_prefix}_{scope}_{module_count}_displayed_statuses.csv", "Download displayed matrix", context=key_prefix)
@@ -180,5 +240,3 @@ kegg_table_replacement = '''    table_out = view_original.reset_index().rename(c
       csv_button(source_table_out, source_filename, "Download source matrix", context=f"{key_prefix}_source_{scope}")
 '''
 source = replace_once(source, kegg_table_anchor, kegg_table_replacement, "KEGG metatranscriptome source tables")
-
-

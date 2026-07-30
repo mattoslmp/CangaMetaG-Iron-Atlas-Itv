@@ -10914,8 +10914,6 @@ def _prepare_kegg_status_frame(raw: pd.DataFrame) -> tuple[pd.DataFrame, str]:
 def _kegg_scope_rows(article_status: pd.DataFrame, full_status: pd.DataFrame, scope: str) -> pd.DataFrame:
   """Select module rows from the immutable source-status matrix."""
   source = full_status.copy()
-  if scope == "all_complete":
-    return source.loc[source.eq("Complete").all(axis=1)].copy()
   if scope == "complete_any":
     return source.loc[source.eq("Complete").any(axis=1)].copy()
   if scope == "one_missing":
@@ -10941,10 +10939,9 @@ def _display_kegg_completeness_panel(fig_path: Path, caption: str, status_csv: P
     entity_singular = "MAG" if key_prefix == "kegg_mags" else "sample"
     st.markdown("##### KEGG module completeness explorer")
     scope_labels = {
-      "all_complete": f"1. Complete in all {entity_plural}",
-      "complete_any": f"2. Complete in at least one {entity_singular}",
-      "one_missing": f"3. One block missing in at least one {entity_singular}",
-      "all": "4. Full matrix — Complete, 1 block missing and Incomplete",
+      "complete_any": f"1. Complete in at least one {entity_singular}",
+      "one_missing": f"2. One block missing in at least one {entity_singular}",
+      "all": "3. Full matrix — Complete, 1 block missing and Incomplete",
     }
     c1, c2 = st.columns([0.48, 0.52])
     with c1:
@@ -10952,7 +10949,7 @@ def _display_kegg_completeness_panel(fig_path: Path, caption: str, status_csv: P
         "Module set",
         list(scope_labels),
         format_func=lambda value: scope_labels[value],
-        key=f"{key_prefix}_module_scope_v9",
+        key=f"{key_prefix}_module_scope_v10",
       )
 
     scope_status = _kegg_scope_rows(pd.DataFrame(), full_status, scope)
@@ -10966,7 +10963,7 @@ def _display_kegg_completeness_panel(fig_path: Path, caption: str, status_csv: P
       show_all = st.checkbox(
         f"Show all {available} modules in this set",
         value=False,
-        key=f"{key_prefix}_show_all_modules_v9_{scope}",
+        key=f"{key_prefix}_show_all_modules_v10_{scope}",
       )
       module_count = available if show_all else int(st.number_input(
         "Number of displayed modules",
@@ -10974,11 +10971,10 @@ def _display_kegg_completeness_panel(fig_path: Path, caption: str, status_csv: P
         max_value=available,
         value=min(40, available),
         step=1,
-        key=f"{key_prefix}_module_count_v9_{scope}_{available}",
+        key=f"{key_prefix}_module_count_v10_{scope}_{available}",
       ))
 
     scope_descriptions = {
-      "all_complete": f"Modules classified as Complete in every {entity_singular} of the immutable source matrix.",
       "complete_any": f"Modules classified as Complete in at least one {entity_singular}; all original cell statuses for retained rows are preserved.",
       "one_missing": f"Modules with at least one '1 block missing' call; Complete and Incomplete calls in the same retained rows remain visible.",
       "all": "All modules and all original statuses from the source matrix. No row-selection filter is applied.",
@@ -10993,14 +10989,14 @@ def _display_kegg_completeness_panel(fig_path: Path, caption: str, status_csv: P
         "Samples/MAGs",
         all_samples,
         default=all_samples,
-        key=f"{key_prefix}_samples_v9_{scope}",
+        key=f"{key_prefix}_samples_v10_{scope}",
       )
     with c4:
       visible_states = st.multiselect(
         "Visible states",
         ["Complete", "1 block missing", "Incomplete"],
         default=["Complete", "1 block missing", "Incomplete"],
-        key=f"{key_prefix}_visible_states_v9_{scope}",
+        key=f"{key_prefix}_visible_states_v10_{scope}",
       )
     if not sample_filter:
       sample_filter = all_samples
@@ -11081,16 +11077,21 @@ def _display_kegg_completeness_panel(fig_path: Path, caption: str, status_csv: P
     m4.metric("Samples/MAGs", len(sample_filter))
     render_plotly_downloadable(
       fig,
-      key=f"{key_prefix}_interactive_v9_{scope}_{module_count}_{len(sample_filter)}",
+      key=f"{key_prefix}_interactive_v10_{scope}_{module_count}_{len(sample_filter)}",
       basename=f"{key_prefix}_{scope}_{module_count}_modules",
     )
     table_out = view_original.reset_index().rename(columns={view_original.index.name or first_col: "KEGG module"})
-    show_table(table_out, f"{key_prefix}_status_matrix_v9_{scope}_{module_count}", height=400)
+    source_table_out = full_status.reset_index().rename(columns={full_status.index.name or first_col: "KEGG module"})
+    st.markdown("###### Source table used for this panel")
+    st.caption("This table contains the complete source-status matrix used to generate the interactive panel above.")
+    show_table(source_table_out, f"{key_prefix}_source_status_matrix_v10", height=460)
+    with st.expander("Displayed subset table", expanded=False):
+      show_table(table_out, f"{key_prefix}_status_matrix_v10_{scope}_{module_count}", height=360)
     d1, d2 = st.columns(2)
     with d1:
       csv_button(table_out, f"{key_prefix}_{scope}_{module_count}_displayed_statuses.csv", "Download displayed matrix", context=key_prefix)
     with d2:
-      csv_button(full_raw, f"{key_prefix}_complete_source_matrix.csv", "Download complete source matrix", context=f"{key_prefix}_source")
+      csv_button(source_table_out, f"{key_prefix}_complete_source_matrix.csv", "Download complete source matrix", context=f"{key_prefix}_source")
   except Exception as exc:
     st.warning(f"Interactive version could not be generated: {exc}")
 

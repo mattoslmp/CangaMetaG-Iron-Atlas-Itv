@@ -1,5 +1,6 @@
 name: Run one-time KEGG explorer patch
 
+# Second commit intentionally triggers this already-installed workflow.
 on:
   push:
     paths:

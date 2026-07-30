@@ -6850,8 +6850,8 @@ def mags_tab():
   runs = discover_antismash_runs()
   if not runs:
     st.info(txt(
-      "Nenhum index.html do antiSMASH foi encontrado. Extraia cada ZIP em uma pasta própria dentro de data/kegg_modules/mags/gbk_antismash/.",
-      "No antiSMASH index.html was found. Extract each ZIP into its own folder under data/kegg_modules/mags/gbk_antismash/."
+      "Nenhum resultado antiSMASH empacotado está disponível para esta seleção.",
+      "No packaged antiSMASH result is available for this selection."
     ))
   else:
     labels = [str(run["run_name"]) for run in runs]

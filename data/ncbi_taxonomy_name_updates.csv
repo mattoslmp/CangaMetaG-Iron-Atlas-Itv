@@ -1,0 +1,10 @@
+rank,original_name,current_name,ncbi_taxid,status,matched_name_class,source
+Phylum,Proteobacteria,Pseudomonadota,1224,updated,homotypic synonym,NCBI Taxonomy Browser
+Phylum,Firmicutes,Bacillota,1239,updated,GenBank common name / historical name,NCBI Taxonomy Browser
+Phylum,Actinobacteria,Actinomycetota,201174,updated,homotypic synonym,NCBI Taxonomy Browser
+Phylum,Bacteroidetes,Bacteroidota,976,updated,homotypic synonym,NCBI Taxonomy Browser
+Phylum,Acidobacteria,Acidobacteriota,57723,updated,homotypic synonym,NCBI Taxonomy Browser
+Phylum,Planctomycetes,Planctomycetota,203682,updated,homotypic synonym,NCBI Taxonomy Browser
+Phylum,Cyanobacteria,Cyanobacteriota,1117,updated,homotypic synonym,NCBI Taxonomy Browser
+Phylum,Verrucomicrobia,Verrucomicrobiota,74201,updated,homotypic synonym,NCBI Taxonomy Browser
+Phylum,Chloroflexi,Chloroflexota,200795,updated,historical NCBI/GenBank name,NCBI Taxonomy Browser

@@ -8,25 +8,67 @@ import subprocess
 from . import bvbrc_cli_sync as _base
 
 
-BVBRC_LAYOUT_REVISION = 2
+BVBRC_LAYOUT_REVISION = 3
 _ORIGINAL_FIND_EXTRACTED_COMMAND = _base._find_extracted_command
 _ORIGINAL_ENSURE_BVBRC_CLI = _base.ensure_bvbrc_cli
+_ORIGINAL_PERL_LIBRARY_ROOTS = _base._perl_library_roots
+_ORIGINAL_BINARY_DIRECTORIES = _base._binary_directories
+_ORIGINAL_CREATE_LOCAL_WRAPPERS = _base._create_local_wrappers
+
+
+def _unique_existing(paths: list[Path]) -> list[Path]:
+  result = []
+  for path in paths:
+    if path.exists() and path not in result:
+      result.append(path)
+  return result
+
+
+def _deployment_roots(rootfs: Path) -> list[Path]:
+  candidates = [
+    rootfs / "usr" / "share" / "bvbrc-cli" / "deployment",
+    rootfs / "usr" / "share" / "patric-cli" / "deployment",
+    rootfs / "opt" / "bvbrc" / "deployment",
+    rootfs / "opt" / "patric" / "deployment",
+  ]
+  candidates.extend(
+    path.parent.parent
+    for path in rootfs.rglob("plbin/p3-ls.pl")
+    if path.is_file()
+  )
+  return _unique_existing(candidates)
+
+
+def _perl_library_roots(rootfs: Path) -> list[Path]:
+  candidates = list(_ORIGINAL_PERL_LIBRARY_ROOTS(rootfs))
+  for deployment in _deployment_roots(rootfs):
+    candidates.extend([
+      deployment / "lib",
+      deployment / "lib" / "perl5",
+      deployment / "site_perl",
+    ])
+  return _unique_existing(candidates)
+
+
+def _binary_directories(rootfs: Path) -> list[Path]:
+  candidates = list(_ORIGINAL_BINARY_DIRECTORIES(rootfs))
+  for deployment in _deployment_roots(rootfs):
+    candidates.extend([
+      deployment / "bin",
+      deployment / "plbin",
+    ])
+  return _unique_existing(candidates)
 
 
 def _direct_perl_candidates(rootfs: Path, command_name: str) -> list[Path]:
   """Return packaged Perl entry points before absolute-path launchers."""
   filename = f"{command_name}.pl"
-  candidates = [
-    rootfs / "usr" / "share" / "bvbrc-cli" / "deployment" / "plbin" / filename,
-    rootfs / "usr" / "share" / "patric-cli" / "deployment" / "plbin" / filename,
-    rootfs / "opt" / "bvbrc" / "deployment" / "plbin" / filename,
-    rootfs / "opt" / "patric" / "deployment" / "plbin" / filename,
-  ]
+  candidates = [deployment / "plbin" / filename for deployment in _deployment_roots(rootfs)]
   candidates.extend(
     path for path in rootfs.rglob(filename)
     if "share/man" not in path.as_posix()
   )
-  return candidates
+  return _unique_existing(candidates)
 
 
 def _find_extracted_command(rootfs: Path, command_name: str) -> Path | None:
@@ -41,6 +83,24 @@ def _find_extracted_command(rootfs: Path, command_name: str) -> Path | None:
     if candidate.exists() and candidate.is_file():
       return candidate
   return _ORIGINAL_FIND_EXTRACTED_COMMAND(rootfs, command_name)
+
+
+def _create_local_wrappers(rootfs: Path) -> dict[str, str]:
+  """Create relocatable wrappers for required and auxiliary p3 commands."""
+  commands = _ORIGINAL_CREATE_LOCAL_WRAPPERS(rootfs)
+  _base.BVBRC_LOCAL_BIN.mkdir(parents=True, exist_ok=True)
+  for deployment in _deployment_roots(rootfs):
+    plbin = deployment / "plbin"
+    if not plbin.exists():
+      continue
+    for script in sorted(plbin.glob("p3-*.pl")):
+      command_name = script.stem
+      wrapper = _base.BVBRC_LOCAL_BIN / command_name
+      wrapper.write_text(_base._wrapper_text(script, rootfs), encoding="utf-8")
+      wrapper.chmod(0o755)
+      if command_name in {"p3-ls", "p3-cp", "p3-login"}:
+        commands[command_name] = str(wrapper)
+  return commands
 
 
 def _marker_has_current_layout() -> bool:
@@ -113,9 +173,16 @@ def _probe_cli(command: str) -> tuple[bool, str]:
   return True, output.strip()
 
 
+def _activate_relocatable_functions() -> None:
+  _base._perl_library_roots = _perl_library_roots
+  _base._binary_directories = _binary_directories
+  _base._find_extracted_command = _find_extracted_command
+  _base._create_local_wrappers = _create_local_wrappers
+
+
 def ensure_bvbrc_cli(force: bool = False):
   """Install or repair the CLI with relocatable user-space launchers."""
-  _base._find_extracted_command = _find_extracted_command
+  _activate_relocatable_functions()
 
   if force or (_base.BVBRC_INSTALL_MARKER.exists() and not _marker_has_current_layout()):
     _invalidate_legacy_cache()
@@ -147,7 +214,7 @@ def ensure_bvbrc_cli(force: bool = False):
 
 # The original public functions resolve ensure_bvbrc_cli from their module at
 # runtime. Replacing it here fixes status, listing and download operations.
-_base._find_extracted_command = _find_extracted_command
+_activate_relocatable_functions()
 _base.ensure_bvbrc_cli = ensure_bvbrc_cli
 
 

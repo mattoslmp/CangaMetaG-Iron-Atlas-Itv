@@ -77,9 +77,9 @@ source = source.replace(
 )
 
 
-# Preserve the publication Figure 1 because its complete cartographic design
-# cannot be reproduced exactly by a web tile map. Add a companion interactive
-# view driven by the same article sample coordinates used in Taxonomic profiles.
+# Remove the static publication sampling figure, heading and caption from the
+# overview. Keep only the interactive map driven by the verified taxonomy
+# sample coordinates.
 study_static_block = '''  figure1_sampling_path = BASE_DIR / "outputs" / "final_publication_figures" / "Figure1_sampling_map.png"
   st.markdown("### " + txt("Área de estudo e desenho amostral", "Study area and sampling design"))
   if figure1_sampling_path.exists():
@@ -94,7 +94,7 @@ study_static_block = '''  figure1_sampling_path = BASE_DIR / "outputs" / "final_
       "Figure 1 sampling map was not found in the canonical final-figures directory."
     ))
 '''
-study_interactive_block = study_static_block + """
+study_interactive_block = """
   interactive_study_meta = taxonomy_samples_metadata()
   if not interactive_study_meta.empty and {"lat", "lon"}.issubset(interactive_study_meta.columns):
     interactive_study_meta = apply_amazonian_lake_coordinate_overrides(interactive_study_meta)
@@ -131,7 +131,7 @@ study_interactive_block = study_static_block + """
         height=420,
       )
 """
-source = replace_once(source, study_static_block, study_interactive_block, "interactive study-area map")
+source = replace_once(source, study_static_block, study_interactive_block, "remove static study-area map")
 
 
 # Increase body, control, caption, tab and navigation typography throughout the

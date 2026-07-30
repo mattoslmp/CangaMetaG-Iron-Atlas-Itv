@@ -1,0 +1,1 @@
+Trigger the one-time Streamlit layout correction for the Article Atlas and active Taxonomic profiles page.

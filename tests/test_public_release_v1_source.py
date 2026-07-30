@@ -94,3 +94,38 @@ def test_s67_external_environment_labels_do_not_overlap() -> None:
   assert 'title="Lake metagenomes and external iron-rich environments"' in panel
   assert "cada ambiente externo aparece em linhas curtas" in panel
   assert "tickangle=-65" not in panel
+
+
+def test_s67_compact_label_keeps_name_and_identifier_on_separate_lines() -> None:
+  minimal_source = '''from pathlib import Path
+import re
+import textwrap
+import pandas as pd
+
+
+def _prepare_kegg_status_frame(raw):
+  return raw, "module"
+
+
+def _kegg_scope_rows():
+  pass
+'''
+  transform_path = ROOT / "src" / "app_kegg_s67_axis_readability_transform.py"
+  transformed = runpy.run_path(
+    str(transform_path),
+    init_globals={"source": minimal_source},
+  )["source"]
+  namespace: dict[str, object] = {}
+  exec(compile(transformed, str(transform_path), "exec"), namespace, namespace)
+  compact = namespace["_kegg_s67_compact_label"]
+
+  assert compact("AM.P1.D", 1) == "AM.P1.D"
+  assert compact("Acid mine drainage 3300038494", 2) == (
+    "Acid mine<br>drainage<br>3300038494"
+  )
+  assert compact("Freshwater microbial communitie 3300024300", 3) == (
+    "Freshwater<br>microbial<br>community<br>3300024300"
+  )
+  assert compact("Hydrotherm Fe rich 3300023310", 4) == (
+    "Hydrothermal<br>Fe-rich<br>3300023310"
+  )

@@ -10,6 +10,7 @@ on:
       - "src/ncbi_taxonomy_refresh.py"
       - "src/taxonomy_palette.py"
       - "src/app_taxonomy_article_alignment_transform.py"
+      - "src/app_kegg_s67_axis_readability_transform.py"
       - "scripts/taxonomy/harmonize_ncbi_taxonomy_and_regenerate.py"
       - "scripts/generate_final_domain_taxonomy_figures.py"
       - "data/resultado.cds.otu.tab"

@@ -1,10 +1,8 @@
 name: Run one-time workflow, language and figure-page corrections
 
-# Triggered after the patch script was committed.
 on:
-  push:
-    paths:
-      - '.github/workflows/run_one_time_workflow_language_pages_palette.yml'
+  pull_request:
+    types: [opened, synchronize, reopened]
   workflow_dispatch:
 
 permissions:
@@ -12,11 +10,13 @@ permissions:
 
 jobs:
   patch:
+    if: github.event_name == 'workflow_dispatch' || github.event.pull_request.head.repo.full_name == github.repository
     runs-on: ubuntu-latest
     steps:
-      - name: Check out repository
+      - name: Check out correction branch
         uses: actions/checkout@v4
         with:
+          ref: ${{ github.head_ref || github.ref_name }}
           lfs: true
 
       - name: Install workflow figure dependency
@@ -39,12 +39,13 @@ jobs:
           grep -F 'body=None' scripts/generate_atlas_workflow_figure.py
           test -s outputs/app_supplementary_figures/SupplementaryFigure29_complete_computational_workflow.png
 
-      - name: Commit final corrections
+      - name: Commit final corrections to the pull-request branch
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git rm .github/workflows/run_one_time_workflow_language_pages_palette.yml
           git rm scripts/one_time_fix_workflow_language_pages_palette.py
+          git rm -f .github/one_time_app_correction_trigger.txt
           git add app.py src/supplementary_database.py scripts/generate_atlas_workflow_figure.py outputs/final_publication_figures/SupplementaryFigure29_complete_computational_workflow.* outputs/app_supplementary_figures/SupplementaryFigure29_complete_computational_workflow.* outputs/article_highres_figures/SupplementaryFigure29_complete_computational_workflow.*
           git commit -m 'Fix workflow layout, language cards and multi-page figures'
-          git push
+          git push origin HEAD:${{ github.head_ref || github.ref_name }}

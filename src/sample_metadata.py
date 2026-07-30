@@ -39,6 +39,29 @@ _SAMPLE_ROWS = [
   ("VI.P2.R", "VI", "Violão", "P2", "Rainy", "Ga0541028", "3300052688", "V2.2"),
 ]
 
+_COLLECTION_DATES = {
+  "AM.P1.D": "2016-09-29",
+  "AM.P1.R": "2016-03-29",
+  "AM.P2.D": "2016-09-20",
+  "AM.P2.R": "2016-03-29",
+  "TIA.P1.D": "2016-09-21",
+  "TIA.P1.R": "2016-03-30",
+  "TIA.P2.D": "2016-09-21",
+  "TIA.P2.R": "2016-03-30",
+  "TI.P1.D": "2016-09-21",
+  "TI.P1.R": "2016-03-30",
+  "TI.P2.D": "2016-09-21",
+  "TI.P2.R": "2016-03-30",
+  "TI.P3.D": "2016-09-21",
+  "TI.P3.R": "2016-03-30",
+  "TI.P4.D": "2016-09-21",
+  "TI.P4.R": "2016-03-30",
+  "VI.P1.D": "2016-09-20",
+  "VI.P1.R": "2016-03-29",
+  "VI.P2.D": "2016-09-20",
+  "VI.P2.R": "2016-03-29",
+}
+
 _SITE_COORDINATES = {
   "AM.P1": "6°23'54.1\"S 50°22'17.6\"W",
   "AM.P2": "6°24'03.0\"S 50°22'18.8\"W",
@@ -97,7 +120,7 @@ def amazonian_sample_metadata() -> pd.DataFrame:
       "geographic_coordinates": coord,
       "lat": lat,
       "lon": lon,
-      "collection_date": "Not reported in packaged metadata",
+      "collection_date": _COLLECTION_DATES.get(sample_id, ""),
       "source_dataset": "Amazonian lake annotations (Supplementary Table 6)",
     })
   return pd.DataFrame(rows)

@@ -40,14 +40,7 @@ def main() -> int:
   source = generated_source()
   compile(source, str(CORE_PATH), "exec")
   if ".repaired" in source.casefold():
-    allowed = (
-      "the .repaired label was removed only from public names"
-      if "the .repaired label was removed only from public names" in source.casefold()
-      else ""
-    )
-    remaining = source.casefold().replace(allowed, "")
-    if ".repaired" in remaining:
-      raise RuntimeError("Generated public Streamlit source still exposes .repaired")
+    raise RuntimeError("Generated public Streamlit source still exposes .repaired")
   print(
     "Generated Streamlit source compiled successfully: "
     f"{len(source.splitlines())} lines, {len(source.encode('utf-8'))} bytes"

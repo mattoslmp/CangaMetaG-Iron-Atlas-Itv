@@ -40,7 +40,9 @@ def test_complete_run_zip_preserves_internal_names_and_bytes(tmp_path: Path) -> 
 
   with zipfile.ZipFile(BytesIO(archive)) as handle:
     members = set(handle.namelist())
-    assert "index.html" in members
-    assert "MAG12.repaired.region001.gbk" in members
-    assert handle.read("index.html") == index_payload
-    assert handle.read("MAG12.repaired.region001.gbk") == gbk_payload
+    index_member = "MAG12.repaired/index.html"
+    gbk_member = "MAG12.repaired/MAG12.repaired.region001.gbk"
+    assert index_member in members
+    assert gbk_member in members
+    assert handle.read(index_member) == index_payload
+    assert handle.read(gbk_member) == gbk_payload

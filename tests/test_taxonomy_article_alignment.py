@@ -9,6 +9,7 @@ import pandas as pd
 
 from src.article_taxonomy import (
   ARTICLE_ALPHA_ORDER,
+  article_alpha_boxplot,
   article_static_source_validation,
   article_taxonomy_profile_table,
   domain_rank_matrices,
@@ -76,9 +77,12 @@ def test_domain_separation_and_percentages_are_preserved() -> None:
       else "Figure3_taxonomic_phylum_archaea_horizontal_CDS_source.csv"
     )
     validation = article_static_source_validation(domain, "Phylum", 14, ROOT)
-    if source_file.exists():
-      assert validation.iloc[0]["status"] == "PASS", validation.to_dict("records")
-      assert float(validation.iloc[0]["max_absolute_difference"]) <= 1e-8
+    assert validation.iloc[0]["status"] == "PASS", validation.to_dict("records")
+    assert float(validation.iloc[0]["max_absolute_difference"]) <= 1e-8
+    if not source_file.exists():
+      assert validation.iloc[0]["static_source"] == "data/resultado.cds.otu.tab; data/resultado.cds.tax.tab"
+      assert not bool(validation.iloc[0]["values_modified"])
+      assert int(validation.iloc[0]["compared_cells"]) == int(relative.size)
 
 
 def test_ncbi_harmonisation_changes_labels_only() -> None:
@@ -103,3 +107,15 @@ def test_article_alpha_boxplot_uses_exact_supplementary_source() -> None:
   assert first_occurrence == observed_order
   assert int(source["Rarefaction_depth_CDS"].nunique()) == 1
   assert int(source["Rarefaction_depth_CDS"].iloc[0]) == 32999
+  figure, figure_source = article_alpha_boxplot(ROOT)
+  assert len(figure_source) == len(source)
+  assert float(figure.layout.legend.y) <= -0.30
+  assert int(figure.layout.margin.b) >= 180
+
+
+def test_article_mag_table_and_pcoa_titles_are_explicit() -> None:
+  source = generated_source()
+  assert "Article MAGs — complete table" in source
+  assert "Article MAGs — show/hide table" in source
+  assert "PCoA — Bray–Curtis ({correction} correction)" not in source
+  assert "uncorrected distance matrix" in source

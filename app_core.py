@@ -2136,8 +2136,13 @@ def _render_beta_final(level_name: str) -> None:
   if ord_kind == "PCoA":
     x_title = f"PCoA1 ({float(ord_df['PCoA1_explained_%'].iloc[0]):.2f}% explained)"
     y_title = f"PCoA2 ({float(ord_df['PCoA2_explained_%'].iloc[0]):.2f}% explained)"
-    correction = str(ord_df["distance_correction"].iloc[0])
-    title = f"PCoA — Bray–Curtis ({correction} correction)"
+    correction = str(ord_df["distance_correction"].iloc[0]).strip()
+    correction_label = (
+      "uncorrected distance matrix"
+      if correction.casefold() in {"", "none", "null", "nan", "na", "n/a"}
+      else f"{correction} correction"
+    )
+    title = f"PCoA — Bray–Curtis ({correction_label})"
   else:
     x_title, y_title = "NMDS1", "NMDS2"
     title = f"NMDS — Bray–Curtis (normalized Stress-1 = {float(ord_df['stress_1'].iloc[0]):.3f})"
@@ -3317,7 +3322,13 @@ def complete_table_note(df: pd.DataFrame, noun_pt: str = "linhas", noun_en: str 
   ))
 
 
-def show_table(data, key: str | None = None, height: int = 460, width: str = "stretch"):
+def show_table(
+  data,
+  key: str | None = None,
+  height: int = 460,
+  width: str = "stretch",
+  title: str | None = None,
+):
   """Render an Arrow-safe interactive table with a deterministic unique key."""
   try:
     if data is None:
@@ -3344,6 +3355,8 @@ def show_table(data, key: str | None = None, height: int = 460, width: str = "st
     except Exception:
       pass
     df = arrow_safe_dataframe(df)
+    if title:
+      st.markdown(f"##### {title}")
 
     column_config = {}
     try:
@@ -6834,7 +6847,12 @@ def mags_tab():
       )
 
   st.markdown("#### " + txt("MAGs identificados no artigo", "Article MAGs"))
-  show_table(bins_f, "bins_identificados", height=420)
+  show_table(
+    bins_f,
+    "bins_identificados",
+    height=420,
+    title=txt("MAGs do artigo — tabela completa", "Article MAGs — complete table"),
+  )
   csv_button(bins_f, "bins-identificados.csv", txt("Baixar bins-identificados", "Download identified bins"))
 
   st.markdown("#### " + txt("Seleção do MAG/bin para classificação, download e anotação", "MAG/bin selection for classification, download and annotation"))
@@ -10229,8 +10247,13 @@ def integrated_ordination_panel(results: dict):
         pcoa_n = st.select_slider(txt("Número de táxons", "Number of taxa"), options=list(range(2,21,2)), value=6, key="integrated_pcoa_n", disabled=not pcoa_show_biplot)
       pcoa_var1 = float(var.loc[var["axis"].eq("PCoA1"), "explained_variance_percent"].iloc[0]) if not var.empty and var["axis"].eq("PCoA1").any() else np.nan
       pcoa_var2 = float(var.loc[var["axis"].eq("PCoA2"), "explained_variance_percent"].iloc[0]) if not var.empty and var["axis"].eq("PCoA2").any() else np.nan
-      pcoa_correction = str(var["correction"].iloc[0]) if not var.empty and "correction" in var.columns else "none"
-      fig = ordination_figure(pcoa, "PCoA1", "PCoA2", id_col, f"PCoA — Bray–Curtis, transformação do artigo ({pcoa_correction} correction)")
+      pcoa_correction = str(var["correction"].iloc[0]).strip() if not var.empty and "correction" in var.columns else ""
+      pcoa_correction_label = (
+        "uncorrected distance matrix"
+        if pcoa_correction.casefold() in {"", "none", "null", "nan", "na", "n/a"}
+        else f"{pcoa_correction} correction"
+      )
+      fig = ordination_figure(pcoa, "PCoA1", "PCoA2", id_col, f"PCoA — Bray–Curtis, transformação do artigo ({pcoa_correction_label})")
       fig.update_xaxes(title_text=f"PCoA1 ({pcoa_var1:.2f}% explained)" if pd.notna(pcoa_var1) else "PCoA1")
       fig.update_yaxes(title_text=f"PCoA2 ({pcoa_var2:.2f}% explained)" if pd.notna(pcoa_var2) else "PCoA2")
       if not var.empty and int(var.get("negative_eigenvalue_count_before_correction", pd.Series([0])).iloc[0]) > 0:

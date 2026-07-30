@@ -51,8 +51,14 @@ def _retractable_table_key(raw_key: object, kind: str) -> str:
 
 def _retractable_dataframe(data=None, *args, **kwargs):
   raw_key = kwargs.get("key")
+  raw_key_text = str(raw_key or "")
+  visibility_label = (
+    txt("MAGs do artigo — mostrar/ocultar tabela", "Article MAGs — show/hide table")
+    if "bins_identificados" in raw_key_text
+    else txt("Mostrar/ocultar tabela", "Show/hide table")
+  )
   visible = st.toggle(
-    txt("Mostrar/ocultar tabela", "Show/hide table"),
+    visibility_label,
     value=True,
     key=_retractable_table_key(raw_key, "dataframe"),
   )

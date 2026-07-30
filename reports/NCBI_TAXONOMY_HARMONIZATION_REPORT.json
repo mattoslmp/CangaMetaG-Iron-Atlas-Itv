@@ -20,6 +20,9 @@
   "resolved_names": 6002,
   "updated_names": 198,
   "current_taxonomy_output": "data/resultado.cds.tax.ncbi_current.tab",
+  "current_taxonomy_output_generated_by_script": true,
+  "current_taxonomy_output_packaged_in_repository": false,
+  "runtime_label_source": "data/resultado.cds.tax.tab + data/ncbi_taxonomy_name_updates.csv",
   "audit_output": "data/ncbi_taxonomy_name_updates.csv",
   "application_scope": "all taxonomy loaders and all interactive Plotly figure/audit labels",
   "traceability_tabs": [

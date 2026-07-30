@@ -104,7 +104,12 @@ sender_function = '''def try_send_contact_email(payload: dict, recipients: list[
     except Exception:
       response_data = {}
     remote_message = str(response_data.get("message", "")).strip()
-    success = bool(response.ok and response_data.get("success", True))
+    raw_success = response_data.get("success", True)
+    if isinstance(raw_success, str):
+      remote_success = raw_success.strip().casefold() not in {"false", "0", "no", "error"}
+    else:
+      remote_success = bool(raw_success)
+    success = bool(response.ok and remote_success)
     if success:
       activation_pending = bool(re.search(
         r"activat|confirm|verify|verification",
@@ -117,8 +122,8 @@ sender_function = '''def try_send_contact_email(payload: dict, recipients: list[
           "The message was recorded. Gisele's Gmail account will receive the activation e-mail; she only needs to click the link once. After confirmation, this and future messages will be delivered automatically.",
         )
       return True, txt(
-        "Mensagem encaminhada automaticamente para Gisele Lopes Nunes.",
-        "Message automatically forwarded to Gisele Lopes Nunes.",
+        "Mensagem registrada para Gisele Lopes Nunes. Se esta for a primeira utilização do formulário, ela receberá no Gmail um link de ativação e precisará apenas clicar nele uma única vez; depois, as mensagens serão entregues automaticamente.",
+        "Message registered for Gisele Lopes Nunes. If this is the form's first use, she will receive a Gmail activation link and only needs to click it once; messages will then be delivered automatically.",
       )
     detail = remote_message or f"HTTP {response.status_code}"
     return False, txt(

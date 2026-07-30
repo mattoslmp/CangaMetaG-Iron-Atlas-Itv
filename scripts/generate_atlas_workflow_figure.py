@@ -157,9 +157,19 @@ def build_figure():
     COLORS["teal_soft"],
     COLORS["teal"],
     "Scientific data layers",
-    "Study metadata\nSample context\nTaxonomic profiles\nKO profiles\nMAG annotations\nIron-rich studies",
+    body=None,
     number=1,
-    body_size=9.6,
+  )
+  ax.text(
+    0.065,
+    0.782,
+    "Study metadata\nSample context\nTaxonomic profiles\nKO profiles\nMAG annotations\nIron-rich studies",
+    ha="left",
+    va="top",
+    fontsize=9.2,
+    color=COLORS["muted"],
+    linespacing=1.30,
+    zorder=5,
   )
 
   rounded_box(

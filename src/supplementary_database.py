@@ -10,6 +10,7 @@ import plotly.graph_objects as go
 
 from ._helpers import BASE_DIR, empty_frame, heatmap, numeric_columns, read_table, row_zscore
 from .sample_metadata import amazonian_sample_metadata, lake_column_metadata, publication_sample_id
+from .taxonomy_palette import build_palette as build_taxonomy_palette, load_palette as load_taxonomy_palette
 
 ASSETS_DIR = BASE_DIR / 'outputs' / 'app_supplementary_figures'
 AUTHORS = 'Leandro de Mattos Pereira, José Augusto Pires Bittencourt, Vitor Cirilo Araujo Santos, Ronnie Alves, Eder Pires, Prafulla Kumar Sahoo, José Tasso Felix Guimarães, Bruno Garcia Simões, Renato R. Moreira-Oliveira, Guilherme Oliveira and Gisele Lopes Nunes'
@@ -301,8 +302,30 @@ def taxonomy_stacked_bar(level: str, top_n: int = 20, groups=None,
   long['taxon'] = long['taxon'].where(long['taxon'].isin(keep), 'Other taxa')
   long = long.groupby(['group', 'taxon'], as_index=False)['abundance'].sum()
   long['relative_abundance'] = long['abundance'] * float(display_factor)
-  fig = px.bar(long, x='group', y='relative_abundance', color='taxon', title=f'{level} relative abundance')
-  fig.update_layout(barmode='stack', xaxis_title='Sample/group', yaxis_title='Relative abundance (%)', height=650)
+  taxon_order = [str(value) for value in ranking.index if str(value) in set(long['taxon'].astype(str))]
+  if 'Other taxa' in set(long['taxon'].astype(str)):
+    taxon_order.append('Other taxa')
+  palette = build_taxonomy_palette(taxon_order, load_taxonomy_palette())
+  color_map = {taxon: palette[taxon] for taxon in taxon_order}
+  fig = px.bar(
+    long,
+    x='group',
+    y='relative_abundance',
+    color='taxon',
+    title=f'{level} relative abundance',
+    color_discrete_map=color_map,
+    category_orders={'taxon': taxon_order},
+  )
+  fig.update_layout(
+    barmode='stack',
+    xaxis_title='Sample/group',
+    yaxis_title='Relative abundance (%)',
+    height=650,
+    meta={
+      'taxonomy_palette_source': 'data/taxonomy_palette.json',
+      'matches_article_taxonomy_palette': True,
+    },
+  )
   return fig
 
 

@@ -1,0 +1,38 @@
+name: Run one-time KEGG explorer patch
+
+on:
+  push:
+    paths:
+      - '.github/workflows/run_one_time_kegg_patch.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: true
+      - name: Apply patch
+        run: python scripts/one_time_fix_kegg_explorer.py
+      - name: Verify correction and ST8 identity
+        run: |
+          test "$(git hash-object tables/Supplementary_Table_8.xlsx)" = "6a9c77a58a2d17541195c51ab8a4f4526b29db98"
+          python -m py_compile app.py
+          grep -F "Complete in all" app.py
+          grep -F "Complete in at least one" app.py
+          grep -F "Full matrix — Complete, 1 block missing and Incomplete" app.py
+          grep -F "no synthetic, simulated or randomly generated values" app.py
+      - name: Commit application correction
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git rm .github/workflows/run_one_time_kegg_patch.yml
+          git rm -f .github/workflows/fix_kegg_completeness_explorer.yml
+          git rm scripts/one_time_fix_kegg_explorer.py
+          git add app.py
+          git commit -m 'Clarify KEGG completeness filters and ST8 provenance'
+          git push

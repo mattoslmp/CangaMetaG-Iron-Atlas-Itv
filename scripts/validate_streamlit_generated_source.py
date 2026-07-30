@@ -22,6 +22,7 @@ TRANSFORMS = [
   PROJECT_ROOT / "src" / "app_scientific_contact_recipient_transform.py",
   PROJECT_ROOT / "src" / "app_bvbrc_cli_runtime_transform.py",
   PROJECT_ROOT / "src" / "app_antismash_clean_names_transform.py",
+  PROJECT_ROOT / "src" / "app_repository_mag_download_transform.py",
 ]
 
 
@@ -41,6 +42,30 @@ def main() -> int:
   compile(source, str(CORE_PATH), "exec")
   if ".repaired" in source.casefold():
     raise RuntimeError("Generated public Streamlit source still exposes .repaired")
+  forbidden_public_controls = [
+    "Remote BV-BRC metagenomes directory",
+    "When selecting a MAG without a local folder, try to download it automatically",
+    "Force update: download again",
+    "Batch download MAG2–MAG50",
+    "Downloading with p3-cp",
+  ]
+  present = [text for text in forbidden_public_controls if text in source]
+  if present:
+    raise RuntimeError(
+      "Generated Streamlit source still exposes server-side BV-BRC controls: "
+      + "; ".join(present)
+    )
+  required = [
+    "def repository_mag_download_panel(",
+    "Prepare the complete ZIP package for this MAG",
+    "The application acts only as a download intermediary",
+  ]
+  missing = [text for text in required if text not in source]
+  if missing:
+    raise RuntimeError(
+      "Generated Streamlit source is missing repository download features: "
+      + "; ".join(missing)
+    )
   print(
     "Generated Streamlit source compiled successfully: "
     f"{len(source.splitlines())} lines, {len(source.encode('utf-8'))} bytes"

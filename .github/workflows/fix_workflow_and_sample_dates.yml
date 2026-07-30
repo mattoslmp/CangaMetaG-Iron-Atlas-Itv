@@ -1,0 +1,169 @@
+name: Fix atlas workflow and sample dates
+
+on:
+  push:
+    paths:
+      - '.github/workflows/fix_workflow_and_sample_dates.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  apply-fixes:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          lfs: true
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Patch workflow layout, sample dates, and app table
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          # 1) Workflow figure: remove the subtitle and replace overlapping pills
+          # in stage 1 with a clean text list inside the existing box.
+          workflow = Path('scripts/generate_atlas_workflow_figure.py')
+          text = workflow.read_text(encoding='utf-8')
+          subtitle = """  ax.text(
+              0.5,
+              0.928,
+              'From curated scientific data layers to interactive exploration, publication figures, and reproducible analysis scripts',
+              ha='center',
+              va='top',
+              fontsize=11.2,
+              color=COLORS['muted'],
+            )
+
+          """
+          text = text.replace(subtitle, '')
+          old_stage1 = """  rounded_box(
+              ax, 0.035, 0.625, 0.265, 0.235,
+              COLORS['teal_soft'], COLORS['teal'],
+              'Scientific data layers',
+              number=1,
+            )
+            pill(ax, 0.060, 0.775, 0.105, 'Study metadata', COLORS['white'], COLORS['teal'])
+            pill(ax, 0.175, 0.775, 0.100, 'Sample context', COLORS['white'], COLORS['teal'])
+            pill(ax, 0.060, 0.715, 0.105, 'Taxonomic profiles', COLORS['white'], COLORS['teal'])
+            pill(ax, 0.175, 0.715, 0.100, 'KO profiles', COLORS['white'], COLORS['teal'])
+            pill(ax, 0.060, 0.655, 0.105, 'MAG annotations', COLORS['white'], COLORS['teal'])
+            pill(ax, 0.175, 0.655, 0.100, 'Iron-rich studies', COLORS['white'], COLORS['teal'])
+          """
+          new_stage1 = """  rounded_box(
+              ax, 0.035, 0.625, 0.265, 0.235,
+              COLORS['teal_soft'], COLORS['teal'],
+              'Scientific data layers',
+              'Study metadata\\nSample context\\nTaxonomic profiles\\nKO profiles\\nMAG annotations\\nIron-rich studies',
+              number=1,
+              body_size=9.4,
+            )
+          """
+          if old_stage1 not in text:
+            raise SystemExit('Scientific data layers block was not found')
+          workflow.write_text(text.replace(old_stage1, new_stage1), encoding='utf-8')
+
+          # 2) Add the collection date of all 20 Amazonian samples, obtained from
+          # Data_sem_redundancia_com_datas.xlsx supplied for this correction.
+          metadata = Path('src/sample_metadata.py')
+          text = metadata.read_text(encoding='utf-8')
+          dates_block = '''
+
+          _COLLECTION_DATES = {
+            "AM.P1.D": "2016-09-29",
+            "AM.P1.R": "2016-03-29",
+            "AM.P2.D": "2016-09-20",
+            "AM.P2.R": "2016-03-29",
+            "TIA.P1.D": "2016-09-21",
+            "TIA.P1.R": "2016-03-30",
+            "TIA.P2.D": "2016-09-21",
+            "TIA.P2.R": "2016-03-30",
+            "TI.P1.D": "2016-09-21",
+            "TI.P1.R": "2016-03-30",
+            "TI.P2.D": "2016-09-21",
+            "TI.P2.R": "2016-03-30",
+            "TI.P3.D": "2016-09-21",
+            "TI.P3.R": "2016-03-30",
+            "TI.P4.D": "2016-09-21",
+            "TI.P4.R": "2016-03-30",
+            "VI.P1.D": "2016-09-20",
+            "VI.P1.R": "2016-03-29",
+            "VI.P2.D": "2016-09-20",
+            "VI.P2.R": "2016-03-29",
+          }
+          '''
+          if '_COLLECTION_DATES = {' not in text:
+            marker = ']\n\n_SITE_COORDINATES = {'
+            if marker not in text:
+              raise SystemExit('Insertion point for collection dates was not found')
+            text = text.replace(marker, ']' + dates_block + '\n_SITE_COORDINATES = {', 1)
+          text = text.replace(
+            '      "collection_date": "Not reported in packaged metadata",',
+            '      "collection_date": _COLLECTION_DATES.get(sample_id, ""),'
+          )
+          metadata.write_text(text, encoding='utf-8')
+
+          # 3) Show the complete sample-level table in the app, with all 20 dates.
+          app = Path('app.py')
+          text = app.read_text(encoding='utf-8')
+          old_caption = '''    st.caption(txt(
+                f"Distribuição sazonal: **{n_dry} amostras do período seco** e **{n_rainy} amostras do período chuvoso**.",
+                f"Seasonal distribution: **{n_dry} dry-season samples** and **{n_rainy} rainy-season samples**."
+              ))
+              cols = [c for c in ["sample.id", "collection_date", "lake", "season", "lat", "lon", "environment_feature"] if c in meta.columns]
+              show_table(meta[cols], "metadata_preview", height=320)
+          '''
+          new_caption = '''    st.caption(txt(
+                f"Distribuição sazonal: **{n_dry} amostras do período seco** e **{n_rainy} amostras do período chuvoso**. As datas de coleta das **{total_samples} amostras** estão apresentadas abaixo.",
+                f"Seasonal distribution: **{n_dry} dry-season samples** and **{n_rainy} rainy-season samples**. Collection dates for all **{total_samples} samples** are shown below."
+              ))
+              st.markdown("##### " + txt("Datas de coleta das 20 amostras", "Collection dates for the 20 samples"))
+              cols = [c for c in ["sample.id", "collection_date", "lake", "season", "lat", "lon", "environment_feature"] if c in meta.columns]
+              sample_details = meta[cols].drop_duplicates().reset_index(drop=True)
+              show_table(sample_details, "metadata_preview", height=720)
+          '''
+          if old_caption not in text:
+            raise SystemExit('Sample table block was not found in app.py')
+          app.write_text(text.replace(old_caption, new_caption), encoding='utf-8')
+          PY
+
+      - name: Install plotting dependency
+        run: python -m pip install --upgrade matplotlib
+
+      - name: Regenerate workflow figure
+        run: python scripts/generate_atlas_workflow_figure.py
+
+      - name: Validate Python syntax and sample dates
+        run: |
+          python -m py_compile app.py src/sample_metadata.py scripts/generate_atlas_workflow_figure.py
+          python - <<'PY'
+          from src.sample_metadata import amazonian_sample_metadata
+          frame = amazonian_sample_metadata()
+          assert frame['sample.id'].nunique() == 20
+          assert frame['collection_date'].replace('', None).notna().sum() == 20
+          assert (frame['season'] == 'Dry').sum() == 10
+          assert (frame['season'] == 'Rainy').sum() == 10
+          print(frame[['sample.id', 'collection_date', 'lake', 'season']].to_string(index=False))
+          PY
+
+      - name: Commit corrected app and figures
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add app.py src/sample_metadata.py scripts/generate_atlas_workflow_figure.py
+          git add outputs/final_publication_figures/SupplementaryFigure29_complete_computational_workflow.*
+          git add outputs/app_supplementary_figures/SupplementaryFigure29_complete_computational_workflow.*
+          git add outputs/article_highres_figures/SupplementaryFigure29_complete_computational_workflow.*
+          if git diff --cached --quiet; then
+            echo 'No changes to commit.'
+          else
+            git commit -m 'Fix atlas workflow layout and add 20 sample collection dates'
+            git push
+          fi

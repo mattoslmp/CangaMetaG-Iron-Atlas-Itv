@@ -1,5 +1,6 @@
 name: Run one-time workflow, language and figure-page corrections
 
+# Triggered after the patch script was committed.
 on:
   push:
     paths:

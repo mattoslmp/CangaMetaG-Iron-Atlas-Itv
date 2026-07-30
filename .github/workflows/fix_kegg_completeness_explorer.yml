@@ -1,0 +1,256 @@
+name: Fix KEGG completeness explorer
+
+on:
+  push:
+    paths:
+      - '.github/workflows/fix_kegg_completeness_explorer.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          lfs: true
+
+      - name: Patch KEGG completeness explorer
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re
+
+          path = Path('app.py')
+          text = path.read_text(encoding='utf-8')
+
+          old_scope = '''def _kegg_scope_rows(article_status: pd.DataFrame, full_status: pd.DataFrame, scope: str) -> pd.DataFrame:
+            """Select the requested module universe without changing source statuses."""
+            if scope == "article":
+              return article_status.copy()
+            source = full_status.copy()
+            if scope == "complete":
+              return source.loc[source.eq("Complete").any(axis=1)].copy()
+            if scope == "one_missing":
+              return source.loc[source.eq("1 block missing").any(axis=1)].copy()
+            if scope == "incomplete":
+              return source.loc[source.isin(["Incomplete", "2 blocks missing"]).any(axis=1)].copy()
+            return source
+          '''
+          new_scope = '''def _kegg_scope_rows(article_status: pd.DataFrame, full_status: pd.DataFrame, scope: str) -> pd.DataFrame:
+            """Select module rows from the immutable source-status matrix."""
+            source = full_status.copy()
+            if scope == "all_complete":
+              return source.loc[source.eq("Complete").all(axis=1)].copy()
+            if scope == "complete_any":
+              return source.loc[source.eq("Complete").any(axis=1)].copy()
+            if scope == "one_missing":
+              return source.loc[source.eq("1 block missing").any(axis=1)].copy()
+            return source
+          '''
+          if old_scope not in text:
+            raise SystemExit('Expected _kegg_scope_rows block was not found.')
+          text = text.replace(old_scope, new_scope, 1)
+
+          old_selector = '''    st.markdown("##### " + txt("Explorador interativo da matriz completa", "Interactive complete-matrix explorer"))
+              scope_labels = {
+                "article": txt("1. Selecionados para o artigo", "1. Selected for the article"),
+                "complete": txt("2. Completos — todos", "2. Complete — all"),
+                "one_missing": txt("3. Um bloco ausente", "3. One block missing"),
+                "incomplete": txt("4. Incompletos", "4. Incomplete"),
+                "all": txt("5. Todos os módulos da matriz-fonte", "5. All modules in the source matrix"),
+              }
+              c1, c2 = st.columns([0.48, 0.52])
+              with c1:
+                scope = st.radio(
+                  txt("Conjunto de módulos", "Module set"),
+                  list(scope_labels), format_func=lambda value: scope_labels[value],
+                  key=f"{key_prefix}_module_scope_v8",
+                )
+          '''
+          new_selector = '''    entity_plural = "MAGs" if key_prefix == "kegg_mags" else "samples"
+              entity_singular = "MAG" if key_prefix == "kegg_mags" else "sample"
+              st.markdown("##### KEGG module completeness explorer")
+              scope_labels = {
+                "all_complete": f"1. Complete in all {entity_plural}",
+                "complete_any": f"2. Complete in at least one {entity_singular}",
+                "one_missing": f"3. One block missing in at least one {entity_singular}",
+                "all": "4. Full matrix — Complete, 1 block missing and Incomplete",
+              }
+              c1, c2 = st.columns([0.48, 0.52])
+              with c1:
+                scope = st.radio(
+                  "Module set",
+                  list(scope_labels), format_func=lambda value: scope_labels[value],
+                  key=f"{key_prefix}_module_scope_v9",
+                )
+          '''
+          if old_selector not in text:
+            raise SystemExit('Expected KEGG selector block was not found.')
+          text = text.replace(old_selector, new_selector, 1)
+
+          text = text.replace('key=f"{key_prefix}_show_all_modules_v8_{scope}"', 'key=f"{key_prefix}_show_all_modules_v9_{scope}"', 1)
+          text = text.replace('key=f"{key_prefix}_module_count_v8_{scope}_{available}"', 'key=f"{key_prefix}_module_count_v9_{scope}_{available}"', 1)
+          text = text.replace('key=f"{key_prefix}_samples_v8_{scope}"', 'key=f"{key_prefix}_samples_v9_{scope}"', 1)
+          text = text.replace('key=f"{key_prefix}_visible_states_v8_{scope}"', 'key=f"{key_prefix}_visible_states_v9_{scope}"', 1)
+          text = text.replace('key=f"{key_prefix}_interactive_v8_{scope}_{module_count}_{len(sample_filter)}"', 'key=f"{key_prefix}_interactive_v9_{scope}_{module_count}_{len(sample_filter)}"', 1)
+          text = text.replace('f"{key_prefix}_status_matrix_v8_{scope}_{module_count}"', 'f"{key_prefix}_status_matrix_v9_{scope}_{module_count}"', 1)
+
+          old_controls = '''      show_all = st.checkbox(
+                txt(f"Mostrar todos os {available} módulos deste conjunto", f"Show all {available} modules in this set"),
+                value=False,
+                key=f"{key_prefix}_show_all_modules_v9_{scope}",
+              )
+              module_count = available if show_all else int(st.number_input(
+                txt("Número de módulos exibidos", "Number of displayed modules"),
+                min_value=1, max_value=max(1, available), value=min(40, max(1, available)),
+                step=1, key=f"{key_prefix}_module_count_v9_{scope}_{available}",
+              ))
+
+            if scope == "article":
+              st.info(txt(
+                "Este conjunto reproduz as linhas destacadas na figura estática do artigo. Elas foram priorizadas por relevância para os ciclos biogeoquímicos discutidos e pela presença de evidência de completude na matriz temática; os estados de todas as células dessas linhas permanecem inalterados.",
+                "This set reproduces the rows highlighted in the static article figure. They were prioritised for relevance to the discussed biogeochemical cycles and evidence of completeness in the thematic matrix; every cell status in those rows remains unchanged."
+              ))
+            else:
+              st.caption(txt(
+                "Os conjuntos 2–5 são calculados diretamente da matriz-fonte completa e não alteram os valores da figura estática.",
+                "Sets 2–5 are selected directly from the complete source matrix and do not alter the static-figure values."
+              ))
+          '''
+          new_controls = '''      if available == 0:
+                st.info("No module matches this source-matrix criterion.")
+                return
+              show_all = st.checkbox(
+                f"Show all {available} modules in this set",
+                value=False,
+                key=f"{key_prefix}_show_all_modules_v9_{scope}",
+              )
+              module_count = available if show_all else int(st.number_input(
+                "Number of displayed modules",
+                min_value=1, max_value=available, value=min(40, available),
+                step=1, key=f"{key_prefix}_module_count_v9_{scope}_{available}",
+              ))
+
+            scope_descriptions = {
+              "all_complete": f"Modules classified as Complete in every {entity_singular} of the immutable source matrix.",
+              "complete_any": f"Modules classified as Complete in at least one {entity_singular}; all original cell statuses for the retained rows are preserved.",
+              "one_missing": f"Modules with at least one '1 block missing' call; Complete and Incomplete calls in the same retained rows remain visible.",
+              "all": "All modules and all original statuses from the source matrix. No row-selection filter is applied.",
+            }
+            st.caption(scope_descriptions[scope])
+          '''
+          if old_controls not in text:
+            raise SystemExit('Expected KEGG controls block was not found.')
+          text = text.replace(old_controls, new_controls, 1)
+
+          old_states = '''      visible_states = st.multiselect(
+                txt("Estados visíveis", "Visible states"),
+                ["Complete", "1 block missing", "Incomplete", "2 blocks missing", "Missing data"],
+                default=["Complete", "1 block missing", "Incomplete", "2 blocks missing"],
+                key=f"{key_prefix}_visible_states_v9_{scope}",
+              )
+            if not sample_filter:
+              sample_filter = all_samples
+
+            view_original = scope_status.loc[selected_modules, sample_filter].copy()
+            numeric, view_visual = _kegg_status_to_numeric_matrix(view_original)
+            if visible_states:
+              visible_mask = view_original.isin(visible_states)
+              numeric = numeric.where(visible_mask)
+          '''
+          new_states = '''      visible_states = st.multiselect(
+                "Visible states",
+                ["Complete", "1 block missing", "Incomplete"],
+                default=["Complete", "1 block missing", "Incomplete"],
+                key=f"{key_prefix}_visible_states_v9_{scope}",
+              )
+            if not sample_filter:
+              sample_filter = all_samples
+
+            view_original = scope_status.loc[selected_modules, sample_filter].copy()
+            numeric, view_visual = _kegg_status_to_numeric_matrix(view_original)
+            if visible_states:
+              raw_visible_states = set(visible_states)
+              if "Incomplete" in raw_visible_states:
+                raw_visible_states.add("2 blocks missing")
+              visible_mask = view_original.isin(raw_visible_states)
+              numeric = numeric.where(visible_mask)
+          '''
+          if old_states not in text:
+            raise SystemExit('Expected visible-state block was not found.')
+          text = text.replace(old_states, new_states, 1)
+
+          replacements = {
+            'st.caption(txt("Matriz interativa não encontrada.", "Interactive matrix not found."))': 'st.caption("Interactive matrix not found.")',
+            'st.info(txt("Matriz de status KEGG vazia.", "Empty KEGG status matrix."))': 'st.info("Empty KEGG status matrix.")',
+            'txt(f"Mostrar todos os {available} módulos deste conjunto", f"Show all {available} modules in this set")': 'f"Show all {available} modules in this set"',
+            'txt("Amostras/MAGs", "Samples/MAGs")': '"Samples/MAGs"',
+            'st.info(txt("Nenhum módulo corresponde aos filtros.", "No module matches the filters."))': 'st.info("No module matches the filters.")',
+            'm1.metric(txt("Módulos na matriz-fonte", "Modules in source matrix"), len(full_status))': 'm1.metric("Modules in source matrix", len(full_status))',
+            'm2.metric(txt("Módulos no conjunto", "Modules in selected set"), available)': 'm2.metric("Modules in selected set", available)',
+            'm3.metric(txt("Módulos exibidos", "Displayed modules"), len(view_original))': 'm3.metric("Displayed modules", len(view_original))',
+            'm4.metric(txt("Amostras/MAGs", "Samples/MAGs"), len(sample_filter))': 'm4.metric("Samples/MAGs", len(sample_filter))',
+            'txt("Baixar matriz exibida", "Download displayed matrix")': '"Download displayed matrix"',
+            'txt("Baixar matriz-fonte completa", "Download complete source matrix")': '"Download complete source matrix"',
+            'st.warning(txt(f"A versão interativa não pôde ser gerada: {exc}", f"Interactive version could not be generated: {exc}"))': 'st.warning(f"Interactive version could not be generated: {exc}")',
+          }
+          for old, new in replacements.items():
+            if old not in text:
+              raise SystemExit(f'Expected text fragment not found: {old}')
+            text = text.replace(old, new, 1)
+
+          text = text.replace(
+            '  st.markdown("### Direct visualization of KEGG module completeness")\n  st.caption(txt(\n    "Esta seção mostra diretamente as figuras finais de completude de módulos KEGG. Os arquivos exibidos são os mesmos sincronizados com o artigo, as figuras suplementares e a seção Final figures & scripts.",\n    "This section directly shows the final KEGG module completeness figures. The displayed files are the same files synchronized with the manuscript, supplementary figures and Final figures & scripts section."\n  ))',
+            '  st.markdown("### Direct visualization of KEGG module completeness")\n  st.caption("The displayed files are the same source-linked figures used in the manuscript, supplementary material and Final figures & scripts section.")\n  st.info("Data provenance: no synthetic, simulated or randomly generated values are used. MAG and lagoon-metagenome panels read their original packaged KEMET status matrices. ST8 external and combined panels use categorical module-status matrices deterministically derived from the KO profiles in tables/Supplementary_Table_8.xlsx; no imputation or value replacement is applied.")',
+            1,
+          )
+
+          caption_replacements = {
+            'txt("Completude dos módulos KEGG nos MAGs.", "KEGG module completeness in MAGs.")': '"KEGG module completeness in MAGs."',
+            'txt("Completude dos módulos KEGG nos metagenomas das lagoas.", "KEGG module completeness in lagoon metagenomes.")': '"KEGG module completeness in lagoon metagenomes."',
+            'txt("S40 — versão final por environmental group: todos os mesmos registros e estados da matriz-fonte, com alteração exclusiva da ordem das colunas para manter cada grupo lado a lado.", "S40 — final environmental-group version: all records and statuses from the same source matrix, with only the column order changed to keep each group together.")': '"S40 — external iron-rich metagenomes grouped by environmental context; source statuses are unchanged."',
+            'txt("S67 — ordem original: completude combinada dos módulos KEGG nas lagoas e nos metagenomas externos ricos em ferro.", "S67 — original order: combined KEGG module completeness in lagoon and external iron-rich metagenomes.")': '"S67 — combined KEGG module completeness in lagoon and external iron-rich metagenomes, original source order."',
+            'txt("S67 — por environmental group: as mesmas amostras, registros, módulos e estados da versão original, somente com as colunas do mesmo grupo ambiental lado a lado.", "S67 — by environmental group: the same samples, records, modules and statuses as the original version, with only columns from the same environmental group placed side by side.")': '"S67 — the same combined matrix, with columns grouped by environmental context; source statuses are unchanged."',
+          }
+          for old, new in caption_replacements.items():
+            if old not in text:
+              raise SystemExit(f'Expected caption not found: {old[:80]}')
+            text = text.replace(old, new, 1)
+
+          # Ensure the deprecated/confusing labels are fully removed from the app.
+          forbidden = [
+            'Interactive complete-matrix explorer',
+            'Selected for the article',
+            'Complete — all',
+            'All modules in the source matrix',
+            'Explorador interativo da matriz completa',
+          ]
+          for phrase in forbidden:
+            if phrase in text:
+              raise SystemExit(f'Forbidden legacy phrase remains: {phrase}')
+
+          compile(text, str(path), 'exec')
+          path.write_text(text, encoding='utf-8')
+          PY
+
+      - name: Verify ST8 source identity and app text
+        run: |
+          test "$(git hash-object tables/Supplementary_Table_8.xlsx)" = "6a9c77a58a2d17541195c51ab8a4f4526b29db98"
+          python -m py_compile app.py
+          grep -F "Complete in all" app.py
+          grep -F "Complete in at least one" app.py
+          grep -F "Full matrix — Complete, 1 block missing and Incomplete" app.py
+          grep -F "no synthetic, simulated or randomly generated values" app.py
+
+      - name: Commit correction and remove one-time workflow
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git rm .github/workflows/fix_kegg_completeness_explorer.yml
+          git add app.py
+          git commit -m 'Clarify KEGG completeness filters and ST8 provenance'
+          git push

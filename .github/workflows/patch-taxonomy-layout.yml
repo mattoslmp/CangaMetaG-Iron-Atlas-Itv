@@ -1,0 +1,85 @@
+name: One-time taxonomy layout repair
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/patch-taxonomy-layout.yml
+
+permissions:
+  contents: write
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Insert maps explicitly without Streamlit monkeypatches
+        shell: bash
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          path = Path("app.py")
+          text = path.read_text(encoding="utf-8")
+
+          taxonomy_anchor = '''    csv_button(meta, "taxonomy_sample_metadata.csv", txt("Baixar metadados", "Download metadata"))
+
+  st.markdown("### " + txt("Figuras taxonômicas finais usadas no artigo", "Final taxonomy figures used in the article"))'''
+          taxonomy_replacement = '''    csv_button(meta, "taxonomy_sample_metadata.csv", txt("Baixar metadados", "Download metadata"))
+
+  # Render the sampling maps exactly once, after the metadata table closes.
+  if {"lat", "lon"}.issubset(meta.columns):
+    show_high_quality_sample_map(meta, key="taxonomy_sampling_map_after_metadata_v4")
+
+  st.markdown("### " + txt("Figuras taxonômicas finais usadas no artigo", "Final taxonomy figures used in the article"))'''
+
+          if "taxonomy_sampling_map_after_metadata_v4" not in text:
+            if taxonomy_anchor not in text:
+              raise SystemExit("Active taxonomy insertion anchor was not found")
+            text = text.replace(taxonomy_anchor, taxonomy_replacement, 1)
+
+          overview_anchor = '''    csv_button(meta, "article_sample_dates_coordinates.csv", txt("Baixar datas/coordenadas", "Download dates/coordinates"))
+
+  if st.session_state.get("admin_authenticated", False):'''
+          overview_replacement = '''    csv_button(meta, "article_sample_dates_coordinates.csv", txt("Baixar datas/coordenadas", "Download dates/coordinates"))
+
+  # Canonical static Figure 1 follows the study-sample table on Article Atlas.
+  figure1_sampling_path = BASE_DIR / "outputs" / "final_publication_figures" / "Figure1_sampling_map.png"
+  st.markdown("### " + txt("Área de estudo e desenho amostral", "Study area and sampling design"))
+  if figure1_sampling_path.exists():
+    st.image(str(figure1_sampling_path), width="stretch")
+    st.caption(txt(
+      "Área de estudo e desenho amostral. Localização das lagoas lateríticas amazônicas Amendoim, Violão, Três Irmãs e Três Irmãs Adjacent. O estudo inclui 20 metagenomas de sedimento, compreendendo 10 amostras do período seco e 10 do período chuvoso.",
+      "Study area and sampling design. Location of the Amazonian lateritic lakes Amendoim, Violão, Três Irmãs and Três Irmãs Adjacent. The study includes 20 sediment metagenomes, comprising 10 dry-season and 10 rainy-season samples.",
+    ))
+  else:
+    st.warning(txt(
+      "A Figura 1 do mapa amostral não foi encontrada no diretório canônico de figuras finais.",
+      "Figure 1 sampling map was not found in the canonical final-figures directory.",
+    ))
+
+  if st.session_state.get("admin_authenticated", False):'''
+
+          if "figure1_sampling_path =" not in text:
+            if overview_anchor not in text:
+              raise SystemExit("Article Atlas insertion anchor was not found")
+            text = text.replace(overview_anchor, overview_replacement, 1)
+
+          compile(text, str(path), "exec")
+          path.write_text(text, encoding="utf-8")
+          PY
+
+          rm -f .github/workflows/patch-taxonomy-layout.yml
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add app.py .github/workflows/patch-taxonomy-layout.yml
+          if git diff --cached --quiet; then
+            echo "No changes required"
+            exit 0
+          fi
+          git commit -m "Place sampling maps explicitly without breaking taxonomy"
+          git push origin HEAD:main

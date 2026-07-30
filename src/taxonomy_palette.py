@@ -31,8 +31,11 @@ NEUTRAL_COLORS = {
   "Unknown": "#6CA6A1",
 }
 
+# The historical Chloroflexi colour is intentionally transferred to the current
+# NCBI label Chloroflexota. This changes the displayed name only, never the
+# palette identity or any scientific value.
 FIXED_COLORS = {
-  "Chloroflexi": "#7B2CBF",
+  "Chloroflexota": "#7B2CBF",
   "Candidatus Rokubacteria": "#00A6A6",
   **NEUTRAL_COLORS,
 }
@@ -49,9 +52,6 @@ def _candidate_colour(taxon: str, attempt: int = 0) -> str:
   """Return a deterministic high-contrast candidate colour for one taxon."""
   digest = hashlib.sha256(f"{taxon}|{attempt}".encode("utf-8")).digest()
   hue = ((int.from_bytes(digest[:4], "big") / 2**32) + attempt * 0.071) % 1.0
-  # Continuous saturation/lightness coordinates keep the available RGB space
-  # in the millions. The previous handful of discrete HLS combinations became
-  # saturated when the complete Species catalogue (>25,000 labels) was added.
   saturation = 0.56 + (digest[4] / 255.0) * 0.38
   lightness = 0.34 + (digest[5] / 255.0) * 0.34
   r, g, b = colorsys.hls_to_rgb(hue, lightness, saturation)
@@ -69,14 +69,16 @@ def _next_unique_colour(taxon: str, used: set[str]) -> str:
 
 def build_palette(taxa: Iterable[object], existing: dict[str, str] | None = None) -> dict[str, str]:
   """Build an order-independent taxonomy palette with no repeated hex colours."""
-  mapping: dict[str, str] = {k: v.upper() for k, v in FIXED_COLORS.items()}
+  mapping: dict[str, str] = {key: value.upper() for key, value in FIXED_COLORS.items()}
   used: set[str] = set(mapping.values())
 
-  # Preserve valid previously assigned colours whenever they remain globally
-  # unique. Any duplicate legacy colour is deterministically reassigned.
   if existing:
-    for raw_taxon, raw_colour in sorted(existing.items(), key=lambda kv: _normalise_taxon(kv[0]).casefold()):
+    for raw_taxon, raw_colour in sorted(existing.items(), key=lambda item: _normalise_taxon(item[0]).casefold()):
       taxon = _normalise_taxon(raw_taxon)
+      # Do not reintroduce a legacy label whose colour has been transferred to
+      # the current NCBI name.
+      if taxon == "Chloroflexi":
+        continue
       if taxon in mapping:
         continue
       colour = str(raw_colour or "").strip().upper()
@@ -85,18 +87,20 @@ def build_palette(taxa: Iterable[object], existing: dict[str, str] | None = None
       mapping[taxon] = colour
       used.add(colour)
 
-  for taxon in sorted({_normalise_taxon(x) for x in taxa}, key=lambda x: x.casefold()):
+  for taxon in sorted({_normalise_taxon(value) for value in taxa}, key=lambda value: value.casefold()):
+    if taxon == "Chloroflexi":
+      taxon = "Chloroflexota"
     if taxon in mapping:
       continue
     colour = _next_unique_colour(taxon, used)
     mapping[taxon] = colour
     used.add(colour)
 
-  if mapping["Chloroflexi"] == mapping["Candidatus Rokubacteria"]:
-    raise ValueError("Chloroflexi and Candidatus Rokubacteria must have different colours")
+  if mapping["Chloroflexota"] == mapping["Candidatus Rokubacteria"]:
+    raise ValueError("Chloroflexota and Candidatus Rokubacteria must have different colours")
   if len(mapping) != len(set(mapping.values())):
     raise ValueError("The canonical taxonomy palette contains repeated colours")
-  return dict(sorted(mapping.items(), key=lambda kv: kv[0].casefold()))
+  return dict(sorted(mapping.items(), key=lambda item: item[0].casefold()))
 
 
 def load_palette(path: Path | None = None) -> dict[str, str]:
@@ -107,7 +111,7 @@ def load_palette(path: Path | None = None) -> dict[str, str]:
     try:
       data = json.loads(candidate.read_text(encoding="utf-8"))
       if isinstance(data, dict):
-        return build_palette([], {str(k): str(v) for k, v in data.items()})
+        return build_palette([], {str(key): str(value) for key, value in data.items()})
     except Exception:
       continue
   return build_palette([])

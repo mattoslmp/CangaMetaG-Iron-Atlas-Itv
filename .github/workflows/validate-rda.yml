@@ -58,141 +58,30 @@ jobs:
           ref: ${{ github.head_ref }}
           fetch-depth: 0
 
-      - name: Apply requested Streamlit layout
+      - name: Apply app-only sampling-map layout
+        run: python scripts/one_time_sampling_map_layout.py
+
+      - name: Validate and commit correction
         shell: bash
         run: |
-          python - <<'PY'
-          from pathlib import Path
-
-          path = Path('app.py')
-          text = path.read_text(encoding='utf-8')
-
-          taxonomy_title_old = '  with st.expander(txt("Amostras, datas, coordenadas e environment_feature", "Samples, dates, coordinates and environment_feature"), expanded=True):'
-          taxonomy_title_new = '  with st.expander(txt("Amostras, datas e coordenadas geográficas", "Samples, collection dates and geographic coordinates"), expanded=True):'
-          if taxonomy_title_new not in text:
-            if taxonomy_title_old not in text:
-              raise SystemExit('Active taxonomy metadata expander anchor was not found.')
-            text = text.replace(taxonomy_title_old, taxonomy_title_new, 1)
-
-          taxonomy_anchor = '''    csv_button(meta, "taxonomy_sample_metadata.csv", txt("Baixar metadados", "Download metadata"))
-
-  st.markdown("### " + txt("Figuras taxonômicas finais usadas no artigo", "Final taxonomy figures used in the article"))'''
-          taxonomy_replacement = '''    csv_button(meta, "taxonomy_sample_metadata.csv", txt("Baixar metadados", "Download metadata"))
-
-  # App-only interactive map placement requested for the active taxonomy page.
-  # Canonical Figure 1 files in outputs/final_publication_figures are not modified.
-  if {"lat", "lon"}.issubset(meta.columns):
-    show_high_quality_sample_map(meta, key="taxonomy_active_sampling_map")
-  else:
-    st.warning(txt(
-      "As colunas de latitude e longitude não estão disponíveis para o mapa interativo.",
-      "Latitude and longitude columns are not available for the interactive sampling map."
-    ))
-
-  st.markdown("### " + txt("Figuras taxonômicas finais usadas no artigo", "Final taxonomy figures used in the article"))'''
-          if 'taxonomy_active_sampling_map' not in text:
-            if taxonomy_anchor not in text:
-              raise SystemExit('Active taxonomy map insertion anchor was not found.')
-            text = text.replace(taxonomy_anchor, taxonomy_replacement, 1)
-
-          overview_anchor = '''    csv_button(meta, "article_sample_dates_coordinates.csv", txt("Baixar datas/coordenadas", "Download dates/coordinates"))
-
-  if st.session_state.get("admin_authenticated", False):'''
-          overview_replacement = '''    csv_button(meta, "article_sample_dates_coordinates.csv", txt("Baixar datas/coordenadas", "Download dates/coordinates"))
-
-  # Display the canonical static Figure 1 after the study-sample section.
-  # The interactive Google/satellite map remains outside the Article Atlas page.
-  st.markdown("### " + txt("Área de estudo e desenho amostral", "Study area and sampling design"))
-  figure1_path = BASE_DIR / "outputs" / "final_publication_figures" / "Figure1_sampling_map.png"
-  figure1_caption = txt(
-    "Área de estudo e desenho amostral. Localização das lagoas lateríticas amazônicas Amendoim, Violão, Três Irmãs e Três Irmãs Adjacent. O estudo inclui 20 metagenomas de sedimento, compreendendo 10 amostras do período seco e 10 do período chuvoso.",
-    "Study area and sampling design. Location of the Amazonian lateritic lakes Amendoim, Violão, Três Irmãs and Três Irmãs Adjacent. The study includes 20 sediment metagenomes, comprising 10 dry-season and 10 rainy-season samples."
-  )
-  if figure1_path.exists():
-    st.image(str(figure1_path), width="stretch", caption=figure1_caption)
-  else:
-    st.warning(txt(
-      "A Figura 1 do mapa amostral não foi encontrada no diretório canônico de figuras finais.",
-      "Figure 1 sampling map was not found in the canonical final-figures directory."
-    ))
-
-  if st.session_state.get("admin_authenticated", False):'''
-          if 'figure1_caption = txt(' not in text:
-            if overview_anchor not in text:
-              raise SystemExit('Article Atlas Figure 1 insertion anchor was not found.')
-            text = text.replace(overview_anchor, overview_replacement, 1)
-
-          compile(text, str(path), 'exec')
-          path.write_text(text, encoding='utf-8')
-          PY
-
-      - name: Restore CI, validate and commit correction
-        shell: bash
-        run: |
-          python -m py_compile app.py
+          python -m py_compile app.py scripts/one_time_sampling_map_layout.py
           test -f outputs/final_publication_figures/Figure1_sampling_map.png
           test -f outputs/final_publication_figures/Figure1_sampling_map.pdf
           test -f outputs/final_publication_figures/Figure1_sampling_map.svg
           grep -F 'taxonomy_active_sampling_map' app.py
           grep -F 'Figure1_sampling_map.png' app.py
-          cat > .github/workflows/validate-rda.yml <<'YAML'
-          name: Validate article RDA
-
-          on:
-            push:
-              branches: [main]
-            pull_request:
-
-          jobs:
-            rda:
-              runs-on: ubuntu-latest
-              steps:
-                - name: Check out repository
-                  uses: actions/checkout@v4
-
-                - name: Set up Python
-                  uses: actions/setup-python@v5
-                  with:
-                    python-version: '3.10'
-
-                - name: Install compact RDA dependencies
-                  run: |
-                    python -m pip install --upgrade pip
-                    python -m pip install numpy pandas
-
-                - name: Reproduce the article RDA from derived source matrices
-                  run: python scripts/run_article_rda_from_derived.py
-
-                - name: Verify article statistics and trace-metal predictors
-                  run: |
-                    python - <<'PY'
-                    import json
-                    import subprocess
-
-                    output = subprocess.check_output(
-                      ['python', 'scripts/run_article_rda_from_derived.py'],
-                      text=True,
-                    )
-                    result = json.loads(output)
-                    expected_predictors = ['Fe2O3', 'SiO2', 'Al2O3', 'TOT/S', 'Cu', 'Pb']
-                    assert result['n_positions'] == 10
-                    assert result['predictors'] == expected_predictors
-                    assert abs(result['constrained_R2'] - 0.6605827831733045) < 1e-12
-                    assert abs(result['pseudo_F'] - 0.9731132518103737) < 1e-12
-                    assert abs(result['permutation_P'] - 0.534) < 1e-12
-                    print('Article RDA validation: PASS')
-                    PY
-          YAML
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git rm .github/workflows/apply_sampling_map_layout.yml
-          git rm -f .github/sampling_map_layout_trigger_v2.txt
+          git rm scripts/one_time_sampling_map_layout.py
+          git rm -f .github/sampling_map_layout_trigger_v3.txt
           git add app.py .github/workflows/validate-rda.yml
           changed="$(git diff --cached --name-only | sort)"
-          expected=".github/sampling_map_layout_trigger_v2.txt
+          expected=".github/sampling_map_layout_trigger_v3.txt
 .github/workflows/apply_sampling_map_layout.yml
 .github/workflows/validate-rda.yml
-app.py"
+app.py
+scripts/one_time_sampling_map_layout.py"
           test "$changed" = "$expected"
           git commit -m 'Place sampling maps in Streamlit app'
           git push origin HEAD:${{ github.head_ref }}

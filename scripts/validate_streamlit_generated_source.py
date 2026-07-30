@@ -20,6 +20,7 @@ TRANSFORMS = [
   PROJECT_ROOT / "src" / "app_environment_reference_fix_transform.py",
   PROJECT_ROOT / "src" / "app_remove_static_overview_map_transform.py",
   PROJECT_ROOT / "src" / "app_scientific_contact_recipient_transform.py",
+  PROJECT_ROOT / "src" / "app_bvbrc_cli_runtime_transform.py",
 ]
 
 

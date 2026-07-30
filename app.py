@@ -25,6 +25,7 @@ TRANSFORMS = [
   Path(__file__).with_name("src") / "app_scientific_module_clarity_transform.py",
   Path(__file__).with_name("src") / "app_kegg_interactive_explanation_transform.py",
   Path(__file__).with_name("src") / "app_public_release_v1_transform.py",
+  Path(__file__).with_name("src") / "app_release_date_localization_transform.py",
   Path(__file__).with_name("src") / "app_visit_footer_position_fix_transform.py",
   Path(__file__).with_name("src") / "app_traceability_heatmap_repair_transform.py",
 ]

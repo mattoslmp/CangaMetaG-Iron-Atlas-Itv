@@ -29,6 +29,7 @@ TRANSFORMS = [
   Path(__file__).with_name("src") / "app_visit_footer_position_fix_transform.py",
   Path(__file__).with_name("src") / "app_traceability_heatmap_repair_transform.py",
   Path(__file__).with_name("src") / "app_taxonomy_article_alignment_transform.py",
+  Path(__file__).with_name("src") / "app_kegg_s67_axis_readability_transform.py",
 ]
 
 source = CORE_PATH.read_text(encoding="utf-8")

@@ -24,6 +24,7 @@ TRANSFORMS = [
   PROJECT_ROOT / "src" / "app_antismash_clean_names_transform.py",
   PROJECT_ROOT / "src" / "app_repository_mag_download_transform.py",
   PROJECT_ROOT / "src" / "app_bvbrc_public_direct_download_transform.py",
+  PROJECT_ROOT / "src" / "app_visitor_world_map_transform.py",
 ]
 
 
@@ -66,11 +67,17 @@ def main() -> int:
     "Download {mag_id} directly from BV-BRC",
     "No personal credential will be used",
     "def repository_mag_download_panel(",
+    "def _visitor_world_map_frame(",
+    "def _visitor_world_map_figure(",
+    "Mapa-múndi detalhado de visitas",
+    "Detailed world map of visits",
+    "<b>Visits:</b>",
+    "Visit details by country, region and city",
   ]
   missing = [text for text in required if text not in source]
   if missing:
     raise RuntimeError(
-      "Generated Streamlit source is missing anonymous BV-BRC download features: "
+      "Generated Streamlit source is missing required public features: "
       + "; ".join(missing)
     )
 

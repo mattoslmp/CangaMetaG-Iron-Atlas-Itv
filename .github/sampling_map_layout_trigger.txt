@@ -1,1 +1,1 @@
-Trigger the one-time Streamlit layout correction for the Article Atlas and active Taxonomic profiles page.
+Trigger the active CI correction for Article Atlas and Taxonomic profiles sampling-map placement.

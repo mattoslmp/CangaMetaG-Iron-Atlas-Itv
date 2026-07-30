@@ -7,6 +7,8 @@ CORE_PATH = Path(__file__).with_name("app_core.py")
 TRANSFORMS = [
   Path(__file__).with_name("src") / "app_base_transform.py",
   Path(__file__).with_name("src") / "app_summary_transform.py",
+  Path(__file__).with_name("src") / "app_map_transform.py",
+  Path(__file__).with_name("src") / "app_bvbrc_transform.py",
   Path(__file__).with_name("src") / "app_kegg_mtx_transform.py",
   Path(__file__).with_name("src") / "app_ko_mtx_transform.py",
 ]

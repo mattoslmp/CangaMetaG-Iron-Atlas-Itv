@@ -2,36 +2,36 @@
 from __future__ import annotations
 
 from pathlib import Path
+import re
 import runpy
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
+APP_PATH = PROJECT_ROOT / "app.py"
 CORE_PATH = PROJECT_ROOT / "app_core.py"
-TRANSFORMS = [
-  PROJECT_ROOT / "src" / "app_base_transform.py",
-  PROJECT_ROOT / "src" / "app_summary_transform.py",
-  PROJECT_ROOT / "src" / "app_map_transform.py",
-  PROJECT_ROOT / "src" / "app_bvbrc_transform.py",
-  PROJECT_ROOT / "src" / "app_kegg_mtx_transform.py",
-  PROJECT_ROOT / "src" / "app_ko_mtx_transform.py",
-  PROJECT_ROOT / "src" / "app_public_ui_transform.py",
-  PROJECT_ROOT / "src" / "app_public_runtime_defaults_transform.py",
-  PROJECT_ROOT / "src" / "app_environment_details_transform.py",
-  PROJECT_ROOT / "src" / "app_environment_reference_fix_transform.py",
-  PROJECT_ROOT / "src" / "app_remove_static_overview_map_transform.py",
-  PROJECT_ROOT / "src" / "app_scientific_contact_recipient_transform.py",
-  PROJECT_ROOT / "src" / "app_bvbrc_cli_runtime_transform.py",
-  PROJECT_ROOT / "src" / "app_antismash_clean_names_transform.py",
-  PROJECT_ROOT / "src" / "app_repository_mag_download_transform.py",
-  PROJECT_ROOT / "src" / "app_bvbrc_public_direct_download_transform.py",
-  PROJECT_ROOT / "src" / "app_visitor_world_map_transform.py",
-  PROJECT_ROOT / "src" / "app_scientific_module_clarity_transform.py",
-]
+
+
+def transform_paths() -> list[Path]:
+  """Read the authoritative transform order directly from app.py."""
+  app_text = APP_PATH.read_text(encoding="utf-8")
+  transform_names = re.findall(
+    r'with_name\("src"\) / "([^"]+\.py)"',
+    app_text,
+  )
+  if not transform_names:
+    raise RuntimeError("No Streamlit transforms were discovered in app.py")
+  paths = [PROJECT_ROOT / "src" / name for name in transform_names]
+  missing = [str(path.relative_to(PROJECT_ROOT)) for path in paths if not path.exists()]
+  if missing:
+    raise FileNotFoundError("Missing Streamlit transform files: " + "; ".join(missing))
+  if len(paths) != len(set(paths)):
+    raise RuntimeError("app.py contains duplicate Streamlit transforms")
+  return paths
 
 
 def generated_source() -> str:
   source = CORE_PATH.read_text(encoding="utf-8")
-  for transform_path in TRANSFORMS:
+  for transform_path in transform_paths():
     namespace = runpy.run_path(
       str(transform_path),
       init_globals={"source": source},
@@ -43,8 +43,6 @@ def generated_source() -> str:
 def main() -> int:
   source = generated_source()
   compile(source, str(CORE_PATH), "exec")
-  if ".repaired" in source.casefold():
-    raise RuntimeError("Generated public Streamlit source still exposes .repaired")
 
   forbidden_public_controls = [
     "Remote BV-BRC metagenomes directory",
@@ -85,6 +83,18 @@ def main() -> int:
     "Supplementary Figure {supplementary_number}",
     "pathway modules associated with biogeochemical cycles",
     "SupplementaryFigure38_metagenome_KEGG_module_completeness_heatmap_P001.png",
+    "CANGAMETAG_TAXONOMY_ARTICLE_ALIGNMENT_V1 = 1",
+    "def _retractable_dataframe(",
+    'txt("Mostrar/ocultar tabela", "Show/hide table")',
+    "Barplots interativos correspondentes às Figuras 2 e 3",
+    "article_static_source_validation",
+    "Harmonização reprodutível da taxonomia NCBI",
+    "CANGAMETAG_KEGG_S67_AXIS_READABILITY_V2 = 1",
+    "def _kegg_s67_compact_label(",
+    "def _kegg_reorder_full_matrix_like_grouped_source(",
+    "cell_w = 104 if n_cols <= 50 else 94 if n_cols <= 90 else 86",
+    "tickangle=0",
+    "Lake metagenomes and external iron-rich environments",
   ]
   missing = [text for text in required if text not in source]
   if missing:
@@ -92,6 +102,9 @@ def main() -> int:
       "Generated Streamlit source is missing required public features: "
       + "; ".join(missing)
     )
+
+  if source.count('Path(__file__).with_name("src")'):
+    raise RuntimeError("Generated source unexpectedly contains transform-chain declarations")
 
   direct_start = source.find("def _bvbrc_public_rpc")
   direct_end = source.find("def mags_tab():", direct_start)
@@ -109,9 +122,20 @@ def main() -> int:
       + "; ".join(leaked)
     )
 
+  s67_start = source.find("def _kegg_s67_compact_label(")
+  s67_end = source.find("def _kegg_scope_rows(", s67_start)
+  s67_helpers = source[s67_start:s67_end]
+  if not all(token in s67_helpers for token in [
+    'width=16',
+    'return "<br>".join(lines)',
+    'reordered.sort_index(axis=1).equals(full_status.sort_index(axis=1))',
+  ]):
+    raise RuntimeError("S67 label wrapping or value-preservation checks are incomplete")
+
   print(
     "Generated Streamlit source compiled successfully: "
-    f"{len(source.splitlines())} lines, {len(source.encode('utf-8'))} bytes"
+    f"{len(source.splitlines())} lines, {len(source.encode('utf-8'))} bytes, "
+    f"{len(transform_paths())} transforms"
   )
   return 0
 

@@ -7,9 +7,6 @@ def replace_once(text: str, old: str, new: str, label: str) -> str:
   return text.replace(old, new, 1)
 
 
-# Keep the existing complete map component for the other application pages,
-# while allowing the overview to display only the high-resolution interactive
-# map and one consolidated source table.
 source = replace_once(
   source,
   'def show_high_quality_sample_map(meta: pd.DataFrame, key: str = "article_samples_map"):\n',
@@ -29,7 +26,7 @@ map_intro_anchor = '''  title = txt("Mapa Google das amostras e ambientes", "Goo
     st.caption(txt("Quando pontos têm coordenadas idênticas ou quase idênticas, o marcador é ligeiramente deslocado apenas na visualização para evitar sobreposição; a coordenada original aparece no popup e na tabela.", "When points have identical or nearly identical coordinates, the marker is slightly offset only in the visualization to avoid overlap; the original coordinate appears in the popup and in the table."))
     show_leaflet_satellite_map(valid, key=f"{key}_google", title=title, height=820)
 '''
-map_intro_replacement = '''  title = txt("Mapa Google das amostras e ambientes", "Google map of samples and environments")
+map_intro_replacement = """  title = txt("Mapa Google das amostras e ambientes", "Google map of samples and environments")
   high_resolution_title = txt(
     "Mapa Google/satélite de alta resolução com pontos separados e clicáveis",
     "High-resolution Google / satellite map with clickable separated points",
@@ -56,10 +53,9 @@ map_intro_replacement = '''  title = txt("Mapa Google das amostras e ambientes",
   with st.expander(high_resolution_title, expanded=True):
     st.caption(txt("Quando pontos têm coordenadas idênticas ou quase idênticas, o marcador é ligeiramente deslocado apenas na visualização para evitar sobreposição; a coordenada original aparece no popup e na tabela.", "When points have identical or nearly identical coordinates, the marker is slightly offset only in the visualization to avoid overlap; the original coordinate appears in the popup and in the table."))
     show_leaflet_satellite_map(valid, key=f"{key}_google", title=high_resolution_title if overview_mode else title, height=820)
-'''
+"""
 source = replace_once(source, map_intro_anchor, map_intro_replacement, "overview high-resolution map")
 
-# Make the reference stored for each point directly accessible from its popup.
 source = replace_once(
   source,
   "      marker.bindPopup(`<b>${p.sample}</b><br><b>Environment:</b> ${p.environment}<br><b>Location:</b> ${p.location}<br><b>Date:</b> ${p.date || 'NA'}<br><b>Group:</b> ${p.category || 'NA'}<br><b>Original Lat/Lon:</b> ${p.original_lat.toFixed(6)}, ${p.original_lon.toFixed(6)}<br><b>Map display:</b> ${p.offset_note}`);\n",
@@ -81,7 +77,7 @@ coordinate_anchor = '''  coordinate_cols = [c for c in [
     show_table(valid[coordinate_cols].drop_duplicates(), f"{key}_coordinates_reference_links", height=360)
     csv_button(valid[coordinate_cols].drop_duplicates(), f"{key}_coordinates_reference_links.csv", txt("Baixar coordenadas e links", "Download coordinates and links"))
 '''
-coordinate_replacement = '''  coordinate_cols = [c for c in [
+coordinate_replacement = """  coordinate_cols = [c for c in [
     "Map source", "matrix_order", "matrix_column", "sample_id", "sample.id", "lake", "dataset_group", "sample_description",
     "environment_feature", "environment_biome", "environment_feature2", "geographic_location",
     "habitat", "isolation", "isolation_country", "collection_date_raw", "lat", "lon",
@@ -108,11 +104,9 @@ coordinate_replacement = '''  coordinate_cols = [c for c in [
       st.caption(coordinate_caption)
       show_table(coordinate_table, f"{key}_coordinates_reference_links", height=360)
       csv_button(coordinate_table, f"{key}_coordinates_reference_links.csv", txt("Baixar coordenadas e links", "Download coordinates and links"))
-'''
+"""
 source = replace_once(source, coordinate_anchor, coordinate_replacement, "consolidated map source table")
 
-# Replace the overview's external-only nested map with one combined interactive
-# map containing the article's Brazilian lake samples and the external records.
 overview_map_anchor = '''  external_map_meta = load_external_environment_coordinates(BASE_DIR)
   if external_map_meta.empty:
     external_map_meta = figure11_environment_metadata()
@@ -135,7 +129,7 @@ overview_map_anchor = '''  external_map_meta = load_external_environment_coordin
         txt("Baixar tabela-fonte", "Download source table"),
       )
 '''
-overview_map_replacement = '''  external_map_meta = load_external_environment_coordinates(BASE_DIR)
+overview_map_replacement = """  external_map_meta = load_external_environment_coordinates(BASE_DIR)
   if external_map_meta.empty:
     external_map_meta = figure11_environment_metadata()
 
@@ -182,11 +176,13 @@ overview_map_replacement = '''  external_map_meta = load_external_environment_co
     if "google_maps_url" not in out.columns:
       out["google_maps_url"] = generated_maps
     else:
-      out["google_maps_url"] = out["google_maps_url"].fillna("").astype(str).where(out["google_maps_url"].fillna("").astype(str).str.strip().ne(""), generated_maps)
+      existing_maps = out["google_maps_url"].fillna("").astype(str)
+      out["google_maps_url"] = existing_maps.where(existing_maps.str.strip().ne(""), generated_maps)
     if "google_earth_url" not in out.columns:
       out["google_earth_url"] = generated_earth
     else:
-      out["google_earth_url"] = out["google_earth_url"].fillna("").astype(str).where(out["google_earth_url"].fillna("").astype(str).str.strip().ne(""), generated_earth)
+      existing_earth = out["google_earth_url"].fillna("").astype(str)
+      out["google_earth_url"] = existing_earth.where(existing_earth.str.strip().ne(""), generated_earth)
     return out
 
   combined_map_meta = pd.concat(
@@ -205,5 +201,5 @@ overview_map_replacement = '''  external_map_meta = load_external_environment_co
       key="overview_brazil_and_external_iron_rich_map_v2",
       overview_mode=True,
     )
-'''
+"""
 source = replace_once(source, overview_map_anchor, overview_map_replacement, "overview Brazil and external interactive map")

@@ -23,6 +23,7 @@ TRANSFORMS = [
   Path(__file__).with_name("src") / "app_bvbrc_public_direct_download_transform.py",
   Path(__file__).with_name("src") / "app_visitor_world_map_transform.py",
   Path(__file__).with_name("src") / "app_scientific_module_clarity_transform.py",
+  Path(__file__).with_name("src") / "app_kegg_interactive_explanation_transform.py",
 ]
 
 source = CORE_PATH.read_text(encoding="utf-8")

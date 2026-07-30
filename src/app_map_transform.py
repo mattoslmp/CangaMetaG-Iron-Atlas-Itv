@@ -21,7 +21,7 @@ def _replace_block(text: str, start_marker: str, end_marker: str, replacement: s
 # long presentation paragraph. This remains stable when captions are rewrapped.
 map_function_start = 'def show_high_quality_sample_map('
 map_function_end = '\ndef _clean_link_text'
-map_function = '''def show_high_quality_sample_map(
+map_function = """def show_high_quality_sample_map(
   meta: pd.DataFrame,
   key: str = "article_samples_map",
   overview_mode: bool = False,
@@ -147,7 +147,7 @@ map_function = '''def show_high_quality_sample_map(
       f"https://www.google.com/maps/search/?api=1&query={center_lat:.6f},{center_lon:.6f}",
     )
 
-'''
+"""
 source = _replace_block(
   source,
   map_function_start,

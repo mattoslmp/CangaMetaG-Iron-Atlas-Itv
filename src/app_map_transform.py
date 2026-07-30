@@ -58,8 +58,8 @@ source = replace_once(source, map_intro_anchor, map_intro_replacement, "overview
 
 source = replace_once(
   source,
-  "      marker.bindPopup(`<b>${p.sample}</b><br><b>Environment:</b> ${p.environment}<br><b>Location:</b> ${p.location}<br><b>Date:</b> ${p.date || 'NA'}<br><b>Group:</b> ${p.category || 'NA'}<br><b>Original Lat/Lon:</b> ${p.original_lat.toFixed(6)}, ${p.original_lon.toFixed(6)}<br><b>Map display:</b> ${p.offset_note}`);\n",
-  "      const referenceLink = p.reference_url ? `<br><a href=\"${p.reference_url}\" target=\"_blank\" rel=\"noopener noreferrer\"><b>Open source/reference</b></a>` : '';\n      marker.bindPopup(`<b>${p.sample}</b><br><b>Environment:</b> ${p.environment}<br><b>Location:</b> ${p.location}<br><b>Date:</b> ${p.date || 'NA'}<br><b>Group:</b> ${p.category || 'NA'}<br><b>Original Lat/Lon:</b> ${p.original_lat.toFixed(6)}, ${p.original_lon.toFixed(6)}<br><b>Map display:</b> ${p.offset_note}${referenceLink}`);\n",
+  "      marker.bindPopup(`<b>${{p.sample}}</b><br><b>Environment:</b> ${{p.environment}}<br><b>Location:</b> ${{p.location}}<br><b>Date:</b> ${{p.date || 'NA'}}<br><b>Group:</b> ${{p.category || 'NA'}}<br><b>Original Lat/Lon:</b> ${{p.original_lat.toFixed(6)}}, ${{p.original_lon.toFixed(6)}}<br><b>Map display:</b> ${{p.offset_note}}`);\n",
+  "      const referenceLink = p.reference_url ? `<br><a href=\"${{p.reference_url}}\" target=\"_blank\" rel=\"noopener noreferrer\"><b>Open source/reference</b></a>` : '';\n      marker.bindPopup(`<b>${{p.sample}}</b><br><b>Environment:</b> ${{p.environment}}<br><b>Location:</b> ${{p.location}}<br><b>Date:</b> ${{p.date || 'NA'}}<br><b>Group:</b> ${{p.category || 'NA'}}<br><b>Original Lat/Lon:</b> ${{p.original_lat.toFixed(6)}}, ${{p.original_lon.toFixed(6)}}<br><b>Map display:</b> ${{p.offset_note}}${{referenceLink}}`);\n",
   "map popup reference link",
 )
 

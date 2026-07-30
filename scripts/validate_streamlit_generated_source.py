@@ -23,6 +23,7 @@ TRANSFORMS = [
   PROJECT_ROOT / "src" / "app_bvbrc_cli_runtime_transform.py",
   PROJECT_ROOT / "src" / "app_antismash_clean_names_transform.py",
   PROJECT_ROOT / "src" / "app_repository_mag_download_transform.py",
+  PROJECT_ROOT / "src" / "app_bvbrc_public_direct_download_transform.py",
 ]
 
 
@@ -42,6 +43,7 @@ def main() -> int:
   compile(source, str(CORE_PATH), "exec")
   if ".repaired" in source.casefold():
     raise RuntimeError("Generated public Streamlit source still exposes .repaired")
+
   forbidden_public_controls = [
     "Remote BV-BRC metagenomes directory",
     "When selecting a MAG without a local folder, try to download it automatically",
@@ -55,17 +57,35 @@ def main() -> int:
       "Generated Streamlit source still exposes server-side BV-BRC controls: "
       + "; ".join(present)
     )
+
   required = [
+    "def _bvbrc_public_workspace_inventory(",
+    '"Workspace.get_archive_url"',
+    "Deliberately do not send Authorization",
+    "Download {mag_id} directly from BV-BRC",
+    "No personal credential will be used",
     "def repository_mag_download_panel(",
-    "Prepare the complete ZIP package for this MAG",
-    "The application acts only as a download intermediary",
   ]
   missing = [text for text in required if text not in source]
   if missing:
     raise RuntimeError(
-      "Generated Streamlit source is missing repository download features: "
+      "Generated Streamlit source is missing anonymous BV-BRC download features: "
       + "; ".join(missing)
     )
+
+  forbidden_auth = [
+    'headers["Authorization"]',
+    "headers['Authorization']",
+    "BVBRC_TOKEN",
+    "KB_AUTH_TOKEN",
+  ]
+  leaked = [text for text in forbidden_auth if text in source[source.find("def _bvbrc_public_rpc"):source.find("def mags_tab():")]]
+  if leaked:
+    raise RuntimeError(
+      "Anonymous BV-BRC download layer unexpectedly references authentication: "
+      + "; ".join(leaked)
+    )
+
   print(
     "Generated Streamlit source compiled successfully: "
     f"{len(source.splitlines())} lines, {len(source.encode('utf-8'))} bytes"

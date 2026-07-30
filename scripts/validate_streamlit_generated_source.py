@@ -25,6 +25,7 @@ TRANSFORMS = [
   PROJECT_ROOT / "src" / "app_repository_mag_download_transform.py",
   PROJECT_ROOT / "src" / "app_bvbrc_public_direct_download_transform.py",
   PROJECT_ROOT / "src" / "app_visitor_world_map_transform.py",
+  PROJECT_ROOT / "src" / "app_scientific_module_clarity_transform.py",
 ]
 
 
@@ -73,6 +74,17 @@ def main() -> int:
     "Detailed world map of visits",
     "<b>Visits:</b>",
     "Visit details by country, region and city",
+    "CANGAMETAG_SCIENTIFIC_CLARITY_REVISION = 1",
+    "original, previously unpublished study data",
+    "Search lake MAG, classification or annotation",
+    "Article MAGs available in BV-BRC",
+    "Direct download of an article MAG",
+    "number == 247",
+    'inventory["MAG"].astype(str).ne("MAG247")',
+    "Supplementary Table 8 — external iron-rich environments",
+    "Supplementary Figure {supplementary_number}",
+    "pathway modules associated with biogeochemical cycles",
+    "SupplementaryFigure38_metagenome_KEGG_module_completeness_heatmap_P001.png",
   ]
   missing = [text for text in required if text not in source]
   if missing:

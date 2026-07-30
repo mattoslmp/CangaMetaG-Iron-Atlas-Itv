@@ -97,7 +97,7 @@ def _render_taxonomy_sampling_map(st) -> None:
   map_renderer = globals_dict.get("show_high_quality_sample_map")
   meta = locals_dict.get("meta")
   if callable(map_renderer) and meta is not None:
-    map_renderer(meta, key="taxonomy_active_sampling_map")
+    map_renderer(meta, key="taxonomy_sampling_map_after_metadata_v3")
     return
 
   message = (
@@ -108,13 +108,34 @@ def _render_taxonomy_sampling_map(st) -> None:
   st.warning(message)
 
 
-def _install_streamlit_layout_hooks(st) -> None:
-  if getattr(st, "_cangametag_sampling_layout_hooks_v2", False):
-    return
+def _root_streamlit_callable(st, name: str):
+  """Return an unwrapped DeltaGenerator method whenever Streamlit exposes it."""
+  root = getattr(st, "_main", None)
+  candidate = getattr(root, name, None) if root is not None else None
+  if callable(candidate):
+    return candidate
+  return getattr(st, name)
 
-  original_download_button = st.download_button
-  original_expander = st.expander
-  original_columns = st.columns
+
+def _install_streamlit_layout_hooks(st) -> None:
+  """Install exactly one hook layer, even after Streamlit hot reloads.
+
+  Older app revisions replaced module-level Streamlit functions without restoring
+  them. During a hot reload, a new wrapper could therefore wrap the previous
+  wrapper and render the Taxonomy map twice with the same Plotly key. Rebinding
+  from ``st._main`` first discards every stale wrapper before the current hooks
+  are installed.
+  """
+  original_markdown = _root_streamlit_callable(st, "markdown")
+  original_download_button = _root_streamlit_callable(st, "download_button")
+  original_expander = _root_streamlit_callable(st, "expander")
+  original_columns = _root_streamlit_callable(st, "columns")
+
+  # Remove wrappers left in the Streamlit module by previous hot-loaded code.
+  st.markdown = original_markdown
+  st.download_button = original_download_button
+  st.expander = original_expander
+  st.columns = original_columns
 
   def download_button_wrapper(*args, **kwargs):
     result = original_download_button(*args, **kwargs)
@@ -149,11 +170,11 @@ def _install_streamlit_layout_hooks(st) -> None:
   st.download_button = download_button_wrapper
   st.expander = expander_wrapper
   st.columns = columns_wrapper
-  st._cangametag_sampling_layout_hooks_v2 = True
+  st._cangametag_sampling_layout_hook_version = 3
 
 
 def streamlit_dependency_guard(st) -> None:
-  """Validate optional packages and install the sampling-layout hooks."""
+  """Validate optional packages and install non-duplicating layout hooks."""
   _PATCH_STATE.update({
     "overview_map_pending": False,
     "overview_map_injected": False,

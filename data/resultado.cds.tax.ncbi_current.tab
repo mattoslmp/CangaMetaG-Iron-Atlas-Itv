@@ -1,5 +1,5 @@
 	Domain	Phylum	Class	Order	Family	Genus	Species
-OTU00001	Unknown	Unclassified		Unclassified	Unclassified	Unclassified	
+OTU00001	Unknown	Unclassified		Unclassified	Unclassified	Unclassified
 OTU00002	Bacteria	Pseudomonadota	 Alphaproteobacteria	Hyphomicrobiales	Phreatobacteraceae	Phreatobacter	 Phreatobacter cathodiphilus
 OTU00003	Bacteria	Pseudomonadota	 Gammaproteobacteria	Lysobacterales	Lysobacteraceae	Lysobacter	 Lysobacter segetis
 OTU00004	Bacteria	Nitrospirota	 NA	Unclassified	Unclassified	Unclassified	 Nitrospirae bacterium
@@ -4356,8 +4356,8 @@ OTU04354	Bacteria	Planctomycetota	 Planctomycetia	Planctomycetales	Planctomyceta
 OTU04355	Bacteria	Chloroflexota	 Ktedonobacteria	Unclassified	Unclassified	Unclassified	 Ktedonobacteria bacterium brp13
 OTU04356	Bacteria	Bacillota	 Clostridia	Eubacteriales	Thermohalobacteraceae	Clostridiisalibacter	 Clostridiisalibacter paucivorans
 OTU04357	Bacteria	Pseudomonadota	 Deltaproteobacteria	Desulfuromonadales	Geobacteraceae	Geomonas	 Geomonas limicola
-OTU04358	Bacteria	Pseudomonadota	 Alphaproteobacte
-... 2400648 bytes omitted ...
+OTU04358	Bacteria	Pseudomonadota	 Alphaproteobacter
+... 2400647 bytes omitted ...
 ibacillaceae	Paenibacillus	 Paenibacillus sp. FSL H7-0326
 OTU24424	Eukaryota	Basidiomycota	 Agaricomycetes	Hymenochaetales	Schizoporaceae	Schizopora	 Schizopora paradoxa
 OTU24425	Bacteria	Bacillota	 Bacilli	Caryophanales	Bacillaceae	Bacillus	 Bacillus sp. Root239

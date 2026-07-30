@@ -1,22 +1,22 @@
 name: Apply sampling map layout
 
 on:
-  push:
-    branches:
-      - main
-    paths:
-      - .github/workflows/apply_sampling_map_layout.yml
+  pull_request:
+    types: [opened, synchronize, reopened]
+  workflow_dispatch:
 
 permissions:
   contents: write
 
 jobs:
   update-app-layout:
+    if: github.event_name == 'workflow_dispatch' || github.event.pull_request.head.repo.full_name == github.repository
     runs-on: ubuntu-latest
     steps:
-      - name: Check out repository
+      - name: Check out correction branch
         uses: actions/checkout@v4
         with:
+          ref: ${{ github.head_ref || github.ref_name }}
           fetch-depth: 0
 
       - name: Update Streamlit sampling-map placement
@@ -99,15 +99,13 @@ jobs:
           changed="$(git diff --name-only)"
           test "$changed" = "app.py"
 
-      - name: Commit app update
+      - name: Commit correction to pull-request branch
         shell: bash
         run: |
-          if git diff --quiet -- app.py; then
-            echo "app.py already contains the requested layout."
-            exit 0
-          fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git rm .github/workflows/apply_sampling_map_layout.yml
+          git rm -f .github/sampling_map_layout_trigger.txt
           git add app.py
           git commit -m "Place sampling maps in Streamlit app"
-          git push origin main
+          git push origin HEAD:${{ github.head_ref || github.ref_name }}

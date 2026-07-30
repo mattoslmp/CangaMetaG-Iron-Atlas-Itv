@@ -21,6 +21,7 @@ TRANSFORMS = [
   PROJECT_ROOT / "src" / "app_remove_static_overview_map_transform.py",
   PROJECT_ROOT / "src" / "app_scientific_contact_recipient_transform.py",
   PROJECT_ROOT / "src" / "app_bvbrc_cli_runtime_transform.py",
+  PROJECT_ROOT / "src" / "app_antismash_clean_names_transform.py",
 ]
 
 
@@ -38,6 +39,15 @@ def generated_source() -> str:
 def main() -> int:
   source = generated_source()
   compile(source, str(CORE_PATH), "exec")
+  if ".repaired" in source.casefold():
+    allowed = (
+      "the .repaired label was removed only from public names"
+      if "the .repaired label was removed only from public names" in source.casefold()
+      else ""
+    )
+    remaining = source.casefold().replace(allowed, "")
+    if ".repaired" in remaining:
+      raise RuntimeError("Generated public Streamlit source still exposes .repaired")
   print(
     "Generated Streamlit source compiled successfully: "
     f"{len(source.splitlines())} lines, {len(source.encode('utf-8'))} bytes"

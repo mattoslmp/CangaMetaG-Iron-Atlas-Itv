@@ -10912,101 +10912,109 @@ def _prepare_kegg_status_frame(raw: pd.DataFrame) -> tuple[pd.DataFrame, str]:
 
 
 def _kegg_scope_rows(article_status: pd.DataFrame, full_status: pd.DataFrame, scope: str) -> pd.DataFrame:
-  """Select the requested module universe without changing source statuses."""
-  if scope == "article":
-    return article_status.copy()
+  """Select module rows from the immutable source-status matrix."""
   source = full_status.copy()
-  if scope == "complete":
+  if scope == "all_complete":
+    return source.loc[source.eq("Complete").all(axis=1)].copy()
+  if scope == "complete_any":
     return source.loc[source.eq("Complete").any(axis=1)].copy()
   if scope == "one_missing":
     return source.loc[source.eq("1 block missing").any(axis=1)].copy()
-  if scope == "incomplete":
-    return source.loc[source.isin(["Incomplete", "2 blocks missing"]).any(axis=1)].copy()
   return source
 
 
 def _display_kegg_completeness_panel(fig_path: Path, caption: str, status_csv: Path, key_prefix: str, full_status_csv: Path | None = None) -> None:
-  """Show the approved static figure and a stateful full-matrix explorer."""
+  """Show the approved static figure and an explorer backed only by source statuses."""
   _display_static_publication_image(fig_path, fig_path.name, caption, key_prefix=key_prefix)
-  if not status_csv.exists():
-    st.caption(txt("Matriz interativa não encontrada.", "Interactive matrix not found."))
+  source_csv = full_status_csv if full_status_csv and full_status_csv.exists() else status_csv
+  if not source_csv.exists():
+    st.caption("Interactive matrix not found.")
     return
   try:
-    article_raw = pd.read_csv(status_csv, keep_default_na=False)
-    full_raw = pd.read_csv(full_status_csv, keep_default_na=False) if full_status_csv and full_status_csv.exists() else article_raw.copy()
-    article_status, first_col = _prepare_kegg_status_frame(article_raw)
-    full_status, _ = _prepare_kegg_status_frame(full_raw)
-    if article_status.empty or full_status.empty:
-      st.info(txt("Matriz de status KEGG vazia.", "Empty KEGG status matrix."))
+    full_raw = pd.read_csv(source_csv, keep_default_na=False)
+    full_status, first_col = _prepare_kegg_status_frame(full_raw)
+    if full_status.empty:
+      st.info("Empty KEGG status matrix.")
       return
 
-    st.markdown("##### " + txt("Explorador interativo da matriz completa", "Interactive complete-matrix explorer"))
+    entity_plural = "MAGs" if key_prefix == "kegg_mags" else "samples"
+    entity_singular = "MAG" if key_prefix == "kegg_mags" else "sample"
+    st.markdown("##### KEGG module completeness explorer")
     scope_labels = {
-      "article": txt("1. Selecionados para o artigo", "1. Selected for the article"),
-      "complete": txt("2. Completos — todos", "2. Complete — all"),
-      "one_missing": txt("3. Um bloco ausente", "3. One block missing"),
-      "incomplete": txt("4. Incompletos", "4. Incomplete"),
-      "all": txt("5. Todos os módulos da matriz-fonte", "5. All modules in the source matrix"),
+      "all_complete": f"1. Complete in all {entity_plural}",
+      "complete_any": f"2. Complete in at least one {entity_singular}",
+      "one_missing": f"3. One block missing in at least one {entity_singular}",
+      "all": "4. Full matrix — Complete, 1 block missing and Incomplete",
     }
     c1, c2 = st.columns([0.48, 0.52])
     with c1:
       scope = st.radio(
-        txt("Conjunto de módulos", "Module set"),
-        list(scope_labels), format_func=lambda value: scope_labels[value],
-        key=f"{key_prefix}_module_scope_v8",
+        "Module set",
+        list(scope_labels),
+        format_func=lambda value: scope_labels[value],
+        key=f"{key_prefix}_module_scope_v9",
       )
-    scope_status = _kegg_scope_rows(article_status, full_status, scope)
+
+    scope_status = _kegg_scope_rows(pd.DataFrame(), full_status, scope)
     ranked = _rank_kegg_modules_for_display(scope_status)
     available = len(ranked)
+    if available == 0:
+      st.info("No module matches this source-matrix criterion.")
+      return
+
     with c2:
       show_all = st.checkbox(
-        txt(f"Mostrar todos os {available} módulos deste conjunto", f"Show all {available} modules in this set"),
+        f"Show all {available} modules in this set",
         value=False,
-        key=f"{key_prefix}_show_all_modules_v8_{scope}",
+        key=f"{key_prefix}_show_all_modules_v9_{scope}",
       )
       module_count = available if show_all else int(st.number_input(
-        txt("Número de módulos exibidos", "Number of displayed modules"),
-        min_value=1, max_value=max(1, available), value=min(40, max(1, available)),
-        step=1, key=f"{key_prefix}_module_count_v8_{scope}_{available}",
+        "Number of displayed modules",
+        min_value=1,
+        max_value=available,
+        value=min(40, available),
+        step=1,
+        key=f"{key_prefix}_module_count_v9_{scope}_{available}",
       ))
 
-    if scope == "article":
-      st.info(txt(
-        "Este conjunto reproduz as linhas destacadas na figura estática do artigo. Elas foram priorizadas por relevância para os ciclos biogeoquímicos discutidos e pela presença de evidência de completude na matriz temática; os estados de todas as células dessas linhas permanecem inalterados.",
-        "This set reproduces the rows highlighted in the static article figure. They were prioritised for relevance to the discussed biogeochemical cycles and evidence of completeness in the thematic matrix; every cell status in those rows remains unchanged."
-      ))
-    else:
-      st.caption(txt(
-        "Os conjuntos 2–5 são calculados diretamente da matriz-fonte completa e não alteram os valores da figura estática.",
-        "Sets 2–5 are selected directly from the complete source matrix and do not alter the static-figure values."
-      ))
+    scope_descriptions = {
+      "all_complete": f"Modules classified as Complete in every {entity_singular} of the immutable source matrix.",
+      "complete_any": f"Modules classified as Complete in at least one {entity_singular}; all original cell statuses for retained rows are preserved.",
+      "one_missing": f"Modules with at least one '1 block missing' call; Complete and Incomplete calls in the same retained rows remain visible.",
+      "all": "All modules and all original statuses from the source matrix. No row-selection filter is applied.",
+    }
+    st.caption(scope_descriptions[scope])
 
     selected_modules = ranked[:module_count]
     all_samples = list(scope_status.columns)
     c3, c4 = st.columns([0.55, 0.45])
     with c3:
       sample_filter = st.multiselect(
-        txt("Amostras/MAGs", "Samples/MAGs"), all_samples, default=all_samples,
-        key=f"{key_prefix}_samples_v8_{scope}",
+        "Samples/MAGs",
+        all_samples,
+        default=all_samples,
+        key=f"{key_prefix}_samples_v9_{scope}",
       )
     with c4:
       visible_states = st.multiselect(
-        txt("Estados visíveis", "Visible states"),
-        ["Complete", "1 block missing", "Incomplete", "2 blocks missing", "Missing data"],
-        default=["Complete", "1 block missing", "Incomplete", "2 blocks missing"],
-        key=f"{key_prefix}_visible_states_v8_{scope}",
+        "Visible states",
+        ["Complete", "1 block missing", "Incomplete"],
+        default=["Complete", "1 block missing", "Incomplete"],
+        key=f"{key_prefix}_visible_states_v9_{scope}",
       )
     if not sample_filter:
       sample_filter = all_samples
 
     view_original = scope_status.loc[selected_modules, sample_filter].copy()
+    if view_original.empty:
+      st.info("No module matches the filters.")
+      return
     numeric, view_visual = _kegg_status_to_numeric_matrix(view_original)
     if visible_states:
-      visible_mask = view_original.isin(visible_states)
-      numeric = numeric.where(visible_mask)
-    if view_original.empty:
-      st.info(txt("Nenhum módulo corresponde aos filtros.", "No module matches the filters."))
-      return
+      raw_visible_states = set(visible_states)
+      if "Incomplete" in raw_visible_states:
+        raw_visible_states.add("2 blocks missing")
+      numeric = numeric.where(view_original.isin(raw_visible_states))
 
     x_labels = list(view_original.columns)
     y_labels_full = list(view_original.index)
@@ -11025,20 +11033,29 @@ def _display_kegg_completeness_panel(fig_path: Path, caption: str, status_csv: P
           f"<b>Official KEGG:</b> {url}",
         ]) for col in view_original.columns
       ])
+
     n_rows, n_cols = view_original.shape
     cell_w = 44 if n_cols <= 24 else 40 if n_cols <= 40 else 34
     cell_h = 34 if n_rows <= 180 else 30
     fig = go.Figure(go.Heatmap(
-      z=numeric.to_numpy(float), x=x_labels, y=y_labels,
+      z=numeric.to_numpy(float),
+      x=x_labels,
+      y=y_labels,
       customdata=np.asarray(hover, dtype=object),
       hovertemplate="%{customdata}<extra></extra>",
-      zmin=0, zmax=2, colorscale=KEGG_MODULE_COLORSCALE,
-      xgap=0.45, ygap=0.45,
+      zmin=0,
+      zmax=2,
+      colorscale=KEGG_MODULE_COLORSCALE,
+      xgap=0.45,
+      ygap=0.45,
       colorbar=dict(
         title=dict(text="KEGG module status", font=dict(size=14)),
-        tickmode="array", tickvals=[0, 1, 2],
+        tickmode="array",
+        tickvals=[0, 1, 2],
         ticktext=["Incomplete", "1 block missing", "Complete"],
-        thickness=18, len=0.78, tickfont=dict(size=12),
+        thickness=18,
+        len=0.78,
+        tickfont=dict(size=12),
       ),
     ))
     fig.update_layout(
@@ -11058,24 +11075,25 @@ def _display_kegg_completeness_panel(fig_path: Path, caption: str, status_csv: P
     fig.update_yaxes(tickfont=dict(size=11), automargin=True, tickmode="array", tickvals=y_labels, ticktext=y_labels, title="KEGG module")
 
     m1, m2, m3, m4 = st.columns(4)
-    m1.metric(txt("Módulos na matriz-fonte", "Modules in source matrix"), len(full_status))
-    m2.metric(txt("Módulos no conjunto", "Modules in selected set"), available)
-    m3.metric(txt("Módulos exibidos", "Displayed modules"), len(view_original))
-    m4.metric(txt("Amostras/MAGs", "Samples/MAGs"), len(sample_filter))
+    m1.metric("Modules in source matrix", len(full_status))
+    m2.metric("Modules in selected set", available)
+    m3.metric("Displayed modules", len(view_original))
+    m4.metric("Samples/MAGs", len(sample_filter))
     render_plotly_downloadable(
       fig,
-      key=f"{key_prefix}_interactive_v8_{scope}_{module_count}_{len(sample_filter)}",
+      key=f"{key_prefix}_interactive_v9_{scope}_{module_count}_{len(sample_filter)}",
       basename=f"{key_prefix}_{scope}_{module_count}_modules",
     )
     table_out = view_original.reset_index().rename(columns={view_original.index.name or first_col: "KEGG module"})
-    show_table(table_out, f"{key_prefix}_status_matrix_v8_{scope}_{module_count}", height=400)
+    show_table(table_out, f"{key_prefix}_status_matrix_v9_{scope}_{module_count}", height=400)
     d1, d2 = st.columns(2)
     with d1:
-      csv_button(table_out, f"{key_prefix}_{scope}_{module_count}_displayed_statuses.csv", txt("Baixar matriz exibida", "Download displayed matrix"), context=key_prefix)
+      csv_button(table_out, f"{key_prefix}_{scope}_{module_count}_displayed_statuses.csv", "Download displayed matrix", context=key_prefix)
     with d2:
-      csv_button(full_raw, f"{key_prefix}_complete_source_matrix.csv", txt("Baixar matriz-fonte completa", "Download complete source matrix"), context=f"{key_prefix}_source")
+      csv_button(full_raw, f"{key_prefix}_complete_source_matrix.csv", "Download complete source matrix", context=f"{key_prefix}_source")
   except Exception as exc:
-    st.warning(txt(f"A versão interativa não pôde ser gerada: {exc}", f"Interactive version could not be generated: {exc}"))
+    st.warning(f"Interactive version could not be generated: {exc}")
+
 
 def kegg_modules_tab():
   ensure_kegg_module_directories()
@@ -11090,10 +11108,8 @@ def kegg_modules_tab():
   ))
 
   st.markdown("### Direct visualization of KEGG module completeness")
-  st.caption(txt(
-    "Esta seção mostra diretamente as figuras finais de completude de módulos KEGG. Os arquivos exibidos são os mesmos sincronizados com o artigo, as figuras suplementares e a seção Final figures & scripts.",
-    "This section directly shows the final KEGG module completeness figures. The displayed files are the same files synchronized with the manuscript, supplementary figures and Final figures & scripts section."
-  ))
+  st.caption("The displayed files are the same source-linked figures used in the manuscript, supplementary material and Final figures & scripts section.")
+  st.info("Data provenance: no synthetic, simulated or randomly generated values are used. MAG and lagoon-metagenome panels read their original packaged KEMET status matrices. ST8 external and combined panels use categorical module-status matrices deterministically derived from the KO profiles in tables/Supplementary_Table_8.xlsx; no imputation or value replacement is applied.")
 
   figure_dir = BASE_DIR / "outputs" / "app_supplementary_figures"
   kegg_data_dir = BASE_DIR / "data" / "final_kegg_st8_update"
@@ -11101,35 +11117,35 @@ def kegg_modules_tab():
   kegg_figures = [
     (
       "SupplementaryFigure37_MAG_KEGG_module_completeness_heatmap_species_MAGnumber_KEMET_style_3state.png",
-      txt("Completude dos módulos KEGG nos MAGs.", "KEGG module completeness in MAGs."),
+      "KEGG module completeness in MAGs.",
       BASE_DIR / "data" / "module_figure_inputs" / "SupplementaryFigure37_MAG_KEGG_module_completeness_heatmap_species_MAGnumber_KEMET_style_3state_thematic_status.csv",
       kegg_data_dir / "MAG_KEGG_module_completeness_STATUS_species_MAGnumber_3state.csv",
       "kegg_mags",
     ),
     (
       "SupplementaryFigure38_metagenome_KEGG_module_completeness_heatmap.png",
-      txt("Completude dos módulos KEGG nos metagenomas das lagoas.", "KEGG module completeness in lagoon metagenomes."),
+      "KEGG module completeness in lagoon metagenomes.",
       kegg_derived_dir / "SupplementaryFigure38_metagenome_KEGG_module_completeness_heatmap_thematic_app_status.csv",
       kegg_data_dir / "KEMET_lagoon_all_metagenomes_module_completeness_STATUS_3state.csv",
       "kegg_lagoon_metagenomes",
     ),
     (
       "SupplementaryFigure40_ST8_external_iron_rich_module_completeness_by_environmental_group.png",
-      txt("S40 — versão final por environmental group: todos os mesmos registros e estados da matriz-fonte, com alteração exclusiva da ordem das colunas para manter cada grupo lado a lado.", "S40 — final environmental-group version: all records and statuses from the same source matrix, with only the column order changed to keep each group together."),
+      "S40 — external iron-rich metagenomes grouped by environmental context; source statuses are unchanged.",
       kegg_derived_dir / "SupplementaryFigure40_ST8_external_iron_rich_module_completeness_by_environmental_group_status.csv",
       kegg_data_dir / "ST8_external_iron_rich_module_completeness_STATUS_3state_from_KO.csv",
       "kegg_external_iron_rich_environmental_group",
     ),
     (
       "SupplementaryFigure67_lagoon_plus_external_iron_rich_module_completeness_KEMET_style_3state_heatmap.png",
-      txt("S67 — ordem original: completude combinada dos módulos KEGG nas lagoas e nos metagenomas externos ricos em ferro.", "S67 — original order: combined KEGG module completeness in lagoon and external iron-rich metagenomes."),
+      "S67 — combined KEGG module completeness in lagoon and external iron-rich metagenomes, original source order.",
       kegg_derived_dir / "SupplementaryFigure67_lagoon_plus_external_iron_rich_module_completeness_KEMET_style_3state_heatmap_status.csv",
       kegg_data_dir / "Combined_lagoon_plus_external_iron_rich_module_completeness_STATUS_3state.csv",
       "kegg_combined_lagoon_external_original",
     ),
     (
       "SupplementaryFigure67_lagoon_plus_external_iron_rich_module_completeness_by_environmental_group.png",
-      txt("S67 — por environmental group: as mesmas amostras, registros, módulos e estados da versão original, somente com as colunas do mesmo grupo ambiental lado a lado.", "S67 — by environmental group: the same samples, records, modules and statuses as the original version, with only columns from the same environmental group placed side by side."),
+      "S67 — the same combined matrix, with columns grouped by environmental context; source statuses are unchanged.",
       kegg_derived_dir / "SupplementaryFigure67_lagoon_plus_external_iron_rich_module_completeness_by_environmental_group_status.csv",
       kegg_data_dir / "Combined_lagoon_plus_external_iron_rich_module_completeness_STATUS_3state.csv",
       "kegg_combined_lagoon_external_environmental_group",

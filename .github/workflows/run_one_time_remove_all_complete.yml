@@ -1,0 +1,36 @@
+name: Remove redundant KEGG filter and show source table
+
+on:
+  push:
+    paths:
+      - '.github/workflows/run_one_time_remove_all_complete.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  patch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: true
+      - name: Apply application correction
+        run: python scripts/one_time_remove_all_complete_and_show_source.py
+      - name: Verify correction
+        run: |
+          python -m py_compile app.py
+          ! grep -F 'Complete in all' app.py
+          grep -F 'Complete in at least one' app.py
+          grep -F 'Source table used for this panel' app.py
+          grep -F 'Displayed subset table' app.py
+      - name: Commit application correction
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git rm .github/workflows/run_one_time_remove_all_complete.yml
+          git rm scripts/one_time_remove_all_complete_and_show_source.py
+          git add app.py
+          git commit -m 'Remove redundant all-complete filter and show source tables'
+          git push

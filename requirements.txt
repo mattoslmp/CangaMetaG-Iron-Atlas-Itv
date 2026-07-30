@@ -12,6 +12,7 @@ biopython==1.86
 reportlab==4.4.9
 seaborn==0.13.2
 streamlit==1.60.0
+pycountry==26.2.16
 pyarrow>=18,<24
 kaleido>=1.0,<2
 playwright>=1.50,<2

@@ -49,13 +49,13 @@ jobs:
           PY
 
   apply-sampling-map-layout:
-    if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository && startsWith(github.head_ref, 'agent/sampling-map-layout')
+    if: github.event_name == 'pull_request' && github.event.pull_request.head.repo.full_name == github.repository && github.head_ref == 'agent/sampling-map-layout-v4'
     runs-on: ubuntu-latest
     steps:
       - name: Check out correction branch
         uses: actions/checkout@v4
         with:
-          ref: ${{ github.head_ref }}
+          ref: agent/sampling-map-layout-v4
           fetch-depth: 0
 
       - name: Apply app-only sampling-map layout
@@ -74,14 +74,14 @@ jobs:
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git rm .github/workflows/apply_sampling_map_layout.yml
           git rm scripts/one_time_sampling_map_layout.py
-          git rm -f .github/sampling_map_layout_trigger_v3.txt
+          git rm -f .github/sampling_map_layout_trigger_v4.txt
           git add app.py .github/workflows/validate-rda.yml
           changed="$(git diff --cached --name-only | sort)"
-          expected=".github/sampling_map_layout_trigger_v3.txt
+          expected=".github/sampling_map_layout_trigger_v4.txt
 .github/workflows/apply_sampling_map_layout.yml
 .github/workflows/validate-rda.yml
 app.py
 scripts/one_time_sampling_map_layout.py"
           test "$changed" = "$expected"
           git commit -m 'Place sampling maps in Streamlit app'
-          git push origin HEAD:${{ github.head_ref }}
+          git push origin HEAD:agent/sampling-map-layout-v4

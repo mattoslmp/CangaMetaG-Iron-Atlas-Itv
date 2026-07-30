@@ -30,7 +30,7 @@ sender_start = source.find("def try_send_contact_email(payload: dict, recipients
 sender_end = source.find("\ndef contact_form_panel", sender_start)
 if sender_start < 0 or sender_end < 0:
   raise RuntimeError("Could not locate the scientific-contact sender function")
-sender_function = '''def try_send_contact_email(payload: dict, recipients: list[str]) -> tuple[bool, str]:
+sender_function = r'''def try_send_contact_email(payload: dict, recipients: list[str]) -> tuple[bool, str]:
   recipient = SCIENTIFIC_COLLABORATION_RECIPIENT
   subject_prefix = str(load_app_settings().get(
     "contact_subject_prefix",

@@ -16,6 +16,7 @@ TRANSFORMS = [
   Path(__file__).with_name("src") / "app_environment_details_transform.py",
   Path(__file__).with_name("src") / "app_environment_reference_fix_transform.py",
   Path(__file__).with_name("src") / "app_remove_static_overview_map_transform.py",
+  Path(__file__).with_name("src") / "app_scientific_contact_recipient_transform.py",
 ]
 
 source = CORE_PATH.read_text(encoding="utf-8")

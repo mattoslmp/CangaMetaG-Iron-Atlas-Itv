@@ -16,6 +16,7 @@ from src.article_taxonomy import (
   load_article_alpha_source,
 )
 from src.ncbi_taxonomy_harmonization import harmonize_taxonomy_frame, load_name_updates
+from src.publication_ordination import load_cds
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -119,3 +120,34 @@ def test_article_mag_table_and_pcoa_titles_are_explicit() -> None:
   assert "Article MAGs — show/hide table" in source
   assert "PCoA — Bray–Curtis ({correction} correction)" not in source
   assert "uncorrected distance matrix" in source
+
+
+def test_all_taxonomy_loaders_use_current_ncbi_labels_without_count_changes() -> None:
+  raw_counts = pd.read_csv(ROOT / "data" / "resultado.cds.otu.tab", sep="\t", index_col=0)
+  loaded_counts, current_taxonomy = load_cds(ROOT)
+  assert float(loaded_counts.to_numpy(float).sum()) == float(raw_counts.to_numpy(float).sum())
+  phyla = set(current_taxonomy["Phylum"].astype(str))
+  assert "Proteobacteria" not in phyla
+  assert "Pseudomonadota" in phyla
+
+
+def test_every_plotly_panel_populates_all_traceability_tabs() -> None:
+  source = generated_source()
+  assert '("Source", source_frame)' in source
+  assert '("Processed", processed_frame)' in source
+  assert '("Output", output_frame)' in source
+  assert '("Plotted values", plotted)' in source
+  assert "harmonize_current_taxonomy_figure(fig, BASE_DIR)" in source
+  rda_start = source.index("def taxonomic_rda_panel():")
+  rda = source[rda_start:rda_start + 18000]
+  assert "audit_input_table=rda_source" in rda
+  assert "audit_processed_table=rda_processed" in rda
+  assert "audit_output_table=rda_output" in rda
+  assert "data/fiqui2.xlsx" in rda
+
+
+def test_taxonomy_refresh_script_is_featured_in_figures_and_scripts() -> None:
+  source = generated_source()
+  assert "scripts/taxonomy/harmonize_ncbi_taxonomy_and_regenerate.py" in source
+  assert "Automatic NCBI taxonomy refresh" in source
+  assert "Download taxonomy-refresh script" in source

@@ -7,6 +7,7 @@ import numpy as np
 import pandas as pd
 import plotly.express as px
 import plotly.graph_objects as go
+from .ncbi_taxonomy_harmonization import load_current_taxonomy_table
 
 from ._helpers import BASE_DIR, empty_frame, heatmap, numeric_columns, read_table, row_zscore
 from .sample_metadata import amazonian_sample_metadata, lake_column_metadata, publication_sample_id
@@ -170,7 +171,11 @@ def _taxonomy_raw() -> tuple[pd.DataFrame, pd.DataFrame]:
   except Exception:
     otu = pd.DataFrame()
   try:
-    tax = pd.read_csv(tax_path, sep='\t', index_col=0)
+    tax = load_current_taxonomy_table(
+      original_path=tax_path,
+      current_path=BASE_DIR / 'data' / 'resultado.cds.tax.ncbi_current.tab',
+      updates_path=BASE_DIR / 'data' / 'ncbi_taxonomy_name_updates.csv',
+    )
   except Exception:
     tax = pd.DataFrame()
   otu.columns = [str(c).strip().strip('.') for c in otu.columns]

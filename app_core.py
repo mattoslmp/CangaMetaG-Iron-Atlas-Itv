@@ -132,6 +132,8 @@ from src.supplementary_database import (
 )
 
 from src.taxonomy_palette import build_palette as build_canonical_taxonomy_palette, load_palette as load_canonical_taxonomy_palette
+from src.current_taxonomy_display import harmonize_figure as harmonize_current_taxonomy_figure
+from src.current_taxonomy_display import harmonize_table as harmonize_current_taxonomy_table
 
 from src.data_sources import (
   NASA_POWER_DEFAULT_PARAMS,
@@ -1367,7 +1369,28 @@ def render_figure_audit_expander(
   script: str | None = None, instructions: str | None = None,
 ) -> None:
   context = _infer_figure_audit_context(chart_key, fig)
-  plotted = _plotly_exact_value_table(fig)
+  plotted = harmonize_current_taxonomy_table(_plotly_exact_value_table(fig), BASE_DIR)
+  final_source = input_source or context["input"]
+  final_method = method or context["method"]
+  input_table = harmonize_current_taxonomy_table(input_table, BASE_DIR)
+  processed_table = harmonize_current_taxonomy_table(processed_table, BASE_DIR)
+  output_table = harmonize_current_taxonomy_table(output_table, BASE_DIR)
+  if input_table is None or input_table.empty:
+    input_table = plotted.copy()
+  if processed_table is None or processed_table.empty:
+    processed_table = input_table.copy()
+  if output_table is None or output_table.empty:
+    output_table = plotted.copy()
+  for stage, frame in [
+    ("Source", input_table),
+    ("Processed", processed_table),
+    ("Output", output_table),
+    ("Plotted values", plotted),
+  ]:
+    if "traceability_stage" not in frame.columns:
+      frame.insert(0, "traceability_stage", stage)
+    if "provenance" not in frame.columns:
+      frame.insert(1, "provenance", final_source)
   figure_id, figure_title = _figure_display_identity(fig, chart_key)
   expander_label = txt(
     f"Dados utilizados em {figure_id} — {figure_title}",
@@ -1375,8 +1398,8 @@ def render_figure_audit_expander(
   )
   with st.expander(expander_label, expanded=False):
     st.markdown(f"**{figure_id} — {figure_title}**")
-    st.markdown(f"**{txt('Método', 'Method')}:** {method or context['method']}")
-    st.markdown(f"**{txt('Input/fonte', 'Input/source')}:** {input_source or context['input']}")
+    st.markdown(f"**{txt('Método', 'Method')}:** {final_method}")
+    st.markdown(f"**{txt('Input/fonte', 'Input/source')}:** {final_source}")
     final_script = script or context['script']
     st.markdown(f"**{txt('Script final', 'Final script')}:** `{final_script}`")
     if instructions:
@@ -1409,6 +1432,7 @@ def render_plotly_downloadable(
   """
   chart_key = str(key)
   base = safe_filename(basename or chart_key)
+  fig = harmonize_current_taxonomy_figure(fig, BASE_DIR)
   fig = prepare_plotly_for_publication_export(fig)
   fig = compact_heatmap_colorbars(fig, length=None, thickness=12, top=None)
   layout_meta_initial = getattr(fig.layout, "meta", None)
@@ -4799,6 +4823,59 @@ def _amazon_lake_group_order(values: list[str]) -> list[str]:
   return wanted + sorted(rest)
 
 
+def canonical_ordination_audit_tables(
+  domain: str,
+  bundle: dict,
+) -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
+  """Build complete Source/Processed/Output tables for article ordinations."""
+  otu_path = BASE_DIR / "data" / "resultado.cds.otu.tab"
+  tax_path = BASE_DIR / "data" / "resultado.cds.tax.ncbi_current.tab"
+  if not tax_path.exists():
+    tax_path = BASE_DIR / "data" / "resultado.cds.tax.tab"
+  env_path = BASE_DIR / "data" / "fiqui2.xlsx"
+
+  otu = pd.read_csv(otu_path, sep="\t", index_col=0).reset_index()
+  otu.insert(0, "source_component", "original CDS counts")
+  otu.insert(1, "source_file", str(otu_path.relative_to(BASE_DIR)))
+  taxonomy = pd.read_csv(tax_path, sep="\t", index_col=0, dtype=str, keep_default_na=False).reset_index()
+  taxonomy = harmonize_current_taxonomy_table(taxonomy, BASE_DIR)
+  taxonomy.insert(0, "source_component", "current NCBI taxonomy labels")
+  taxonomy.insert(1, "source_file", str(tax_path.relative_to(BASE_DIR)))
+  environment = pd.read_excel(env_path)
+  environment.insert(0, "source_component", "original physicochemical predictors")
+  environment.insert(1, "source_file", str(env_path.relative_to(BASE_DIR)))
+  source = pd.concat([otu, taxonomy, environment], ignore_index=True, sort=False)
+
+  processed_parts = []
+  for component, frame in [
+    ("domain genus relative abundance", bundle.get("relative_abundance")),
+    ("pooled position abundance", bundle.get("raw_result", {}).get("pooled_abundance")),
+    ("Hellinger transformed community", bundle.get("raw_result", {}).get("transformed_community")),
+    ("standardized environmental predictors", bundle.get("raw_result", {}).get("standardized_environment")),
+  ]:
+    if isinstance(frame, pd.DataFrame) and not frame.empty:
+      item = frame.copy().reset_index()
+      item.insert(0, "processed_component", component)
+      processed_parts.append(item)
+  processed = pd.concat(processed_parts, ignore_index=True, sort=False) if processed_parts else pd.DataFrame()
+
+  output_parts = []
+  for component, frame in [
+    ("site scores", bundle.get("sites")),
+    ("environment vectors", bundle.get("environment_vectors")),
+    ("taxon vectors", bundle.get("taxon_vectors")),
+    ("model statistics", bundle.get("model_statistics")),
+    ("variance inflation factors", bundle.get("vif")),
+    ("sample inclusion audit", bundle.get("sample_audit")),
+  ]:
+    if isinstance(frame, pd.DataFrame) and not frame.empty:
+      item = frame.copy().reset_index(drop=True)
+      item.insert(0, "output_component", component)
+      output_parts.append(item)
+  output = pd.concat(output_parts, ignore_index=True, sort=False) if output_parts else pd.DataFrame()
+  return source, processed, output
+
+
 def taxonomic_rda_panel():
   """Interactive views produced from the exact article ordination functions."""
   st.markdown("### " + txt("Ordenações canônicas do artigo", "Canonical article ordinations"))
@@ -4814,7 +4891,18 @@ def taxonomic_rda_panel():
     tab_rda, tab_nmds = st.tabs(["RDA", "NMDS"])
     with tab_rda:
       fig, sites, env, taxa = publication_rda_figure(BASE_DIR, domain, show_taxa)
-      render_plotly_downloadable(fig, key=f"canonical_rda_{domain}", basename=f"canonical_{domain}_RDA")
+      rda_source, rda_processed, rda_output = canonical_ordination_audit_tables(domain, rda_bundle)
+      render_plotly_downloadable(
+        fig,
+        key=f"canonical_rda_{domain}",
+        basename=f"canonical_{domain}_RDA",
+        audit_input_table=rda_source,
+        audit_processed_table=rda_processed,
+        audit_output_table=rda_output,
+        audit_method="Domain-filtered genus counts; relative abundance; dry/rainy pooling by position; Hellinger community transformation; z-scored LOI, SiO2, Al2O3, TOT/S, Cu and Pb; canonical RDA with 999 permutations and seed 42.",
+        audit_input_source="data/resultado.cds.otu.tab; data/resultado.cds.tax.tab + data/ncbi_taxonomy_name_updates.csv; data/fiqui2.xlsx",
+        audit_script="src/publication_ordination.py; src/publication_rda.py",
+      )
       model_stats = rda_bundle["model_statistics"]
       st.caption(txt(
         "Método: mesma implementação científica usada no artigo (src/publication_ordination.py e src/publication_rda.py). Dados de entrada: abundâncias relativas reais dos gêneros bacterianos/arqueanos e variáveis ambientais reais do estudo. Abaixo são reportados R², R² ajustado, pseudo-F, P global, P por eixo e VIF; nenhum valor é simulado.",
@@ -4844,7 +4932,29 @@ def taxonomic_rda_panel():
         csv_button(rda_bundle["vif"], f"{domain}_canonical_RDA_VIF.csv", txt("Baixar VIF", "Download VIF"))
     with tab_nmds:
       nfig, nscores = publication_nmds_figure(BASE_DIR, domain)
-      render_plotly_downloadable(nfig, key=f"canonical_nmds_{domain}", basename=f"canonical_{domain}_NMDS")
+      nmds_source, _, _ = canonical_ordination_audit_tables(domain, rda_bundle)
+      nmds_processed = pd.concat([
+        nmds_bundle["relative_abundance"].reset_index().assign(processed_component="domain genus relative abundance"),
+        nmds_bundle["transformed"].reset_index().assign(processed_component="square-root relative proportions"),
+        nmds_bundle["distance"].reset_index().assign(processed_component="Bray-Curtis distance matrix"),
+      ], ignore_index=True, sort=False)
+      nmds_output = pd.concat([
+        nscores.assign(output_component="NMDS scores"),
+        nmds_bundle["parameters"].assign(output_component="NMDS parameters"),
+        nmds_bundle["statistics"].assign(output_component="PERMANOVA and dispersion"),
+        nmds_bundle["sample_audit"].assign(output_component="sample inclusion audit"),
+      ], ignore_index=True, sort=False)
+      render_plotly_downloadable(
+        nfig,
+        key=f"canonical_nmds_{domain}",
+        basename=f"canonical_{domain}_NMDS",
+        audit_input_table=nmds_source,
+        audit_processed_table=nmds_processed,
+        audit_output_table=nmds_output,
+        audit_method="Domain-filtered genus relative abundance; square-root transformation; Bray-Curtis dissimilarity; two-dimensional non-metric MDS; 20 starts; 1,000 iterations; seed 42.",
+        audit_input_source="data/resultado.cds.otu.tab; data/resultado.cds.tax.tab + data/ncbi_taxonomy_name_updates.csv",
+        audit_script="src/publication_ordination.py; src/publication_rda.py",
+      )
       st.caption(txt(
         "As 20 amostras são calculadas com proporções relativas transformadas pela raiz quadrada, Bray–Curtis, NMDS não métrico bidimensional, 20 inicializações, máximo de 1.000 iterações e semente 42. O Stress-1 normalizado aparece no título.",
         "All 20 samples are calculated from square-root-transformed relative proportions, Bray–Curtis, two-dimensional non-metric MDS, 20 starts, a 1,000-iteration maximum and seed 42. Normalized Stress-1 is shown in the title."
@@ -10317,8 +10427,20 @@ def integrated_ordination_panel(results: dict):
     st.markdown("#### " + txt("RDA canônica do artigo", "Canonical article RDA"))
     st.caption(txt("Este painel utiliza exatamente os escores, vetores ambientais, amostras, variáveis e seleção de táxons produzidos pelo processamento compartilhado do artigo. O modo interativo não recalcula a RDA.", "This panel uses exactly the site scores, environmental vectors, samples, variables and taxon selection produced by the shared article processing. The interactive view does not recalculate the RDA."))
     try:
+      integrated_rda_bundle = publication_rda_data(BASE_DIR, "Bacteria")
       fig_rda, rda_scores, rda_vectors, rda_taxa = publication_rda_figure(BASE_DIR)
-      render_plotly_downloadable(fig_rda,key="canonical_publication_rda",basename="canonical_publication_RDA")
+      rda_source, rda_processed, rda_output = canonical_ordination_audit_tables("Bacteria", integrated_rda_bundle)
+      render_plotly_downloadable(
+        fig_rda,
+        key="canonical_publication_rda",
+        basename="canonical_publication_RDA",
+        audit_input_table=rda_source,
+        audit_processed_table=rda_processed,
+        audit_output_table=rda_output,
+        audit_method="Canonical article RDA: genus relative abundance, position pooling, Hellinger transformation, standardized physicochemical predictors, 999 permutations and seed 42.",
+        audit_input_source="data/resultado.cds.otu.tab; data/resultado.cds.tax.tab + data/ncbi_taxonomy_name_updates.csv; data/fiqui2.xlsx",
+        audit_script="src/publication_ordination.py; src/publication_rda.py",
+      )
       csv_button(rda_scores,"Figure_Bacteria_genus_RDA_site_scores.csv",txt("Baixar escores RDA", "Download RDA scores"))
       csv_button(rda_vectors,"Figure_Bacteria_genus_RDA_environment_vectors.csv",txt("Baixar vetores ambientais", "Download environmental vectors"))
       csv_button(rda_taxa,"Figure_Bacteria_genus_RDA_representative_genus_vectors.csv",txt("Baixar vetores taxonômicos", "Download taxon vectors"))
@@ -11737,8 +11859,9 @@ def code_reproducibility_tab():
     "Esta seção mostra somente as versões finais/canônicas dos scripts usados pelo aplicativo e pelo artigo. Os scripts corrigidos substituem as versões anteriores na interface e incluem inputs, outputs e instruções.",
     "This section shows only the final/canonical script versions used by the application and article. Corrected scripts replace earlier versions in the interface and include inputs, outputs and instructions."
   ))
-  st.markdown("#### " + txt("Fluxos KEGG/KEMET, antiSMASH e anotações funcionais", "KEGG/KEMET, antiSMASH and functional-annotation workflows"))
+  st.markdown("#### " + txt("Fluxos taxonômicos, KEGG/KEMET, antiSMASH e anotações funcionais", "Taxonomy, KEGG/KEMET, antiSMASH and functional-annotation workflows"))
   new_workflows = pd.DataFrame([
+    {"Code": "scripts/taxonomy/harmonize_ncbi_taxonomy_and_regenerate.py", "Input": "data/resultado.cds.tax.tab; data/resultado.cds.otu.tab; current NCBI taxdump", "Output": "data/resultado.cds.tax.ncbi_current.tab; data/ncbi_taxonomy_name_updates.csv; reports/NCBI_TAXONOMY_HARMONIZATION_REPORT.json; regenerated taxonomy figures", "Method": "Resolves every observed Phylum, Order, Family and Genus against the current NCBI taxonomy, replaces legacy labels only, verifies byte-equivalent numeric counts and regenerates canonical figures without changing proportions"},
     {"Code": "src/kegg_modules.py", "Input": "data/kegg_modules/mags|metagenomes/reports/reportKMC_*.tsv; optional tables/Bin-genomas_all_kegg.xlsx", "Output": "outputs/kegg_modules/*status_matrix.csv, *completeness_score_matrix.csv, *report_long.csv", "Method": "Parses KEMET module reports, derives block completeness, builds status/score matrices, proportional-cell heatmaps and per-module KO component maps"},
     {"Code": "scripts/build_kegg_module_completeness.py", "Input": "Same KEMET directories", "Output": "Batch-generated CSV matrices and publication heatmaps outside Streamlit", "Method": "Command-line wrapper; run with --dataset mags, metagenomes or all; also invokes the static heatmap generator"},
     {"Code": "scripts/generate_kegg_module_completeness_heatmaps.py", "Input": "Bin-genomas_all_kegg.xlsx and/or reportKMC_*.tsv", "Output": "Article PNG/PDF/SVG heatmaps, complete-matrix PNGs and selected-module CSV tables", "Method": "Ranks modules by combined completeness, prevalence and variation; uses fixed cell geometry and discrete KEMET status colors"},
@@ -11750,7 +11873,18 @@ def code_reproducibility_tab():
     {"Code": "src/functional_annotations.py", "Input": "Supplementary Tables 6 and 8 KO/EC/PFAM matrices", "Output": "Absolute-count and row-z-score heatmaps plus linked tables", "Method": "Equal nominal pixel size per heatmap row/column; KO, EC and PFAM hyperlinks are derived from the selected annotation type"},
   ])
   show_table(new_workflows, "new_reproducible_workflows", height=470)
-  csv_button(new_workflows, "KEGG_KEMET_antiSMASH_functional_annotation_workflows.csv", txt("Baixar descrição dos novos fluxos", "Download new-workflow description"))
+  csv_button(new_workflows, "taxonomy_KEGG_KEMET_antiSMASH_functional_annotation_workflows.csv", txt("Baixar descrição dos novos fluxos", "Download new-workflow description"))
+  taxonomy_refresh_script = BASE_DIR / "scripts" / "taxonomy" / "harmonize_ncbi_taxonomy_and_regenerate.py"
+  if taxonomy_refresh_script.exists():
+    st.markdown("#### " + txt("Atualização automática da taxonomia NCBI", "Automatic NCBI taxonomy refresh"))
+    st.code(
+      "python scripts/taxonomy/harmonize_ncbi_taxonomy_and_regenerate.py --download-taxdump",
+      language="bash",
+    )
+    download_text_file_button(
+      taxonomy_refresh_script,
+      txt("Baixar script de atualização taxonômica", "Download taxonomy-refresh script"),
+    )
   if (BASE_DIR / "docs" / "code" / "KEGG_MODULES_AND_ANTISMASH.md").exists():
     download_text_file_button(BASE_DIR / "docs" / "code" / "KEGG_MODULES_AND_ANTISMASH.md", "Download KEGG_MODULES_AND_ANTISMASH.md")
   code_files = []

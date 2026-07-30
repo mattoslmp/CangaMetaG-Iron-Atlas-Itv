@@ -1,0 +1,34 @@
+{
+  "implementation": "src/ncbi_taxonomy_refresh.py",
+  "ncbi_taxdump": "https://ftp.ncbi.nlm.nih.gov/pub/taxonomy/taxdump.tar.gz",
+  "target_ranks": [
+    "Phylum",
+    "Order",
+    "Family",
+    "Genus"
+  ],
+  "taxonomy_shape": [
+    28816,
+    7
+  ],
+  "otu_shape": [
+    28816,
+    20
+  ],
+  "otu_count_checksum": 5125164.0,
+  "counts_unchanged": true,
+  "resolved_names": 6002,
+  "updated_names": 198,
+  "current_taxonomy_output": "data/resultado.cds.tax.ncbi_current.tab",
+  "audit_output": "data/ncbi_taxonomy_name_updates.csv",
+  "application_scope": "all taxonomy loaders and all interactive Plotly figure/audit labels",
+  "traceability_tabs": [
+    "Source",
+    "Processed",
+    "Output",
+    "Plotted values"
+  ],
+  "regeneration": {
+    "skipped": true
+  }
+}

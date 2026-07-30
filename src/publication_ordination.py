@@ -20,6 +20,7 @@ from scipy.stats import spearmanr
 from sklearn.manifold import MDS
 import sklearn
 import scipy
+from .ncbi_taxonomy_harmonization import load_current_taxonomy_table
 
 SAMPLE_MAP = {
   "Ga0540489": "AM.P1.D", "Ga0541010": "AM.P1.R", "Ga0541011": "AM.P2.D", "Ga0541012": "AM.P2.R",
@@ -51,7 +52,11 @@ def _normalise_taxon(value: object) -> str:
 def load_cds(base_dir: Path) -> tuple[pd.DataFrame, pd.DataFrame]:
   base = Path(base_dir)
   otu = pd.read_csv(base / "data/resultado.cds.otu.tab", sep="\t", index_col=0)
-  tax = pd.read_csv(base / "data/resultado.cds.tax.tab", sep="\t", index_col=0)
+  tax = load_current_taxonomy_table(
+    original_path=base / "data/resultado.cds.tax.tab",
+    current_path=base / "data/resultado.cds.tax.ncbi_current.tab",
+    updates_path=base / "data/ncbi_taxonomy_name_updates.csv",
+  )
   otu.index = otu.index.astype(str).str.strip()
   tax.index = tax.index.astype(str).str.strip()
   otu.columns = [SAMPLE_MAP.get(str(c).split("_")[0].strip("."), str(c).split("_")[0].strip(".")) for c in otu.columns]

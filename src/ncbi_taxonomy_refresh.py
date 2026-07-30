@@ -3,9 +3,11 @@ from __future__ import annotations
 """Robust implementation for current-NCBI taxonomy refresh and figure rebuild."""
 
 import json
+import os
 import shutil
 import subprocess
 import sys
+import tempfile
 import tarfile
 import urllib.request
 from pathlib import Path
@@ -201,20 +203,46 @@ def update_palette(palette_path: Path, audit: pd.DataFrame) -> None:
 
 def regenerate_figures(root: Path, current_taxonomy: pd.DataFrame) -> dict[str, object]:
   original_path = root / "data" / "resultado.cds.tax.tab"
-  figure_script = root / "scripts" / "generate_final_domain_taxonomy_figures.py"
+  figure_scripts = [
+    root / "scripts" / "generate_final_domain_taxonomy_figures.py",
+    root / "scripts" / "generate_taxonomy_supplementary_figures.py",
+  ]
   original_bytes = original_path.read_bytes()
   before = figure_geometry(root)
   temporary = original_path.with_suffix(original_path.suffix + ".ncbi-current.tmp")
   current_taxonomy.to_csv(temporary, sep="\t")
+  executions: list[dict[str, str]] = []
   try:
     temporary.replace(original_path)
-    completed = subprocess.run(
-      [sys.executable, str(figure_script)],
-      cwd=str(root),
-      check=True,
-      capture_output=True,
-      text=True,
-    )
+    with tempfile.TemporaryDirectory(prefix="cangametag-taxonomy-runtime-") as runtime_dir:
+      child_environment = os.environ.copy()
+      child_environment["CANGAMETAG_RUNTIME_DIR"] = runtime_dir
+      child_environment["MPLCONFIGDIR"] = str(Path(runtime_dir) / "matplotlib")
+      for figure_script in figure_scripts:
+        if not figure_script.exists():
+          continue
+        command = [sys.executable, str(figure_script)]
+        if figure_script.name == "generate_taxonomy_supplementary_figures.py":
+          command.extend(["--base-dir", str(root)])
+        completed = subprocess.run(
+          command,
+          cwd=str(root),
+          check=False,
+          capture_output=True,
+          text=True,
+          env=child_environment,
+        )
+        if completed.returncode != 0:
+          raise RuntimeError(
+            f"Taxonomy figure regeneration failed for {figure_script.relative_to(root)} "
+            f"(exit {completed.returncode}).\nSTDOUT:\n{completed.stdout[-4000:]}\n"
+            f"STDERR:\n{completed.stderr[-4000:]}"
+          )
+        executions.append({
+          "script": str(figure_script.relative_to(root)),
+          "stdout_tail": completed.stdout[-4000:],
+          "stderr_tail": completed.stderr[-4000:],
+        })
   finally:
     original_path.write_bytes(original_bytes)
     temporary.unlink(missing_ok=True)
@@ -235,8 +263,7 @@ def regenerate_figures(root: Path, current_taxonomy: pd.DataFrame) -> dict[str, 
   if failures:
     raise RuntimeError(f"Figure proportions changed beyond tolerance: {failures}")
   return {
-    "stdout_tail": completed.stdout[-4000:],
-    "stderr_tail": completed.stderr[-4000:],
+    "executions": executions,
     "geometry_checks": checks,
   }
 
@@ -308,6 +335,8 @@ def run_refresh(
     "updated_names": int(len(changed)),
     "current_taxonomy_output": str(current_taxonomy_path.relative_to(root)),
     "audit_output": str(audit_path.relative_to(root)),
+    "application_scope": "all taxonomy loaders and all interactive Plotly figure/audit labels",
+    "traceability_tabs": ["Source", "Processed", "Output", "Plotted values"],
     "regeneration": regeneration,
   }
   report_path.parent.mkdir(parents=True, exist_ok=True)

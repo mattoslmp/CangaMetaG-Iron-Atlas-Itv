@@ -139,7 +139,7 @@ if MARKER not in source:
   script: str | None = None, instructions: str | None = None,
 ) -> None:
   context = _infer_figure_audit_context(chart_key, fig)
-  plotted = _plotly_exact_value_table(fig)
+  plotted = harmonize_current_taxonomy_table(_plotly_exact_value_table(fig), BASE_DIR)
   figure_id, figure_title = _figure_display_identity(fig, chart_key)
   if plotted is None or plotted.empty:
     plotted = pd.DataFrame([{
@@ -153,9 +153,19 @@ if MARKER not in source:
   def _valid_table(frame: pd.DataFrame | None) -> bool:
     return isinstance(frame, pd.DataFrame) and not frame.empty
 
-  source_frame = input_table.copy() if _valid_table(input_table) else plotted.copy()
-  processed_frame = processed_table.copy() if _valid_table(processed_table) else source_frame.copy()
-  output_frame = output_table.copy() if _valid_table(output_table) else plotted.copy()
+  source_frame = harmonize_current_taxonomy_table(input_table, BASE_DIR) if _valid_table(input_table) else plotted.copy()
+  processed_frame = harmonize_current_taxonomy_table(processed_table, BASE_DIR) if _valid_table(processed_table) else source_frame.copy()
+  output_frame = harmonize_current_taxonomy_table(output_table, BASE_DIR) if _valid_table(output_table) else plotted.copy()
+  for stage, frame in [
+    ("Source", source_frame),
+    ("Processed", processed_frame),
+    ("Output", output_frame),
+    ("Plotted values", plotted),
+  ]:
+    if "traceability_stage" not in frame.columns:
+      frame.insert(0, "traceability_stage", stage)
+    if "provenance" not in frame.columns:
+      frame.insert(1, "provenance", input_source or context["input"])
 
   expander_label = txt(
     f"Dados utilizados em {figure_id} — {figure_title}",

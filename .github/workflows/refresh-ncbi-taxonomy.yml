@@ -7,6 +7,7 @@ on:
     paths:
       - "src/article_taxonomy.py"
       - "src/ncbi_taxonomy_harmonization.py"
+      - "src/ncbi_taxonomy_refresh.py"
       - "src/taxonomy_palette.py"
       - "src/app_taxonomy_article_alignment_transform.py"
       - "scripts/taxonomy/harmonize_ncbi_taxonomy_and_regenerate.py"

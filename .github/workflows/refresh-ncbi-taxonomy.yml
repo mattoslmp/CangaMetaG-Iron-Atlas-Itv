@@ -13,6 +13,7 @@ on:
       - "src/app_kegg_s67_axis_readability_transform.py"
       - "scripts/taxonomy/harmonize_ncbi_taxonomy_and_regenerate.py"
       - "scripts/generate_final_domain_taxonomy_figures.py"
+      - "scripts/validate_streamlit_generated_source.py"
       - "data/resultado.cds.otu.tab"
       - "data/resultado.cds.tax.tab"
       - "data/ncbi_taxonomy_name_updates.csv"
@@ -57,7 +58,7 @@ jobs:
           python -m pytest -q \
             tests/test_taxonomy_article_alignment.py \
             tests/test_public_release_v1_source.py
-          python scripts/validate_generated_streamlit_source.py
+          python scripts/validate_streamlit_generated_source.py
 
       - name: Commit regenerated scientific assets
         run: |

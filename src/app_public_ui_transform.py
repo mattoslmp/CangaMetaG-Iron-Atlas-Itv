@@ -94,7 +94,7 @@ study_static_block = '''  figure1_sampling_path = BASE_DIR / "outputs" / "final_
       "Figure 1 sampling map was not found in the canonical final-figures directory."
     ))
 '''
-study_interactive_block = study_static_block + '''
+study_interactive_block = study_static_block + """
   interactive_study_meta = taxonomy_samples_metadata()
   if not interactive_study_meta.empty and {"lat", "lon"}.issubset(interactive_study_meta.columns):
     interactive_study_meta = apply_amazonian_lake_coordinate_overrides(interactive_study_meta)
@@ -130,7 +130,7 @@ study_interactive_block = study_static_block + '''
         "overview_exact_sampling_coordinate_table_v1",
         height=420,
       )
-'''
+"""
 source = replace_once(source, study_static_block, study_interactive_block, "interactive study-area map")
 
 

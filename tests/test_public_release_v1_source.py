@@ -51,12 +51,16 @@ def test_scripts_are_centralized_and_references_are_current() -> None:
   assert "SoilGrids / ISRIC" not in methods
   assert "Download methods index" not in methods
   assert "Download execution manifest" not in methods
+  assert "Harmonização reprodutível da taxonomia NCBI" in methods
 
 
 def test_workflow_traceability_heatmaps_and_integrity_repairs() -> None:
   source = generated_source()
-  assert "Complete computational workflow in an enlarged view" in source
-  assert "max-width:none" in source
+  overview = source[source.index("def overview_tab():"):source.index("def taxonomy_tab_legacy_redundant_removed():")]
+  assert "whole image is fitted to the page width" in overview
+  assert 'width="stretch"' in overview
+  assert "display_width = max(1900" not in overview
+  assert "max-width:none" not in overview
   assert "CANGAMETAG_TRACEABILITY_HEATMAP_REPAIR_V1" in source
   assert "Traceable source table" in source
   assert "Exact figure values" in source

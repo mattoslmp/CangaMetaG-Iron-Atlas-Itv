@@ -77,7 +77,67 @@ source = replace_once(
   "KO metatranscriptome panel option",
 )
 
+# Enlarge only the MTX figures. No matrix value, row ranking, selected column or
+# z-score calculation is changed here.
+ko_figure_anchor = '''    if raw_fig:
+      render_plotly_downloadable(raw_fig, key=f"{base_key}_{scope_key}_raw", basename=f"{base_key}_{scope_key}_raw_counts")
+    if z_fig:
+      render_plotly_downloadable(z_fig, key=f"{base_key}_{scope_key}_zscore", basename=f"{base_key}_{scope_key}_row_zscore")
+'''
+ko_figure_replacement = '''    if show_source_table:
+      mtx_n_rows = min(int(top_n), len(df))
+      mtx_n_cols = len(cols)
+      mtx_cell_w = 108 if mtx_n_cols <= 16 else 92 if mtx_n_cols <= 28 else 76
+      mtx_cell_h = 38 if mtx_n_rows <= 140 else 32
+      for mtx_fig in [raw_fig, z_fig]:
+        if not mtx_fig:
+          continue
+        current_meta = getattr(mtx_fig.layout, "meta", None)
+        if not isinstance(current_meta, dict):
+          current_meta = {}
+        current_meta.update({
+          "preserve_cell_geometry": True,
+          "force_all_y_ticks": True,
+          "all_y_labels_visible": True,
+          "cell_width_px": mtx_cell_w,
+          "cell_height_px": mtx_cell_h,
+          "data_provenance": "Supplementary Table 8 source matrix",
+          "no_synthetic_values": True,
+        })
+        mtx_fig.update_layout(
+          width=max(1650, min(16000, 720 + mtx_cell_w * max(mtx_n_cols, 1))),
+          height=max(980, min(26000, 340 + mtx_cell_h * max(mtx_n_rows, 1))),
+          margin=dict(l=620, r=210, t=110, b=430),
+          meta=current_meta,
+        )
+        mtx_fig.update_xaxes(
+          tickangle=-45,
+          tickfont=dict(size=12),
+          automargin=True,
+          title="Metatranscriptome source column",
+          constrain="domain",
+        )
+        mtx_fig.update_yaxes(
+          tickfont=dict(size=12),
+          automargin=True,
+        )
+    if raw_fig:
+      render_plotly_downloadable(raw_fig, key=f"{base_key}_{scope_key}_raw", basename=f"{base_key}_{scope_key}_raw_counts")
+    if z_fig:
+      render_plotly_downloadable(z_fig, key=f"{base_key}_{scope_key}_zscore", basename=f"{base_key}_{scope_key}_row_zscore")
+'''
+source = replace_once(source, ko_figure_anchor, ko_figure_replacement, "KO metatranscriptome heatmap geometry")
+
 ko_download_anchor = '''    d1, d2 = st.columns(2)
+    with d1:
+      csv_button(raw_table, f"{base_key}_{scope_key}_raw_counts_table.csv", txt("Baixar tabela raw count usada", "Download raw-count source table"))
+    with d2:
+      csv_button(z_table, f"{base_key}_{scope_key}_row_zscore_table.csv", txt("Baixar tabela z-score usada", "Download row-zscore source table"))
+    st.caption(txt(caption_pt, caption_en))
+'''
+# Accept the exact spelling currently used by app_core.
+if ko_download_anchor not in source:
+  ko_download_anchor = '''    d1, d2 = st.columns(2)
     with d1:
       csv_button(raw_table, f"{base_key}_{scope_key}_raw_counts_table.csv", txt("Baixar tabela raw count usada", "Download raw-count source table"))
     with d2:
@@ -91,10 +151,10 @@ ko_download_replacement = '''    d1, d2 = st.columns(2)
       csv_button(z_table, f"{base_key}_{scope_key}_row_zscore_table.csv", txt("Baixar tabela z-score usada", "Download row-z-score source table"))
     if show_source_table:
       st.markdown("###### " + txt("Tabela-fonte usada no painel", "Source table used for this panel"))
-      show_table(raw_table, f"{base_key}_{scope_key}_visible_source_table", height=520)
+      show_table(raw_table, f"{base_key}_{scope_key}_visible_source_table_v2", height=560)
       if not mtx_metadata_view.empty:
         st.markdown("###### " + txt("Estudos e identificadores dos metatranscriptomas", "Metatranscriptome studies and identifiers"))
-        show_table(mtx_metadata_view, f"{base_key}_{scope_key}_metadata", height=420)
+        show_table(mtx_metadata_view, f"{base_key}_{scope_key}_metadata_v2", height=440)
         csv_button(
           mtx_metadata_view,
           f"{base_key}_{scope_key}_studies_identifiers.csv",
@@ -125,5 +185,3 @@ ko_external_call_replacement = ko_external_call_anchor + '''  if mtx_cols:
     )
 '''
 source = replace_once(source, ko_external_call_anchor, ko_external_call_replacement, "KO metatranscriptome panel")
-
-

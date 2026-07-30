@@ -164,3 +164,36 @@ def lake_column_metadata(columns: list[object], *, source_dataset: str) -> pd.Da
     record["source_dataset"] = source_dataset
     rows.append(record)
   return pd.DataFrame(rows)
+
+
+def _refresh_packaged_workflow_figure() -> None:
+  """Render the corrected workflow before the overview tab displays it."""
+  from importlib.util import module_from_spec, spec_from_file_location
+
+  script = BASE_DIR / "scripts" / "generate_atlas_workflow_figure.py"
+  if not script.exists():
+    return
+
+  spec = spec_from_file_location("cangametag_workflow_figure", script)
+  if spec is None or spec.loader is None:
+    return
+
+  module = module_from_spec(spec)
+  spec.loader.exec_module(module)
+  figure = module.build_figure()
+  module.save_figure(figure)
+
+  try:
+    import matplotlib.pyplot as plt
+
+    plt.close(figure)
+  except Exception:
+    pass
+
+
+try:
+  _refresh_packaged_workflow_figure()
+except Exception:
+  # The app can still start with the packaged image if the runtime is read-only
+  # or a plotting dependency is temporarily unavailable.
+  pass

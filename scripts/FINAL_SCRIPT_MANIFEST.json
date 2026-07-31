@@ -1,0 +1,61 @@
+{
+  "manifest_version": "2026-07-31-final-v1",
+  "policy": "Only entries with status=canonical_final are used by the app and future article packages.",
+  "canonical_scripts": [
+    {
+      "figure_scope": "Main Figures 2-5 taxonomy, NMDS and RDA",
+      "path": "scripts/final_publication_figures/02_05_generate_final_taxonomy_figures.py",
+      "status": "canonical_final",
+      "app_shared_modules": [
+        "src/article_exact_taxonomy_phylum_generated.py",
+        "src/article_frozen_taxonomy_static.py",
+        "src/article_frozen_taxonomy_panels.py"
+      ],
+      "inputs": [
+        "data/final_publication_derived/Figure2_taxonomic_phylum_bacteria_horizontal_CDS_source.csv",
+        "data/final_publication_derived/Figure3_taxonomic_phylum_archaea_horizontal_CDS_source.csv",
+        "data/article_frozen_taxonomy_bacteria.json",
+        "data/article_frozen_taxonomy_archaea.json"
+      ],
+      "outputs": [
+        "outputs/final_publication_figures/Figure2_taxonomic_phylum_bacteria_horizontal_CDS.*",
+        "outputs/final_publication_figures/Figure3_taxonomic_phylum_archaea_horizontal_CDS.*",
+        "outputs/final_publication_figures/Figure4_taxonomic_bacteria_genus_profiles.*",
+        "outputs/final_publication_figures/Figure5_taxonomic_archaea_genus_profiles.*"
+      ],
+      "command": "python scripts/final_publication_figures/02_05_generate_final_taxonomy_figures.py",
+      "scientific_values_recomputed": false
+    },
+    {
+      "figure_scope": "Supplementary Table 8 all-KO biomarker heatmaps",
+      "path": "scripts/final_publication_figures/07_generate_st8_ko_biomarker_heatmaps.py",
+      "status": "canonical_final",
+      "app_shared_modules": [
+        "src/st8_biomarker_heatmap.py",
+        "src/supplementary_database.py"
+      ],
+      "inputs": [
+        "tables/Supplementary_Table_8.xlsx#ST8 — all KO biomarkers"
+      ],
+      "outputs": [
+        "outputs/app_supplementary_figures/SupplementaryTable8_189_KO_*_final.*",
+        "data/final_publication_derived/ST8_*_audit.csv",
+        "reports/FINAL_ST8_KO_HEATMAP_REPORT.json"
+      ],
+      "command": "python scripts/final_publication_figures/07_generate_st8_ko_biomarker_heatmaps.py",
+      "scientific_values_recomputed": false
+    }
+  ],
+  "compatibility_entry_points": [
+    {
+      "path": "scripts/generate_final_domain_taxonomy_figures.py",
+      "delegates_to": "scripts/final_publication_figures/02_05_generate_final_taxonomy_figures.py"
+    }
+  ],
+  "superseded_behaviour": [
+    "taxonomy labels generated from uncorrected legacy names",
+    "NMDS legend positioned between panels C and D",
+    "RDA vector legend drawn inside panel D",
+    "ST8 heatmap displaying all-zero marker rows as observed signals"
+  ]
+}

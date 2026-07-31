@@ -9,6 +9,11 @@ Outputs are produced for:
 The same 189 KO rows and the same metadata-defined sample order are used in all
 three representations. Zero is retained as measured absence. No value is
 imputed and no sample is removed because it contains zeros.
+
+Internal validation tables distinguish genuinely missing/non-numeric cells,
+measured zeros, and constant rows whose row z-score is necessarily zero. These
+files are written to ``data/final_publication_derived`` and are not rendered in
+the public application.
 """
 from __future__ import annotations
 
@@ -115,6 +120,109 @@ def sample_label(column: str) -> str:
   if len(parts) == 3 and parts[-1].isdigit():
     return f"{parts[-2]}\n{parts[-1]}"
   return text
+
+
+def metatranscriptome_value_diagnostics(
+  all_ko: pd.DataFrame,
+  mtx_columns: list[str],
+) -> tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame]:
+  """Classify MTX value states without changing or imputing source values."""
+  columns = [str(column) for column in mtx_columns if str(column) in all_ko.columns]
+  raw = all_ko.loc[:, columns].copy()
+  numeric = raw.apply(pd.to_numeric, errors="coerce")
+  text = raw.astype("string").apply(lambda series: series.str.strip())
+  missing_tokens = {"", "nan", "none", "na", "n/a", "null", "<na>"}
+  blank_mask = raw.isna() | text.apply(
+    lambda series: series.str.casefold().isin(missing_tokens)
+  )
+  non_numeric_mask = numeric.isna() & ~blank_mask
+  issue_mask = blank_mask | non_numeric_mask
+
+  issue_rows: list[dict[str, object]] = []
+  for row_position, row_index in enumerate(all_ko.index):
+    for column in columns:
+      if not bool(issue_mask.loc[row_index, column]):
+        continue
+      issue_rows.append({
+        "source_row": row_position + 1,
+        "KO": str(all_ko.at[row_index, "KO"]) if "KO" in all_ko.columns else "",
+        "Metabolism": (
+          str(all_ko.at[row_index, "Metabolism"])
+          if "Metabolism" in all_ko.columns else ""
+        ),
+        "matrix_column": column,
+        "source_value": raw.at[row_index, column],
+        "issue_type": (
+          "blank_source_cell"
+          if bool(blank_mask.loc[row_index, column])
+          else "non_numeric_source_cell"
+        ),
+      })
+  issues = pd.DataFrame(issue_rows, columns=[
+    "source_row",
+    "KO",
+    "Metabolism",
+    "matrix_column",
+    "source_value",
+    "issue_type",
+  ])
+
+  filled = numeric.fillna(0.0)
+  zero_cells = filled.eq(0.0).sum(axis=1)
+  nonzero_cells = filled.ne(0.0).sum(axis=1)
+  missing_cells = numeric.isna().sum(axis=1)
+  unique_numeric = numeric.nunique(axis=1, dropna=True)
+  all_zero = filled.eq(0.0).all(axis=1) & numeric.notna().any(axis=1)
+  constant = unique_numeric.le(1) & numeric.notna().any(axis=1)
+
+  status_rows: list[dict[str, object]] = []
+  for row_position, row_index in enumerate(all_ko.index):
+    missing_count = int(missing_cells.loc[row_index])
+    all_zero_row = bool(all_zero.loc[row_index])
+    constant_row = bool(constant.loc[row_index])
+    if missing_count:
+      reason = "missing_or_non_numeric_source_cells"
+    elif all_zero_row:
+      reason = "measured_zero_in_all_12_mtx_samples"
+    elif constant_row:
+      reason = "constant_across_mtx_row_zscore_is_zero"
+    else:
+      reason = "observed_values_present"
+    row_values = numeric.loc[row_index]
+    status_rows.append({
+      "source_row": row_position + 1,
+      "KO": str(all_ko.at[row_index, "KO"]) if "KO" in all_ko.columns else "",
+      "Metabolism": (
+        str(all_ko.at[row_index, "Metabolism"])
+        if "Metabolism" in all_ko.columns else ""
+      ),
+      "selected_mtx_samples": len(columns),
+      "missing_or_non_numeric_cells": missing_count,
+      "zero_cells": int(zero_cells.loc[row_index]),
+      "nonzero_cells": int(nonzero_cells.loc[row_index]),
+      "all_zero_across_mtx": all_zero_row,
+      "constant_across_mtx": constant_row,
+      "raw_sum": float(row_values.fillna(0.0).sum()),
+      "raw_min": float(row_values.min()) if row_values.notna().any() else np.nan,
+      "raw_max": float(row_values.max()) if row_values.notna().any() else np.nan,
+      "display_explanation": reason,
+      "values_imputed": False,
+    })
+  ko_status = pd.DataFrame(status_rows)
+
+  sample_rows: list[dict[str, object]] = []
+  for column in columns:
+    sample_rows.append({
+      "matrix_column": column,
+      "KO_rows": int(len(all_ko)),
+      "missing_or_non_numeric_cells": int(numeric[column].isna().sum()),
+      "zero_cells": int(filled[column].eq(0.0).sum()),
+      "nonzero_cells": int(filled[column].ne(0.0).sum()),
+      "raw_sum": float(filled[column].sum()),
+      "values_imputed": False,
+    })
+  sample_status = pd.DataFrame(sample_rows)
+  return ko_status, issues, sample_status
 
 
 def render_heatmap_panels(
@@ -241,27 +349,58 @@ def main() -> int:
   workbook = resolve_workbook(root, args.workbook.resolve() if args.workbook else None)
   all_ko = pd.read_excel(workbook, sheet_name="ST8 — all KO biomarkers")
   metadata = pd.read_excel(workbook, sheet_name="metadata", dtype=str)
-  validation = validate_all_ko_contract(all_ko, metadata)
-  if validation["status"] != "PASS":
-    raise RuntimeError(json.dumps(validation, ensure_ascii=False, indent=2))
 
+  figure_dirs, derived = output_directories(root, article_root)
   lake_columns = amazonian_sample_columns(all_ko.columns)
   resolved_metadata, mtx_columns = resolve_metatranscriptome_columns(
     metadata,
     all_ko.columns,
     expected_count=12,
   )
-  scopes = {
-    "ST8_MTX_all_12_samples": mtx_columns,
-    "ST8_Amazonian_20_plus_MTX_12": lake_columns + mtx_columns,
-  }
-  figure_dirs, derived = output_directories(root, article_root)
-  reports: list[dict[str, object]] = []
-
+  ko_status, source_issues, sample_status = metatranscriptome_value_diagnostics(
+    all_ko,
+    mtx_columns,
+  )
   resolved_metadata.to_csv(
     derived / "ST8_metatranscriptome_12_sample_resolution.csv",
     index=False,
   )
+  ko_status.to_csv(derived / "ST8_MTX_KO_value_status.csv", index=False)
+  source_issues.to_csv(derived / "ST8_MTX_source_cell_issues.csv", index=False)
+  sample_status.to_csv(derived / "ST8_MTX_sample_value_summary.csv", index=False)
+
+  validation = validate_all_ko_contract(all_ko, metadata)
+  validation.update({
+    "mtx_source_issue_cells": int(len(source_issues)),
+    "mtx_all_zero_ko_rows": int(ko_status["all_zero_across_mtx"].sum()),
+    "mtx_constant_ko_rows": int(ko_status["constant_across_mtx"].sum()),
+    "mtx_observed_value_rows": int(
+      ko_status["display_explanation"].eq("observed_values_present").sum()
+    ),
+  })
+  if validation["status"] != "PASS" or not source_issues.empty:
+    validation["status"] = "FAIL"
+    failure_path = derived / "ST8_final_KO_MTX_validation.json"
+    failure_path.write_text(
+      json.dumps({
+        "status": "FAIL",
+        "workbook": str(workbook),
+        "contract": validation,
+        "MTX_columns": mtx_columns,
+        "source_issue_file": str(
+          (derived / "ST8_MTX_source_cell_issues.csv").relative_to(root)
+        ),
+      }, ensure_ascii=False, indent=2),
+      encoding="utf-8",
+    )
+    raise RuntimeError(json.dumps(validation, ensure_ascii=False, indent=2))
+
+  scopes = {
+    "ST8_MTX_all_12_samples": mtx_columns,
+    "ST8_Amazonian_20_plus_MTX_12": lake_columns + mtx_columns,
+  }
+  reports: list[dict[str, object]] = []
+
   for scope_name, columns in scopes.items():
     raw = build_matrix(all_ko, columns)
     relative = relative_abundance(raw)
@@ -304,6 +443,15 @@ def main() -> int:
       "contract": validation,
       "MTX_columns": mtx_columns,
       "lake_columns": lake_columns,
+      "KO_value_status_file": str(
+        (derived / "ST8_MTX_KO_value_status.csv").relative_to(root)
+      ),
+      "source_cell_issues_file": str(
+        (derived / "ST8_MTX_source_cell_issues.csv").relative_to(root)
+      ),
+      "sample_value_summary_file": str(
+        (derived / "ST8_MTX_sample_value_summary.csv").relative_to(root)
+      ),
       "figure_records": reports,
     }, ensure_ascii=False, indent=2),
     encoding="utf-8",

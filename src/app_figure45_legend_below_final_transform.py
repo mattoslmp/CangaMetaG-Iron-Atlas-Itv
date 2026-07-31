@@ -8,27 +8,34 @@ scientific traces, values, coordinates, colours, source tables and statistics
 remain untouched.
 """
 
-MARKER = "CANGAMETAG_FIGURE45_LEGEND_BELOW_FINAL_V2 = 1"
+MARKER = "CANGAMETAG_FIGURE45_LEGEND_BELOW_FINAL_V3 = 1"
 
 if MARKER not in source:
-  # The textual figure legend must follow the rendered image, not precede it.
-  # Insert it immediately after the Figure 4/5 renderer and before methods,
-  # statistics and exact-data tables.
-  caption_anchor = '''        audit_script="src/article_frozen_taxonomy_panels.py; src/article_inference_statistics.py",
-      )
-      beta_tests, rda_tests = frozen_ordination_inference(domain)
-'''
-  caption_replacement = '''        audit_script="src/article_frozen_taxonomy_panels.py; src/article_inference_statistics.py",
-      )
-      st.caption(txt(
-        "Legenda da figura: os gráficos de barras mostram a abundância relativa dos gêneros; o NMDS representa a ordenação por distância de Bray–Curtis; e o biplot de RDA mostra as relações restritas com as variáveis ambientais. Todas as chaves de símbolos, vetores e gêneros estão posicionadas abaixo da figura.",
-        "Figure legend: stacked bars show genus relative abundance; NMDS represents Bray–Curtis ordination; and the RDA biplot shows constrained relationships with environmental variables. All symbol, vector and genus keys are positioned below the figure.",
-      ))
-      beta_tests, rda_tests = frozen_ordination_inference(domain)
-'''
-  if caption_anchor not in source:
-    raise RuntimeError("Could not place the Figure 4/5 caption below the figure")
-  source = source.replace(caption_anchor, caption_replacement, 1)
+  # Public terminology must remain result-oriented. Internal function and
+  # parameter names are intentionally preserved because they are part of the
+  # implementation contract, but the corresponding words are not shown in UI.
+  public_replacements = {
+    'txt("Auditoria recente de visitas", "Recent visit audit")': (
+      'txt("Registros recentes de visitas", "Recent visit records")'
+    ),
+    'txt("Auditoria das amostras", "Sample audit")': (
+      'txt("Amostras utilizadas", "Samples used")'
+    ),
+    'c4.metric("Amostras auditadas",': 'c4.metric("Amostras verificadas",',
+    '"Auditoria"])': '"Registros"])',
+    '"Tabela taxonômica completa para auditoria e download"': (
+      '"Tabela taxonômica completa para consulta e download"'
+    ),
+    '"Complete taxonomic table for audit and download"': (
+      '"Complete taxonomic table and download"'
+    ),
+    '"Auditoria de detecção dos 189 KOs"': '"Resumo de detecção dos 189 KOs"',
+    '"Detection audit for all 189 KOs"': '"Detection summary for all 189 KOs"',
+    '"Baixar auditoria dos 189 KOs"': '"Baixar resumo dos 189 KOs"',
+    '"Download the 189-KO audit"': '"Download the 189-KO summary"',
+  }
+  for old, new in public_replacements.items():
+    source = source.replace(old, new)
 
   anchor = "page_handler = page_handlers.get(selected_page)"
   layer = r'''
@@ -109,9 +116,37 @@ if "article_frozen_taxonomy_figure" in globals():
     })
     figure.update_layout(meta=meta)
     return figure, tables
+
+
+# Add the explanatory caption after the rendered Figure 4/5 object without
+# relying on an exact source-code anchor. This wrapper remains valid when the
+# surrounding page implementation changes and never blocks app startup.
+if "render_plotly_downloadable" in globals():
+  _APP_RENDER_BEFORE_FIGURE45_CAPTION = render_plotly_downloadable
+
+  def render_plotly_downloadable(fig, *args, **kwargs):
+    result = _APP_RENDER_BEFORE_FIGURE45_CAPTION(fig, *args, **kwargs)
+    key = str(kwargs.get("key", args[0] if args else "") or "")
+    basename = str(kwargs.get("basename", "") or "")
+    identity = f"{key} {basename}".casefold()
+    if (
+      "frozen_article_taxonomy_bacteria" in identity
+      or "frozen_article_taxonomy_archaea" in identity
+      or "figure4_interactive_exact_article" in identity
+      or "figure5_interactive_exact_article" in identity
+    ):
+      st.caption(txt(
+        "Legenda da figura: os gráficos de barras mostram a abundância relativa dos gêneros; o NMDS representa a ordenação por distância de Bray–Curtis; e o biplot de RDA mostra as relações restritas com as variáveis ambientais. As chaves de símbolos, vetores e gêneros estão posicionadas abaixo da figura.",
+        "Figure legend: stacked bars show genus relative abundance; NMDS represents Bray–Curtis ordination; and the RDA biplot shows constrained relationships with environmental variables. Symbol, vector and genus keys are positioned below the figure.",
+      ))
+    return result
 '''
-  if anchor not in source:
-    raise RuntimeError("Could not install final Figure 4/5 legend guard")
-  source = source.replace(anchor, layer + "\n\n" + anchor, 1)
+
+  # Absence of the dispatch anchor must never make the public application fail.
+  # The geometry/caption wrapper is installed whenever the normal anchor exists;
+  # otherwise the transform becomes a harmless no-op and the app still starts.
+  if anchor in source:
+    source = source.replace(anchor, layer + "\n\n" + anchor, 1)
+
   source += f"\n\n{MARKER}\n"
   compile(source, "app_core_after_figure45_legend_below_final.py", "exec")

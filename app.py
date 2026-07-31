@@ -39,6 +39,7 @@ TRANSFORMS = [
   Path(__file__).with_name("src") / "app_st8_biomarker_heatmap_transform.py",
   Path(__file__).with_name("src") / "app_st8_environment_label_transform.py",
   Path(__file__).with_name("src") / "app_final_script_manifest_transform.py",
+  Path(__file__).with_name("src") / "app_visitor_geolocation_points_transform.py",
   Path(__file__).with_name("src") / "app_visitor_footer_final_transform.py",
 ]
 

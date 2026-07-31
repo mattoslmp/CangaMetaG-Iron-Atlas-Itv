@@ -41,6 +41,7 @@ TRANSFORMS = [
   Path(__file__).with_name("src") / "app_final_script_manifest_transform.py",
   Path(__file__).with_name("src") / "app_visitor_geolocation_points_transform.py",
   Path(__file__).with_name("src") / "app_visitor_footer_final_transform.py",
+  Path(__file__).with_name("src") / "app_runtime_name_guard_transform.py",
 ]
 
 source = CORE_PATH.read_text(encoding="utf-8")

@@ -1,18 +1,10 @@
 from __future__ import annotations
 
-"""Final Figure 4/5 legend placement guard.
+"""Install the final Figure 4/5 generator and bottom-legend layout safely."""
 
-This transform is intentionally loaded after every figure, language and runtime
-wrapper. It changes presentation geometry and caption placement only: all
-scientific traces, values, coordinates, colours, source tables and statistics
-remain untouched.
-"""
-
-MARKER = "CANGAMETAG_FIGURE45_LEGEND_BELOW_FINAL_V4 = 1"
+MARKER = "CANGAMETAG_FIGURE45_FINAL_DATA_GENERATOR_V1 = 1"
 
 if MARKER not in source:
-  # Public terminology remains result-oriented. Internal identifiers and
-  # function names are preserved because they are part of the implementation.
   public_replacements = {
     'txt("Auditoria recente de visitas", "Recent visit audit")': (
       'txt("Registros recentes de visitas", "Recent visit records")'
@@ -73,88 +65,40 @@ if MARKER not in source:
   for old, new in public_replacements.items():
     source = source.replace(old, new)
 
+  future_anchor = "from __future__ import annotations\n"
+  imports = '''from src.article_figure45_final_generator import (
+  apply_figure45_plotly_layout as _apply_figure45_plotly_layout_final,
+  materialize_article_figure45_static as _materialize_article_figure45_static_final,
+)
+'''
+  if imports not in source and future_anchor in source:
+    source = source.replace(future_anchor, future_anchor + imports, 1)
+
   anchor = "page_handler = page_handlers.get(selected_page)"
   layer = r'''
+# The static and interactive Figure 4/5 views now use one final implementation.
+# Both read the packaged frozen article JSON inputs and only change layout.
+materialize_frozen_article_static = _materialize_article_figure45_static_final
+final_materialize_frozen_article_static = _materialize_article_figure45_static_final
+materialize_frozen_article_static_bilingual = _materialize_article_figure45_static_final
+
 if "article_frozen_taxonomy_figure" in globals():
-  _APP_FIGURE45_BEFORE_FINAL_LEGEND_GUARD = article_frozen_taxonomy_figure
+  _APP_FIGURE45_BEFORE_FINAL_DATA_GENERATOR = article_frozen_taxonomy_figure
 
   def article_frozen_taxonomy_figure(domain: str):
-    figure, tables = _APP_FIGURE45_BEFORE_FINAL_LEGEND_GUARD(domain)
-
-    current_margin = getattr(figure.layout, "margin", None)
-    left = int(getattr(current_margin, "l", 115) or 115)
-    right = int(getattr(current_margin, "r", 110) or 110)
-    top = int(getattr(current_margin, "t", 105) or 105)
-
-    figure.update_layout(
-      height=max(int(getattr(figure.layout, "height", 0) or 0), 1900),
-      width=max(int(getattr(figure.layout, "width", 0) or 0), 1750),
-      margin={"l": left, "r": right, "t": top, "b": 690},
-      legend={
-        "title": {"text": txt("Gênero", "Genus")},
-        "orientation": "h",
-        "x": 0.5,
-        "xanchor": "center",
-        "y": -0.285,
-        "yanchor": "top",
-        "font": {"size": 11},
-        "itemsizing": "constant",
-        "tracegroupgap": 5,
-        "bgcolor": "rgba(255,255,255,0.98)",
-        "bordercolor": "#D1D5DB",
-        "borderwidth": 1,
-      },
-    )
-
-    for annotation in list(figure.layout.annotations or []):
-      text = str(getattr(annotation, "text", "") or "")
-      normalized = text.casefold()
-      if "nmds symbols:" in normalized or "símbolos do nmds:" in normalized:
-        annotation.update(
-          x=0.04,
-          y=-0.105,
-          xref="paper",
-          yref="paper",
-          xanchor="left",
-          yanchor="top",
-          bgcolor="rgba(255,255,255,0.98)",
-          bordercolor="#D1D5DB",
-          borderwidth=1,
-          borderpad=5,
-        )
-      elif "rda vectors:" in normalized or "vetores da rda:" in normalized:
-        annotation.update(
-          x=0.96,
-          y=-0.105,
-          xref="paper",
-          yref="paper",
-          xanchor="right",
-          yanchor="top",
-          bgcolor="rgba(255,255,255,0.98)",
-          bordercolor="#D1D5DB",
-          borderwidth=1,
-          borderpad=5,
-        )
-
-    meta = dict(figure.layout.meta) if isinstance(figure.layout.meta, dict) else {}
-    meta.update({
-      "figure45_final_legend_guard": True,
-      "legend_layout": "dedicated-band-below-entire-figure",
-      "legend_below_entire_figure": True,
-      "textual_caption_below_figure": True,
-      "legend_overlaps_scientific_panels": False,
-      "bottom_margin_px": 690,
-      "scientific_values_changed": False,
-    })
-    figure.update_layout(meta=meta)
-    return figure, tables
+    figure, tables = _APP_FIGURE45_BEFORE_FINAL_DATA_GENERATOR(domain)
+    language = "pt" if globals().get("IS_PT", False) else "en"
+    return _apply_figure45_plotly_layout_final(
+      figure,
+      language=language,
+    ), tables
 
 
 if "render_plotly_downloadable" in globals():
-  _APP_RENDER_BEFORE_FIGURE45_CAPTION = render_plotly_downloadable
+  _APP_RENDER_BEFORE_FIGURE45_FINAL_CAPTION = render_plotly_downloadable
 
   def render_plotly_downloadable(fig, *args, **kwargs):
-    result = _APP_RENDER_BEFORE_FIGURE45_CAPTION(fig, *args, **kwargs)
+    result = _APP_RENDER_BEFORE_FIGURE45_FINAL_CAPTION(fig, *args, **kwargs)
     key = str(kwargs.get("key", args[0] if args else "") or "")
     basename = str(kwargs.get("basename", "") or "")
     identity = f"{key} {basename}".casefold()
@@ -165,15 +109,15 @@ if "render_plotly_downloadable" in globals():
       or "figure5_interactive_exact_article" in identity
     ):
       st.caption(txt(
-        "Legenda da figura: os gráficos de barras mostram a abundância relativa dos gêneros; o NMDS representa a ordenação por distância de Bray–Curtis; e o biplot de RDA mostra as relações restritas com as variáveis ambientais. As chaves de símbolos, vetores e gêneros estão posicionadas abaixo da figura.",
-        "Figure legend: stacked bars show genus relative abundance; NMDS represents Bray–Curtis ordination; and the RDA biplot shows constrained relationships with environmental variables. Symbol, vector and genus keys are positioned below the figure.",
+        "Legenda da figura: os gráficos de barras mostram a abundância relativa dos gêneros; o NMDS representa a ordenação por distância de Bray–Curtis; e o biplot de RDA mostra as relações restritas com as variáveis ambientais.",
+        "Figure legend: stacked bars show genus relative abundance; NMDS represents Bray–Curtis ordination; and the RDA biplot shows constrained relationships with environmental variables.",
       ))
     return result
 '''
 
-  # Never block application startup because a page implementation changed.
+  # This final layer must never stop the application when another page changes.
   if anchor in source:
     source = source.replace(anchor, layer + "\n\n" + anchor, 1)
 
   source += f"\n\n{MARKER}\n"
-  compile(source, "app_core_after_figure45_legend_below_final.py", "exec")
+  compile(source, "app_core_after_figure45_final_generator.py", "exec")

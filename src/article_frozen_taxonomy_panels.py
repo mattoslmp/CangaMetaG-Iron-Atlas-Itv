@@ -52,85 +52,165 @@ def frozen_taxonomy_domain_data(domain: str) -> dict[str, object]:
   }
 
 
-def _bar_traces(fig: go.Figure, profile: pd.DataFrame, samples: list[str], palette: dict[str, str], col: int) -> None:
+def _bar_traces(
+  fig: go.Figure,
+  profile: pd.DataFrame,
+  samples: list[str],
+  palette: dict[str, str],
+  col: int,
+) -> None:
   for _, record in profile.iterrows():
     taxon = str(record["taxon"])
     values = [float(record[sample]) for sample in samples]
     fig.add_trace(
       go.Bar(
-        x=values, y=samples, orientation="h", name=taxon,
-        legendgroup=f"genus::{taxon}", showlegend=col == 1,
-        marker={"color": palette.get(taxon, "#666666"), "line": {"color": "white", "width": 0.35}},
-        hovertemplate=("<b>%{y}</b><br>Genus: " + taxon + "<br>Relative abundance: %{x:.8f}%<extra></extra>"),
+        x=values,
+        y=samples,
+        orientation="h",
+        name=taxon,
+        legendgroup=f"genus::{taxon}",
+        showlegend=col == 1,
+        marker={
+          "color": palette.get(taxon, "#666666"),
+          "line": {"color": "white", "width": 0.35},
+        },
+        hovertemplate=(
+          "<b>%{y}</b><br>Genus: "
+          + taxon
+          + "<br>Relative abundance: %{x:.8f}%<extra></extra>"
+        ),
       ),
-      row=1, col=col,
+      row=1,
+      col=col,
     )
 
 
 def _nmds_traces(fig: go.Figure, scores: pd.DataFrame) -> None:
   for lake in ["AM", "TIA", "TI", "VI"]:
     for season in ["Dry", "Rainy"]:
-      subset = scores[(scores["Lake"].astype(str) == lake) & (scores["Season"].astype(str) == season)]
+      subset = scores[
+        (scores["Lake"].astype(str) == lake)
+        & (scores["Season"].astype(str) == season)
+      ]
       if subset.empty:
         continue
       fig.add_trace(
         go.Scatter(
-          x=subset["NMDS1"].astype(float), y=subset["NMDS2"].astype(float),
-          mode="markers+text", text=subset["Sample"].astype(str), textposition="top right",
-          textfont={"size": 12, "family": "Arial Black"}, name=f"{lake} — {season}",
+          x=subset["NMDS1"].astype(float),
+          y=subset["NMDS2"].astype(float),
+          mode="markers+text",
+          text=subset["Sample"].astype(str),
+          textposition="top right",
+          textfont={"size": 12, "family": "Arial Black"},
+          name=f"{lake} — {season}",
           legendgroup=f"ordination::{lake}::{season}",
-          marker={"size": 11, "color": LAKE_COLORS[lake], "symbol": SEASON_SYMBOLS[season], "line": {"color": "black", "width": 1}},
+          showlegend=False,
+          marker={
+            "size": 11,
+            "color": LAKE_COLORS[lake],
+            "symbol": SEASON_SYMBOLS[season],
+            "line": {"color": "black", "width": 1},
+          },
           customdata=subset[["Sample", "Lake", "Season"]].astype(str).to_numpy(),
-          hovertemplate=("Sample: %{customdata[0]}<br>Lake: %{customdata[1]}<br>Season: %{customdata[2]}"
-                         "<br>NMDS1: %{x:.12g}<br>NMDS2: %{y:.12g}<extra></extra>"),
+          hovertemplate=(
+            "Sample: %{customdata[0]}<br>Lake: %{customdata[1]}"
+            "<br>Season: %{customdata[2]}<br>NMDS1: %{x:.12g}"
+            "<br>NMDS2: %{y:.12g}<extra></extra>"
+          ),
         ),
-        row=2, col=1,
+        row=2,
+        col=1,
       )
 
 
-def _rda_traces(fig: go.Figure, sites: pd.DataFrame, env: pd.DataFrame, taxa: pd.DataFrame, palette: dict[str, str]) -> tuple[float, float, float, float]:
+def _rda_traces(
+  fig: go.Figure,
+  sites: pd.DataFrame,
+  env: pd.DataFrame,
+  taxa: pd.DataFrame,
+  palette: dict[str, str],
+) -> tuple[float, float, float, float]:
   for lake in ["AM", "TIA", "TI", "VI"]:
     subset = sites[sites["Lake"].astype(str) == lake]
     if subset.empty:
       continue
     fig.add_trace(
       go.Scatter(
-        x=subset["RDA1"].astype(float), y=subset["RDA2"].astype(float),
-        mode="markers+text", text=subset["Sample"].astype(str), textposition="top right",
-        textfont={"size": 12, "family": "Arial Black"}, name=f"RDA — {lake}",
-        legendgroup=f"rda::{lake}", showlegend=False,
-        marker={"size": 12, "color": LAKE_COLORS[lake], "line": {"color": "black", "width": 1}},
+        x=subset["RDA1"].astype(float),
+        y=subset["RDA2"].astype(float),
+        mode="markers+text",
+        text=subset["Sample"].astype(str),
+        textposition="top right",
+        textfont={"size": 12, "family": "Arial Black"},
+        name=f"RDA — {lake}",
+        legendgroup=f"rda::{lake}",
+        showlegend=False,
+        marker={
+          "size": 12,
+          "color": LAKE_COLORS[lake],
+          "line": {"color": "black", "width": 1},
+        },
         customdata=subset[["Sample", "Lake"]].astype(str).to_numpy(),
-        hovertemplate=("Site: %{customdata[0]}<br>Lake: %{customdata[1]}"
-                       "<br>RDA1: %{x:.12g}<br>RDA2: %{y:.12g}<extra></extra>"),
+        hovertemplate=(
+          "Site: %{customdata[0]}<br>Lake: %{customdata[1]}"
+          "<br>RDA1: %{x:.12g}<br>RDA2: %{y:.12g}<extra></extra>"
+        ),
       ),
-      row=2, col=2,
+      row=2,
+      col=2,
     )
 
-  extent = max(float(np.nanmax(np.abs(sites[["RDA1", "RDA2"]].to_numpy(float)))), 1e-6)
+  extent = max(
+    float(np.nanmax(np.abs(sites[["RDA1", "RDA2"]].to_numpy(float)))),
+    1e-6,
+  )
   env_scale, tax_scale = extent * 0.80, extent * 0.68
   xvals = sites["RDA1"].astype(float).tolist() + [0.0]
   yvals = sites["RDA2"].astype(float).tolist() + [0.0]
 
   for _, item in env.iterrows():
-    x, y = float(item["RDA1"]) * env_scale, float(item["RDA2"]) * env_scale
+    x = float(item["RDA1"]) * env_scale
+    y = float(item["RDA2"]) * env_scale
     fig.add_annotation(
-      x=x, y=y, ax=0, ay=0, xref="x4", yref="y4", axref="x4", ayref="y4",
-      text=str(item["Variable"]), showarrow=True, arrowhead=2, arrowsize=1,
-      arrowwidth=1.6, arrowcolor="#333333",
+      x=x,
+      y=y,
+      ax=0,
+      ay=0,
+      xref="x4",
+      yref="y4",
+      axref="x4",
+      ayref="y4",
+      text=str(item["Variable"]),
+      showarrow=True,
+      arrowhead=2,
+      arrowsize=1,
+      arrowwidth=1.6,
+      arrowcolor="#333333",
       font={"size": 13, "color": "#222222", "family": "Arial Black"},
-      bgcolor="rgba(255,255,255,0.78)", borderpad=1,
+      bgcolor="rgba(255,255,255,0.78)",
+      borderpad=1,
     )
-    xvals.append(x * 1.28); yvals.append(y * 1.28)
+    xvals.append(x * 1.28)
+    yvals.append(y * 1.28)
 
   items: list[tuple[str, float, float, str]] = []
   for _, item in taxa.iterrows():
     name = str(item["Genus"])
-    items.append((name, float(item["RDA1"]) * tax_scale, float(item["RDA2"]) * tax_scale, palette.get(name, "#333333")))
+    items.append(
+      (
+        name,
+        float(item["RDA1"]) * tax_scale,
+        float(item["RDA2"]) * tax_scale,
+        palette.get(name, "#333333"),
+      )
+    )
 
   gap = max(extent * 0.14, 0.010)
   for side in (-1, 1):
-    selected = sorted([item for item in items if (item[1] < 0) == (side < 0)], key=lambda value: value[2])
+    selected = sorted(
+      [item for item in items if (item[1] < 0) == (side < 0)],
+      key=lambda value: value[2],
+    )
     previous: float | None = None
     for name, x, y, color in selected:
       label_y = y * 1.18
@@ -139,15 +219,29 @@ def _rda_traces(fig: go.Figure, sites: pd.DataFrame, env: pd.DataFrame, taxa: pd
       previous = label_y
       label_x = x * 1.22 + side * extent * 0.05
       fig.add_annotation(
-        x=x, y=y, ax=label_x, ay=label_y, xref="x4", yref="y4", axref="x4", ayref="y4",
-        text=name, showarrow=True, arrowhead=0, arrowwidth=0.8, arrowcolor=color,
+        x=x,
+        y=y,
+        ax=label_x,
+        ay=label_y,
+        xref="x4",
+        yref="y4",
+        axref="x4",
+        ayref="y4",
+        text=name,
+        showarrow=True,
+        arrowhead=0,
+        arrowwidth=0.8,
+        arrowcolor=color,
         font={"size": 12, "color": color, "family": "Arial Black"},
-        bgcolor="rgba(255,255,255,0.86)", borderpad=1,
+        bgcolor="rgba(255,255,255,0.86)",
+        borderpad=1,
         xanchor="left" if label_x >= 0 else "right",
       )
-      xvals.extend([x, label_x]); yvals.extend([y, label_y])
+      xvals.extend([x, label_x])
+      yvals.extend([y, label_y])
 
-  xmin, xmax, ymin, ymax = min(xvals), max(xvals), min(yvals), max(yvals)
+  xmin, xmax = min(xvals), max(xvals)
+  ymin, ymax = min(yvals), max(yvals)
   return (
     xmin - max((xmax - xmin) * 0.16, extent * 0.22),
     xmax + max((xmax - xmin) * 0.16, extent * 0.22),
@@ -156,21 +250,47 @@ def _rda_traces(fig: go.Figure, sites: pd.DataFrame, env: pd.DataFrame, taxa: pd
   )
 
 
-def article_frozen_taxonomy_figure(domain: str) -> tuple[go.Figure, dict[str, pd.DataFrame]]:
+def _ordination_guide() -> str:
+  return (
+    "<b>NMDS symbols:</b> "
+    '<span style="color:#0072B2">● AM</span> · '
+    '<span style="color:#E69F00">● TIA</span> · '
+    '<span style="color:#009E73">● TI</span> · '
+    '<span style="color:#CC79A7">● VI</span>'
+    " &nbsp;&nbsp; ○ Dry &nbsp; ■ Rainy"
+  )
+
+
+def article_frozen_taxonomy_figure(
+  domain: str,
+) -> tuple[go.Figure, dict[str, pd.DataFrame]]:
   data = frozen_taxonomy_domain_data(domain)
   canonical = str(data["domain"])
-  profile, scores = data["profile"], data["nmds"]
-  sites, env, taxa = data["rda_sites"], data["rda_environment_vectors"], data["rda_taxon_vectors"]
-  stats, display, palette = data["statistics"].iloc[0], data["display"], data["palette"]
+  profile = data["profile"]
+  scores = data["nmds"]
+  sites = data["rda_sites"]
+  env = data["rda_environment_vectors"]
+  taxa = data["rda_taxon_vectors"]
+  stats = data["statistics"].iloc[0]
+  display = data["display"]
+  palette = data["palette"]
   samples = [column for column in profile.columns if column != "taxon"]
-  dry, rainy = [s for s in samples if s.endswith(".D")], [s for s in samples if s.endswith(".R")]
+  dry = [sample for sample in samples if sample.endswith(".D")]
+  rainy = [sample for sample in samples if sample.endswith(".R")]
 
   fig = make_subplots(
-    rows=2, cols=2, vertical_spacing=0.16, horizontal_spacing=0.13,
+    rows=2,
+    cols=2,
+    vertical_spacing=0.17,
+    horizontal_spacing=0.13,
     subplot_titles=(
-      "<b>A  Dry-season genus profiles</b>", "<b>B  Rainy-season genus profiles</b>",
+      "<b>A  Dry-season genus profiles</b>",
+      "<b>B  Rainy-season genus profiles</b>",
       f"<b>C  Bray-Curtis NMDS (stress = {float(stats['NMDS_stress']):.3f})</b>",
-      f"<b>D  RDA biplot (R² = {float(stats['RDA_R2']):.2f}; P = {float(stats['RDA_p']):.3f})</b>",
+      (
+        f"<b>D  RDA biplot (R² = {float(stats['RDA_R2']):.2f}; "
+        f"P = {float(stats['RDA_p']):.3f})</b>"
+      ),
     ),
   )
   _bar_traces(fig, profile, dry, palette, 1)
@@ -178,32 +298,151 @@ def article_frozen_taxonomy_figure(domain: str) -> tuple[go.Figure, dict[str, pd
   _nmds_traces(fig, scores)
   rda_range = _rda_traces(fig, sites, env, taxa, palette)
 
-  fig.update_xaxes(range=[0, 100], title_text="Relative abundance (%)", row=1, col=1)
-  fig.update_xaxes(range=[0, 100], title_text="Relative abundance (%)", row=1, col=2)
-  fig.update_yaxes(categoryorder="array", categoryarray=dry, autorange="reversed", row=1, col=1)
-  fig.update_yaxes(categoryorder="array", categoryarray=rainy, autorange="reversed", row=1, col=2)
-  fig.update_xaxes(title_text="NMDS1", zeroline=True, zerolinecolor="#AAAAAA", row=2, col=1)
-  fig.update_yaxes(title_text="NMDS2", zeroline=True, zerolinecolor="#AAAAAA", row=2, col=1)
-  fig.update_xaxes(title_text=f"RDA1 ({float(display['rda1_percent']):.1f}% constrained variation)",
-                   range=[rda_range[0], rda_range[1]], zeroline=True, zerolinecolor="#AAAAAA", row=2, col=2)
-  fig.update_yaxes(title_text=f"RDA2 ({float(display['rda2_percent']):.1f}% constrained variation)",
-                   range=[rda_range[2], rda_range[3]], zeroline=True, zerolinecolor="#AAAAAA", row=2, col=2)
+  fig.update_xaxes(
+    range=[0, 100],
+    title_text="Relative abundance (%)",
+    row=1,
+    col=1,
+  )
+  fig.update_xaxes(
+    range=[0, 100],
+    title_text="Relative abundance (%)",
+    row=1,
+    col=2,
+  )
+  fig.update_yaxes(
+    categoryorder="array",
+    categoryarray=dry,
+    autorange="reversed",
+    row=1,
+    col=1,
+  )
+  fig.update_yaxes(
+    categoryorder="array",
+    categoryarray=rainy,
+    autorange="reversed",
+    row=1,
+    col=2,
+  )
+  fig.update_xaxes(
+    title_text="NMDS1",
+    zeroline=True,
+    zerolinecolor="#AAAAAA",
+    row=2,
+    col=1,
+  )
+  fig.update_yaxes(
+    title_text="NMDS2",
+    zeroline=True,
+    zerolinecolor="#AAAAAA",
+    row=2,
+    col=1,
+  )
+  fig.update_xaxes(
+    title_text=(
+      f"RDA1 ({float(display['rda1_percent']):.1f}% constrained variation)"
+    ),
+    range=[rda_range[0], rda_range[1]],
+    zeroline=True,
+    zerolinecolor="#AAAAAA",
+    row=2,
+    col=2,
+  )
+  fig.update_yaxes(
+    title_text=(
+      f"RDA2 ({float(display['rda2_percent']):.1f}% constrained variation)"
+    ),
+    range=[rda_range[2], rda_range[3]],
+    zeroline=True,
+    zerolinecolor="#AAAAAA",
+    row=2,
+    col=2,
+  )
   fig.update_layout(
-    barmode="stack", height=1350, width=1750,
-    margin={"l": 115, "r": 330, "t": 100, "b": 210},
-    font={"family": "Arial, Helvetica, sans-serif", "size": 13, "color": "#111111"},
-    legend={"title": {"text": "Genus / lake-season"}, "x": 1.01, "y": 1.0, "font": {"size": 11}},
-    meta={"authority": AUTHORITY, "domain": canonical, "recomputed": False,
-          "source_files": data["source_files"],
-          "static_article_figure": "Figure4" if canonical == "Bacteria" else "Figure5"},
+    barmode="stack",
+    height=1500,
+    width=1750,
+    margin={"l": 115, "r": 110, "t": 105, "b": 360},
+    font={
+      "family": "Arial, Helvetica, sans-serif",
+      "size": 13,
+      "color": "#111111",
+    },
+    legend={
+      "title": {"text": "Genus"},
+      "orientation": "h",
+      "x": 0.5,
+      "xanchor": "center",
+      "y": -0.20,
+      "yanchor": "top",
+      "font": {"size": 11},
+      "itemsizing": "constant",
+      "tracegroupgap": 4,
+      "bgcolor": "rgba(255,255,255,0.96)",
+      "bordercolor": "#D1D5DB",
+      "borderwidth": 1,
+    },
+    meta={
+      "authority": AUTHORITY,
+      "domain": canonical,
+      "recomputed": False,
+      "source_files": data["source_files"],
+      "static_article_figure": (
+        "Figure4" if canonical == "Bacteria" else "Figure5"
+      ),
+      "legend_layout": "outside-panels-v2",
+    },
+  )
+  fig.add_annotation(
+    x=0.22,
+    y=-0.075,
+    xref="paper",
+    yref="paper",
+    text=_ordination_guide(),
+    showarrow=False,
+    align="left",
+    xanchor="center",
+    yanchor="top",
+    font={"size": 12, "color": "#111111"},
+    bgcolor="rgba(255,255,255,0.96)",
+    bordercolor="#D1D5DB",
+    borderwidth=1,
+    borderpad=6,
+  )
+  fig.add_annotation(
+    x=0.77,
+    y=-0.075,
+    xref="paper",
+    yref="paper",
+    text=(
+      "<b>RDA vectors:</b> solid = environmental variable; "
+      "dashed = representative genus"
+    ),
+    showarrow=False,
+    align="left",
+    xanchor="center",
+    yanchor="top",
+    font={"size": 12, "color": "#111111"},
+    bgcolor="rgba(255,255,255,0.96)",
+    bordercolor="#D1D5DB",
+    borderwidth=1,
+    borderpad=6,
   )
   for annotation in fig.layout.annotations:
-    annotation.font = {"size": 17, "family": "Arial Black", "color": "#111111"}
+    if annotation.y is not None and float(annotation.y) < 0:
+      continue
+    annotation.font = {
+      "size": 17,
+      "family": "Arial Black",
+      "color": "#111111",
+    }
     annotation.xanchor = "left"
 
   return fig, {
-    "genus_relative_abundance": profile.copy(), "nmds_scores": scores.copy(),
-    "rda_site_scores": sites.copy(), "rda_environment_vectors": env.copy(),
+    "genus_relative_abundance": profile.copy(),
+    "nmds_scores": scores.copy(),
+    "rda_site_scores": sites.copy(),
+    "rda_environment_vectors": env.copy(),
     "rda_representative_genus_vectors": taxa.copy(),
     "ordination_statistics": data["statistics"].copy(),
   }

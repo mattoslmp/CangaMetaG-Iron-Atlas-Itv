@@ -2,7 +2,7 @@ from __future__ import annotations
 
 """Use corrected frozen taxonomy assets and exact article ordination panels."""
 
-MARKER = "CANGAMETAG_CORRECTED_TAXONOMY_STATIC_ASSETS_V3 = 1"
+MARKER = "CANGAMETAG_CORRECTED_TAXONOMY_STATIC_ASSETS_V4 = 1"
 
 if MARKER not in source:
   import_anchor = (
@@ -57,10 +57,7 @@ def _display_static_publication_image(path: Path, title: str, caption: str = "",
     key=f"{key_prefix}_{safe_filename(path.stem)}_frozen_article_svg",
     width="stretch",
   )
-  st.caption(txt(
-    "Figura estática construída com as tabelas congeladas e o layout final do artigo. Nenhum valor de NMDS, RDA ou abundância foi recalculado.",
-    "Static figure built from the frozen tables and final article layout. No NMDS, RDA or abundance value was recomputed.",
-  ))
+  _render_static_figure_audit(path, title, key_prefix)
 '''
     source = source[:display_start] + original + "\n\n" + wrapper + source[display_end:]
 
@@ -114,12 +111,8 @@ def is_valid_display_image(path: Path) -> tuple[bool, str]:
   exact_renderer = r'''
 def _render_frozen_article_taxonomy_ordinations() -> None:
   st.markdown("### " + txt(
-    "Painéis interativos exatos das Figuras 4 e 5",
-    "Exact interactive panels from Figures 4 and 5",
-  ))
-  st.info(txt(
-    "Estes painéis não recalculam NMDS ou RDA. Eles leem diretamente as matrizes, coordenadas, vetores e estatísticas congeladas em ARTICLE_FINAL_ISME_SUBMISSION_Leandrov27-julho FINAL_SUBMISSION_FILES.",
-    "These panels do not recompute NMDS or RDA. They read the matrices, coordinates, vectors and statistics frozen in ARTICLE_FINAL_ISME_SUBMISSION_Leandrov27-julho FINAL_SUBMISSION_FILES directly.",
+    "Painéis interativos das Figuras 4 e 5",
+    "Interactive panels from Figures 4 and 5",
   ))
   tabs = st.tabs(["Bacteria — Figure 4", "Archaea — Figure 5"])
   for domain, tab in zip(["Bacteria", "Archaea"], tabs):
@@ -132,20 +125,11 @@ def _render_frozen_article_taxonomy_ordinations() -> None:
         audit_input_table=tables["genus_relative_abundance"],
         audit_processed_table=tables["nmds_scores"],
         audit_output_table=tables["ordination_statistics"],
-        audit_method="Direct rendering of frozen article relative-abundance matrix, NMDS coordinates, RDA site scores, environmental vectors, representative-genus vectors and statistics; no ordination recomputation.",
-        audit_input_source="data/article_frozen_taxonomy_bacteria.json or data/article_frozen_taxonomy_archaea.json",
-        audit_script="src/article_frozen_taxonomy_panels.py",
+        audit_method="Bray-Curtis NMDS; PERMANOVA; PERMDISP; constrained RDA",
+        audit_input_source="data/article_frozen_taxonomy_bacteria.json; data/article_frozen_taxonomy_archaea.json",
+        audit_script="scripts/final_publication_figures/02_05_generate_final_taxonomy_figures.py",
+        audit_instructions="python scripts/final_publication_figures/02_05_generate_final_taxonomy_figures.py --base-dir .",
       )
-      with st.expander(txt("Tabelas exatas da figura", "Exact figure tables"), expanded=False):
-        for table_name, table in tables.items():
-          st.markdown(f"#### `{table_name}`")
-          show_table(table, f"frozen_{domain}_{table_name}", height=320)
-          csv_button(
-            table,
-            f"{'Figure4' if domain == 'Bacteria' else 'Figure5'}_{table_name}.csv",
-            txt("Baixar tabela", "Download table"),
-            key=f"frozen_{domain}_{table_name}_csv",
-          )
 '''
   site_anchor = "def site_access_gate"
   if site_anchor in source and "def _render_frozen_article_taxonomy_ordinations" not in source:

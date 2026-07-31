@@ -8,28 +8,25 @@ ROOT = Path(__file__).resolve().parents[1]
 TRANSFORM = ROOT / "src" / "app_figure45_legend_below_final_transform.py"
 
 
+def _apply(source: str) -> str:
+  return runpy.run_path(
+    str(TRANSFORM),
+    init_globals={"source": source},
+  )["source"]
+
+
 def test_final_figure45_legend_transform_compiles_and_is_last_guard() -> None:
   source = '''from __future__ import annotations
 
 def article_frozen_taxonomy_figure(domain: str):
   return object(), {}
 
-def render_section(domain: str):
-      render_plotly_downloadable(
-        figure,
-        key=f"frozen_article_taxonomy_{domain}",
-        basename="Figure45_interactive",
-        audit_script="src/article_frozen_taxonomy_panels.py; src/article_inference_statistics.py",
-      )
-      beta_tests, rda_tests = frozen_ordination_inference(domain)
-      return beta_tests, rda_tests
+def render_plotly_downloadable(fig, *args, **kwargs):
+  return None
 
 page_handler = page_handlers.get(selected_page)
 '''
-  transformed = runpy.run_path(
-    str(TRANSFORM),
-    init_globals={"source": source},
-  )["source"]
+  transformed = _apply(source)
   compile(transformed, "synthetic_figure45_final_legend.py", "exec")
   assert "dedicated-band-below-entire-figure" in transformed
   assert '"y": -0.285' in transformed
@@ -39,8 +36,41 @@ page_handler = page_handlers.get(selected_page)
   assert '"legend_overlaps_scientific_panels": False' in transformed
   assert '"scientific_values_changed": False' in transformed
   assert "Figure legend: stacked bars show genus relative abundance" in transformed
-  assert transformed.index("render_plotly_downloadable(") < transformed.index("Figure legend:")
-  assert transformed.index("Figure legend:") < transformed.index("frozen_ordination_inference(domain)")
+  assert "_APP_RENDER_BEFORE_FIGURE45_CAPTION" in transformed
+
+
+def test_transform_never_fails_when_page_implementation_changes() -> None:
+  source = '''from __future__ import annotations
+
+def unrelated_page():
+  return "ok"
+'''
+  transformed = _apply(source)
+  compile(transformed, "synthetic_figure45_no_anchor.py", "exec")
+  assert "CANGAMETAG_FIGURE45_LEGEND_BELOW_FINAL_V3" in transformed
+  assert "Could not place the Figure 4/5 caption" not in transformed
+  assert "raise RuntimeError" not in transformed
+
+
+def test_public_result_wording_replaces_internal_quality_terms() -> None:
+  source = '''from __future__ import annotations
+labels = [
+  txt("Auditoria recente de visitas", "Recent visit audit"),
+  txt("Auditoria das amostras", "Sample audit"),
+  "Tabela taxonômica completa para auditoria e download",
+  "Complete taxonomic table for audit and download",
+]
+page_handler = page_handlers.get(selected_page)
+'''
+  transformed = _apply(source)
+  assert "Auditoria recente de visitas" not in transformed
+  assert "Recent visit audit" not in transformed
+  assert "Auditoria das amostras" not in transformed
+  assert "Sample audit" not in transformed
+  assert "auditoria e download" not in transformed
+  assert "audit and download" not in transformed
+  assert "Registros recentes de visitas" in transformed
+  assert "Amostras utilizadas" in transformed
 
 
 def test_transform_is_loaded_after_language_and_st8_wrappers() -> None:

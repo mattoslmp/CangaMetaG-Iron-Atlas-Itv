@@ -6,7 +6,7 @@ Optional presentation anchors are handled defensively: a wording change in an
 earlier transform must never prevent the Streamlit app from compiling.
 """
 
-MARKER = "CANGAMETAG_MTX_ALPHA_TAXONOMY_PUBLIC_V2 = 1"
+MARKER = "CANGAMETAG_MTX_ALPHA_TAXONOMY_PUBLIC_V3 = 1"
 
 
 def _remove_public_call_containing(text: str, phrase: str) -> str:
@@ -46,17 +46,6 @@ def _remove_public_call_containing(text: str, phrase: str) -> str:
 
 
 if MARKER not in source:
-  future_anchor = "from __future__ import annotations\n"
-  runtime_imports = '''from src.app_mtx_alpha_taxonomy_runtime import (
-  install_categorical_group_guard,
-  render_complete_metatranscriptome_panel,
-  render_taxonomy_article_overlap_panel,
-)
-install_categorical_group_guard()
-'''
-  if runtime_imports not in source and future_anchor in source:
-    source = source.replace(future_anchor, future_anchor + runtime_imports, 1)
-
   taxonomy_anchor = (
     '  st.markdown("### " + txt("Visualização taxonômica interativa", '
     '"Interactive taxonomic visualization"))'
@@ -124,5 +113,17 @@ install_categorical_group_guard()
   }
   for old, new in replacements.items():
     source = source.replace(old, new)
+
+  page_anchor = "page_handler = page_handlers.get(selected_page)"
+  runtime_imports = '''from src.app_mtx_alpha_taxonomy_runtime import (
+  install_categorical_group_guard,
+  render_complete_metatranscriptome_panel,
+  render_taxonomy_article_overlap_panel,
+)
+install_categorical_group_guard()
+
+'''
+  if page_anchor in source and runtime_imports not in source:
+    source = source.replace(page_anchor, runtime_imports + page_anchor, 1)
 
   source += f"\n\n{MARKER}\n"

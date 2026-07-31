@@ -1,10 +1,11 @@
 from __future__ import annotations
 
-"""Generate Figures 2/3 with the exact aggregate percentage in Other taxa.
+"""Generate Figures 2/3 with the declared 5% aggregate cutoff.
 
-The displayed percentage is the arithmetic mean of the per-sample relative
-abundance values represented by the shared figure legend. Source values and bar
-lengths are unchanged.
+``Other taxa`` is an aggregate category. Its bar length is the sum of the
+underlying source-table values, whereas the value written in the legend denotes
+the per-taxon cutoff used to describe that aggregate. The source values and bar
+lengths are never replaced by 5%.
 """
 
 from io import BytesIO
@@ -22,10 +23,11 @@ from .article_taxonomy import SAMPLE_ORDER, _article_palette
 
 
 AGGREGATE_LABELS = {"Other taxa", "Other genera"}
+OTHER_TAXA_THRESHOLD_PERCENT = 5.0
 
 
 def other_taxa_percentages(domain: str) -> dict[str, float]:
-  """Return overall, dry and rainy mean percentages from the exact source."""
+  """Return diagnostic aggregate means without using them in the legend."""
   canonical = _domain(domain)
   source = load_exact_article_phylum_table(canonical)
   samples = [sample for sample in SAMPLE_ORDER if sample in source.columns]
@@ -48,21 +50,18 @@ def other_taxa_percentages(domain: str) -> dict[str, float]:
 
 def aggregate_taxon_display_label(
   taxon: object,
-  values: object,
-  *,
-  decimals: int = 2,
+  values: object | None = None,
 ) -> str:
-  """Add the mean displayed percentage only to aggregate taxonomy labels."""
+  """Label aggregate taxa with the 5% per-taxon cutoff."""
   name = str(taxon)
   if name not in AGGREGATE_LABELS:
     return name
-  numeric = np.asarray(values, dtype=float)
-  mean_percent = float(np.nanmean(numeric)) if numeric.size else 0.0
-  return f"{name} ({mean_percent:.{decimals}f}%)"
+  threshold = f"{OTHER_TAXA_THRESHOLD_PERCENT:g}%"
+  return f"{name} (<{threshold} each)"
 
 
 def generate_article_svg_with_other_percentage(domain: str) -> bytes:
-  """Regenerate the canonical Figure 2/3 SVG with a percentage legend label."""
+  """Regenerate the canonical Figure 2/3 SVG with the 5% cutoff label."""
   import matplotlib
 
   matplotlib.use("Agg")
@@ -122,7 +121,7 @@ def generate_article_svg_with_other_percentage(domain: str) -> bytes:
     Patch(
       facecolor=palette[taxon],
       edgecolor="none",
-      label=aggregate_taxon_display_label(taxon, relative.loc[taxon, samples]),
+      label=aggregate_taxon_display_label(taxon),
     )
     for taxon in taxa
   ]

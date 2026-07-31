@@ -9,6 +9,7 @@ taxa are retained; no Top-N filtering is applied.
 from __future__ import annotations
 
 import argparse
+import base64
 from pathlib import Path
 import shutil
 
@@ -17,6 +18,7 @@ matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
+from PIL import Image
 
 
 LEVEL_SPECS = (
@@ -73,7 +75,10 @@ def sample_label(matrix_column: object, group: object) -> str:
     ("Ferruginous lake/sediment group: Lake Superior", "Lake Superior"),
     ("Optional outgroup: Hydrothermal Fe-rich mats", "Hydrothermal mats"),
   )
-  short_group = next((short for full, short in replacements if full == group_text), group_text[:28])
+  short_group = next(
+    (short for full, short in replacements if full == group_text),
+    group_text[:28],
+  )
   return f"{short_group} | {column}"
 
 
@@ -104,15 +109,38 @@ def prepare_source(path: Path) -> pd.DataFrame:
 
 
 def export(fig, stem: Path, destinations: list[Path]) -> None:
+  """Export one high-resolution raster once and package it as PNG/PDF/SVG.
+
+  Large heatmaps with 51 fully labelled columns can make native vector backends
+  hang or leave zero-byte PDFs. The 240-dpi PNG remains the source render; PDF
+  and SVG embed that exact render so all cells and labels stay identical.
+  """
   stem.parent.mkdir(parents=True, exist_ok=True)
-  for extension in ("png", "pdf", "svg"):
-    fig.savefig(
-      stem.with_suffix(f".{extension}"),
-      dpi=300,
-      bbox_inches="tight",
-      facecolor="white",
-    )
+  png_path = stem.with_suffix(".png")
+  fig.savefig(
+    png_path,
+    dpi=240,
+    bbox_inches="tight",
+    facecolor="white",
+  )
   plt.close(fig)
+
+  with Image.open(png_path) as image:
+    rgb = image.convert("RGB")
+    rgb.save(stem.with_suffix(".pdf"), "PDF", resolution=240.0)
+    width, height = rgb.size
+
+  encoded = base64.b64encode(png_path.read_bytes()).decode("ascii")
+  stem.with_suffix(".svg").write_text(
+    (
+      f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" '
+      f'height="{height}" viewBox="0 0 {width} {height}">'
+      f'<image width="{width}" height="{height}" '
+      f'href="data:image/png;base64,{encoded}"/></svg>'
+    ),
+    encoding="utf-8",
+  )
+
   for destination in destinations:
     destination.mkdir(parents=True, exist_ok=True)
     for extension in ("png", "pdf", "svg"):
@@ -191,15 +219,25 @@ def make_level(
   stem_name = f"SupplementaryFigure31{suffix}_common_taxa_{level.lower()}_heatmap"
   abundance.to_csv(derived / f"{stem_name}_exact_abundance_source.csv")
   zscore.to_csv(derived / f"{stem_name}_row_zscore_source.csv")
-  common_work.to_csv(derived / f"{stem_name}_positive_metagenomic_records.csv", index=False)
+  common_work.to_csv(
+    derived / f"{stem_name}_positive_metagenomic_records.csv",
+    index=False,
+  )
 
   n_rows, n_columns = zscore.shape
   fig, axis = plt.subplots(
-    figsize=(max(24, 7.0 + n_columns * 0.72), max(13, 3.5 + n_rows * 0.38)),
-    dpi=300,
+    figsize=(
+      max(18, min(30, 7.0 + n_columns * 0.43)),
+      max(12, min(30, 3.5 + n_rows * 0.30)),
+    ),
+    dpi=240,
   )
   values = zscore.to_numpy(float)
-  maximum = max(abs(float(np.nanmin(values))), abs(float(np.nanmax(values))), 1e-9)
+  maximum = max(
+    abs(float(np.nanmin(values))),
+    abs(float(np.nanmax(values))),
+    1e-9,
+  )
   image = axis.imshow(
     values,
     aspect="auto",
@@ -221,7 +259,12 @@ def make_level(
   axis.set_yticklabels(zscore.index, fontsize=10)
   axis.tick_params(axis="x", length=0, pad=8)
   axis.tick_params(axis="y", length=0, pad=6)
-  axis.set_xlabel("Metagenome sample grouped by iron-rich environment", fontsize=15, fontweight="bold", labelpad=18)
+  axis.set_xlabel(
+    "Metagenome sample grouped by iron-rich environment",
+    fontsize=15,
+    fontweight="bold",
+    labelpad=18,
+  )
   axis.set_ylabel(level, fontsize=15, fontweight="bold", labelpad=10)
   axis.set_title(
     f"Supplementary Figure 31{suffix}. {level} shared by all three metagenomic groups",
@@ -282,7 +325,10 @@ def main() -> None:
     for level, suffix in LEVEL_SPECS
   ]
   report = pd.DataFrame(results)
-  report_path = base_dir / "data" / "final_publication_derived" / "SupplementaryFigure31_metagenomics_report.csv"
+  report_path = (
+    base_dir / "data" / "final_publication_derived"
+    / "SupplementaryFigure31_metagenomics_report.csv"
+  )
   report.to_csv(report_path, index=False)
   print(report.to_string(index=False))
   print(f"Source: {input_path}")

@@ -4,6 +4,22 @@ from __future__ import annotations
 RECIPIENT = "gilopesnunes@gmail.com"
 RECIPIENT_NAME = "Gisele Lopes Nunes"
 
+# Keep the fixed recipient constants in the stable global preamble. A later
+# public-release transform replaces the methods section immediately before
+# ``contact_recipients_from_settings``; constants placed beside that function
+# would therefore be removed while the function references remained.
+constant_block = f'''SCIENTIFIC_COLLABORATION_RECIPIENT = "{RECIPIENT}"
+SCIENTIFIC_COLLABORATION_RECIPIENT_NAME = "{RECIPIENT_NAME}"
+'''
+if "SCIENTIFIC_COLLABORATION_RECIPIENT =" not in source:
+  future_import = "from __future__ import annotations\n"
+  if future_import not in source:
+    raise RuntimeError("Could not locate the stable global preamble")
+  source = source.replace(
+    future_import,
+    future_import + "\n" + constant_block,
+    1,
+  )
 
 # The public scientific-collaboration form has one fixed recipient. Ignore any
 # legacy multi-recipient value persisted in the settings file.
@@ -11,11 +27,7 @@ recipient_start = source.find("def contact_recipients_from_settings() -> list[st
 recipient_end = source.find("\ndef save_contact_submission", recipient_start)
 if recipient_start < 0 or recipient_end < 0:
   raise RuntimeError("Could not locate the scientific-contact recipient function")
-recipient_function = f'''SCIENTIFIC_COLLABORATION_RECIPIENT = "{RECIPIENT}"
-SCIENTIFIC_COLLABORATION_RECIPIENT_NAME = "{RECIPIENT_NAME}"
-
-
-def contact_recipients_from_settings() -> list[str]:
+recipient_function = '''def contact_recipients_from_settings() -> list[str]:
   return [SCIENTIFIC_COLLABORATION_RECIPIENT]
 
 '''

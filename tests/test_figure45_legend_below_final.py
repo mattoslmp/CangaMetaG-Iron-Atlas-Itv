@@ -15,7 +15,7 @@ def _apply(source: str) -> str:
   )["source"]
 
 
-def test_final_figure45_legend_transform_compiles_and_is_last_guard() -> None:
+def test_final_figure45_transform_installs_data_generator_safely() -> None:
   source = '''from __future__ import annotations
 
 def article_frozen_taxonomy_figure(domain: str):
@@ -27,16 +27,15 @@ def render_plotly_downloadable(fig, *args, **kwargs):
 page_handler = page_handlers.get(selected_page)
 '''
   transformed = _apply(source)
-  compile(transformed, "synthetic_figure45_final_legend.py", "exec")
-  assert "dedicated-band-below-entire-figure" in transformed
-  assert '"y": -0.285' in transformed
-  assert '"b": 690' in transformed
-  assert '"legend_below_entire_figure": True' in transformed
-  assert '"textual_caption_below_figure": True' in transformed
-  assert '"legend_overlaps_scientific_panels": False' in transformed
-  assert '"scientific_values_changed": False' in transformed
+  compile(transformed, "synthetic_figure45_final_generator.py", "exec")
+  assert "CANGAMETAG_FIGURE45_FINAL_DATA_GENERATOR_V1" in transformed
+  assert "_materialize_article_figure45_static_final" in transformed
+  assert "_apply_figure45_plotly_layout_final" in transformed
+  assert "materialize_frozen_article_static =" in transformed
+  assert "materialize_frozen_article_static_bilingual =" in transformed
+  assert "_APP_FIGURE45_BEFORE_FINAL_DATA_GENERATOR" in transformed
+  assert "_APP_RENDER_BEFORE_FIGURE45_FINAL_CAPTION" in transformed
   assert "Figure legend: stacked bars show genus relative abundance" in transformed
-  assert "_APP_RENDER_BEFORE_FIGURE45_CAPTION" in transformed
 
 
 def test_transform_never_fails_when_page_implementation_changes() -> None:
@@ -47,7 +46,7 @@ def unrelated_page():
 '''
   transformed = _apply(source)
   compile(transformed, "synthetic_figure45_no_anchor.py", "exec")
-  assert "CANGAMETAG_FIGURE45_LEGEND_BELOW_FINAL_V4" in transformed
+  assert "CANGAMETAG_FIGURE45_FINAL_DATA_GENERATOR_V1" in transformed
   assert "Could not place the Figure 4/5 caption" not in transformed
   assert "raise RuntimeError" not in transformed
 

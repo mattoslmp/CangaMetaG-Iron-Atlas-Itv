@@ -1,108 +1,258 @@
+#!/usr/bin/env python3
+"""Generate article Venn diagrams for Phylum, Order and Family.
+
+The source of truth is ``st8_taxonomy_summary_by_group.csv``. Only records whose
+``data_layer`` is Metagenomics are used. The same grouping and presence rule are
+used by the Streamlit Taxonomy panel:
+
+* AMD systems;
+* ferruginous lakes/sediments;
+* hydrothermal Fe-rich mats;
+* presence means ``count_or_abundance > 0``.
+"""
+
+from __future__ import annotations
+
+import argparse
 from pathlib import Path
-import pandas as pd
+import shutil
+
+import matplotlib
+matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 from matplotlib.patches import Circle
+import pandas as pd
 
-BASE_DIR = Path(__file__).resolve().parents[1]
-DATA = BASE_DIR / 'data' / 'st8_taxonomy_summary_by_group.csv'
-OUT_DIR = BASE_DIR / 'outputs' / 'article_highres_figures'
-OUT_DIR.mkdir(parents=True, exist_ok=True)
 
-def broad_group(name: str) -> str:
-    text = str(name)
-    if 'AMD' in text or 'Akron' in text or 'Richmond' in text:
-        return 'AMD systems'
-    if 'Lake Towuti' in text or 'Lake Matano' in text or 'Lake Superior' in text:
-        return 'Ferruginous lakes/sediments'
-    if 'Hydrothermal' in text:
-        return 'Hydrothermal Fe-rich mats'
-    if 'Control' in text:
-        return 'Control reservoir'
-    return 'Other/unassigned'
+LEVELS = (
+  ("Phylum", 26),
+  ("Order", 27),
+  ("Family", 28),
+)
+ARTICLE_GROUPS = (
+  "AMD systems",
+  "Ferruginous lakes/sediments",
+  "Hydrothermal Fe-rich mats",
+)
 
-def sets_for_level(df: pd.DataFrame, level: str):
-    work = df[(df['taxonomy_level'].eq(level)) & (pd.to_numeric(df['count_or_abundance'], errors='coerce').fillna(0) > 0)].copy()
-    work['broad_group'] = work['ST8_group'].map(broad_group)
-    keep = ['AMD systems', 'Ferruginous lakes/sediments', 'Hydrothermal Fe-rich mats']
-    return {g: set(work.loc[work['broad_group'].eq(g), 'taxon'].dropna().astype(str)) for g in keep}, work[work['broad_group'].isin(keep)].copy()
 
-def region_counts(sets):
-    A = sets['AMD systems']; B = sets['Ferruginous lakes/sediments']; C = sets['Hydrothermal Fe-rich mats']
-    return {
-        'A_only': len(A - B - C),
-        'B_only': len(B - A - C),
-        'C_only': len(C - A - B),
-        'AB': len((A & B) - C),
-        'AC': len((A & C) - B),
-        'BC': len((B & C) - A),
-        'ABC': len(A & B & C),
-    }
+def broad_group(value: object) -> str:
+  text = str(value or "")
+  if any(token in text for token in ("AMD", "Akron", "Richmond")):
+    return "AMD systems"
+  if any(token in text for token in ("Lake Towuti", "Lake Matano", "Lake Superior")):
+    return "Ferruginous lakes/sediments"
+  if "Hydrothermal" in text:
+    return "Hydrothermal Fe-rich mats"
+  return "Other/unassigned"
 
-def core_top_table(work, level: str, n: int = 12):
-    groups = ['AMD systems', 'Ferruginous lakes/sediments', 'Hydrothermal Fe-rich mats']
-    core = set.intersection(*[set(work.loc[work['broad_group'].eq(g), 'taxon'].dropna().astype(str)) for g in groups])
-    top = (work[work['taxon'].isin(core)]
-           .groupby('taxon', as_index=False)['count_or_abundance'].sum()
-           .sort_values('count_or_abundance', ascending=False)
-           .head(n))
-    top['short_taxon'] = top['taxon'].astype(str).str.split(':').str[-1]
-    top['taxonomy_level'] = level
-    return top
 
-raw = pd.read_csv(DATA)
-fig, axes = plt.subplots(2, 2, figsize=(14, 12), dpi=300)
-plt.subplots_adjust(wspace=0.28, hspace=0.36)
+def resolve_input(base_dir: Path, explicit: Path | None) -> Path:
+  candidates = [
+    explicit,
+    base_dir / "data" / "st8_taxonomy_summary_by_group.csv",
+    base_dir / "tables" / "st8_taxonomy_summary_by_group.csv",
+    base_dir / "05_Source_Data_and_Audit" / "st8_taxonomy_summary_by_group.csv",
+    base_dir / "05_Source_Data_and_Audit" / "st8" / "st8_taxonomy_summary_by_group.csv",
+  ]
+  for candidate in candidates:
+    if candidate is not None and candidate.exists():
+      return candidate
+  raise FileNotFoundError("st8_taxonomy_summary_by_group.csv was not found")
 
-circle_specs = [
-    (0.40, 0.55, 0.30, '#D5E8FF', 'AMD systems'),
-    (0.60, 0.55, 0.30, '#DFF3DC', 'Ferruginous lakes/sediments'),
-    (0.50, 0.35, 0.30, '#FFE6CC', 'Hydrothermal Fe-rich mats'),
-]
-for ax, level in zip(axes[0], ['Phylum', 'Order']):
-    sets, work = sets_for_level(raw, level)
-    counts = region_counts(sets)
-    ax.set_title(f'{level}-level taxonomic overlap', fontsize=13, fontweight='bold')
-    for x, y, r, color, label in circle_specs:
-        ax.add_patch(Circle((x, y), r, facecolor=color, edgecolor='black', alpha=0.58, linewidth=1.4))
-        ax.text(x, y + r + 0.055, label, ha='center', va='center', fontsize=9, fontweight='bold')
-    ax.text(0.28, 0.60, str(counts['A_only']), ha='center', va='center', fontsize=12, fontweight='bold')
-    ax.text(0.72, 0.60, str(counts['B_only']), ha='center', va='center', fontsize=12, fontweight='bold')
-    ax.text(0.50, 0.18, str(counts['C_only']), ha='center', va='center', fontsize=12, fontweight='bold')
-    ax.text(0.50, 0.64, str(counts['AB']), ha='center', va='center', fontsize=12, fontweight='bold')
-    ax.text(0.39, 0.39, str(counts['AC']), ha='center', va='center', fontsize=12, fontweight='bold')
-    ax.text(0.61, 0.39, str(counts['BC']), ha='center', va='center', fontsize=12, fontweight='bold')
-    ax.text(0.50, 0.48, str(counts['ABC']), ha='center', va='center', fontsize=14, fontweight='bold', color='#8B0000')
-    ax.text(0.50, 0.04, 'Center = taxa detected in all three Fe-rich environment classes', ha='center', va='center', fontsize=8)
-    ax.set_xlim(0.08, 0.92); ax.set_ylim(0, 0.95); ax.set_axis_off()
 
-# Core top taxa bars
-for ax, level in zip(axes[1], ['Phylum', 'Order']):
-    sets, work = sets_for_level(raw, level)
-    top = core_top_table(work, level, n=12)
-    ax.barh(top['short_taxon'][::-1], top['count_or_abundance'][::-1])
-    ax.set_title(f'Top shared {level.lower()} taxa across Fe-rich groups', fontsize=12, fontweight='bold')
-    ax.set_xlabel('Summed GTDB count/abundance across curated Fe-rich records')
-    ax.tick_params(axis='y', labelsize=8)
-    for spine in ['top', 'right']:
-        ax.spines[spine].set_visible(False)
+def prepare_source(path: Path) -> pd.DataFrame:
+  source = pd.read_csv(path, encoding="utf-8-sig", low_memory=False)
+  required = {
+    "taxonomy_level",
+    "ST8_group",
+    "data_layer",
+    "matrix_column",
+    "taxon",
+    "count_or_abundance",
+  }
+  missing = required.difference(source.columns)
+  if missing:
+    raise RuntimeError(f"{path} is missing columns: {sorted(missing)}")
+  source["count_or_abundance"] = pd.to_numeric(
+    source["count_or_abundance"], errors="coerce"
+  ).fillna(0.0)
+  source = source[
+    source["data_layer"].astype(str).str.casefold().str.contains(
+      "metagenomic", na=False
+    )
+    & source["count_or_abundance"].gt(0)
+  ].copy()
+  source["article_environment_group"] = source["ST8_group"].map(broad_group)
+  return source[source["article_environment_group"].isin(ARTICLE_GROUPS)].copy()
 
-fig.suptitle('Supplementary Figure 22. Putative core taxonomic overlap across curated iron-rich environmental groups', fontsize=15, fontweight='bold', y=0.995)
-fig.text(0.5, 0.01, 'Groups compared: AMD systems, ferruginous lake/sediment records and hydrothermal Fe-rich mats. Control and unassigned records are excluded from the core-overlap calculation.', ha='center', fontsize=9)
 
-png = OUT_DIR / 'SuppFigure22_core_taxonomic_overlap_venn.png'
-svg = OUT_DIR / 'SuppFigure22_core_taxonomic_overlap_venn.svg'
-tif = OUT_DIR / 'SuppFigure22_core_taxonomic_overlap_venn.tiff'
-fig.savefig(png, dpi=300, bbox_inches='tight')
-fig.savefig(svg, dpi=300, bbox_inches='tight')
-fig.savefig(tif, dpi=300, bbox_inches='tight')
-# write source summary
-rows = []
-for level in ['Phylum','Order','Family']:
-    sets, work = sets_for_level(raw, level)
-    core = set.intersection(*sets.values())
-    for taxon in sorted(core):
-        rows.append({'taxonomy_level': level, 'core_taxon': taxon})
-pd.DataFrame(rows).to_csv(OUT_DIR / 'source_SuppFigure22_core_taxonomic_overlap_venn.csv', index=False)
-print(png)
-print(svg)
-print(tif)
+def sets_for_level(source: pd.DataFrame, level: str) -> tuple[dict[str, set[str]], pd.DataFrame]:
+  work = source[source["taxonomy_level"].astype(str).eq(level)].copy()
+  sets = {
+    group: set(
+      work.loc[work["article_environment_group"].eq(group), "taxon"]
+      .dropna().astype(str)
+    )
+    for group in ARTICLE_GROUPS
+  }
+  if any(not values for values in sets.values()):
+    raise RuntimeError(f"{level}: at least one article group has no positive taxa")
+  return sets, work
+
+
+def region_members(sets: dict[str, set[str]]) -> dict[str, set[str]]:
+  a, b, c = (sets[group] for group in ARTICLE_GROUPS)
+  return {
+    "AMD only": a - b - c,
+    "Ferruginous only": b - a - c,
+    "Hydrothermal only": c - a - b,
+    "AMD ∩ Ferruginous": (a & b) - c,
+    "AMD ∩ Hydrothermal": (a & c) - b,
+    "Ferruginous ∩ Hydrothermal": (b & c) - a,
+    "Common to all": a & b & c,
+    "Union": a | b | c,
+  }
+
+
+def save_figure(fig, stem: Path, destinations: list[Path]) -> None:
+  stem.parent.mkdir(parents=True, exist_ok=True)
+  for extension in ("png", "pdf", "svg"):
+    output = stem.with_suffix(f".{extension}")
+    fig.savefig(output, dpi=300, bbox_inches="tight", facecolor="white")
+  plt.close(fig)
+  for destination in destinations:
+    destination.mkdir(parents=True, exist_ok=True)
+    for extension in ("png", "pdf", "svg"):
+      shutil.copy2(
+        stem.with_suffix(f".{extension}"),
+        destination / f"{stem.name}.{extension}",
+      )
+
+
+def make_venn(
+  source: pd.DataFrame,
+  level: str,
+  figure_number: int,
+  base_dir: Path,
+  article_root: Path,
+) -> dict[str, object]:
+  sets, work = sets_for_level(source, level)
+  regions = region_members(sets)
+
+  fig, axis = plt.subplots(figsize=(12.5, 10.5), dpi=300)
+  circles = (
+    (0.39, 0.60, "#D5E8FF", ARTICLE_GROUPS[0]),
+    (0.61, 0.60, "#DFF3DC", ARTICLE_GROUPS[1]),
+    (0.50, 0.39, "#FFE6CC", ARTICLE_GROUPS[2]),
+  )
+  for x, y, colour, label in circles:
+    axis.add_patch(Circle(
+      (x, y), 0.285,
+      facecolor=colour,
+      edgecolor="#263238",
+      alpha=0.62,
+      linewidth=1.8,
+    ))
+    axis.text(x, y + 0.335, label, ha="center", va="center", fontsize=12, fontweight="bold")
+
+  labels = (
+    (0.25, 0.67, "AMD only"),
+    (0.75, 0.67, "Ferruginous only"),
+    (0.50, 0.18, "Hydrothermal only"),
+    (0.50, 0.70, "AMD ∩ Ferruginous"),
+    (0.37, 0.43, "AMD ∩ Hydrothermal"),
+    (0.63, 0.43, "Ferruginous ∩ Hydrothermal"),
+    (0.50, 0.52, "Common to all"),
+  )
+  for x, y, key in labels:
+    axis.text(
+      x, y, str(len(regions[key])),
+      ha="center", va="center",
+      fontsize=18 if key == "Common to all" else 15,
+      fontweight="bold",
+      color="#8B0000" if key == "Common to all" else "#111827",
+    )
+
+  axis.set_title(
+    f"Supplementary Figure {figure_number}. {level}-level overlap across metagenomic iron-rich groups",
+    fontsize=16,
+    fontweight="bold",
+    pad=22,
+  )
+  axis.text(
+    0.5, 0.035,
+    "Metagenomics only • presence = count_or_abundance > 0 • control and unassigned records excluded",
+    ha="center", va="center", fontsize=10,
+  )
+  axis.set_xlim(0.05, 0.95)
+  axis.set_ylim(0.0, 1.0)
+  axis.set_axis_off()
+
+  stem_name = f"SupplementaryFigure{figure_number}_taxonomic_overlap_{level.lower()}_original"
+  stem = base_dir / "outputs" / "final_publication_figures" / stem_name
+  save_figure(
+    fig,
+    stem,
+    [
+      base_dir / "outputs" / "app_supplementary_figures",
+      article_root / "03_Supplementary_Figures",
+    ],
+  )
+
+  derived = base_dir / "data" / "final_publication_derived"
+  derived.mkdir(parents=True, exist_ok=True)
+  member_rows: list[dict[str, object]] = []
+  for region, taxa in regions.items():
+    for taxon in sorted(taxa):
+      member_rows.append({
+        "figure": figure_number,
+        "taxonomy_level": level,
+        "data_layer": "Metagenomics",
+        "region": region,
+        "taxon": taxon,
+      })
+  members = pd.DataFrame(member_rows)
+  members.to_csv(
+    derived / f"{stem_name}_source.csv",
+    index=False,
+  )
+  work.to_csv(
+    derived / f"{stem_name}_positive_metagenomic_records.csv",
+    index=False,
+  )
+  return {
+    "figure": figure_number,
+    "taxonomy_level": level,
+    "n_metagenome_columns": int(work["matrix_column"].nunique()),
+    "n_common_to_all": len(regions["Common to all"]),
+    "n_union": len(regions["Union"]),
+    "stem": str(stem),
+  }
+
+
+def main() -> None:
+  parser = argparse.ArgumentParser()
+  parser.add_argument("--base-dir", type=Path, default=Path(__file__).resolve().parents[1])
+  parser.add_argument("--article-root", type=Path, default=None)
+  parser.add_argument("--input", type=Path, default=None)
+  arguments = parser.parse_args()
+
+  base_dir = arguments.base_dir.resolve()
+  article_root = (arguments.article_root or base_dir).resolve()
+  input_path = resolve_input(base_dir, arguments.input.resolve() if arguments.input else None)
+  source = prepare_source(input_path)
+  results = [
+    make_venn(source, level, number, base_dir, article_root)
+    for level, number in LEVELS
+  ]
+  report = pd.DataFrame(results)
+  report_path = base_dir / "data" / "final_publication_derived" / "taxonomy_overlap_metagenomics_report.csv"
+  report.to_csv(report_path, index=False)
+  print(report.to_string(index=False))
+  print(f"Source: {input_path}")
+  print(f"Report: {report_path}")
+
+
+if __name__ == "__main__":
+  main()

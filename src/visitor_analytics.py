@@ -4,7 +4,6 @@ from datetime import datetime, timezone
 import hashlib
 import ipaddress
 import json
-from pathlib import Path
 import re
 import secrets
 from typing import Any
@@ -52,7 +51,6 @@ def _public_ip(value: object) -> str:
   text = str(value or "").strip().strip('"[]')
   if not text:
     return ""
-  # Forwarded headers may contain values such as for=1.2.3.4:1234.
   text = re.sub(r"^for=", "", text, flags=re.IGNORECASE).strip().strip('"[]')
   if text.count(":") == 1 and "." in text:
     text = text.rsplit(":", 1)[0]
@@ -63,6 +61,14 @@ def _public_ip(value: object) -> str:
   if not address.is_global:
     return ""
   return str(address)
+
+
+def _context_public_ip(st) -> str:
+  """Return Streamlit's WebSocket connection IP when available."""
+  try:
+    return _public_ip(getattr(st.context, "ip_address", None))
+  except Exception:
+    return ""
 
 
 def _extract_public_ip(headers: dict[str, str]) -> str:
@@ -167,7 +173,7 @@ def _lookup_ip_location(ip: str) -> dict[str, Any]:
   headers = {"User-Agent": "CangaMetaG-Iron-Atlas visitor geography/1.0"}
   for url, provider in providers:
     try:
-      response = requests.get(url, headers=headers, timeout=3.0)
+      response = requests.get(url, headers=headers, timeout=2.0)
       response.raise_for_status()
       payload = response.json()
       if not isinstance(payload, dict):
@@ -200,7 +206,8 @@ def record_visit(st, app_version: str = "", database_version: str = "", page: st
 
   Raw client IP addresses are never written to disk. The IP is used only during
   the current request to derive an irreversible visitor hash and an approximate
-  country/city through proxy headers or a cached public geolocation lookup.
+  country/city through Streamlit context, proxy headers or a cached public
+  geolocation lookup.
   """
   try:
     if bool(st.session_state.get(VISIT_SESSION_KEY, False)):
@@ -210,7 +217,7 @@ def record_visit(st, app_version: str = "", database_version: str = "", page: st
 
   VISITOR_LOG_PATH.parent.mkdir(parents=True, exist_ok=True)
   headers = _safe_headers(st)
-  ip = _extract_public_ip(headers)
+  ip = _context_public_ip(st) or _extract_public_ip(headers)
   user_agent = _header(headers, "User-Agent")
   token = _session_token(st)
   fingerprint_basis = f"{ip}|{user_agent}" if ip else f"session|{token}|{user_agent}"
@@ -273,11 +280,19 @@ def _recognised(series: pd.Series) -> pd.Series:
   return text.mask(text.str.casefold().isin({"", "unknown", "none", "nan", "xx", "zz"}))
 
 
+def _country_series(visits: pd.DataFrame) -> pd.Series:
+  return (
+    _recognised(visits["country_name"])
+    .fillna(_recognised(visits["country_code"]))
+    .fillna(_recognised(visits["country"]))
+  )
+
+
 def summary_metrics() -> dict[str, int]:
   visits = load_visits()
   if visits.empty:
     return {"visits": 0, "total_visits": 0, "unique_visitors": 0, "countries": 0, "cities": 0}
-  country = _recognised(visits["country_name"]).fillna(_recognised(visits["country_code"]))
+  country = _country_series(visits)
   city = _recognised(visits["city"])
   total = int(len(visits))
   return {
@@ -295,9 +310,8 @@ def country_summary() -> pd.DataFrame:
   if visits.empty:
     return pd.DataFrame(columns=columns)
   work = visits.copy()
-  work["country_name"] = _recognised(work["country_name"])
-  work["country_code"] = _recognised(work["country_code"])
-  work["country_name"] = work["country_name"].fillna(work["country_code"]).fillna("Unknown")
+  work["country_name"] = _country_series(work).fillna("Unknown")
+  work["country_code"] = _recognised(work["country_code"]).fillna("")
   out = work.groupby(["country_name", "country_code"], dropna=False).agg(
     visits=("visitor_id", "size"),
     unique_visitors=("visitor_id", "nunique"),
@@ -311,9 +325,7 @@ def city_summary() -> pd.DataFrame:
   if visits.empty:
     return pd.DataFrame(columns=columns)
   work = visits.copy()
-  work["country_name"] = _recognised(work["country_name"]).fillna(
-    _recognised(work["country_code"])
-  ).fillna("Unknown")
+  work["country_name"] = _country_series(work).fillna("Unknown")
   work["region"] = _recognised(work["region"]).fillna("Unknown")
   work["city"] = _recognised(work["city"]).fillna("Unknown")
   out = work.groupby(["country_name", "region", "city"], dropna=False).agg(

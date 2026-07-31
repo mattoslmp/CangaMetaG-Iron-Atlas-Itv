@@ -52,25 +52,29 @@ page_handler = page_handlers.get(selected_page)
   assert "These panels do not recompute NMDS or RDA" not in transformed
 
 
-def test_static_figure45_generator_reserves_right_margin() -> None:
+def test_bilingual_static_figure45_generator_reserves_right_margin() -> None:
   generator = (
-    ROOT / "src" / "article_frozen_taxonomy_static_v3.py"
+    ROOT / "src" / "article_frozen_taxonomy_static_bilingual.py"
   ).read_text(encoding="utf-8")
-  assert "frozen_article_taxonomy_static_v4_expanded_rda_margin" in generator
+  assert "frozen_article_taxonomy_static_bilingual_v5" in generator
   assert "figsize=(29, 25.5)" in generator
   assert "x_span * 0.34" in generator
   assert "right=0.900" in generator
   assert "pad_inches=0.28" in generator
+  assert "Perfis de gêneros — estação seca" in generator
+  assert "Vetores da RDA" in generator
 
 
-def test_canonical_script_records_expanded_rda_layout() -> None:
+def test_canonical_script_records_bilingual_rda_layout() -> None:
   script = (
     ROOT / "scripts" / "final_publication_figures" /
     "02_05_generate_final_taxonomy_figures.py"
   ).read_text(encoding="utf-8")
-  assert "final-v6-expanded-rda-margin" in script
+  assert "final-v9-bilingual-figures" in script
+  assert 'choices=["en", "pt", "both"]' in script
   assert '"right_axis_padding_fraction": 0.34' in script
   assert '"right_vector_labels_clipped": False' in script
+  assert '"figure_source_values_changed": False' in script
 
 
 def test_corrected_taxonomy_figures_call_standard_static_data_panel() -> None:
@@ -92,10 +96,12 @@ def test_concise_method_transform_preserves_results_without_long_prose() -> None
   assert "_concise_scientific_method_name" in transform
 
 
-def test_app_loads_scientific_data_panel_after_other_figure_transforms() -> None:
+def test_app_loads_language_layer_after_figure_transforms() -> None:
   app = (ROOT / "app.py").read_text(encoding="utf-8")
   panel = app.index("app_scientific_data_panel_v3_transform.py")
   concise = app.index("app_concise_scientific_method_text_transform.py")
-  cleanup = app.index("app_public_validation_prose_cleanup_transform.py")
+  other_taxa = app.index("app_other_taxa_percentage_label_transform.py")
+  language = app.index("app_full_figure_language_transform.py")
+  recovery = app.index("app_static_figure_renderer_recovery_transform.py")
   runtime_guard = app.index("app_runtime_name_guard_transform.py")
-  assert cleanup < panel < concise < runtime_guard
+  assert panel < concise < other_taxa < language < recovery < runtime_guard

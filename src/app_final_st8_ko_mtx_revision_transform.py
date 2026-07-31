@@ -7,7 +7,7 @@ It consolidates sample resolution and display geometry without changing source
 matrices, KO values, row z-scores, categories, or source order.
 """
 
-MARKER = "CANGAMETAG_FINAL_ST8_KO_MTX_REVISION_V2 = 1"
+MARKER = "CANGAMETAG_FINAL_ST8_KO_MTX_REVISION_V3 = 1"
 
 
 if MARKER not in source:
@@ -21,7 +21,7 @@ if MARKER not in source:
   )
   final_ko_selection = '''    _final_mtx_metadata, mtx_cols = _resolve_final_st8_mtx_columns(
       meta,
-      [str(column) for column in numeric_cols if str(column) in df.columns],
+      [str(column) for column in df.columns],
       expected_count=12,
     )
     matrix_to_row = {
@@ -52,8 +52,6 @@ if MARKER not in source:
   if legacy_kegg_selection in candidate:
     candidate = candidate.replace(legacy_kegg_selection, final_kegg_selection, 1)
 
-  # Public wording: scientific validation remains active internally, while the
-  # interface uses neutral result-oriented terminology.
   public_replacements = {
     "Auditoria de detecção dos 189 KOs": "Resumo de detecção dos 189 KOs",
     "Detection audit for all 189 KOs": "Detection summary for all 189 KOs",
@@ -70,8 +68,6 @@ if MARKER not in source:
   for old, new in public_replacements.items():
     candidate = candidate.replace(old, new)
 
-  # Figures 40 and 67 always use 45-degree x labels. This overrides the earlier
-  # S67 transform that used horizontal labels for one display mode.
   candidate = candidate.replace(
     '''    elif key_prefix.startswith("kegg_combined_lagoon_external"):
       fig.update_xaxes(
@@ -92,11 +88,12 @@ from src import app_mtx_alpha_taxonomy_runtime as _final_st8_runtime_module
 
 
 def _final_st8_runtime_resolver(metadata, numeric_columns, data_columns):
-  data_column_set = {str(value) for value in data_columns}
-  available = [
-    str(column) for column in numeric_columns
-    if str(column) in data_column_set
-  ]
+  # Column dtype inference is deliberately not used for identifier resolution.
+  # Excel may load valid MTX count columns as object when a mixed/blank cell is
+  # present. Resolve against the complete matrix schema; values are converted to
+  # numeric only when the selected scientific matrix is prepared.
+  del numeric_columns
+  available = list(dict.fromkeys(str(value) for value in data_columns))
   resolved, columns = _resolve_final_st8_mtx_columns(
     metadata,
     available,
@@ -145,8 +142,6 @@ def render_plotly_downloadable(fig, *args, **kwargs):
     raise RuntimeError("Could not install final ST8/MTX runtime layer")
   candidate = candidate.replace(dispatch_anchor, runtime_layer + dispatch_anchor, 1)
 
-  # Add the exact public validation statement immediately before the existing
-  # ST8 explanatory paragraph when that block is present.
   validation_anchor = '''  st.info(txt(
     f"A planilha contém {int(lake_scope['source_marker_count'])} KOs.'''
   if validation_anchor in candidate and "Supplementary Table 8 validated: 189/189" not in candidate:

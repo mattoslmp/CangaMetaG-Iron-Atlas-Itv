@@ -1,0 +1,6 @@
+pandas==2.2.3
+numpy==2.3.5
+matplotlib==3.10.8
+openpyxl==3.1.5
+Pillow==12.2.0
+CairoSVG>=2.7,<3

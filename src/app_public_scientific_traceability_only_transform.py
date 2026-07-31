@@ -1,7 +1,7 @@
 from __future__ import annotations
 
 
-MARKER = "CANGAMETAG_PUBLIC_SCIENTIFIC_TRACEABILITY_ONLY_V1 = 1"
+MARKER = "CANGAMETAG_PUBLIC_SCIENTIFIC_TRACEABILITY_ONLY_V2 = 1"
 
 
 def _replace_function(text: str, start_marker: str, end_marker: str, replacement: str) -> str:
@@ -16,12 +16,7 @@ def _replace_function(text: str, start_marker: str, end_marker: str, replacement
 
 if MARKER not in source:
   scientific_traceability = r'''def _public_scientific_result_table(frame) -> pd.DataFrame:
-  """Keep only scientific result content suitable for the public interface.
-
-  Internal prompts, test fixtures, assertions and unrelated project material are
-  never part of a scientific figure's public traceability table. The underlying
-  files remain untouched in the repository.
-  """
+  """Return only scientific result rows suitable for the public interface."""
   if frame is None:
     return pd.DataFrame()
   try:
@@ -76,7 +71,7 @@ def render_figure_audit_expander(
   method: str | None = None, input_source: str | None = None,
   script: str | None = None, instructions: str | None = None,
 ) -> None:
-  """Show scientific source/result tables only; never expose internal test text."""
+  """Display only scientific source, processing, result and plotted-value tables."""
   plotted = harmonize_current_taxonomy_table(_plotly_exact_value_table(fig), BASE_DIR)
   source_table = _public_scientific_result_table(
     harmonize_current_taxonomy_table(input_table, BASE_DIR)
@@ -89,9 +84,6 @@ def render_figure_audit_expander(
   )
   plotted = _public_scientific_result_table(plotted)
 
-  # Preserve the four traceability stages requested for scientific figures,
-  # while avoiding empty tabs. A missing intermediate stage inherits the nearest
-  # available scientific table; it never imports text from prompts or tests.
   available = [table for table in [source_table, processed, output, plotted] if not table.empty]
   if not available:
     return
@@ -109,10 +101,6 @@ def render_figure_audit_expander(
     txt("Dados científicos usados nesta figura", "Scientific data used in this figure"),
     expanded=False,
   ):
-    st.caption(txt(
-      "Este painel contém apenas tabelas e valores diretamente ligados ao resultado exibido. Prompts, testes internos, instruções de desenvolvimento e conteúdos de outros projetos são excluídos da interface pública.",
-      "This panel contains only tables and values directly linked to the displayed result. Prompts, internal tests, development instructions and material from other projects are excluded from the public interface.",
-    ))
     tabs = st.tabs([
       txt("Fonte", "Source"),
       txt("Processada", "Processed"),
@@ -135,7 +123,7 @@ def render_figure_audit_expander(
   )
 
   static_traceability = r'''def _render_static_figure_audit(path: Path, title: str, key_prefix: str) -> None:
-  """Show only directly resolved scientific source tables for a static figure."""
+  """Display directly resolved scientific source tables for a static figure."""
   record = _static_figure_manifest_record(path)
   figure_id = str(record.get("Figure", "") or "").strip() or path.stem
   figure_title = str(record.get("Description", "") or record.get("Title", "") or title or path.stem).strip()
@@ -178,8 +166,7 @@ def render_figure_audit_expander(
     static_traceability,
   )
 
-  # Figure-to-app comparison is an internal regression test. Keep it in the
-  # repository test suite, but do not show its status/table to public visitors.
+  # Hide figure-to-app regression checks from the public page.
   validation_start = source.find(
     '    validation = article_static_source_validation(article_domain, "Phylum", 14, BASE_DIR)'
   )
@@ -190,8 +177,32 @@ def render_figure_audit_expander(
   if validation_start >= 0 and validation_end >= 0:
     source = source[:validation_start] + source[validation_end:]
 
-  # Final-figure asset/script integrity checks remain logged internally instead
-  # of being displayed as public scientific results.
+  # Hide S40/S67 programmatic comparison files and messages.
+  source = source.replace(
+    "  if comparison_tsv.exists() or comparison_md.exists():\n",
+    "  if False and (comparison_tsv.exists() or comparison_md.exists()):\n",
+    1,
+  )
+
+  # Keep visitor records in the internal log only.
+  source = source.replace(
+    '''      show_table(recent, "visitor_recent_audit", height=420)
+      csv_button(recent, "visitor_recent_audit_public_fields.csv", txt("Baixar auditoria recente", "Download recent audit"))
+      st.code(str(VISITOR_LOG_PATH.relative_to(BASE_DIR)), language="text")''',
+    "      pass",
+    1,
+  )
+
+  # Hide the technical workbook inventory, including for admin sessions.
+  source = source.replace(
+    '''  if st.session_state.get("admin_authenticated", False):
+    with st.expander(txt("Technical spreadsheet inventory — admin only", "Technical spreadsheet inventory — admin only"), expanded=False):''',
+    '''  if False and st.session_state.get("admin_authenticated", False):
+    with st.expander(txt("Technical spreadsheet inventory — admin only", "Technical spreadsheet inventory — admin only"), expanded=False):''',
+    1,
+  )
+
+  # Final-figure asset/script integrity checks are logged, never displayed.
   integrity_start = source.find("        qa1, qa2, qa3 = st.columns(3)\n")
   integrity_end = source.find("    missing_figure_dirs = ", integrity_start)
   if integrity_start >= 0 and integrity_end >= 0:
@@ -209,6 +220,10 @@ def render_figure_audit_expander(
     "Complete taxonomic table for audit and download": "Complete taxonomic data table",
     "Tabela completa para auditoria": "Tabela completa de resultados",
     "Complete audit table": "Complete results table",
+    "referência de auditoria": "referência interna",
+    "audit-only": "internal reference only",
+    "para auditoria e download": "para consulta e download",
+    "for audit and download": "for review and download",
   }
   for old_label, new_label in public_label_replacements.items():
     source = source.replace(old_label, new_label)

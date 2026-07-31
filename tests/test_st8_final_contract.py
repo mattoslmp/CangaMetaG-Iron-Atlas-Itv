@@ -157,6 +157,10 @@ page_handler = page_handlers.get(selected_page)
   assert "Resumo de detecção dos 189 KOs" in transformed
   assert "Detection summary for all 189 KOs" in transformed
   assert "_resolve_final_st8_mtx_columns" in transformed
+  assert "[str(column) for column in df.columns]" in transformed
+  assert "del numeric_columns" in transformed
+  assert "available = list(dict.fromkeys(str(value) for value in data_columns))" in transformed
+  assert "if str(column) in data_column_set" not in transformed
   assert "tickangle=-45" in transformed or "tickangle=0" not in transformed
 
 

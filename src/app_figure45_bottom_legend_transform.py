@@ -1,12 +1,24 @@
 from __future__ import annotations
 
-"""Place every Figure 4/5 interactive legend in a dedicated bottom band."""
+"""Place every Figure 4/5 legend in a dedicated bottom band."""
 
 MARKER = "CANGAMETAG_FIGURE45_BOTTOM_LEGEND_V3 = 1"
 
 if MARKER not in source:
+  future_anchor = "from __future__ import annotations\n"
+  static_import = (
+    "from src.article_frozen_taxonomy_static_v3 import "
+    "materialize_frozen_article_static_v3\n"
+  )
+  if static_import not in source:
+    source = source.replace(future_anchor, future_anchor + static_import, 1)
+
   anchor = "page_handler = page_handlers.get(selected_page)"
   wrapper = r'''
+# Static Figure 4/5 assets and the canonical article generator use the same
+# final layout implementation with all legends below the four panels.
+materialize_frozen_article_static = materialize_frozen_article_static_v3
+
 if "article_frozen_taxonomy_figure" in globals():
   _APP_ORIGINAL_ARTICLE_FROZEN_TAXONOMY_FIGURE_BOTTOM_LEGEND = article_frozen_taxonomy_figure
 
@@ -56,6 +68,7 @@ if "article_frozen_taxonomy_figure" in globals():
       "legend_layout": "dedicated-bottom-band-v3",
       "legend_below_entire_figure": True,
       "legend_overlaps_scientific_panels": False,
+      "static_generator": "src/article_frozen_taxonomy_static_v3.py",
     })
     figure.update_layout(meta=meta)
     return figure, tables

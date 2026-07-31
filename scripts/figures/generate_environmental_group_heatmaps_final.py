@@ -3,13 +3,16 @@
 
 The source matrices, status mapping, row order, column order, colours, and
 scientific-equivalence checks are delegated to the canonical environmental-group
-generator. This final renderer changes only figure geometry: 45-degree x labels,
-dynamic width, larger bottom margin, and unclipped publication exports.
+generator. This final renderer changes only figure geometry and file export:
+45-degree x labels, dynamic width, larger bottom margin, publication-resolution
+PNG, raster-embedded SVG, and PDFs assembled without rerendering the figure.
 """
 from __future__ import annotations
 
 import argparse
+import base64
 import json
+import math
 from pathlib import Path
 import sys
 
@@ -19,6 +22,9 @@ import matplotlib.pyplot as plt
 import numpy as np
 from matplotlib.colors import BoundaryNorm, ListedColormap
 from matplotlib.patches import Patch
+import pandas as pd
+from PIL import Image
+from pypdf import PdfWriter
 
 ROOT = Path(__file__).resolve().parents[2]
 if str(ROOT) not in sys.path:
@@ -122,21 +128,9 @@ def plot_panel_final(
         ax.axvline(start - 0.5, color="#222222", linewidth=1.05, zorder=5)
 
   legend = [
-    Patch(
-      facecolor=canonical.COLORS["Complete"],
-      edgecolor="none",
-      label="Complete",
-    ),
-    Patch(
-      facecolor=canonical.COLORS["1 block missing"],
-      edgecolor="none",
-      label="1 block missing",
-    ),
-    Patch(
-      facecolor=canonical.COLORS["Incomplete"],
-      edgecolor="none",
-      label="Incomplete",
-    ),
+    Patch(facecolor=canonical.COLORS["Complete"], edgecolor="none", label="Complete"),
+    Patch(facecolor=canonical.COLORS["1 block missing"], edgecolor="none", label="1 block missing"),
+    Patch(facecolor=canonical.COLORS["Incomplete"], edgecolor="none", label="Incomplete"),
   ]
   fig.legend(
     handles=legend,
@@ -157,6 +151,114 @@ def plot_panel_final(
   return fig
 
 
+def write_raster_embedded_svg(png_path: Path, svg_path: Path) -> None:
+  """Write a valid SVG embedding the exact publication-resolution PNG."""
+  with Image.open(png_path) as image:
+    width, height = image.size
+  payload = base64.b64encode(png_path.read_bytes()).decode("ascii")
+  svg_path.write_text(
+    f"<svg xmlns='http://www.w3.org/2000/svg' width='{width}' height='{height}' "
+    f"viewBox='0 0 {width} {height}'>"
+    f"<image width='{width}' height='{height}' "
+    f"href='data:image/png;base64,{payload}'/>"
+    "</svg>",
+    encoding="utf-8",
+  )
+
+
+def write_png_pdf(png_path: Path, pdf_path: Path) -> None:
+  with Image.open(png_path) as image:
+    image.convert("RGB").save(pdf_path, "PDF", resolution=300.0)
+
+
+def merge_pdf_panels(panel_paths: list[Path], output_path: Path) -> None:
+  writer = PdfWriter()
+  for panel_path in panel_paths:
+    writer.append(str(panel_path))
+  with output_path.open("wb") as handle:
+    writer.write(handle)
+  writer.close()
+
+
+def generate_variant_final(
+  spec,
+  matrix: pd.DataFrame,
+  column_meta: pd.DataFrame,
+  variant: str,
+  figure_dir: Path,
+  derived_dir: Path,
+) -> dict[str, object]:
+  grouped = variant == "environmental_group"
+  columns = canonical.ordered_columns(column_meta, variant)
+  data = canonical.status_matrix(matrix, columns)
+  stem = spec.grouped_stem if grouped else spec.original_stem
+  title = spec.title_grouped if grouped else spec.title_original
+  matrix_csv = derived_dir / f"{stem}_status.csv"
+  order_csv = derived_dir / f"{stem}_column_order.csv"
+  canonical.write_matrix_csv(data, matrix_csv)
+
+  order = column_meta.set_index("sample_column").loc[columns].reset_index()
+  order.insert(0, "figure_id", spec.figure_id)
+  order.insert(1, "variant", variant)
+  order.insert(2, "display_order_index", np.arange(len(order), dtype=int))
+  order.to_csv(order_csv, index=False)
+
+  panel_count = math.ceil(len(data) / spec.rows_per_panel)
+  panel_files: list[dict[str, str]] = []
+  single_page_pdfs: list[Path] = []
+  for panel_zero in range(panel_count):
+    start = panel_zero * spec.rows_per_panel
+    end = min((panel_zero + 1) * spec.rows_per_panel, len(data))
+    panel = data.iloc[start:end]
+    panel_number = panel_zero + 1
+    fig = plot_panel_final(
+      panel,
+      columns,
+      column_meta,
+      title,
+      panel_number,
+      panel_count,
+      grouped,
+    )
+    base = figure_dir / f"{stem}_P{panel_number:03d}"
+    png = base.with_suffix(".png")
+    svg = base.with_suffix(".svg")
+    pdf_single = base.with_suffix(".pdf")
+    fig.savefig(png, dpi=300, facecolor="white")
+    plt.close(fig)
+    write_raster_embedded_svg(png, svg)
+    write_png_pdf(png, pdf_single)
+    single_page_pdfs.append(pdf_single)
+    panel_files.append({
+      "png": str(png),
+      "svg": str(svg),
+      "pdf": str(pdf_single),
+    })
+
+  multipage_pdf = figure_dir / f"{stem}.pdf"
+  merge_pdf_panels(single_page_pdfs, multipage_pdf)
+  first = figure_dir / f"{stem}_P001"
+  canonical.copy_first_panel_alias(
+    first.with_suffix(".png"),
+    figure_dir / f"{stem}.png",
+  )
+  canonical.copy_first_panel_alias(
+    first.with_suffix(".svg"),
+    figure_dir / f"{stem}.svg",
+  )
+  return {
+    "figure_id": spec.figure_id,
+    "variant": variant,
+    "stem": stem,
+    "matrix_csv": str(matrix_csv),
+    "order_csv": str(order_csv),
+    "multipage_pdf": str(multipage_pdf),
+    "panels": panel_files,
+    "rows": int(data.shape[0]),
+    "columns": int(data.shape[1]),
+  }
+
+
 def main() -> int:
   parser = argparse.ArgumentParser(description=__doc__)
   parser.add_argument(
@@ -168,6 +270,7 @@ def main() -> int:
   args = parser.parse_args()
 
   canonical.plot_panel = plot_panel_final
+  canonical.generate_variant = generate_variant_final
   report = canonical.run(args.root.resolve())
   report["final_renderer"] = str(Path(__file__).relative_to(ROOT))
   report["x_tick_angle_degrees"] = 45

@@ -1,5 +1,5 @@
 {
-  "manifest_version": "2026-07-31-final-v1",
+  "manifest_version": "2026-07-31-final-v2-bottom-legends",
   "policy": "Only entries with status=canonical_final are used by the app and future article packages.",
   "canonical_scripts": [
     {
@@ -8,7 +8,7 @@
       "status": "canonical_final",
       "app_shared_modules": [
         "src/article_exact_taxonomy_phylum_generated.py",
-        "src/article_frozen_taxonomy_static.py",
+        "src/article_frozen_taxonomy_static_v3.py",
         "src/article_frozen_taxonomy_panels.py"
       ],
       "inputs": [
@@ -24,7 +24,8 @@
         "outputs/final_publication_figures/Figure5_taxonomic_archaea_genus_profiles.*"
       ],
       "command": "python scripts/final_publication_figures/02_05_generate_final_taxonomy_figures.py",
-      "scientific_values_recomputed": false
+      "scientific_values_recomputed": false,
+      "legend_layout": "Figures 4 and 5 use one dedicated legend band below all four panels"
     },
     {
       "figure_scope": "Supplementary Table 8 all-KO biomarker heatmaps",
@@ -43,7 +44,8 @@
         "reports/FINAL_ST8_KO_HEATMAP_REPORT.json"
       ],
       "command": "python scripts/final_publication_figures/07_generate_st8_ko_biomarker_heatmaps.py",
-      "scientific_values_recomputed": false
+      "scientific_values_recomputed": false,
+      "reshape_policy": "Complex DataFrame attrs are removed before pandas melt/concat operations"
     }
   ],
   "compatibility_entry_points": [
@@ -56,6 +58,8 @@
     "taxonomy labels generated from uncorrected legacy names",
     "NMDS legend positioned between panels C and D",
     "RDA vector legend drawn inside panel D",
-    "ST8 heatmap displaying all-zero marker rows as observed signals"
+    "genus legend overlapping the scientific panels",
+    "ST8 heatmap displaying all-zero marker rows as observed signals",
+    "pandas melt receiving DataFrame-valued attrs"
   ]
 }

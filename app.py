@@ -53,6 +53,7 @@ TRANSFORMS = [
   Path(__file__).with_name("src") / "app_scientific_data_panel_v3_transform.py",
   Path(__file__).with_name("src") / "app_concise_scientific_method_text_transform.py",
   Path(__file__).with_name("src") / "app_other_taxa_percentage_label_transform.py",
+  Path(__file__).with_name("src") / "app_full_figure_language_transform.py",
   Path(__file__).with_name("src") / "app_static_figure_renderer_recovery_transform.py",
   Path(__file__).with_name("src") / "app_runtime_name_guard_transform.py",
 ]

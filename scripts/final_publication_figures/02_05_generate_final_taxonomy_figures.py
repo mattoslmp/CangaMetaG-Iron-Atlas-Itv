@@ -8,8 +8,8 @@ Figures 2/3
   two-panel article layout.
 
 Figures 4/5
-  Generated from the frozen article abundance, NMDS and RDA tables. Legends
-  are placed in reserved regions outside the four scientific panels.
+  Generated from the frozen article abundance, NMDS and RDA tables. Every
+  legend is placed in a dedicated band below the four scientific panels.
 
 The app imports the same source modules. Therefore static article assets,
 interactive viewers and future packaged releases share one implementation.
@@ -19,12 +19,11 @@ No abundance, coordinate, vector or statistic is recomputed in this script.
 import argparse
 import json
 from pathlib import Path
-import shutil
 import sys
 import tempfile
 
 
-SCRIPT_VERSION = "2026-07-31-final-v2"
+SCRIPT_VERSION = "2026-07-31-final-v3-bottom-legends"
 
 
 def project_root() -> Path:
@@ -38,8 +37,8 @@ if str(ROOT) not in sys.path:
 from src.article_exact_taxonomy_phylum_generated import (  # noqa: E402
   exact_article_phylum_svg_bytes,
 )
-from src.article_frozen_taxonomy_static import (  # noqa: E402
-  materialize_frozen_article_static,
+from src.article_frozen_taxonomy_static_v3 import (  # noqa: E402
+  materialize_frozen_article_static_v3,
 )
 
 
@@ -54,11 +53,11 @@ FIGURES = {
   ),
   "Bacteria_genus_ordination": (
     "Figure4_taxonomic_bacteria_genus_profiles",
-    lambda cache: materialize_frozen_article_static("Bacteria", cache).read_bytes(),
+    lambda cache: materialize_frozen_article_static_v3("Bacteria", cache).read_bytes(),
   ),
   "Archaea_genus_ordination": (
     "Figure5_taxonomic_archaea_genus_profiles",
-    lambda cache: materialize_frozen_article_static("Archaea", cache).read_bytes(),
+    lambda cache: materialize_frozen_article_static_v3("Archaea", cache).read_bytes(),
   ),
 }
 
@@ -91,8 +90,13 @@ def validate_svg(stem: str, payload: bytes) -> None:
       raise RuntimeError(f"Legacy taxonomy label remains in {stem}: {legacy}")
   if stem.startswith(("Figure4_", "Figure5_")):
     required = (
-      "Bray-Curtis NMDS", "RDA biplot", "Lake / season",
-      "Environmental variable", "Representative genus vector",
+      "Bray-Curtis NMDS",
+      "RDA biplot",
+      "Lake / season",
+      "RDA vectors",
+      "Environmental variable",
+      "Representative genus vector",
+      "Genus",
     )
     missing = [label for label in required if label not in text]
     if missing:
@@ -112,16 +116,8 @@ def convert_svg(svg_path: Path, dpi: int) -> list[Path]:
   png_path = svg_path.with_suffix(".png")
   pdf_path = svg_path.with_suffix(".pdf")
   tiff_path = svg_path.with_suffix(".tiff")
-  cairosvg.svg2png(
-    bytestring=svg_path.read_bytes(),
-    write_to=str(png_path),
-    dpi=dpi,
-  )
-  cairosvg.svg2pdf(
-    bytestring=svg_path.read_bytes(),
-    write_to=str(pdf_path),
-    dpi=dpi,
-  )
+  cairosvg.svg2png(bytestring=svg_path.read_bytes(), write_to=str(png_path), dpi=dpi)
+  cairosvg.svg2pdf(bytestring=svg_path.read_bytes(), write_to=str(pdf_path), dpi=dpi)
   try:
     from PIL import Image
     with Image.open(png_path) as image:
@@ -145,7 +141,7 @@ def main() -> int:
 
   with tempfile.TemporaryDirectory(prefix="cangametag_final_taxonomy_") as tmp:
     cache = Path(tmp)
-    for figure_key, (stem, builder) in FIGURES.items():
+    for _, (stem, builder) in FIGURES.items():
       payload = builder(cache)
       validate_svg(stem, payload)
       svg_path = output_dir / f"{stem}.svg"
@@ -162,14 +158,15 @@ def main() -> int:
     "script_version": SCRIPT_VERSION,
     "app_shared_modules": [
       "src/article_exact_taxonomy_phylum_generated.py",
-      "src/article_frozen_taxonomy_static.py",
+      "src/article_frozen_taxonomy_static_v3.py",
       "src/article_frozen_taxonomy_panels.py",
     ],
     "outputs": outputs,
     "sha256": hashes,
     "scientific_values_recomputed": False,
     "taxonomy_labels_updated_only_for_figures_2_3": True,
-    "figure_4_5_legend_layout": "legends reserved outside scientific panels",
+    "figure_4_5_legend_layout": "all legends in a dedicated band below all four panels",
+    "legend_overlaps_scientific_panels": False,
   }
   report_path = report_dir / "FINAL_DOMAIN_TAXONOMY_GENERATION_REPORT.json"
   report_path.write_text(

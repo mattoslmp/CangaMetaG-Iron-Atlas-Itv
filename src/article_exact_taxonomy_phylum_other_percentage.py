@@ -1,11 +1,11 @@
 from __future__ import annotations
 
-"""Generate Figures 2/3 with the declared 5% aggregate cutoff.
+"""Generate bilingual Figures 2/3 with the declared 5% aggregate cutoff.
 
 ``Other taxa`` is an aggregate category. Its bar length is the sum of the
 underlying source-table values, whereas the value written in the legend denotes
-the per-taxon cutoff used to describe that aggregate. The source values and bar
-lengths are never replaced by 5%.
+the per-taxon cutoff used to describe that aggregate. Language changes display
+text only; source values and bar lengths are never changed.
 """
 
 from io import BytesIO
@@ -20,6 +20,7 @@ from .article_exact_taxonomy_phylum import (
   load_exact_article_phylum_table,
 )
 from .article_taxonomy import SAMPLE_ORDER, _article_palette
+from .figure_language_localization import normalize_language
 
 
 AGGREGATE_LABELS = {"Other taxa", "Other genera"}
@@ -51,24 +52,59 @@ def other_taxa_percentages(domain: str) -> dict[str, float]:
 def aggregate_taxon_display_label(
   taxon: object,
   values: object | None = None,
+  *,
+  language: object = "en",
 ) -> str:
   """Label aggregate taxa with the 5% per-taxon cutoff."""
   name = str(taxon)
   if name not in AGGREGATE_LABELS:
     return name
   threshold = f"{OTHER_TAXA_THRESHOLD_PERCENT:g}%"
+  if normalize_language(language) == "pt":
+    base = "Outros gêneros" if name == "Other genera" else "Outros táxons"
+    return f"{base} (<{threshold} cada)"
   return f"{name} (<{threshold} each)"
 
 
-def generate_article_svg_with_other_percentage(domain: str) -> bytes:
-  """Regenerate the canonical Figure 2/3 SVG with the 5% cutoff label."""
+def _labels(domain: str, language: object) -> dict[str, str]:
+  canonical = _domain(domain)
+  if normalize_language(language) == "pt":
+    return {
+      "dry": "Estação seca",
+      "rainy": "Estação chuvosa",
+      "x": "Abundância relativa (%)",
+      "y": "Amostra de sedimento classificada por CDS",
+      "legend": "Filo",
+      "title": (
+        "Perfis taxonômicos de Bacteria em nível de filo"
+        if canonical == "Bacteria"
+        else "Perfis taxonômicos de Archaea em nível de filo"
+      ),
+    }
+  return {
+    "dry": "Dry season",
+    "rainy": "Rainy season",
+    "x": "Relative abundance (%)",
+    "y": "CDS-classified sediment sample",
+    "legend": "Phylum",
+    "title": str(FIGURES[canonical]["title"]),
+  }
+
+
+def generate_article_svg_with_other_percentage(
+  domain: str,
+  language: object = "en",
+) -> bytes:
+  """Regenerate the canonical Figure 2/3 SVG in the selected language."""
   import matplotlib
 
   matplotlib.use("Agg")
   import matplotlib.pyplot as plt
   from matplotlib.patches import Patch
 
+  lang = normalize_language(language)
   canonical = _domain(domain)
+  labels = _labels(canonical, lang)
   source = load_exact_article_phylum_table(canonical)
   samples = [sample for sample in SAMPLE_ORDER if sample in source.columns]
   relative = source.set_index("taxon")[samples].copy()
@@ -80,7 +116,7 @@ def generate_article_svg_with_other_percentage(domain: str) -> bytes:
     axes,
     ["D", "R"],
     ["A", "B"],
-    ["Dry season", "Rainy season"],
+    [labels["dry"], labels["rainy"]],
   ):
     panel_samples = [
       sample for sample in SAMPLE_ORDER
@@ -102,7 +138,7 @@ def generate_article_svg_with_other_percentage(domain: str) -> bytes:
     axis.set_yticks(y, panel_samples, fontsize=10)
     axis.invert_yaxis()
     axis.set_xlim(0, 100)
-    axis.set_xlabel("Relative abundance (%)", fontsize=12, fontweight="bold")
+    axis.set_xlabel(labels["x"], fontsize=12, fontweight="bold")
     axis.set_title(
       f"{panel}  {season_label}",
       loc="left",
@@ -113,7 +149,7 @@ def generate_article_svg_with_other_percentage(domain: str) -> bytes:
     axis.grid(False)
 
   axes[0].set_ylabel(
-    "CDS-classified sediment sample",
+    labels["y"],
     fontsize=12,
     fontweight="bold",
   )
@@ -121,13 +157,13 @@ def generate_article_svg_with_other_percentage(domain: str) -> bytes:
     Patch(
       facecolor=palette[taxon],
       edgecolor="none",
-      label=aggregate_taxon_display_label(taxon),
+      label=aggregate_taxon_display_label(taxon, language=lang),
     )
     for taxon in taxa
   ]
   fig.legend(
     handles=handles,
-    title="Phylum",
+    title=labels["legend"],
     loc="center left",
     bbox_to_anchor=(0.82, 0.5),
     frameon=False,
@@ -135,7 +171,7 @@ def generate_article_svg_with_other_percentage(domain: str) -> bytes:
     title_fontsize=10,
   )
   fig.suptitle(
-    str(FIGURES[canonical]["title"]),
+    labels["title"],
     fontsize=18,
     fontweight="bold",
     y=0.985,

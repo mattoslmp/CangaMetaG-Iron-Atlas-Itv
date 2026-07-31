@@ -384,6 +384,7 @@ def article_alpha_boxplot(base_dir: Path | str | None = None) -> tuple[go.Figure
       "article_source": "data/final_publication_derived/SupplementaryFigure4_alpha_diversity_CDS_32999_source.csv",
       "article_script": "scripts/final_publication_figures/06_recalculate_rarefaction_alpha_32999.py",
       "same_values_order_and_palette_as_article": True,
+      "preserve_legend_position": True,
     },
   )
   return figure, source

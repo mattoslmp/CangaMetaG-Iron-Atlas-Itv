@@ -1,8 +1,8 @@
 from __future__ import annotations
 
-"""Make the app display the same label-corrected frozen taxonomy figures."""
+"""Use corrected frozen taxonomy assets and exact article ordination panels."""
 
-MARKER = "CANGAMETAG_CORRECTED_TAXONOMY_STATIC_ASSETS_V1 = 1"
+MARKER = "CANGAMETAG_CORRECTED_TAXONOMY_STATIC_ASSETS_V2 = 1"
 
 if MARKER not in source:
   import_anchor = (
@@ -14,6 +14,7 @@ if MARKER not in source:
   build_corrected_taxonomy_publication_overlay,
   materialize_corrected_taxonomy_static,
 )
+from src.article_frozen_taxonomy_panels import article_frozen_taxonomy_figure
 '''
   if corrected_imports not in source:
     if import_anchor in source:
@@ -51,8 +52,8 @@ def _display_static_publication_image(path: Path, title: str, caption: str = "",
     width="stretch",
   )
   st.caption(txt(
-    "Nomenclatura de filo atualizada; valores, ordem, cores e geometria são os da figura congelada do artigo.",
-    "Phylum nomenclature updated; values, order, colours and geometry are those of the frozen article figure.",
+    "Ativo estático da versão congelada do artigo. Apenas a nomenclatura taxonômica validada foi atualizada; valores e geometria permanecem os do artigo.",
+    "Static asset from the frozen article version. Only validated taxonomy nomenclature was updated; values and geometry remain those of the article.",
   ))
 '''
     source = source[:display_start] + original + "\n\n" + wrapper + source[display_end:]
@@ -96,13 +97,59 @@ def is_valid_display_image(path: Path) -> tuple[bool, str]:
   if directory_block in source:
     source = source.replace(directory_block, directory_replacement, 1)
 
-  raster_candidate = (
-    'fp.suffix.lower() in image_suffixes and not _is_prohibited_publication_figure(fp)'
-  )
+  raster_candidate = 'fp.suffix.lower() in image_suffixes and not _is_prohibited_publication_figure(fp)'
   corrected_candidate = (
     '(fp.suffix.lower() in image_suffixes or fp.name in '
     'CORRECTED_TAXONOMY_STATIC_FILENAMES) and not '
     '_is_prohibited_publication_figure(fp)'
   )
   source = source.replace(raster_candidate, corrected_candidate)
+
+  exact_renderer = r'''
+def _render_frozen_article_taxonomy_ordinations() -> None:
+  st.markdown("### " + txt(
+    "Painéis interativos exatos das Figuras 4 e 5",
+    "Exact interactive panels from Figures 4 and 5",
+  ))
+  st.info(txt(
+    "Estes painéis não recalculam NMDS ou RDA. Eles leem diretamente as matrizes, coordenadas, vetores e estatísticas congeladas em ARTICLE_FINAL_ISME_SUBMISSION_Leandrov27-julho FINAL_SUBMISSION_FILES.",
+    "These panels do not recompute NMDS or RDA. They read the matrices, coordinates, vectors and statistics frozen in ARTICLE_FINAL_ISME_SUBMISSION_Leandrov27-julho FINAL_SUBMISSION_FILES directly.",
+  ))
+  tabs = st.tabs(["Bacteria — Figure 4", "Archaea — Figure 5"])
+  for domain, tab in zip(["Bacteria", "Archaea"], tabs):
+    with tab:
+      figure, tables = article_frozen_taxonomy_figure(domain)
+      render_plotly_downloadable(
+        figure,
+        key=f"frozen_article_taxonomy_{domain}",
+        basename=f"{'Figure4' if domain == 'Bacteria' else 'Figure5'}_interactive_exact_article",
+        audit_input_table=tables["genus_relative_abundance"],
+        audit_processed_table=tables["nmds_scores"],
+        audit_output_table=tables["ordination_statistics"],
+        audit_method="Direct rendering of frozen article relative-abundance matrix, NMDS coordinates, RDA site scores, environmental vectors, representative-genus vectors and statistics; no ordination recomputation.",
+        audit_input_source="data/article_frozen_taxonomy_bacteria.json or data/article_frozen_taxonomy_archaea.json",
+        audit_script="src/article_frozen_taxonomy_panels.py",
+      )
+      with st.expander(txt("Tabelas exatas da figura", "Exact figure tables"), expanded=False):
+        for table_name, table in tables.items():
+          st.markdown(f"#### `{table_name}`")
+          show_table(table, f"frozen_{domain}_{table_name}", height=320)
+          csv_button(
+            table,
+            f"{'Figure4' if domain == 'Bacteria' else 'Figure5'}_{table_name}.csv",
+            txt("Baixar tabela", "Download table"),
+            key=f"frozen_{domain}_{table_name}_csv",
+          )
+'''
+  site_anchor = "def site_access_gate"
+  if site_anchor in source and "def _render_frozen_article_taxonomy_ordinations" not in source:
+    source = source.replace(site_anchor, exact_renderer + "\n\n" + site_anchor, 1)
+
+  old_tail = '''  _render_alpha_final(level_name)
+  _render_beta_final(level_name)
+  taxonomic_rda_panel()'''
+  new_tail = '''  _render_alpha_final(level_name)
+  _render_frozen_article_taxonomy_ordinations()'''
+  source = source.replace(old_tail, new_tail, 1)
+
   source += f"\n\n{MARKER}\n"

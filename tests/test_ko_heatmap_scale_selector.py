@@ -35,7 +35,7 @@ page_handler = page_handlers.get(selected_page)
 def test_transform_installs_one_selector_for_all_explicit_heatmap_pairs() -> None:
   transformed = _apply(_synthetic_source())
   compile(transformed, "synthetic_all_heatmap_selector.py", "exec")
-  assert "CANGAMETAG_ALL_HEATMAP_SCALE_SELECTOR_V4" in transformed
+  assert "CANGAMETAG_ALL_HEATMAP_SCALE_SELECTOR_V5" in transformed
   assert "Raw data" in transformed
   assert "Z-score" in transformed
   assert "Heatmap visualization" in transformed

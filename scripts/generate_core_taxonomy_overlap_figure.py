@@ -87,7 +87,10 @@ def prepare_source(path: Path) -> pd.DataFrame:
   return source[source["article_environment_group"].isin(ARTICLE_GROUPS)].copy()
 
 
-def sets_for_level(source: pd.DataFrame, level: str) -> tuple[dict[str, set[str]], pd.DataFrame]:
+def sets_for_level(
+  source: pd.DataFrame,
+  level: str,
+) -> tuple[dict[str, set[str]], pd.DataFrame]:
   work = source[source["taxonomy_level"].astype(str).eq(level)].copy()
   sets = {
     group: set(
@@ -142,11 +145,11 @@ def make_venn(
 
   fig, axis = plt.subplots(figsize=(12.5, 10.5), dpi=300)
   circles = (
-    (0.39, 0.60, "#D5E8FF", ARTICLE_GROUPS[0]),
-    (0.61, 0.60, "#DFF3DC", ARTICLE_GROUPS[1]),
-    (0.50, 0.39, "#FFE6CC", ARTICLE_GROUPS[2]),
+    (0.39, 0.60, "#D5E8FF", ARTICLE_GROUPS[0], 0.935),
+    (0.61, 0.60, "#DFF3DC", ARTICLE_GROUPS[1], 0.935),
+    (0.50, 0.39, "#FFE6CC", ARTICLE_GROUPS[2], 0.105),
   )
-  for x, y, colour, label in circles:
+  for x, y, colour, label, label_y in circles:
     axis.add_patch(Circle(
       (x, y), 0.285,
       facecolor=colour,
@@ -154,7 +157,11 @@ def make_venn(
       alpha=0.62,
       linewidth=1.8,
     ))
-    axis.text(x, y + 0.335, label, ha="center", va="center", fontsize=12, fontweight="bold")
+    axis.text(
+      x, label_y, label,
+      ha="center", va="center",
+      fontsize=12, fontweight="bold",
+    )
 
   labels = (
     (0.25, 0.67, "AMD only"),
@@ -180,10 +187,10 @@ def make_venn(
     fontweight="bold",
     pad=22,
   )
-  axis.text(
-    0.5, 0.035,
+  fig.text(
+    0.5, 0.012,
     "Metagenomics only • presence = count_or_abundance > 0 • control and unassigned records excluded",
-    ha="center", va="center", fontsize=10,
+    ha="center", va="bottom", fontsize=10,
   )
   axis.set_xlim(0.05, 0.95)
   axis.set_ylim(0.0, 1.0)
@@ -212,8 +219,7 @@ def make_venn(
         "region": region,
         "taxon": taxon,
       })
-  members = pd.DataFrame(member_rows)
-  members.to_csv(
+  pd.DataFrame(member_rows).to_csv(
     derived / f"{stem_name}_source.csv",
     index=False,
   )
@@ -240,14 +246,20 @@ def main() -> None:
 
   base_dir = arguments.base_dir.resolve()
   article_root = (arguments.article_root or base_dir).resolve()
-  input_path = resolve_input(base_dir, arguments.input.resolve() if arguments.input else None)
+  input_path = resolve_input(
+    base_dir,
+    arguments.input.resolve() if arguments.input else None,
+  )
   source = prepare_source(input_path)
   results = [
     make_venn(source, level, number, base_dir, article_root)
     for level, number in LEVELS
   ]
   report = pd.DataFrame(results)
-  report_path = base_dir / "data" / "final_publication_derived" / "taxonomy_overlap_metagenomics_report.csv"
+  report_path = (
+    base_dir / "data" / "final_publication_derived"
+    / "taxonomy_overlap_metagenomics_report.csv"
+  )
   report.to_csv(report_path, index=False)
   print(report.to_string(index=False))
   print(f"Source: {input_path}")

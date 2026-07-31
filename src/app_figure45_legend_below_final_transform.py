@@ -1,8 +1,8 @@
 from __future__ import annotations
 
-"""Install the final Figure 4/5 generator and bottom-legend layout safely."""
+"""Install the final Figure 4/5 generator and large bottom-legend layout safely."""
 
-MARKER = "CANGAMETAG_FIGURE45_FINAL_DATA_GENERATOR_V1 = 1"
+MARKER = "CANGAMETAG_FIGURE45_FINAL_DATA_GENERATOR_V2 = 1"
 
 if MARKER not in source:
   public_replacements = {
@@ -66,9 +66,9 @@ if MARKER not in source:
     source = source.replace(old, new)
 
   future_anchor = "from __future__ import annotations\n"
-  imports = '''from src.article_figure45_final_generator import (
-  apply_figure45_plotly_layout as _apply_figure45_plotly_layout_final,
-  materialize_article_figure45_static as _materialize_article_figure45_static_final,
+  imports = '''from src.figure45_large_legend_runtime import (
+  apply_figure45_plotly_layout_large as _apply_figure45_plotly_layout_final,
+  materialize_article_figure45_static_large as _materialize_article_figure45_static_final,
 )
 '''
   if imports not in source and future_anchor in source:
@@ -109,8 +109,8 @@ if "render_plotly_downloadable" in globals():
       or "figure5_interactive_exact_article" in identity
     ):
       st.caption(txt(
-        "Legenda da figura: os gráficos de barras mostram a abundância relativa dos gêneros; o NMDS representa a ordenação por distância de Bray–Curtis; e o biplot de RDA mostra as relações restritas com as variáveis ambientais.",
-        "Figure legend: stacked bars show genus relative abundance; NMDS represents Bray–Curtis ordination; and the RDA biplot shows constrained relationships with environmental variables.",
+        "Legenda da figura: os gráficos de barras mostram a abundância relativa dos gêneros; o NMDS representa a ordenação por distância de Bray–Curtis; e o biplot de RDA mostra as relações restritas com as variáveis ambientais. As chaves de gêneros, símbolos e vetores estão ampliadas e posicionadas abaixo da figura.",
+        "Figure legend: stacked bars show genus relative abundance; NMDS represents Bray–Curtis ordination; and the RDA biplot shows constrained relationships with environmental variables. Genus, symbol and vector keys are enlarged and positioned below the figure.",
       ))
     return result
 '''

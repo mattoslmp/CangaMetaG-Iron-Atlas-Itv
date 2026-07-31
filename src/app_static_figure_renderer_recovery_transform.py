@@ -1,20 +1,15 @@
 from __future__ import annotations
 
-"""Install a final, self-contained static-figure renderer.
-
-Some historical source transforms wrap ``_display_static_publication_image`` by
-text slicing. A malformed boundary can accidentally retain unrelated following
-code inside that function. This final layer replaces the global function before
-page dispatch, so taxonomy pages never execute the malformed body.
-"""
+"""Install a final, bilingual and self-contained static-figure renderer."""
 
 
-MARKER = "CANGAMETAG_STATIC_FIGURE_RENDERER_RECOVERY_V2 = 1"
+MARKER = "CANGAMETAG_STATIC_FIGURE_RENDERER_RECOVERY_V3 = 1"
 
 if MARKER not in source:
   future_anchor = "from __future__ import annotations\n"
   imports = '''from src.article_exact_taxonomy_phylum_generated import materialize_exact_article_phylum_static as final_materialize_exact_article_phylum_static
-from src.article_frozen_taxonomy_static_v3 import materialize_frozen_article_static_v3 as final_materialize_frozen_article_static
+from src.article_frozen_taxonomy_static_bilingual import materialize_frozen_article_static_bilingual as final_materialize_frozen_article_static
+from src.figure_language_localization import translate_figure_text as final_translate_figure_text
 '''
   if imports not in source and future_anchor in source:
     source = source.replace(future_anchor, future_anchor + imports, 1)
@@ -22,27 +17,32 @@ from src.article_frozen_taxonomy_static_v3 import materialize_frozen_article_sta
   anchor = "page_handler = page_handlers.get(selected_page)"
   replacement = r'''
 def _final_static_publication_path(path: Path) -> Path | None:
-  """Resolve the final generated display asset without raising."""
+  """Resolve the final generated display asset in the selected language."""
+  language = "pt" if IS_PT else "en"
   try:
     if path.stem == "Figure2_taxonomic_phylum_bacteria_horizontal_CDS":
       return final_materialize_exact_article_phylum_static(
         "Bacteria",
         APP_CACHE_DIR,
+        language=language,
       )
     if path.stem == "Figure3_taxonomic_phylum_archaea_horizontal_CDS":
       return final_materialize_exact_article_phylum_static(
         "Archaea",
         APP_CACHE_DIR,
+        language=language,
       )
     if path.stem == "Figure4_taxonomic_bacteria_genus_profiles":
       return final_materialize_frozen_article_static(
         "Bacteria",
         APP_CACHE_DIR,
+        language=language,
       )
     if path.stem == "Figure5_taxonomic_archaea_genus_profiles":
       return final_materialize_frozen_article_static(
         "Archaea",
         APP_CACHE_DIR,
+        language=language,
       )
     generator = globals().get("materialize_corrected_taxonomy_static")
     if callable(generator):
@@ -63,7 +63,9 @@ def _display_static_publication_image(
   """Render one static figure and its retractable scientific-data panel."""
   requested = Path(path)
   display_path = _final_static_publication_path(requested)
-  st.markdown(f"#### `{requested.name}`")
+  localized_title = final_translate_figure_text(title, "pt" if IS_PT else "en")
+  localized_caption = final_translate_figure_text(caption, "pt" if IS_PT else "en")
+  st.markdown(f"#### {localized_title}")
   if display_path is None or not display_path.exists():
     st.warning(txt(
       f"Figura indisponível: {requested.name}",
@@ -71,17 +73,18 @@ def _display_static_publication_image(
     ))
     return
 
-  st.image(str(display_path), width="stretch", caption=caption or None)
+  st.image(str(display_path), width="stretch", caption=localized_caption or None)
 
   candidates: list[Path] = []
-  for candidate in [
+  raw_candidates = [display_path] if IS_PT else [
     display_path,
     requested,
     requested.with_suffix(".png"),
     requested.with_suffix(".svg"),
     requested.with_suffix(".pdf"),
     requested.with_suffix(".tiff"),
-  ]:
+  ]
+  for candidate in raw_candidates:
     candidate = Path(candidate)
     if candidate.exists() and candidate.is_file() and candidate not in candidates:
       candidates.append(candidate)
@@ -100,7 +103,7 @@ def _display_static_publication_image(
         suffix = candidate.suffix.lower()
         label = suffix.lstrip(".").upper() or "FILE"
         st.download_button(
-          f"Download {label}",
+          f"{txt('Baixar', 'Download')} {label}",
           data=candidate.read_bytes(),
           file_name=candidate.name,
           mime=mime_by_suffix.get(suffix, "application/octet-stream"),
@@ -113,7 +116,7 @@ def _display_static_publication_image(
 
   audit = globals().get("_render_static_figure_audit")
   if callable(audit):
-    audit(requested, title, key_prefix)
+    audit(requested, localized_title, key_prefix)
 '''
   if anchor in source:
     source = source.replace(anchor, replacement + "\n\n" + anchor, 1)

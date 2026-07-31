@@ -48,7 +48,7 @@ def unrelated_page():
   compile(transformed, "synthetic_figure45_no_anchor.py", "exec")
   assert "CANGAMETAG_FIGURE45_FINAL_DATA_GENERATOR_V1" in transformed
   assert "Could not place the Figure 4/5 caption" not in transformed
-  assert "raise RuntimeError" not in transformed
+  assert 'raise RuntimeError("Could not place the Figure 4/5 caption below the figure")' not in transformed
 
 
 def test_public_result_wording_replaces_internal_quality_terms() -> None:

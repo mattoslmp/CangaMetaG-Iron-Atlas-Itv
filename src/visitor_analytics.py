@@ -7,6 +7,7 @@ import json
 import re
 import secrets
 from typing import Any
+from urllib.parse import unquote
 
 import pandas as pd
 
@@ -19,14 +20,43 @@ VISITOR_SESSION_TOKEN_KEY = "_cangametag_visitor_session_token"
 
 _LOCATION_HEADERS = {
   "country_code": (
-    "CF-IPCountry", "X-Country-Code", "CloudFront-Viewer-Country",
-    "X-Appengine-Country", "Fly-Region",
+    "CF-IPCountry",
+    "X-Country-Code",
+    "CloudFront-Viewer-Country",
+    "X-Appengine-Country",
+    "X-Vercel-IP-Country",
   ),
-  "country_name": ("CF-IPCountry-Name", "X-Country-Name"),
-  "region": ("CF-Region", "X-Region", "X-Region-Name"),
-  "city": ("CF-IPCity", "X-City", "X-Appengine-City"),
-  "latitude": ("CF-IPLatitude", "X-Latitude"),
-  "longitude": ("CF-IPLongitude", "X-Longitude"),
+  "country_name": (
+    "CF-IPCountry-Name",
+    "X-Country-Name",
+    "X-Vercel-IP-Country-Name",
+  ),
+  "region": (
+    "CF-Region",
+    "X-Region",
+    "X-Region-Name",
+    "CloudFront-Viewer-Country-Region-Name",
+    "X-Vercel-IP-Country-Region",
+  ),
+  "city": (
+    "CF-IPCity",
+    "X-City",
+    "X-Appengine-City",
+    "CloudFront-Viewer-City",
+    "X-Vercel-IP-City",
+  ),
+  "latitude": (
+    "CF-IPLatitude",
+    "X-Latitude",
+    "CloudFront-Viewer-Latitude",
+    "X-Vercel-IP-Latitude",
+  ),
+  "longitude": (
+    "CF-IPLongitude",
+    "X-Longitude",
+    "CloudFront-Viewer-Longitude",
+    "X-Vercel-IP-Longitude",
+  ),
 }
 
 
@@ -38,10 +68,20 @@ def _safe_headers(st) -> dict[str, str]:
   return {str(key): str(value) for key, value in raw.items()}
 
 
+def _decode_header_value(value: object) -> str:
+  text = str(value or "").strip()
+  if not text:
+    return ""
+  try:
+    return unquote(text).strip()
+  except Exception:
+    return text
+
+
 def _header(headers: dict[str, str], *names: str) -> str:
   lookup = {str(key).casefold(): str(value) for key, value in headers.items()}
   for name in names:
-    value = lookup.get(str(name).casefold(), "").strip()
+    value = _decode_header_value(lookup.get(str(name).casefold(), ""))
     if value:
       return value
   return ""
@@ -52,7 +92,9 @@ def _public_ip(value: object) -> str:
   if not text:
     return ""
   text = re.sub(r"^for=", "", text, flags=re.IGNORECASE).strip().strip('"[]')
-  if text.count(":") == 1 and "." in text:
+  if text.startswith("[") and "]" in text:
+    text = text[1:text.index("]")]
+  elif text.count(":") == 1 and "." in text:
     text = text.rsplit(":", 1)[0]
   try:
     address = ipaddress.ip_address(text)
@@ -74,8 +116,13 @@ def _context_public_ip(st) -> str:
 def _extract_public_ip(headers: dict[str, str]) -> str:
   candidates: list[str] = []
   for name in (
-    "CF-Connecting-IP", "True-Client-IP", "X-Real-IP", "X-Client-IP",
-    "Fly-Client-IP", "X-Forwarded-For", "Forwarded",
+    "CF-Connecting-IP",
+    "True-Client-IP",
+    "X-Real-IP",
+    "X-Client-IP",
+    "Fly-Client-IP",
+    "X-Forwarded-For",
+    "Forwarded",
   ):
     value = _header(headers, name)
     if not value:
@@ -123,14 +170,31 @@ def _normalise_location(payload: dict[str, Any], source: str) -> dict[str, Any]:
     or payload.get("country_name_official")
     or ""
   ).strip()
-  city = str(payload.get("city") or "").strip()
-  region = str(payload.get("region") or payload.get("region_name") or "").strip()
-  latitude = pd.to_numeric(
-    payload.get("latitude", payload.get("lat")), errors="coerce"
+  city = _decode_header_value(payload.get("city") or "")
+  region = _decode_header_value(
+    payload.get("region")
+    or payload.get("region_name")
+    or payload.get("regionName")
+    or ""
   )
-  longitude = pd.to_numeric(
-    payload.get("longitude", payload.get("lon")), errors="coerce"
-  )
+
+  latitude_value = payload.get("latitude", payload.get("lat"))
+  longitude_value = payload.get("longitude", payload.get("lon"))
+  location_text = str(payload.get("loc") or "").strip()
+  if location_text and "," in location_text:
+    loc_lat, loc_lon = location_text.split(",", 1)
+    if latitude_value in (None, ""):
+      latitude_value = loc_lat
+    if longitude_value in (None, ""):
+      longitude_value = loc_lon
+
+  latitude = pd.to_numeric(latitude_value, errors="coerce")
+  longitude = pd.to_numeric(longitude_value, errors="coerce")
+  if pd.notna(latitude) and not (-90 <= float(latitude) <= 90):
+    latitude = float("nan")
+  if pd.notna(longitude) and not (-180 <= float(longitude) <= 180):
+    longitude = float("nan")
+
   return {
     "country_code": country_code,
     "country_name": country_name,
@@ -150,13 +214,33 @@ def _header_location(headers: dict[str, str]) -> dict[str, Any]:
   return _normalise_location(payload, "proxy headers")
 
 
+def _location_is_useful(location: dict[str, Any]) -> bool:
+  return bool(
+    location.get("country_name")
+    or location.get("country_code")
+    or location.get("city")
+    or (
+      location.get("latitude") is not None
+      and location.get("longitude") is not None
+    )
+  )
+
+
+def _location_needs_enrichment(location: dict[str, Any]) -> bool:
+  return not (
+    location.get("city")
+    and location.get("latitude") is not None
+    and location.get("longitude") is not None
+  )
+
+
 def _lookup_ip_location(ip: str) -> dict[str, Any]:
   if not ip:
     return _normalise_location({}, "unavailable")
   cache_key = hashlib.sha256(ip.encode("utf-8")).hexdigest()
   cache = _load_geo_cache()
   cached = cache.get(cache_key)
-  if isinstance(cached, dict) and (cached.get("country_name") or cached.get("country_code")):
+  if isinstance(cached, dict) and _location_is_useful(cached):
     result = dict(cached)
     result["geolocation_source"] = "local IP geolocation cache"
     return result
@@ -167,13 +251,17 @@ def _lookup_ip_location(ip: str) -> dict[str, Any]:
     return _normalise_location({}, "geolocation dependency unavailable")
 
   providers = (
-    (f"https://ipapi.co/{ip}/json/", "ipapi.co"),
     (f"https://ipwho.is/{ip}", "ipwho.is"),
+    (f"https://ipapi.co/{ip}/json/", "ipapi.co"),
+    (f"https://ipinfo.io/{ip}/json", "ipinfo.io"),
   )
-  headers = {"User-Agent": "CangaMetaG-Iron-Atlas visitor geography/1.0"}
+  headers = {
+    "User-Agent": "CangaMetaG-Iron-Atlas visitor geography/2.0",
+    "Accept": "application/json",
+  }
   for url, provider in providers:
     try:
-      response = requests.get(url, headers=headers, timeout=2.0)
+      response = requests.get(url, headers=headers, timeout=4.0)
       response.raise_for_status()
       payload = response.json()
       if not isinstance(payload, dict):
@@ -181,13 +269,37 @@ def _lookup_ip_location(ip: str) -> dict[str, Any]:
       if payload.get("error") is True or payload.get("success") is False:
         continue
       result = _normalise_location(payload, provider)
-      if result.get("country_name") or result.get("country_code"):
+      if _location_is_useful(result):
         cache[cache_key] = result
         _save_geo_cache(cache)
         return result
     except Exception:
       continue
   return _normalise_location({}, "geolocation lookup unavailable")
+
+
+def _merge_locations(primary: dict[str, Any], fallback: dict[str, Any]) -> dict[str, Any]:
+  merged = dict(primary)
+  for key in (
+    "country_code",
+    "country_name",
+    "country",
+    "region",
+    "city",
+    "latitude",
+    "longitude",
+  ):
+    value = merged.get(key)
+    if value in (None, ""):
+      merged[key] = fallback.get(key)
+  sources = [
+    str(primary.get("geolocation_source") or "").strip(),
+    str(fallback.get("geolocation_source") or "").strip(),
+  ]
+  merged["geolocation_source"] = " + ".join(
+    value for value in dict.fromkeys(sources) if value
+  ) or "unavailable"
+  return merged
 
 
 def _session_token(st) -> str:
@@ -201,7 +313,12 @@ def _session_token(st) -> str:
     return secrets.token_urlsafe(18)
 
 
-def record_visit(st, app_version: str = "", database_version: str = "", page: str = "session_entry") -> None:
+def record_visit(
+  st,
+  app_version: str = "",
+  database_version: str = "",
+  page: str = "session_entry",
+) -> None:
   """Record one visit per Streamlit session and geolocate it when possible.
 
   Raw client IP addresses are never written to disk. The IP is used only during
@@ -224,8 +341,8 @@ def record_visit(st, app_version: str = "", database_version: str = "", page: st
   fingerprint = hashlib.sha256(fingerprint_basis.encode("utf-8")).hexdigest()[:20]
 
   location = _header_location(headers)
-  if not (location.get("country_name") or location.get("country_code")):
-    location = _lookup_ip_location(ip)
+  if ip and _location_needs_enrichment(location):
+    location = _merge_locations(location, _lookup_ip_location(ip))
 
   row = {
     "timestamp_utc": datetime.now(timezone.utc).isoformat(),
@@ -250,15 +367,28 @@ def record_visit(st, app_version: str = "", database_version: str = "", page: st
 
 def load_visits() -> pd.DataFrame:
   columns = [
-    "timestamp_utc", "visitor_id", "page", "country", "country_code",
-    "country_name", "region", "city", "latitude", "longitude",
-    "geolocation_source", "app_version", "database_version", "user_agent",
+    "timestamp_utc",
+    "visitor_id",
+    "page",
+    "country",
+    "country_code",
+    "country_name",
+    "region",
+    "city",
+    "latitude",
+    "longitude",
+    "geolocation_source",
+    "app_version",
+    "database_version",
+    "user_agent",
   ]
   if not VISITOR_LOG_PATH.exists():
     return pd.DataFrame(columns=columns)
   rows: list[dict[str, Any]] = []
   try:
-    lines = VISITOR_LOG_PATH.read_text(encoding="utf-8", errors="ignore").splitlines()
+    lines = VISITOR_LOG_PATH.read_text(
+      encoding="utf-8", errors="ignore"
+    ).splitlines()
   except Exception:
     return pd.DataFrame(columns=columns)
   for line in lines:
@@ -277,7 +407,9 @@ def load_visits() -> pd.DataFrame:
 
 def _recognised(series: pd.Series) -> pd.Series:
   text = series.fillna("").astype(str).str.strip()
-  return text.mask(text.str.casefold().isin({"", "unknown", "none", "nan", "xx", "zz"}))
+  return text.mask(
+    text.str.casefold().isin({"", "unknown", "none", "nan", "xx", "zz"})
+  )
 
 
 def _country_series(visits: pd.DataFrame) -> pd.Series:
@@ -291,7 +423,13 @@ def _country_series(visits: pd.DataFrame) -> pd.Series:
 def summary_metrics() -> dict[str, int]:
   visits = load_visits()
   if visits.empty:
-    return {"visits": 0, "total_visits": 0, "unique_visitors": 0, "countries": 0, "cities": 0}
+    return {
+      "visits": 0,
+      "total_visits": 0,
+      "unique_visitors": 0,
+      "countries": 0,
+      "cities": 0,
+    }
   country = _country_series(visits)
   city = _recognised(visits["city"])
   total = int(len(visits))
@@ -312,27 +450,53 @@ def country_summary() -> pd.DataFrame:
   work = visits.copy()
   work["country_name"] = _country_series(work).fillna("Unknown")
   work["country_code"] = _recognised(work["country_code"]).fillna("")
-  out = work.groupby(["country_name", "country_code"], dropna=False).agg(
+  out = work.groupby(
+    ["country_name", "country_code"], dropna=False
+  ).agg(
     visits=("visitor_id", "size"),
     unique_visitors=("visitor_id", "nunique"),
   ).reset_index()
-  return out.sort_values(["visits", "country_name"], ascending=[False, True]).reset_index(drop=True)
+  return out.sort_values(
+    ["visits", "country_name"], ascending=[False, True]
+  ).reset_index(drop=True)
 
 
 def city_summary() -> pd.DataFrame:
   visits = load_visits()
-  columns = ["country_name", "region", "city", "visits", "unique_visitors"]
+  columns = [
+    "country_name",
+    "country_code",
+    "region",
+    "city",
+    "latitude",
+    "longitude",
+    "visits",
+    "unique_visitors",
+  ]
   if visits.empty:
     return pd.DataFrame(columns=columns)
   work = visits.copy()
   work["country_name"] = _country_series(work).fillna("Unknown")
+  work["country_code"] = _recognised(work["country_code"]).fillna("")
   work["region"] = _recognised(work["region"]).fillna("Unknown")
-  work["city"] = _recognised(work["city"]).fillna("Unknown")
-  out = work.groupby(["country_name", "region", "city"], dropna=False).agg(
+  work["city"] = _recognised(work["city"])
+  work["latitude"] = pd.to_numeric(work["latitude"], errors="coerce")
+  work["longitude"] = pd.to_numeric(work["longitude"], errors="coerce")
+  work = work[work["city"].notna()].copy()
+  if work.empty:
+    return pd.DataFrame(columns=columns)
+  out = work.groupby(
+    ["country_name", "country_code", "region", "city"], dropna=False
+  ).agg(
+    latitude=("latitude", "mean"),
+    longitude=("longitude", "mean"),
     visits=("visitor_id", "size"),
     unique_visitors=("visitor_id", "nunique"),
   ).reset_index()
-  return out.sort_values(["visits", "country_name", "city"], ascending=[False, True, True]).reset_index(drop=True)
+  return out.sort_values(
+    ["visits", "country_name", "city"],
+    ascending=[False, True, True],
+  ).reset_index(drop=True)
 
 
 def clear_visitor_data() -> None:

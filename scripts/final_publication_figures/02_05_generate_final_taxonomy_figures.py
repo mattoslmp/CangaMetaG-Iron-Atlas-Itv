@@ -3,13 +3,15 @@ from __future__ import annotations
 
 """Generate final article Figures 2–5 and their statistical result tables.
 
-Figures 2/3 are generated from the corrected frozen phylum source tables.
+Figures 2/3 are generated from the corrected frozen phylum source tables. Their
+shared legend labels the aggregate row as ``Other taxa (n%)``, where ``n`` is
+the arithmetic mean of the exact per-sample percentages shown in the image.
 Figures 4/5 use the frozen article abundance, NMDS and RDA values. Their
 legends use the article layout and the RDA panel reserves an expanded right
 margin and axis range so every vector label remains visible.
 
 PERMANOVA, dispersion and RDA results are loaded from the exact validated
-tables distributed with the article. The same loader is used by the app.
+tables distributed with the article. The same loaders are used by the app.
 Figure values and statistical values are not altered.
 """
 
@@ -21,7 +23,7 @@ import sys
 import tempfile
 
 
-SCRIPT_VERSION = "2026-07-31-final-v6-expanded-rda-margin"
+SCRIPT_VERSION = "2026-07-31-final-v7-other-taxa-percentage"
 
 
 def project_root() -> Path:
@@ -33,6 +35,7 @@ if str(ROOT) not in sys.path:
   sys.path.insert(0, str(ROOT))
 
 from src.article_exact_taxonomy_phylum_generated import exact_article_phylum_svg_bytes  # noqa: E402
+from src.article_exact_taxonomy_phylum_other_percentage import other_taxa_percentages  # noqa: E402
 from src.article_frozen_taxonomy_static_v3 import materialize_frozen_article_static_v3  # noqa: E402
 from src.article_official_ordination_statistics import official_ordination_inference  # noqa: E402
 from src.article_inference_reporting import inference_summary  # noqa: E402
@@ -84,6 +87,11 @@ def validate_svg(stem: str, payload: bytes) -> None:
   for legacy in PROHIBITED_LEGACY_LABELS.get(stem, ()):
     if legacy in text:
       raise RuntimeError(f"Legacy taxonomy label remains in {stem}: {legacy}")
+  if stem.startswith(("Figure2_", "Figure3_")):
+    if "Other taxa (" not in text or "%)" not in text:
+      raise RuntimeError(
+        f"Aggregate percentage label is absent from {stem}"
+      )
   if stem.startswith(("Figure4_", "Figure5_")):
     required = (
       "Bray-Curtis NMDS", "RDA biplot", "Lake / season", "RDA vectors",
@@ -185,11 +193,16 @@ def main() -> int:
     for statistics_file in statistics_files:
       register_file(statistics_file, base_dir, outputs, hashes)
 
+  aggregate_percentages = {
+    domain: other_taxa_percentages(domain)
+    for domain in ("Bacteria", "Archaea")
+  }
   report = {
     "script": "scripts/final_publication_figures/02_05_generate_final_taxonomy_figures.py",
     "script_version": SCRIPT_VERSION,
     "app_shared_modules": [
       "src/article_exact_taxonomy_phylum_generated.py",
+      "src/article_exact_taxonomy_phylum_other_percentage.py",
       "src/article_frozen_taxonomy_static_v3.py",
       "src/article_frozen_taxonomy_panels.py",
       "src/article_official_ordination_statistics.py",
@@ -202,6 +215,14 @@ def main() -> int:
     "permutations": args.permutations,
     "seed": args.seed,
     "taxonomy_labels_updated_only_for_figures_2_3": True,
+    "other_taxa_label": {
+      "format": "Other taxa (n%)",
+      "n_definition": (
+        "arithmetic mean of exact per-sample relative-abundance percentages "
+        "represented by the image"
+      ),
+      "percentages": aggregate_percentages,
+    },
     "figure_4_5_legend_layout": {
       "lake_season": "below NMDS panel, matching article",
       "rda_vectors": "below RDA panel, matching article",

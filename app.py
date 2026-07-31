@@ -33,6 +33,7 @@ TRANSFORMS = [
   Path(__file__).with_name("src") / "app_public_scientific_traceability_only_transform.py",
   Path(__file__).with_name("src") / "app_corrected_taxonomy_static_assets_transform.py",
   Path(__file__).with_name("src") / "app_exact_figure2_3_alignment_transform.py",
+  Path(__file__).with_name("src") / "app_exact_figure2_3_generated_source_transform.py",
   Path(__file__).with_name("src") / "app_taxonomy_na_literal_transform.py",
 ]
 

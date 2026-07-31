@@ -2,7 +2,7 @@ from __future__ import annotations
 
 """Use corrected frozen taxonomy assets and exact article ordination panels."""
 
-MARKER = "CANGAMETAG_CORRECTED_TAXONOMY_STATIC_ASSETS_V2 = 1"
+MARKER = "CANGAMETAG_CORRECTED_TAXONOMY_STATIC_ASSETS_V3 = 1"
 
 if MARKER not in source:
   import_anchor = (
@@ -15,6 +15,7 @@ if MARKER not in source:
   materialize_corrected_taxonomy_static,
 )
 from src.article_frozen_taxonomy_panels import article_frozen_taxonomy_figure
+from src.article_frozen_taxonomy_static import materialize_frozen_article_static
 '''
   if corrected_imports not in source:
     if import_anchor in source:
@@ -38,22 +39,27 @@ from src.article_frozen_taxonomy_panels import article_frozen_taxonomy_figure
     )
     wrapper = r'''
 def _display_static_publication_image(path: Path, title: str, caption: str = "", key_prefix: str = "static_publication_image") -> None:
-  corrected_path = materialize_corrected_taxonomy_static(path.name, APP_CACHE_DIR)
+  if path.stem == "Figure4_taxonomic_bacteria_genus_profiles":
+    corrected_path = materialize_frozen_article_static("Bacteria", APP_CACHE_DIR)
+  elif path.stem == "Figure5_taxonomic_archaea_genus_profiles":
+    corrected_path = materialize_frozen_article_static("Archaea", APP_CACHE_DIR)
+  else:
+    corrected_path = materialize_corrected_taxonomy_static(path.name, APP_CACHE_DIR)
   if corrected_path is None:
     return _display_static_publication_image_original(path, title, caption, key_prefix)
   st.markdown(f"#### `{path.name}`")
   st.image(str(corrected_path), width="stretch", caption=caption or None)
   st.download_button(
-    txt("Baixar SVG corrigido", "Download corrected SVG"),
+    txt("Baixar SVG do artigo", "Download article SVG"),
     data=corrected_path.read_bytes(),
     file_name=corrected_path.name,
     mime="image/svg+xml",
-    key=f"{key_prefix}_{safe_filename(path.stem)}_corrected_svg",
+    key=f"{key_prefix}_{safe_filename(path.stem)}_frozen_article_svg",
     width="stretch",
   )
   st.caption(txt(
-    "Ativo estático da versão congelada do artigo. Apenas a nomenclatura taxonômica validada foi atualizada; valores e geometria permanecem os do artigo.",
-    "Static asset from the frozen article version. Only validated taxonomy nomenclature was updated; values and geometry remain those of the article.",
+    "Figura estática construída com as tabelas congeladas e o layout final do artigo. Nenhum valor de NMDS, RDA ou abundância foi recalculado.",
+    "Static figure built from the frozen tables and final article layout. No NMDS, RDA or abundance value was recomputed.",
   ))
 '''
     source = source[:display_start] + original + "\n\n" + wrapper + source[display_end:]
@@ -76,7 +82,7 @@ def is_valid_display_image(path: Path) -> tuple[bool, str]:
       text = path.read_text(encoding="utf-8", errors="strict")
       if "<svg" not in text[:5000].lower():
         return False, "invalid SVG"
-      return True, "validated corrected SVG"
+      return True, "validated article SVG"
     except Exception as exc:
       return False, f"unreadable SVG: {exc}"
   return is_valid_display_image_original(path)

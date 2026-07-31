@@ -3,7 +3,7 @@ from __future__ import annotations
 """Install a final, bilingual and self-contained static-figure renderer."""
 
 
-MARKER = "CANGAMETAG_STATIC_FIGURE_RENDERER_RECOVERY_V3 = 1"
+MARKER = "CANGAMETAG_STATIC_FIGURE_RENDERER_RECOVERY_V4 = 1"
 
 if MARKER not in source:
   future_anchor = "from __future__ import annotations\n"
@@ -54,6 +54,22 @@ def _final_static_publication_path(path: Path) -> Path | None:
   return path if path.exists() else None
 
 
+def _localized_static_figure_heading(
+  requested: Path,
+  title: str,
+  caption: str,
+) -> str:
+  language = "pt" if IS_PT else "en"
+  localized_title = str(final_translate_figure_text(title, language) or "").strip()
+  localized_caption = str(final_translate_figure_text(caption, language) or "").strip()
+  match = re.match(r"^Figure(\d+)", requested.stem, flags=re.IGNORECASE)
+  if match:
+    prefix = txt("Figura", "Figure")
+    description = localized_caption or localized_title
+    return f"{prefix} {match.group(1)} — {description}" if description else f"{prefix} {match.group(1)}"
+  return localized_caption or localized_title or requested.stem
+
+
 def _display_static_publication_image(
   path: Path,
   title: str,
@@ -63,9 +79,10 @@ def _display_static_publication_image(
   """Render one static figure and its retractable scientific-data panel."""
   requested = Path(path)
   display_path = _final_static_publication_path(requested)
-  localized_title = final_translate_figure_text(title, "pt" if IS_PT else "en")
-  localized_caption = final_translate_figure_text(caption, "pt" if IS_PT else "en")
-  st.markdown(f"#### {localized_title}")
+  language = "pt" if IS_PT else "en"
+  localized_caption = final_translate_figure_text(caption, language)
+  localized_heading = _localized_static_figure_heading(requested, title, caption)
+  st.markdown(f"#### {localized_heading}")
   if display_path is None or not display_path.exists():
     st.warning(txt(
       f"Figura indisponível: {requested.name}",
@@ -116,7 +133,7 @@ def _display_static_publication_image(
 
   audit = globals().get("_render_static_figure_audit")
   if callable(audit):
-    audit(requested, localized_title, key_prefix)
+    audit(requested, localized_heading, key_prefix)
 '''
   if anchor in source:
     source = source.replace(anchor, replacement + "\n\n" + anchor, 1)

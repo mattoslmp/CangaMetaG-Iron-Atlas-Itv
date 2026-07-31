@@ -4,11 +4,11 @@ from __future__ import annotations
 """Generate final article Figures 2–5 and their statistical result tables.
 
 Figures 2/3 are generated from the corrected frozen phylum source tables. Their
-shared legend labels the aggregate row as ``Other taxa (n%)``, where ``n`` is
-the arithmetic mean of the exact per-sample percentages shown in the image.
-Figures 4/5 use the frozen article abundance, NMDS and RDA values. Their
-legends use the article layout and the RDA panel reserves an expanded right
-margin and axis range so every vector label remains visible.
+shared legend labels the aggregate row as ``Other taxa (<5% each)``. The 5%
+value is the declared per-taxon cutoff, not the summed abundance of the
+aggregate category. Figures 4/5 use the frozen article abundance, NMDS and RDA
+values. Their legends use the article layout and the RDA panel reserves an
+expanded right margin and axis range so every vector label remains visible.
 
 PERMANOVA, dispersion and RDA results are loaded from the exact validated
 tables distributed with the article. The same loaders are used by the app.
@@ -23,7 +23,7 @@ import sys
 import tempfile
 
 
-SCRIPT_VERSION = "2026-07-31-final-v7-other-taxa-percentage"
+SCRIPT_VERSION = "2026-07-31-final-v8-other-taxa-threshold5"
 
 
 def project_root() -> Path:
@@ -35,7 +35,7 @@ if str(ROOT) not in sys.path:
   sys.path.insert(0, str(ROOT))
 
 from src.article_exact_taxonomy_phylum_generated import exact_article_phylum_svg_bytes  # noqa: E402
-from src.article_exact_taxonomy_phylum_other_percentage import other_taxa_percentages  # noqa: E402
+from src.article_exact_taxonomy_phylum_other_percentage import OTHER_TAXA_THRESHOLD_PERCENT  # noqa: E402
 from src.article_frozen_taxonomy_static_v3 import materialize_frozen_article_static_v3  # noqa: E402
 from src.article_official_ordination_statistics import official_ordination_inference  # noqa: E402
 from src.article_inference_reporting import inference_summary  # noqa: E402
@@ -88,10 +88,16 @@ def validate_svg(stem: str, payload: bytes) -> None:
     if legacy in text:
       raise RuntimeError(f"Legacy taxonomy label remains in {stem}: {legacy}")
   if stem.startswith(("Figure2_", "Figure3_")):
-    if "Other taxa (" not in text or "%)" not in text:
+    required_labels = (
+      "Other taxa (<5% each)",
+      "Other taxa (&lt;5% each)",
+    )
+    if not any(label in text for label in required_labels):
       raise RuntimeError(
-        f"Aggregate percentage label is absent from {stem}"
+        f"The 5% aggregate-cutoff label is absent from {stem}"
       )
+    if "Other taxa (7.51%)" in text or "Other taxa (0.73%)" in text:
+      raise RuntimeError(f"Aggregate mean was incorrectly used as a label in {stem}")
   if stem.startswith(("Figure4_", "Figure5_")):
     required = (
       "Bray-Curtis NMDS", "RDA biplot", "Lake / season", "RDA vectors",
@@ -193,10 +199,6 @@ def main() -> int:
     for statistics_file in statistics_files:
       register_file(statistics_file, base_dir, outputs, hashes)
 
-  aggregate_percentages = {
-    domain: other_taxa_percentages(domain)
-    for domain in ("Bacteria", "Archaea")
-  }
   report = {
     "script": "scripts/final_publication_figures/02_05_generate_final_taxonomy_figures.py",
     "script_version": SCRIPT_VERSION,
@@ -216,12 +218,12 @@ def main() -> int:
     "seed": args.seed,
     "taxonomy_labels_updated_only_for_figures_2_3": True,
     "other_taxa_label": {
-      "format": "Other taxa (n%)",
-      "n_definition": (
-        "arithmetic mean of exact per-sample relative-abundance percentages "
-        "represented by the image"
+      "display": "Other taxa (<5% each)",
+      "threshold_percent": OTHER_TAXA_THRESHOLD_PERCENT,
+      "meaning": (
+        "5% is the declared per-taxon cutoff. The plotted Other taxa segment "
+        "continues to use the exact aggregate abundance from the source table."
       ),
-      "percentages": aggregate_percentages,
     },
     "figure_4_5_legend_layout": {
       "lake_season": "below NMDS panel, matching article",

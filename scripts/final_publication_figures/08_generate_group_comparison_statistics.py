@@ -130,7 +130,7 @@ def main() -> int:
     "taxonomy_explorer_top_n": args.top_n,
     "permutations": args.permutations,
     "seed": args.seed,
-    "source_values_modified": false,
+    "source_values_modified": False,
     "outputs": outputs,
     "summaries": summaries,
   }

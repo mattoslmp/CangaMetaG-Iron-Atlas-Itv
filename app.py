@@ -62,10 +62,33 @@ TRANSFORMS = [
   Path(__file__).with_name("src") / "app_runtime_name_guard_transform.py",
 ]
 
+
+def _compile_transformed_source(candidate: str, transform_name: str) -> None:
+  """Fail with the exact transform and source context that broke Python syntax."""
+  try:
+    compile(candidate, str(CORE_PATH), "exec")
+  except (SyntaxError, IndentationError) as exc:
+    line_number = int(getattr(exc, "lineno", 0) or 0)
+    lines = candidate.splitlines()
+    start = max(0, line_number - 5)
+    end = min(len(lines), line_number + 4)
+    context = "\n".join(
+      f"{index + 1}: {lines[index]}"
+      for index in range(start, end)
+    )
+    raise RuntimeError(
+      f"Transform {transform_name} generated invalid Python at line "
+      f"{line_number}: {exc}.\n{context}"
+    ) from exc
+
+
 source = CORE_PATH.read_text(encoding="utf-8")
+_compile_transformed_source(source, "app_core.py")
 for transform_path in TRANSFORMS:
   namespace = runpy.run_path(str(transform_path), init_globals={"source": source})
-  source = namespace["source"]
+  candidate = namespace["source"]
+  _compile_transformed_source(candidate, transform_path.name)
+  source = candidate
 
 code = compile(source, str(CORE_PATH), "exec")
 exec(code, globals(), globals())

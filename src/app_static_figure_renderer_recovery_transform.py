@@ -9,30 +9,41 @@ page dispatch, so taxonomy pages never execute the malformed body.
 """
 
 
-MARKER = "CANGAMETAG_STATIC_FIGURE_RENDERER_RECOVERY_V1 = 1"
+MARKER = "CANGAMETAG_STATIC_FIGURE_RENDERER_RECOVERY_V2 = 1"
 
 if MARKER not in source:
+  future_anchor = "from __future__ import annotations\n"
+  imports = '''from src.article_exact_taxonomy_phylum_generated import materialize_exact_article_phylum_static as final_materialize_exact_article_phylum_static
+from src.article_frozen_taxonomy_static_v3 import materialize_frozen_article_static_v3 as final_materialize_frozen_article_static
+'''
+  if imports not in source and future_anchor in source:
+    source = source.replace(future_anchor, future_anchor + imports, 1)
+
   anchor = "page_handler = page_handlers.get(selected_page)"
   replacement = r'''
 def _final_static_publication_path(path: Path) -> Path | None:
-  """Resolve a corrected/generated display asset without raising."""
+  """Resolve the final generated display asset without raising."""
   try:
     if path.stem == "Figure2_taxonomic_phylum_bacteria_horizontal_CDS":
-      generator = globals().get("materialize_exact_article_phylum_static")
-      if callable(generator):
-        return generator("Bacteria", APP_CACHE_DIR)
+      return final_materialize_exact_article_phylum_static(
+        "Bacteria",
+        APP_CACHE_DIR,
+      )
     if path.stem == "Figure3_taxonomic_phylum_archaea_horizontal_CDS":
-      generator = globals().get("materialize_exact_article_phylum_static")
-      if callable(generator):
-        return generator("Archaea", APP_CACHE_DIR)
+      return final_materialize_exact_article_phylum_static(
+        "Archaea",
+        APP_CACHE_DIR,
+      )
     if path.stem == "Figure4_taxonomic_bacteria_genus_profiles":
-      generator = globals().get("materialize_frozen_article_static")
-      if callable(generator):
-        return generator("Bacteria", APP_CACHE_DIR)
+      return final_materialize_frozen_article_static(
+        "Bacteria",
+        APP_CACHE_DIR,
+      )
     if path.stem == "Figure5_taxonomic_archaea_genus_profiles":
-      generator = globals().get("materialize_frozen_article_static")
-      if callable(generator):
-        return generator("Archaea", APP_CACHE_DIR)
+      return final_materialize_frozen_article_static(
+        "Archaea",
+        APP_CACHE_DIR,
+      )
     generator = globals().get("materialize_corrected_taxonomy_static")
     if callable(generator):
       corrected = generator(path.name, APP_CACHE_DIR)

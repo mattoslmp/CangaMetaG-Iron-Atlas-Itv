@@ -2,27 +2,52 @@ from __future__ import annotations
 
 """Apply one Raw data / Z-score selector consistently to every heatmap."""
 
-MARKER = "CANGAMETAG_ALL_HEATMAP_SCALE_SELECTOR_V3 = 1"
+import re as _transform_re
+
+
+MARKER = "CANGAMETAG_ALL_HEATMAP_SCALE_SELECTOR_V4 = 1"
 
 
 if MARKER not in source:
-  # Heatmaps that already build only one figure keep their existing scientific
-  # calculation. Only the visible control is standardised.
-  source = source.replace(
-    '[txt("Contagem absoluta", "Absolute counts"), txt("Z-score por função", "Row z-score")]',
+  # Heatmaps that already build one figure keep their existing scientific
+  # calculation. Only the visible control is standardised. Regex is used here
+  # because the source formats these widgets across multiple lines.
+  source = _transform_re.sub(
+    r'\[\s*txt\("Contagem absoluta",\s*"Absolute counts"\),\s*txt\("Z-score por função",\s*"Row z-score"\)\s*\]',
     '["Raw data", "Z-score"]',
+    source,
   )
-  source = source.replace(
-    'zscore_rows = view_mode == txt("Z-score por função", "Row z-score")',
+  source = _transform_re.sub(
+    r'zscore_rows\s*=\s*view_mode\s*==\s*txt\("Z-score por função",\s*"Row z-score"\)',
     'zscore_rows = view_mode == "Z-score"',
+    source,
   )
-  source = source.replace(
-    'zscore = st.checkbox(txt("Z-score por táxon no heatmap", "Row z-score in heatmap"), value=False, key=f"taxonomy_z_{level}_{hmode}")',
-    'heatmap_scale = st.radio(txt("Visualização do heatmap", "Heatmap visualization"), ["Raw data", "Z-score"], horizontal=True, key=f"taxonomy_z_{level}_{hmode}")\n    zscore = heatmap_scale == "Z-score"',
+
+  taxonomy_pattern = _transform_re.compile(
+    r'(?P<indent>^[ \t]*)zscore\s*=\s*st\.checkbox\(\s*'
+    r'txt\("Z-score por táxon no heatmap",\s*"Row z-score in heatmap"\),\s*'
+    r'value=False,\s*key=f"taxonomy_z_\{level\}_\{hmode\}"\s*\)',
+    flags=_transform_re.MULTILINE,
   )
-  source = source.replace(
-    'zscore = st.checkbox("Z-score por linha", value=False, key=f"{key_prefix}_z")',
-    'heatmap_scale = st.radio(txt("Visualização do heatmap", "Heatmap visualization"), ["Raw data", "Z-score"], horizontal=True, key=f"{key_prefix}_z")\n    zscore = heatmap_scale == "Z-score"',
+  source = taxonomy_pattern.sub(
+    r'\g<indent>heatmap_scale = st.radio('\
+    r'txt("Visualização do heatmap", "Heatmap visualization"), '\
+    r'["Raw data", "Z-score"], horizontal=True, key=f"taxonomy_z_{level}_{hmode}")\n'\
+    r'\g<indent>zscore = heatmap_scale == "Z-score"',
+    source,
+  )
+
+  generic_pattern = _transform_re.compile(
+    r'(?P<indent>^[ \t]*)zscore\s*=\s*st\.checkbox\(\s*'
+    r'"Z-score por linha",\s*value=False,\s*key=f"\{key_prefix\}_z"\s*\)',
+    flags=_transform_re.MULTILINE,
+  )
+  source = generic_pattern.sub(
+    r'\g<indent>heatmap_scale = st.radio('\
+    r'txt("Visualização do heatmap", "Heatmap visualization"), '\
+    r'["Raw data", "Z-score"], horizontal=True, key=f"{key_prefix}_z")\n'\
+    r'\g<indent>zscore = heatmap_scale == "Z-score"',
+    source,
   )
 
   # Keep public captions consistent with the new single-view control.
@@ -168,7 +193,7 @@ def _final_attach_heatmap_metadata(fig, *, basename: str, mode: str, method: str
 
 def render_plotly_downloadable(fig, *args, **kwargs):
   chart_key = str(kwargs.get("key", args[0] if args else "") or "")
-  basename = str(kwargs.get("basename", "") or chart_key)
+  basename = str(kwargs.get("basename", args[1] if len(args) > 1 else "") or chart_key)
   descriptor = _final_heatmap_pair_descriptor(fig, chart_key, basename)
   if descriptor is None:
     return _APP_RENDER_BEFORE_ALL_HEATMAP_SELECTOR(fig, *args, **kwargs)
@@ -218,7 +243,9 @@ if _APP_SCIENTIFIC_PANEL_BEFORE_ALL_HEATMAP_SELECTOR is not None:
       layout_meta = getattr(fig.layout, "meta", None)
       layout_meta = layout_meta if isinstance(layout_meta, dict) else {}
       output_files = list(layout_meta.get("scientific_output_files", []) or [])
-      if output_files:
+      # Preserve an existing module-specific Output table. Only provide the
+      # actual selected-view export names when the module supplied no output.
+      if output_files and (output_table is None or getattr(output_table, "empty", False)):
         output_table = pd.DataFrame({
           "Output": output_files,
           "View": [str(layout_meta.get("scientific_heatmap_view", ""))] * len(output_files),

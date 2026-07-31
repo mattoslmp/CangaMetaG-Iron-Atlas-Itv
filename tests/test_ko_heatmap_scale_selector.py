@@ -27,7 +27,7 @@ page_handler = page_handlers.get(selected_page)
 '''
   transformed = _apply(source)
   compile(transformed, "synthetic_ko_heatmap_selector.py", "exec")
-  assert "CANGAMETAG_KO_HEATMAP_SCALE_SELECTOR_V1" in transformed
+  assert "CANGAMETAG_KO_HEATMAP_SCALE_SELECTOR_V2" in transformed
   assert "Raw data" in transformed
   assert "Z-score" in transformed
   assert "KO heatmap visualization" in transformed
@@ -56,6 +56,27 @@ page_handler = page_handlers.get(selected_page)
   ]:
     assert f'"{token}"' in transformed
   assert 'if "functional" in identity:' in transformed
+
+
+def test_functional_annotation_selector_uses_the_same_visible_labels() -> None:
+  source = '''from __future__ import annotations
+
+view_mode = st.radio(
+  txt("Escala", "Scale"),
+  [txt("Contagem absoluta", "Absolute counts"), txt("Z-score por função", "Row z-score")],
+)
+zscore_rows = view_mode == txt("Z-score por função", "Row z-score")
+
+def render_plotly_downloadable(fig, *args, **kwargs):
+  return fig
+
+page_handler = page_handlers.get(selected_page)
+'''
+  transformed = _apply(source)
+  assert '["Raw data", "Z-score"]' in transformed
+  assert 'zscore_rows = view_mode == "Z-score"' in transformed
+  assert "Contagem absoluta" not in transformed
+  assert "Z-score por função" not in transformed
 
 
 def test_selected_view_keeps_scientific_data_metadata() -> None:

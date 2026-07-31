@@ -47,7 +47,7 @@ def unrelated_page():
 '''
   transformed = _apply(source)
   compile(transformed, "synthetic_figure45_no_anchor.py", "exec")
-  assert "CANGAMETAG_FIGURE45_LEGEND_BELOW_FINAL_V3" in transformed
+  assert "CANGAMETAG_FIGURE45_LEGEND_BELOW_FINAL_V4" in transformed
   assert "Could not place the Figure 4/5 caption" not in transformed
   assert "raise RuntimeError" not in transformed
 
@@ -56,21 +56,63 @@ def test_public_result_wording_replaces_internal_quality_terms() -> None:
   source = '''from __future__ import annotations
 labels = [
   txt("Auditoria recente de visitas", "Recent visit audit"),
+  txt("Baixar auditoria recente", "Download recent audit"),
   txt("Auditoria das amostras", "Sample audit"),
   "Tabela taxonômica completa para auditoria e download",
   "Complete taxonomic table for audit and download",
+  "Data-source audit",
+  "Download source audit",
+  "No source audit is available yet.",
+  "Tabela completa para auditoria",
+  "Complete audit table",
 ]
 page_handler = page_handlers.get(selected_page)
 '''
   transformed = _apply(source)
-  assert "Auditoria recente de visitas" not in transformed
-  assert "Recent visit audit" not in transformed
-  assert "Auditoria das amostras" not in transformed
-  assert "Sample audit" not in transformed
-  assert "auditoria e download" not in transformed
-  assert "audit and download" not in transformed
+  forbidden = [
+    "Auditoria recente de visitas",
+    "Recent visit audit",
+    "Baixar auditoria recente",
+    "Download recent audit",
+    "Auditoria das amostras",
+    "Sample audit",
+    "auditoria e download",
+    "audit and download",
+    "Data-source audit",
+    "Download source audit",
+    "No source audit is available yet.",
+    "Tabela completa para auditoria",
+    "Complete audit table",
+  ]
+  for phrase in forbidden:
+    assert phrase not in transformed
   assert "Registros recentes de visitas" in transformed
   assert "Amostras utilizadas" in transformed
+  assert "Data-source records" in transformed
+  assert "Tabela completa para consulta" in transformed
+
+
+def test_real_app_core_public_phrases_are_cleaned() -> None:
+  transformed = _apply((ROOT / "app_core.py").read_text(encoding="utf-8"))
+  forbidden = [
+    "Auditoria recente de visitas",
+    "Recent visit audit",
+    "Baixar auditoria recente",
+    "Download recent audit",
+    "Auditoria das amostras",
+    "Sample audit",
+    "Tabela taxonômica completa para auditoria e download",
+    "Complete taxonomic table for audit and download",
+    "Data-source audit",
+    "Download source audit",
+    "No source audit is available yet.",
+    "Tabela completa para auditoria",
+    "Complete audit table",
+    "Sem auditoria de cobertura.",
+    "Baixar auditoria de cobertura",
+  ]
+  for phrase in forbidden:
+    assert phrase not in transformed
 
 
 def test_transform_is_loaded_after_language_and_st8_wrappers() -> None:

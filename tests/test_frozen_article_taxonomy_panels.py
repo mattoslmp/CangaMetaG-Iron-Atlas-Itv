@@ -1,6 +1,9 @@
 from __future__ import annotations
 
+import base64
+from io import BytesIO
 from pathlib import Path
+from zipfile import ZipFile
 
 import numpy as np
 
@@ -19,6 +22,25 @@ def test_corrupt_taxonomy_bundle_never_breaks_app(tmp_path: Path, monkeypatch) -
   assert static_assets.corrected_taxonomy_static_bytes(
     "Figure2_taxonomic_phylum_bacteria_horizontal_CDS.png"
   ) is None
+
+
+def test_base64_text_zip_bundle_is_decoded(tmp_path: Path, monkeypatch) -> None:
+  svg = b'<?xml version="1.0"?><svg xmlns="http://www.w3.org/2000/svg"></svg>'
+  buffer = BytesIO()
+  with ZipFile(buffer, "w") as archive:
+    archive.writestr(
+      "main/Figure2_taxonomic_phylum_bacteria_horizontal_CDS.svg",
+      svg,
+    )
+  wrapped_bundle = tmp_path / "wrapped.zip"
+  wrapped_bundle.write_bytes(base64.b64encode(buffer.getvalue()))
+  empty_assets = tmp_path / "assets"
+  empty_assets.mkdir()
+  monkeypatch.setattr(static_assets, "BUNDLE_PATH", wrapped_bundle)
+  monkeypatch.setattr(static_assets, "ASSET_DIR", empty_assets)
+  assert static_assets.corrected_taxonomy_static_bytes(
+    "Figure2_taxonomic_phylum_bacteria_horizontal_CDS.png"
+  ) == svg
 
 
 def test_frozen_article_interactive_panels_use_exact_values() -> None:

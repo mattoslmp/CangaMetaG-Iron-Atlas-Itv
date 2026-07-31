@@ -2,10 +2,22 @@ from __future__ import annotations
 
 """Show one selectable KO heatmap scale instead of stacked raw/z-score plots."""
 
-MARKER = "CANGAMETAG_KO_HEATMAP_SCALE_SELECTOR_V1 = 1"
+MARKER = "CANGAMETAG_KO_HEATMAP_SCALE_SELECTOR_V2 = 1"
 
 
 if MARKER not in source:
+  # Functional KO/EC/PFAM heatmaps already construct only one figure. Keep that
+  # implementation and standardise its visible scale labels instead of adding
+  # a redundant second selector.
+  source = source.replace(
+    '[txt("Contagem absoluta", "Absolute counts"), txt("Z-score por função", "Row z-score")]',
+    '["Raw data", "Z-score"]',
+  )
+  source = source.replace(
+    'zscore_rows = view_mode == txt("Z-score por função", "Row z-score")',
+    'zscore_rows = view_mode == "Z-score"',
+  )
+
   dispatch_anchor = "page_handler = page_handlers.get(selected_page)"
   runtime_layer = r'''
 # Final KO heatmap presentation: raw and row-z-score are alternative views of
@@ -24,7 +36,7 @@ def _final_ko_heatmap_pair_descriptor(chart_key: str, basename: str) -> tuple[st
     return None
   if "functional" in identity:
     # The functional-annotation module already has its own single-view scale
-    # selector before figure construction.
+    # selector before figure construction, now labelled Raw data / Z-score.
     return None
   ko_tokens = (
     "all_ko",

@@ -5,11 +5,13 @@ from __future__ import annotations
 The corrected SVGs are label-only versions of the frozen article figures.
 Their bars, cells, sample order, colours, coordinates and canvas geometry are
 unchanged. Assets are preferably stored as individual verified SVG files.
-A legacy ZIP bundle is supported only as a backward-compatible fallback and
-can never make the public application fail.
+The legacy figure bundle may be stored either as a binary ZIP or as Base64
+text; both representations are validated and neither can break the app.
 """
 
 from pathlib import Path
+import base64
+from io import BytesIO
 import os
 import shutil
 from zipfile import BadZipFile, ZipFile
@@ -53,6 +55,23 @@ def _valid_svg_bytes(payload: bytes | None) -> bool:
   return b"<svg" in prefix
 
 
+def _bundle_zip() -> ZipFile | None:
+  """Open the packaged figure bundle in binary-ZIP or Base64-text form."""
+  if not BUNDLE_PATH.is_file():
+    return None
+  try:
+    return ZipFile(BUNDLE_PATH)
+  except (BadZipFile, OSError, RuntimeError, ValueError):
+    pass
+
+  try:
+    encoded = b"".join(BUNDLE_PATH.read_bytes().split())
+    decoded = base64.b64decode(encoded, validate=True)
+    return ZipFile(BytesIO(decoded))
+  except (BadZipFile, OSError, RuntimeError, ValueError, TypeError, base64.binascii.Error):
+    return None
+
+
 def corrected_taxonomy_static_bytes(filename: str) -> bytes | None:
   """Return one verified corrected frozen SVG without ever raising an error."""
   requested = Path(str(filename)).name
@@ -70,10 +89,11 @@ def corrected_taxonomy_static_bytes(filename: str) -> bytes | None:
   except OSError:
     pass
 
-  if not BUNDLE_PATH.is_file():
+  archive = _bundle_zip()
+  if archive is None:
     return None
   try:
-    with ZipFile(BUNDLE_PATH) as archive:
+    with archive:
       payload = archive.read(member)
     return payload if _valid_svg_bytes(payload) else None
   except (BadZipFile, KeyError, OSError, RuntimeError, ValueError):

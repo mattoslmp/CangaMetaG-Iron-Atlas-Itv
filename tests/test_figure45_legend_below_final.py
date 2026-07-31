@@ -115,10 +115,12 @@ def test_real_app_core_public_phrases_are_cleaned() -> None:
     assert phrase not in transformed
 
 
-def test_transform_is_loaded_after_language_and_st8_wrappers() -> None:
+def test_transform_is_loaded_after_all_other_runtime_wrappers() -> None:
   app = (ROOT / "app.py").read_text(encoding="utf-8")
   language = app.index("app_full_figure_language_transform.py")
   st8 = app.index("app_final_st8_ko_mtx_revision_transform.py")
-  final_legend = app.index("app_figure45_legend_below_final_transform.py")
   visitor = app.index("app_visitor_map_city_final_transform.py")
-  assert language < st8 < final_legend < visitor
+  final_legend = app.index("app_figure45_legend_below_final_transform.py")
+  assert language < st8 < visitor < final_legend
+  assert app.rstrip().endswith("]\n\n\n\ndef _compile_final_source(candidate: str) -> object:") is False
+  assert final_legend == app.rindex("app_figure45_legend_below_final_transform.py")

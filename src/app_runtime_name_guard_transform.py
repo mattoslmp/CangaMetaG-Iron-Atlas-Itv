@@ -1,16 +1,35 @@
 from __future__ import annotations
 
-"""Prevent optional runtime extensions from crashing app startup.
+"""Prevent missing runtime names from crashing app startup.
 
-Several late transforms wrap functions created by earlier transforms. A public
-release transform may remove or replace one of those base functions. The final
-source must therefore resolve them through ``globals()`` and degrade safely
-instead of raising NameError during module execution.
+Several late transforms wrap, move or replace functions created by earlier
+layers. The final generated source must therefore restore essential public data
+loaders explicitly and resolve optional extensions through ``globals()``. This
+transform is loaded last, immediately before the transformed source is compiled
+and executed.
 """
 
-MARKER = "CANGAMETAG_RUNTIME_NAME_GUARD_V1 = 1"
+MARKER = "CANGAMETAG_RUNTIME_NAME_GUARD_V2 = 1"
 
 if MARKER not in source:
+  # ``page_header`` and the biomarker page both require this canonical loader.
+  # Reimport it in the final transformed source so a previous source rewrite
+  # cannot leave the call sites with an undefined ``marker_table`` symbol.
+  future_anchor = "from __future__ import annotations\n"
+  marker_import = (
+    "from src.supplementary_database import "
+    "marker_table as _canonical_marker_table_runtime\n"
+    "marker_table = _canonical_marker_table_runtime\n"
+  )
+  if marker_import not in source:
+    if future_anchor not in source:
+      raise RuntimeError("Could not install marker_table runtime import guard")
+    source = source.replace(
+      future_anchor,
+      future_anchor + marker_import,
+      1,
+    )
+
   source = source.replace(
     "_APP_ORIGINAL_ST8_HEATMAP_FIGURE = heatmap_figure",
     '_APP_ORIGINAL_ST8_HEATMAP_FIGURE = globals().get("heatmap_figure")',

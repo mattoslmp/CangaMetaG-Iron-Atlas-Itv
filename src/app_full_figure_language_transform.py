@@ -3,7 +3,7 @@ from __future__ import annotations
 """Apply the selected interface language to every figure presentation element."""
 
 
-MARKER = "CANGAMETAG_FULL_FIGURE_LANGUAGE_V1 = 1"
+MARKER = "CANGAMETAG_FULL_FIGURE_LANGUAGE_V2 = 1"
 
 if MARKER not in source:
   future_anchor = "from __future__ import annotations\n"
@@ -13,15 +13,14 @@ from src.figure_language_localization import translate_figure_text as final_tran
   if imports not in source and future_anchor in source:
     source = source.replace(future_anchor, future_anchor + imports, 1)
 
-  # Localize hard-coded tab labels and headings that are outside Plotly figures.
   replacements = {
+    'tabs = st.tabs(["Bacteria — Figure 2", "Archaea — Figure 3"])': (
+      'tabs = st.tabs([txt("Bacteria — Figura 2", "Bacteria — Figure 2"), '
+      'txt("Archaea — Figura 3", "Archaea — Figure 3")])'
+    ),
     'tabs = st.tabs(["Bacteria — Figure 4", "Archaea — Figure 5"])': (
       'tabs = st.tabs([txt("Bacteria — Figura 4", "Bacteria — Figure 4"), '
       'txt("Archaea — Figura 5", "Archaea — Figure 5")])'
-    ),
-    '"Exact interactive panels from Figures 4 and 5"': (
-      '"Painéis interativos das Figuras 4 e 5" if IS_PT else '
-      '"Exact interactive panels from Figures 4 and 5"'
     ),
     '"Language / Idioma",\n  ["Português", "English"],': (
       '"Idioma / Language",\n  ["Português", "English"],'
@@ -50,6 +49,26 @@ if "render_plotly_downloadable" in globals():
       _selected_figure_language(),
     )
     return _ORIGINAL_RENDER_PLOTLY_LANGUAGE(localized, *args, **kwargs)
+
+
+# Some legacy panels call st.plotly_chart directly and therefore bypass the
+# standardized rendering helper. Localize those figures at the Streamlit entry
+# point as well.
+_ORIGINAL_ST_PLOTLY_CHART_LANGUAGE = st.plotly_chart
+
+
+def _localized_st_plotly_chart(figure_or_data, *args, **kwargs):
+  try:
+    localized = final_localize_plotly_figure(
+      figure_or_data,
+      _selected_figure_language(),
+    )
+  except Exception:
+    localized = figure_or_data
+  return _ORIGINAL_ST_PLOTLY_CHART_LANGUAGE(localized, *args, **kwargs)
+
+
+st.plotly_chart = _localized_st_plotly_chart
 
 
 if "exact_article_phylum_interactive" in globals():

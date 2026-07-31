@@ -14,6 +14,16 @@ def test_final_figure45_legend_transform_compiles_and_is_last_guard() -> None:
 def article_frozen_taxonomy_figure(domain: str):
   return object(), {}
 
+def render_section(domain: str):
+      render_plotly_downloadable(
+        figure,
+        key=f"frozen_article_taxonomy_{domain}",
+        basename="Figure45_interactive",
+        audit_script="src/article_frozen_taxonomy_panels.py; src/article_inference_statistics.py",
+      )
+      beta_tests, rda_tests = frozen_ordination_inference(domain)
+      return beta_tests, rda_tests
+
 page_handler = page_handlers.get(selected_page)
 '''
   transformed = runpy.run_path(
@@ -25,8 +35,12 @@ page_handler = page_handlers.get(selected_page)
   assert '"y": -0.285' in transformed
   assert '"b": 690' in transformed
   assert '"legend_below_entire_figure": True' in transformed
+  assert '"textual_caption_below_figure": True' in transformed
   assert '"legend_overlaps_scientific_panels": False' in transformed
   assert '"scientific_values_changed": False' in transformed
+  assert "Figure legend: stacked bars show genus relative abundance" in transformed
+  assert transformed.index("render_plotly_downloadable(") < transformed.index("Figure legend:")
+  assert transformed.index("Figure legend:") < transformed.index("frozen_ordination_inference(domain)")
 
 
 def test_transform_is_loaded_after_language_and_st8_wrappers() -> None:

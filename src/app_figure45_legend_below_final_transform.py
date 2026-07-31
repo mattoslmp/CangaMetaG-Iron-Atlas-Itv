@@ -65,6 +65,15 @@ if MARKER not in source:
   for old, new in public_replacements.items():
     source = source.replace(old, new)
 
+  source = source.replace(
+    "scripts/final_publication_figures/02_05_generate_final_taxonomy_figures.py",
+    "scripts/figures/generate_article_figure45_final.py",
+  )
+  source = source.replace(
+    "python scripts/figures/generate_article_figure45_final.py --base-dir .",
+    "python scripts/figures/generate_article_figure45_final.py --root .",
+  )
+
   future_anchor = "from __future__ import annotations\n"
   imports = '''from src.figure45_large_legend_runtime import (
   apply_figure45_plotly_layout_large as _apply_figure45_plotly_layout_final,

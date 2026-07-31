@@ -118,9 +118,11 @@ def test_selected_heatmap_keeps_specific_scientific_metadata() -> None:
 
 
 def test_plotted_values_tab_receives_view_specific_description() -> None:
-  source = _synthetic_source('''    with tabs[3]:
+  source = _synthetic_source('''def scientific_panel_fixture():
+    with tabs[3]:
       _scientific_render_tables(groups["plotted"], key_text, "plotted")''')
   transformed = _apply(source)
+  compile(transformed, "synthetic_plotted_values_panel.py", "exec")
   assert "plotted_description" in transformed
   assert "scientific_plotted_values_description" in transformed
   assert "_scientific_render_tables(groups[\"plotted\"]" in transformed

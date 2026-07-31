@@ -10,10 +10,10 @@ import pandas as pd
 from src.article_inference_reporting import inference_summary
 from src.article_inference_statistics import (
   alpha_diversity_group_tests,
-  frozen_ordination_inference,
   group_comparison_tests,
   taxonomy_barplot_group_tests_from_table,
 )
+from src.article_official_ordination_statistics import official_ordination_inference
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -85,17 +85,24 @@ def test_taxonomy_barplot_tests_compare_lakes_within_season() -> None:
   assert result["groups_compared_globally"].str.contains("AM").all()
 
 
-def test_frozen_figure45_inference_reports_permanova_permdisp_and_rda() -> None:
-  beta, rda = frozen_ordination_inference(
-    "Bacteria",
-    permutations=19,
-    seed=42,
-  )
+def test_figure45_uses_exact_official_permanova_dispersion_and_rda_results() -> None:
+  beta, rda = official_ordination_inference("Bacteria", base_dir=ROOT)
   assert set(beta["analysis"]) == {"PERMANOVA", "PERMDISP"}
-  assert set(beta["factor"]) == {"Lake", "Season"}
-  assert beta["pvalue_permutation"].dropna().between(0, 1).all()
-  assert {"R2", "pseudo_F", "pvalue_permutation", "NMDS_stress"}.issubset(rda.columns)
-  assert len(rda) == 1
+  assert set(beta["factor"]) == {"Lake", "Season", "LakeSeason"}
+  assert beta["official_article_result"].all()
+
+  lake_permanova = beta[(beta["analysis"] == "PERMANOVA") & (beta["factor"] == "Lake")].iloc[0]
+  lake_dispersion = beta[(beta["analysis"] == "PERMDISP") & (beta["factor"] == "Lake")].iloc[0]
+  assert np.isclose(float(lake_permanova["pseudo_F"]), 2.8188259778020694)
+  assert np.isclose(float(lake_permanova["pvalue_permutation"]), 0.018)
+  assert np.isclose(float(lake_dispersion["F"]), 6.152229499078603)
+  assert np.isclose(float(lake_dispersion["pvalue_permutation"]), 0.039)
+
+  assert {"R2", "pseudo_F", "pvalue_permutation", "RDA1_axis_permutation_p", "RDA2_axis_permutation_p"}.issubset(rda.columns)
+  assert rda["official_article_result"].all()
+  assert np.isclose(float(rda.iloc[0]["R2"]), 0.6706464754765119)
+  assert np.isclose(float(rda.iloc[0]["pseudo_F"]), 1.018125548294663)
+  assert np.isclose(float(rda.iloc[0]["pvalue_permutation"]), 0.537)
   summary = inference_summary(beta)
   assert "PERMANOVA (Lake)" in summary
   assert "PERMDISP (Season)" in summary
@@ -164,6 +171,7 @@ def test_app_loads_only_safe_final_inference_layers() -> None:
   app_text = (ROOT / "app.py").read_text(encoding="utf-8")
   assert "app_final_inference_and_figure45_layout_v2_transform.py" in app_text
   assert "app_inference_summary_fix_transform.py" in app_text
+  assert "app_official_ordination_statistics_transform.py" in app_text
   assert "app_public_validation_prose_cleanup_transform.py" in app_text
   assert '"app_final_inference_and_figure45_layout_transform.py"' not in app_text
 
@@ -181,10 +189,12 @@ def test_final_scripts_and_manifest_register_inference_outputs() -> None:
     (ROOT / "scripts" / "FINAL_SCRIPT_MANIFEST.json").read_text(encoding="utf-8")
   )
 
-  assert "frozen_ordination_inference" in taxonomy_script
+  assert "official_ordination_inference" in taxonomy_script
   assert "NMDS_PCoA_PERMANOVA_PERMDISP.csv" in taxonomy_script
   assert "alpha_diversity_group_tests" in group_script
   assert "taxonomy_explorer_group_tests" in group_script
+  assert "article_season_barplot" in group_script
+  assert "official_ordination_inference" in group_script
   paths = {entry["path"] for entry in manifest["canonical_scripts"]}
   assert "scripts/final_publication_figures/08_generate_group_comparison_statistics.py" in paths
-  assert manifest["manifest_version"] == "2026-07-31-final-v3-inferential-results"
+  assert manifest["manifest_version"] == "2026-07-31-final-v4-official-statistics"

@@ -1,17 +1,17 @@
 from __future__ import annotations
 
-"""Keep the public article title and abstract synchronized with UI language.
+"""Synchronize the public title and abstract with the selected UI language.
 
-Only the presentation language changes. Scientific claims, numbers, taxonomic
-names and results are identical in the English and Portuguese defaults. Custom
-administrator text is preserved: automatic switching occurs only while the
-stored value equals one of the two public defaults.
+This transform deliberately edits only single assignment lines and explicit
+article-field calls. It never uses a DOTALL expression and never rewrites CSS or
+HTML string delimiters. Scientific claims, numbers, taxonomic names and results
+remain identical between languages. Custom administrator text is preserved.
 """
 
 import re
 
 
-MARKER = "CANGAMETAG_TITLE_ABSTRACT_LANGUAGE_V1 = 1"
+MARKER = "CANGAMETAG_TITLE_ABSTRACT_LANGUAGE_V2 = 1"
 
 TITLE_EN = (
   "Iron-rich Amazonian lateritic lake sediments harbor diverse microbial "
@@ -75,47 +75,35 @@ ABSTRACT_PT = (
 
 
 if MARKER not in source:
-  title_pattern = re.compile(
-    r"DEFAULT_ARTICLE_TITLE\s*=\s*['\"]Iron-rich Amazonian lateritic lake sediments harbor diverse microbial communities with biogeochemical potential relevant to carbon and methane cycling['\"]"
-  )
-  title_replacement = (
+  title_assignment = (
     f"DEFAULT_ARTICLE_TITLE_EN = {TITLE_EN!r}\n"
     f"DEFAULT_ARTICLE_TITLE_PT = {TITLE_PT!r}\n"
     "DEFAULT_ARTICLE_TITLE = (\n"
-    "  DEFAULT_ARTICLE_TITLE_PT\n"
-    "  if st.session_state.get(\"sidebar_language_idioma\") == \"Português\"\n"
-    "  else DEFAULT_ARTICLE_TITLE_EN\n"
+    "  DEFAULT_ARTICLE_TITLE_PT if IS_PT else DEFAULT_ARTICLE_TITLE_EN\n"
     ")"
   )
-  source = title_pattern.sub(title_replacement, source, count=1)
-
-  abstract_pattern = re.compile(
-    r"DEFAULT_ARTICLE_ABSTRACT\s*=\s*['\"].*?['\"]\n\ndef article_field",
-    flags=re.DOTALL,
+  source, title_count = re.subn(
+    r"^DEFAULT_ARTICLE_TITLE\s*=\s*.*$",
+    title_assignment,
+    source,
+    count=1,
+    flags=re.MULTILINE,
   )
-  abstract_replacement = (
+
+  abstract_assignment = (
     f"DEFAULT_ARTICLE_ABSTRACT_EN = {ABSTRACT_EN!r}\n"
     f"DEFAULT_ARTICLE_ABSTRACT_PT = {ABSTRACT_PT!r}\n"
     "DEFAULT_ARTICLE_ABSTRACT = (\n"
-    "  DEFAULT_ARTICLE_ABSTRACT_PT\n"
-    "  if st.session_state.get(\"sidebar_language_idioma\") == \"Português\"\n"
-    "  else DEFAULT_ARTICLE_ABSTRACT_EN\n"
-    ")\n\n"
-    "def article_field"
-  )
-  source = abstract_pattern.sub(abstract_replacement, source, count=1)
-
-  app_title_pattern = re.compile(
-    r"APP_TITLE\s*=\s*['\"]Iron-rich Amazonian lateritic lake sediments harbor diverse microbial communities with biogeochemical potential relevant to carbon and methane cycling['\"]"
-  )
-  app_title_replacement = (
-    "APP_TITLE = (\n"
-    "  DEFAULT_ARTICLE_TITLE_PT\n"
-    "  if st.session_state.get(\"sidebar_language_idioma\") == \"Português\"\n"
-    "  else DEFAULT_ARTICLE_TITLE_EN\n"
+    "  DEFAULT_ARTICLE_ABSTRACT_PT if IS_PT else DEFAULT_ARTICLE_ABSTRACT_EN\n"
     ")"
   )
-  source = app_title_pattern.sub(app_title_replacement, source, count=1)
+  source, abstract_count = re.subn(
+    r"^DEFAULT_ARTICLE_ABSTRACT\s*=\s*.*$",
+    abstract_assignment,
+    source,
+    count=1,
+    flags=re.MULTILINE,
+  )
 
   anchor = "page_handler = page_handlers.get(selected_page)"
   layer = r'''
@@ -149,8 +137,15 @@ def _localized_article_text(
     "article_field('abstract', DEFAULT_ARTICLE_ABSTRACT)": (
       "_localized_article_text('abstract', DEFAULT_ARTICLE_ABSTRACT_EN, DEFAULT_ARTICLE_ABSTRACT_PT)"
     ),
+    "<h1>{APP_TITLE}</h1>": "<h1>{html_lib.escape(str(title))}</h1>",
   }
   for old, new in replacements.items():
     source = source.replace(old, new)
+
+  if title_count != 1 or abstract_count != 1:
+    raise RuntimeError(
+      "Could not install title/abstract localization safely: "
+      f"title_count={title_count}, abstract_count={abstract_count}"
+    )
 
   source += f"\n\n{MARKER}\n"

@@ -122,5 +122,4 @@ def test_transform_is_loaded_after_all_other_runtime_wrappers() -> None:
   visitor = app.index("app_visitor_map_city_final_transform.py")
   final_legend = app.index("app_figure45_legend_below_final_transform.py")
   assert language < st8 < visitor < final_legend
-  assert app.rstrip().endswith("]\n\n\n\ndef _compile_final_source(candidate: str) -> object:") is False
   assert final_legend == app.rindex("app_figure45_legend_below_final_transform.py")

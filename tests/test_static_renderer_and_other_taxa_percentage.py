@@ -3,29 +3,20 @@ from __future__ import annotations
 from pathlib import Path
 import runpy
 
-import numpy as np
-
 from src.article_exact_taxonomy_phylum_generated import exact_article_phylum_svg_bytes
-from src.article_exact_taxonomy_phylum_other_percentage import other_taxa_percentages
+from src.article_exact_taxonomy_phylum_other_percentage import (
+  OTHER_TAXA_THRESHOLD_PERCENT,
+)
 
 
 ROOT = Path(__file__).resolve().parents[1]
 
 
-def test_other_taxa_percentages_match_exact_figure_sources() -> None:
-  bacteria = other_taxa_percentages("Bacteria")
-  archaea = other_taxa_percentages("Archaea")
-
-  assert np.isclose(bacteria["overall"], 7.506762301591296)
-  assert np.isclose(bacteria["dry"], 7.72986600974163)
-  assert np.isclose(bacteria["rainy"], 7.283658593440961)
-
-  assert np.isclose(archaea["overall"], 0.7254332021263236)
-  assert np.isclose(archaea["dry"], 0.7027983103916904)
-  assert np.isclose(archaea["rainy"], 0.7480680938609566)
+def test_other_taxa_threshold_is_five_percent() -> None:
+  assert OTHER_TAXA_THRESHOLD_PERCENT == 5.0
 
 
-def test_final_figure2_and_figure3_svg_labels_include_percentages() -> None:
+def test_final_figure2_and_figure3_svg_labels_show_cutoff_not_aggregate_mean() -> None:
   bacteria_svg = exact_article_phylum_svg_bytes("Bacteria").decode(
     "utf-8",
     errors="ignore",
@@ -34,8 +25,10 @@ def test_final_figure2_and_figure3_svg_labels_include_percentages() -> None:
     "utf-8",
     errors="ignore",
   )
-  assert "Other taxa (7.51%)" in bacteria_svg
-  assert "Other taxa (0.73%)" in archaea_svg
+  for svg in (bacteria_svg, archaea_svg):
+    assert "Other taxa (&lt;5% each)" in svg or "Other taxa (<5% each)" in svg
+    assert "Other taxa (7.51%)" not in svg
+    assert "Other taxa (0.73%)" not in svg
 
 
 def test_recovery_transform_redefines_static_renderer_before_page_dispatch() -> None:

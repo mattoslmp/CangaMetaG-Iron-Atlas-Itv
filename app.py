@@ -47,6 +47,7 @@ TRANSFORMS = [
   Path(__file__).with_name("src") / "app_final_inference_and_figure45_layout_v2_transform.py",
   Path(__file__).with_name("src") / "app_inference_summary_fix_transform.py",
   Path(__file__).with_name("src") / "app_official_ordination_statistics_transform.py",
+  Path(__file__).with_name("src") / "app_official_ordination_method_text_transform.py",
   Path(__file__).with_name("src") / "app_rda_axis_statistics_text_transform.py",
   Path(__file__).with_name("src") / "app_public_validation_prose_cleanup_transform.py",
   Path(__file__).with_name("src") / "app_runtime_name_guard_transform.py",

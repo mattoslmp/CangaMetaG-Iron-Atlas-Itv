@@ -20,10 +20,35 @@ from .figure_language_localization import (
 )
 
 
+_FINAL_PT_REPLACEMENTS = {
+  "stress": "estresse",
+  "Stress": "Estresse",
+  "Exact article figure": "Figura exata do artigo",
+  "Article figure": "Figura do artigo",
+  "Download plot as a png": "Baixar gráfico como PNG",
+  "Zoom": "Ampliar",
+  "Pan": "Mover",
+  "Autoscale": "Escala automática",
+  "Reset axes": "Redefinir eixos",
+  "Show closest data on hover": "Mostrar dado mais próximo ao passar o cursor",
+  "Compare data on hover": "Comparar dados ao passar o cursor",
+}
+
+
+def _complete_translate(value: object, language: str) -> object:
+  translated = translate_figure_text(value, language)
+  if normalize_language(language) != "pt" or translated is None:
+    return translated
+  text = str(translated)
+  for english, portuguese in _FINAL_PT_REPLACEMENTS.items():
+    text = text.replace(english, portuguese)
+  return text
+
+
 def _localized_sequence(value: object, language: str) -> object:
   """Translate strings in a presentation sequence without touching numbers."""
   if value is None or isinstance(value, str):
-    return translate_figure_text(value, language)
+    return _complete_translate(value, language)
   if not isinstance(value, Iterable) or isinstance(value, (bytes, bytearray, dict)):
     return value
   try:
@@ -31,7 +56,7 @@ def _localized_sequence(value: object, language: str) -> object:
   except TypeError:
     return value
   return [
-    translate_figure_text(item, language) if isinstance(item, str) else item
+    _complete_translate(item, language) if isinstance(item, str) else item
     for item in values
   ]
 
@@ -39,13 +64,13 @@ def _localized_sequence(value: object, language: str) -> object:
 def _translate_axis_title(axis: object, language: str) -> None:
   title = getattr(axis, "title", None)
   if title is not None and getattr(title, "text", None) is not None:
-    title.text = translate_figure_text(title.text, language)
+    title.text = _complete_translate(title.text, language)
 
 
 def _translate_colorbar_title(colorbar: object, language: str) -> None:
   title = getattr(colorbar, "title", None)
   if title is not None and getattr(title, "text", None) is not None:
-    title.text = translate_figure_text(title.text, language)
+    title.text = _complete_translate(title.text, language)
 
 
 def localize_plotly_figure(fig, language: object = "en"):
@@ -57,8 +82,25 @@ def localize_plotly_figure(fig, language: object = "en"):
 
   localized = go.Figure(localized)
 
+  # Revisit core display strings for the final small terminology map.
+  title = getattr(getattr(localized.layout, "title", None), "text", None)
+  if title is not None:
+    localized.layout.title.text = _complete_translate(title, lang)
+  legend_title = getattr(getattr(localized.layout, "legend", None), "title", None)
+  if legend_title is not None and getattr(legend_title, "text", None) is not None:
+    legend_title.text = _complete_translate(legend_title.text, lang)
+  for annotation in list(localized.layout.annotations or []):
+    if getattr(annotation, "text", None) is not None:
+      annotation.text = _complete_translate(annotation.text, lang)
+
   # Trace-level visible strings. Numeric arrays and customdata are untouched.
   for trace in localized.data:
+    if getattr(trace, "name", None) is not None:
+      trace.name = _complete_translate(trace.name, lang)
+    if getattr(trace, "hovertemplate", None) is not None:
+      trace.hovertemplate = _complete_translate(trace.hovertemplate, lang)
+    if getattr(trace, "texttemplate", None) is not None:
+      trace.texttemplate = _complete_translate(trace.texttemplate, lang)
     for attribute in ("text", "hovertext", "labels"):
       current = getattr(trace, attribute, None)
       if current is not None:

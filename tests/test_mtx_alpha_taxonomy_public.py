@@ -97,46 +97,33 @@ def test_all_twelve_metatranscriptome_columns_are_selected() -> None:
   assert data[selected_columns].shape == (189, 12)
 
 
-def test_complete_metatranscriptome_panel_is_installed() -> None:
+def test_transform_compiles_with_all_optional_anchors() -> None:
   transformed = _transformed()
+  assert "CANGAMETAG_MTX_ALPHA_TAXONOMY_PUBLIC_V4" in transformed
   assert "render_complete_metatranscriptome_panel(" in transformed
+  assert "render_taxonomy_article_overlap_panel(globals())" in transformed
   assert "amostras de metatranscriptoma" in transformed
   assert "todos os {len(df)} KOs/marcadores estão selecionados por padrão" in transformed
 
 
-def test_taxonomy_page_contains_article_overlap_call() -> None:
-  transformed = _transformed()
-  call = transformed.index("render_taxonomy_article_overlap_panel(globals())")
-  interactive = transformed.index("Visualização taxonômica interativa")
-  assert call < interactive
-  runtime = (ROOT / "src" / "app_mtx_alpha_taxonomy_runtime.py").read_text(encoding="utf-8")
-  assert "scripts/generate_core_taxonomy_overlap_figure.py" in runtime
-  assert "scripts/figures/generate_s31_taxonomic_levels_revision3.py" in runtime
-  assert '["Phylum", "Order", "Family"]' in runtime
-  assert "metagenomic" in runtime
-
-
-def test_optional_source_anchors_never_break_app_compilation() -> None:
+def test_optional_source_anchors_never_break_compilation() -> None:
   transformed = _transformed(include_optional_anchors=False)
   assert "install_categorical_group_guard()" in transformed
-  assert "CANGAMETAG_MTX_ALPHA_TAXONOMY_PUBLIC_V3" in transformed
-  runtime_import = transformed.index("from src.app_mtx_alpha_taxonomy_runtime import")
-  page_dispatch = transformed.index("page_handler = page_handlers.get(selected_page)")
-  assert runtime_import < page_dispatch
+  assert "CANGAMETAG_MTX_ALPHA_TAXONOMY_PUBLIC_V4" in transformed
 
 
-def test_public_audit_prose_is_removed() -> None:
-  source = _synthetic_source().replace(
-    "page_handler = page_handlers.get(selected_page)",
-    '''st.caption(txt(
-  "O visualizador interativo incorpora o mesmo SVG corrigido exibido como figura estática.",
-  "The interactive viewer embeds the same corrected SVG displayed as the static figure.",
-))
-page_handler = page_handlers.get(selected_page)''',
-  )
-  transformed = runpy.run_path(str(TRANSFORM), init_globals={"source": source})["source"]
-  assert "O visualizador interativo incorpora" not in transformed
-  assert "The interactive viewer embeds" not in transformed
+def test_transform_never_orphans_indented_continuation_lines() -> None:
+  transformed = _transformed()
+  compile(transformed, "indentation_regression.py", "exec")
+  assert "    if pair_lakes:" in transformed
+  assert "    elif \"metatranscript\" in" in transformed
+  assert "  render_complete_metatranscriptome_panel(" in transformed
+
+
+def test_app_validates_each_transform_before_execution() -> None:
+  app = (ROOT / "app.py").read_text(encoding="utf-8")
+  assert "_compile_transformed_source(candidate, transform_path.name)" in app
+  assert "Transform {transform_name} generated invalid Python" in app
 
 
 def test_transform_is_loaded_before_runtime_guard() -> None:

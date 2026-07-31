@@ -4,17 +4,14 @@ from __future__ import annotations
 
 Several late transforms wrap, move or replace functions created by earlier
 layers. The final generated source must therefore restore essential public data
-loaders explicitly and resolve optional extensions through ``globals()``. This
-transform is loaded last, immediately before the transformed source is compiled
-and executed.
+loaders explicitly, initialize variables required by ``page_header`` and resolve
+optional extensions through ``globals()``. This transform is loaded last,
+immediately before the transformed source is compiled and executed.
 """
 
-MARKER = "CANGAMETAG_RUNTIME_NAME_GUARD_V2 = 1"
+MARKER = "CANGAMETAG_RUNTIME_NAME_GUARD_V3 = 1"
 
 if MARKER not in source:
-  # ``page_header`` and the biomarker page both require this canonical loader.
-  # Reimport it in the final transformed source so a previous source rewrite
-  # cannot leave the call sites with an undefined ``marker_table`` symbol.
   future_anchor = "from __future__ import annotations\n"
   marker_import = (
     "from src.supplementary_database import "
@@ -27,6 +24,53 @@ if MARKER not in source:
     source = source.replace(
       future_anchor,
       future_anchor + marker_import,
+      1,
+    )
+
+  page_header_signature = "def page_header():\n"
+  page_header_initialization = '''def page_header():
+  _localized_title_loader = globals().get("_localized_article_text")
+  _title_en = globals().get(
+    "DEFAULT_ARTICLE_TITLE_EN",
+    globals().get("DEFAULT_ARTICLE_TITLE", ""),
+  )
+  _title_pt = globals().get(
+    "DEFAULT_ARTICLE_TITLE_PT",
+    globals().get("DEFAULT_ARTICLE_TITLE", ""),
+  )
+  if callable(_localized_title_loader):
+    title = _localized_title_loader("title", _title_en, _title_pt)
+  else:
+    title = _title_pt if bool(globals().get("IS_PT", False)) else _title_en
+
+  _localized_abstract_loader = globals().get("_localized_article_text")
+  _abstract_en = globals().get(
+    "DEFAULT_ARTICLE_ABSTRACT_EN",
+    globals().get("DEFAULT_ARTICLE_ABSTRACT", ""),
+  )
+  _abstract_pt = globals().get(
+    "DEFAULT_ARTICLE_ABSTRACT_PT",
+    globals().get("DEFAULT_ARTICLE_ABSTRACT", ""),
+  )
+  if callable(_localized_abstract_loader):
+    abstract = _localized_abstract_loader(
+      "abstract",
+      _abstract_en,
+      _abstract_pt,
+    )
+  else:
+    abstract = (
+      _abstract_pt if bool(globals().get("IS_PT", False)) else _abstract_en
+    )
+
+  catalogue = _canonical_marker_table_runtime()
+'''
+  if page_header_initialization not in source:
+    if page_header_signature not in source:
+      raise RuntimeError("Could not initialize page_header runtime variables")
+    source = source.replace(
+      page_header_signature,
+      page_header_initialization,
       1,
     )
 

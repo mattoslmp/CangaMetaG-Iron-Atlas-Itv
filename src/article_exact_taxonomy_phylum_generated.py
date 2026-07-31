@@ -3,8 +3,8 @@ from __future__ import annotations
 """Figure 2/3 source that always regenerates the corrected article SVG.
 
 The module invokes the canonical Matplotlib layout against the frozen corrected
-source CSV. Aggregate taxonomy labels include the exact mean percentage shown
-by the figure, while all source values and bar lengths remain unchanged.
+source CSV. Aggregate taxonomy labels show the declared 5% per-taxon cutoff,
+while all source values and bar lengths remain unchanged.
 """
 
 import base64
@@ -21,17 +21,17 @@ from .article_exact_taxonomy_phylum import (
   load_exact_article_phylum_table,
 )
 from .article_exact_taxonomy_phylum_other_percentage import (
+  OTHER_TAXA_THRESHOLD_PERCENT,
   generate_article_svg_with_other_percentage,
-  other_taxa_percentages,
 )
 
 
-CACHE_VERSION = "exact_article_taxonomy_phylum_generated_other_percentage_v2"
+CACHE_VERSION = "exact_article_taxonomy_phylum_generated_threshold5_v3"
 
 
 @lru_cache(maxsize=2)
 def exact_article_phylum_svg_bytes(domain: str) -> bytes:
-  """Generate the corrected SVG with the exact Other taxa percentage."""
+  """Generate the corrected SVG with the 5% aggregate-cutoff label."""
   return generate_article_svg_with_other_percentage(_domain(domain))
 
 
@@ -53,7 +53,6 @@ def exact_article_phylum_interactive(domain: str):
   """Show the generated article SVG unchanged in a zoomable Plotly viewer."""
   canonical = _domain(domain)
   table = load_exact_article_phylum_table(canonical).copy()
-  percentages = other_taxa_percentages(canonical)
   svg = exact_article_phylum_svg_bytes(canonical)
   encoded = base64.b64encode(svg).decode("ascii")
   ratio = _svg_aspect_ratio(svg)
@@ -102,10 +101,12 @@ def exact_article_phylum_interactive(domain: str):
       "recomputed": False,
       "source_table": table.attrs.get("source_path", ""),
       "canonical_script": "scripts/final_publication_figures/02_05_generate_final_taxonomy_figures.py",
-      "other_taxa_mean_percent": percentages["overall"],
-      "other_taxa_dry_mean_percent": percentages["dry"],
-      "other_taxa_rainy_mean_percent": percentages["rainy"],
-      "other_taxa_label_rule": "mean relative abundance across displayed samples",
+      "other_taxa_threshold_percent": OTHER_TAXA_THRESHOLD_PERCENT,
+      "other_taxa_label": "Other taxa (<5% each)",
+      "other_taxa_label_meaning": (
+        "5% is the per-taxon cutoff; aggregate bar values remain the exact "
+        "sum reported by the source table"
+      ),
     },
   )
   return figure, table, svg

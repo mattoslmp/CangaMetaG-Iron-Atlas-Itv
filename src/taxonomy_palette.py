@@ -9,6 +9,8 @@ value. Neutral/aggregate categories are also distinct from one another.
 """
 
 import colorsys
+import base64
+import gzip
 import hashlib
 import json
 from pathlib import Path
@@ -19,6 +21,7 @@ from src.runtime_paths import APP_DATA_DIR, ensure_runtime_layout
 STATIC_PALETTE_PATH = BASE_DIR / "data" / "taxonomy_palette.json"
 RUNTIME_PALETTE_PATH = APP_DATA_DIR / "taxonomy_palette.json"
 PALETTE_PATH = STATIC_PALETTE_PATH
+FULL_PALETTE_BUNDLE_NAME = "taxonomy_palette_full.json.gz.b64"
 
 NEUTRAL_COLORS = {
   "Others": "#C89B3C",
@@ -109,9 +112,18 @@ def load_palette(path: Path | None = None) -> dict[str, str]:
     if candidate is None:
       continue
     try:
-      data = json.loads(candidate.read_text(encoding="utf-8"))
-      if isinstance(data, dict):
-        return build_palette([], {str(key): str(value) for key, value in data.items()})
+      data: dict[str, str] = {}
+      bundle = candidate.with_name(FULL_PALETTE_BUNDLE_NAME)
+      if bundle.exists():
+        compressed = base64.b64decode(bundle.read_text(encoding="ascii"))
+        decoded = json.loads(gzip.decompress(compressed).decode("utf-8"))
+        if isinstance(decoded, dict):
+          data.update({str(key): str(value) for key, value in decoded.items()})
+      core = json.loads(candidate.read_text(encoding="utf-8"))
+      if isinstance(core, dict):
+        data.update({str(key): str(value) for key, value in core.items()})
+      if data:
+        return build_palette([], data)
     except Exception:
       continue
   return build_palette([])

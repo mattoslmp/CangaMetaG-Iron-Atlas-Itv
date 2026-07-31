@@ -119,7 +119,10 @@ def test_taxonomy_page_contains_article_overlap_call() -> None:
 def test_optional_source_anchors_never_break_app_compilation() -> None:
   transformed = _transformed(include_optional_anchors=False)
   assert "install_categorical_group_guard()" in transformed
-  assert "CANGAMETAG_MTX_ALPHA_TAXONOMY_PUBLIC_V2" in transformed
+  assert "CANGAMETAG_MTX_ALPHA_TAXONOMY_PUBLIC_V3" in transformed
+  runtime_import = transformed.index("from src.app_mtx_alpha_taxonomy_runtime import")
+  page_dispatch = transformed.index("page_handler = page_handlers.get(selected_page)")
+  assert runtime_import < page_dispatch
 
 
 def test_public_audit_prose_is_removed() -> None:

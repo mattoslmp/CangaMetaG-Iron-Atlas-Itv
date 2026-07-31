@@ -14,12 +14,25 @@ on:
 permissions:
   contents: read
 
+concurrency:
+  group: validate-global-heatmap-selector-v5-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   selector-contract:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
+      - name: Checkout focused files
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          lfs: false
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /app.py
+            /src/app_ko_heatmap_scale_selector_transform.py
+            /tests/test_ko_heatmap_scale_selector.py
+            /.github/workflows/validate-global-heatmap-selector-v5.yml
 
       - name: Set up Python
         uses: actions/setup-python@v5

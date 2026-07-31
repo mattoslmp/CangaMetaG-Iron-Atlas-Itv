@@ -8,9 +8,9 @@ Figures 4/5 use the frozen article abundance, NMDS and RDA values. Their
 legends use the article layout: lake/season below the NMDS panel, RDA-vector
 legend below the RDA panel, and the genus legend along the bottom.
 
-The same statistical module used by the app writes PERMANOVA/PERMDISP results
-for NMDS/PCoA interpretation and the frozen global RDA results. Figure values
-are not altered; inference is calculated from the frozen source matrices.
+PERMANOVA, dispersion and RDA results are loaded from the exact validated
+tables distributed with the article. The same loader is used by the app.
+Figure values and statistical values are not altered.
 """
 
 import argparse
@@ -21,7 +21,7 @@ import sys
 import tempfile
 
 
-SCRIPT_VERSION = "2026-07-31-final-v4-article-layout-and-inference"
+SCRIPT_VERSION = "2026-07-31-final-v5-official-ordination-results"
 
 
 def project_root() -> Path:
@@ -34,7 +34,7 @@ if str(ROOT) not in sys.path:
 
 from src.article_exact_taxonomy_phylum_generated import exact_article_phylum_svg_bytes  # noqa: E402
 from src.article_frozen_taxonomy_static_v3 import materialize_frozen_article_static_v3  # noqa: E402
-from src.article_inference_statistics import frozen_ordination_inference  # noqa: E402
+from src.article_official_ordination_statistics import official_ordination_inference  # noqa: E402
 from src.article_inference_reporting import inference_summary  # noqa: E402
 
 
@@ -131,8 +131,9 @@ def write_ordination_statistics(
   derived = base_dir / "data" / "final_publication_derived"
   derived.mkdir(parents=True, exist_ok=True)
   figure_number = "Figure4" if domain == "Bacteria" else "Figure5"
-  beta, rda = frozen_ordination_inference(
+  beta, rda = official_ordination_inference(
     domain,
+    base_dir=base_dir,
     permutations=permutations,
     seed=seed,
   )
@@ -142,9 +143,9 @@ def write_ordination_statistics(
   rda.to_csv(rda_path, index=False)
   return [beta_path, rda_path], {
     "domain": domain,
-    "nmds_pcoa_method": "Bray-Curtis PERMANOVA and PERMDISP/betadisper",
+    "nmds_pcoa_method": "official article PERMANOVA and PERMDISP/betadisper tables",
     "nmds_pcoa_summary": inference_summary(beta),
-    "rda_method": "Hellinger-transformed genus composition constrained by standardized environmental variables; global permutation test",
+    "rda_method": "official article RDA model-statistics table",
     "rda_results": rda.to_dict("records"),
   }
 
@@ -191,13 +192,13 @@ def main() -> int:
       "src/article_exact_taxonomy_phylum_generated.py",
       "src/article_frozen_taxonomy_static_v3.py",
       "src/article_frozen_taxonomy_panels.py",
-      "src/article_inference_statistics.py",
+      "src/article_official_ordination_statistics.py",
       "src/article_inference_reporting.py",
     ],
     "outputs": outputs,
     "sha256": hashes,
     "figure_source_values_changed": False,
-    "inference_generated_from_frozen_source_values": True,
+    "official_article_statistical_values_used": True,
     "permutations": args.permutations,
     "seed": args.seed,
     "taxonomy_labels_updated_only_for_figures_2_3": True,

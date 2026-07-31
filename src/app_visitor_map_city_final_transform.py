@@ -2,22 +2,17 @@ from __future__ import annotations
 
 """Install the canonical visitor map after every other app transform."""
 
-MARKER = "CANGAMETAG_VISITOR_MAP_CITY_FINAL_V1 = 1"
+MARKER = "CANGAMETAG_VISITOR_MAP_CITY_FINAL_V2 = 1"
 
 if MARKER not in source:
-  future_anchor = "from __future__ import annotations\n"
-  imports = '''from src.visitor_public_map import (
+  dispatch_anchor = "page_handler = page_handlers.get(selected_page)"
+  overrides = '''from src.visitor_public_map import (
   render_public_visitor_footer as _render_public_visitor_footer_canonical,
   visitor_world_map_figure as _visitor_world_map_figure_canonical,
 )
-'''
-  if imports not in source:
-    if future_anchor not in source:
-      raise RuntimeError("Could not install canonical visitor-map imports")
-    source = source.replace(future_anchor, future_anchor + imports, 1)
 
-  dispatch_anchor = "page_handler = page_handlers.get(selected_page)"
-  overrides = '''def _visitor_world_map_figure(country_frame: pd.DataFrame | None = None):
+
+def _visitor_world_map_figure(country_frame: pd.DataFrame | None = None):
   return _visitor_world_map_figure_canonical(load_visitor_visits(), txt)
 
 

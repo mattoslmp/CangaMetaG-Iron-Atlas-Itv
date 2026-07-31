@@ -3,13 +3,33 @@ from __future__ import annotations
 """Final Figure 4/5 legend placement guard.
 
 This transform is intentionally loaded after every figure, language and runtime
-wrapper. It changes presentation geometry only: all scientific traces, values,
-coordinates, colours, source tables and statistics remain untouched.
+wrapper. It changes presentation geometry and caption placement only: all
+scientific traces, values, coordinates, colours, source tables and statistics
+remain untouched.
 """
 
-MARKER = "CANGAMETAG_FIGURE45_LEGEND_BELOW_FINAL_V1 = 1"
+MARKER = "CANGAMETAG_FIGURE45_LEGEND_BELOW_FINAL_V2 = 1"
 
 if MARKER not in source:
+  # The textual figure legend must follow the rendered image, not precede it.
+  # Insert it immediately after the Figure 4/5 renderer and before methods,
+  # statistics and exact-data tables.
+  caption_anchor = '''        audit_script="src/article_frozen_taxonomy_panels.py; src/article_inference_statistics.py",
+      )
+      beta_tests, rda_tests = frozen_ordination_inference(domain)
+'''
+  caption_replacement = '''        audit_script="src/article_frozen_taxonomy_panels.py; src/article_inference_statistics.py",
+      )
+      st.caption(txt(
+        "Legenda da figura: os gráficos de barras mostram a abundância relativa dos gêneros; o NMDS representa a ordenação por distância de Bray–Curtis; e o biplot de RDA mostra as relações restritas com as variáveis ambientais. Todas as chaves de símbolos, vetores e gêneros estão posicionadas abaixo da figura.",
+        "Figure legend: stacked bars show genus relative abundance; NMDS represents Bray–Curtis ordination; and the RDA biplot shows constrained relationships with environmental variables. All symbol, vector and genus keys are positioned below the figure.",
+      ))
+      beta_tests, rda_tests = frozen_ordination_inference(domain)
+'''
+  if caption_anchor not in source:
+    raise RuntimeError("Could not place the Figure 4/5 caption below the figure")
+  source = source.replace(caption_anchor, caption_replacement, 1)
+
   anchor = "page_handler = page_handlers.get(selected_page)"
   layer = r'''
 if "article_frozen_taxonomy_figure" in globals():
@@ -82,6 +102,7 @@ if "article_frozen_taxonomy_figure" in globals():
       "figure45_final_legend_guard": True,
       "legend_layout": "dedicated-band-below-entire-figure",
       "legend_below_entire_figure": True,
+      "textual_caption_below_figure": True,
       "legend_overlaps_scientific_panels": False,
       "bottom_margin_px": 690,
       "scientific_values_changed": False,

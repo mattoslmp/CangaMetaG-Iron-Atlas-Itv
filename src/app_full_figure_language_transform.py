@@ -3,7 +3,7 @@ from __future__ import annotations
 """Apply the selected interface language to every figure presentation element."""
 
 
-MARKER = "CANGAMETAG_FULL_FIGURE_LANGUAGE_V2 = 1"
+MARKER = "CANGAMETAG_FULL_FIGURE_LANGUAGE_V3 = 1"
 
 if MARKER not in source:
   future_anchor = "from __future__ import annotations\n"
@@ -30,6 +30,25 @@ from src.figure_language_localization import translate_figure_text as final_tran
       'if st.session_state.get("sidebar_language_idioma") == "Português" else '
       '"Choose the interface language. Taxonomic names, identifiers and scientific values are not changed."),'
     ),
+    'key="taxonomy_final_rank")': (
+      'key="taxonomy_final_rank",\n'
+      '      format_func=lambda value: (final_translate_figure_text(value, "pt") if IS_PT else value),\n'
+      '    )'
+    ),
+    'key="taxonomy_final_visualization")': (
+      'key="taxonomy_final_visualization",\n'
+      '      format_func=lambda value: (final_translate_figure_text(value, "pt") if IS_PT else value),\n'
+      '    )'
+    ),
+    'selected_title = f"{domain} — {rank} — {visualization}"': (
+      'rank_display = final_translate_figure_text(rank, "pt" if IS_PT else "en")\n'
+      '  visualization_display = final_translate_figure_text(visualization, "pt" if IS_PT else "en")\n'
+      '  selected_title = f"{domain} — {rank_display} — {visualization_display}"'
+    ),
+    'view_suffix = "individual samples" if view_mode.startswith("Individual") else "aggregated lake–season groups"': (
+      'view_suffix = txt("amostras individuais", "individual samples") if view_mode.startswith("Individual") else '
+      'txt("grupos agregados por lagoa–estação", "aggregated lake–season groups")'
+    ),
   }
   for old, new in replacements.items():
     source = source.replace(old, new)
@@ -51,9 +70,6 @@ if "render_plotly_downloadable" in globals():
     return _ORIGINAL_RENDER_PLOTLY_LANGUAGE(localized, *args, **kwargs)
 
 
-# Some legacy panels call st.plotly_chart directly and therefore bypass the
-# standardized rendering helper. Localize those figures at the Streamlit entry
-# point as well.
 _ORIGINAL_ST_PLOTLY_CHART_LANGUAGE = st.plotly_chart
 
 
@@ -97,6 +113,58 @@ if "article_frozen_taxonomy_figure" in globals():
       figure,
       _selected_figure_language(),
     ), tables
+
+
+if "_scientific_render_tables" in globals():
+  _ORIGINAL_SCIENTIFIC_RENDER_TABLES_LANGUAGE = _scientific_render_tables
+
+  def _scientific_render_tables(tables, chart_key: str, section: str) -> None:
+    localized_tables = [
+      (
+        final_translate_figure_text(label, _selected_figure_language()),
+        table,
+      )
+      for label, table in tables
+    ]
+    return _ORIGINAL_SCIENTIFIC_RENDER_TABLES_LANGUAGE(
+      localized_tables,
+      chart_key,
+      section,
+    )
+
+
+if "_scientific_script_metadata" in globals():
+  _ORIGINAL_SCIENTIFIC_SCRIPT_METADATA_LANGUAGE = _scientific_script_metadata
+
+  def _scientific_script_metadata(
+    *,
+    method: str,
+    script: str,
+    command: str,
+    inputs: list[str],
+    outputs: list[str],
+  ) -> pd.DataFrame:
+    table = _ORIGINAL_SCIENTIFIC_SCRIPT_METADATA_LANGUAGE(
+      method=method,
+      script=script,
+      command=command,
+      inputs=inputs,
+      outputs=outputs,
+    )
+    if not IS_PT or table is None or table.empty:
+      return table
+    localized = table.copy()
+    if "Field" in localized.columns:
+      localized["Field"] = localized["Field"].map(
+        lambda value: final_translate_figure_text(value, "pt")
+      )
+      method_rows = localized["Field"].astype(str).eq("Método")
+      if "Value" in localized.columns:
+        localized.loc[method_rows, "Value"] = localized.loc[method_rows, "Value"].map(
+          lambda value: final_translate_figure_text(value, "pt")
+        )
+      localized = localized.rename(columns={"Field": "Campo", "Value": "Valor"})
+    return localized
 
 
 if "_static_figure_manifest_record" in globals():

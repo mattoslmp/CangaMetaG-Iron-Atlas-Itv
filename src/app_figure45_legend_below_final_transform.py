@@ -8,26 +8,62 @@ scientific traces, values, coordinates, colours, source tables and statistics
 remain untouched.
 """
 
-MARKER = "CANGAMETAG_FIGURE45_LEGEND_BELOW_FINAL_V3 = 1"
+MARKER = "CANGAMETAG_FIGURE45_LEGEND_BELOW_FINAL_V4 = 1"
 
 if MARKER not in source:
-  # Public terminology must remain result-oriented. Internal function and
-  # parameter names are intentionally preserved because they are part of the
-  # implementation contract, but the corresponding words are not shown in UI.
+  # Public terminology remains result-oriented. Internal identifiers and
+  # function names are preserved because they are part of the implementation.
   public_replacements = {
     'txt("Auditoria recente de visitas", "Recent visit audit")': (
       'txt("Registros recentes de visitas", "Recent visit records")'
+    ),
+    'txt("Baixar auditoria recente", "Download recent audit")': (
+      'txt("Baixar registros recentes", "Download recent records")'
     ),
     'txt("Auditoria das amostras", "Sample audit")': (
       'txt("Amostras utilizadas", "Samples used")'
     ),
     'c4.metric("Amostras auditadas",': 'c4.metric("Amostras verificadas",',
     '"Auditoria"])': '"Registros"])',
+    '"Sem auditoria de cobertura."': '"Sem registros de cobertura."',
+    '"Baixar auditoria de cobertura"': '"Baixar registros de cobertura"',
     '"Tabela taxonômica completa para auditoria e download"': (
       '"Tabela taxonômica completa para consulta e download"'
     ),
     '"Complete taxonomic table for audit and download"': (
       '"Complete taxonomic table and download"'
+    ),
+    '"A tabela taxonômica completa será exibida abaixo para auditoria e download."': (
+      '"A tabela taxonômica completa será exibida abaixo para consulta e download."'
+    ),
+    '"The complete taxonomic table is displayed below for audit and download."': (
+      '"The complete taxonomic table is displayed below for consultation and download."'
+    ),
+    '"As planilhas suplementares ficam ocultas para usuários públicos. O admin pode habilitar a visualização técnica para auditoria."': (
+      '"As planilhas suplementares ficam ocultas para usuários públicos. O admin pode habilitar a consulta técnica."'
+    ),
+    '"Supplementary spreadsheets remain hidden to public users. The admin can enable technical viewing for audit."': (
+      '"Supplementary spreadsheets remain hidden to public users. The admin can enable technical viewing."'
+    ),
+    '"sample inclusion audit"': '"sample inclusion record"',
+    '"Source audit"': '"Source records"',
+    '"Data-source audit"': '"Data-source records"',
+    '"Download source audit"': '"Download source records"',
+    '"No source audit is available yet."': '"No source records are available yet."',
+    '"Sentinel-6 audit"': '"Sentinel-6 records"',
+    '"sua ordem original permanece apenas como referência de auditoria. A S67 mantém as duas versões."': (
+      '"sua ordem original permanece apenas como referência interna. A S67 mantém as duas versões."'
+    ),
+    '"its original order remains audit-only. S67 retains both layouts."': (
+      '"its original order remains an internal reference. S67 retains both layouts."'
+    ),
+    '"Tabela completa para auditoria"': '"Tabela completa para consulta"',
+    '"Complete audit table"': '"Complete reference table"',
+    '"O objetivo é manter o painel auditável e reprodutível."': (
+      '"O objetivo é manter o painel verificável e reprodutível."'
+    ),
+    '"The goal is to keep the panel auditable and reproducible."': (
+      '"The goal is to keep the panel verifiable and reproducible."'
     ),
     '"Auditoria de detecção dos 189 KOs"': '"Resumo de detecção dos 189 KOs"',
     '"Detection audit for all 189 KOs"': '"Detection summary for all 189 KOs"',
@@ -50,10 +86,6 @@ if "article_frozen_taxonomy_figure" in globals():
     right = int(getattr(current_margin, "r", 110) or 110)
     top = int(getattr(current_margin, "t", 105) or 105)
 
-    # Reserve a dedicated band below all four scientific panels. The horizontal
-    # genus legend occupies the lower rows; NMDS and RDA keys occupy the first
-    # row of the same band. Negative paper coordinates are retained inside the
-    # enlarged bottom margin and therefore remain visible in HTML and exports.
     figure.update_layout(
       height=max(int(getattr(figure.layout, "height", 0) or 0), 1900),
       width=max(int(getattr(figure.layout, "width", 0) or 0), 1750),
@@ -118,9 +150,6 @@ if "article_frozen_taxonomy_figure" in globals():
     return figure, tables
 
 
-# Add the explanatory caption after the rendered Figure 4/5 object without
-# relying on an exact source-code anchor. This wrapper remains valid when the
-# surrounding page implementation changes and never blocks app startup.
 if "render_plotly_downloadable" in globals():
   _APP_RENDER_BEFORE_FIGURE45_CAPTION = render_plotly_downloadable
 
@@ -142,9 +171,7 @@ if "render_plotly_downloadable" in globals():
     return result
 '''
 
-  # Absence of the dispatch anchor must never make the public application fail.
-  # The geometry/caption wrapper is installed whenever the normal anchor exists;
-  # otherwise the transform becomes a harmless no-op and the app still starts.
+  # Never block application startup because a page implementation changed.
   if anchor in source:
     source = source.replace(anchor, layer + "\n\n" + anchor, 1)
 

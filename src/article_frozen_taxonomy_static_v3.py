@@ -15,7 +15,7 @@ import numpy as np
 from .article_frozen_taxonomy_panels import LAKE_COLORS, frozen_taxonomy_domain_data
 
 
-CACHE_VERSION = "frozen_article_taxonomy_static_v3_bottom_legends"
+CACHE_VERSION = "frozen_article_taxonomy_static_v4_expanded_rda_margin"
 
 
 def materialize_frozen_article_static_v3(domain: str, runtime_root: Path | str) -> Path:
@@ -75,13 +75,13 @@ def materialize_frozen_article_static_v3(domain: str, runtime_root: Path | str) 
     ax.set_title(f"{panel}  {title}", loc="left", fontsize=20, fontweight="bold", pad=10)
     ax.spines[["top", "right"]].set_visible(False)
 
-  fig = plt.figure(figsize=(27, 25.5))
+  fig = plt.figure(figsize=(29, 25.5))
   grid = fig.add_gridspec(
     2,
     2,
     height_ratios=[1.05, 1.0],
     hspace=0.34,
-    wspace=0.28,
+    wspace=0.32,
   )
   ax_a = fig.add_subplot(grid[0, 0])
   ax_b = fig.add_subplot(grid[0, 1])
@@ -249,13 +249,15 @@ def materialize_frozen_article_static_v3(domain: str, runtime_root: Path | str) 
   )
   x_min, x_max = min(x_values), max(x_values)
   y_min, y_max = min(y_values), max(y_values)
+  x_span = max(x_max - x_min, extent)
+  y_span = max(y_max - y_min, extent)
   ax_d.set_xlim(
-    x_min - max((x_max - x_min) * 0.16, extent * 0.22),
-    x_max + max((x_max - x_min) * 0.16, extent * 0.22),
+    x_min - max(x_span * 0.18, extent * 0.24),
+    x_max + max(x_span * 0.34, extent * 0.42),
   )
   ax_d.set_ylim(
-    y_min - max((y_max - y_min) * 0.18, extent * 0.22),
-    y_max + max((y_max - y_min) * 0.18, extent * 0.22),
+    y_min - max(y_span * 0.18, extent * 0.22),
+    y_max + max(y_span * 0.20, extent * 0.24),
   )
 
   lake_season_handles = [
@@ -285,13 +287,11 @@ def materialize_frozen_article_static_v3(domain: str, runtime_root: Path | str) 
     for taxon in profile.index
   ]
 
-  # Dedicated bottom band. No axis-level legend is allowed inside or adjacent
-  # to panels C/D.
   lake_legend = fig.legend(
     handles=lake_season_handles,
     title="Lake / season",
     loc="lower left",
-    bbox_to_anchor=(0.075, 0.145),
+    bbox_to_anchor=(0.070, 0.145),
     ncol=3,
     frameon=False,
     fontsize=14.5,
@@ -302,7 +302,7 @@ def materialize_frozen_article_static_v3(domain: str, runtime_root: Path | str) 
     handles=rda_handles,
     title="RDA vectors",
     loc="lower right",
-    bbox_to_anchor=(0.96, 0.145),
+    bbox_to_anchor=(0.915, 0.145),
     ncol=2,
     frameon=False,
     fontsize=14.5,
@@ -313,7 +313,7 @@ def materialize_frozen_article_static_v3(domain: str, runtime_root: Path | str) 
     handles=genus_handles,
     title="Genus",
     loc="lower center",
-    bbox_to_anchor=(0.5, 0.018),
+    bbox_to_anchor=(0.49, 0.018),
     ncol=min(6, max(3, math.ceil(len(profile.index) / 3))),
     frameon=False,
     fontsize=15,
@@ -328,7 +328,13 @@ def materialize_frozen_article_static_v3(domain: str, runtime_root: Path | str) 
     fontweight="bold",
     y=0.985,
   )
-  fig.subplots_adjust(left=0.075, right=0.96, top=0.94, bottom=0.29)
-  fig.savefig(target, format="svg", bbox_inches="tight", facecolor="white")
+  fig.subplots_adjust(left=0.070, right=0.900, top=0.94, bottom=0.29)
+  fig.savefig(
+    target,
+    format="svg",
+    bbox_inches="tight",
+    pad_inches=0.28,
+    facecolor="white",
+  )
   plt.close(fig)
   return target

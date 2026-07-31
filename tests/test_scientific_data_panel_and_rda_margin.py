@@ -46,9 +46,9 @@ page_handler = page_handlers.get(selected_page)
   assert "Scientific data used in this figure" in transformed
   for label in ["Source", "Processed", "Output", "Plotted values", "Script"]:
     assert label in transformed
-  assert 'expanded=False' in transformed
+  assert "expanded=False" in transformed
   assert '"r": 320' in transformed
-  assert 'right + 0.30 * span' in transformed
+  assert "right + 0.30 * span" in transformed
   assert "These panels do not recompute NMDS or RDA" not in transformed
 
 
@@ -73,9 +73,29 @@ def test_canonical_script_records_expanded_rda_layout() -> None:
   assert '"right_vector_labels_clipped": False' in script
 
 
+def test_corrected_taxonomy_figures_call_standard_static_data_panel() -> None:
+  transform = (
+    ROOT / "src" / "app_corrected_taxonomy_static_assets_transform.py"
+  ).read_text(encoding="utf-8")
+  assert "_render_static_figure_audit(path, title, key_prefix)" in transform
+  assert "Static figure built from the frozen tables" not in transform
+  assert "These panels do not recompute NMDS or RDA" not in transform
+  assert "audit_method=\"Bray-Curtis NMDS; PERMANOVA; PERMDISP; constrained RDA\"" in transform
+
+
+def test_concise_method_transform_preserves_results_without_long_prose() -> None:
+  transform = (
+    ROOT / "src" / "app_concise_scientific_method_text_transform.py"
+  ).read_text(encoding="utf-8")
+  assert "Methods: PERMANOVA and PERMDISP." in transform
+  assert "Method: RDA with permutation test." in transform
+  assert "_concise_scientific_method_name" in transform
+
+
 def test_app_loads_scientific_data_panel_after_other_figure_transforms() -> None:
   app = (ROOT / "app.py").read_text(encoding="utf-8")
   panel = app.index("app_scientific_data_panel_v3_transform.py")
+  concise = app.index("app_concise_scientific_method_text_transform.py")
   cleanup = app.index("app_public_validation_prose_cleanup_transform.py")
   runtime_guard = app.index("app_runtime_name_guard_transform.py")
-  assert cleanup < panel < runtime_guard
+  assert cleanup < panel < concise < runtime_guard

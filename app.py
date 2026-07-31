@@ -44,6 +44,7 @@ TRANSFORMS = [
   Path(__file__).with_name("src") / "app_visitor_footer_final_transform.py",
   Path(__file__).with_name("src") / "app_figure45_bottom_legend_transform.py",
   Path(__file__).with_name("src") / "app_dataframe_attrs_melt_guard_transform.py",
+  Path(__file__).with_name("src") / "app_final_inference_and_figure45_layout_transform.py",
   Path(__file__).with_name("src") / "app_runtime_name_guard_transform.py",
 ]
 

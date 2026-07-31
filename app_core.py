@@ -1584,12 +1584,78 @@ def render_plotly_downloadable(
       backends = sorted({str(LAST_PLOTLY_EXPORT_ERRORS.get(f"{fmt}_backend", "")) for fmt in ("png", "pdf", "svg")} - {""})
       browser_path = discover_browser() or "not detected"
       st.caption(f"Static export canvas: {width} × {height} px; backend(s): {', '.join(backends) or 'unavailable'}; browser: {browser_path}.")
+  render_statistical_result_legend(audit_output_table)
   render_figure_audit_expander(
     fig, chart_key, input_table=audit_input_table,
     processed_table=audit_processed_table, output_table=audit_output_table,
     method=audit_method, input_source=audit_input_source,
     script=audit_script, instructions=audit_instructions,
   )
+
+
+def render_statistical_result_legend(output_table: pd.DataFrame | None) -> None:
+  """State significance and significant groups beneath every interactive plot."""
+  if output_table is None or not isinstance(output_table, pd.DataFrame) or output_table.empty:
+    st.caption(txt(
+      "Resultado estatístico: nenhum teste inferencial foi fornecido para este painel; portanto, nenhuma significância entre grupos é reivindicada.",
+      "Statistical result: no inferential test was supplied for this panel; therefore no between-group significance is claimed.",
+    ))
+    return
+
+  table = output_table.copy()
+  normalized = {str(column).strip().casefold().replace(" ", "_"): column for column in table.columns}
+  q_candidates = [
+    "padj", "adjusted_p_value", "adjusted_p-value", "p_adjusted", "p_adj",
+    "q_value", "qvalue", "fdr", "p_fdr", "p_bh",
+  ]
+  p_candidates = ["p_value", "p-value", "pvalue", "p", "pr(>f)"]
+  significance_column = next((normalized[key] for key in q_candidates if key in normalized), None)
+  threshold_label = "adjusted p/q/FDR"
+  if significance_column is None:
+    significance_column = next((normalized[key] for key in p_candidates if key in normalized), None)
+    threshold_label = "p"
+  if significance_column is None:
+    st.caption(txt(
+      "Resultado estatístico: a tabela de output não contém p-value, adjusted p-value, q-value ou FDR; nenhuma significância entre grupos é reivindicada.",
+      "Statistical result: the output table contains no p-value, adjusted p-value, q-value or FDR; no between-group significance is claimed.",
+    ))
+    return
+
+  values = pd.to_numeric(table[significance_column], errors="coerce")
+  valid = table.loc[values.notna()].copy()
+  valid["_significance_value"] = values.loc[values.notna()]
+  significant = valid[valid["_significance_value"] < 0.05].copy()
+  if significant.empty:
+    st.caption(txt(
+      f"Resultado estatístico: não significativo ({threshold_label} ≥ 0,05); nenhum par/grupo significativo.",
+      f"Statistical result: not significant ({threshold_label} ≥ 0.05); no significant group/pair.",
+    ))
+    return
+
+  comparison_candidates = [
+    "comparison", "comparasion", "contrast", "groups", "group_pair",
+    "group1", "group_1", "group2", "group_2", "category", "taxon", "marker",
+  ]
+  comparison_columns = [normalized[key] for key in comparison_candidates if key in normalized]
+  labels: list[str] = []
+  for _, row in significant.head(12).iterrows():
+    bits = [str(row.get(column, "")).strip() for column in comparison_columns]
+    bits = [bit for bit in bits if bit and bit.casefold() not in {"nan", "none", "<na>"}]
+    if bits:
+      labels.append(" × ".join(dict.fromkeys(bits)))
+  labels = list(dict.fromkeys(labels))
+  detail = "; ".join(labels) if labels else txt(
+    "linhas significativas identificadas na tabela de output",
+    "significant rows identified in the output table",
+  )
+  suffix = "" if len(significant) <= 12 else txt(
+    f"; mais {len(significant) - 12} resultados na tabela",
+    f"; {len(significant) - 12} additional results in the table",
+  )
+  st.caption(txt(
+    f"Resultado estatístico: significativo ({threshold_label} < 0,05). Grupos/comparações: {detail}{suffix}.",
+    f"Statistical result: significant ({threshold_label} < 0.05). Groups/comparisons: {detail}{suffix}.",
+  ))
 
 
 def load_taxonomy_palette_map() -> dict[str, str]:
@@ -8107,12 +8173,37 @@ def render_st8_heatmap_scope_controls(df: pd.DataFrame, numeric_cols: list[str],
       f"{title_prefix}: {scope_name_en} — row z-score ({top_n}/{len(df)} markers; {len(cols)} columns)",
       top_n=top_n, zscore_rows=True, x_label_map=x_label_map,
     )
-    if raw_fig:
-      render_plotly_downloadable(raw_fig, key=f"{base_key}_{scope_key}_raw", basename=f"{base_key}_{scope_key}_raw_counts")
-    if z_fig:
-      render_plotly_downloadable(z_fig, key=f"{base_key}_{scope_key}_zscore", basename=f"{base_key}_{scope_key}_row_zscore")
     raw_table = _st8_heatmap_export_table(df, cols, top_n, zscore_rows=False)
     z_table = _st8_heatmap_export_table(df, cols, top_n, zscore_rows=True)
+    source_columns = [
+      column for column in ["KO", "Metabolism", "KO description", label_col, *cols]
+      if column in df.columns
+    ]
+    source_table = df.loc[:, list(dict.fromkeys(source_columns))].head(top_n).copy()
+    if raw_fig:
+      render_plotly_downloadable(
+        raw_fig,
+        key=f"{base_key}_{scope_key}_raw",
+        basename=f"{base_key}_{scope_key}_raw_counts",
+        audit_input_table=source_table,
+        audit_processed_table=raw_table,
+        audit_output_table=raw_table,
+        audit_method="Exact ST8 source counts; no imputation. Zero is a measured absence and is retained as numeric 0.",
+        audit_input_source="tables/Supplementary_Table_8.xlsx — ST8 — all KO biomarkers",
+        audit_script="scripts/rebuild_supplementary_table8_final.py; scripts/generate_st8_final_figures.py",
+      )
+    if z_fig:
+      render_plotly_downloadable(
+        z_fig,
+        key=f"{base_key}_{scope_key}_zscore",
+        basename=f"{base_key}_{scope_key}_row_zscore",
+        audit_input_table=source_table,
+        audit_processed_table=z_table,
+        audit_output_table=z_table,
+        audit_method="Per-KO row z-score calculated from the exact ST8 counts; no imputation and no replacement of source values.",
+        audit_input_source="tables/Supplementary_Table_8.xlsx — ST8 — all KO biomarkers",
+        audit_script="scripts/rebuild_supplementary_table8_final.py; scripts/generate_st8_final_figures.py",
+      )
     d1, d2 = st.columns(2)
     with d1:
       csv_button(raw_table, f"{base_key}_{scope_key}_raw_counts_table.csv", txt("Baixar tabela raw count usada", "Download raw-count source table"))
@@ -11868,7 +11959,6 @@ def code_reproducibility_tab():
     {"Code": "scripts/rebuild_validate_kemet_and_other_metals.py", "Input": "20 metagenome reportKMC_*.tsv files; Supplementary Table 4 Outros-metais and iron statistics; FeGenie source tables", "Output": "Validated 448-module KEMET matrices and Figure 39; per-sample completeness; iron/FeGenie pathway tables; KO lists separated by metal", "Method": "Separates KEMET status from block fraction, requires 448 modules/report, maps 20 Ga identifiers to study samples, and classifies non-iron-metal KOs from original gene/function annotations"},
     {"Code": "scripts/validate_kegg_antismash_filenames.py", "Input": "Supported MAG/metagenome report, FASTA and antiSMASH naming examples", "Output": "outputs/kegg_modules/filename_normalization_validation.csv and antismash_inventory.csv", "Method": "Validates canonical MAG.<number> and Ga identifiers for strict/orig/permissive/metawrap/repaired/ptn/pnt/ptns/pnts variants"},
     {"Code": "scripts/prepare_antismash_runs.py", "Input": "data/kegg_modules/mags/antismash_archives/*.zip", "Output": "Extracted runs under data/kegg_modules/mags/gbk_antismash/<archive-stem>/ plus extraction report", "Method": "Safe ZIP extraction with path traversal protection and index.html validation"},
-    {"Code": "scripts/Kemet.merge_final.R", "Input": "Directory containing KEMET reportKMC TSV files", "Output": "Merged Res_KEMET.tsv-style table", "Method": "Original project R workflow preserved for traceability"},
     {"Code": "src/antismash_viewer.py", "Input": "Complete antiSMASH run directory containing index.html, CSS, JS, regions.js, images and GBK files", "Output": "Self-contained interactive HTML view and downloadable run ZIP", "Method": "Inlines local antiSMASH assets without changing BGC content"},
     {"Code": "src/functional_annotations.py", "Input": "Supplementary Tables 6 and 8 KO/EC/PFAM matrices", "Output": "Absolute-count and row-z-score heatmaps plus linked tables", "Method": "Equal nominal pixel size per heatmap row/column; KO, EC and PFAM hyperlinks are derived from the selected annotation type"},
   ])
@@ -11889,9 +11979,33 @@ def code_reproducibility_tab():
     download_text_file_button(BASE_DIR / "docs" / "code" / "KEGG_MODULES_AND_ANTISMASH.md", "Download KEGG_MODULES_AND_ANTISMASH.md")
   code_files = []
   code_extensions = {".py", ".r", ".R", ".sh", ".txt", ".csv", ".yml", ".yaml"}
-  for folder in [BASE_DIR / "scripts", BASE_DIR / "src"]:
-    if folder.exists():
-      code_files.extend(sorted([p for p in folder.rglob("*") if p.is_file() and p.suffix in code_extensions and "__pycache__" not in p.parts]))
+  final_figure_manifest_path = BASE_DIR / "data" / "final_figure_script_manifest.csv"
+  if final_figure_manifest_path.exists():
+    final_figure_manifest = pd.read_csv(final_figure_manifest_path).fillna("")
+    if "Script" in final_figure_manifest.columns:
+      for specification in final_figure_manifest["Script"].astype(str):
+        for relative in [part.strip() for part in specification.split(";") if part.strip()]:
+          candidate = BASE_DIR / relative
+          if candidate.is_file() and candidate.suffix in code_extensions:
+            code_files.append(candidate)
+  for relative in [
+    "app.py",
+    "app_core.py",
+    "src/article_taxonomy.py",
+    "src/current_taxonomy_display.py",
+    "src/ncbi_taxonomy_harmonization.py",
+    "src/ncbi_taxonomy_refresh.py",
+    "src/publication_ordination.py",
+    "src/publication_rda.py",
+    "src/supplementary_database.py",
+    "src/taxonomy_palette.py",
+    "scripts/taxonomy/harmonize_ncbi_taxonomy_and_regenerate.py",
+    "scripts/rebuild_supplementary_table8_final.py",
+    "scripts/generate_st8_final_figures.py",
+  ]:
+    candidate = BASE_DIR / relative
+    if candidate.is_file():
+      code_files.append(candidate)
   essential_docs = [
     BASE_DIR / "FIGURE_REPRODUCTION_COMMANDS.md",
     BASE_DIR / "README.md",
@@ -11917,7 +12031,7 @@ def code_reproducibility_tab():
     "bytes": [p.stat().st_size for p in code_files],
     "sha256": [hashlib.sha256(p.read_bytes()).hexdigest() for p in code_files],
   })
-  st.markdown("#### " + txt("Manifesto completo dos scripts", "Complete script manifest"))
+  st.markdown("#### " + txt("Final scripts and figures — somente scripts canônicos em uso", "Final scripts and figures — canonical scripts in use only"))
   show_table(manifest, "code_reproducibility_script_manifest", height=260)
   figure_manifest_path = BASE_DIR / "data" / "figure_script_manifest.csv"
   if figure_manifest_path.exists():
@@ -12320,26 +12434,29 @@ def final_publication_figures_tab() -> None:
       st.warning(txt("Nenhum script do manifesto foi localizado.", "No manifest-listed script was found."))
 
     load_complete_inventory = st.checkbox(
-      txt("Carregar inventário técnico completo de scripts", "Load the complete technical script inventory"),
+      txt("Carregar inventário técnico completo dos scripts finais", "Load the complete final-script technical inventory"),
       value=False,
       key="load_complete_final_script_inventory",
       help=txt(
-        "Esta opção percorre todos os diretórios de código e calcula SHA-256. Ative apenas quando precisar da auditoria completa.",
-        "This option scans all code directories and calculates SHA-256. Enable it only when the full audit is needed.",
+        "Esta opção calcula SHA-256 somente dos scripts finais referenciados pelo manifesto de figuras. Scripts antigos, arquivados ou não utilizados não são exibidos.",
+        "This option calculates SHA-256 only for final scripts referenced by the figure manifest. Old, archived or unused scripts are not displayed.",
       ),
     )
     if load_complete_inventory:
-      all_script_dirs = [BASE_DIR / "scripts", BASE_DIR / "src", BASE_DIR / "docs" / "code"]
+      final_manifest_scripts = sorted({
+        BASE_DIR / relative
+        for relative in canonical_script_paths
+        if (BASE_DIR / relative).is_file()
+      })
       all_script_files = sorted(
         {
           fp
-          for folder in all_script_dirs if folder.exists()
-          for fp in folder.rglob("*")
-          if fp.is_file() and fp.suffix.lower() in {".py", ".r", ".sh", ".md", ".txt", ".csv", ".yml", ".yaml"}
+          for fp in final_manifest_scripts
+          if fp.suffix.lower() in {".py", ".r", ".sh", ".md", ".txt", ".csv", ".yml", ".yaml"}
         },
         key=lambda fp: str(fp.relative_to(BASE_DIR)),
       )
-      st.markdown("### " + txt("Inventário completo de scripts e métodos", "Complete script and method inventory"))
+      st.markdown("### " + txt("Inventário dos scripts finais usados pelas figuras", "Inventory of final scripts used by the figures"))
       all_script_index = pd.DataFrame({
         "file": [str(fp.relative_to(BASE_DIR)) for fp in all_script_files],
         "bytes": [fp.stat().st_size for fp in all_script_files],

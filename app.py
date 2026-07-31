@@ -58,6 +58,7 @@ TRANSFORMS = [
   Path(__file__).with_name("src") / "app_title_abstract_language_transform.py",
   Path(__file__).with_name("src") / "app_css_literal_guard_transform.py",
   Path(__file__).with_name("src") / "app_static_figure_renderer_recovery_transform.py",
+  Path(__file__).with_name("src") / "app_mtx_alpha_taxonomy_public_transform.py",
   Path(__file__).with_name("src") / "app_runtime_name_guard_transform.py",
 ]
 

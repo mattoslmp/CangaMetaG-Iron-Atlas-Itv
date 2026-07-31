@@ -6,13 +6,14 @@ from src import visitor_analytics
 
 
 class FakeContext:
-  def __init__(self, headers: dict[str, str]):
+  def __init__(self, headers: dict[str, str], ip_address: str | None = None):
     self.headers = headers
+    self.ip_address = ip_address
 
 
 class FakeStreamlit:
-  def __init__(self, headers: dict[str, str]):
-    self.context = FakeContext(headers)
+  def __init__(self, headers: dict[str, str], ip_address: str | None = None):
+    self.context = FakeContext(headers, ip_address=ip_address)
     self.session_state: dict[str, object] = {}
 
 
@@ -55,6 +56,36 @@ def test_one_geolocated_visit_per_streamlit_session(tmp_path: Path, monkeypatch)
   assert metrics["unique_visitors"] == 1
   assert metrics["countries"] == 1
   assert metrics["cities"] == 1
+
+
+def test_streamlit_context_ip_has_priority(tmp_path: Path, monkeypatch) -> None:
+  monkeypatch.setattr(visitor_analytics, "VISITOR_LOG_PATH", tmp_path / "visits.jsonl")
+  monkeypatch.setattr(visitor_analytics, "GEOLOCATION_CACHE_PATH", tmp_path / "geo.json")
+  observed: list[str] = []
+
+  def lookup(ip: str):
+    observed.append(ip)
+    return {
+      "country_code": "BR",
+      "country_name": "Brazil",
+      "country": "Brazil",
+      "region": "Rio de Janeiro",
+      "city": "Itaperuna",
+      "latitude": -21.2,
+      "longitude": -41.9,
+      "geolocation_source": "test context provider",
+    }
+
+  monkeypatch.setattr(visitor_analytics, "_lookup_ip_location", lookup)
+  st = FakeStreamlit(
+    {"X-Forwarded-For": "1.1.1.1", "User-Agent": "pytest-browser"},
+    ip_address="8.8.8.8",
+  )
+  visitor_analytics.record_visit(st)
+  assert observed == ["8.8.8.8"]
+  text = visitor_analytics.VISITOR_LOG_PATH.read_text(encoding="utf-8")
+  assert "8.8.8.8" not in text
+  assert "1.1.1.1" not in text
 
 
 def test_proxy_location_avoids_external_lookup(tmp_path: Path, monkeypatch) -> None:

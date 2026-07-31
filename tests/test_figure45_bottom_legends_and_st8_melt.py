@@ -5,6 +5,7 @@ import runpy
 
 import pandas as pd
 
+from src.article_frozen_taxonomy_static_v3 import materialize_frozen_article_static_v3
 from src.st8_biomarker_heatmap import filter_detected_markers
 
 
@@ -108,3 +109,21 @@ def test_static_and_canonical_script_use_bottom_legend_v3() -> None:
   assert 'bbox_to_anchor=(0.5, 0.018)' in static_source
   assert "article_frozen_taxonomy_static_v3" in script_source
   assert "all legends in a dedicated band below all four panels" in script_source
+
+
+def test_static_v3_generates_both_article_svgs_with_bottom_legends(tmp_path: Path) -> None:
+  for domain, expected_stem in (
+    ("Bacteria", "Figure4_taxonomic_bacteria_genus_profiles"),
+    ("Archaea", "Figure5_taxonomic_archaea_genus_profiles"),
+  ):
+    svg_path = materialize_frozen_article_static_v3(domain, tmp_path)
+    assert svg_path.name == f"{expected_stem}.svg"
+    assert svg_path.parent.name == "frozen_article_taxonomy_static_v3_bottom_legends"
+    text = svg_path.read_text(encoding="utf-8")
+    assert "Bray-Curtis NMDS" in text
+    assert "RDA biplot" in text
+    assert "Lake / season" in text
+    assert "RDA vectors" in text
+    assert "Environmental variable" in text
+    assert "Representative genus vector" in text
+    assert svg_path.stat().st_size > 100000

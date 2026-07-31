@@ -1,59 +1,47 @@
 from __future__ import annotations
 
-"""Attach final MTX, alpha-diversity and taxonomy presentation fixes.
+"""Attach MTX, alpha-diversity and taxonomy presentation fixes safely.
 
-Optional presentation anchors are handled defensively: a wording change in an
-earlier transform must never prevent the Streamlit app from compiling.
+This transform uses only exact, indentation-preserving replacements. It never
+removes a multi-line Streamlit call by scanning parentheses, because doing so
+can leave continuation lines orphaned and make the generated app invalid.
 """
 
-MARKER = "CANGAMETAG_MTX_ALPHA_TAXONOMY_PUBLIC_V3 = 1"
-
-
-def _remove_public_call_containing(text: str, phrase: str) -> str:
-  """Remove one public Streamlit prose call containing an internal phrase."""
-  while phrase in text:
-    position = text.find(phrase)
-    starts = [
-      text.rfind("st.caption(txt(", 0, position),
-      text.rfind("st.info(txt(", 0, position),
-      text.rfind("st.markdown(txt(", 0, position),
-      text.rfind("st.warning(txt(", 0, position),
-    ]
-    start = max(starts)
-    if start < 0:
-      return text.replace(phrase, "")
-    line_start = text.rfind("\n", 0, start) + 1
-    cursor = start
-    depth = 0
-    seen_open = False
-    while cursor < len(text):
-      character = text[cursor]
-      if character == "(":
-        depth += 1
-        seen_open = True
-      elif character == ")":
-        depth -= 1
-      if seen_open and depth <= 0:
-        line_end = text.find("\n", cursor)
-        if line_end < 0:
-          line_end = len(text)
-        text = text[:line_start] + text[line_end + (1 if line_end < len(text) else 0):]
-        break
-      cursor += 1
-    else:
-      return text.replace(phrase, "")
-  return text
+MARKER = "CANGAMETAG_MTX_ALPHA_TAXONOMY_PUBLIC_V4 = 1"
 
 
 if MARKER not in source:
+  candidate = source
+
+  future_anchor = "from __future__ import annotations\n"
+  runtime_imports = '''from src.app_mtx_alpha_taxonomy_runtime import (
+  install_categorical_group_guard,
+  render_complete_metatranscriptome_panel,
+  render_taxonomy_article_overlap_panel,
+)
+install_categorical_group_guard()
+'''
+  if runtime_imports not in candidate:
+    if future_anchor not in candidate:
+      raise RuntimeError("Could not install the MTX/taxonomy runtime imports")
+    candidate = candidate.replace(
+      future_anchor,
+      future_anchor + runtime_imports,
+      1,
+    )
+
   taxonomy_anchor = (
     '  st.markdown("### " + txt("Visualização taxonômica interativa", '
     '"Interactive taxonomic visualization"))'
   )
-  if taxonomy_anchor in source and "render_taxonomy_article_overlap_panel(globals())" not in source:
-    source = source.replace(
+  taxonomy_call = "  render_taxonomy_article_overlap_panel(globals())\n\n"
+  if (
+    taxonomy_anchor in candidate
+    and taxonomy_call.strip() not in candidate
+  ):
+    candidate = candidate.replace(
       taxonomy_anchor,
-      "  render_taxonomy_article_overlap_panel(globals())\n\n" + taxonomy_anchor,
+      taxonomy_call + taxonomy_anchor,
       1,
     )
 
@@ -76,8 +64,8 @@ if MARKER not in source:
         f"Composição exibida: {len(pair_external)} colunas externas; {len(cols)} colunas no total.",
         f"Displayed composition: {len(pair_external)} external columns; {len(cols)} columns in total.",
       ))'''
-  if old_caption in source:
-    source = source.replace(old_caption, new_caption, 1)
+  if old_caption in candidate:
+    candidate = candidate.replace(old_caption, new_caption, 1)
 
   mtx_anchor = '''  render_pair(
     "2B. Lagoas amazônicas + todos os ambientes externos",'''
@@ -92,16 +80,11 @@ if MARKER not in source:
 
   render_pair(
     "2B. Lagoas amazônicas + todos os ambientes externos",'''
-  if mtx_anchor in source and "render_complete_metatranscriptome_panel(" not in source:
-    source = source.replace(mtx_anchor, mtx_call, 1)
-
-  for phrase in (
-    "O visualizador interativo incorpora o mesmo SVG corrigido exibido como figura estática.",
-    "The interactive viewer embeds the same corrected SVG displayed as the static figure.",
-    "Integridade confirmada: 189/189 KOs",
-    "Integrity confirmed: 189/189 KOs",
+  if (
+    mtx_anchor in candidate
+    and "metadata=meta,\n    numeric_columns=numeric_cols," not in candidate
   ):
-    source = _remove_public_call_containing(source, phrase)
+    candidate = candidate.replace(mtx_anchor, mtx_call, 1)
 
   replacements = {
     "Tabela taxonômica completa para auditoria e download": "Tabela taxonômica completa e download",
@@ -112,18 +95,24 @@ if MARKER not in source:
     "Scientific table": "Table",
   }
   for old, new in replacements.items():
-    source = source.replace(old, new)
+    candidate = candidate.replace(old, new)
 
-  page_anchor = "page_handler = page_handlers.get(selected_page)"
-  runtime_imports = '''from src.app_mtx_alpha_taxonomy_runtime import (
-  install_categorical_group_guard,
-  render_complete_metatranscriptome_panel,
-  render_taxonomy_article_overlap_panel,
-)
-install_categorical_group_guard()
+  candidate += f"\n\n{MARKER}\n"
 
-'''
-  if page_anchor in source and runtime_imports not in source:
-    source = source.replace(page_anchor, runtime_imports + page_anchor, 1)
+  try:
+    compile(candidate, "app_core_after_mtx_alpha_taxonomy_transform.py", "exec")
+  except (SyntaxError, IndentationError) as exc:
+    line_number = int(getattr(exc, "lineno", 0) or 0)
+    lines = candidate.splitlines()
+    start = max(0, line_number - 4)
+    end = min(len(lines), line_number + 3)
+    context = "\n".join(
+      f"{index + 1}: {lines[index]}"
+      for index in range(start, end)
+    )
+    raise RuntimeError(
+      "The MTX/taxonomy transform generated invalid Python at "
+      f"line {line_number}: {exc}.\n{context}"
+    ) from exc
 
-  source += f"\n\n{MARKER}\n"
+  source = candidate

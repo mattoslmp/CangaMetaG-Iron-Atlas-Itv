@@ -37,6 +37,7 @@ TRANSFORMS = [
   Path(__file__).with_name("src") / "app_taxonomy_na_literal_transform.py",
   Path(__file__).with_name("src") / "app_taxonomy_explorer_label_transform.py",
   Path(__file__).with_name("src") / "app_st8_biomarker_heatmap_transform.py",
+  Path(__file__).with_name("src") / "app_st8_environment_label_transform.py",
   Path(__file__).with_name("src") / "app_visitor_footer_final_transform.py",
 ]
 

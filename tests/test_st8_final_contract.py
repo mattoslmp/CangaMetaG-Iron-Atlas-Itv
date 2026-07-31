@@ -193,6 +193,6 @@ def test_final_transform_is_loaded_after_runtime_guard() -> None:
   app = (ROOT / "app.py").read_text(encoding="utf-8")
   runtime_guard = app.index("app_runtime_name_guard_transform.py")
   final_contract = app.index("app_final_st8_ko_mtx_revision_transform.py")
-  figure45_guard = app.index("app_figure45_legend_below_final_transform.py")
   visitor_footer = app.index("app_visitor_map_city_final_transform.py")
-  assert runtime_guard < final_contract < figure45_guard < visitor_footer
+  figure45_guard = app.index("app_figure45_legend_below_final_transform.py")
+  assert runtime_guard < final_contract < visitor_footer < figure45_guard

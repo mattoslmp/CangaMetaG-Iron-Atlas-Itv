@@ -3,11 +3,10 @@ from __future__ import annotations
 """Display-only localization helpers for scientific figures.
 
 The functions in this module translate titles, axes, legends, annotations,
-hover text and control labels. Numeric arrays, coordinates, statistics, colours,
-trace order and source tables are never changed.
+hover text, controls and figure metadata labels. Numeric arrays, coordinates,
+statistics, colours, trace order and source tables are never changed.
 """
 
-from copy import deepcopy
 import base64
 import re
 
@@ -21,17 +20,44 @@ _PT_REPLACEMENTS = {
   "Archaea genus-level taxonomic profiles and ordination": "Perfis taxonômicos de Archaea em nível de gênero e ordenação",
   "Dry-season genus profiles": "Perfis de gêneros — estação seca",
   "Rainy-season genus profiles": "Perfis de gêneros — estação chuvosa",
+  "Genus relative-abundance matrix": "Matriz de abundância relativa de gêneros",
+  "Genus relative-abundance values": "Valores de abundância relativa de gêneros",
+  "NMDS plotted coordinates": "Coordenadas plotadas do NMDS",
+  "RDA plotted site coordinates": "Coordenadas plotadas dos sítios na RDA",
+  "RDA plotted environmental vectors": "Vetores ambientais plotados da RDA",
+  "RDA plotted genus vectors": "Vetores de gêneros plotados da RDA",
+  "PERMANOVA and PERMDISP results": "Resultados de PERMANOVA e PERMDISP",
+  "RDA model and axis statistics": "Estatísticas do modelo e dos eixos da RDA",
+  "RDA environmental vectors": "Vetores ambientais da RDA",
+  "RDA genus vectors": "Vetores de gêneros da RDA",
+  "RDA site scores": "Escores dos sítios na RDA",
+  "NMDS scores": "Escores do NMDS",
+  "Exact plotted values": "Valores exatos plotados",
+  "Processed table": "Tabela processada",
+  "Output table": "Tabela de saída",
+  "Input table": "Tabela de entrada",
+  "Generated files": "Arquivos gerados",
   "Dry season": "Estação seca",
   "Rainy season": "Estação chuvosa",
   "Relative abundance (%)": "Abundância relativa (%)",
   "Relative abundance": "Abundância relativa",
+  "CDS count": "Contagem de CDS",
   "CDS-classified sediment sample": "Amostra de sedimento classificada por CDS",
   "Bray-Curtis NMDS": "NMDS de Bray–Curtis",
+  "Bray-Curtis distance": "Distância de Bray–Curtis",
   "RDA biplot": "Biplot de RDA",
   "constrained variation": "variação restrita",
+  "constrained RDA": "RDA restrita",
+  "permutation test": "teste de permutação",
+  "one-way ANOVA": "ANOVA de uma via",
+  "Welch t-test": "teste t de Welch",
+  "Mann-Whitney U": "teste U de Mann–Whitney",
+  "Benjamini-Hochberg FDR": "FDR de Benjamini–Hochberg",
+  "Kruskal-Wallis": "Kruskal–Wallis",
   "Lake / season": "Lagoa / estação",
   "Lake/season": "Lagoa/estação",
   "RDA vectors": "Vetores da RDA",
+  "Environmental variables": "Variáveis ambientais",
   "Environmental variable": "Variável ambiental",
   "Representative genus vector": "Vetor de gênero representativo",
   "representative genus": "gênero representativo",
@@ -48,7 +74,23 @@ _PT_REPLACEMENTS = {
   "Aggregated lake-season groups": "Grupos agregados por lagoa–estação",
   "Aggregated lake–season": "Lagoa–estação agregada",
   "Alpha diversity": "Diversidade alfa",
+  "Observed OTUs": "OTUs observadas",
+  "Taxonomic profile": "Perfil taxonômico",
+  "Taxonomic profiles": "Perfis taxonômicos",
+  "Functional profile": "Perfil funcional",
+  "Functional profiles": "Perfis funcionais",
+  "Iron-rich environments": "Ambientes ricos em ferro",
+  "External environments": "Ambientes externos",
+  "Amazonian lakes": "Lagoas amazônicas",
   "Plotted values": "Valores plotados",
+  "Displayed script": "Script exibido",
+  "Download script": "Baixar script",
+  "Scientific table": "Tabela científica",
+  "Method": "Método",
+  "Command": "Comando",
+  "Input": "Entrada",
+  "Field": "Campo",
+  "Value": "Valor",
   "Processed": "Processado",
   "Source": "Fonte",
   "Output": "Saída",
@@ -61,11 +103,20 @@ _PT_REPLACEMENTS = {
   "Genus": "Gênero",
   "Species": "Espécie",
   "Sample": "Amostra",
+  "Samples": "Amostras",
   "Site": "Sítio",
   "Lake": "Lagoa",
   "Season": "Estação",
+  "Group": "Grupo",
+  "Count": "Contagem",
+  "Frequency": "Frequência",
+  "Percentage": "Porcentagem",
+  "Mean": "Média",
+  "Median": "Mediana",
   "Dry": "Seca",
   "Rainy": "Chuvosa",
+  "Significant": "Significativo",
+  "Not significant": "Não significativo",
   "solid": "contínuo",
   "dashed": "tracejado",
   "Download": "Baixar",
@@ -82,20 +133,22 @@ def translate_figure_text(value: object, language: object = "en") -> object:
   if normalize_language(language) != "pt" or value is None:
     return value
   text = str(value)
-  # Longer phrases must be replaced before their component words.
   for english, portuguese in sorted(
     _PT_REPLACEMENTS.items(), key=lambda item: len(item[0]), reverse=True
   ):
     text = text.replace(english, portuguese)
-  # Remaining standalone UI words. Word boundaries avoid changing taxon names.
   standalone = {
     "Dry": "Seca",
     "Rainy": "Chuvosa",
     "Figure": "Figura",
     "Sample": "Amostra",
+    "Samples": "Amostras",
     "Lake": "Lagoa",
     "Season": "Estação",
     "Site": "Sítio",
+    "Group": "Grupo",
+    "Count": "Contagem",
+    "Value": "Valor",
   }
   for english, portuguese in standalone.items():
     text = re.sub(rf"\b{re.escape(english)}\b", portuguese, text)

@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+# Pull-request validation entrypoint for the final Figure 4/5 and KO UI contract.
+
 from pathlib import Path
 import runpy
 

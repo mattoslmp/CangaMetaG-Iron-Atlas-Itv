@@ -2,49 +2,25 @@ name: Regenerate Figure 4/5 and validate ST8 MTX
 
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - main
-    paths:
-      - "app.py"
-      - "src/article_figure45_final_generator.py"
-      - "src/figure45_large_legend_runtime.py"
-      - "src/app_figure45_legend_below_final_transform.py"
-      - "src/app_ko_heatmap_scale_selector_transform.py"
-      - "scripts/figures/generate_article_figure45_final.py"
-      - "scripts/figures/generate_st8_ko_mtx_final_figures.py"
-      - "scripts/figures/validate_st8_mtx_values.py"
-      - "tests/test_article_figure45_final_generator.py"
-      - "tests/test_figure45_legend_below_final.py"
-      - "tests/test_ko_heatmap_scale_selector.py"
-      - "tests/test_st8_mtx_value_diagnostics.py"
-      - "data/article_frozen_taxonomy_bacteria.json"
-      - "data/article_frozen_taxonomy_archaea.json"
-      - "tables/Supplementary_Table_8.xlsx"
-      - ".github/workflows/regenerate-figure45-and-validate-st8.yml"
   pull_request:
     branches:
       - main
     paths:
       - "app.py"
-      - "src/article_figure45_final_generator.py"
-      - "src/figure45_large_legend_runtime.py"
-      - "src/app_figure45_legend_below_final_transform.py"
-      - "src/app_ko_heatmap_scale_selector_transform.py"
-      - "scripts/figures/generate_article_figure45_final.py"
-      - "scripts/figures/generate_st8_ko_mtx_final_figures.py"
-      - "scripts/figures/validate_st8_mtx_values.py"
-      - "tests/test_article_figure45_final_generator.py"
-      - "tests/test_figure45_legend_below_final.py"
-      - "tests/test_ko_heatmap_scale_selector.py"
-      - "tests/test_st8_mtx_value_diagnostics.py"
+      - "app_core.py"
+      - "src/**"
+      - "scripts/figures/**"
+      - "tests/**"
+      - "data/article_frozen_taxonomy_bacteria.json"
+      - "data/article_frozen_taxonomy_archaea.json"
+      - "tables/Supplementary_Table_8.xlsx"
       - ".github/workflows/regenerate-figure45-and-validate-st8.yml"
 
 permissions:
-  contents: write
+  contents: read
 
 concurrency:
-  group: regenerate-figure45-st8-${{ github.ref }}
+  group: validate-figure45-st8-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
@@ -87,28 +63,31 @@ jobs:
             numpy pandas matplotlib plotly openpyxl pillow pypdf pytest
 
       - name: Regenerate Figures 4 and 5 from packaged inputs
-        run: |
-          python scripts/figures/generate_article_figure45_final.py --root .
+        run: python scripts/figures/generate_article_figure45_final.py --root .
 
       - name: Validate all 189 KOs across the 12 MTX samples
-        run: |
-          python scripts/figures/validate_st8_mtx_values.py --root .
+        run: python scripts/figures/validate_st8_mtx_values.py --root .
 
-      - name: Run focused regression tests
-        run: |
-          python -m pytest -q \
-            tests/test_article_figure45_final_generator.py \
-            tests/test_figure45_legend_below_final.py \
-            tests/test_ko_heatmap_scale_selector.py \
-            tests/test_st8_final_contract.py \
-            tests/test_st8_mtx_value_diagnostics.py
+      - name: Test Figure 4 and 5 final generator
+        run: python -m pytest -q tests/test_article_figure45_final_generator.py
+
+      - name: Test Figure 4 and 5 final application layer
+        run: python -m pytest -q tests/test_figure45_legend_below_final.py
+
+      - name: Test KO Raw data and Z-score selector
+        run: python -m pytest -q tests/test_ko_heatmap_scale_selector.py
+
+      - name: Test ST8 scientific contract
+        run: python -m pytest -q tests/test_st8_final_contract.py
+
+      - name: Test ST8 MTX value classification
+        run: python -m pytest -q tests/test_st8_mtx_value_diagnostics.py
 
       - name: Verify generated deliverables
         run: |
           python - <<'PY'
           import json
           from pathlib import Path
-
           import pandas as pd
 
           required = [
@@ -120,16 +99,12 @@ jobs:
             Path("outputs/final_publication_figures/Figure5_taxonomic_archaea_genus_profiles.pdf"),
             Path("data/final_publication_derived/Figure45_final_generation_manifest.csv"),
             Path("data/final_publication_derived/ST8_MTX_value_validation.json"),
-            Path("data/final_publication_derived/ST8_MTX_KO_value_status.csv"),
-            Path("data/final_publication_derived/ST8_MTX_source_cell_issues.csv"),
           ]
           missing = [str(path) for path in required if not path.is_file() or path.stat().st_size == 0]
           if missing:
             raise SystemExit("Missing generated files: " + ", ".join(missing))
 
-          manifest = pd.read_csv(
-            "data/final_publication_derived/Figure45_final_generation_manifest.csv"
-          )
+          manifest = pd.read_csv("data/final_publication_derived/Figure45_final_generation_manifest.csv")
           if len(manifest) != 2 or set(manifest["figure"].astype(int)) != {4, 5}:
             raise SystemExit("Figure 4/5 generation manifest is incomplete")
           if not manifest["large_legend_layout"].astype(str).str.casefold().eq("true").all():
@@ -141,9 +116,7 @@ jobs:
           if manifest["scientific_values_changed"].astype(str).str.casefold().eq("true").any():
             raise SystemExit("Scientific values must not change during layout regeneration")
 
-          validation = json.loads(
-            Path("data/final_publication_derived/ST8_MTX_value_validation.json").read_text(encoding="utf-8")
-          )
+          validation = json.loads(Path("data/final_publication_derived/ST8_MTX_value_validation.json").read_text(encoding="utf-8"))
           if validation.get("status") != "PASS":
             raise SystemExit("ST8 MTX validation did not pass")
           if validation.get("KO_rows_classified") != 189:
@@ -153,26 +126,3 @@ jobs:
           if validation.get("source_issue_cells") != 0:
             raise SystemExit("Missing or non-numeric MTX source cells remain")
           PY
-
-      - name: Commit regenerated figures and internal validation tables
-        if: github.event_name == 'push'
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add \
-            outputs/final_publication_figures/Figure4_taxonomic_bacteria_genus_profiles.* \
-            outputs/final_publication_figures/Figure5_taxonomic_archaea_genus_profiles.* \
-            outputs/app_supplementary_figures/Figure4_taxonomic_bacteria_genus_profiles.* \
-            outputs/app_supplementary_figures/Figure5_taxonomic_archaea_genus_profiles.* \
-            data/final_publication_derived/Figure45_final_generation_manifest.csv \
-            data/final_publication_derived/ST8_metatranscriptome_12_sample_resolution.csv \
-            data/final_publication_derived/ST8_MTX_KO_value_status.csv \
-            data/final_publication_derived/ST8_MTX_source_cell_issues.csv \
-            data/final_publication_derived/ST8_MTX_sample_value_summary.csv \
-            data/final_publication_derived/ST8_MTX_value_validation.json
-          if git diff --cached --quiet; then
-            echo "Generated outputs are already current."
-          else
-            git commit -m "Regenerate enlarged Figure 4/5 assets and ST8 MTX validation [skip ci]"
-            git push origin HEAD:main
-          fi

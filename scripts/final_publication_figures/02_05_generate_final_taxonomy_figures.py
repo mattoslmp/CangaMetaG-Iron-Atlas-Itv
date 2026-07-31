@@ -1,18 +1,13 @@
 #!/usr/bin/env python3
 from __future__ import annotations
 
-"""Generate final article Figures 2–5 and their statistical result tables.
+"""Generate bilingual final article Figures 2–5 and statistical tables.
 
-Figures 2/3 are generated from the corrected frozen phylum source tables. Their
-shared legend labels the aggregate row as ``Other taxa (<5% each)``. The 5%
-value is the declared per-taxon cutoff, not the summed abundance of the
-aggregate category. Figures 4/5 use the frozen article abundance, NMDS and RDA
-values. Their legends use the article layout and the RDA panel reserves an
-expanded right margin and axis range so every vector label remains visible.
-
-PERMANOVA, dispersion and RDA results are loaded from the exact validated
-tables distributed with the article. The same loaders are used by the app.
-Figure values and statistical values are not altered.
+English and Portuguese figures use the same matrices, coordinates, vectors,
+statistics, colours and ordering. Only presentation text changes. Figures 2/3
+label the aggregate row as ``Other taxa (<5% each)`` in English and
+``Outros táxons (<5% cada)`` in Portuguese. Figures 4/5 retain the final article
+layout and expanded RDA margin in both languages.
 """
 
 import argparse
@@ -23,7 +18,7 @@ import sys
 import tempfile
 
 
-SCRIPT_VERSION = "2026-07-31-final-v8-other-taxa-threshold5"
+SCRIPT_VERSION = "2026-07-31-final-v9-bilingual-figures"
 
 
 def project_root() -> Path:
@@ -36,7 +31,7 @@ if str(ROOT) not in sys.path:
 
 from src.article_exact_taxonomy_phylum_generated import exact_article_phylum_svg_bytes  # noqa: E402
 from src.article_exact_taxonomy_phylum_other_percentage import OTHER_TAXA_THRESHOLD_PERCENT  # noqa: E402
-from src.article_frozen_taxonomy_static_v3 import materialize_frozen_article_static_v3  # noqa: E402
+from src.article_frozen_taxonomy_static_bilingual import materialize_frozen_article_static_bilingual  # noqa: E402
 from src.article_official_ordination_statistics import official_ordination_inference  # noqa: E402
 from src.article_inference_reporting import inference_summary  # noqa: E402
 
@@ -44,19 +39,23 @@ from src.article_inference_reporting import inference_summary  # noqa: E402
 FIGURES = {
   "Bacteria_phylum": (
     "Figure2_taxonomic_phylum_bacteria_horizontal_CDS",
-    lambda cache: exact_article_phylum_svg_bytes("Bacteria"),
+    lambda cache, language: exact_article_phylum_svg_bytes("Bacteria", language),
   ),
   "Archaea_phylum": (
     "Figure3_taxonomic_phylum_archaea_horizontal_CDS",
-    lambda cache: exact_article_phylum_svg_bytes("Archaea"),
+    lambda cache, language: exact_article_phylum_svg_bytes("Archaea", language),
   ),
   "Bacteria_genus_ordination": (
     "Figure4_taxonomic_bacteria_genus_profiles",
-    lambda cache: materialize_frozen_article_static_v3("Bacteria", cache).read_bytes(),
+    lambda cache, language: materialize_frozen_article_static_bilingual(
+      "Bacteria", cache, language=language
+    ).read_bytes(),
   ),
   "Archaea_genus_ordination": (
     "Figure5_taxonomic_archaea_genus_profiles",
-    lambda cache: materialize_frozen_article_static_v3("Archaea", cache).read_bytes(),
+    lambda cache, language: materialize_frozen_article_static_bilingual(
+      "Archaea", cache, language=language
+    ).read_bytes(),
   ),
 }
 
@@ -77,35 +76,48 @@ def parse_args() -> argparse.Namespace:
   parser.add_argument("--dpi", type=int, default=350)
   parser.add_argument("--permutations", type=int, default=999)
   parser.add_argument("--seed", type=int, default=42)
+  parser.add_argument(
+    "--language",
+    choices=["en", "pt", "both"],
+    default="both",
+    help="Generate English, Portuguese, or both language variants.",
+  )
   return parser.parse_args()
 
 
-def validate_svg(stem: str, payload: bytes) -> None:
+def validate_svg(stem: str, payload: bytes, language: str) -> None:
   if b"<svg" not in payload[:8192].lower():
-    raise RuntimeError(f"Invalid SVG generated for {stem}")
+    raise RuntimeError(f"Invalid SVG generated for {stem} [{language}]")
   text = payload.decode("utf-8", errors="ignore")
   for legacy in PROHIBITED_LEGACY_LABELS.get(stem, ()):
     if legacy in text:
       raise RuntimeError(f"Legacy taxonomy label remains in {stem}: {legacy}")
   if stem.startswith(("Figure2_", "Figure3_")):
-    required_labels = (
-      "Other taxa (<5% each)",
-      "Other taxa (&lt;5% each)",
+    required = (
+      ("Outros táxons (<5% cada)", "Outros táxons (&lt;5% cada)")
+      if language == "pt"
+      else ("Other taxa (<5% each)", "Other taxa (&lt;5% each)")
     )
-    if not any(label in text for label in required_labels):
-      raise RuntimeError(
-        f"The 5% aggregate-cutoff label is absent from {stem}"
-      )
-    if "Other taxa (7.51%)" in text or "Other taxa (0.73%)" in text:
-      raise RuntimeError(f"Aggregate mean was incorrectly used as a label in {stem}")
+    if not any(label in text for label in required):
+      raise RuntimeError(f"Aggregate 5% label absent from {stem} [{language}]")
   if stem.startswith(("Figure4_", "Figure5_")):
     required = (
-      "Bray-Curtis NMDS", "RDA biplot", "Lake / season", "RDA vectors",
-      "Environmental variable", "Representative genus vector", "Genus",
+      (
+        "NMDS de Bray–Curtis", "Biplot de RDA", "Lagoa / estação",
+        "Vetores da RDA", "Variável ambiental", "Vetor de gênero representativo",
+        "Gênero",
+      )
+      if language == "pt"
+      else (
+        "Bray-Curtis NMDS", "RDA biplot", "Lake / season", "RDA vectors",
+        "Environmental variable", "Representative genus vector", "Genus",
+      )
     )
     missing = [label for label in required if label not in text]
     if missing:
-      raise RuntimeError(f"Legend/layout labels missing from {stem}: {missing}")
+      raise RuntimeError(
+        f"Legend/layout labels missing from {stem} [{language}]: {missing}"
+      )
 
 
 def convert_svg(svg_path: Path, dpi: int) -> list[Path]:
@@ -172,20 +184,26 @@ def main() -> int:
   output_dir.mkdir(parents=True, exist_ok=True)
   report_dir.mkdir(parents=True, exist_ok=True)
 
+  languages = ["en", "pt"] if args.language == "both" else [args.language]
   outputs: list[str] = []
   hashes: dict[str, str] = {}
+  language_outputs: dict[str, list[str]] = {language: [] for language in languages}
 
   with tempfile.TemporaryDirectory(prefix="cangametag_final_taxonomy_") as tmp:
     cache = Path(tmp)
-    for _, (stem, builder) in FIGURES.items():
-      payload = builder(cache)
-      validate_svg(stem, payload)
-      svg_path = output_dir / f"{stem}.svg"
-      svg_path.write_bytes(payload)
-      register_file(svg_path, base_dir, outputs, hashes)
-      if not args.skip_raster:
-        for converted in convert_svg(svg_path, args.dpi):
-          register_file(converted, base_dir, outputs, hashes)
+    for language in languages:
+      suffix = "_pt" if language == "pt" else ""
+      for _, (stem, builder) in FIGURES.items():
+        payload = builder(cache, language)
+        validate_svg(stem, payload, language)
+        svg_path = output_dir / f"{stem}{suffix}.svg"
+        svg_path.write_bytes(payload)
+        register_file(svg_path, base_dir, outputs, hashes)
+        language_outputs[language].append(str(svg_path.relative_to(base_dir)))
+        if not args.skip_raster:
+          for converted in convert_svg(svg_path, args.dpi):
+            register_file(converted, base_dir, outputs, hashes)
+            language_outputs[language].append(str(converted.relative_to(base_dir)))
 
   inference_reports = []
   for domain in ("Bacteria", "Archaea"):
@@ -202,28 +220,31 @@ def main() -> int:
   report = {
     "script": "scripts/final_publication_figures/02_05_generate_final_taxonomy_figures.py",
     "script_version": SCRIPT_VERSION,
+    "languages_generated": languages,
+    "language_outputs": language_outputs,
     "app_shared_modules": [
       "src/article_exact_taxonomy_phylum_generated.py",
       "src/article_exact_taxonomy_phylum_other_percentage.py",
-      "src/article_frozen_taxonomy_static_v3.py",
+      "src/article_frozen_taxonomy_static_bilingual.py",
       "src/article_frozen_taxonomy_panels.py",
+      "src/figure_language_localization.py",
       "src/article_official_ordination_statistics.py",
       "src/article_inference_reporting.py",
     ],
     "outputs": outputs,
     "sha256": hashes,
     "figure_source_values_changed": False,
+    "translation_scope": (
+      "titles, panel headings, axes, legends and presentation labels only; "
+      "scientific values and results are identical between languages"
+    ),
     "official_article_statistical_values_used": True,
     "permutations": args.permutations,
     "seed": args.seed,
-    "taxonomy_labels_updated_only_for_figures_2_3": True,
     "other_taxa_label": {
-      "display": "Other taxa (<5% each)",
+      "en": "Other taxa (<5% each)",
+      "pt": "Outros táxons (<5% cada)",
       "threshold_percent": OTHER_TAXA_THRESHOLD_PERCENT,
-      "meaning": (
-        "5% is the declared per-taxon cutoff. The plotted Other taxa segment "
-        "continues to use the exact aggregate abundance from the source table."
-      ),
     },
     "figure_4_5_legend_layout": {
       "lake_season": "below NMDS panel, matching article",

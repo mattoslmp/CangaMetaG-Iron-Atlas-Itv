@@ -24,6 +24,7 @@ from src.st8_final_contract import (
 ROOT = Path(__file__).resolve().parents[1]
 WORKBOOK = ROOT / "tables" / "Supplementary_Table_8.xlsx"
 FINAL_TRANSFORM = ROOT / "src" / "app_final_st8_ko_mtx_revision_transform.py"
+FINAL_GENERATOR = ROOT / "scripts" / "figures" / "generate_st8_ko_mtx_final_figures.py"
 
 
 def _source_tables() -> tuple[pd.DataFrame, pd.DataFrame]:
@@ -114,6 +115,30 @@ def test_amazonian_default_and_full_catalogue_controls() -> None:
   assert (full_raw.fillna(0.0).to_numpy(float) == 0).any()
 
 
+def test_final_generator_preserves_all_189_kos_in_every_scope() -> None:
+  assert FINAL_GENERATOR.is_file(), f"Missing final generator: {FINAL_GENERATOR}"
+  source = FINAL_GENERATOR.read_text(encoding="utf-8")
+  required = [
+    "validate_all_ko_contract(all_ko, metadata)",
+    'if validation["status"] != "PASS"',
+    "resolve_metatranscriptome_columns(",
+    "expected_count=12",
+    '"ST8_MTX_all_12_samples": mtx_columns',
+    '"ST8_Amazonian_20_plus_MTX_12": lake_columns + mtx_columns',
+    '("raw", "Raw count", "viridis")',
+    '("relative", "Relative abundance within sample (%)", "viridis")',
+    '("zscore", "Row z-score", "RdBu_r")',
+    "numeric = all_ko.loc[:, columns].apply(pd.to_numeric, errors=\"raise\")",
+    '"KO_rows": int(matrix.shape[0])',
+    '"zero_values_preserved": True',
+    '"values_imputed": False',
+  ]
+  for token in required:
+    assert token in source
+  assert "filter_detected_markers" not in source
+  assert ".dropna(" not in source
+
+
 def test_final_heatmap_layout_preserves_values_and_uses_45_degrees() -> None:
   values = np.arange(36, dtype=float).reshape(3, 12)
   figure = go.Figure(go.Heatmap(
@@ -168,5 +193,6 @@ def test_final_transform_is_loaded_after_runtime_guard() -> None:
   app = (ROOT / "app.py").read_text(encoding="utf-8")
   runtime_guard = app.index("app_runtime_name_guard_transform.py")
   final_contract = app.index("app_final_st8_ko_mtx_revision_transform.py")
+  figure45_guard = app.index("app_figure45_legend_below_final_transform.py")
   visitor_footer = app.index("app_visitor_map_city_final_transform.py")
-  assert runtime_guard < final_contract < visitor_footer
+  assert runtime_guard < final_contract < figure45_guard < visitor_footer

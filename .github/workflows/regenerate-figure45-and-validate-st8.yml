@@ -18,12 +18,25 @@ on:
       - "data/article_frozen_taxonomy_archaea.json"
       - "tables/Supplementary_Table_8.xlsx"
       - ".github/workflows/regenerate-figure45-and-validate-st8.yml"
+  pull_request:
+    branches:
+      - main
+    paths:
+      - "src/article_figure45_final_generator.py"
+      - "src/app_figure45_legend_below_final_transform.py"
+      - "scripts/figures/generate_article_figure45_final.py"
+      - "scripts/figures/generate_st8_ko_mtx_final_figures.py"
+      - "scripts/figures/validate_st8_mtx_values.py"
+      - "tests/test_article_figure45_final_generator.py"
+      - "tests/test_figure45_legend_below_final.py"
+      - "tests/test_st8_mtx_value_diagnostics.py"
+      - ".github/workflows/regenerate-figure45-and-validate-st8.yml"
 
 permissions:
   contents: write
 
 concurrency:
-  group: regenerate-figure45-st8-main
+  group: regenerate-figure45-st8-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
@@ -98,6 +111,7 @@ jobs:
           PY
 
       - name: Commit regenerated figures and internal validation tables
+        if: github.event_name == 'push'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"

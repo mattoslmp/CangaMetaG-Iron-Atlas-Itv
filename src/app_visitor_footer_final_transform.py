@@ -1,8 +1,8 @@
 from __future__ import annotations
 
-"""Final visitor-map placement and application credit."""
+"""Final visitor-map placement without redundant author credit."""
 
-MARKER = "CANGAMETAG_VISITOR_FOOTER_FINAL_V1 = 1"
+MARKER = "CANGAMETAG_VISITOR_FOOTER_FINAL_V2 = 1"
 
 if MARKER not in source:
   # Keep one global visitor map at the true bottom of the application. These
@@ -38,14 +38,6 @@ def visitor_counter_public_footer(key: str = "public_footer"):
       "Localização aproximada registrada para esta sessão: " + ", ".join(location_bits) + ".",
       "Approximate location recorded for this session: " + ", ".join(location_bits) + ".",
     ))
-  st.markdown(
-    """
-<div style="text-align:center; padding:0.55rem 0 0.85rem; font-size:0.95rem;">
-  <strong>App desenvolvido por Leandro de Mattos Pereira.</strong>
-</div>
-""",
-    unsafe_allow_html=True,
-  )
 '''
   if anchor in source and "_APP_ORIGINAL_VISITOR_COUNTER_PUBLIC_FOOTER_FINAL" not in source:
     source = source.replace(anchor, wrapper + "\n\n" + anchor, 1)

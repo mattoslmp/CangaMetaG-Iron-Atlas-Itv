@@ -1,0 +1,1 @@
+Validation marker for the V4 global Raw data / Z-score heatmap selector. The implementation under test is already present on main.

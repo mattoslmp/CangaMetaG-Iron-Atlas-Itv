@@ -1,29 +1,27 @@
 #!/usr/bin/env python3
 from __future__ import annotations
 
-"""Generate final article Figures 2–5 from the same sources used by the app.
+"""Generate final article Figures 2–5 and their statistical result tables.
 
-Figures 2/3
-  Generated from the corrected frozen phylum source CSVs with the canonical
-  two-panel article layout.
+Figures 2/3 are generated from the corrected frozen phylum source tables.
+Figures 4/5 use the frozen article abundance, NMDS and RDA values. Their
+legends use the article layout: lake/season below the NMDS panel, RDA-vector
+legend below the RDA panel, and the genus legend along the bottom.
 
-Figures 4/5
-  Generated from the frozen article abundance, NMDS and RDA tables. Every
-  legend is placed in a dedicated band below the four scientific panels.
-
-The app imports the same source modules. Therefore static article assets,
-interactive viewers and future packaged releases share one implementation.
-No abundance, coordinate, vector or statistic is recomputed in this script.
+The same statistical module used by the app writes PERMANOVA/PERMDISP results
+for NMDS/PCoA interpretation and the frozen global RDA results. Figure values
+are not altered; inference is calculated from the frozen source matrices.
 """
 
 import argparse
+import hashlib
 import json
 from pathlib import Path
 import sys
 import tempfile
 
 
-SCRIPT_VERSION = "2026-07-31-final-v3-bottom-legends"
+SCRIPT_VERSION = "2026-07-31-final-v4-article-layout-and-inference"
 
 
 def project_root() -> Path:
@@ -34,12 +32,10 @@ ROOT = project_root()
 if str(ROOT) not in sys.path:
   sys.path.insert(0, str(ROOT))
 
-from src.article_exact_taxonomy_phylum_generated import (  # noqa: E402
-  exact_article_phylum_svg_bytes,
-)
-from src.article_frozen_taxonomy_static_v3 import (  # noqa: E402
-  materialize_frozen_article_static_v3,
-)
+from src.article_exact_taxonomy_phylum_generated import exact_article_phylum_svg_bytes  # noqa: E402
+from src.article_frozen_taxonomy_static_v3 import materialize_frozen_article_static_v3  # noqa: E402
+from src.article_inference_statistics import frozen_ordination_inference  # noqa: E402
+from src.article_inference_reporting import inference_summary  # noqa: E402
 
 
 FIGURES = {
@@ -61,7 +57,6 @@ FIGURES = {
   ),
 }
 
-
 PROHIBITED_LEGACY_LABELS = {
   "Figure2_taxonomic_phylum_bacteria_horizontal_CDS": (
     "Proteobacteria", "Acidobacteria", "Actinobacteria"
@@ -77,12 +72,13 @@ def parse_args() -> argparse.Namespace:
   parser.add_argument("--base-dir", type=Path, default=ROOT)
   parser.add_argument("--skip-raster", action="store_true", help="Write SVG only")
   parser.add_argument("--dpi", type=int, default=350)
+  parser.add_argument("--permutations", type=int, default=999)
+  parser.add_argument("--seed", type=int, default=42)
   return parser.parse_args()
 
 
 def validate_svg(stem: str, payload: bytes) -> None:
-  head = payload[:8192].lower()
-  if b"<svg" not in head:
+  if b"<svg" not in payload[:8192].lower():
     raise RuntimeError(f"Invalid SVG generated for {stem}")
   text = payload.decode("utf-8", errors="ignore")
   for legacy in PROHIBITED_LEGACY_LABELS.get(stem, ()):
@@ -90,13 +86,8 @@ def validate_svg(stem: str, payload: bytes) -> None:
       raise RuntimeError(f"Legacy taxonomy label remains in {stem}: {legacy}")
   if stem.startswith(("Figure4_", "Figure5_")):
     required = (
-      "Bray-Curtis NMDS",
-      "RDA biplot",
-      "Lake / season",
-      "RDA vectors",
-      "Environmental variable",
-      "Representative genus vector",
-      "Genus",
+      "Bray-Curtis NMDS", "RDA biplot", "Lake / season", "RDA vectors",
+      "Environmental variable", "Representative genus vector", "Genus",
     )
     missing = [label for label in required if label not in text]
     if missing:
@@ -104,7 +95,6 @@ def validate_svg(stem: str, payload: bytes) -> None:
 
 
 def convert_svg(svg_path: Path, dpi: int) -> list[Path]:
-  """Create PDF, PNG and TIFF from one validated SVG."""
   try:
     import cairosvg
   except Exception as exc:
@@ -127,6 +117,38 @@ def convert_svg(svg_path: Path, dpi: int) -> list[Path]:
   return [png_path, pdf_path, tiff_path]
 
 
+def register_file(path: Path, base_dir: Path, outputs: list[str], hashes: dict[str, str]) -> None:
+  outputs.append(str(path.relative_to(base_dir)))
+  hashes[path.name] = hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def write_ordination_statistics(
+  base_dir: Path,
+  domain: str,
+  permutations: int,
+  seed: int,
+) -> tuple[list[Path], dict[str, object]]:
+  derived = base_dir / "data" / "final_publication_derived"
+  derived.mkdir(parents=True, exist_ok=True)
+  figure_number = "Figure4" if domain == "Bacteria" else "Figure5"
+  beta, rda = frozen_ordination_inference(
+    domain,
+    permutations=permutations,
+    seed=seed,
+  )
+  beta_path = derived / f"{figure_number}_{domain}_NMDS_PCoA_PERMANOVA_PERMDISP.csv"
+  rda_path = derived / f"{figure_number}_{domain}_RDA_global_statistics.csv"
+  beta.to_csv(beta_path, index=False)
+  rda.to_csv(rda_path, index=False)
+  return [beta_path, rda_path], {
+    "domain": domain,
+    "nmds_pcoa_method": "Bray-Curtis PERMANOVA and PERMDISP/betadisper",
+    "nmds_pcoa_summary": inference_summary(beta),
+    "rda_method": "Hellinger-transformed genus composition constrained by standardized environmental variables; global permutation test",
+    "rda_results": rda.to_dict("records"),
+  }
+
+
 def main() -> int:
   args = parse_args()
   base_dir = args.base_dir.resolve()
@@ -137,7 +159,6 @@ def main() -> int:
 
   outputs: list[str] = []
   hashes: dict[str, str] = {}
-  import hashlib
 
   with tempfile.TemporaryDirectory(prefix="cangametag_final_taxonomy_") as tmp:
     cache = Path(tmp)
@@ -146,12 +167,22 @@ def main() -> int:
       validate_svg(stem, payload)
       svg_path = output_dir / f"{stem}.svg"
       svg_path.write_bytes(payload)
-      hashes[svg_path.name] = hashlib.sha256(payload).hexdigest()
-      outputs.append(str(svg_path.relative_to(base_dir)))
+      register_file(svg_path, base_dir, outputs, hashes)
       if not args.skip_raster:
         for converted in convert_svg(svg_path, args.dpi):
-          outputs.append(str(converted.relative_to(base_dir)))
-          hashes[converted.name] = hashlib.sha256(converted.read_bytes()).hexdigest()
+          register_file(converted, base_dir, outputs, hashes)
+
+  inference_reports = []
+  for domain in ("Bacteria", "Archaea"):
+    statistics_files, statistics_report = write_ordination_statistics(
+      base_dir,
+      domain,
+      args.permutations,
+      args.seed,
+    )
+    inference_reports.append(statistics_report)
+    for statistics_file in statistics_files:
+      register_file(statistics_file, base_dir, outputs, hashes)
 
   report = {
     "script": "scripts/final_publication_figures/02_05_generate_final_taxonomy_figures.py",
@@ -160,20 +191,30 @@ def main() -> int:
       "src/article_exact_taxonomy_phylum_generated.py",
       "src/article_frozen_taxonomy_static_v3.py",
       "src/article_frozen_taxonomy_panels.py",
+      "src/article_inference_statistics.py",
+      "src/article_inference_reporting.py",
     ],
     "outputs": outputs,
     "sha256": hashes,
-    "scientific_values_recomputed": False,
+    "figure_source_values_changed": False,
+    "inference_generated_from_frozen_source_values": True,
+    "permutations": args.permutations,
+    "seed": args.seed,
     "taxonomy_labels_updated_only_for_figures_2_3": True,
-    "figure_4_5_legend_layout": "all legends in a dedicated band below all four panels",
-    "legend_overlaps_scientific_panels": False,
+    "figure_4_5_legend_layout": {
+      "lake_season": "below NMDS panel, matching article",
+      "rda_vectors": "below RDA panel, matching article",
+      "genus": "bottom centre, matching article",
+      "overlap": False,
+    },
+    "ordination_inference": inference_reports,
   }
   report_path = report_dir / "FINAL_DOMAIN_TAXONOMY_GENERATION_REPORT.json"
   report_path.write_text(
-    json.dumps(report, indent=2, ensure_ascii=False) + "\n",
+    json.dumps(report, indent=2, ensure_ascii=False, default=str) + "\n",
     encoding="utf-8",
   )
-  print(json.dumps(report, indent=2, ensure_ascii=False))
+  print(json.dumps(report, indent=2, ensure_ascii=False, default=str))
   return 0
 
 

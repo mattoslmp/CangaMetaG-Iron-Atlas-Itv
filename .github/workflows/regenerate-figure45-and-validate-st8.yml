@@ -43,10 +43,27 @@ jobs:
   regenerate-and-validate:
     runs-on: ubuntu-latest
     steps:
-      - name: Check out repository
+      - name: Check out required repository paths
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0
+          fetch-depth: 1
+          lfs: false
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /.github/workflows/regenerate-figure45-and-validate-st8.yml
+            /app.py
+            /app_core.py
+            /src/
+            /scripts/figures/
+            /tests/
+            /data/article_frozen_taxonomy_bacteria.json
+            /data/article_frozen_taxonomy_archaea.json
+            /data/final_publication_derived/
+            /tables/Supplementary_Table_8.xlsx
+            /outputs/final_publication_figures/Figure4_taxonomic_bacteria_genus_profiles.*
+            /outputs/final_publication_figures/Figure5_taxonomic_archaea_genus_profiles.*
+            /outputs/app_supplementary_figures/Figure4_taxonomic_bacteria_genus_profiles.*
+            /outputs/app_supplementary_figures/Figure5_taxonomic_archaea_genus_profiles.*
 
       - name: Set up Python
         uses: actions/setup-python@v5

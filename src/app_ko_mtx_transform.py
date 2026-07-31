@@ -3,6 +3,15 @@ from __future__ import annotations
 
 def replace_once(text: str, old: str, new: str, label: str) -> str:
   if old not in text:
+    if (
+      label == "KO metatranscriptome heatmap geometry"
+      and "audit_input_table=source_table" in text
+      and "Zero is a measured absence and is retained as numeric 0." in text
+    ):
+      # The final traceability implementation already renders the same heatmaps
+      # from their exact source/processed/output tables. Do not replace that
+      # final block with the older render-only block.
+      return text
     raise RuntimeError(f"Could not apply {label}: expected anchor was not found")
   return text.replace(old, new, 1)
 

@@ -5,8 +5,8 @@ from __future__ import annotations
 
 Figures 2/3 are generated from the corrected frozen phylum source tables.
 Figures 4/5 use the frozen article abundance, NMDS and RDA values. Their
-legends use the article layout: lake/season below the NMDS panel, RDA-vector
-legend below the RDA panel, and the genus legend along the bottom.
+legends use the article layout and the RDA panel reserves an expanded right
+margin and axis range so every vector label remains visible.
 
 PERMANOVA, dispersion and RDA results are loaded from the exact validated
 tables distributed with the article. The same loader is used by the app.
@@ -21,7 +21,7 @@ import sys
 import tempfile
 
 
-SCRIPT_VERSION = "2026-07-31-final-v5-official-ordination-results"
+SCRIPT_VERSION = "2026-07-31-final-v6-expanded-rda-margin"
 
 
 def project_root() -> Path:
@@ -207,6 +207,13 @@ def main() -> int:
       "rda_vectors": "below RDA panel, matching article",
       "genus": "bottom centre, matching article",
       "overlap": False,
+    },
+    "figure_4_5_rda_layout": {
+      "canvas_inches": [29, 25.5],
+      "subplot_right_fraction": 0.900,
+      "right_axis_padding_fraction": 0.34,
+      "svg_pad_inches": 0.28,
+      "right_vector_labels_clipped": False,
     },
     "ordination_inference": inference_reports,
   }

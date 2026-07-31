@@ -32,12 +32,14 @@ def test_plotly_bottom_legend_layout_preserves_values() -> None:
 
 def test_static_figure4_is_generated_from_packaged_article_inputs(tmp_path) -> None:
   target = materialize_article_figure45_static("Bacteria", tmp_path, language="en")
+  assert target.name == "Figure4_taxonomic_bacteria_genus_profiles.svg"
   assert target.is_file()
   assert target.stat().st_size > 10000
   metadata_path = target.with_suffix(".generation.json")
   assert metadata_path.is_file()
   metadata = json.loads(metadata_path.read_text(encoding="utf-8"))
   assert metadata["domain"] == "Bacteria"
+  assert metadata["language"] == "en"
   assert metadata["profile_samples"] == 20
   assert metadata["profile_rows"] > 0
   assert metadata["nmds_rows"] == 20
@@ -50,8 +52,10 @@ def test_static_figure4_is_generated_from_packaged_article_inputs(tmp_path) -> N
 
 def test_static_figure5_uses_archaea_input_bundle(tmp_path) -> None:
   target = materialize_article_figure45_static("Archaea", tmp_path, language="en")
+  assert target.name == "Figure5_taxonomic_archaea_genus_profiles.svg"
   metadata = json.loads(target.with_suffix(".generation.json").read_text(encoding="utf-8"))
   assert metadata["domain"] == "Archaea"
+  assert metadata["language"] == "en"
   assert metadata["profile_samples"] == 20
   assert metadata["profile_rows"] > 0
   assert metadata["legend_below_entire_figure"] is True

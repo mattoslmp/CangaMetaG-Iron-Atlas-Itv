@@ -5,7 +5,7 @@ from __future__ import annotations
 import re as _transform_re
 
 
-MARKER = "CANGAMETAG_ALL_HEATMAP_SCALE_SELECTOR_V4 = 1"
+MARKER = "CANGAMETAG_ALL_HEATMAP_SCALE_SELECTOR_V5 = 1"
 
 
 if MARKER not in source:
@@ -13,20 +13,23 @@ if MARKER not in source:
   # calculation. Only the visible control is standardised. Regex is used here
   # because the source formats these widgets across multiple lines.
   source = _transform_re.sub(
-    r'\[\s*txt\("Contagem absoluta",\s*"Absolute counts"\),\s*txt\("Z-score por função",\s*"Row z-score"\)\s*\]',
+    r'\[\s*'
+    r'txt\(\s*"Contagem absoluta"\s*,\s*"Absolute counts"\s*,?\s*\)\s*,\s*'
+    r'txt\(\s*"Z-score por função"\s*,\s*"Row z-score"\s*,?\s*\)\s*,?\s*\]',
     '["Raw data", "Z-score"]',
     source,
   )
   source = _transform_re.sub(
-    r'zscore_rows\s*=\s*view_mode\s*==\s*txt\("Z-score por função",\s*"Row z-score"\)',
+    r'zscore_rows\s*=\s*view_mode\s*==\s*'
+    r'txt\(\s*"Z-score por função"\s*,\s*"Row z-score"\s*,?\s*\)',
     'zscore_rows = view_mode == "Z-score"',
     source,
   )
 
   taxonomy_pattern = _transform_re.compile(
     r'(?P<indent>^[ \t]*)zscore\s*=\s*st\.checkbox\(\s*'
-    r'txt\("Z-score por táxon no heatmap",\s*"Row z-score in heatmap"\),\s*'
-    r'value=False,\s*key=f"taxonomy_z_\{level\}_\{hmode\}"\s*\)',
+    r'txt\(\s*"Z-score por táxon no heatmap"\s*,\s*"Row z-score in heatmap"\s*,?\s*\)\s*,\s*'
+    r'value\s*=\s*False\s*,\s*key\s*=\s*f"taxonomy_z_\{level\}_\{hmode\}"\s*,?\s*\)',
     flags=_transform_re.MULTILINE,
   )
   source = taxonomy_pattern.sub(
@@ -39,7 +42,8 @@ if MARKER not in source:
 
   generic_pattern = _transform_re.compile(
     r'(?P<indent>^[ \t]*)zscore\s*=\s*st\.checkbox\(\s*'
-    r'"Z-score por linha",\s*value=False,\s*key=f"\{key_prefix\}_z"\s*\)',
+    r'"Z-score por linha"\s*,\s*value\s*=\s*False\s*,\s*'
+    r'key\s*=\s*f"\{key_prefix\}_z"\s*,?\s*\)',
     flags=_transform_re.MULTILINE,
   )
   source = generic_pattern.sub(

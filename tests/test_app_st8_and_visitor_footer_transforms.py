@@ -96,7 +96,7 @@ visitor_counter_public_footer("bottom_public_counter")
 '''
 
 
-def test_footer_transform_keeps_one_map_and_adds_credit() -> None:
+def test_footer_transform_keeps_one_map_without_redundant_credit() -> None:
   transformed = runpy.run_path(
     str(ROOT / "src" / "app_visitor_footer_final_transform.py"),
     init_globals={"source": footer_source()},
@@ -104,6 +104,6 @@ def test_footer_transform_keeps_one_map_and_adds_credit() -> None:
   assert 'visitor_counter_public_footer("visitor_public_only")' not in transformed
   assert 'visitor_counter_public_footer("code_reproducibility_counter")' not in transformed
   assert transformed.count('visitor_counter_public_footer("bottom_public_counter")') == 1
-  assert "App desenvolvido por Leandro de Mattos Pereira." in transformed
+  assert "App desenvolvido por Leandro de Mattos Pereira." not in transformed
   assert "_visitor_last_location" in transformed
   compile(transformed, "synthetic_footer_app.py", "exec")

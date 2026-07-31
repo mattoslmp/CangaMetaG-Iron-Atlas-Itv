@@ -106,20 +106,42 @@ def transfer_palette_names(
   palette: dict[str, str],
   updates: pd.DataFrame | None = None,
 ) -> dict[str, str]:
-  """Move each legacy colour to its current label without creating duplicates."""
+  """Move each legacy colour to its current label without changing that colour.
+
+  When a current label already exists, the observed legacy label takes
+  precedence. This preserves the colours used by the article figures while
+  changing only the displayed taxonomy name.
+  """
   output = {str(key): str(value).upper() for key, value in (palette or {}).items()}
   frame = load_name_updates() if updates is None else updates.copy()
   if frame.empty:
     return output
+  transferred: dict[str, str] = {}
   for _, row in frame.iterrows():
     old = clean_taxonomy_label(row.get("original_name", ""))
     new = clean_taxonomy_label(row.get("current_name", ""))
     if old == "Unclassified" or new == "Unclassified" or old == new:
       continue
-    if old in output and new not in output:
-      output[new] = output[old]
+    if old in output and new not in transferred:
+      transferred[new] = output[old]
     if old in output:
       del output[old]
+  output.update(transferred)
+
+  # A current taxon must not reuse another displayed taxon's colour. Preserve
+  # every transferred historical colour and remove only obsolete aliases that
+  # would otherwise duplicate it.
+  colour_owner: dict[str, str] = {}
+  for taxon in sorted(output, key=str.casefold):
+    colour = output[taxon].upper()
+    if colour not in colour_owner:
+      colour_owner[colour] = taxon
+      continue
+    if taxon in transferred:
+      output.pop(colour_owner[colour], None)
+      colour_owner[colour] = taxon
+    else:
+      output.pop(taxon, None)
   return output
 
 

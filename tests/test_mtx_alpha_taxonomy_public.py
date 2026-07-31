@@ -120,10 +120,14 @@ def test_transform_never_orphans_indented_continuation_lines() -> None:
   assert "  render_complete_metatranscriptome_panel(" in transformed
 
 
-def test_app_validates_each_transform_before_execution() -> None:
+def test_app_compiles_only_after_complete_transform_chain() -> None:
   app = (ROOT / "app.py").read_text(encoding="utf-8")
-  assert "_compile_transformed_source(candidate, transform_path.name)" in app
-  assert "Transform {transform_name} generated invalid Python" in app
+  assert "_compile_transformed_source(candidate, transform_path.name)" not in app
+  assert "code = _compile_final_source(source)" in app
+  assert 'source = namespace["source"]' in app
+  loop_start = app.index("for transform_path in TRANSFORMS:")
+  final_compile = app.index("code = _compile_final_source(source)")
+  assert loop_start < final_compile
 
 
 def test_transform_is_loaded_before_runtime_guard() -> None:

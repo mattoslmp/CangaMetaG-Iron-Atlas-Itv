@@ -1,15 +1,19 @@
 {
-  "manifest_version": "2026-07-31-final-v4-official-statistics",
+  "manifest_version": "2026-07-31-final-v5-bilingual-figures",
   "policy": "Only entries with status=canonical_final are used by the app and future article packages.",
   "canonical_scripts": [
     {
       "figure_scope": "Main Figures 2-5 taxonomy, NMDS and RDA",
       "path": "scripts/final_publication_figures/02_05_generate_final_taxonomy_figures.py",
       "status": "canonical_final",
+      "languages": ["en", "pt"],
+      "translation_policy": "Titles, panel headings, axes, legends, annotations and other display text are translated. Matrices, coordinates, statistical values, colours and ordering remain identical.",
       "app_shared_modules": [
         "src/article_exact_taxonomy_phylum_generated.py",
-        "src/article_frozen_taxonomy_static_v3.py",
+        "src/article_exact_taxonomy_phylum_other_percentage.py",
+        "src/article_frozen_taxonomy_static_bilingual.py",
         "src/article_frozen_taxonomy_panels.py",
+        "src/figure_language_localization.py",
         "src/article_official_ordination_statistics.py",
         "src/article_inference_reporting.py"
       ],
@@ -28,13 +32,17 @@
         "outputs/final_publication_figures/Figure3_taxonomic_phylum_archaea_horizontal_CDS.*",
         "outputs/final_publication_figures/Figure4_taxonomic_bacteria_genus_profiles.*",
         "outputs/final_publication_figures/Figure5_taxonomic_archaea_genus_profiles.*",
+        "outputs/final_publication_figures/Figure2_taxonomic_phylum_bacteria_horizontal_CDS_pt.*",
+        "outputs/final_publication_figures/Figure3_taxonomic_phylum_archaea_horizontal_CDS_pt.*",
+        "outputs/final_publication_figures/Figure4_taxonomic_bacteria_genus_profiles_pt.*",
+        "outputs/final_publication_figures/Figure5_taxonomic_archaea_genus_profiles_pt.*",
         "data/final_publication_derived/Figure4_Bacteria_NMDS_PCoA_PERMANOVA_PERMDISP.csv",
         "data/final_publication_derived/Figure4_Bacteria_RDA_global_statistics.csv",
         "data/final_publication_derived/Figure5_Archaea_NMDS_PCoA_PERMANOVA_PERMDISP.csv",
         "data/final_publication_derived/Figure5_Archaea_RDA_global_statistics.csv",
         "reports/FINAL_DOMAIN_TAXONOMY_GENERATION_REPORT.json"
       ],
-      "command": "python scripts/final_publication_figures/02_05_generate_final_taxonomy_figures.py",
+      "command": "python scripts/final_publication_figures/02_05_generate_final_taxonomy_figures.py --base-dir . --language both",
       "figure_source_values_changed": false,
       "official_article_statistical_values_used": true,
       "legend_layout": {
@@ -133,6 +141,7 @@
     "PCoA/NMDS without visible PERMANOVA and PERMDISP results",
     "RDA without visible global permutation result",
     "recomputed ordination significance replacing official article tables",
+    "static and interactive figure labels remaining in English after selecting Portuguese",
     "ST8 heatmap displaying all-zero marker rows as observed signals",
     "pandas melt receiving DataFrame-valued attrs"
   ]

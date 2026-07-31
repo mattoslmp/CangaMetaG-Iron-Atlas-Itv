@@ -18,6 +18,8 @@ def _apply(source: str) -> str:
 def test_final_figure45_transform_installs_large_data_generator_safely() -> None:
   source = '''from __future__ import annotations
 
+generator_command = "python scripts/figures/generate_article_figure45_final.py --base-dir ."
+
 def article_frozen_taxonomy_figure(domain: str):
   return object(), {}
 
@@ -39,6 +41,7 @@ page_handler = page_handlers.get(selected_page)
   assert "Genus, symbol and vector keys are enlarged" in transformed
   assert "scripts/figures/generate_article_figure45_final.py" in transformed
   assert "--root ." in transformed
+  assert "--base-dir ." not in transformed
 
 
 def test_transform_never_fails_when_page_implementation_changes() -> None:

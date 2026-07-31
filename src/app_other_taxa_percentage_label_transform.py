@@ -1,20 +1,21 @@
 from __future__ import annotations
 
-"""Add exact mean percentages to aggregate taxonomy legend labels."""
+"""Label aggregate taxonomy traces with the declared 5% cutoff."""
 
 
-MARKER = "CANGAMETAG_OTHER_TAXA_PERCENTAGE_LABEL_V1 = 1"
+MARKER = "CANGAMETAG_OTHER_TAXA_PERCENTAGE_LABEL_V2 = 1"
 
 if MARKER not in source:
   anchor = "page_handler = page_handlers.get(selected_page)"
   layer = r'''
-def _other_taxa_percentage_label(name: object, values: object) -> str:
+_OTHER_TAXA_THRESHOLD_PERCENT = 5.0
+
+
+def _other_taxa_percentage_label(name: object, values: object = None) -> str:
   label = str(name)
   if label not in {"Other taxa", "Other genera"}:
     return label
-  numeric = pd.to_numeric(pd.Series(list(values)), errors="coerce").dropna()
-  percentage = float(numeric.mean()) if not numeric.empty else 0.0
-  return f"{label} ({percentage:.2f}%)"
+  return f"{label} (<{_OTHER_TAXA_THRESHOLD_PERCENT:g}% each)"
 
 
 if "article_season_barplot" in globals():
@@ -25,39 +26,32 @@ if "article_season_barplot" in globals():
       *args,
       **kwargs,
     )
-    percentages = {}
+    aggregate_labels = {}
     if isinstance(exact_table, pd.DataFrame) and not exact_table.empty:
+      taxon_series = exact_table.get("taxon", pd.Series(dtype=str)).astype(str)
       for aggregate in ("Other taxa", "Other genera"):
-        subset = exact_table.loc[
-          exact_table.get("taxon", pd.Series(dtype=str)).astype(str).eq(aggregate)
-        ]
-        if subset.empty or "relative_abundance_percent" not in subset.columns:
+        subset_index = exact_table.index[taxon_series.eq(aggregate)]
+        if len(subset_index) == 0:
           continue
-        values = pd.to_numeric(
-          subset["relative_abundance_percent"],
-          errors="coerce",
-        ).dropna()
-        if values.empty:
-          continue
-        percentages[aggregate] = float(values.mean())
-        exact_table.loc[subset.index, "display_taxon"] = (
-          f"{aggregate} ({percentages[aggregate]:.2f}%)"
-        )
+        display_name = _other_taxa_percentage_label(aggregate)
+        aggregate_labels[aggregate] = display_name
+        exact_table.loc[subset_index, "display_taxon"] = display_name
 
     for trace in list(getattr(figure, "data", []) or []):
       original_name = str(getattr(trace, "name", "") or "")
-      if original_name in percentages:
-        display_name = f"{original_name} ({percentages[original_name]:.2f}%)"
+      if original_name in aggregate_labels:
+        display_name = aggregate_labels[original_name]
         trace.name = display_name
         if getattr(trace, "legendgroup", None) == original_name:
           trace.legendgroup = display_name
 
     meta = dict(figure.layout.meta) if isinstance(figure.layout.meta, dict) else {}
     meta.update({
-      "other_taxa_percentage_label": percentages,
-      "other_taxa_percentage_rule": (
-        "arithmetic mean of relative-abundance percentages across samples "
-        "displayed in the active panel"
+      "other_taxa_threshold_percent": _OTHER_TAXA_THRESHOLD_PERCENT,
+      "other_taxa_display_labels": aggregate_labels,
+      "other_taxa_label_rule": (
+        "5% denotes the per-taxon cutoff; plotted aggregate values remain "
+        "the exact sums from the source table"
       ),
     })
     figure.update_layout(meta=meta)

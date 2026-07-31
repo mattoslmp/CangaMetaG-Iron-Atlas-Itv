@@ -164,6 +164,11 @@ def filter_detected_markers(
 
   The returned display frame keeps original source order. Undetected rows are
   excluded only from the heatmap unless ``include_undetected`` is true.
+
+  Only scalar/JSON-compatible metadata are stored in ``DataFrame.attrs``.
+  The complete per-row audit is returned separately. Keeping a DataFrame inside
+  ``attrs`` makes pandas ``melt``/``concat`` compare DataFrames during
+  finalization, which raises an ambiguous-truth-value ``ValueError``.
   """
   if frame is None:
     frame = pd.DataFrame()
@@ -173,10 +178,22 @@ def filter_detected_markers(
   else:
     mask = row_audit["included_by_default"].to_numpy(bool)
     display = frame.loc[mask].copy()
+
+  display = display.reset_index(drop=True)
+  display.attrs.clear()
   display.attrs["st8_detection_summary"] = summary.to_dict("records")[0]
-  display.attrs["st8_row_audit"] = row_audit
   display.attrs["st8_include_undetected"] = bool(include_undetected)
-  return display.reset_index(drop=True), summary, row_audit
+  display.attrs["st8_row_audit_count"] = int(len(row_audit))
+  return display, summary, row_audit
+
+
+def dataframe_without_complex_attrs(frame: pd.DataFrame) -> pd.DataFrame:
+  """Return a shallow copy safe for pandas reshape/concat operations."""
+  if not isinstance(frame, pd.DataFrame):
+    return frame
+  clean = frame.copy(deep=False)
+  clean.attrs.clear()
+  return clean
 
 
 def assert_no_undetected_heatmap_rows(

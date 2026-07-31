@@ -1,0 +1,92 @@
+name: Validate final app and ST8
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - app.py
+      - app_core.py
+      - src/**
+      - scripts/figures/**
+      - tests/test_st8_final_contract.py
+      - tables/Supplementary_Table_8.xlsx
+      - .github/workflows/validate-final-app-and-st8.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install validation dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install \
+            numpy==2.3.5 \
+            pandas==2.2.3 \
+            openpyxl==3.1.5 \
+            plotly==6.5.2 \
+            Pillow==12.2.0 \
+            pypdf \
+            pytest
+
+      - name: Compile canonical modules and generators
+        run: |
+          python -m py_compile \
+            src/st8_final_contract.py \
+            src/st8_biomarker_heatmap.py \
+            src/app_final_st8_ko_mtx_revision_transform.py \
+            src/app_mtx_alpha_taxonomy_runtime.py \
+            scripts/figures/generate_environmental_group_heatmaps.py \
+            scripts/figures/generate_environmental_group_heatmaps_final.py \
+            scripts/generate_core_taxonomy_overlap_figure.py \
+            scripts/figures/generate_s31_taxonomic_levels_revision3.py
+
+      - name: Apply complete app transform chain and compile final source
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import re
+          import runpy
+
+          root = Path.cwd()
+          app_text = (root / "app.py").read_text(encoding="utf-8")
+          names = re.findall(
+            r'Path\(__file__\)\.with_name\("src"\) / "([^"]+\.py)"',
+            app_text,
+          )
+          assert names, "No app transforms were discovered"
+          source = (root / "app_core.py").read_text(encoding="utf-8")
+          compile(source, str(root / "app_core.py"), "exec")
+          for name in names:
+            transform = root / "src" / name
+            assert transform.is_file(), transform
+            source = runpy.run_path(
+              str(transform),
+              init_globals={"source": source},
+            )["source"]
+          compile(source, "app_core_transformed_final.py", "exec")
+          assert "CANGAMETAG_FINAL_ST8_KO_MTX_REVISION_V2" in source
+          assert "CANGAMETAG_VISITOR_MAP_CITY_FINAL_V3" in source
+          assert "tickangle=-45" in source
+          print(f"PASS: compiled final source after {len(names)} transforms")
+          PY
+
+      - name: Run ST8 and MTX scientific-contract tests
+        run: |
+          python -m pytest -q -p no:cacheprovider \
+            tests/test_st8_final_contract.py \
+            tests/test_mtx_alpha_taxonomy_public.py \
+            tests/test_complete_figure_language_localization.py

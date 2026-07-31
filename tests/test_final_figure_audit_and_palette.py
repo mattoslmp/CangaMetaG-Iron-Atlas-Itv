@@ -7,6 +7,7 @@ import pandas as pd
 
 from src.article_taxonomy import article_alpha_boxplot
 from src.ncbi_taxonomy_harmonization import transfer_palette_names
+from src.taxonomy_palette import load_palette
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -21,7 +22,7 @@ def test_alpha_legend_stays_below_plot() -> None:
 
 
 def test_packaged_taxonomy_palette_is_valid_unique_and_preserves_article_colours() -> None:
-  palette = json.loads((ROOT / "data" / "taxonomy_palette.json").read_text(encoding="utf-8"))
+  palette = load_palette(ROOT / "data" / "taxonomy_palette.json")
   assert len(palette) == len({str(value).upper() for value in palette.values()})
   assert "Proteobacteria" not in palette
   assert palette["Pseudomonadota"] == "#4D87EF"

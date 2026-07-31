@@ -51,6 +51,7 @@ jobs:
           sparse-checkout-cone-mode: false
           sparse-checkout: |
             /.github/workflows/regenerate-figure45-and-validate-st8.yml
+            /requirements.txt
             /app.py
             /app_core.py
             /src/

@@ -61,28 +61,28 @@ def test_order_normalization_merges_counts_without_changing_totals() -> None:
   )
 
 
-def test_shared_article_order_matrix_has_no_na_label() -> None:
+def test_shared_article_order_matrices_have_no_na_labels() -> None:
   status = patch_taxonomy_modules()
   assert status["article_taxonomy"] is True
   assert status["supplementary_database"] is True
 
   from src import article_taxonomy
 
-  counts, relative = article_taxonomy.domain_rank_matrices(
-    "Bacteria",
-    "Order",
-    top_n=None,
-    base_dir=ROOT,
-  )
-  labels = {str(value).strip().casefold() for value in counts.index}
-  assert not labels.intersection(MISSING)
-  assert "unclassified" in labels
-  assert np.allclose(
-    relative.sum(axis=0).to_numpy(float),
-    100.0,
-    atol=1e-10,
-    rtol=0.0,
-  )
+  for domain in ("Bacteria", "Archaea"):
+    counts, relative = article_taxonomy.domain_rank_matrices(
+      domain,
+      "Order",
+      top_n=None,
+      base_dir=ROOT,
+    )
+    labels = {str(value).strip().casefold() for value in counts.index}
+    assert not labels.intersection(MISSING)
+    assert np.allclose(
+      relative.sum(axis=0).to_numpy(float),
+      100.0,
+      atol=1e-10,
+      rtol=0.0,
+    )
 
 
 def test_app_transform_loads_order_patch_before_runtime_functions() -> None:

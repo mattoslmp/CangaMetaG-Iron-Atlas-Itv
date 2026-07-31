@@ -7,7 +7,7 @@ The script uses the same functions imported by the Streamlit app. It writes:
 - alpha-diversity ANOVA/Kruskal-Wallis and Welch/Mann-Whitney results;
 - exact Figure 2/3 Top-14 seasonal barplot lake-comparison results;
 - taxonomy explorer group tests for Phylum, Order, Family and Genus;
-- Figure 4/5 NMDS/PCoA PERMANOVA/PERMDISP and global RDA results.
+- official Figure 4/5 NMDS/PCoA PERMANOVA/PERMDISP and RDA results.
 """
 
 import argparse
@@ -23,14 +23,14 @@ if str(ROOT) not in sys.path:
 from src.article_inference_reporting import inference_summary  # noqa: E402
 from src.article_inference_statistics import (  # noqa: E402
   alpha_diversity_group_tests,
-  frozen_ordination_inference,
   taxonomy_barplot_group_tests_from_table,
   taxonomy_explorer_group_tests,
 )
+from src.article_official_ordination_statistics import official_ordination_inference  # noqa: E402
 from src.article_taxonomy import article_season_barplot, load_article_alpha_source  # noqa: E402
 
 
-SCRIPT_VERSION = "2026-07-31-final-v2-exact-figure2-3-tests"
+SCRIPT_VERSION = "2026-07-31-final-v3-official-ordination-results"
 
 
 def parse_args() -> argparse.Namespace:
@@ -98,8 +98,9 @@ def main() -> int:
       summaries[f"taxonomy_{domain}_{rank}"] = inference_summary(tested)
 
   for domain in ("Bacteria", "Archaea"):
-    beta, rda = frozen_ordination_inference(
+    beta, rda = official_ordination_inference(
       domain,
+      base_dir=base_dir,
       permutations=args.permutations,
       seed=args.seed,
     )
@@ -114,23 +115,27 @@ def main() -> int:
   report = {
     "script": "scripts/final_publication_figures/08_generate_group_comparison_statistics.py",
     "script_version": SCRIPT_VERSION,
-    "shared_app_module": "src/article_inference_statistics.py",
-    "reporting_module": "src/article_inference_reporting.py",
+    "shared_app_modules": [
+      "src/article_inference_statistics.py",
+      "src/article_inference_reporting.py",
+      "src/article_official_ordination_statistics.py",
+    ],
     "tests": {
       "global_parametric": "one-way ANOVA",
       "global_nonparametric": "Kruskal-Wallis",
       "pairwise_parametric": "Welch t-test",
       "pairwise_nonparametric": "Mann-Whitney U",
       "pairwise_multiple_testing": "Benjamini-Hochberg FDR",
-      "ordination_location": "PERMANOVA on Bray-Curtis distances",
-      "ordination_dispersion": "PERMDISP/betadisper",
-      "rda": "global permutation test from frozen article results",
+      "ordination_location": "official article PERMANOVA table",
+      "ordination_dispersion": "official article PERMDISP/betadisper table",
+      "rda": "official article global and axis permutation results",
     },
     "figure2_3_top_n": 14,
     "taxonomy_explorer_top_n": args.top_n,
     "permutations": args.permutations,
     "seed": args.seed,
     "source_values_modified": False,
+    "official_ordination_values_used": True,
     "outputs": outputs,
     "summaries": summaries,
   }

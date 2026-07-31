@@ -57,11 +57,43 @@ def test_frozen_article_interactive_panels_use_exact_values() -> None:
     assert len(tables["nmds_scores"]) == 20
     assert len(tables["rda_site_scores"]) == 10
     profile = tables["genus_relative_abundance"].set_index("taxon")
-    assert np.allclose(profile.sum(axis=0).to_numpy(float), 100.0, atol=1e-10, rtol=0.0)
+    assert np.allclose(
+      profile.sum(axis=0).to_numpy(float),
+      100.0,
+      atol=1e-10,
+      rtol=0.0,
+    )
     assert figure.layout.meta["recomputed"] is False
     assert figure.layout.meta["authority"] == (
       "ARTICLE_FINAL_ISME_SUBMISSION_Leandrov27-julho FINAL_SUBMISSION_FILES"
     )
+
+
+def test_interactive_legends_are_reserved_outside_all_panels() -> None:
+  for domain in ("Bacteria", "Archaea"):
+    figure, _ = article_frozen_taxonomy_figure(domain)
+    assert figure.layout.meta["legend_layout"] == "outside-panels-v2"
+    assert figure.layout.legend.orientation == "h"
+    assert float(figure.layout.legend.y) < 0
+    assert int(figure.layout.margin.b) >= 300
+    ordination_names = {
+      "AM — Dry", "AM — Rainy", "TIA — Dry", "TIA — Rainy",
+      "TI — Dry", "TI — Rainy", "VI — Dry", "VI — Rainy",
+    }
+    ordination_traces = [
+      trace
+      for trace in figure.data
+      if str(getattr(trace, "name", "")) in ordination_names
+    ]
+    assert ordination_traces
+    assert all(trace.showlegend is False for trace in ordination_traces)
+    guide_text = [
+      str(annotation.text)
+      for annotation in figure.layout.annotations
+      if float(annotation.y or 0) < 0
+    ]
+    assert any("NMDS symbols" in text for text in guide_text)
+    assert any("RDA vectors" in text for text in guide_text)
 
 
 def test_static_article_panels_are_generated_without_zip(tmp_path: Path) -> None:
@@ -71,8 +103,12 @@ def test_static_article_panels_are_generated_without_zip(tmp_path: Path) -> None
   ]:
     path = materialize_frozen_article_static(domain, tmp_path)
     assert path.name == f"{stem}.svg"
+    assert path.parent.name == "frozen_article_taxonomy_static_v2"
     text = path.read_text(encoding="utf-8")
     assert "<svg" in text[:5000].lower()
     assert "Bray-Curtis NMDS" in text
     assert "RDA biplot" in text
+    assert "Lake / season" in text
+    assert "Environmental variable" in text
+    assert "Representative genus vector" in text
     assert path.stat().st_size > 100000

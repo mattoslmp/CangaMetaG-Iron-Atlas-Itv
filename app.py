@@ -32,6 +32,7 @@ TRANSFORMS = [
   Path(__file__).with_name("src") / "app_kegg_s67_axis_readability_transform.py",
   Path(__file__).with_name("src") / "app_public_scientific_traceability_only_transform.py",
   Path(__file__).with_name("src") / "app_corrected_taxonomy_static_assets_transform.py",
+  Path(__file__).with_name("src") / "app_exact_figure2_3_alignment_transform.py",
 ]
 
 source = CORE_PATH.read_text(encoding="utf-8")

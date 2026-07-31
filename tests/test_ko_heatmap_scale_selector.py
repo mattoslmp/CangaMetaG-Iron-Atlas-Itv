@@ -35,7 +35,7 @@ page_handler = page_handlers.get(selected_page)
 def test_transform_installs_one_selector_for_all_explicit_heatmap_pairs() -> None:
   transformed = _apply(_synthetic_source())
   compile(transformed, "synthetic_all_heatmap_selector.py", "exec")
-  assert "CANGAMETAG_ALL_HEATMAP_SCALE_SELECTOR_V3" in transformed
+  assert "CANGAMETAG_ALL_HEATMAP_SCALE_SELECTOR_V4" in transformed
   assert "Raw data" in transformed
   assert "Z-score" in transformed
   assert "Heatmap visualization" in transformed
@@ -65,12 +65,18 @@ def test_pair_detection_is_generic_and_not_limited_to_ko_heatmaps() -> None:
   assert "metatranscriptome" in transformed
 
 
-def test_functional_annotation_selector_uses_standard_labels() -> None:
+def test_functional_annotation_selector_uses_standard_labels_across_lines() -> None:
   source = _synthetic_source('''view_mode = st.radio(
   txt("Escala", "Scale"),
-  [txt("Contagem absoluta", "Absolute counts"), txt("Z-score por função", "Row z-score")],
+  [
+    txt("Contagem absoluta", "Absolute counts"),
+    txt("Z-score por função", "Row z-score"),
+  ],
 )
-zscore_rows = view_mode == txt("Z-score por função", "Row z-score")''')
+zscore_rows = view_mode == txt(
+  "Z-score por função",
+  "Row z-score",
+)''')
   transformed = _apply(source)
   assert '["Raw data", "Z-score"]' in transformed
   assert 'zscore_rows = view_mode == "Z-score"' in transformed
@@ -79,13 +85,21 @@ zscore_rows = view_mode == txt("Z-score por função", "Row z-score")''')
 
 
 def test_taxonomy_and_generic_single_heatmaps_use_standard_selector() -> None:
-  source = _synthetic_source('''zscore = st.checkbox(txt("Z-score por táxon no heatmap", "Row z-score in heatmap"), value=False, key=f"taxonomy_z_{level}_{hmode}")
-zscore = st.checkbox("Z-score por linha", value=False, key=f"{key_prefix}_z")''')
+  source = _synthetic_source('''zscore = st.checkbox(
+  txt("Z-score por táxon no heatmap", "Row z-score in heatmap"),
+  value=False,
+  key=f"taxonomy_z_{level}_{hmode}",
+)
+zscore = st.checkbox(
+  "Z-score por linha",
+  value=False,
+  key=f"{key_prefix}_z",
+)''')
   transformed = _apply(source)
   assert transformed.count('["Raw data", "Z-score"]') >= 2
-  assert 'zscore = heatmap_scale == "Z-score"' in transformed
+  assert transformed.count('zscore = heatmap_scale == "Z-score"') >= 2
   assert "Z-score por táxon no heatmap" not in transformed
-  assert 'st.checkbox("Z-score por linha"' not in transformed
+  assert 'st.checkbox(\n  "Z-score por linha"' not in transformed
 
 
 def test_selected_heatmap_keeps_specific_scientific_metadata() -> None:
@@ -100,6 +114,7 @@ def test_selected_heatmap_keeps_specific_scientific_metadata() -> None:
   assert "Per-KO row z-score" in transformed
   assert "scientific_output_files" in transformed
   assert "scientific_plotted_values_description" in transformed
+  assert "output_table is None" in transformed
 
 
 def test_plotted_values_tab_receives_view_specific_description() -> None:

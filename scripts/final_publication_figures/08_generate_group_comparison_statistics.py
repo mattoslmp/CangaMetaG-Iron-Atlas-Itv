@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
 from __future__ import annotations
 
-"""Generate the inferential tables shown below article boxplots and barplots.
+"""Generate inferential tables shown below article boxplots and barplots.
 
 The script uses the same functions imported by the Streamlit app. It writes:
 - alpha-diversity ANOVA/Kruskal-Wallis and Welch/Mann-Whitney results;
-- taxonomy barplot group tests for Phylum, Order, Family and Genus;
+- exact Figure 2/3 Top-14 seasonal barplot lake-comparison results;
+- taxonomy explorer group tests for Phylum, Order, Family and Genus;
 - Figure 4/5 NMDS/PCoA PERMANOVA/PERMDISP and global RDA results.
 """
 
@@ -23,12 +24,13 @@ from src.article_inference_reporting import inference_summary  # noqa: E402
 from src.article_inference_statistics import (  # noqa: E402
   alpha_diversity_group_tests,
   frozen_ordination_inference,
+  taxonomy_barplot_group_tests_from_table,
   taxonomy_explorer_group_tests,
 )
-from src.article_taxonomy import load_article_alpha_source  # noqa: E402
+from src.article_taxonomy import article_season_barplot, load_article_alpha_source  # noqa: E402
 
 
-SCRIPT_VERSION = "2026-07-31-final-v1"
+SCRIPT_VERSION = "2026-07-31-final-v2-exact-figure2-3-tests"
 
 
 def parse_args() -> argparse.Namespace:
@@ -63,7 +65,24 @@ def main() -> int:
   write_csv(alpha_tests, alpha_path, outputs, base_dir)
   summaries["alpha_diversity"] = inference_summary(alpha_tests)
 
-  taxonomy_tables = []
+  # Figures 2 and 3 use the exact Top-14 rule and separate Dry/Rainy panels.
+  for domain in ("Bacteria", "Archaea"):
+    figure_number = "Figure2" if domain == "Bacteria" else "Figure3"
+    for season in ("Dry", "Rainy"):
+      _, exact_table, _ = article_season_barplot(
+        domain,
+        "Phylum",
+        season,
+        top_n=14,
+        base_dir=base_dir,
+      )
+      tested = taxonomy_barplot_group_tests_from_table(exact_table)
+      path = derived / f"{figure_number}_{domain}_Phylum_{season}_lake_group_tests.csv"
+      write_csv(tested, path, outputs, base_dir)
+      summaries[f"{figure_number}_{domain}_{season}"] = inference_summary(tested)
+
+  # General explorer tables use the active Top-N parameter and test both lake
+  # and season factors for every displayed taxon.
   for domain in ("Bacteria", "Archaea"):
     for rank in ("Phylum", "Order", "Family", "Genus"):
       tested = taxonomy_explorer_group_tests(
@@ -74,7 +93,6 @@ def main() -> int:
       )
       if tested.empty:
         continue
-      taxonomy_tables.append(tested)
       path = derived / f"Taxonomy_{domain}_{rank}_top{args.top_n}_group_tests.csv"
       write_csv(tested, path, outputs, base_dir)
       summaries[f"taxonomy_{domain}_{rank}"] = inference_summary(tested)
@@ -108,10 +126,11 @@ def main() -> int:
       "ordination_dispersion": "PERMDISP/betadisper",
       "rda": "global permutation test from frozen article results",
     },
-    "top_n_taxa": args.top_n,
+    "figure2_3_top_n": 14,
+    "taxonomy_explorer_top_n": args.top_n,
     "permutations": args.permutations,
     "seed": args.seed,
-    "source_values_modified": False,
+    "source_values_modified": false,
     "outputs": outputs,
     "summaries": summaries,
   }

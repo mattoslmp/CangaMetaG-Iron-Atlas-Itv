@@ -132,3 +132,6 @@ def test_selector_is_last_transform_in_application_chain() -> None:
   figure45 = app.index("app_figure45_legend_below_final_transform.py")
   assert figure45 < selector
   assert selector == app.rindex("app_ko_heatmap_scale_selector_transform.py")
+
+
+# Technical pull-request validation marker; production code is already on main.

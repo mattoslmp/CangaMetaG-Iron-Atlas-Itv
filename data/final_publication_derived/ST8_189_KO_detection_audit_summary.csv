@@ -1,0 +1,4 @@
+scope,source_marker_count,selected_sample_count,detected_marker_count,undetected_marker_count,blank_numeric_cells,negative_numeric_cells,values_imputed,source
+Amazonian lake samples,189,20,172,17,0,0,False,Supplementary Table 8 — ST8 — all KO biomarkers
+External iron-rich records,189,67,183,6,0,0,False,Supplementary Table 8 — ST8 — all KO biomarkers
+All Supplementary Table 8 records,189,87,188,1,0,0,False,Supplementary Table 8 — ST8 — all KO biomarkers

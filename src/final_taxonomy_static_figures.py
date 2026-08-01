@@ -58,6 +58,12 @@ def _palette(taxa: list[str]) -> dict[str, str]:
   return palette
 
 
+def _configure_svg_text(matplotlib) -> None:
+  matplotlib.use("Agg")
+  matplotlib.rcParams["svg.fonttype"] = "none"
+  matplotlib.rcParams["font.family"] = "DejaVu Sans"
+
+
 def supplementary_taxonomy_barplot_svg(
   domain: str,
   *,
@@ -65,7 +71,7 @@ def supplementary_taxonomy_barplot_svg(
 ) -> bytes:
   import matplotlib
 
-  matplotlib.use("Agg")
+  _configure_svg_text(matplotlib)
   import matplotlib.pyplot as plt
   from matplotlib.patches import Patch
 
@@ -133,7 +139,7 @@ def supplementary_taxonomy_heatmap_svg(
 ) -> bytes:
   import matplotlib
 
-  matplotlib.use("Agg")
+  _configure_svg_text(matplotlib)
   import matplotlib.pyplot as plt
 
   labels = _labels(language)

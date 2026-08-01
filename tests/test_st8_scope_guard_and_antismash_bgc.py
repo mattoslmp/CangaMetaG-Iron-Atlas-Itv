@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+# Validation branch: exercise the same code already committed to main.
 from pathlib import Path
 import runpy
 

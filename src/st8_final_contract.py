@@ -38,8 +38,25 @@ MTX_IDENTIFIER_FIELDS = (
 )
 
 
+def _clean_excel_identifier(value: object) -> str:
+  text = str(value or "").strip()
+  if re.fullmatch(r"\d+\.0", text):
+    text = text[:-2]
+  return text
+
+
 def normalize_identifier(value: object) -> str:
-  return re.sub(r"[^a-z0-9]+", "", str(value or "").casefold())
+  return re.sub(r"[^a-z0-9]+", "", _clean_excel_identifier(value).casefold())
+
+
+def identifier_variants(value: object) -> list[str]:
+  text = _clean_excel_identifier(value)
+  if not text or text.casefold() in {"nan", "none", "na", "n/a", "<na>"}:
+    return []
+  variants = [text, normalize_identifier(text)]
+  if re.fullmatch(r"[sS]\d+\.0", str(value or "").strip()):
+    variants.extend([text[:-2], normalize_identifier(text[:-2])])
+  return list(dict.fromkeys(item for item in variants if item))
 
 
 def amazonian_sample_columns(columns: Iterable[object]) -> list[str]:
@@ -61,10 +78,28 @@ def _candidate_values(row: pd.Series, fields: Sequence[str]) -> list[str]:
   for field in fields:
     if field not in row.index:
       continue
-    value = str(row.get(field, "") or "").strip()
-    if value and value.casefold() not in {"nan", "none", "na", "n/a"} and value not in values:
+    value = _clean_excel_identifier(row.get(field, ""))
+    if value and value.casefold() not in {"nan", "none", "na", "n/a", "<na>"} and value not in values:
       values.append(value)
   return values
+
+
+def _identifier_matches_column(identifier: str, column: str) -> bool:
+  identifier = _clean_excel_identifier(identifier)
+  column = str(column or "").strip()
+  if not identifier or not column:
+    return False
+  if identifier == column:
+    return True
+  identifier_norm = normalize_identifier(identifier)
+  column_norm = normalize_identifier(column)
+  if identifier_norm and identifier_norm == column_norm:
+    return True
+  # Short study identifiers such as S2 must match a complete token, never S21.
+  if re.fullmatch(r"[A-Za-z]+\d+", identifier):
+    return bool(re.search(rf"(?<![A-Za-z0-9]){re.escape(identifier)}(?![A-Za-z0-9])", column, flags=re.I))
+  # Long identifiers (IMG/JGI OIDs, accessions) may be embedded in a composite header.
+  return len(identifier_norm) >= 6 and identifier_norm in column_norm
 
 
 def resolve_metatranscriptome_columns(
@@ -76,7 +111,8 @@ def resolve_metatranscriptome_columns(
   """Resolve every MTX row to exactly one source matrix column.
 
   Resolution order is exact matrix-field match, normalized matrix-field match,
-  and finally a unique identifier match. Output order follows the metadata.
+  exact/normalized identifier match, and finally a unique token-contained match.
+  Output order follows the metadata. Valid zeros and source values are untouched.
   """
   mtx = metatranscriptome_metadata(metadata)
   available = [str(column) for column in matrix_columns]
@@ -111,17 +147,15 @@ def resolve_metatranscriptome_columns(
           break
 
     if not match:
-      identifier_tokens = [normalize_identifier(value) for value in identifiers]
-      candidates = []
-      for column in available:
-        if column in used:
-          continue
-        normalized_column = normalize_identifier(column)
-        if any(len(token) >= 6 and token in normalized_column for token in identifier_tokens):
-          candidates.append(column)
-      if len(candidates) == 1:
-        match = candidates[0]
-        method = "unique identifier contained in matrix column"
+      for identifier in identifiers:
+        exact_candidates = [
+          column for column in available
+          if column not in used and _identifier_matches_column(identifier, column)
+        ]
+        if len(exact_candidates) == 1:
+          match = exact_candidates[0]
+          method = "unique metadata identifier match"
+          break
 
     resolved = row.to_dict()
     resolved.update({

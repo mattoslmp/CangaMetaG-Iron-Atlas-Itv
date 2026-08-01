@@ -22,8 +22,8 @@ ROOT = Path(__file__).resolve().parents[1]
 def test_strict_below_five_aggregation_preserves_totals_and_unclassified() -> None:
   counts = pd.DataFrame(
     {
-      "S1": [60, 4, 3, 33],
-      "S2": [50, 5, 2, 43],
+      "S1": [88.0, 4.0, 3.0, 5.0],
+      "S2": [87.0, 4.9, 3.1, 5.0],
     },
     index=["Pseudomonadota", "LowTaxon", "Unclassified", "ExactlyFive"],
     dtype=float,

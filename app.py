@@ -61,6 +61,7 @@ TRANSFORMS = [
   Path(__file__).with_name("src") / "app_mtx_alpha_taxonomy_public_transform.py",
   Path(__file__).with_name("src") / "app_runtime_name_guard_transform.py",
   Path(__file__).with_name("src") / "app_final_st8_ko_mtx_revision_transform.py",
+  Path(__file__).with_name("src") / "app_st8_mtx_identifier_resolution_transform.py",
   Path(__file__).with_name("src") / "app_visitor_map_city_final_transform.py",
   Path(__file__).with_name("src") / "app_figure45_legend_below_final_transform.py",
   Path(__file__).with_name("src") / "app_ko_heatmap_scale_selector_transform.py",

@@ -120,12 +120,15 @@ def test_real_app_core_public_phrases_are_cleaned() -> None:
     assert phrase not in transformed
 
 
-def test_figure45_and_ko_selector_are_loaded_after_other_runtime_wrappers() -> None:
+def test_figure45_layers_precede_final_scope_taxonomy_and_antismash_layers() -> None:
   app = (ROOT / "app.py").read_text(encoding="utf-8")
   language = app.index("app_full_figure_language_transform.py")
   st8 = app.index("app_final_st8_ko_mtx_revision_transform.py")
   visitor = app.index("app_visitor_map_city_final_transform.py")
   final_legend = app.index("app_figure45_legend_below_final_transform.py")
   ko_selector = app.index("app_ko_heatmap_scale_selector_transform.py")
-  assert language < st8 < visitor < final_legend < ko_selector
-  assert ko_selector == app.rindex("app_ko_heatmap_scale_selector_transform.py")
+  scope_guard = app.index("app_st8_scope_guard_antismash_bgc_transform.py")
+  taxonomy = app.index("app_final_taxonomy_lt5_current_transform.py")
+  antismash = app.index("app_antismash_supplementary_figure_transform.py")
+  assert language < st8 < visitor < final_legend < ko_selector < scope_guard < taxonomy < antismash
+  assert antismash == app.rindex("app_antismash_supplementary_figure_transform.py")

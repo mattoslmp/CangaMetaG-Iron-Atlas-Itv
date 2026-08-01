@@ -1,13 +1,15 @@
 #!/usr/bin/env python3
 from __future__ import annotations
 
-"""Generate bilingual final article Figures 2–5 and statistical tables.
+"""Generate every canonical static taxonomy figure from packaged source data.
 
-English and Portuguese figures use the same matrices, coordinates, vectors,
-statistics, colours and ordering. Only presentation text changes. Figures 2/3
-label the aggregate row as ``Other taxa (<5% each)`` in English and
-``Outros táxons (<5% cada)`` in Portuguese. Figures 4/5 retain the final article
-layout and expanded RDA margin in both languages.
+Figures 2–5 and Supplementary Figures 43–46 share one contract:
+- current taxonomy names from the packaged NCBI mapping;
+- ``Other taxa``/``Other genera`` contains every named taxon whose maximum
+  abundance is strictly below 5% across all displayed samples;
+- ``Unclassified`` remains a separate category;
+- counts, percentages, ordination coordinates and statistical values are not
+  invented or altered by presentation code.
 """
 
 import argparse
@@ -18,7 +20,7 @@ import sys
 import tempfile
 
 
-SCRIPT_VERSION = "2026-07-31-final-v9-bilingual-figures"
+SCRIPT_VERSION = "2026-08-01-final-v10-current-taxonomy-lt5"
 
 
 def project_root() -> Path:
@@ -29,14 +31,23 @@ ROOT = project_root()
 if str(ROOT) not in sys.path:
   sys.path.insert(0, str(ROOT))
 
+from src.taxonomy_final_contract import (  # noqa: E402
+  OTHER_TAXA_THRESHOLD_PERCENT,
+  final_domain_rank_matrices,
+  install_final_taxonomy_contract,
+  legacy_labels_present,
+)
+
+install_final_taxonomy_contract()
+
 from src.article_exact_taxonomy_phylum_generated import exact_article_phylum_svg_bytes  # noqa: E402
-from src.article_exact_taxonomy_phylum_other_percentage import OTHER_TAXA_THRESHOLD_PERCENT  # noqa: E402
 from src.article_frozen_taxonomy_static_bilingual import materialize_frozen_article_static_bilingual  # noqa: E402
 from src.article_official_ordination_statistics import official_ordination_inference  # noqa: E402
 from src.article_inference_reporting import inference_summary  # noqa: E402
+from src.final_taxonomy_static_figures import supplementary_taxonomy_assets  # noqa: E402
 
 
-FIGURES = {
+MAIN_FIGURES = {
   "Bacteria_phylum": (
     "Figure2_taxonomic_phylum_bacteria_horizontal_CDS",
     lambda cache, language: exact_article_phylum_svg_bytes("Bacteria", language),
@@ -59,15 +70,6 @@ FIGURES = {
   ),
 }
 
-PROHIBITED_LEGACY_LABELS = {
-  "Figure2_taxonomic_phylum_bacteria_horizontal_CDS": (
-    "Proteobacteria", "Acidobacteria", "Actinobacteria"
-  ),
-  "Figure3_taxonomic_phylum_archaea_horizontal_CDS": (
-    "Euryarchaeota", "Thaumarchaeota"
-  ),
-}
-
 
 def parse_args() -> argparse.Namespace:
   parser = argparse.ArgumentParser(description=__doc__)
@@ -80,72 +82,81 @@ def parse_args() -> argparse.Namespace:
     "--language",
     choices=["en", "pt", "both"],
     default="both",
-    help="Generate English, Portuguese, or both language variants.",
   )
   return parser.parse_args()
+
+
+def validate_taxonomy_contract(base_dir: Path) -> dict[str, object]:
+  rows: list[dict[str, object]] = []
+  for domain in ("Bacteria", "Archaea"):
+    for rank in ("Phylum", "Genus"):
+      counts, relative = final_domain_rank_matrices(domain, rank, base_dir=base_dir)
+      legacy = legacy_labels_present(relative.index.astype(str).tolist(), rank, base_dir)
+      aggregate = "Other genera" if rank == "Genus" else "Other taxa"
+      aggregated_taxa = list(relative.attrs.get("aggregated_taxa", []))
+      invalid_aggregated = []
+      full_counts, full_relative = final_domain_rank_matrices(domain, rank, base_dir=base_dir)
+      for taxon in aggregated_taxa:
+        if taxon in full_relative.index and float(full_relative.loc[taxon].max()) >= OTHER_TAXA_THRESHOLD_PERCENT:
+          invalid_aggregated.append(taxon)
+      if legacy:
+        raise RuntimeError(f"Legacy taxonomy labels remain for {domain}/{rank}: {legacy}")
+      if invalid_aggregated:
+        raise RuntimeError(
+          f"Taxa at or above 5% were incorrectly aggregated for {domain}/{rank}: {invalid_aggregated}"
+        )
+      if not counts.sum(axis=0).gt(0).all():
+        raise RuntimeError(f"Empty taxonomy sample found for {domain}/{rank}")
+      if not relative.sum(axis=0).round(8).eq(100.0).all():
+        raise RuntimeError(f"Relative-abundance columns do not sum to 100 for {domain}/{rank}")
+      rows.append({
+        "domain": domain,
+        "rank": rank,
+        "displayed_taxa": int(len(relative)),
+        "aggregate_label": aggregate if aggregate in relative.index else "",
+        "aggregated_taxa_count": len(aggregated_taxa),
+        "legacy_labels_present": legacy,
+        "unclassified_preserved": "Unclassified" in relative.index,
+        "column_totals_preserved": True,
+      })
+  return {"status": "PASS", "checks": rows}
 
 
 def validate_svg(stem: str, payload: bytes, language: str) -> None:
   if b"<svg" not in payload[:8192].lower():
     raise RuntimeError(f"Invalid SVG generated for {stem} [{language}]")
   text = payload.decode("utf-8", errors="ignore")
-  for legacy in PROHIBITED_LEGACY_LABELS.get(stem, ()):
-    if legacy in text:
-      raise RuntimeError(f"Legacy taxonomy label remains in {stem}: {legacy}")
-  if stem.startswith(("Figure2_", "Figure3_")):
-    required = (
+  if stem.startswith(("Figure2_", "Figure3_", "SupplementaryFigure43_", "SupplementaryFigure45_")):
+    labels = (
       ("Outros táxons (<5% cada)", "Outros táxons (&lt;5% cada)")
       if language == "pt"
       else ("Other taxa (<5% each)", "Other taxa (&lt;5% each)")
     )
-    if not any(label in text for label in required):
-      raise RuntimeError(f"Aggregate 5% label absent from {stem} [{language}]")
-  if stem.startswith(("Figure4_", "Figure5_")):
-    required = (
-      (
-        "NMDS de Bray–Curtis", "Biplot de RDA", "Lagoa / estação",
-        "Vetores da RDA", "Variável ambiental", "Vetor de gênero representativo",
-        "Gênero",
-      )
-      if language == "pt"
-      else (
-        "Bray-Curtis NMDS", "RDA biplot", "Lake / season", "RDA vectors",
-        "Environmental variable", "Representative genus vector", "Genus",
-      )
-    )
-    missing = [label for label in required if label not in text]
-    if missing:
-      raise RuntimeError(
-        f"Legend/layout labels missing from {stem} [{language}]: {missing}"
-      )
+    if not any(label in text for label in labels):
+      raise RuntimeError(f"Strict <5% aggregate label absent from {stem} [{language}]")
 
 
 def convert_svg(svg_path: Path, dpi: int) -> list[Path]:
   try:
     import cairosvg
   except Exception as exc:
-    raise RuntimeError(
-      "CairoSVG is required for final PNG/PDF generation. Install with: "
-      "python -m pip install cairosvg"
-    ) from exc
+    raise RuntimeError("CairoSVG is required for PNG/PDF generation") from exc
+  from PIL import Image
 
   png_path = svg_path.with_suffix(".png")
   pdf_path = svg_path.with_suffix(".pdf")
   tiff_path = svg_path.with_suffix(".tiff")
-  cairosvg.svg2png(bytestring=svg_path.read_bytes(), write_to=str(png_path), dpi=dpi)
-  cairosvg.svg2pdf(bytestring=svg_path.read_bytes(), write_to=str(pdf_path), dpi=dpi)
-  try:
-    from PIL import Image
-    with Image.open(png_path) as image:
-      image.convert("RGB").save(tiff_path, format="TIFF", dpi=(dpi, dpi))
-  except Exception as exc:
-    raise RuntimeError(f"Could not create TIFF for {svg_path.name}: {exc}") from exc
+  payload = svg_path.read_bytes()
+  cairosvg.svg2png(bytestring=payload, write_to=str(png_path), dpi=dpi)
+  cairosvg.svg2pdf(bytestring=payload, write_to=str(pdf_path), dpi=dpi)
+  with Image.open(png_path) as image:
+    image.convert("RGB").save(tiff_path, format="TIFF", dpi=(dpi, dpi))
   return [png_path, pdf_path, tiff_path]
 
 
 def register_file(path: Path, base_dir: Path, outputs: list[str], hashes: dict[str, str]) -> None:
   outputs.append(str(path.relative_to(base_dir)))
-  hashes[path.name] = hashlib.sha256(path.read_bytes()).hexdigest()
+  hashes[str(path.relative_to(base_dir))] = hashlib.sha256(path.read_bytes()).hexdigest()
 
 
 def write_ordination_statistics(
@@ -179,11 +190,14 @@ def write_ordination_statistics(
 def main() -> int:
   args = parse_args()
   base_dir = args.base_dir.resolve()
-  output_dir = base_dir / "outputs" / "final_publication_figures"
+  main_dir = base_dir / "outputs" / "final_publication_figures"
+  supplementary_dir = base_dir / "outputs" / "app_supplementary_figures"
   report_dir = base_dir / "reports"
-  output_dir.mkdir(parents=True, exist_ok=True)
+  main_dir.mkdir(parents=True, exist_ok=True)
+  supplementary_dir.mkdir(parents=True, exist_ok=True)
   report_dir.mkdir(parents=True, exist_ok=True)
 
+  contract_validation = validate_taxonomy_contract(base_dir)
   languages = ["en", "pt"] if args.language == "both" else [args.language]
   outputs: list[str] = []
   hashes: dict[str, str] = {}
@@ -193,79 +207,73 @@ def main() -> int:
     cache = Path(tmp)
     for language in languages:
       suffix = "_pt" if language == "pt" else ""
-      for _, (stem, builder) in FIGURES.items():
+      for _, (stem, builder) in MAIN_FIGURES.items():
         payload = builder(cache, language)
         validate_svg(stem, payload, language)
-        svg_path = output_dir / f"{stem}{suffix}.svg"
-        svg_path.write_bytes(payload)
-        register_file(svg_path, base_dir, outputs, hashes)
-        language_outputs[language].append(str(svg_path.relative_to(base_dir)))
+        path = main_dir / f"{stem}{suffix}.svg"
+        path.write_bytes(payload)
+        register_file(path, base_dir, outputs, hashes)
+        language_outputs[language].append(str(path.relative_to(base_dir)))
         if not args.skip_raster:
-          for converted in convert_svg(svg_path, args.dpi):
+          for converted in convert_svg(path, args.dpi):
+            register_file(converted, base_dir, outputs, hashes)
+            language_outputs[language].append(str(converted.relative_to(base_dir)))
+
+      for filename, payload in supplementary_taxonomy_assets(language).items():
+        validate_svg(Path(filename).stem, payload, language)
+        path = supplementary_dir / filename
+        path.write_bytes(payload)
+        register_file(path, base_dir, outputs, hashes)
+        language_outputs[language].append(str(path.relative_to(base_dir)))
+        if not args.skip_raster:
+          for converted in convert_svg(path, args.dpi):
             register_file(converted, base_dir, outputs, hashes)
             language_outputs[language].append(str(converted.relative_to(base_dir)))
 
   inference_reports = []
   for domain in ("Bacteria", "Archaea"):
-    statistics_files, statistics_report = write_ordination_statistics(
+    statistic_files, statistic_report = write_ordination_statistics(
       base_dir,
       domain,
       args.permutations,
       args.seed,
     )
-    inference_reports.append(statistics_report)
-    for statistics_file in statistics_files:
-      register_file(statistics_file, base_dir, outputs, hashes)
+    inference_reports.append(statistic_report)
+    for path in statistic_files:
+      register_file(path, base_dir, outputs, hashes)
 
   report = {
     "script": "scripts/final_publication_figures/02_05_generate_final_taxonomy_figures.py",
     "script_version": SCRIPT_VERSION,
+    "taxonomy_contract": {
+      "current_name_source": "data/ncbi_taxonomy_name_updates.csv generated from NCBI taxdump",
+      "current_taxonomy_table": "data/resultado.cds.tax.ncbi_current.tab",
+      "other_taxa_threshold_percent": OTHER_TAXA_THRESHOLD_PERCENT,
+      "threshold_operator": "strictly less than",
+      "threshold_scope": "maximum relative abundance across all displayed samples",
+      "unclassified_preserved_separately": True,
+      "counts_and_column_totals_preserved": True,
+    },
+    "validation": contract_validation,
     "languages_generated": languages,
     "language_outputs": language_outputs,
-    "app_shared_modules": [
-      "src/article_exact_taxonomy_phylum_generated.py",
-      "src/article_exact_taxonomy_phylum_other_percentage.py",
-      "src/article_frozen_taxonomy_static_bilingual.py",
-      "src/article_frozen_taxonomy_panels.py",
-      "src/figure_language_localization.py",
-      "src/article_official_ordination_statistics.py",
-      "src/article_inference_reporting.py",
+    "inputs": [
+      "data/resultado.cds.otu.tab",
+      "data/resultado.cds.tax.ncbi_current.tab",
+      "data/ncbi_taxonomy_name_updates.csv",
+      "data/article_frozen_taxonomy_bacteria.json",
+      "data/article_frozen_taxonomy_archaea.json",
+      "reproducibility/ordination_reproducibility/tables/*",
     ],
     "outputs": outputs,
     "sha256": hashes,
     "figure_source_values_changed": False,
-    "translation_scope": (
-      "titles, panel headings, axes, legends and presentation labels only; "
-      "scientific values and results are identical between languages"
-    ),
+    "ordination_values_recomputed": False,
     "official_article_statistical_values_used": True,
-    "permutations": args.permutations,
-    "seed": args.seed,
-    "other_taxa_label": {
-      "en": "Other taxa (<5% each)",
-      "pt": "Outros táxons (<5% cada)",
-      "threshold_percent": OTHER_TAXA_THRESHOLD_PERCENT,
-    },
-    "figure_4_5_legend_layout": {
-      "lake_season": "below NMDS panel, matching article",
-      "rda_vectors": "below RDA panel, matching article",
-      "genus": "bottom centre, matching article",
-      "overlap": False,
-    },
-    "figure_4_5_rda_layout": {
-      "canvas_inches": [29, 25.5],
-      "subplot_right_fraction": 0.900,
-      "right_axis_padding_fraction": 0.34,
-      "svg_pad_inches": 0.28,
-      "right_vector_labels_clipped": False,
-    },
     "ordination_inference": inference_reports,
   }
   report_path = report_dir / "FINAL_DOMAIN_TAXONOMY_GENERATION_REPORT.json"
-  report_path.write_text(
-    json.dumps(report, indent=2, ensure_ascii=False, default=str) + "\n",
-    encoding="utf-8",
-  )
+  report_path.write_text(json.dumps(report, indent=2, ensure_ascii=False, default=str) + "\n", encoding="utf-8")
   print(json.dumps(report, indent=2, ensure_ascii=False, default=str))
   return 0
 

@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+# Validation branch: run the complete workflow against the current main state.
 from pathlib import Path
 import runpy
 

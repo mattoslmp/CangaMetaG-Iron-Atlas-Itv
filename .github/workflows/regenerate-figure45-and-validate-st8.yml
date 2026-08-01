@@ -1,67 +1,65 @@
-name: Regenerate Figure 4/5 and validate ST8 MTX
+name: Regenerate final figures and validate scientific contracts
 
 on:
   workflow_dispatch:
   push:
     branches:
       - main
+      - fix/st8-excel-identifiers-final
     paths:
       - "app.py"
-      - "src/article_figure45_final_generator.py"
-      - "src/figure45_large_legend_runtime.py"
-      - "src/app_figure45_legend_below_final_transform.py"
-      - "src/app_ko_heatmap_scale_selector_transform.py"
-      - "src/st8_final_contract.py"
-      - "src/antismash_metabolism_runtime.py"
-      - "src/app_st8_scope_guard_antismash_bgc_transform.py"
-      - "scripts/figures/generate_article_figure45_final.py"
-      - "scripts/figures/generate_st8_ko_mtx_final_figures.py"
-      - "scripts/figures/validate_st8_mtx_values.py"
-      - "tests/test_article_figure45_final_generator.py"
-      - "tests/test_figure45_legend_below_final.py"
-      - "tests/test_ko_heatmap_scale_selector.py"
-      - "tests/test_st8_final_contract.py"
-      - "tests/test_st8_mtx_value_diagnostics.py"
-      - "tests/test_st8_scope_guard_and_antismash_bgc.py"
+      - "src/**"
+      - "scripts/final_publication_figures/**"
+      - "scripts/figures/**"
+      - "scripts/FINAL_SCRIPT_MANIFEST.json"
+      - "tests/**"
+      - "data/resultado.cds.otu.tab"
+      - "data/resultado.cds.tax.tab"
+      - "data/resultado.cds.tax.ncbi_current.tab"
+      - "data/ncbi_taxonomy_name_updates.csv"
+      - "data/taxonomy_palette.json"
       - "data/article_frozen_taxonomy_bacteria.json"
       - "data/article_frozen_taxonomy_archaea.json"
+      - "data/kegg_modules/mags/gbk_antismash/**"
+      - "data/antismash/**"
       - "tables/Supplementary_Table_8.xlsx"
+      - "reproducibility/ordination_reproducibility/tables/**"
       - ".github/workflows/regenerate-figure45-and-validate-st8.yml"
   pull_request:
     branches:
       - main
     paths:
       - "app.py"
-      - "src/article_figure45_final_generator.py"
-      - "src/figure45_large_legend_runtime.py"
-      - "src/app_figure45_legend_below_final_transform.py"
-      - "src/app_ko_heatmap_scale_selector_transform.py"
-      - "src/st8_final_contract.py"
-      - "src/antismash_metabolism_runtime.py"
-      - "src/app_st8_scope_guard_antismash_bgc_transform.py"
-      - "scripts/figures/generate_article_figure45_final.py"
-      - "scripts/figures/generate_st8_ko_mtx_final_figures.py"
-      - "scripts/figures/validate_st8_mtx_values.py"
-      - "tests/test_article_figure45_final_generator.py"
-      - "tests/test_figure45_legend_below_final.py"
-      - "tests/test_ko_heatmap_scale_selector.py"
-      - "tests/test_st8_final_contract.py"
-      - "tests/test_st8_mtx_value_diagnostics.py"
-      - "tests/test_st8_scope_guard_and_antismash_bgc.py"
+      - "src/**"
+      - "scripts/final_publication_figures/**"
+      - "scripts/figures/**"
+      - "scripts/FINAL_SCRIPT_MANIFEST.json"
+      - "tests/**"
+      - "data/resultado.cds.otu.tab"
+      - "data/resultado.cds.tax.tab"
+      - "data/resultado.cds.tax.ncbi_current.tab"
+      - "data/ncbi_taxonomy_name_updates.csv"
+      - "data/taxonomy_palette.json"
+      - "data/article_frozen_taxonomy_bacteria.json"
+      - "data/article_frozen_taxonomy_archaea.json"
+      - "data/kegg_modules/mags/gbk_antismash/**"
+      - "data/antismash/**"
+      - "tables/Supplementary_Table_8.xlsx"
+      - "reproducibility/ordination_reproducibility/tables/**"
       - ".github/workflows/regenerate-figure45-and-validate-st8.yml"
 
 permissions:
   contents: write
 
 concurrency:
-  group: regenerate-figure45-st8-${{ github.ref }}
+  group: final-figures-scientific-contracts-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
   regenerate-and-validate:
     runs-on: ubuntu-latest
     steps:
-      - name: Check out required repository paths
+      - name: Check out scientific inputs, scripts and outputs
         uses: actions/checkout@v4
         with:
           fetch-depth: 1
@@ -73,19 +71,26 @@ jobs:
             /app.py
             /app_core.py
             /src/
+            /scripts/final_publication_figures/
             /scripts/figures/
+            /scripts/FINAL_SCRIPT_MANIFEST.json
             /tests/
+            /data/resultado.cds.otu.tab
+            /data/resultado.cds.tax.tab
+            /data/resultado.cds.tax.ncbi_current.tab
+            /data/ncbi_taxonomy_name_updates.csv
+            /data/taxonomy_palette.json
             /data/article_frozen_taxonomy_bacteria.json
             /data/article_frozen_taxonomy_archaea.json
             /data/final_publication_derived/
             /data/kegg_modules/mags/gbk_antismash/
             /data/antismash/
+            /reproducibility/ordination_reproducibility/tables/
             /tables/Supplementary_Table_8.xlsx
             /outputs/antismash/
-            /outputs/final_publication_figures/Figure4_taxonomic_bacteria_genus_profiles.*
-            /outputs/final_publication_figures/Figure5_taxonomic_archaea_genus_profiles.*
-            /outputs/app_supplementary_figures/Figure4_taxonomic_bacteria_genus_profiles.*
-            /outputs/app_supplementary_figures/Figure5_taxonomic_archaea_genus_profiles.*
+            /outputs/final_publication_figures/
+            /outputs/app_supplementary_figures/
+            /reports/
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -97,11 +102,60 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           python -m pip install \
-            numpy pandas matplotlib plotly openpyxl pillow pypdf pytest streamlit
+            numpy pandas matplotlib plotly openpyxl pillow pypdf pytest streamlit \
+            cairosvg pycountry
 
-      - name: Regenerate Figures 4 and 5 from packaged inputs
+      - name: Preserve legacy Figure 4/5 validation manifest
         run: |
           python scripts/figures/generate_article_figure45_final.py --root .
+
+      - name: Regenerate all taxonomy figures from current-name source data
+        run: |
+          python scripts/final_publication_figures/02_05_generate_final_taxonomy_figures.py \
+            --base-dir . \
+            --language both \
+            --skip-raster
+
+      - name: Generate antiSMASH Supplementary Figure 68 and evidence table
+        run: |
+          python scripts/final_publication_figures/09_generate_antismash_bgc_supplementary_figure.py \
+            --base-dir . \
+            --skip-raster
+
+      - name: Create PNG and PDF copies without oversized TIFF files
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import cairosvg
+
+          patterns = [
+            "outputs/final_publication_figures/Figure2_taxonomic_phylum_bacteria_horizontal_CDS*.svg",
+            "outputs/final_publication_figures/Figure3_taxonomic_phylum_archaea_horizontal_CDS*.svg",
+            "outputs/final_publication_figures/Figure4_taxonomic_bacteria_genus_profiles*.svg",
+            "outputs/final_publication_figures/Figure5_taxonomic_archaea_genus_profiles*.svg",
+            "outputs/app_supplementary_figures/SupplementaryFigure43_Taxonomy_Bacteria_Phylum_individual_samples_barplot_100pct*.svg",
+            "outputs/app_supplementary_figures/SupplementaryFigure44_Taxonomy_Bacteria_Phylum_individual_samples_heatmap_relative_abundance*.svg",
+            "outputs/app_supplementary_figures/SupplementaryFigure45_Taxonomy_Archaea_Phylum_individual_samples_barplot_100pct*.svg",
+            "outputs/app_supplementary_figures/SupplementaryFigure46_Taxonomy_Archaea_Phylum_individual_samples_heatmap_relative_abundance*.svg",
+            "outputs/app_supplementary_figures/SupplementaryFigure68_antiSMASH_BGC_iron_metals_carbon_evidence.svg",
+          ]
+          paths = sorted({path for pattern in patterns for path in Path(".").glob(pattern)})
+          if len(paths) < 17:
+            raise SystemExit(f"Expected at least 17 final SVGs, found {len(paths)}")
+          for svg_path in paths:
+            payload = svg_path.read_bytes()
+            cairosvg.svg2png(
+              bytestring=payload,
+              write_to=str(svg_path.with_suffix(".png")),
+              dpi=220,
+            )
+            cairosvg.svg2pdf(
+              bytestring=payload,
+              write_to=str(svg_path.with_suffix(".pdf")),
+              dpi=220,
+            )
+          print(f"Converted {len(paths)} final SVG files to PNG and PDF")
+          PY
 
       - name: Validate all 189 KOs across the 12 MTX samples
         run: |
@@ -115,86 +169,153 @@ jobs:
             tests/test_ko_heatmap_scale_selector.py \
             tests/test_st8_final_contract.py \
             tests/test_st8_mtx_value_diagnostics.py \
-            tests/test_st8_scope_guard_and_antismash_bgc.py
+            tests/test_st8_scope_guard_and_antismash_bgc.py \
+            tests/test_taxonomy_final_contract.py \
+            tests/test_antismash_supplementary_figure.py \
+            tests/test_visitor_self_contained_map.py
 
-      - name: Compile complete application transform chain
+      - name: Compile final scripts, runtime modules and transforms
         run: |
           python -m py_compile \
             app.py \
             src/st8_final_contract.py \
             src/antismash_metabolism_runtime.py \
-            src/app_st8_scope_guard_antismash_bgc_transform.py
+            src/antismash_supplementary_figure.py \
+            src/taxonomy_final_contract.py \
+            src/final_taxonomy_static_figures.py \
+            src/visitor_self_contained_map.py \
+            src/app_st8_scope_guard_antismash_bgc_transform.py \
+            src/app_final_taxonomy_lt5_current_transform.py \
+            src/app_antismash_supplementary_figure_transform.py \
+            src/app_visitor_map_city_final_transform.py \
+            scripts/final_publication_figures/02_05_generate_final_taxonomy_figures.py \
+            scripts/final_publication_figures/09_generate_antismash_bgc_supplementary_figure.py
 
-      - name: Verify generated deliverables
+      - name: Verify generated scientific deliverables
         run: |
           python - <<'PY'
           import json
           from pathlib import Path
+          import re
 
           import pandas as pd
 
           required = [
+            Path("outputs/final_publication_figures/Figure2_taxonomic_phylum_bacteria_horizontal_CDS.svg"),
+            Path("outputs/final_publication_figures/Figure3_taxonomic_phylum_archaea_horizontal_CDS.svg"),
             Path("outputs/final_publication_figures/Figure4_taxonomic_bacteria_genus_profiles.svg"),
-            Path("outputs/final_publication_figures/Figure4_taxonomic_bacteria_genus_profiles.png"),
-            Path("outputs/final_publication_figures/Figure4_taxonomic_bacteria_genus_profiles.pdf"),
             Path("outputs/final_publication_figures/Figure5_taxonomic_archaea_genus_profiles.svg"),
-            Path("outputs/final_publication_figures/Figure5_taxonomic_archaea_genus_profiles.png"),
-            Path("outputs/final_publication_figures/Figure5_taxonomic_archaea_genus_profiles.pdf"),
+            Path("outputs/app_supplementary_figures/SupplementaryFigure43_Taxonomy_Bacteria_Phylum_individual_samples_barplot_100pct.svg"),
+            Path("outputs/app_supplementary_figures/SupplementaryFigure44_Taxonomy_Bacteria_Phylum_individual_samples_heatmap_relative_abundance.svg"),
+            Path("outputs/app_supplementary_figures/SupplementaryFigure45_Taxonomy_Archaea_Phylum_individual_samples_barplot_100pct.svg"),
+            Path("outputs/app_supplementary_figures/SupplementaryFigure46_Taxonomy_Archaea_Phylum_individual_samples_heatmap_relative_abundance.svg"),
+            Path("outputs/app_supplementary_figures/SupplementaryFigure68_antiSMASH_BGC_iron_metals_carbon_evidence.svg"),
+            Path("data/final_publication_derived/antiSMASH_BGC_iron_metals_carbon_evidence.csv"),
+            Path("reports/FINAL_ANTISMASH_BGC_SUPPLEMENTARY_FIGURE_REPORT.json"),
+            Path("reports/FINAL_DOMAIN_TAXONOMY_GENERATION_REPORT.json"),
             Path("data/final_publication_derived/Figure45_final_generation_manifest.csv"),
             Path("data/final_publication_derived/ST8_MTX_value_validation.json"),
             Path("data/final_publication_derived/ST8_MTX_KO_value_status.csv"),
             Path("data/final_publication_derived/ST8_MTX_source_cell_issues.csv"),
           ]
+          required += [path.with_suffix(extension) for path in required[:9] for extension in (".png", ".pdf")]
           missing = [str(path) for path in required if not path.is_file() or path.stat().st_size == 0]
           if missing:
             raise SystemExit("Missing generated files: " + ", ".join(missing))
 
-          manifest = pd.read_csv(
+          taxonomy_report = json.loads(
+            Path("reports/FINAL_DOMAIN_TAXONOMY_GENERATION_REPORT.json").read_text(encoding="utf-8")
+          )
+          if taxonomy_report.get("validation", {}).get("status") != "PASS":
+            raise SystemExit("Final taxonomy contract did not pass")
+          contract = taxonomy_report.get("taxonomy_contract", {})
+          if contract.get("other_taxa_threshold_percent") != 5.0:
+            raise SystemExit("The final taxonomy threshold is not 5%")
+          if contract.get("threshold_operator") != "strictly less than":
+            raise SystemExit("The final taxonomy threshold must be strictly <5%")
+          if contract.get("unclassified_preserved_separately") is not True:
+            raise SystemExit("Unclassified must remain separate from Other taxa")
+
+          figure_text = "\n".join(
+            path.read_text(encoding="utf-8", errors="ignore")
+            for path in required[:8]
+          )
+          if re.search(r">\s*Proteobacteria\s*<", figure_text):
+            raise SystemExit("Legacy Proteobacteria label remains in a final taxonomy figure")
+          if "Pseudomonadota" not in figure_text:
+            raise SystemExit("Current Pseudomonadota label is absent from final taxonomy figures")
+          if not ("Other taxa (&lt;5% each)" in figure_text or "Other taxa (<5% each)" in figure_text):
+            raise SystemExit("The Other taxa <5% legend is absent")
+
+          antismash_report = json.loads(
+            Path("reports/FINAL_ANTISMASH_BGC_SUPPLEMENTARY_FIGURE_REPORT.json").read_text(encoding="utf-8")
+          )
+          if antismash_report.get("generative_image_model_used") is not False:
+            raise SystemExit("Supplementary Figure 68 must be deterministic, not generative")
+          supplementary_text = Path(
+            "outputs/app_supplementary_figures/SupplementaryFigure68_antiSMASH_BGC_iron_metals_carbon_evidence.svg"
+          ).read_text(encoding="utf-8")
+          for token in (
+            "09_generate_antismash_bgc_supplementary_figure.py",
+            "region*.gbk",
+            "antiSMASH_BGC_iron_metals_carbon_evidence.csv",
+            "No generative image model was used",
+          ):
+            if token not in supplementary_text:
+              raise SystemExit(f"Supplementary Figure 68 provenance is missing: {token}")
+
+          figure45_manifest = pd.read_csv(
             "data/final_publication_derived/Figure45_final_generation_manifest.csv"
           )
-          if len(manifest) != 2 or set(manifest["figure"].astype(int)) != {4, 5}:
-            raise SystemExit("Figure 4/5 generation manifest is incomplete")
-          if not manifest["large_legend_layout"].astype(str).str.casefold().eq("true").all():
-            raise SystemExit("Large bottom legends were not recorded for both figures")
-          if not pd.to_numeric(manifest["legend_font_size_pt"]).ge(18).all():
-            raise SystemExit("Figure legend font is smaller than 18 pt")
-          if not pd.to_numeric(manifest["legend_title_font_size_pt"]).ge(21).all():
-            raise SystemExit("Figure legend title is smaller than 21 pt")
-          if manifest["scientific_values_changed"].astype(str).str.casefold().eq("true").any():
-            raise SystemExit("Scientific values must not change during layout regeneration")
+          if len(figure45_manifest) != 2 or set(figure45_manifest["figure"].astype(int)) != {4, 5}:
+            raise SystemExit("Figure 4/5 validation manifest is incomplete")
 
-          validation = json.loads(
+          st8 = json.loads(
             Path("data/final_publication_derived/ST8_MTX_value_validation.json").read_text(encoding="utf-8")
           )
-          if validation.get("status") != "PASS":
+          if st8.get("status") != "PASS":
             raise SystemExit("ST8 MTX validation did not pass")
-          if validation.get("KO_rows_classified") != 189:
-            raise SystemExit("Not all 189 KOs were classified")
-          if validation.get("resolved_mtx_column_count") != 12:
-            raise SystemExit("Not all 12 MTX columns were resolved")
-          if validation.get("source_issue_cells") != 0:
+          if st8.get("KO_rows_classified") != 189 or st8.get("resolved_mtx_column_count") != 12:
+            raise SystemExit("ST8 must contain 189 KOs across 12 resolved MTX samples")
+          if st8.get("source_issue_cells") != 0:
             raise SystemExit("Missing or non-numeric MTX source cells remain")
           PY
 
-      - name: Commit regenerated figures and internal validation tables
+      - name: Commit regenerated figures and validation reports
         if: github.event_name == 'push'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add \
+          git add -- \
+            outputs/final_publication_figures/Figure2_taxonomic_phylum_bacteria_horizontal_CDS.* \
+            outputs/final_publication_figures/Figure2_taxonomic_phylum_bacteria_horizontal_CDS_pt.* \
+            outputs/final_publication_figures/Figure3_taxonomic_phylum_archaea_horizontal_CDS.* \
+            outputs/final_publication_figures/Figure3_taxonomic_phylum_archaea_horizontal_CDS_pt.* \
             outputs/final_publication_figures/Figure4_taxonomic_bacteria_genus_profiles.* \
+            outputs/final_publication_figures/Figure4_taxonomic_bacteria_genus_profiles_pt.* \
             outputs/final_publication_figures/Figure5_taxonomic_archaea_genus_profiles.* \
-            outputs/app_supplementary_figures/Figure4_taxonomic_bacteria_genus_profiles.* \
-            outputs/app_supplementary_figures/Figure5_taxonomic_archaea_genus_profiles.* \
+            outputs/final_publication_figures/Figure5_taxonomic_archaea_genus_profiles_pt.* \
+            outputs/app_supplementary_figures/SupplementaryFigure43_Taxonomy_Bacteria_Phylum_individual_samples_barplot_100pct*.* \
+            outputs/app_supplementary_figures/SupplementaryFigure44_Taxonomy_Bacteria_Phylum_individual_samples_heatmap_relative_abundance*.* \
+            outputs/app_supplementary_figures/SupplementaryFigure45_Taxonomy_Archaea_Phylum_individual_samples_barplot_100pct*.* \
+            outputs/app_supplementary_figures/SupplementaryFigure46_Taxonomy_Archaea_Phylum_individual_samples_heatmap_relative_abundance*.* \
+            outputs/app_supplementary_figures/SupplementaryFigure68_antiSMASH_BGC_iron_metals_carbon_evidence.* \
+            data/final_publication_derived/antiSMASH_BGC_iron_metals_carbon_evidence.csv \
+            data/final_publication_derived/Figure4_Bacteria_NMDS_PCoA_PERMANOVA_PERMDISP.csv \
+            data/final_publication_derived/Figure4_Bacteria_RDA_global_statistics.csv \
+            data/final_publication_derived/Figure5_Archaea_NMDS_PCoA_PERMANOVA_PERMDISP.csv \
+            data/final_publication_derived/Figure5_Archaea_RDA_global_statistics.csv \
             data/final_publication_derived/Figure45_final_generation_manifest.csv \
             data/final_publication_derived/ST8_metatranscriptome_12_sample_resolution.csv \
             data/final_publication_derived/ST8_MTX_KO_value_status.csv \
             data/final_publication_derived/ST8_MTX_source_cell_issues.csv \
             data/final_publication_derived/ST8_MTX_sample_value_summary.csv \
-            data/final_publication_derived/ST8_MTX_value_validation.json
+            data/final_publication_derived/ST8_MTX_value_validation.json \
+            reports/FINAL_DOMAIN_TAXONOMY_GENERATION_REPORT.json \
+            reports/FINAL_ANTISMASH_BGC_SUPPLEMENTARY_FIGURE_REPORT.json
           if git diff --cached --quiet; then
             echo "Generated outputs are already current."
           else
-            git commit -m "Regenerate enlarged Figure 4/5 assets and ST8 MTX validation [skip ci]"
-            git push origin HEAD:main
+            git commit -m "Regenerate current-taxonomy and antiSMASH figures [skip ci]"
+            git push origin "HEAD:${GITHUB_REF_NAME}"
           fi

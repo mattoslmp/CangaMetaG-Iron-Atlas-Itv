@@ -128,9 +128,12 @@ def test_plotted_values_tab_receives_view_specific_description() -> None:
   assert "_scientific_render_tables(groups[\"plotted\"]" in transformed
 
 
-def test_selector_is_last_transform_in_application_chain() -> None:
+def test_final_transform_order_preserves_each_scientific_layer() -> None:
   app = (ROOT / "app.py").read_text(encoding="utf-8")
-  selector = app.index("app_ko_heatmap_scale_selector_transform.py")
   figure45 = app.index("app_figure45_legend_below_final_transform.py")
-  assert figure45 < selector
-  assert selector == app.rindex("app_ko_heatmap_scale_selector_transform.py")
+  selector = app.index("app_ko_heatmap_scale_selector_transform.py")
+  scope_guard = app.index("app_st8_scope_guard_antismash_bgc_transform.py")
+  taxonomy = app.index("app_final_taxonomy_lt5_current_transform.py")
+  antismash = app.index("app_antismash_supplementary_figure_transform.py")
+  assert figure45 < selector < scope_guard < taxonomy < antismash
+  assert antismash == app.rindex("app_antismash_supplementary_figure_transform.py")

@@ -65,6 +65,8 @@ TRANSFORMS = [
   Path(__file__).with_name("src") / "app_figure45_legend_below_final_transform.py",
   Path(__file__).with_name("src") / "app_ko_heatmap_scale_selector_transform.py",
   Path(__file__).with_name("src") / "app_st8_scope_guard_antismash_bgc_transform.py",
+  Path(__file__).with_name("src") / "app_final_taxonomy_lt5_current_transform.py",
+  Path(__file__).with_name("src") / "app_antismash_supplementary_figure_transform.py",
 ]
 
 

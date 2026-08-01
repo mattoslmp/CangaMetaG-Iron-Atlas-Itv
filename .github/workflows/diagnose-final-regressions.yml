@@ -24,7 +24,26 @@ permissions:
 
 jobs:
   diagnose:
+    name: ${{ matrix.name }}
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - name: Figure 4-5 static generator
+            command: python -m pytest -vv tests/test_article_figure45_final_generator.py
+          - name: Figure 4-5 app transform
+            command: python -m pytest -vv tests/test_figure45_legend_below_final.py
+          - name: Existing ST8 contracts
+            command: python -m pytest -q tests/test_ko_heatmap_scale_selector.py tests/test_st8_final_contract.py tests/test_st8_mtx_value_diagnostics.py tests/test_st8_scope_guard_and_antismash_bgc.py
+          - name: Current taxonomy below-five
+            command: python -m pytest -vv tests/test_taxonomy_final_contract.py
+          - name: antiSMASH Supplementary Figure 68
+            command: python -m pytest -vv tests/test_antismash_supplementary_figure.py
+          - name: Self-contained visitor map
+            command: python -m pytest -vv tests/test_visitor_self_contained_map.py
+          - name: Final module compilation
+            command: python -m py_compile app.py src/taxonomy_final_contract.py src/final_taxonomy_static_figures.py src/antismash_supplementary_figure.py src/visitor_self_contained_map.py src/app_final_script_manifest_transform.py src/app_final_taxonomy_lt5_current_transform.py src/app_antismash_supplementary_figure_transform.py src/app_visitor_map_city_final_transform.py
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
@@ -45,44 +64,5 @@ jobs:
             numpy pandas matplotlib plotly openpyxl pillow pypdf pytest streamlit \
             cairosvg pycountry
 
-      - name: Existing Figure 4 and Figure 5 regressions
-        run: |
-          python -m pytest -q \
-            tests/test_article_figure45_final_generator.py \
-            tests/test_figure45_legend_below_final.py
-
-      - name: Existing ST8 and transform regressions
-        run: |
-          python -m pytest -q \
-            tests/test_ko_heatmap_scale_selector.py \
-            tests/test_st8_final_contract.py \
-            tests/test_st8_mtx_value_diagnostics.py \
-            tests/test_st8_scope_guard_and_antismash_bgc.py
-
-      - name: Current taxonomy and strict below-five regressions
-        run: |
-          python -m pytest -vv \
-            tests/test_taxonomy_final_contract.py
-
-      - name: antiSMASH Supplementary Figure 68 regressions
-        run: |
-          python -m pytest -vv \
-            tests/test_antismash_supplementary_figure.py
-
-      - name: Self-contained visitor map regressions
-        run: |
-          python -m pytest -vv \
-            tests/test_visitor_self_contained_map.py
-
-      - name: Compile final application modules
-        run: |
-          python -m py_compile \
-            app.py \
-            src/taxonomy_final_contract.py \
-            src/final_taxonomy_static_figures.py \
-            src/antismash_supplementary_figure.py \
-            src/visitor_self_contained_map.py \
-            src/app_final_script_manifest_transform.py \
-            src/app_final_taxonomy_lt5_current_transform.py \
-            src/app_antismash_supplementary_figure_transform.py \
-            src/app_visitor_map_city_final_transform.py
+      - name: Run ${{ matrix.name }}
+        run: ${{ matrix.command }}

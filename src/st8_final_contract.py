@@ -1,18 +1,12 @@
 from __future__ import annotations
 
-"""Canonical ST8 contracts shared by the app, tests, and figure generators.
-
-The functions in this module never impute scientific values. They resolve sample
-identifiers, preserve metadata-defined order, and derive raw/z-score matrices
-from the exact Supplementary Table 8 values.
-"""
+"""Canonical ST8 contracts shared by the app, tests, and figure generators."""
 
 from collections.abc import Iterable, Sequence
 import re
 
 import numpy as np
 import pandas as pd
-
 
 EXPECTED_ALL_KO_MARKERS = 189
 EXPECTED_AMAZONIAN_SAMPLES = 20
@@ -22,26 +16,29 @@ EXPECTED_ZERO_AMAZONIAN_KOS = 17
 
 METADATA_COLUMNS = ("KO", "Metabolism", "KO description")
 MTX_MATRIX_FIELDS = (
-  "ST8_matrix_column",
-  "matrix_column_all_KO",
-  "matrix_column_iron_KO",
-  "matrix_column_selected",
-  "matrix_column",
+  "ST8_matrix_column", "matrix_column_all_KO", "matrix_column_iron_KO",
+  "matrix_column_selected", "matrix_column",
 )
 MTX_IDENTIFIER_FIELDS = (
-  "taxon_oid",
-  "IMG Genome ID",
-  "sample_id_created_this_study",
-  "sample_id",
-  "SRA Run",
-  "SRA ID",
+  "taxon_oid", "IMG Genome ID", "sample_id_created_this_study",
+  "sample_id", "SRA Run", "SRA ID",
 )
 
 
 def _clean_excel_identifier(value: object) -> str:
-  text = str(value or "").strip()
-  if re.fullmatch(r"\d+\.0", text):
-    text = text[:-2]
+  if value is None:
+    return ""
+  try:
+    missing = pd.isna(value)
+    if isinstance(missing, (bool, np.bool_)) and bool(missing):
+      return ""
+  except Exception:
+    pass
+  text = str(value).strip()
+  if text.casefold() in {"nan", "none", "na", "n/a", "<na>"}:
+    return ""
+  if re.fullmatch(r"(?:\d+|[sS]\d+)\.0+", text):
+    return text.split(".", 1)[0]
   return text
 
 
@@ -51,12 +48,9 @@ def normalize_identifier(value: object) -> str:
 
 def identifier_variants(value: object) -> list[str]:
   text = _clean_excel_identifier(value)
-  if not text or text.casefold() in {"nan", "none", "na", "n/a", "<na>"}:
+  if not text:
     return []
-  variants = [text, normalize_identifier(text)]
-  if re.fullmatch(r"[sS]\d+\.0", str(value or "").strip()):
-    variants.extend([text[:-2], normalize_identifier(text[:-2])])
-  return list(dict.fromkeys(item for item in variants if item))
+  return list(dict.fromkeys(item for item in (text, normalize_identifier(text)) if item))
 
 
 def amazonian_sample_columns(columns: Iterable[object]) -> list[str]:
@@ -79,14 +73,14 @@ def _candidate_values(row: pd.Series, fields: Sequence[str]) -> list[str]:
     if field not in row.index:
       continue
     value = _clean_excel_identifier(row.get(field, ""))
-    if value and value.casefold() not in {"nan", "none", "na", "n/a", "<na>"} and value not in values:
+    if value and value not in values:
       values.append(value)
   return values
 
 
 def _identifier_matches_column(identifier: str, column: str) -> bool:
   identifier = _clean_excel_identifier(identifier)
-  column = str(column or "").strip()
+  column = _clean_excel_identifier(column)
   if not identifier or not column:
     return False
   if identifier == column:
@@ -95,10 +89,8 @@ def _identifier_matches_column(identifier: str, column: str) -> bool:
   column_norm = normalize_identifier(column)
   if identifier_norm and identifier_norm == column_norm:
     return True
-  # Short study identifiers such as S2 must match a complete token, never S21.
   if re.fullmatch(r"[A-Za-z]+\d+", identifier):
     return bool(re.search(rf"(?<![A-Za-z0-9]){re.escape(identifier)}(?![A-Za-z0-9])", column, flags=re.I))
-  # Long identifiers (IMG/JGI OIDs, accessions) may be embedded in a composite header.
   return len(identifier_norm) >= 6 and identifier_norm in column_norm
 
 
@@ -108,12 +100,6 @@ def resolve_metatranscriptome_columns(
   *,
   expected_count: int | None = EXPECTED_MTX_SAMPLES,
 ) -> tuple[pd.DataFrame, list[str]]:
-  """Resolve every MTX row to exactly one source matrix column.
-
-  Resolution order is exact matrix-field match, normalized matrix-field match,
-  exact/normalized identifier match, and finally a unique token-contained match.
-  Output order follows the metadata. Valid zeros and source values are untouched.
-  """
   mtx = metatranscriptome_metadata(metadata)
   available = [str(column) for column in matrix_columns]
   available_set = set(available)
@@ -128,35 +114,22 @@ def resolve_metatranscriptome_columns(
     identifiers = _candidate_values(row, MTX_IDENTIFIER_FIELDS)
     match = ""
     method = ""
-
     for candidate in matrix_values:
       if candidate in available_set and candidate not in used:
-        match = candidate
-        method = "exact metadata matrix column"
+        match, method = candidate, "exact metadata matrix column"
         break
-
     if not match:
       for candidate in matrix_values:
-        candidates = [
-          column for column in normalized_available.get(normalize_identifier(candidate), [])
-          if column not in used
-        ]
+        candidates = [column for column in normalized_available.get(normalize_identifier(candidate), []) if column not in used]
         if len(candidates) == 1:
-          match = candidates[0]
-          method = "normalized metadata matrix column"
+          match, method = candidates[0], "normalized metadata matrix column"
           break
-
     if not match:
       for identifier in identifiers:
-        exact_candidates = [
-          column for column in available
-          if column not in used and _identifier_matches_column(identifier, column)
-        ]
-        if len(exact_candidates) == 1:
-          match = exact_candidates[0]
-          method = "unique metadata identifier match"
+        candidates = [column for column in available if column not in used and _identifier_matches_column(identifier, column)]
+        if len(candidates) == 1:
+          match, method = candidates[0], "unique metadata identifier match"
           break
-
     resolved = row.to_dict()
     resolved.update({
       "metadata_index": metadata_index,
@@ -170,23 +143,14 @@ def resolve_metatranscriptome_columns(
 
   resolved_metadata = pd.DataFrame(resolved_rows)
   columns = (
-    resolved_metadata.loc[
-      resolved_metadata.get("resolution_status", pd.Series(dtype=str)).eq("resolved"),
-      "resolved_matrix_column",
-    ].astype(str).tolist()
+    resolved_metadata.loc[resolved_metadata.get("resolution_status", pd.Series(dtype=str)).eq("resolved"), "resolved_matrix_column"].astype(str).tolist()
     if not resolved_metadata.empty else []
   )
   columns = list(dict.fromkeys(columns))
   if expected_count is not None and len(columns) != int(expected_count):
-    unresolved_columns = [
-      column for column in ("taxon_oid", "sample_id_created_this_study", "Study Name")
-      if column in resolved_metadata.columns
-    ]
+    unresolved_columns = [column for column in ("taxon_oid", "sample_id_created_this_study", "Study Name") if column in resolved_metadata.columns]
     unresolved = (
-      resolved_metadata.loc[
-        resolved_metadata.get("resolution_status", pd.Series(dtype=str)).ne("resolved"),
-        unresolved_columns,
-      ].to_dict("records")
+      resolved_metadata.loc[resolved_metadata.get("resolution_status", pd.Series(dtype=str)).ne("resolved"), unresolved_columns].to_dict("records")
       if not resolved_metadata.empty else []
     )
     raise ValueError(
@@ -201,21 +165,12 @@ def numeric_matrix(frame: pd.DataFrame, columns: Sequence[str]) -> pd.DataFrame:
   return frame.loc[:, selected].apply(pd.to_numeric, errors="coerce")
 
 
-def validate_all_ko_contract(
-  all_ko: pd.DataFrame,
-  metadata: pd.DataFrame,
-) -> dict[str, object]:
+def validate_all_ko_contract(all_ko: pd.DataFrame, metadata: pd.DataFrame) -> dict[str, object]:
   lake_columns = amazonian_sample_columns(all_ko.columns)
-  resolved_metadata, mtx_columns = resolve_metatranscriptome_columns(
-    metadata,
-    all_ko.columns,
-    expected_count=EXPECTED_MTX_SAMPLES,
-  )
+  resolved_metadata, mtx_columns = resolve_metatranscriptome_columns(metadata, all_ko.columns, expected_count=EXPECTED_MTX_SAMPLES)
   lake_matrix = numeric_matrix(all_ko, lake_columns)
   row_totals = lake_matrix.fillna(0.0).abs().sum(axis=1)
-  all_numeric = all_ko.drop(
-    columns=[column for column in METADATA_COLUMNS if column in all_ko.columns]
-  ).apply(pd.to_numeric, errors="coerce")
+  all_numeric = all_ko.drop(columns=[column for column in METADATA_COLUMNS if column in all_ko.columns]).apply(pd.to_numeric, errors="coerce")
   result = {
     "source_ko_count": int(len(all_ko)),
     "unique_ko_count": int(all_ko["KO"].astype(str).nunique()) if "KO" in all_ko else 0,
@@ -274,8 +229,7 @@ def prepare_ko_scope(
     labels = labels + " — " + work["Metabolism"].fillna("Unclassified").astype(str)
   matrix.index = labels
   matrix.index.name = "KO / pathway" if show_pathway else "KO"
-  zscore = row_zscore(matrix)
-  return work.reset_index(drop=True), matrix, zscore
+  return work.reset_index(drop=True), matrix, row_zscore(matrix)
 
 
 def heatmap_geometry(row_count: int, column_count: int) -> dict[str, int]:
@@ -294,7 +248,6 @@ def heatmap_geometry(row_count: int, column_count: int) -> dict[str, int]:
 
 
 def apply_final_heatmap_layout(fig, *, chart_key: str = ""):
-  """Apply readable geometry without changing trace arrays or scientific values."""
   if fig is None:
     return fig
   traces = list(getattr(fig, "data", []) or [])
@@ -310,14 +263,8 @@ def apply_final_heatmap_layout(fig, *, chart_key: str = ""):
   row_count, column_count = z.shape
   key = str(chart_key or "").casefold()
   relevant = any(token in key for token in (
-    "supplementaryfigure40",
-    "supplementaryfigure67",
-    "s40",
-    "s67",
-    "metatranscript",
-    "biogeochemical",
-    "st8",
-    "ko_",
+    "supplementaryfigure40", "supplementaryfigure67", "s40", "s67",
+    "metatranscript", "biogeochemical", "st8", "ko_",
   ))
   if not relevant:
     return fig
@@ -333,14 +280,8 @@ def apply_final_heatmap_layout(fig, *, chart_key: str = ""):
     "values_changed_by_layout": False,
   })
   fig.update_layout(
-    width=geometry["width"],
-    height=geometry["height"],
-    margin={
-      "l": geometry["left"],
-      "r": geometry["right"],
-      "t": geometry["top"],
-      "b": geometry["bottom"],
-    },
+    width=geometry["width"], height=geometry["height"],
+    margin={"l": geometry["left"], "r": geometry["right"], "t": geometry["top"], "b": geometry["bottom"]},
     meta=meta,
   )
   fig.update_xaxes(tickangle=-45, automargin=True, tickfont={"size": 11})
@@ -349,24 +290,11 @@ def apply_final_heatmap_layout(fig, *, chart_key: str = ""):
 
 
 def public_metatranscriptome_metadata_table(resolved_metadata: pd.DataFrame) -> pd.DataFrame:
-  """Return one publication-facing metadata row for each resolved MTX column."""
   if resolved_metadata is None or resolved_metadata.empty:
     return pd.DataFrame()
-  columns = [
-    column for column in (
-      "sample_id_created_this_study",
-      "taxon_oid",
-      "resolved_matrix_column",
-      "Study Name",
-      "Genome Name / Sample Name",
-      "ST8_group",
-      "data_layer",
-      "NCBI Bioproject Accession",
-      "SRA Run",
-      "resolution_method",
-    )
-    if column in resolved_metadata.columns
-  ]
-  return resolved_metadata.loc[
-    resolved_metadata["resolution_status"].eq("resolved"), columns
-  ].reset_index(drop=True)
+  columns = [column for column in (
+    "sample_id_created_this_study", "taxon_oid", "resolved_matrix_column",
+    "Study Name", "Genome Name / Sample Name", "ST8_group", "data_layer",
+    "NCBI Bioproject Accession", "SRA Run", "resolution_method",
+  ) if column in resolved_metadata.columns]
+  return resolved_metadata.loc[resolved_metadata["resolution_status"].eq("resolved"), columns].reset_index(drop=True)

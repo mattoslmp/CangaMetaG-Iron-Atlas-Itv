@@ -11,13 +11,18 @@ on:
       - "src/figure45_large_legend_runtime.py"
       - "src/app_figure45_legend_below_final_transform.py"
       - "src/app_ko_heatmap_scale_selector_transform.py"
+      - "src/st8_final_contract.py"
+      - "src/antismash_metabolism_runtime.py"
+      - "src/app_st8_scope_guard_antismash_bgc_transform.py"
       - "scripts/figures/generate_article_figure45_final.py"
       - "scripts/figures/generate_st8_ko_mtx_final_figures.py"
       - "scripts/figures/validate_st8_mtx_values.py"
       - "tests/test_article_figure45_final_generator.py"
       - "tests/test_figure45_legend_below_final.py"
       - "tests/test_ko_heatmap_scale_selector.py"
+      - "tests/test_st8_final_contract.py"
       - "tests/test_st8_mtx_value_diagnostics.py"
+      - "tests/test_st8_scope_guard_and_antismash_bgc.py"
       - "data/article_frozen_taxonomy_bacteria.json"
       - "data/article_frozen_taxonomy_archaea.json"
       - "tables/Supplementary_Table_8.xlsx"
@@ -31,13 +36,18 @@ on:
       - "src/figure45_large_legend_runtime.py"
       - "src/app_figure45_legend_below_final_transform.py"
       - "src/app_ko_heatmap_scale_selector_transform.py"
+      - "src/st8_final_contract.py"
+      - "src/antismash_metabolism_runtime.py"
+      - "src/app_st8_scope_guard_antismash_bgc_transform.py"
       - "scripts/figures/generate_article_figure45_final.py"
       - "scripts/figures/generate_st8_ko_mtx_final_figures.py"
       - "scripts/figures/validate_st8_mtx_values.py"
       - "tests/test_article_figure45_final_generator.py"
       - "tests/test_figure45_legend_below_final.py"
       - "tests/test_ko_heatmap_scale_selector.py"
+      - "tests/test_st8_final_contract.py"
       - "tests/test_st8_mtx_value_diagnostics.py"
+      - "tests/test_st8_scope_guard_and_antismash_bgc.py"
       - ".github/workflows/regenerate-figure45-and-validate-st8.yml"
 
 permissions:
@@ -68,7 +78,10 @@ jobs:
             /data/article_frozen_taxonomy_bacteria.json
             /data/article_frozen_taxonomy_archaea.json
             /data/final_publication_derived/
+            /data/kegg_modules/mags/gbk_antismash/
+            /data/antismash/
             /tables/Supplementary_Table_8.xlsx
+            /outputs/antismash/
             /outputs/final_publication_figures/Figure4_taxonomic_bacteria_genus_profiles.*
             /outputs/final_publication_figures/Figure5_taxonomic_archaea_genus_profiles.*
             /outputs/app_supplementary_figures/Figure4_taxonomic_bacteria_genus_profiles.*
@@ -84,7 +97,7 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           python -m pip install \
-            numpy pandas matplotlib plotly openpyxl pillow pypdf pytest
+            numpy pandas matplotlib plotly openpyxl pillow pypdf pytest streamlit
 
       - name: Regenerate Figures 4 and 5 from packaged inputs
         run: |
@@ -101,7 +114,16 @@ jobs:
             tests/test_figure45_legend_below_final.py \
             tests/test_ko_heatmap_scale_selector.py \
             tests/test_st8_final_contract.py \
-            tests/test_st8_mtx_value_diagnostics.py
+            tests/test_st8_mtx_value_diagnostics.py \
+            tests/test_st8_scope_guard_and_antismash_bgc.py
+
+      - name: Compile complete application transform chain
+        run: |
+          python -m py_compile \
+            app.py \
+            src/st8_final_contract.py \
+            src/antismash_metabolism_runtime.py \
+            src/app_st8_scope_guard_antismash_bgc_transform.py
 
       - name: Verify generated deliverables
         run: |

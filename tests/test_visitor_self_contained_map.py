@@ -15,8 +15,8 @@ def test_empty_visitor_map_always_contains_world_geometry() -> None:
   assert figure.layout.meta["self_contained_vector_map"] is True
   assert figure.layout.meta["external_tiles_required"] is False
   assert figure.layout.meta["external_topojson_required"] is False
-  assert figure.layout.xaxis.range == (-180, 180)
-  assert figure.layout.yaxis.range == (-90, 90)
+  assert tuple(figure.layout.xaxis.range) == (-180, 180)
+  assert tuple(figure.layout.yaxis.range) == (-90, 90)
 
 
 def test_real_coordinates_are_rendered_as_cartesian_markers() -> None:

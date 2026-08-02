@@ -1,0 +1,196 @@
+name: Build corrected ISME delivery 2026-08-02 v2
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - '.github/workflows/build-corrected-delivery-20260802-v2.yml'
+      - 'scripts/build_corrected_delivery_20260802.py'
+      - 'scripts/fix_delivery_workspace_20260802.py'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build-delivery-v2:
+    runs-on: ubuntu-latest
+    timeout-minutes: 150
+    steps:
+      - name: Checkout canonical repository branch
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          lfs: false
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+
+      - name: Install generation and validation dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install numpy pandas scipy scikit-learn matplotlib pillow cairosvg openpyxl plotly pytest
+
+      - name: Apply isolated scientific corrections
+        run: |
+          python scripts/build_corrected_delivery_20260802.py
+          python scripts/fix_delivery_workspace_20260802.py
+
+      - name: Regenerate canonical Figures 2-5
+        run: |
+          python scripts/final_publication_figures/02_05_generate_final_taxonomy_figures.py \
+            --base-dir . --language both --dpi 350
+
+      - name: Generate joint-domain alpha, rarefaction, NMDS and RDA figures
+        run: python scripts/final_publication_figures/03_generate_combined_community_figures.py
+
+      - name: Validate scientific and delivery contracts
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import hashlib
+          import json
+          import pandas as pd
+          from PIL import Image
+
+          root = Path('.')
+          required = [
+            'outputs/final_publication_figures/Figure2_taxonomic_phylum_bacteria_horizontal_CDS.png',
+            'outputs/final_publication_figures/Figure3_taxonomic_phylum_archaea_horizontal_CDS.png',
+            'outputs/final_publication_figures/Figure4_taxonomic_bacteria_genus_profiles.png',
+            'outputs/final_publication_figures/Figure5_taxonomic_archaea_genus_profiles.png',
+            'outputs/app_supplementary_figures/SupplementaryFigure3_combined_NMDS_20_individual_samples.png',
+            'outputs/app_supplementary_figures/SupplementaryFigure_combined_NMDS_RDA_all_domains.png',
+            'outputs/app_supplementary_figures/SupplementaryFigure_alpha_diversity_all_domains.png',
+            'outputs/app_supplementary_figures/SupplementaryFigure_rarefaction_all_domains.png',
+            'data/final_publication_derived/combined_all_domains_NMDS_20_samples.csv',
+            'data/final_publication_derived/combined_all_domains_RDA_10_positions.csv',
+            'reports/COMBINED_COMMUNITY_FIGURES_20260802.json',
+            'reports/DELIVERY_20260802_CORRECTION_REPORT.json',
+            'reports/DELIVERY_20260802_WORKSPACE_FIX_REPORT.json',
+          ]
+          missing = [p for p in required if not (root / p).is_file()]
+          if missing:
+            raise SystemExit('Missing required outputs: ' + repr(missing))
+
+          image_report = {}
+          for p in required[:8]:
+            with Image.open(root / p) as image:
+              image.verify()
+            with Image.open(root / p) as image:
+              image_report[p] = list(image.size)
+              if min(image.size) < 900:
+                raise SystemExit(f'Image too small for publication output: {p} {image.size}')
+
+          nmds = pd.read_csv(root / required[8])
+          rda = pd.read_csv(root / required[9])
+          if len(nmds) != 20 or nmds['Sample'].nunique() != 20:
+            raise SystemExit(f'Combined NMDS must contain 20 individual samples; got {len(nmds)}')
+          if len(rda) != 10 or rda['Position'].nunique() != 10:
+            raise SystemExit(f'Combined RDA must contain 10 matched positions; got {len(rda)}')
+
+          profiles = {}
+          for domain in ('bacteria', 'archaea'):
+            payload = json.loads((root / f'data/article_frozen_taxonomy_{domain}.json').read_text())
+            frame = pd.DataFrame(payload['profile'])
+            sample_columns = [c for c in payload['profile_columns'] if c != 'taxon']
+            delta = float((frame[sample_columns].sum(axis=0) - 100.0).abs().max())
+            if delta > 1e-5:
+              raise SystemExit(f'{domain} genus profile no longer sums to 100%; delta={delta}')
+            labels = frame['taxon'].astype(str).tolist()
+            if 'Other genera (<1% each)' not in labels:
+              raise SystemExit(f'{domain} missing strict <1% aggregate label')
+            profiles[domain] = {'rows': len(frame), 'max_total_delta': delta}
+
+          figure_svg = (root / 'outputs/final_publication_figures/Figure4_taxonomic_bacteria_genus_profiles.svg').read_text(errors='ignore')
+          if 'Other genera (&lt;1% each)' not in figure_svg and 'Other genera (<1% each)' not in figure_svg:
+            raise SystemExit('Figure 4 SVG does not expose the <1% genus aggregate label')
+
+          app_text = (root / 'app.py').read_text(errors='ignore')
+          app_tokens = [
+            'Other taxa (<1%)',
+            'maximum >= float(min_display_pct)',
+            'maximum[maximum >= 1.0]',
+          ]
+          absent = [token for token in app_tokens if token not in app_text]
+          if absent:
+            raise SystemExit(f'app.py genus <1% contract is incomplete: {absent}')
+
+          report = {
+            'status': 'PASS',
+            'canonical_base': 'main@c1eae09cfa6b198212ede5834f20102445207386',
+            'profiles': profiles,
+            'combined_nmds_samples': int(nmds['Sample'].nunique()),
+            'combined_rda_positions': int(rda['Position'].nunique()),
+            'image_dimensions': image_report,
+            'required_outputs': required,
+            'supplementary_17_18_policy': 'preserved; not regenerated by this workflow',
+          }
+          (root / 'reports/DELIVERY_20260802_VALIDATION.json').write_text(
+            json.dumps(report, indent=2) + '\n'
+          )
+          print(json.dumps(report, indent=2))
+          PY
+
+      - name: Compile corrected application and canonical scripts
+        run: |
+          python -m py_compile app.py \
+            scripts/build_corrected_delivery_20260802.py \
+            scripts/fix_delivery_workspace_20260802.py \
+            scripts/final_publication_figures/02_05_generate_final_taxonomy_figures.py \
+            scripts/final_publication_figures/03_generate_combined_community_figures.py
+
+      - name: Build complete corrected repository archive and split it
+        run: |
+          rm -rf .git .pytest_cache __pycache__
+          find . -type d -name '__pycache__' -prune -exec rm -rf {} +
+          mkdir -p delivery
+          zip -r -q -9 delivery/CangaMetaG_Iron_Atlas_corrected_20260802.zip . \
+            -x 'delivery/*' '*.pyc' '.git/*'
+          cd delivery
+          split -b 75m -d -a 2 \
+            CangaMetaG_Iron_Atlas_corrected_20260802.zip \
+            CangaMetaG_Iron_Atlas_corrected_20260802.zip.repo-part-
+          sha256sum CangaMetaG_Iron_Atlas_corrected_20260802.zip \
+            CangaMetaG_Iron_Atlas_corrected_20260802.zip.repo-part-* \
+            > REPOSITORY_ARCHIVE_SHA256.txt
+          ls -lh CangaMetaG_Iron_Atlas_corrected_20260802.zip.repo-part-* \
+            > REPOSITORY_PARTS_LIST.txt
+          rm CangaMetaG_Iron_Atlas_corrected_20260802.zip
+
+      - name: Upload complete split repository and reports
+        uses: actions/upload-artifact@v4
+        with:
+          name: corrected-repository-parts-20260802
+          path: |
+            delivery/CangaMetaG_Iron_Atlas_corrected_20260802.zip.repo-part-*
+            delivery/REPOSITORY_ARCHIVE_SHA256.txt
+            delivery/REPOSITORY_PARTS_LIST.txt
+            reports/DELIVERY_20260802_CORRECTION_REPORT.json
+            reports/DELIVERY_20260802_WORKSPACE_FIX_REPORT.json
+            reports/DELIVERY_20260802_VALIDATION.json
+            reports/COMBINED_COMMUNITY_FIGURES_20260802.json
+          compression-level: 0
+          retention-days: 7
+
+      - name: Upload corrected publication figures
+        uses: actions/upload-artifact@v4
+        with:
+          name: corrected-publication-figures-20260802
+          path: |
+            outputs/final_publication_figures/Figure2_taxonomic_phylum_bacteria_horizontal_CDS.*
+            outputs/final_publication_figures/Figure3_taxonomic_phylum_archaea_horizontal_CDS.*
+            outputs/final_publication_figures/Figure4_taxonomic_bacteria_genus_profiles.*
+            outputs/final_publication_figures/Figure5_taxonomic_archaea_genus_profiles.*
+            outputs/app_supplementary_figures/SupplementaryFigure3_combined_NMDS_20_individual_samples.*
+            outputs/app_supplementary_figures/SupplementaryFigure_combined_NMDS_RDA_all_domains.*
+            outputs/app_supplementary_figures/SupplementaryFigure_alpha_diversity_all_domains.*
+            outputs/app_supplementary_figures/SupplementaryFigure_rarefaction_all_domains.*
+            data/final_publication_derived/combined_all_domains_*.csv
+            data/final_publication_derived/alpha_diversity_all_domains_20_samples.csv
+            data/final_publication_derived/rarefaction_all_domains_20_samples.csv
+          compression-level: 6
+          retention-days: 7

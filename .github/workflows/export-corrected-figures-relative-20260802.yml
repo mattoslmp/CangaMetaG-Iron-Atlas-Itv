@@ -1,0 +1,80 @@
+name: Export final relative-abundance ISME figures 2026-08-02
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - '.github/workflows/export-corrected-figures-relative-20260802.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  export-final-figures:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+        with: {fetch-depth: 1, lfs: false}
+      - uses: actions/setup-python@v5
+        with: {python-version: '3.11'}
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install numpy pandas scipy scikit-learn matplotlib pillow cairosvg openpyxl plotly
+      - name: Apply corrections and final NMDS normalization
+        run: |
+          python scripts/build_corrected_delivery_20260802.py
+          python scripts/prepatch_literal_replacements_20260802.py
+          python scripts/fix_delivery_workspace_20260802.py
+          python scripts/patch_combined_environment_20260802.py
+          python scripts/patch_combined_nmds_relative_20260802.py
+      - name: Generate figures
+        run: |
+          python scripts/final_publication_figures/02_05_generate_final_taxonomy_figures.py --base-dir . --language both --dpi 350
+          python scripts/final_publication_figures/03_generate_combined_community_figures.py
+      - name: Validate final combined ordination
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import json
+          import numpy as np
+          import pandas as pd
+          root=Path('.')
+          nmds=pd.read_csv(root/'data/final_publication_derived/combined_all_domains_NMDS_20_samples.csv')
+          rda=pd.read_csv(root/'data/final_publication_derived/combined_all_domains_RDA_10_positions.csv')
+          if nmds['Sample'].nunique()!=20 or rda['Position'].nunique()!=10:
+            raise SystemExit('Incorrect NMDS/RDA dimensions')
+          spread=nmds[['NMDS1','NMDS2']].std(ddof=0)
+          if not np.isfinite(spread).all() or float(spread.min())<=0:
+            raise SystemExit('Degenerate NMDS coordinates')
+          env=json.loads((root/'reports/COMBINED_ENVIRONMENT_SOURCE_20260802.json').read_text())
+          if env.get('status')!='PASS': raise SystemExit('Environment source failed')
+          generator=(root/'scripts/final_publication_figures/03_generate_combined_community_figures.py').read_text()
+          if 'relative = otu.div(otu.sum(axis=0).replace(0, np.nan), axis=1).fillna(0.0)' not in generator:
+            raise SystemExit('NMDS did not use relative abundance')
+          report={'status':'PASS','nmds_samples':20,'rda_positions':10,'nmds_coordinate_sd':spread.to_dict(),'distance_input':'within-sample relative abundance','environment_source':env.get('source')}
+          (root/'reports/FINAL_COMBINED_ORDINATION_VALIDATION_20260802.json').write_text(json.dumps(report,indent=2)+'\n')
+          print(json.dumps(report,indent=2))
+          PY
+      - name: Upload final corrected bundle
+        uses: actions/upload-artifact@v4
+        with:
+          name: final-corrected-figure-bundle-relative-20260802
+          path: |
+            outputs/final_publication_figures/Figure2_taxonomic_phylum_bacteria_horizontal_CDS.*
+            outputs/final_publication_figures/Figure3_taxonomic_phylum_archaea_horizontal_CDS.*
+            outputs/final_publication_figures/Figure4_taxonomic_bacteria_genus_profiles.*
+            outputs/final_publication_figures/Figure5_taxonomic_archaea_genus_profiles.*
+            outputs/app_supplementary_figures/SupplementaryFigure3_combined_NMDS_20_individual_samples.*
+            outputs/app_supplementary_figures/SupplementaryFigure_combined_NMDS_RDA_all_domains.*
+            outputs/app_supplementary_figures/SupplementaryFigure_alpha_diversity_all_domains.*
+            outputs/app_supplementary_figures/SupplementaryFigure_rarefaction_all_domains.*
+            data/final_publication_derived/*.csv
+            data/article_frozen_taxonomy_bacteria.json
+            data/article_frozen_taxonomy_archaea.json
+            reports/*.json
+            scripts/final_publication_figures/03_generate_combined_community_figures.py
+          compression-level: 6
+          retention-days: 7

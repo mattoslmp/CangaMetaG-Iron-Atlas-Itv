@@ -2,7 +2,7 @@
 from __future__ import annotations
 
 import json
-import re
+import runpy
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -11,169 +11,128 @@ ROOT = Path(__file__).resolve().parents[1]
 def patch_generated_combined_script() -> dict[str, object]:
   path = ROOT / "scripts" / "final_publication_figures" / "03_generate_combined_community_figures.py"
   text = path.read_text(encoding="utf-8")
-  before = text
   text = text.replace(
     'ax.boxplot(groups, labels=["AM","TIA","TI","VI"], showfliers=False)',
     'ax.boxplot(groups, tick_labels=["AM","TIA","TI","VI"], showfliers=False)',
   )
-  if text == before and "tick_labels=" not in text:
+  if "tick_labels=" not in text:
     raise RuntimeError("Could not patch Matplotlib boxplot compatibility")
   path.write_text(text, encoding="utf-8")
   return {
     "path": str(path.relative_to(ROOT)),
-    "matplotlib_tick_labels": "tick_labels=" in text,
+    "matplotlib_tick_labels": True,
   }
 
 
-def replace_in_function(
-  text: str,
-  function_name: str,
-  transform,
-) -> tuple[str, bool]:
-  pattern = re.compile(
-    rf"(?ms)^def {re.escape(function_name)}\(.*?(?=^def |^class |\Z)"
-  )
-  match = pattern.search(text)
-  if not match:
-    return text, False
-  old_block = match.group(0)
-  new_block = transform(old_block)
-  if new_block == old_block:
-    return text, False
-  return text[: match.start()] + new_block + text[match.end() :], True
-
-
-def patch_app() -> dict[str, object]:
-  path = ROOT / "app.py"
+def patch_existing_percentage_label_transform() -> dict[str, object]:
+  path = ROOT / "src" / "app_other_taxa_percentage_label_transform.py"
   text = path.read_text(encoding="utf-8")
-  changes: list[str] = []
-
-  def matrix_transform(block: str) -> str:
-    original = block
-    block, n = re.subn(
-      r"(?m)^(\s*)ranked\s*=\s*ranked\[ranked\s*>=\s*float\(min_display_pct\)\]\s*$",
-      (
-        r'\1maximum = agg.groupby("taxon", as_index=True)["abundance"].max()\n'
-        r"\1eligible = maximum[maximum >= float(min_display_pct)].index\n"
-        r"\1ranked = ranked[ranked.index.isin(eligible)]"
-      ),
-      block,
-      count=1,
-    )
-    if n:
-      changes.append("matrix threshold uses maximum abundance")
-    return block if block != original else original
-
-  text, _ = replace_in_function(text, "_taxonomy_matrix_from_profile_final", matrix_transform)
-
-  def heatmap_transform(block: str) -> str:
-    original = block
-    pattern = re.compile(
-      r'(?m)^(\s*)matrix\s*=\s*_taxonomy_matrix_from_profile_final\('
-      r'df,\s*value_col=value_col,\s*top_n=top_n\)\s*$'
-    )
-    replacement = (
-      r'\1domain, rank = _taxonomy_selection_parts(level_name)\n'
-      r'\1effective_top_n = None if rank == "Genus" else top_n\n'
-      r'\1matrix = _taxonomy_matrix_from_profile_final(\n'
-      r'\1  df, value_col=value_col, top_n=effective_top_n,\n'
-      r'\1  min_display_pct=(1.0 if rank == "Genus" else None),\n'
-      r'\1)\n'
-      r'\1if rank == "Genus" and "Other taxa" in matrix.columns:\n'
-      r'\1  matrix = matrix.rename(columns={"Other taxa": "Other taxa (<1%)"})'
-    )
-    block, n = pattern.subn(replacement, block, count=1)
-    if n:
-      changes.append("genus heatmap uses strict <1% aggregate")
-    if block != original:
-      # Remove a duplicate later assignment, but retain the first assignment inserted above.
-      occurrences = [m.start() for m in re.finditer(r"(?m)^\s*domain, rank = _taxonomy_selection_parts\(level_name\)\s*$", block)]
-      if len(occurrences) > 1:
-        first = True
-        lines = []
-        for line in block.splitlines(keepends=True):
-          if re.match(r"^\s*domain, rank = _taxonomy_selection_parts\(level_name\)\s*$", line):
-            if first:
-              first = False
-              lines.append(line)
-            else:
-              continue
-          else:
-            lines.append(line)
-        block = "".join(lines)
-    return block
-
-  text, _ = replace_in_function(text, "_taxonomy_heatmap_final", heatmap_transform)
-
-  def barplot_transform(block: str) -> str:
-    original = block
-    pattern = re.compile(
-      r'(?m)^(\s*)ranked\s*=\s*agg\.groupby\("taxon"(?:,\s*as_index=True)?\)'
-      r'\["abundance"\]\.mean\(\)\.sort_values\(ascending=False\)\s*\n'
-      r'\1requested\s*=\s*len\(ranked\) if top_n is None or int\(top_n\) <= 0 else min\(int\(top_n\), len\(ranked\)\)\s*\n'
-      r'\1keep\s*=\s*ranked\.index\.tolist\(\)\[:requested\]\s*$'
-    )
-    replacement = (
-      r'\1ranked = agg.groupby("taxon")["abundance"].mean().sort_values(ascending=False)\n'
-      r'\1domain, rank = _taxonomy_selection_parts(level_name)\n'
-      r'\1if rank == "Genus":\n'
-      r'\1  maximum = agg.groupby("taxon")["abundance"].max()\n'
-      r'\1  ranked = ranked[ranked.index.isin(maximum[maximum >= 1.0].index)]\n'
-      r'\1  requested = len(ranked)\n'
-      r'\1else:\n'
-      r'\1  requested = len(ranked) if top_n is None or int(top_n) <= 0 else min(int(top_n), len(ranked))\n'
-      r'\1keep = ranked.index.tolist()[:requested]'
-    )
-    block, n = pattern.subn(replacement, block, count=1)
-    if n:
-      changes.append("genus barplot uses strict <1% aggregate")
-    block, n2 = re.subn(
-      r'(?m)^(\s*)other\["taxon"\]\s*=\s*"Other taxa"\s*$',
-      r'\1other["taxon"] = "Other taxa (<1%)" if rank == "Genus" else "Other taxa"',
-      block,
-      count=1,
-    )
-    if n2:
-      changes.append("genus barplot aggregate label")
-    if block != original:
-      # A later domain/rank assignment is harmless but redundant; keep only the first.
-      seen = False
-      lines = []
-      for line in block.splitlines(keepends=True):
-        if re.match(r"^\s*domain, rank = _taxonomy_selection_parts\(level_name\)\s*$", line):
-          if seen:
-            continue
-          seen = True
-        lines.append(line)
-      block = "".join(lines)
-    return block
-
-  text, _ = replace_in_function(text, "_taxonomy_barplot_final", barplot_transform)
-
-  text = text.replace("Other taxa (<5%)", "Other taxa (<1%)")
-  text = text.replace("Other genera (<5%)", "Other genera (<1%)")
+  text = text.replace("declared 5% cutoff", "declared 1% cutoff")
+  text = text.replace("_OTHER_TAXA_THRESHOLD_PERCENT = 5.0", "_OTHER_TAXA_THRESHOLD_PERCENT = 1.0")
+  text = text.replace("5% denotes the per-taxon cutoff", "1% denotes the per-taxon cutoff")
   path.write_text(text, encoding="utf-8")
+  if "_OTHER_TAXA_THRESHOLD_PERCENT = 1.0" not in text:
+    raise RuntimeError("Could not update the existing aggregate-label threshold")
+  return {
+    "path": str(path.relative_to(ROOT)),
+    "threshold_percent": 1.0,
+  }
 
+
+def patch_app_transform_chain() -> dict[str, object]:
+  app_path = ROOT / "app.py"
+  transform_path = ROOT / "src" / "app_genus_lt1_transform.py"
+  if not transform_path.is_file():
+    raise FileNotFoundError(transform_path)
+  text = app_path.read_text(encoding="utf-8")
+  entry = '  Path(__file__).with_name("src") / "app_genus_lt1_transform.py",\n'
+  if "app_genus_lt1_transform.py" not in text:
+    anchor = "]\n\n\ndef _compile_final_source"
+    if anchor not in text:
+      raise RuntimeError("Could not locate the end of the app transform list")
+    text = text.replace(anchor, entry + anchor, 1)
+    app_path.write_text(text, encoding="utf-8")
+
+  source = (ROOT / "app_core.py").read_text(encoding="utf-8")
+  namespace = runpy.run_path(str(app_path), run_name="_delivery_chain_probe")
+  # app.py executes the final application, so the line above is not suitable for
+  # validation in a headless build. Rebuild only the transform chain below.
+  source = (ROOT / "app_core.py").read_text(encoding="utf-8")
+  transform_files = []
+  for line in text.splitlines():
+    if 'Path(__file__).with_name("src") / "' not in line:
+      continue
+    name = line.split('/ "', 1)[1].rsplit('"', 1)[0]
+    transform_files.append(ROOT / "src" / name)
+  for transform in transform_files:
+    result = runpy.run_path(str(transform), init_globals={"source": source})
+    source = result["source"]
+  compile(source, str(ROOT / "app_core.py"), "exec")
   required = [
-    "maximum >= float(min_display_pct)",
-    'rank == "Genus"',
-    "Other taxa (<1%)",
+    "CANGAMETAG_GENUS_LT1_CANONICAL_V1",
+    "_CANGAMETAG_GENUS_OTHER_THRESHOLD_PERCENT = 1.0",
+    "Other taxa (<1% each)",
   ]
-  missing = [token for token in required if token not in text]
+  missing = [token for token in required if token not in source]
   if missing:
-    raise RuntimeError(f"app.py correction contract incomplete: {missing}; changes={changes}")
+    raise RuntimeError(f"Final app source lacks genus <1% contract: {missing}")
   return {
     "path": "app.py",
-    "changes": changes,
+    "transform_count": len(transform_files),
+    "last_transform": str(transform_files[-1].relative_to(ROOT)),
+    "compiled_final_source": True,
     "contract_tokens": required,
-    "status": "PASS",
   }
 
 
 def main() -> int:
+  # Patch the wrapper before rebuilding the source. Avoid importing or executing
+  # Streamlit itself; validation compiles the fully transformed source only.
+  app_path = ROOT / "app.py"
+  text = app_path.read_text(encoding="utf-8")
+  entry = '  Path(__file__).with_name("src") / "app_genus_lt1_transform.py",\n'
+  if "app_genus_lt1_transform.py" not in text:
+    anchor = "]\n\n\ndef _compile_final_source"
+    if anchor not in text:
+      raise RuntimeError("Could not locate the end of the app transform list")
+    app_path.write_text(text.replace(anchor, entry + anchor, 1), encoding="utf-8")
+
+  generator_report = patch_generated_combined_script()
+  label_report = patch_existing_percentage_label_transform()
+
+  # Compile the complete transform chain without executing the Streamlit app.
+  wrapper = app_path.read_text(encoding="utf-8")
+  source = (ROOT / "app_core.py").read_text(encoding="utf-8")
+  transform_files = []
+  for line in wrapper.splitlines():
+    marker = 'Path(__file__).with_name("src") / "'
+    if marker not in line:
+      continue
+    name = line.split(marker, 1)[1].split('"', 1)[0]
+    transform_files.append(ROOT / "src" / name)
+  for transform in transform_files:
+    namespace = runpy.run_path(str(transform), init_globals={"source": source})
+    source = namespace["source"]
+  compile(source, str(ROOT / "app_core.py"), "exec")
+  required = [
+    "CANGAMETAG_GENUS_LT1_CANONICAL_V1",
+    "_CANGAMETAG_GENUS_OTHER_THRESHOLD_PERCENT = 1.0",
+    "Other taxa (<1% each)",
+  ]
+  missing = [token for token in required if token not in source]
+  if missing:
+    raise RuntimeError(f"Final app source lacks genus <1% contract: {missing}")
+
   report = {
-    "combined_generator": patch_generated_combined_script(),
-    "app": patch_app(),
+    "combined_generator": generator_report,
+    "existing_label_transform": label_report,
+    "app": {
+      "path": "app.py",
+      "transform_count": len(transform_files),
+      "last_transform": str(transform_files[-1].relative_to(ROOT)),
+      "compiled_final_source": True,
+      "contract_tokens": required,
+    },
   }
   report_path = ROOT / "reports" / "DELIVERY_20260802_WORKSPACE_FIX_REPORT.json"
   report_path.parent.mkdir(parents=True, exist_ok=True)

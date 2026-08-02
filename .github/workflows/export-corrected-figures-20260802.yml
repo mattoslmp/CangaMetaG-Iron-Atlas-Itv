@@ -1,0 +1,92 @@
+name: Export corrected ISME figures 2026-08-02
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - '.github/workflows/export-corrected-figures-20260802.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  export-figures:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          lfs: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install numpy pandas scipy scikit-learn matplotlib pillow cairosvg openpyxl plotly
+      - name: Apply validated corrections
+        run: |
+          python scripts/build_corrected_delivery_20260802.py
+          python scripts/prepatch_literal_replacements_20260802.py
+          python scripts/fix_delivery_workspace_20260802.py
+          python scripts/patch_combined_environment_20260802.py
+      - name: Generate corrected main and supplementary figures
+        run: |
+          python scripts/final_publication_figures/02_05_generate_final_taxonomy_figures.py \
+            --base-dir . --language both --dpi 350
+          python scripts/final_publication_figures/03_generate_combined_community_figures.py
+      - name: Assert required scientific outputs
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import json
+          import pandas as pd
+          root=Path('.')
+          required=[
+            'outputs/final_publication_figures/Figure2_taxonomic_phylum_bacteria_horizontal_CDS.png',
+            'outputs/final_publication_figures/Figure3_taxonomic_phylum_archaea_horizontal_CDS.png',
+            'outputs/final_publication_figures/Figure4_taxonomic_bacteria_genus_profiles.png',
+            'outputs/final_publication_figures/Figure5_taxonomic_archaea_genus_profiles.png',
+            'outputs/app_supplementary_figures/SupplementaryFigure3_combined_NMDS_20_individual_samples.png',
+            'outputs/app_supplementary_figures/SupplementaryFigure_combined_NMDS_RDA_all_domains.png',
+            'outputs/app_supplementary_figures/SupplementaryFigure_alpha_diversity_all_domains.png',
+            'outputs/app_supplementary_figures/SupplementaryFigure_rarefaction_all_domains.png',
+            'data/article_frozen_taxonomy_bacteria.json',
+            'data/article_frozen_taxonomy_archaea.json',
+            'reports/COMBINED_SAMPLE_ID_MAPPING_20260802.json',
+            'reports/COMBINED_ENVIRONMENT_SOURCE_20260802.json',
+            'reports/COMBINED_COMMUNITY_FIGURES_20260802.json',
+          ]
+          missing=[item for item in required if not (root/item).is_file()]
+          if missing: raise SystemExit(f'Missing: {missing}')
+          nmds=pd.read_csv(root/'data/final_publication_derived/combined_all_domains_NMDS_20_samples.csv')
+          rda=pd.read_csv(root/'data/final_publication_derived/combined_all_domains_RDA_10_positions.csv')
+          if nmds['Sample'].nunique()!=20 or rda['Position'].nunique()!=10:
+            raise SystemExit('Incorrect combined ordination dimensions')
+          env=json.loads((root/'reports/COMBINED_ENVIRONMENT_SOURCE_20260802.json').read_text())
+          if env.get('status')!='PASS': raise SystemExit('Environment source failed')
+          print(json.dumps({'status':'PASS','nmds_samples':20,'rda_positions':10,'environment_source':env.get('source')},indent=2))
+          PY
+      - name: Upload corrected figure bundle
+        uses: actions/upload-artifact@v4
+        with:
+          name: corrected-figure-bundle-20260802
+          path: |
+            outputs/final_publication_figures/Figure2_taxonomic_phylum_bacteria_horizontal_CDS.*
+            outputs/final_publication_figures/Figure3_taxonomic_phylum_archaea_horizontal_CDS.*
+            outputs/final_publication_figures/Figure4_taxonomic_bacteria_genus_profiles.*
+            outputs/final_publication_figures/Figure5_taxonomic_archaea_genus_profiles.*
+            outputs/app_supplementary_figures/SupplementaryFigure3_combined_NMDS_20_individual_samples.*
+            outputs/app_supplementary_figures/SupplementaryFigure_combined_NMDS_RDA_all_domains.*
+            outputs/app_supplementary_figures/SupplementaryFigure_alpha_diversity_all_domains.*
+            outputs/app_supplementary_figures/SupplementaryFigure_rarefaction_all_domains.*
+            data/final_publication_derived/combined_all_domains_*.csv
+            data/final_publication_derived/alpha_diversity_all_domains_20_samples.csv
+            data/final_publication_derived/rarefaction_all_domains_20_samples.csv
+            data/article_frozen_taxonomy_bacteria.json
+            data/article_frozen_taxonomy_archaea.json
+            reports/*.json
+          compression-level: 6
+          retention-days: 7

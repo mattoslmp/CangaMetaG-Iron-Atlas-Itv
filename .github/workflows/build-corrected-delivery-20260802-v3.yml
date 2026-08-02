@@ -1,0 +1,247 @@
+name: Build corrected ISME delivery 2026-08-02 v3
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - '.github/workflows/build-corrected-delivery-20260802-v3.yml'
+      - 'scripts/prepatch_literal_replacements_20260802.py'
+      - 'scripts/fix_delivery_workspace_20260802.py'
+      - 'scripts/patch_combined_environment_20260802.py'
+      - 'scripts/build_corrected_delivery_20260802.py'
+      - 'src/app_genus_lt1_transform.py'
+      - 'app.py'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build-delivery-v3:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - name: Checkout corrected delivery branch
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          lfs: false
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+
+      - name: Install generation dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install numpy pandas scipy scikit-learn matplotlib pillow cairosvg openpyxl plotly pytest
+
+      - name: Apply isolated corrections
+        run: |
+          python scripts/build_corrected_delivery_20260802.py
+          python scripts/prepatch_literal_replacements_20260802.py
+          python scripts/fix_delivery_workspace_20260802.py
+          python scripts/patch_combined_environment_20260802.py
+
+      - name: Regenerate canonical Figures 2-5
+        run: |
+          python scripts/final_publication_figures/02_05_generate_final_taxonomy_figures.py \
+            --base-dir . --language both --dpi 350
+
+      - name: Generate joint-domain supplementary figures
+        run: python scripts/final_publication_figures/03_generate_combined_community_figures.py
+
+      - name: Validate scientific and delivery contracts
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import json
+          import pandas as pd
+          from PIL import Image
+
+          root = Path('.')
+          required = [
+            'outputs/final_publication_figures/Figure2_taxonomic_phylum_bacteria_horizontal_CDS.png',
+            'outputs/final_publication_figures/Figure3_taxonomic_phylum_archaea_horizontal_CDS.png',
+            'outputs/final_publication_figures/Figure4_taxonomic_bacteria_genus_profiles.png',
+            'outputs/final_publication_figures/Figure5_taxonomic_archaea_genus_profiles.png',
+            'outputs/app_supplementary_figures/SupplementaryFigure3_combined_NMDS_20_individual_samples.png',
+            'outputs/app_supplementary_figures/SupplementaryFigure_combined_NMDS_RDA_all_domains.png',
+            'outputs/app_supplementary_figures/SupplementaryFigure_alpha_diversity_all_domains.png',
+            'outputs/app_supplementary_figures/SupplementaryFigure_rarefaction_all_domains.png',
+            'data/final_publication_derived/combined_all_domains_NMDS_20_samples.csv',
+            'data/final_publication_derived/combined_all_domains_RDA_10_positions.csv',
+            'reports/COMBINED_SAMPLE_ID_MAPPING_20260802.json',
+            'reports/COMBINED_ENVIRONMENT_SOURCE_20260802.json',
+            'reports/COMBINED_COMMUNITY_FIGURES_20260802.json',
+            'reports/DELIVERY_20260802_CORRECTION_REPORT.json',
+            'reports/DELIVERY_20260802_WORKSPACE_FIX_REPORT.json',
+          ]
+          missing = [item for item in required if not (root / item).is_file()]
+          if missing:
+            raise SystemExit(f'Missing required outputs: {missing}')
+
+          dimensions = {}
+          for item in required[:8]:
+            with Image.open(root / item) as image:
+              image.verify()
+            with Image.open(root / item) as image:
+              dimensions[item] = list(image.size)
+              if min(image.size) < 900:
+                raise SystemExit(f'Publication image too small: {item} {image.size}')
+
+          nmds = pd.read_csv(root / required[8])
+          rda = pd.read_csv(root / required[9])
+          if len(nmds) != 20 or nmds['Sample'].nunique() != 20:
+            raise SystemExit('Combined NMDS does not contain 20 unique individual samples')
+          if len(rda) != 10 or rda['Position'].nunique() != 10:
+            raise SystemExit('Combined RDA does not contain ten unique matched positions')
+          season_counts = nmds.groupby('Position')['Season'].agg(
+            lambda values: sorted(set(values))
+          )
+          if any(value != ['Dry', 'Rainy'] for value in season_counts.tolist()):
+            raise SystemExit(
+              f'Each position must contain Dry and Rainy samples: {season_counts.to_dict()}'
+            )
+
+          environment_report = json.loads(
+            (root / 'reports/COMBINED_ENVIRONMENT_SOURCE_20260802.json').read_text()
+          )
+          if environment_report.get('status') != 'PASS':
+            raise SystemExit('Canonical physicochemical source was not validated')
+          if len(environment_report.get('positions', [])) != 10:
+            raise SystemExit('Environment source does not cover ten positions')
+          if set(environment_report.get('predictor_columns', {})) != {
+            'LOI', 'SiO2', 'Al2O3', 'TOT/S', 'Cu', 'Pb'
+          }:
+            raise SystemExit('Environment source lacks the six official predictors')
+
+          profile_report = {}
+          for domain in ('bacteria', 'archaea'):
+            payload = json.loads(
+              (root / f'data/article_frozen_taxonomy_{domain}.json').read_text()
+            )
+            frame = pd.DataFrame(payload['profile'])
+            sample_columns = [
+              column for column in payload['profile_columns']
+              if column != 'taxon'
+            ]
+            delta = float((frame[sample_columns].sum(axis=0) - 100.0).abs().max())
+            labels = frame['taxon'].astype(str).tolist()
+            if delta > 1e-5:
+              raise SystemExit(f'{domain} profile mass changed: {delta}')
+            if 'Other genera (<1% each)' not in labels:
+              raise SystemExit(f'{domain} profile lacks Other genera (<1% each)')
+            if not any(label.casefold().startswith('unclassified') for label in labels):
+              raise SystemExit(f'{domain} profile no longer keeps Unclassified separate')
+            profile_report[domain] = {
+              'rows': len(frame),
+              'max_total_delta': delta,
+            }
+
+          app_wrapper = (root / 'app.py').read_text(errors='ignore')
+          transform = (root / 'src/app_genus_lt1_transform.py').read_text(errors='ignore')
+          if 'app_genus_lt1_transform.py' not in app_wrapper:
+            raise SystemExit(
+              'The canonical app wrapper does not register the genus <1% transform'
+            )
+          for token in (
+            'strictly below 1%',
+            'Other taxa (<1% each)',
+            'maximum relative abundance',
+          ):
+            if token not in transform:
+              raise SystemExit(f'App transform contract lacks {token!r}')
+
+          report = {
+            'status': 'PASS',
+            'canonical_base': 'main@c1eae09cfa6b198212ede5834f20102445207386',
+            'profiles': profile_report,
+            'combined_nmds_samples': int(nmds['Sample'].nunique()),
+            'combined_rda_positions': int(rda['Position'].nunique()),
+            'environment_source': environment_report.get('source'),
+            'environment_sheet': environment_report.get('sheet'),
+            'image_dimensions': dimensions,
+            'supplementary_17_18_policy': 'preserved and not regenerated',
+          }
+          (root / 'reports/DELIVERY_20260802_VALIDATION.json').write_text(
+            json.dumps(report, indent=2) + '\n'
+          )
+          print(json.dumps(report, indent=2))
+          PY
+
+      - name: Compile corrected scripts
+        run: |
+          python -m py_compile app.py \
+            scripts/build_corrected_delivery_20260802.py \
+            scripts/prepatch_literal_replacements_20260802.py \
+            scripts/fix_delivery_workspace_20260802.py \
+            scripts/patch_combined_environment_20260802.py \
+            scripts/final_publication_figures/02_05_generate_final_taxonomy_figures.py \
+            scripts/final_publication_figures/03_generate_combined_community_figures.py \
+            src/app_genus_lt1_transform.py
+
+      - name: Build complete corrected repository archive
+        run: |
+          rm -rf .git .pytest_cache __pycache__
+          find . -type d -name '__pycache__' -prune -exec rm -rf {} +
+          mkdir -p delivery
+          zip -r -q -9 delivery/CangaMetaG_Iron_Atlas_corrected_20260802.zip . \
+            -x 'delivery/*' '*.pyc' '.git/*'
+          cd delivery
+          split -b 60m -d -a 2 \
+            CangaMetaG_Iron_Atlas_corrected_20260802.zip \
+            CangaMetaG_Iron_Atlas_corrected_20260802.zip.repo-part-
+          sha256sum CangaMetaG_Iron_Atlas_corrected_20260802.zip \
+            CangaMetaG_Iron_Atlas_corrected_20260802.zip.repo-part-* \
+            > REPOSITORY_ARCHIVE_SHA256.txt
+          ls -lh CangaMetaG_Iron_Atlas_corrected_20260802.zip.repo-part-* \
+            > REPOSITORY_PARTS_LIST.txt
+          rm CangaMetaG_Iron_Atlas_corrected_20260802.zip
+
+      - name: Upload corrected publication figures
+        uses: actions/upload-artifact@v4
+        with:
+          name: corrected-publication-figures-20260802-v3
+          path: |
+            outputs/final_publication_figures/Figure2_taxonomic_phylum_bacteria_horizontal_CDS.*
+            outputs/final_publication_figures/Figure3_taxonomic_phylum_archaea_horizontal_CDS.*
+            outputs/final_publication_figures/Figure4_taxonomic_bacteria_genus_profiles.*
+            outputs/final_publication_figures/Figure5_taxonomic_archaea_genus_profiles.*
+            outputs/app_supplementary_figures/SupplementaryFigure3_combined_NMDS_20_individual_samples.*
+            outputs/app_supplementary_figures/SupplementaryFigure_combined_NMDS_RDA_all_domains.*
+            outputs/app_supplementary_figures/SupplementaryFigure_alpha_diversity_all_domains.*
+            outputs/app_supplementary_figures/SupplementaryFigure_rarefaction_all_domains.*
+            data/final_publication_derived/combined_all_domains_*.csv
+            data/final_publication_derived/alpha_diversity_all_domains_20_samples.csv
+            data/final_publication_derived/rarefaction_all_domains_20_samples.csv
+            data/article_frozen_taxonomy_bacteria.json
+            data/article_frozen_taxonomy_archaea.json
+            reports/*.json
+          compression-level: 6
+          retention-days: 7
+
+      - name: Upload corrected repository parts
+        uses: actions/upload-artifact@v4
+        with:
+          name: corrected-repository-parts-20260802-v3
+          path: |
+            delivery/CangaMetaG_Iron_Atlas_corrected_20260802.zip.repo-part-*
+            delivery/REPOSITORY_ARCHIVE_SHA256.txt
+            delivery/REPOSITORY_PARTS_LIST.txt
+          compression-level: 0
+          retention-days: 7
+
+      - name: Upload diagnostics on failure
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: corrected-delivery-diagnostics-20260802-v3
+          path: |
+            reports/*.json
+            scripts/final_publication_figures/03_generate_combined_community_figures.py
+          compression-level: 6
+          if-no-files-found: ignore
+          retention-days: 7

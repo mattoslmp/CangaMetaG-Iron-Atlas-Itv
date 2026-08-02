@@ -1,0 +1,159 @@
+name: Export final corrected repository parts 2026-08-02
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - '.github/workflows/export-final-repository-parts-20260802.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build-final-repository:
+    runs-on: ubuntu-latest
+    timeout-minutes: 180
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          lfs: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install numpy pandas scipy scikit-learn matplotlib pillow cairosvg openpyxl plotly
+      - name: Apply all final scientific corrections
+        run: |
+          python scripts/build_corrected_delivery_20260802.py
+          python scripts/prepatch_literal_replacements_20260802.py
+          python scripts/fix_delivery_workspace_20260802.py
+          python scripts/patch_combined_environment_20260802.py
+          python scripts/patch_combined_nmds_relative_20260802.py
+          python scripts/final_publication_figures/02_05_generate_final_taxonomy_figures.py --base-dir . --language both --dpi 350
+          python scripts/final_publication_figures/03_generate_combined_community_figures.py
+      - name: Validate final repository workspace
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import json
+          import pandas as pd
+          root=Path('.')
+          nmds=pd.read_csv(root/'data/final_publication_derived/combined_all_domains_NMDS_20_samples.csv')
+          rda=pd.read_csv(root/'data/final_publication_derived/combined_all_domains_RDA_10_positions.csv')
+          if nmds['Sample'].nunique()!=20: raise SystemExit('NMDS sample contract failed')
+          if rda['Position'].nunique()!=10: raise SystemExit('RDA position contract failed')
+          env=json.loads((root/'reports/COMBINED_ENVIRONMENT_SOURCE_20260802.json').read_text())
+          if env.get('status')!='PASS': raise SystemExit('Environment source contract failed')
+          app=(root/'app.py').read_text(errors='ignore')
+          if 'app_genus_lt1_transform.py' not in app: raise SystemExit('App transform registration missing')
+          required=[
+            'outputs/final_publication_figures/Figure2_taxonomic_phylum_bacteria_horizontal_CDS.png',
+            'outputs/final_publication_figures/Figure3_taxonomic_phylum_archaea_horizontal_CDS.png',
+            'outputs/final_publication_figures/Figure4_taxonomic_bacteria_genus_profiles.png',
+            'outputs/final_publication_figures/Figure5_taxonomic_archaea_genus_profiles.png',
+            'outputs/app_supplementary_figures/SupplementaryFigure3_combined_NMDS_20_individual_samples.png',
+            'outputs/app_supplementary_figures/SupplementaryFigure_combined_NMDS_RDA_all_domains.png',
+          ]
+          missing=[p for p in required if not (root/p).is_file()]
+          if missing: raise SystemExit(f'Missing final outputs: {missing}')
+          report={'status':'PASS','nmds_samples':20,'rda_positions':10,'distance_input':'relative abundance','environment_source':env.get('source')}
+          (root/'reports/FINAL_REPOSITORY_VALIDATION_20260802.json').write_text(json.dumps(report,indent=2)+'\n')
+          print(json.dumps(report,indent=2))
+          PY
+      - name: Build and split complete repository archive
+        run: |
+          rm -rf .git .pytest_cache __pycache__
+          find . -type d -name '__pycache__' -prune -exec rm -rf {} +
+          mkdir -p delivery
+          zip -r -q -9 delivery/CangaMetaG_Iron_Atlas_corrected_20260802.zip . -x 'delivery/*' '*.pyc' '.git/*'
+          cd delivery
+          split -b 48m -d -a 2 CangaMetaG_Iron_Atlas_corrected_20260802.zip CangaMetaG_Iron_Atlas_corrected_20260802.zip.repo-part-
+          sha256sum CangaMetaG_Iron_Atlas_corrected_20260802.zip > REPOSITORY_ARCHIVE_SHA256.txt
+          sha256sum CangaMetaG_Iron_Atlas_corrected_20260802.zip.repo-part-* > REPOSITORY_PARTS_SHA256.txt
+          ls -lh CangaMetaG_Iron_Atlas_corrected_20260802.zip.repo-part-* > REPOSITORY_PARTS_LIST.txt
+          python - <<'PY'
+          from pathlib import Path
+          import json
+          parts=sorted(Path('.').glob('*.repo-part-*'))
+          if not parts or len(parts)>20: raise SystemExit(f'Unexpected part count: {len(parts)}')
+          manifest={'part_count':len(parts),'parts':[{'name':p.name,'size':p.stat().st_size} for p in parts]}
+          Path('REPOSITORY_PARTS_MANIFEST.json').write_text(json.dumps(manifest,indent=2)+'\n')
+          print(json.dumps(manifest,indent=2))
+          PY
+          rm CangaMetaG_Iron_Atlas_corrected_20260802.zip
+      - name: Upload repository manifests
+        uses: actions/upload-artifact@v4
+        with:
+          name: final-repository-manifests-20260802
+          path: |
+            delivery/REPOSITORY_ARCHIVE_SHA256.txt
+            delivery/REPOSITORY_PARTS_SHA256.txt
+            delivery/REPOSITORY_PARTS_LIST.txt
+            delivery/REPOSITORY_PARTS_MANIFEST.json
+            reports/FINAL_REPOSITORY_VALIDATION_20260802.json
+          compression-level: 9
+          retention-days: 7
+      - name: Upload repository part 00
+        uses: actions/upload-artifact@v4
+        with: {name: final-repository-part-00, path: delivery/*.repo-part-00, compression-level: 0, if-no-files-found: ignore, retention-days: 7}
+      - name: Upload repository part 01
+        uses: actions/upload-artifact@v4
+        with: {name: final-repository-part-01, path: delivery/*.repo-part-01, compression-level: 0, if-no-files-found: ignore, retention-days: 7}
+      - name: Upload repository part 02
+        uses: actions/upload-artifact@v4
+        with: {name: final-repository-part-02, path: delivery/*.repo-part-02, compression-level: 0, if-no-files-found: ignore, retention-days: 7}
+      - name: Upload repository part 03
+        uses: actions/upload-artifact@v4
+        with: {name: final-repository-part-03, path: delivery/*.repo-part-03, compression-level: 0, if-no-files-found: ignore, retention-days: 7}
+      - name: Upload repository part 04
+        uses: actions/upload-artifact@v4
+        with: {name: final-repository-part-04, path: delivery/*.repo-part-04, compression-level: 0, if-no-files-found: ignore, retention-days: 7}
+      - name: Upload repository part 05
+        uses: actions/upload-artifact@v4
+        with: {name: final-repository-part-05, path: delivery/*.repo-part-05, compression-level: 0, if-no-files-found: ignore, retention-days: 7}
+      - name: Upload repository part 06
+        uses: actions/upload-artifact@v4
+        with: {name: final-repository-part-06, path: delivery/*.repo-part-06, compression-level: 0, if-no-files-found: ignore, retention-days: 7}
+      - name: Upload repository part 07
+        uses: actions/upload-artifact@v4
+        with: {name: final-repository-part-07, path: delivery/*.repo-part-07, compression-level: 0, if-no-files-found: ignore, retention-days: 7}
+      - name: Upload repository part 08
+        uses: actions/upload-artifact@v4
+        with: {name: final-repository-part-08, path: delivery/*.repo-part-08, compression-level: 0, if-no-files-found: ignore, retention-days: 7}
+      - name: Upload repository part 09
+        uses: actions/upload-artifact@v4
+        with: {name: final-repository-part-09, path: delivery/*.repo-part-09, compression-level: 0, if-no-files-found: ignore, retention-days: 7}
+      - name: Upload repository part 10
+        uses: actions/upload-artifact@v4
+        with: {name: final-repository-part-10, path: delivery/*.repo-part-10, compression-level: 0, if-no-files-found: ignore, retention-days: 7}
+      - name: Upload repository part 11
+        uses: actions/upload-artifact@v4
+        with: {name: final-repository-part-11, path: delivery/*.repo-part-11, compression-level: 0, if-no-files-found: ignore, retention-days: 7}
+      - name: Upload repository part 12
+        uses: actions/upload-artifact@v4
+        with: {name: final-repository-part-12, path: delivery/*.repo-part-12, compression-level: 0, if-no-files-found: ignore, retention-days: 7}
+      - name: Upload repository part 13
+        uses: actions/upload-artifact@v4
+        with: {name: final-repository-part-13, path: delivery/*.repo-part-13, compression-level: 0, if-no-files-found: ignore, retention-days: 7}
+      - name: Upload repository part 14
+        uses: actions/upload-artifact@v4
+        with: {name: final-repository-part-14, path: delivery/*.repo-part-14, compression-level: 0, if-no-files-found: ignore, retention-days: 7}
+      - name: Upload repository part 15
+        uses: actions/upload-artifact@v4
+        with: {name: final-repository-part-15, path: delivery/*.repo-part-15, compression-level: 0, if-no-files-found: ignore, retention-days: 7}
+      - name: Upload repository part 16
+        uses: actions/upload-artifact@v4
+        with: {name: final-repository-part-16, path: delivery/*.repo-part-16, compression-level: 0, if-no-files-found: ignore, retention-days: 7}
+      - name: Upload repository part 17
+        uses: actions/upload-artifact@v4
+        with: {name: final-repository-part-17, path: delivery/*.repo-part-17, compression-level: 0, if-no-files-found: ignore, retention-days: 7}
+      - name: Upload repository part 18
+        uses: actions/upload-artifact@v4
+        with: {name: final-repository-part-18, path: delivery/*.repo-part-18, compression-level: 0, if-no-files-found: ignore, retention-days: 7}
+      - name: Upload repository part 19
+        uses: actions/upload-artifact@v4
+        with: {name: final-repository-part-19, path: delivery/*.repo-part-19, compression-level: 0, if-no-files-found: ignore, retention-days: 7}

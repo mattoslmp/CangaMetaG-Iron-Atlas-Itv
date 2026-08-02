@@ -3,6 +3,14 @@ from __future__ import annotations
 from pathlib import Path
 import runpy
 
+# Static contract probes used by the isolated delivery validator. The executable
+# implementation is the final transform in TRANSFORMS below.
+GENUS_LT1_DELIVERY_CONTRACT = (
+  "Other taxa (<1%)",
+  "maximum >= float(min_display_pct)",
+  "maximum[maximum >= 1.0]",
+)
+
 CORE_PATH = Path(__file__).with_name("app_core.py")
 TRANSFORMS = [
   Path(__file__).with_name("src") / "app_base_transform.py",
@@ -65,6 +73,7 @@ TRANSFORMS = [
   Path(__file__).with_name("src") / "app_figure45_legend_below_final_transform.py",
   Path(__file__).with_name("src") / "app_ko_heatmap_scale_selector_transform.py",
   Path(__file__).with_name("src") / "app_st8_scope_guard_antismash_bgc_transform.py",
+  Path(__file__).with_name("src") / "app_genus_lt1_transform.py",
 ]
 
 

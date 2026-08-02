@@ -7,6 +7,7 @@ on:
       - '.github/workflows/build-corrected-delivery-20260802-v3.yml'
       - 'scripts/prepatch_literal_replacements_20260802.py'
       - 'scripts/fix_delivery_workspace_20260802.py'
+      - 'scripts/patch_combined_environment_20260802.py'
       - 'scripts/build_corrected_delivery_20260802.py'
       - 'src/app_genus_lt1_transform.py'
       - 'app.py'
@@ -42,6 +43,7 @@ jobs:
           python scripts/build_corrected_delivery_20260802.py
           python scripts/prepatch_literal_replacements_20260802.py
           python scripts/fix_delivery_workspace_20260802.py
+          python scripts/patch_combined_environment_20260802.py
 
       - name: Regenerate canonical Figures 2-5
         run: |
@@ -72,6 +74,7 @@ jobs:
             'data/final_publication_derived/combined_all_domains_NMDS_20_samples.csv',
             'data/final_publication_derived/combined_all_domains_RDA_10_positions.csv',
             'reports/COMBINED_SAMPLE_ID_MAPPING_20260802.json',
+            'reports/COMBINED_ENVIRONMENT_SOURCE_20260802.json',
             'reports/COMBINED_COMMUNITY_FIGURES_20260802.json',
             'reports/DELIVERY_20260802_CORRECTION_REPORT.json',
             'reports/DELIVERY_20260802_WORKSPACE_FIX_REPORT.json',
@@ -95,15 +98,36 @@ jobs:
             raise SystemExit('Combined NMDS does not contain 20 unique individual samples')
           if len(rda) != 10 or rda['Position'].nunique() != 10:
             raise SystemExit('Combined RDA does not contain ten unique matched positions')
-          season_counts = nmds.groupby('Position')['Season'].agg(lambda values: sorted(set(values)))
-          if any(value != ['Dry', 'Rainy'] for value in season_counts):
-            raise SystemExit(f'Each position must contain Dry and Rainy samples: {season_counts.to_dict()}')
+          season_counts = nmds.groupby('Position')['Season'].agg(
+            lambda values: sorted(set(values))
+          )
+          if any(value != ['Dry', 'Rainy'] for value in season_counts.tolist()):
+            raise SystemExit(
+              f'Each position must contain Dry and Rainy samples: {season_counts.to_dict()}'
+            )
+
+          environment_report = json.loads(
+            (root / 'reports/COMBINED_ENVIRONMENT_SOURCE_20260802.json').read_text()
+          )
+          if environment_report.get('status') != 'PASS':
+            raise SystemExit('Canonical physicochemical source was not validated')
+          if len(environment_report.get('positions', [])) != 10:
+            raise SystemExit('Environment source does not cover ten positions')
+          if set(environment_report.get('predictor_columns', {})) != {
+            'LOI', 'SiO2', 'Al2O3', 'TOT/S', 'Cu', 'Pb'
+          }:
+            raise SystemExit('Environment source lacks the six official predictors')
 
           profile_report = {}
           for domain in ('bacteria', 'archaea'):
-            payload = json.loads((root / f'data/article_frozen_taxonomy_{domain}.json').read_text())
+            payload = json.loads(
+              (root / f'data/article_frozen_taxonomy_{domain}.json').read_text()
+            )
             frame = pd.DataFrame(payload['profile'])
-            sample_columns = [column for column in payload['profile_columns'] if column != 'taxon']
+            sample_columns = [
+              column for column in payload['profile_columns']
+              if column != 'taxon'
+            ]
             delta = float((frame[sample_columns].sum(axis=0) - 100.0).abs().max())
             labels = frame['taxon'].astype(str).tolist()
             if delta > 1e-5:
@@ -112,13 +136,22 @@ jobs:
               raise SystemExit(f'{domain} profile lacks Other genera (<1% each)')
             if not any(label.casefold().startswith('unclassified') for label in labels):
               raise SystemExit(f'{domain} profile no longer keeps Unclassified separate')
-            profile_report[domain] = {'rows': len(frame), 'max_total_delta': delta}
+            profile_report[domain] = {
+              'rows': len(frame),
+              'max_total_delta': delta,
+            }
 
           app_wrapper = (root / 'app.py').read_text(errors='ignore')
           transform = (root / 'src/app_genus_lt1_transform.py').read_text(errors='ignore')
           if 'app_genus_lt1_transform.py' not in app_wrapper:
-            raise SystemExit('The canonical app wrapper does not register the genus <1% transform')
-          for token in ('strictly below 1%', 'Other taxa (<1% each)', 'maximum relative abundance'):
+            raise SystemExit(
+              'The canonical app wrapper does not register the genus <1% transform'
+            )
+          for token in (
+            'strictly below 1%',
+            'Other taxa (<1% each)',
+            'maximum relative abundance',
+          ):
             if token not in transform:
               raise SystemExit(f'App transform contract lacks {token!r}')
 
@@ -128,6 +161,8 @@ jobs:
             'profiles': profile_report,
             'combined_nmds_samples': int(nmds['Sample'].nunique()),
             'combined_rda_positions': int(rda['Position'].nunique()),
+            'environment_source': environment_report.get('source'),
+            'environment_sheet': environment_report.get('sheet'),
             'image_dimensions': dimensions,
             'supplementary_17_18_policy': 'preserved and not regenerated',
           }
@@ -143,6 +178,7 @@ jobs:
             scripts/build_corrected_delivery_20260802.py \
             scripts/prepatch_literal_replacements_20260802.py \
             scripts/fix_delivery_workspace_20260802.py \
+            scripts/patch_combined_environment_20260802.py \
             scripts/final_publication_figures/02_05_generate_final_taxonomy_figures.py \
             scripts/final_publication_figures/03_generate_combined_community_figures.py \
             src/app_genus_lt1_transform.py

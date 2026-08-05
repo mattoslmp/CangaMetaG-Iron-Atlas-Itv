@@ -1,0 +1,297 @@
+{
+  "canonical_script": "07_Final_Figures_and_Scripts/scripts/generate_targeted_figures_20260805.py",
+  "status": "PASS",
+  "scientific_values_changed": false,
+  "ordination_policy": "Frozen packaged NMDS/RDA coordinates, vectors and statistics; no recomputation.",
+  "input_checksums": {
+    "07_Final_Figures_and_Scripts/data/resultado.cds.otu.tab": "6e56cefed52b18afe8a2a83ad8db414812a79a11306270a78809020c6948e242",
+    "07_Final_Figures_and_Scripts/data/resultado.cds.tax.tab": "a168f44e3ae5f042ca004f2903ea3061628e4a1d7cdfa75009e8262679f49f17",
+    "07_Final_Figures_and_Scripts/data/fiqui2.xlsx": "ac7c11dc838e913db4731f0a3721a475bec1ac429520b8a2a477829733a48e0c",
+    "06_Supplementary_Tables/Supplementary_Table_7.xlsx": "ebeb483321a1b804d39cb9a96ec3426282115c813921131a6a027af08947f0a5",
+    "07_Final_Figures_and_Scripts/data/final_publication_derived/SupplementaryFigure17_physicochemical_row_zscore_source.csv": "71fc6492ea64001e9ebbdfcb4bc9e29dde901544742fe12cdc41fa7fc991c876",
+    "07_Final_Figures_and_Scripts/reproducibility/ordination_reproducibility/output/Bacteria_NMDS_scores.csv": "6583419cdf170b88a9d3672af39be588ce16884b09628f598e31de9d82775736",
+    "07_Final_Figures_and_Scripts/reproducibility/ordination_reproducibility/output/Bacteria_NMDS_statistics.json": "fc866ba432a38fbfa3aa5b2bf357c76ce45d858cd6d3cc8a920bbdd9b6a4f1fe",
+    "07_Final_Figures_and_Scripts/reproducibility/ordination_reproducibility/output/Bacteria_RDA_site_scores.csv": "2ff6cc0024e159f6ffcbc53dca71d6cd19009a25b345f06d03beaef9edc9b962",
+    "07_Final_Figures_and_Scripts/reproducibility/ordination_reproducibility/output/Bacteria_RDA_environment_vectors.csv": "b2ef8e4ca8e724dafb287bf7b3dd01ebe9d635fa379a18a0f784c7d1f5a688fa",
+    "07_Final_Figures_and_Scripts/reproducibility/ordination_reproducibility/output/Bacteria_RDA_representative_genus_vectors.csv": "64e953edc233a32423159cbb3fe41c15a499d693e7033a68ff8f9014a1f5bb47",
+    "07_Final_Figures_and_Scripts/reproducibility/ordination_reproducibility/tables/Bacteria_RDA_model_statistics.csv": "094bbec32a21674e5201a760223a2608158d0e885138ff537b92d15acdfb57f3",
+    "07_Final_Figures_and_Scripts/reproducibility/ordination_reproducibility/output/Archaea_NMDS_scores.csv": "d6aacae9417ec8f63fe7a98f81ec0bfc1fc046fa63c9cb26173618140198dd46",
+    "07_Final_Figures_and_Scripts/reproducibility/ordination_reproducibility/output/Archaea_NMDS_statistics.json": "9cddbe240153ea67066407c023a162354c18ed4cc81bbafcd425629bf275fe88",
+    "07_Final_Figures_and_Scripts/reproducibility/ordination_reproducibility/output/Archaea_RDA_site_scores.csv": "1096546ed1fe3e025a292621f833fb32c70a866ed72769c996d11f8d193156d1",
+    "07_Final_Figures_and_Scripts/reproducibility/ordination_reproducibility/output/Archaea_RDA_environment_vectors.csv": "8fa673d923aa3df69d77108369ed1a243e6dbcc12ace3d94fadfee7e25b26517",
+    "07_Final_Figures_and_Scripts/reproducibility/ordination_reproducibility/output/Archaea_RDA_representative_genus_vectors.csv": "f8c21f9aa8896b6639075633bd7db5f7821699d70ea73d8007e9b66acbe52d45",
+    "07_Final_Figures_and_Scripts/reproducibility/ordination_reproducibility/tables/Archaea_RDA_model_statistics.csv": "b30a784bbb9eee01ff4c0c7b77e4c40814bf99a93729603bc9a15f0b6478bab0"
+  },
+  "outputs": [
+    {
+      "figure": "Figure2_taxonomic_phylum_bacteria_horizontal_CDS",
+      "file": "07_Final_Figures_and_Scripts/outputs/final_publication_figures/Figure2_taxonomic_phylum_bacteria_horizontal_CDS.png",
+      "format": "PNG",
+      "bytes": 1322087,
+      "sha256": "68a2cbd292fcb67919d84d7c42ce4f5c85f074ce105c4df3e9f804b271a99d2d",
+      "pixel_width": 12019,
+      "pixel_height": 5557,
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "figure": "Figure2_taxonomic_phylum_bacteria_horizontal_CDS",
+      "file": "07_Final_Figures_and_Scripts/outputs/final_publication_figures/Figure2_taxonomic_phylum_bacteria_horizontal_CDS.pdf",
+      "format": "PDF",
+      "bytes": 72273,
+      "sha256": "d56b3b9906d5c99600495872458930a0e1575bbaf6ca5ce8338303d5e8059b68"
+    },
+    {
+      "figure": "Figure2_taxonomic_phylum_bacteria_horizontal_CDS",
+      "file": "07_Final_Figures_and_Scripts/outputs/final_publication_figures/Figure2_taxonomic_phylum_bacteria_horizontal_CDS.svg",
+      "format": "SVG",
+      "bytes": 343077,
+      "sha256": "659a7bb22cf1d3f888f335a1de1f9a5ff6978de6657c7bcbbb2b8a5e08b3f968"
+    },
+    {
+      "figure": "Figure3_taxonomic_phylum_archaea_horizontal_CDS",
+      "file": "07_Final_Figures_and_Scripts/outputs/final_publication_figures/Figure3_taxonomic_phylum_archaea_horizontal_CDS.png",
+      "format": "PNG",
+      "bytes": 1278216,
+      "sha256": "e5ea23b1a89b70d8cb56771d55e79da3c990289a9c8b77cf289739d2a69167f5",
+      "pixel_width": 10933,
+      "pixel_height": 5557,
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "figure": "Figure3_taxonomic_phylum_archaea_horizontal_CDS",
+      "file": "07_Final_Figures_and_Scripts/outputs/final_publication_figures/Figure3_taxonomic_phylum_archaea_horizontal_CDS.pdf",
+      "format": "PDF",
+      "bytes": 72219,
+      "sha256": "4aa5f02172e2b99098d3eeed978104b6b706109d1c43cb8e7f5cb17560e0f241"
+    },
+    {
+      "figure": "Figure3_taxonomic_phylum_archaea_horizontal_CDS",
+      "file": "07_Final_Figures_and_Scripts/outputs/final_publication_figures/Figure3_taxonomic_phylum_archaea_horizontal_CDS.svg",
+      "format": "SVG",
+      "bytes": 325107,
+      "sha256": "7e2ad88b4c1bedf36ea777d7e14a518334c7290a5f41b578f3563330eda58952"
+    },
+    {
+      "figure": "Figure4_taxonomic_bacteria_genus_profiles",
+      "file": "07_Final_Figures_and_Scripts/outputs/final_publication_figures/Figure4_taxonomic_bacteria_genus_profiles.png",
+      "format": "PNG",
+      "bytes": 2162704,
+      "sha256": "cf96a8a91f5bece1cbe5b1e6ac6bb0777ae4ebd2ca48b500b7b980d0b18a4fbc",
+      "pixel_width": 9044,
+      "pixel_height": 5641,
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "figure": "Figure4_taxonomic_bacteria_genus_profiles",
+      "file": "07_Final_Figures_and_Scripts/outputs/final_publication_figures/Figure4_taxonomic_bacteria_genus_profiles.pdf",
+      "format": "PDF",
+      "bytes": 96462,
+      "sha256": "e77776094400643bc175e83f59eb6c3a9367cdc111c9f6fd3360e60a707df4cf"
+    },
+    {
+      "figure": "Figure4_taxonomic_bacteria_genus_profiles",
+      "file": "07_Final_Figures_and_Scripts/outputs/final_publication_figures/Figure4_taxonomic_bacteria_genus_profiles.svg",
+      "format": "SVG",
+      "bytes": 417640,
+      "sha256": "68a168a16f7eea96cee923b3df75ad9a41941192c07001f6c94f394c37b88162"
+    },
+    {
+      "figure": "Figure5_taxonomic_archaea_genus_profiles",
+      "file": "07_Final_Figures_and_Scripts/outputs/final_publication_figures/Figure5_taxonomic_archaea_genus_profiles.png",
+      "format": "PNG",
+      "bytes": 2295776,
+      "sha256": "dfe44cb526af077ed5b3f904366aec7b65dd47e72f338e5b76f5b1ccd702cfc7",
+      "pixel_width": 11110,
+      "pixel_height": 5641,
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "figure": "Figure5_taxonomic_archaea_genus_profiles",
+      "file": "07_Final_Figures_and_Scripts/outputs/final_publication_figures/Figure5_taxonomic_archaea_genus_profiles.pdf",
+      "format": "PDF",
+      "bytes": 102444,
+      "sha256": "dde6f275edd9c158263789d994623a03c2742fa83be90eee0fd7c0fe76c5231c"
+    },
+    {
+      "figure": "Figure5_taxonomic_archaea_genus_profiles",
+      "file": "07_Final_Figures_and_Scripts/outputs/final_publication_figures/Figure5_taxonomic_archaea_genus_profiles.svg",
+      "format": "SVG",
+      "bytes": 465695,
+      "sha256": "1ddb51f310675f2d2dd025047eb562331d49996801f3c55bf3d5fab2d962ff7d"
+    },
+    {
+      "figure": "SupplementaryFigure6_MAG_bubble_original",
+      "file": "07_Final_Figures_and_Scripts/outputs/final_publication_figures/SupplementaryFigure6_MAG_bubble_original.png",
+      "format": "PNG",
+      "bytes": 4061152,
+      "sha256": "f653fc3ef5d3416dbf8811ac4adb35330c6c06c59930f477326d935e1d7c12e8",
+      "pixel_width": 8457,
+      "pixel_height": 13482,
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "figure": "SupplementaryFigure6_MAG_bubble_original",
+      "file": "07_Final_Figures_and_Scripts/outputs/final_publication_figures/SupplementaryFigure6_MAG_bubble_original.pdf",
+      "format": "PDF",
+      "bytes": 102231,
+      "sha256": "06ee5a57d5e46d9a6462074a46d033e91ebfaf6cb9f79b7eda27d9126fa692c7"
+    },
+    {
+      "figure": "SupplementaryFigure6_MAG_bubble_original",
+      "file": "07_Final_Figures_and_Scripts/outputs/final_publication_figures/SupplementaryFigure6_MAG_bubble_original.svg",
+      "format": "SVG",
+      "bytes": 527396,
+      "sha256": "52b5b5f5b9c675ff0ab177a5d1b156a0b1f776178b61c7ff3173fa4c42cb6a11"
+    },
+    {
+      "figure": "SupplementaryFigure18_RDA_and_physicochemical_heatmap",
+      "file": "07_Final_Figures_and_Scripts/outputs/final_publication_figures/SupplementaryFigure18_RDA_and_physicochemical_heatmap.png",
+      "format": "PNG",
+      "bytes": 2640157,
+      "sha256": "0a7cc26381239e964c7006910d143eb4a37071ed6386097d04688c332923576a",
+      "pixel_width": 12061,
+      "pixel_height": 8667,
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "figure": "SupplementaryFigure18_RDA_and_physicochemical_heatmap",
+      "file": "07_Final_Figures_and_Scripts/outputs/final_publication_figures/SupplementaryFigure18_RDA_and_physicochemical_heatmap.pdf",
+      "format": "PDF",
+      "bytes": 60261,
+      "sha256": "09bd90d8e78b9e8331bb4477b000f613d55847ab519bc8cdde479c5506c40977"
+    },
+    {
+      "figure": "SupplementaryFigure18_RDA_and_physicochemical_heatmap",
+      "file": "07_Final_Figures_and_Scripts/outputs/final_publication_figures/SupplementaryFigure18_RDA_and_physicochemical_heatmap.svg",
+      "format": "SVG",
+      "bytes": 195421,
+      "sha256": "4ab28df9a88e17f53018ecc7342be023d402e0b5ad551decc061bea7f1b84d63"
+    },
+    {
+      "figure": "SupplementaryFigure43_Taxonomy_Bacteria_Phylum_individual_samples_barplot_100pct",
+      "file": "07_Final_Figures_and_Scripts/outputs/final_publication_figures/SupplementaryFigure43_Taxonomy_Bacteria_Phylum_individual_samples_barplot_100pct.png",
+      "format": "PNG",
+      "bytes": 1154846,
+      "sha256": "f790b3306d003b405509e7f6e8254ba62cd71e7caf6c27ba296126edf54b9ddd",
+      "pixel_width": 8849,
+      "pixel_height": 5734,
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "figure": "SupplementaryFigure43_Taxonomy_Bacteria_Phylum_individual_samples_barplot_100pct",
+      "file": "07_Final_Figures_and_Scripts/outputs/final_publication_figures/SupplementaryFigure43_Taxonomy_Bacteria_Phylum_individual_samples_barplot_100pct.pdf",
+      "format": "PDF",
+      "bytes": 70418,
+      "sha256": "03c5f2637c6e03ef0b3529a28097ca5fde3d3711902256cb707f262476bc1faa"
+    },
+    {
+      "figure": "SupplementaryFigure43_Taxonomy_Bacteria_Phylum_individual_samples_barplot_100pct",
+      "file": "07_Final_Figures_and_Scripts/outputs/final_publication_figures/SupplementaryFigure43_Taxonomy_Bacteria_Phylum_individual_samples_barplot_100pct.svg",
+      "format": "SVG",
+      "bytes": 328828,
+      "sha256": "c81fa83fa55a9d25b2d3af9392da89c2042af9bae2fa7e814c476b38dd5d0577"
+    },
+    {
+      "figure": "SupplementaryFigure45_Taxonomy_Archaea_Phylum_individual_samples_barplot_100pct",
+      "file": "07_Final_Figures_and_Scripts/outputs/final_publication_figures/SupplementaryFigure45_Taxonomy_Archaea_Phylum_individual_samples_barplot_100pct.png",
+      "format": "PNG",
+      "bytes": 1131357,
+      "sha256": "08cdeeb4e7fb47444e755792ba8418130ce23328128c4858b7fec8eeef804d30",
+      "pixel_width": 8837,
+      "pixel_height": 5734,
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "figure": "SupplementaryFigure45_Taxonomy_Archaea_Phylum_individual_samples_barplot_100pct",
+      "file": "07_Final_Figures_and_Scripts/outputs/final_publication_figures/SupplementaryFigure45_Taxonomy_Archaea_Phylum_individual_samples_barplot_100pct.pdf",
+      "format": "PDF",
+      "bytes": 70164,
+      "sha256": "45402860fa8562fc30567df4e22d491098994b37df6c0a589614f19fa98c9c60"
+    },
+    {
+      "figure": "SupplementaryFigure45_Taxonomy_Archaea_Phylum_individual_samples_barplot_100pct",
+      "file": "07_Final_Figures_and_Scripts/outputs/final_publication_figures/SupplementaryFigure45_Taxonomy_Archaea_Phylum_individual_samples_barplot_100pct.svg",
+      "format": "SVG",
+      "bytes": 310493,
+      "sha256": "0134601edcd48b4bc9f3b24686c9b0e2edbd5e734d34c833a1e0df6cb428985e"
+    },
+    {
+      "figure": "SupplementaryFigure59_Taxonomy_Bacteria_Genus_individual_samples_barplot_100pct",
+      "file": "07_Final_Figures_and_Scripts/outputs/final_publication_figures/SupplementaryFigure59_Taxonomy_Bacteria_Genus_individual_samples_barplot_100pct.png",
+      "format": "PNG",
+      "bytes": 964061,
+      "sha256": "c56098946384c68d6613bd54cb4638da97f192fecd5ae82ebce413a819c5c14c",
+      "pixel_width": 8486,
+      "pixel_height": 5734,
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "figure": "SupplementaryFigure59_Taxonomy_Bacteria_Genus_individual_samples_barplot_100pct",
+      "file": "07_Final_Figures_and_Scripts/outputs/final_publication_figures/SupplementaryFigure59_Taxonomy_Bacteria_Genus_individual_samples_barplot_100pct.pdf",
+      "format": "PDF",
+      "bytes": 73156,
+      "sha256": "7f47648e0b91450d60b3b5f9a93887886994310f22368da52610e19b67e599a8"
+    },
+    {
+      "figure": "SupplementaryFigure59_Taxonomy_Bacteria_Genus_individual_samples_barplot_100pct",
+      "file": "07_Final_Figures_and_Scripts/outputs/final_publication_figures/SupplementaryFigure59_Taxonomy_Bacteria_Genus_individual_samples_barplot_100pct.svg",
+      "format": "SVG",
+      "bytes": 287018,
+      "sha256": "39b4eec0d1dc2be64829f6c3169d223272a1b0f4d5fbc75f358ea8cd1a3b80ec"
+    },
+    {
+      "figure": "SupplementaryFigure61_Taxonomy_Archaea_Genus_individual_samples_barplot_100pct",
+      "file": "07_Final_Figures_and_Scripts/outputs/final_publication_figures/SupplementaryFigure61_Taxonomy_Archaea_Genus_individual_samples_barplot_100pct.png",
+      "format": "PNG",
+      "bytes": 1084392,
+      "sha256": "fa31ee4eee63dd12e28ba803f1f270f9ee973b37872ee33d2e9466a8be3e0022",
+      "pixel_width": 8890,
+      "pixel_height": 5734,
+      "dpi": [
+        599.9988,
+        599.9988
+      ]
+    },
+    {
+      "figure": "SupplementaryFigure61_Taxonomy_Archaea_Genus_individual_samples_barplot_100pct",
+      "file": "07_Final_Figures_and_Scripts/outputs/final_publication_figures/SupplementaryFigure61_Taxonomy_Archaea_Genus_individual_samples_barplot_100pct.pdf",
+      "format": "PDF",
+      "bytes": 79478,
+      "sha256": "6932c65c38be9deb7cf2011d4949c6afd257c4c71684885331ce47ab909c63f8"
+    },
+    {
+      "figure": "SupplementaryFigure61_Taxonomy_Archaea_Genus_individual_samples_barplot_100pct",
+      "file": "07_Final_Figures_and_Scripts/outputs/final_publication_figures/SupplementaryFigure61_Taxonomy_Archaea_Genus_individual_samples_barplot_100pct.svg",
+      "format": "SVG",
+      "bytes": 336811,
+      "sha256": "b8c65c1393ea4b31deca7e6ff52995a4fe7f68fe143a7fe29f63b8261bcd0ebf"
+    }
+  ]
+}

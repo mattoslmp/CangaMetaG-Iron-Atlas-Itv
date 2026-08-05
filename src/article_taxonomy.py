@@ -3,7 +3,7 @@ from __future__ import annotations
 """Shared article/app taxonomy data layer.
 
 The static article figures and interactive panels use the same packaged CDS OTU
-and taxonomy files, the same sample map, the same Top-N rule and the same colour
+and taxonomy files, sample map, strict per-sample <1% rule and colour
 assignments. Current NCBI labels are applied to names only; counts never change.
 """
 
@@ -23,6 +23,13 @@ from .ncbi_taxonomy_harmonization import (
   transfer_palette_names,
 )
 from .taxonomy_palette import build_palette, load_palette
+from .taxonomy_normalization import (
+  OTHER_TAXA_LT1,
+  THRESHOLD_PERCENT,
+  UNCLASSIFIED,
+  aggregate_counts,
+  collapse_below_threshold,
+)
 
 
 BASE_DIR = Path(__file__).resolve().parents[1]
@@ -106,32 +113,31 @@ def domain_rank_matrices(
   top_n: int | None = None,
   base_dir: Path | str | None = None,
 ) -> tuple[pd.DataFrame, pd.DataFrame]:
-  """Return domain-filtered count and percentage matrices used by the article."""
+  """Return strict per-sample <1% matrices used by article and app.
+
+  ``top_n`` remains in the signature for backward compatibility but is ignored:
+  every classified taxon reaching 1% in at least one sample remains explicit.
+  """
   otu, tax = load_article_inputs(base_dir)
-  shared = otu.index.intersection(tax.index)
-  if "Domain" not in tax.columns:
-    raise KeyError("Domain column is absent from resultado.cds.tax.tab")
-  domain_mask = tax.loc[shared, "Domain"].astype(str).str.casefold().eq(str(domain).casefold())
-  identifiers = shared[domain_mask.to_numpy()]
   rank_column = _rank_column(rank, tax)
-  labels = tax.loc[identifiers, rank_column].fillna("Unclassified").astype(str).str.strip().replace({"": "Unclassified"})
-  matrix = otu.loc[identifiers].copy()
-  matrix["taxon"] = labels.to_numpy()
-  counts = matrix.groupby("taxon", dropna=False).sum(numeric_only=True)
-  counts = counts.reindex(columns=[sample for sample in SAMPLE_ORDER if sample in counts.columns])
-  relative = counts.div(counts.sum(axis=0).replace(0, np.nan), axis=1).fillna(0.0) * 100.0
-  if top_n is not None and int(top_n) > 0 and len(relative) > int(top_n):
-    keep = relative.sum(axis=1).sort_values(ascending=False).head(int(top_n)).index.tolist()
-    count_display = counts.loc[keep].copy()
-    relative_display = relative.loc[keep].copy()
-    other_counts = counts.drop(index=keep, errors="ignore").sum(axis=0)
-    other_relative = relative.drop(index=keep, errors="ignore").sum(axis=0)
-    aggregate_label = "Other taxa" if str(rank).title() != "Genus" else "Other genera"
-    if float(other_counts.sum()) > 0:
-      count_display.loc[aggregate_label] = other_counts
-      relative_display.loc[aggregate_label] = other_relative
-    counts, relative = count_display, relative_display
-  return counts, relative
+  full_counts = aggregate_counts(otu, tax, domain, rank_column)
+  full_counts = full_counts.reindex(columns=[sample for sample in SAMPLE_ORDER if sample in full_counts.columns])
+  full_relative = full_counts.div(full_counts.sum(axis=0).replace(0, np.nan), axis=1).fillna(0.0) * 100.0
+  displayed = collapse_below_threshold(full_relative)
+  displayed_counts = pd.DataFrame(0.0, index=displayed.index, columns=displayed.columns)
+  for sample in displayed.columns:
+    below = [
+      taxon for taxon in full_relative.index
+      if str(taxon) != UNCLASSIFIED and float(full_relative.at[taxon, sample]) < THRESHOLD_PERCENT
+    ]
+    for taxon in displayed.index:
+      if taxon == OTHER_TAXA_LT1:
+        displayed_counts.at[taxon, sample] = float(full_counts.loc[below, sample].sum())
+      elif taxon in full_counts.index and (
+        taxon == UNCLASSIFIED or float(full_relative.at[taxon, sample]) >= THRESHOLD_PERCENT
+      ):
+        displayed_counts.at[taxon, sample] = float(full_counts.at[taxon, sample])
+  return displayed_counts, displayed
 
 
 def _article_palette(taxa: list[str], base_dir: Path | str | None = None) -> dict[str, str]:
@@ -195,7 +201,7 @@ def article_season_barplot(
   domain: str,
   rank: str,
   season: str,
-  top_n: int = 14,
+  top_n: int | None = None,
   base_dir: Path | str | None = None,
 ) -> tuple[go.Figure, pd.DataFrame, pd.DataFrame]:
   counts, relative = domain_rank_matrices(domain, rank, top_n=top_n, base_dir=base_dir)
@@ -215,11 +221,24 @@ def article_season_barplot(
       name=taxon,
       orientation="h",
       marker={"color": palette[taxon], "line": {"color": "white", "width": 0.35}},
-      customdata=np.column_stack([raw_counts]),
+      customdata=np.array([
+        raw_counts,
+        values,
+        [domain] * len(samples),
+        [rank] * len(samples),
+        [sample_metadata(sample)["lake"] for sample in samples],
+        [sample_metadata(sample)["season"] for sample in samples],
+      ], dtype=object).T,
+      text=[f"{value:.1f}%" if taxon == UNCLASSIFIED and value > 0 else "" for value in values],
+      textposition="inside",
+      insidetextanchor="middle",
       hovertemplate=(
-        "<b>%{y}</b><br>" + str(rank) + ": " + taxon
-        + "<br>Relative abundance: %{x:.6f}%"
-        + "<br>CDS count: %{customdata[0]:,.0f}<extra></extra>"
+        "<b>%{y}</b><br>Taxon: " + taxon
+        + "<br>Exact percentage: %{x:.6f}%"
+        + "<br>Original relative abundance: %{customdata[1]:.6f}%"
+        + "<br>CDS count: %{customdata[0]:,.0f}"
+        + "<br>Domain: %{customdata[2]}<br>Taxonomic level: %{customdata[3]}"
+        + "<br>Lake: %{customdata[4]}<br>Season: %{customdata[5]}<extra></extra>"
       ),
     ))
     for sample, value, count in zip(samples, values, raw_counts):
@@ -243,6 +262,9 @@ def article_season_barplot(
       "same_input_as_static_figure": True,
       "season_panel": season_name,
       "ncbi_taxonomy_labels": True,
+      "other_taxa_rule": "strictly below 1% per sample; exactly 1% remains explicit",
+      "unclassified_separate_with_exact_percentage_labels": True,
+      "top_n": None,
     },
   )
   table = pd.DataFrame(long_rows)
@@ -255,7 +277,7 @@ def article_season_barplot(
 def article_static_source_validation(
   domain: str,
   rank: str = "Phylum",
-  top_n: int = 14,
+  top_n: int | None = None,
   base_dir: Path | str | None = None,
 ) -> pd.DataFrame:
   root = Path(base_dir) if base_dir is not None else BASE_DIR

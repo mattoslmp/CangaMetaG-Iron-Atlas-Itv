@@ -1,0 +1,77 @@
+{
+  "figure": "SupplementaryFigure18_RDA_and_physicochemical_heatmap",
+  "status": "PASS",
+  "scientific_values_changed": false,
+  "heatmap_source_checksum_before": "71fc6492ea64001e9ebbdfcb4bc9e29dde901544742fe12cdc41fa7fc991c876",
+  "heatmap_source_checksum_after": "71fc6492ea64001e9ebbdfcb4bc9e29dde901544742fe12cdc41fa7fc991c876",
+  "heatmap_shape": [
+    9,
+    10
+  ],
+  "heatmap_rows": [
+    "LOI",
+    "Fe2O3",
+    "SiO2",
+    "Al2O3",
+    "TOT/C",
+    "TOT/S",
+    "Cu",
+    "Pb",
+    "V"
+  ],
+  "heatmap_columns": [
+    "AM.P1",
+    "AM.P2",
+    "TIA.P1",
+    "TIA.P2",
+    "TI.P1",
+    "TI.P2",
+    "TI.P3",
+    "TI.P4",
+    "VI.P1",
+    "VI.P2"
+  ],
+  "heatmap_limits": [
+    -2.7229750090811207,
+    2.7229750090811207
+  ],
+  "Bacteria": {
+    "R2": 0.6706464754765119,
+    "adjusted_R2": 0.0119394264295357,
+    "pseudo_F": 1.018125548294663,
+    "P": 0.537,
+    "permutations": 999,
+    "seed": 42,
+    "source_checksums": {
+      "Bacteria_RDA_site_scores.csv": "2ff6cc0024e159f6ffcbc53dca71d6cd19009a25b345f06d03beaef9edc9b962",
+      "Bacteria_RDA_environment_vectors.csv": "b2ef8e4ca8e724dafb287bf7b3dd01ebe9d635fa379a18a0f784c7d1f5a688fa",
+      "Bacteria_RDA_representative_genus_vectors.csv": "64e953edc233a32423159cbb3fe41c15a499d693e7033a68ff8f9014a1f5bb47",
+      "Bacteria_RDA_model_statistics.csv": "094bbec32a21674e5201a760223a2608158d0e885138ff537b92d15acdfb57f3"
+    }
+  },
+  "Archaea": {
+    "R2": 0.6057625487634657,
+    "adjusted_R2": -0.1827123537096029,
+    "pseudo_F": 0.7682711863922088,
+    "P": 0.698,
+    "permutations": 999,
+    "seed": 42,
+    "source_checksums": {
+      "Archaea_RDA_site_scores.csv": "1096546ed1fe3e025a292621f833fb32c70a866ed72769c996d11f8d193156d1",
+      "Archaea_RDA_environment_vectors.csv": "8fa673d923aa3df69d77108369ed1a243e6dbcc12ace3d94fadfee7e25b26517",
+      "Archaea_RDA_representative_genus_vectors.csv": "f8c21f9aa8896b6639075633bd7db5f7821699d70ea73d8007e9b66acbe52d45",
+      "Archaea_RDA_model_statistics.csv": "b30a784bbb9eee01ff4c0c7b77e4c40814bf99a93729603bc9a15f0b6478bab0"
+    }
+  },
+  "layout_validation": {
+    "dedicated_colorbar_axis": true,
+    "colorbar_outside_heatmap": true,
+    "heatmap_axis_grid": "GridSpec[1,0:2]",
+    "colorbar_axis_grid": "GridSpec[1,2]"
+  },
+  "generated_files": {
+    "SupplementaryFigure18_RDA_and_physicochemical_heatmap.png": "0a7cc26381239e964c7006910d143eb4a37071ed6386097d04688c332923576a",
+    "SupplementaryFigure18_RDA_and_physicochemical_heatmap.pdf": "09bd90d8e78b9e8331bb4477b000f613d55847ab519bc8cdde479c5506c40977",
+    "SupplementaryFigure18_RDA_and_physicochemical_heatmap.svg": "4ab28df9a88e17f53018ecc7342be023d402e0b5ad551decc061bea7f1b84d63"
+  }
+}

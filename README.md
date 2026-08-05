@@ -276,6 +276,30 @@ For all main and supplementary figures, consult:
 
 **[`FIGURE_REPRODUCTION_COMMANDS.md`](FIGURE_REPRODUCTION_COMMANDS.md)**
 
+### Targeted taxonomy and figure correction — 5 August 2026
+
+The existing application architecture and all unrelated modules are preserved.
+Only the current Taxonomy, Final Figures and Scripts resources were updated for
+Figures 2–5, Supplementary Figures 6/18 and the affected supplementary Bacteria
+and Archaea Phylum/Genus barplots.
+
+For every sample, classified taxa with relative abundance strictly below 1.0%
+are summed into `Other taxa (<1%)`; taxa exactly equal to 1.0% remain explicit;
+`Unclassified` remains independent and is labelled with its exact percentage.
+No Top-N truncation is used. Static and interactive views read the same source
+tables and preserve the packaged NMDS/RDA coordinates, vectors and statistics.
+
+```bash
+python scripts/generate_targeted_figures_20260805.py --package-root . --targets all
+python -m unittest discover -s tests -p 'test_targeted_figures_20260805.py' -v
+streamlit run app.py
+```
+
+Generated audits are stored in `data/final_publication_derived/` and
+`validation/targeted_figures_20260805/`, including the row-level threshold
+audit, `Other taxa (<1%)` traceability, exact `Unclassified` percentages and
+static–interactive parity.
+
 ---
 
 ## Streamlit Community Cloud

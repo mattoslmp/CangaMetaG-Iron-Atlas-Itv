@@ -1,0 +1,393 @@
+MAG_ID,lake_season_group,abundance,taxonomy_label,display_label
+MAG.1,AM-D,0.140896,Thermoplasmata RBG-16-68-12,MAG.1 — Thermoplasmata RBG-16-68-12
+MAG.1,AM-R,0.201624,Thermoplasmata RBG-16-68-12,MAG.1 — Thermoplasmata RBG-16-68-12
+MAG.1,TI-D,0.02906875,Thermoplasmata RBG-16-68-12,MAG.1 — Thermoplasmata RBG-16-68-12
+MAG.1,TI-R,0.02709825,Thermoplasmata RBG-16-68-12,MAG.1 — Thermoplasmata RBG-16-68-12
+MAG.1,TIA-D,0.035179,Thermoplasmata RBG-16-68-12,MAG.1 — Thermoplasmata RBG-16-68-12
+MAG.1,TIA-R,0.062866,Thermoplasmata RBG-16-68-12,MAG.1 — Thermoplasmata RBG-16-68-12
+MAG.1,VI-D,0.0107955,Thermoplasmata RBG-16-68-12,MAG.1 — Thermoplasmata RBG-16-68-12
+MAG.1,VI-R,0.032167,Thermoplasmata RBG-16-68-12,MAG.1 — Thermoplasmata RBG-16-68-12
+MAG.2,AM-D,0.227391,Candidatus Methanoperedens nitroreducens strain ANME-2d,MAG.2 — Candidatus Methanoperedens nitroreducens strain ANME-2d
+MAG.2,AM-R,0.0,Candidatus Methanoperedens nitroreducens strain ANME-2d,MAG.2 — Candidatus Methanoperedens nitroreducens strain ANME-2d
+MAG.2,TI-D,0.0,Candidatus Methanoperedens nitroreducens strain ANME-2d,MAG.2 — Candidatus Methanoperedens nitroreducens strain ANME-2d
+MAG.2,TI-R,0.0,Candidatus Methanoperedens nitroreducens strain ANME-2d,MAG.2 — Candidatus Methanoperedens nitroreducens strain ANME-2d
+MAG.2,TIA-D,0.0,Candidatus Methanoperedens nitroreducens strain ANME-2d,MAG.2 — Candidatus Methanoperedens nitroreducens strain ANME-2d
+MAG.2,TIA-R,0.0,Candidatus Methanoperedens nitroreducens strain ANME-2d,MAG.2 — Candidatus Methanoperedens nitroreducens strain ANME-2d
+MAG.2,VI-D,0.053274,Candidatus Methanoperedens nitroreducens strain ANME-2d,MAG.2 — Candidatus Methanoperedens nitroreducens strain ANME-2d
+MAG.2,VI-R,0.0,Candidatus Methanoperedens nitroreducens strain ANME-2d,MAG.2 — Candidatus Methanoperedens nitroreducens strain ANME-2d
+MAG.3,AM-D,0.266213,Candidatus Aminicenantes bacterium,MAG.3 — Candidatus Aminicenantes bacterium
+MAG.3,AM-R,0.028319999999999998,Candidatus Aminicenantes bacterium,MAG.3 — Candidatus Aminicenantes bacterium
+MAG.3,TI-D,0.0,Candidatus Aminicenantes bacterium,MAG.3 — Candidatus Aminicenantes bacterium
+MAG.3,TI-R,0.0,Candidatus Aminicenantes bacterium,MAG.3 — Candidatus Aminicenantes bacterium
+MAG.3,TIA-D,0.29664250000000003,Candidatus Aminicenantes bacterium,MAG.3 — Candidatus Aminicenantes bacterium
+MAG.3,TIA-R,0.24831350000000002,Candidatus Aminicenantes bacterium,MAG.3 — Candidatus Aminicenantes bacterium
+MAG.3,VI-D,0.0148695,Candidatus Aminicenantes bacterium,MAG.3 — Candidatus Aminicenantes bacterium
+MAG.3,VI-R,0.034577,Candidatus Aminicenantes bacterium,MAG.3 — Candidatus Aminicenantes bacterium
+MAG.4,AM-D,0.058944,Acidobacteria bacterium UBA7541,MAG.4 — Acidobacteria bacterium UBA7541
+MAG.4,AM-R,0.0,Acidobacteria bacterium UBA7541,MAG.4 — Acidobacteria bacterium UBA7541
+MAG.4,TI-D,0.0109775,Acidobacteria bacterium UBA7541,MAG.4 — Acidobacteria bacterium UBA7541
+MAG.4,TI-R,0.00627825,Acidobacteria bacterium UBA7541,MAG.4 — Acidobacteria bacterium UBA7541
+MAG.4,TIA-D,0.0,Acidobacteria bacterium UBA7541,MAG.4 — Acidobacteria bacterium UBA7541
+MAG.4,TIA-R,0.0,Acidobacteria bacterium UBA7541,MAG.4 — Acidobacteria bacterium UBA7541
+MAG.4,VI-D,0.037606,Acidobacteria bacterium UBA7541,MAG.4 — Acidobacteria bacterium UBA7541
+MAG.4,VI-R,0.4033815,Acidobacteria bacterium UBA7541,MAG.4 — Acidobacteria bacterium UBA7541
+MAG.5,AM-D,0.0183205,Candidatus Bathyarchaeota archaeon B26-1,MAG.5 — Candidatus Bathyarchaeota archaeon B26-1
+MAG.5,AM-R,0.0888935,Candidatus Bathyarchaeota archaeon B26-1,MAG.5 — Candidatus Bathyarchaeota archaeon B26-1
+MAG.5,TI-D,0.0166735,Candidatus Bathyarchaeota archaeon B26-1,MAG.5 — Candidatus Bathyarchaeota archaeon B26-1
+MAG.5,TI-R,0.02760875,Candidatus Bathyarchaeota archaeon B26-1,MAG.5 — Candidatus Bathyarchaeota archaeon B26-1
+MAG.5,TIA-D,0.044623499999999997,Candidatus Bathyarchaeota archaeon B26-1,MAG.5 — Candidatus Bathyarchaeota archaeon B26-1
+MAG.5,TIA-R,0.0805575,Candidatus Bathyarchaeota archaeon B26-1,MAG.5 — Candidatus Bathyarchaeota archaeon B26-1
+MAG.5,VI-D,0.0774425,Candidatus Bathyarchaeota archaeon B26-1,MAG.5 — Candidatus Bathyarchaeota archaeon B26-1
+MAG.5,VI-R,0.2244135,Candidatus Bathyarchaeota archaeon B26-1,MAG.5 — Candidatus Bathyarchaeota archaeon B26-1
+MAG.6,AM-D,0.372365,Candidatus Bathyarchaeota archaeon 40CM-2-53-6,MAG.6 — Candidatus Bathyarchaeota archaeon 40CM-2-53-6
+MAG.6,AM-R,0.0,Candidatus Bathyarchaeota archaeon 40CM-2-53-6,MAG.6 — Candidatus Bathyarchaeota archaeon 40CM-2-53-6
+MAG.6,TI-D,0.0,Candidatus Bathyarchaeota archaeon 40CM-2-53-6,MAG.6 — Candidatus Bathyarchaeota archaeon 40CM-2-53-6
+MAG.6,TI-R,0.0,Candidatus Bathyarchaeota archaeon 40CM-2-53-6,MAG.6 — Candidatus Bathyarchaeota archaeon 40CM-2-53-6
+MAG.6,TIA-D,0.0,Candidatus Bathyarchaeota archaeon 40CM-2-53-6,MAG.6 — Candidatus Bathyarchaeota archaeon 40CM-2-53-6
+MAG.6,TIA-R,0.0,Candidatus Bathyarchaeota archaeon 40CM-2-53-6,MAG.6 — Candidatus Bathyarchaeota archaeon 40CM-2-53-6
+MAG.6,VI-D,0.0,Candidatus Bathyarchaeota archaeon 40CM-2-53-6,MAG.6 — Candidatus Bathyarchaeota archaeon 40CM-2-53-6
+MAG.6,VI-R,0.0,Candidatus Bathyarchaeota archaeon 40CM-2-53-6,MAG.6 — Candidatus Bathyarchaeota archaeon 40CM-2-53-6
+MAG.7,AM-D,0.09336900000000001,Candidatus Bathyarchaeota archaeon 20-14-0-80-47-9,MAG.7 — Candidatus Bathyarchaeota archaeon 20-14-0-80-47-9
+MAG.7,AM-R,0.1302845,Candidatus Bathyarchaeota archaeon 20-14-0-80-47-9,MAG.7 — Candidatus Bathyarchaeota archaeon 20-14-0-80-47-9
+MAG.7,TI-D,0.0123795,Candidatus Bathyarchaeota archaeon 20-14-0-80-47-9,MAG.7 — Candidatus Bathyarchaeota archaeon 20-14-0-80-47-9
+MAG.7,TI-R,0.03364375,Candidatus Bathyarchaeota archaeon 20-14-0-80-47-9,MAG.7 — Candidatus Bathyarchaeota archaeon 20-14-0-80-47-9
+MAG.7,TIA-D,0.3443425,Candidatus Bathyarchaeota archaeon 20-14-0-80-47-9,MAG.7 — Candidatus Bathyarchaeota archaeon 20-14-0-80-47-9
+MAG.7,TIA-R,0.4571805,Candidatus Bathyarchaeota archaeon 20-14-0-80-47-9,MAG.7 — Candidatus Bathyarchaeota archaeon 20-14-0-80-47-9
+MAG.7,VI-D,0.323875,Candidatus Bathyarchaeota archaeon 20-14-0-80-47-9,MAG.7 — Candidatus Bathyarchaeota archaeon 20-14-0-80-47-9
+MAG.7,VI-R,0.48002500000000003,Candidatus Bathyarchaeota archaeon 20-14-0-80-47-9,MAG.7 — Candidatus Bathyarchaeota archaeon 20-14-0-80-47-9
+MAG.8,AM-D,0.326911,Trebonia kvetii,MAG.8 — Trebonia kvetii
+MAG.8,AM-R,0.0478575,Trebonia kvetii,MAG.8 — Trebonia kvetii
+MAG.8,TI-D,0.00201725,Trebonia kvetii,MAG.8 — Trebonia kvetii
+MAG.8,TI-R,0.000848,Trebonia kvetii,MAG.8 — Trebonia kvetii
+MAG.8,TIA-D,0.0,Trebonia kvetii,MAG.8 — Trebonia kvetii
+MAG.8,TIA-R,0.0,Trebonia kvetii,MAG.8 — Trebonia kvetii
+MAG.8,VI-D,0.0,Trebonia kvetii,MAG.8 — Trebonia kvetii
+MAG.8,VI-R,0.001897,Trebonia kvetii,MAG.8 — Trebonia kvetii
+MAG.9,AM-D,0.01489199999999995,Anaeromyxobacter sp. Red267,MAG.9 — Anaeromyxobacter sp. Red267
+MAG.9,AM-R,0.12860349999999995,Anaeromyxobacter sp. Red267,MAG.9 — Anaeromyxobacter sp. Red267
+MAG.9,TI-D,0.11705974999999999,Anaeromyxobacter sp. Red267,MAG.9 — Anaeromyxobacter sp. Red267
+MAG.9,TI-R,0.06596375,Anaeromyxobacter sp. Red267,MAG.9 — Anaeromyxobacter sp. Red267
+MAG.9,TIA-D,0.05072175,Anaeromyxobacter sp. Red267,MAG.9 — Anaeromyxobacter sp. Red267
+MAG.9,TIA-R,0.0491325,Anaeromyxobacter sp. Red267,MAG.9 — Anaeromyxobacter sp. Red267
+MAG.9,VI-D,0.0,Anaeromyxobacter sp. Red267,MAG.9 — Anaeromyxobacter sp. Red267
+MAG.9,VI-R,0.007799,Anaeromyxobacter sp. Red267,MAG.9 — Anaeromyxobacter sp. Red267
+MAG.10,AM-D,0.030685,Candidatus Bathyarchaeota archaeon B26-1,MAG.10 — Candidatus Bathyarchaeota archaeon B26-1
+MAG.10,AM-R,0.068497,Candidatus Bathyarchaeota archaeon B26-1,MAG.10 — Candidatus Bathyarchaeota archaeon B26-1
+MAG.10,TI-D,0.0,Candidatus Bathyarchaeota archaeon B26-1,MAG.10 — Candidatus Bathyarchaeota archaeon B26-1
+MAG.10,TI-R,0.0033825,Candidatus Bathyarchaeota archaeon B26-1,MAG.10 — Candidatus Bathyarchaeota archaeon B26-1
+MAG.10,TIA-D,0.0346135,Candidatus Bathyarchaeota archaeon B26-1,MAG.10 — Candidatus Bathyarchaeota archaeon B26-1
+MAG.10,TIA-R,0.0729615,Candidatus Bathyarchaeota archaeon B26-1,MAG.10 — Candidatus Bathyarchaeota archaeon B26-1
+MAG.10,VI-D,0.18813,Candidatus Bathyarchaeota archaeon B26-1,MAG.10 — Candidatus Bathyarchaeota archaeon B26-1
+MAG.10,VI-R,0.410289,Candidatus Bathyarchaeota archaeon B26-1,MAG.10 — Candidatus Bathyarchaeota archaeon B26-1
+MAG.11,AM-D,0.01115,Nitrososphaeria archeon EX4484-205,MAG.11 — Nitrososphaeria archeon EX4484-205
+MAG.11,AM-R,0.035006999999999996,Nitrososphaeria archeon EX4484-205,MAG.11 — Nitrososphaeria archeon EX4484-205
+MAG.11,TI-D,0.08438100000000001,Nitrososphaeria archeon EX4484-205,MAG.11 — Nitrososphaeria archeon EX4484-205
+MAG.11,TI-R,0.1343645,Nitrososphaeria archeon EX4484-205,MAG.11 — Nitrososphaeria archeon EX4484-205
+MAG.11,TIA-D,0.113455,Nitrososphaeria archeon EX4484-205,MAG.11 — Nitrososphaeria archeon EX4484-205
+MAG.11,TIA-R,0.099282,Nitrososphaeria archeon EX4484-205,MAG.11 — Nitrososphaeria archeon EX4484-205
+MAG.11,VI-D,0.0602935,Nitrososphaeria archeon EX4484-205,MAG.11 — Nitrososphaeria archeon EX4484-205
+MAG.11,VI-R,0.1180635,Nitrososphaeria archeon EX4484-205,MAG.11 — Nitrososphaeria archeon EX4484-205
+MAG.12,AM-D,0.0275595,Dehalococcoides mccartyi,MAG.12 — Dehalococcoides mccartyi
+MAG.12,AM-R,0.1045965,Dehalococcoides mccartyi,MAG.12 — Dehalococcoides mccartyi
+MAG.12,TI-D,0.03841875,Dehalococcoides mccartyi,MAG.12 — Dehalococcoides mccartyi
+MAG.12,TI-R,0.0493175,Dehalococcoides mccartyi,MAG.12 — Dehalococcoides mccartyi
+MAG.12,TIA-D,0.0875485,Dehalococcoides mccartyi,MAG.12 — Dehalococcoides mccartyi
+MAG.12,TIA-R,0.139448,Dehalococcoides mccartyi,MAG.12 — Dehalococcoides mccartyi
+MAG.12,VI-D,0.103557,Dehalococcoides mccartyi,MAG.12 — Dehalococcoides mccartyi
+MAG.12,VI-R,0.2371945,Dehalococcoides mccartyi,MAG.12 — Dehalococcoides mccartyi
+MAG.13,AM-D,0.0,Nitrospirales bacterium LBB_01,MAG.13 — Nitrospirales bacterium LBB_01
+MAG.13,AM-R,0.0028535,Nitrospirales bacterium LBB_01,MAG.13 — Nitrospirales bacterium LBB_01
+MAG.13,TI-D,0.13859675000000002,Nitrospirales bacterium LBB_01,MAG.13 — Nitrospirales bacterium LBB_01
+MAG.13,TI-R,0.09221875,Nitrospirales bacterium LBB_01,MAG.13 — Nitrospirales bacterium LBB_01
+MAG.13,TIA-D,0.12923400000000002,Nitrospirales bacterium LBB_01,MAG.13 — Nitrospirales bacterium LBB_01
+MAG.13,TIA-R,0.093614,Nitrospirales bacterium LBB_01,MAG.13 — Nitrospirales bacterium LBB_01
+MAG.13,VI-D,0.0,Nitrospirales bacterium LBB_01,MAG.13 — Nitrospirales bacterium LBB_01
+MAG.13,VI-R,0.0,Nitrospirales bacterium LBB_01,MAG.13 — Nitrospirales bacterium LBB_01
+MAG.14,AM-D,0.02099,Spirochaetes bacterium RBG_16_67_19,MAG.14 — Spirochaetes bacterium RBG_16_67_19
+MAG.14,AM-R,0.074849,Spirochaetes bacterium RBG_16_67_19,MAG.14 — Spirochaetes bacterium RBG_16_67_19
+MAG.14,TI-D,0.0108695,Spirochaetes bacterium RBG_16_67_19,MAG.14 — Spirochaetes bacterium RBG_16_67_19
+MAG.14,TI-R,0.02843125,Spirochaetes bacterium RBG_16_67_19,MAG.14 — Spirochaetes bacterium RBG_16_67_19
+MAG.14,TIA-D,0.06386549999999999,Spirochaetes bacterium RBG_16_67_19,MAG.14 — Spirochaetes bacterium RBG_16_67_19
+MAG.14,TIA-R,0.1092595,Spirochaetes bacterium RBG_16_67_19,MAG.14 — Spirochaetes bacterium RBG_16_67_19
+MAG.14,VI-D,0.073818,Spirochaetes bacterium RBG_16_67_19,MAG.14 — Spirochaetes bacterium RBG_16_67_19
+MAG.14,VI-R,0.2523525,Spirochaetes bacterium RBG_16_67_19,MAG.14 — Spirochaetes bacterium RBG_16_67_19
+MAG.15,AM-D,0.0697725,Bacteroidetes bacterium,MAG.15 — Bacteroidetes bacterium
+MAG.15,AM-R,0.040939500000000004,Bacteroidetes bacterium,MAG.15 — Bacteroidetes bacterium
+MAG.15,TI-D,0.0510235,Bacteroidetes bacterium,MAG.15 — Bacteroidetes bacterium
+MAG.15,TI-R,0.0283025,Bacteroidetes bacterium,MAG.15 — Bacteroidetes bacterium
+MAG.15,TIA-D,0.0194995,Bacteroidetes bacterium,MAG.15 — Bacteroidetes bacterium
+MAG.15,TIA-R,0.0114065,Bacteroidetes bacterium,MAG.15 — Bacteroidetes bacterium
+MAG.15,VI-D,0.0,Bacteroidetes bacterium,MAG.15 — Bacteroidetes bacterium
+MAG.15,VI-R,0.0,Bacteroidetes bacterium,MAG.15 — Bacteroidetes bacterium
+MAG.16,AM-D,0.175363,Candidatus Bathyarchaeota archaeon BA1,MAG.16 — Candidatus Bathyarchaeota archaeon BA1
+MAG.16,AM-R,0.07656525,Candidatus Bathyarchaeota archaeon BA1,MAG.16 — Candidatus Bathyarchaeota archaeon BA1
+MAG.16,TI-D,0.00767875,Candidatus Bathyarchaeota archaeon BA1,MAG.16 — Candidatus Bathyarchaeota archaeon BA1
+MAG.16,TI-R,0.042111749999999996,Candidatus Bathyarchaeota archaeon BA1,MAG.16 — Candidatus Bathyarchaeota archaeon BA1
+MAG.16,TIA-D,0.2302665,Candidatus Bathyarchaeota archaeon BA1,MAG.16 — Candidatus Bathyarchaeota archaeon BA1
+MAG.16,TIA-R,0.188557,Candidatus Bathyarchaeota archaeon BA1,MAG.16 — Candidatus Bathyarchaeota archaeon BA1
+MAG.16,VI-D,0.059574,Candidatus Bathyarchaeota archaeon BA1,MAG.16 — Candidatus Bathyarchaeota archaeon BA1
+MAG.16,VI-R,0.15905750000000002,Candidatus Bathyarchaeota archaeon BA1,MAG.16 — Candidatus Bathyarchaeota archaeon BA1
+MAG.17,AM-D,0.0,Thermoplasmata archaeon SM1-50,MAG.17 — Thermoplasmata archaeon SM1-50
+MAG.17,AM-R,0.019583749999999997,Thermoplasmata archaeon SM1-50,MAG.17 — Thermoplasmata archaeon SM1-50
+MAG.17,TI-D,0.031372625,Thermoplasmata archaeon SM1-50,MAG.17 — Thermoplasmata archaeon SM1-50
+MAG.17,TI-R,0.023446625,Thermoplasmata archaeon SM1-50,MAG.17 — Thermoplasmata archaeon SM1-50
+MAG.17,TIA-D,0.104276,Thermoplasmata archaeon SM1-50,MAG.17 — Thermoplasmata archaeon SM1-50
+MAG.17,TIA-R,0.12701425,Thermoplasmata archaeon SM1-50,MAG.17 — Thermoplasmata archaeon SM1-50
+MAG.17,VI-D,0.01647,Thermoplasmata archaeon SM1-50,MAG.17 — Thermoplasmata archaeon SM1-50
+MAG.17,VI-R,0.035261,Thermoplasmata archaeon SM1-50,MAG.17 — Thermoplasmata archaeon SM1-50
+MAG.18,AM-D,0.0,Dehalococcoidia bacterium SZUA-161,MAG.18 — Dehalococcoidia bacterium SZUA-161
+MAG.18,AM-R,0.0051595,Dehalococcoidia bacterium SZUA-161,MAG.18 — Dehalococcoidia bacterium SZUA-161
+MAG.18,TI-D,0.13521450000000002,Dehalococcoidia bacterium SZUA-161,MAG.18 — Dehalococcoidia bacterium SZUA-161
+MAG.18,TI-R,0.420269,Dehalococcoidia bacterium SZUA-161,MAG.18 — Dehalococcoidia bacterium SZUA-161
+MAG.18,TIA-D,0.00085575,Dehalococcoidia bacterium SZUA-161,MAG.18 — Dehalococcoidia bacterium SZUA-161
+MAG.18,TIA-R,0.0,Dehalococcoidia bacterium SZUA-161,MAG.18 — Dehalococcoidia bacterium SZUA-161
+MAG.18,VI-D,0.0,Dehalococcoidia bacterium SZUA-161,MAG.18 — Dehalococcoidia bacterium SZUA-161
+MAG.18,VI-R,0.0032935,Dehalococcoidia bacterium SZUA-161,MAG.18 — Dehalococcoidia bacterium SZUA-161
+MAG.19,AM-D,0.05745,Thermoplasmata archaeon RBG-16-68-12,MAG.19 — Thermoplasmata archaeon RBG-16-68-12
+MAG.19,AM-R,0.043852999999999996,Thermoplasmata archaeon RBG-16-68-12,MAG.19 — Thermoplasmata archaeon RBG-16-68-12
+MAG.19,TI-D,0.081818625,Thermoplasmata archaeon RBG-16-68-12,MAG.19 — Thermoplasmata archaeon RBG-16-68-12
+MAG.19,TI-R,0.069585,Thermoplasmata archaeon RBG-16-68-12,MAG.19 — Thermoplasmata archaeon RBG-16-68-12
+MAG.19,TIA-D,0.0492925,Thermoplasmata archaeon RBG-16-68-12,MAG.19 — Thermoplasmata archaeon RBG-16-68-12
+MAG.19,TIA-R,0.1181905,Thermoplasmata archaeon RBG-16-68-12,MAG.19 — Thermoplasmata archaeon RBG-16-68-12
+MAG.19,VI-D,0.0484285,Thermoplasmata archaeon RBG-16-68-12,MAG.19 — Thermoplasmata archaeon RBG-16-68-12
+MAG.19,VI-R,0.09280274999999999,Thermoplasmata archaeon RBG-16-68-12,MAG.19 — Thermoplasmata archaeon RBG-16-68-12
+MAG.20,AM-D,0.0,Candidatus Bathyarchaeota archaeon B26-1,MAG.20 — Candidatus Bathyarchaeota archaeon B26-1
+MAG.20,AM-R,0.01882,Candidatus Bathyarchaeota archaeon B26-1,MAG.20 — Candidatus Bathyarchaeota archaeon B26-1
+MAG.20,TI-D,0.10269625,Candidatus Bathyarchaeota archaeon B26-1,MAG.20 — Candidatus Bathyarchaeota archaeon B26-1
+MAG.20,TI-R,0.15343075,Candidatus Bathyarchaeota archaeon B26-1,MAG.20 — Candidatus Bathyarchaeota archaeon B26-1
+MAG.20,TIA-D,0.0160135,Candidatus Bathyarchaeota archaeon B26-1,MAG.20 — Candidatus Bathyarchaeota archaeon B26-1
+MAG.20,TIA-R,0.0140275,Candidatus Bathyarchaeota archaeon B26-1,MAG.20 — Candidatus Bathyarchaeota archaeon B26-1
+MAG.20,VI-D,0.008899,Candidatus Bathyarchaeota archaeon B26-1,MAG.20 — Candidatus Bathyarchaeota archaeon B26-1
+MAG.20,VI-R,0.0209435,Candidatus Bathyarchaeota archaeon B26-1,MAG.20 — Candidatus Bathyarchaeota archaeon B26-1
+MAG.21,AM-D,0.0041795,Candidatus Bathyarchaeota archaeon BA1,MAG.21 — Candidatus Bathyarchaeota archaeon BA1
+MAG.21,AM-R,0.003175,Candidatus Bathyarchaeota archaeon BA1,MAG.21 — Candidatus Bathyarchaeota archaeon BA1
+MAG.21,TI-D,0.02666225,Candidatus Bathyarchaeota archaeon BA1,MAG.21 — Candidatus Bathyarchaeota archaeon BA1
+MAG.21,TI-R,0.049104625,Candidatus Bathyarchaeota archaeon BA1,MAG.21 — Candidatus Bathyarchaeota archaeon BA1
+MAG.21,TIA-D,0.24039149999999998,Candidatus Bathyarchaeota archaeon BA1,MAG.21 — Candidatus Bathyarchaeota archaeon BA1
+MAG.21,TIA-R,0.311836,Candidatus Bathyarchaeota archaeon BA1,MAG.21 — Candidatus Bathyarchaeota archaeon BA1
+MAG.21,VI-D,0.078806,Candidatus Bathyarchaeota archaeon BA1,MAG.21 — Candidatus Bathyarchaeota archaeon BA1
+MAG.21,VI-R,0.19667,Candidatus Bathyarchaeota archaeon BA1,MAG.21 — Candidatus Bathyarchaeota archaeon BA1
+MAG.22,AM-D,0.088314,Candidatus Bathyarchaeota archaeon 40CM-2-53-6,MAG.22 — Candidatus Bathyarchaeota archaeon 40CM-2-53-6
+MAG.22,AM-R,0.036987249999999944,Candidatus Bathyarchaeota archaeon 40CM-2-53-6,MAG.22 — Candidatus Bathyarchaeota archaeon 40CM-2-53-6
+MAG.22,TI-D,0.032811375000000004,Candidatus Bathyarchaeota archaeon 40CM-2-53-6,MAG.22 — Candidatus Bathyarchaeota archaeon 40CM-2-53-6
+MAG.22,TI-R,0.08546787499999998,Candidatus Bathyarchaeota archaeon 40CM-2-53-6,MAG.22 — Candidatus Bathyarchaeota archaeon 40CM-2-53-6
+MAG.22,TIA-D,0.25718325000000003,Candidatus Bathyarchaeota archaeon 40CM-2-53-6,MAG.22 — Candidatus Bathyarchaeota archaeon 40CM-2-53-6
+MAG.22,TIA-R,0.1679945,Candidatus Bathyarchaeota archaeon 40CM-2-53-6,MAG.22 — Candidatus Bathyarchaeota archaeon 40CM-2-53-6
+MAG.22,VI-D,0.103141,Candidatus Bathyarchaeota archaeon 40CM-2-53-6,MAG.22 — Candidatus Bathyarchaeota archaeon 40CM-2-53-6
+MAG.22,VI-R,0.240211,Candidatus Bathyarchaeota archaeon 40CM-2-53-6,MAG.22 — Candidatus Bathyarchaeota archaeon 40CM-2-53-6
+MAG.23,AM-D,0.032305,Candidatus Bathyarchaeota archaeon B26-1,MAG.23 — Candidatus Bathyarchaeota archaeon B26-1
+MAG.23,AM-R,0.057113,Candidatus Bathyarchaeota archaeon B26-1,MAG.23 — Candidatus Bathyarchaeota archaeon B26-1
+MAG.23,TI-D,0.027386499999999973,Candidatus Bathyarchaeota archaeon B26-1,MAG.23 — Candidatus Bathyarchaeota archaeon B26-1
+MAG.23,TI-R,0.0743415,Candidatus Bathyarchaeota archaeon B26-1,MAG.23 — Candidatus Bathyarchaeota archaeon B26-1
+MAG.23,TIA-D,0.071331,Candidatus Bathyarchaeota archaeon B26-1,MAG.23 — Candidatus Bathyarchaeota archaeon B26-1
+MAG.23,TIA-R,0.17673699999999998,Candidatus Bathyarchaeota archaeon B26-1,MAG.23 — Candidatus Bathyarchaeota archaeon B26-1
+MAG.23,VI-D,0.068896,Candidatus Bathyarchaeota archaeon B26-1,MAG.23 — Candidatus Bathyarchaeota archaeon B26-1
+MAG.23,VI-R,0.1869585,Candidatus Bathyarchaeota archaeon B26-1,MAG.23 — Candidatus Bathyarchaeota archaeon B26-1
+MAG.24,AM-D,0.13428099999999998,Candidatus Bathyarchaeota archaeon B26,MAG.24 — Candidatus Bathyarchaeota archaeon B26
+MAG.24,AM-R,0.1895215,Candidatus Bathyarchaeota archaeon B26,MAG.24 — Candidatus Bathyarchaeota archaeon B26
+MAG.24,TI-D,0.0,Candidatus Bathyarchaeota archaeon B26,MAG.24 — Candidatus Bathyarchaeota archaeon B26
+MAG.24,TI-R,0.0,Candidatus Bathyarchaeota archaeon B26,MAG.24 — Candidatus Bathyarchaeota archaeon B26
+MAG.24,TIA-D,0.0,Candidatus Bathyarchaeota archaeon B26,MAG.24 — Candidatus Bathyarchaeota archaeon B26
+MAG.24,TIA-R,0.0,Candidatus Bathyarchaeota archaeon B26,MAG.24 — Candidatus Bathyarchaeota archaeon B26
+MAG.24,VI-D,0.153051,Candidatus Bathyarchaeota archaeon B26,MAG.24 — Candidatus Bathyarchaeota archaeon B26
+MAG.24,VI-R,0.0555255,Candidatus Bathyarchaeota archaeon B26,MAG.24 — Candidatus Bathyarchaeota archaeon B26
+MAG.25,AM-D,0.2742905,Nitrosotalea sp.,MAG.25 — Nitrosotalea sp.
+MAG.25,AM-R,0.0792595,Nitrosotalea sp.,MAG.25 — Nitrosotalea sp.
+MAG.25,TI-D,0.0,Nitrosotalea sp.,MAG.25 — Nitrosotalea sp.
+MAG.25,TI-R,0.0,Nitrosotalea sp.,MAG.25 — Nitrosotalea sp.
+MAG.25,TIA-D,0.0,Nitrosotalea sp.,MAG.25 — Nitrosotalea sp.
+MAG.25,TIA-R,0.0,Nitrosotalea sp.,MAG.25 — Nitrosotalea sp.
+MAG.25,VI-D,0.0,Nitrosotalea sp.,MAG.25 — Nitrosotalea sp.
+MAG.25,VI-R,0.0,Nitrosotalea sp.,MAG.25 — Nitrosotalea sp.
+MAG.26,AM-D,0.0,Burkholderiales bacterium,MAG.26 — Burkholderiales bacterium
+MAG.26,AM-R,0.0,Burkholderiales bacterium,MAG.26 — Burkholderiales bacterium
+MAG.26,TI-D,0.08363224999999999,Burkholderiales bacterium,MAG.26 — Burkholderiales bacterium
+MAG.26,TI-R,0.1836105,Burkholderiales bacterium,MAG.26 — Burkholderiales bacterium
+MAG.26,TIA-D,0.04307775,Burkholderiales bacterium,MAG.26 — Burkholderiales bacterium
+MAG.26,TIA-R,0.03772,Burkholderiales bacterium,MAG.26 — Burkholderiales bacterium
+MAG.26,VI-D,0.0,Burkholderiales bacterium,MAG.26 — Burkholderiales bacterium
+MAG.26,VI-R,0.0,Burkholderiales bacterium,MAG.26 — Burkholderiales bacterium
+MAG.27,AM-D,0.0,Planctomycetes bacterium UBA8742,MAG.27 — Planctomycetes bacterium UBA8742
+MAG.27,AM-R,0.02493725,Planctomycetes bacterium UBA8742,MAG.27 — Planctomycetes bacterium UBA8742
+MAG.27,TI-D,0.04600025,Planctomycetes bacterium UBA8742,MAG.27 — Planctomycetes bacterium UBA8742
+MAG.27,TI-R,0.0915155,Planctomycetes bacterium UBA8742,MAG.27 — Planctomycetes bacterium UBA8742
+MAG.27,TIA-D,0.0515885,Planctomycetes bacterium UBA8742,MAG.27 — Planctomycetes bacterium UBA8742
+MAG.27,TIA-R,0.07278599999999999,Planctomycetes bacterium UBA8742,MAG.27 — Planctomycetes bacterium UBA8742
+MAG.27,VI-D,0.03976425,Planctomycetes bacterium UBA8742,MAG.27 — Planctomycetes bacterium UBA8742
+MAG.27,VI-R,0.060051,Planctomycetes bacterium UBA8742,MAG.27 — Planctomycetes bacterium UBA8742
+MAG.28,AM-D,0.02892,Candidatus Bathyarchaeota archaeon BA1,MAG.28 — Candidatus Bathyarchaeota archaeon BA1
+MAG.28,AM-R,0.023636,Candidatus Bathyarchaeota archaeon BA1,MAG.28 — Candidatus Bathyarchaeota archaeon BA1
+MAG.28,TI-D,0.009656749999999999,Candidatus Bathyarchaeota archaeon BA1,MAG.28 — Candidatus Bathyarchaeota archaeon BA1
+MAG.28,TI-R,0.022440125,Candidatus Bathyarchaeota archaeon BA1,MAG.28 — Candidatus Bathyarchaeota archaeon BA1
+MAG.28,TIA-D,0.049296,Candidatus Bathyarchaeota archaeon BA1,MAG.28 — Candidatus Bathyarchaeota archaeon BA1
+MAG.28,TIA-R,0.1682125,Candidatus Bathyarchaeota archaeon BA1,MAG.28 — Candidatus Bathyarchaeota archaeon BA1
+MAG.28,VI-D,0.100653,Candidatus Bathyarchaeota archaeon BA1,MAG.28 — Candidatus Bathyarchaeota archaeon BA1
+MAG.28,VI-R,0.1747635,Candidatus Bathyarchaeota archaeon BA1,MAG.28 — Candidatus Bathyarchaeota archaeon BA1
+MAG.29,AM-D,0.0,Candidatus Aminicenantes bacterium RBG-16-66-30,MAG.29 — Candidatus Aminicenantes bacterium RBG-16-66-30
+MAG.29,AM-R,0.048265,Candidatus Aminicenantes bacterium RBG-16-66-30,MAG.29 — Candidatus Aminicenantes bacterium RBG-16-66-30
+MAG.29,TI-D,0.0,Candidatus Aminicenantes bacterium RBG-16-66-30,MAG.29 — Candidatus Aminicenantes bacterium RBG-16-66-30
+MAG.29,TI-R,0.00470625,Candidatus Aminicenantes bacterium RBG-16-66-30,MAG.29 — Candidatus Aminicenantes bacterium RBG-16-66-30
+MAG.29,TIA-D,0.070696,Candidatus Aminicenantes bacterium RBG-16-66-30,MAG.29 — Candidatus Aminicenantes bacterium RBG-16-66-30
+MAG.29,TIA-R,0.100067,Candidatus Aminicenantes bacterium RBG-16-66-30,MAG.29 — Candidatus Aminicenantes bacterium RBG-16-66-30
+MAG.29,VI-D,0.0505415,Candidatus Aminicenantes bacterium RBG-16-66-30,MAG.29 — Candidatus Aminicenantes bacterium RBG-16-66-30
+MAG.29,VI-R,0.1596495,Candidatus Aminicenantes bacterium RBG-16-66-30,MAG.29 — Candidatus Aminicenantes bacterium RBG-16-66-30
+MAG.30,AM-D,0.047918999999999996,Anaerolineales bacterium,MAG.30 — Anaerolineales bacterium
+MAG.30,AM-R,0.065869,Anaerolineales bacterium,MAG.30 — Anaerolineales bacterium
+MAG.30,TI-D,0.0056615,Anaerolineales bacterium,MAG.30 — Anaerolineales bacterium
+MAG.30,TI-R,0.006993,Anaerolineales bacterium,MAG.30 — Anaerolineales bacterium
+MAG.30,TIA-D,0.1892415,Anaerolineales bacterium,MAG.30 — Anaerolineales bacterium
+MAG.30,TIA-R,0.1241495,Anaerolineales bacterium,MAG.30 — Anaerolineales bacterium
+MAG.30,VI-D,0.1036105,Anaerolineales bacterium,MAG.30 — Anaerolineales bacterium
+MAG.30,VI-R,0.3208395,Anaerolineales bacterium,MAG.30 — Anaerolineales bacterium
+MAG.31,AM-D,0.1445705,Thermoflexales bacterium RBG-16-68-12,MAG.31 — Thermoflexales bacterium RBG-16-68-12
+MAG.31,AM-R,0.01112225,Thermoflexales bacterium RBG-16-68-12,MAG.31 — Thermoflexales bacterium RBG-16-68-12
+MAG.31,TI-D,0.06520475,Thermoflexales bacterium RBG-16-68-12,MAG.31 — Thermoflexales bacterium RBG-16-68-12
+MAG.31,TI-R,0.1007455,Thermoflexales bacterium RBG-16-68-12,MAG.31 — Thermoflexales bacterium RBG-16-68-12
+MAG.31,TIA-D,0.034653500000000004,Thermoflexales bacterium RBG-16-68-12,MAG.31 — Thermoflexales bacterium RBG-16-68-12
+MAG.31,TIA-R,0.07152349999999999,Thermoflexales bacterium RBG-16-68-12,MAG.31 — Thermoflexales bacterium RBG-16-68-12
+MAG.31,VI-D,0.0205765,Thermoflexales bacterium RBG-16-68-12,MAG.31 — Thermoflexales bacterium RBG-16-68-12
+MAG.31,VI-R,0.09284825000000001,Thermoflexales bacterium RBG-16-68-12,MAG.31 — Thermoflexales bacterium RBG-16-68-12
+MAG.32,AM-D,0.0,Candidatus Thorarchaeota archaeon,MAG.32 — Candidatus Thorarchaeota archaeon
+MAG.32,AM-R,0.04952375,Candidatus Thorarchaeota archaeon,MAG.32 — Candidatus Thorarchaeota archaeon
+MAG.32,TI-D,0.0244225,Candidatus Thorarchaeota archaeon,MAG.32 — Candidatus Thorarchaeota archaeon
+MAG.32,TI-R,0.029160625000000003,Candidatus Thorarchaeota archaeon,MAG.32 — Candidatus Thorarchaeota archaeon
+MAG.32,TIA-D,0.0,Candidatus Thorarchaeota archaeon,MAG.32 — Candidatus Thorarchaeota archaeon
+MAG.32,TIA-R,0.0138255,Candidatus Thorarchaeota archaeon,MAG.32 — Candidatus Thorarchaeota archaeon
+MAG.32,VI-D,0.095831,Candidatus Thorarchaeota archaeon,MAG.32 — Candidatus Thorarchaeota archaeon
+MAG.32,VI-R,0.217545,Candidatus Thorarchaeota archaeon,MAG.32 — Candidatus Thorarchaeota archaeon
+MAG.33,AM-D,0.008131,Thermoflexales bacterium Fen-1058,MAG.33 — Thermoflexales bacterium Fen-1058
+MAG.33,AM-R,0.020711,Thermoflexales bacterium Fen-1058,MAG.33 — Thermoflexales bacterium Fen-1058
+MAG.33,TI-D,0.03970675,Thermoflexales bacterium Fen-1058,MAG.33 — Thermoflexales bacterium Fen-1058
+MAG.33,TI-R,0.028119875,Thermoflexales bacterium Fen-1058,MAG.33 — Thermoflexales bacterium Fen-1058
+MAG.33,TIA-D,0.0539805,Thermoflexales bacterium Fen-1058,MAG.33 — Thermoflexales bacterium Fen-1058
+MAG.33,TIA-R,0.07746449999999999,Thermoflexales bacterium Fen-1058,MAG.33 — Thermoflexales bacterium Fen-1058
+MAG.33,VI-D,0.0464805,Thermoflexales bacterium Fen-1058,MAG.33 — Thermoflexales bacterium Fen-1058
+MAG.33,VI-R,0.0944475,Thermoflexales bacterium Fen-1058,MAG.33 — Thermoflexales bacterium Fen-1058
+MAG.34,AM-D,0.0,Hydrococcus,MAG.34 — Hydrococcus
+MAG.34,AM-R,0.0,Hydrococcus,MAG.34 — Hydrococcus
+MAG.34,TI-D,0.15560425,Hydrococcus,MAG.34 — Hydrococcus
+MAG.34,TI-R,0.0132945,Hydrococcus,MAG.34 — Hydrococcus
+MAG.34,TIA-D,0.004477,Hydrococcus,MAG.34 — Hydrococcus
+MAG.34,TIA-R,0.0032235,Hydrococcus,MAG.34 — Hydrococcus
+MAG.34,VI-D,0.0,Hydrococcus,MAG.34 — Hydrococcus
+MAG.34,VI-R,0.0,Hydrococcus,MAG.34 — Hydrococcus
+MAG.35,AM-D,0.287335,Acidobacteria bacterium UBA7541,MAG.35 — Acidobacteria bacterium UBA7541
+MAG.35,AM-R,0.08491075,Acidobacteria bacterium UBA7541,MAG.35 — Acidobacteria bacterium UBA7541
+MAG.35,TI-D,0.00629375,Acidobacteria bacterium UBA7541,MAG.35 — Acidobacteria bacterium UBA7541
+MAG.35,TI-R,0.009945,Acidobacteria bacterium UBA7541,MAG.35 — Acidobacteria bacterium UBA7541
+MAG.35,TIA-D,0.025051249999999997,Acidobacteria bacterium UBA7541,MAG.35 — Acidobacteria bacterium UBA7541
+MAG.35,TIA-R,0.044246749999999994,Acidobacteria bacterium UBA7541,MAG.35 — Acidobacteria bacterium UBA7541
+MAG.35,VI-D,0.06952225,Acidobacteria bacterium UBA7541,MAG.35 — Acidobacteria bacterium UBA7541
+MAG.35,VI-R,0.16140074999999998,Acidobacteria bacterium UBA7541,MAG.35 — Acidobacteria bacterium UBA7541
+MAG.36,AM-D,0.0,Candidatus Bathyarchaeota archaeon FEN-987,MAG.36 — Candidatus Bathyarchaeota archaeon FEN-987
+MAG.36,AM-R,0.084427,Candidatus Bathyarchaeota archaeon FEN-987,MAG.36 — Candidatus Bathyarchaeota archaeon FEN-987
+MAG.36,TI-D,0.0,Candidatus Bathyarchaeota archaeon FEN-987,MAG.36 — Candidatus Bathyarchaeota archaeon FEN-987
+MAG.36,TI-R,0.003484,Candidatus Bathyarchaeota archaeon FEN-987,MAG.36 — Candidatus Bathyarchaeota archaeon FEN-987
+MAG.36,TIA-D,0.0,Candidatus Bathyarchaeota archaeon FEN-987,MAG.36 — Candidatus Bathyarchaeota archaeon FEN-987
+MAG.36,TIA-R,0.0,Candidatus Bathyarchaeota archaeon FEN-987,MAG.36 — Candidatus Bathyarchaeota archaeon FEN-987
+MAG.36,VI-D,0.139967,Candidatus Bathyarchaeota archaeon FEN-987,MAG.36 — Candidatus Bathyarchaeota archaeon FEN-987
+MAG.36,VI-R,0.2563575,Candidatus Bathyarchaeota archaeon FEN-987,MAG.36 — Candidatus Bathyarchaeota archaeon FEN-987
+MAG.37,AM-D,0.29566600000000004,Euryarchaeota archaeon RBG-16-68-12,MAG.37 — Euryarchaeota archaeon RBG-16-68-12
+MAG.37,AM-R,0.508069,Euryarchaeota archaeon RBG-16-68-12,MAG.37 — Euryarchaeota archaeon RBG-16-68-12
+MAG.37,TI-D,0.04911125,Euryarchaeota archaeon RBG-16-68-12,MAG.37 — Euryarchaeota archaeon RBG-16-68-12
+MAG.37,TI-R,0.083397,Euryarchaeota archaeon RBG-16-68-12,MAG.37 — Euryarchaeota archaeon RBG-16-68-12
+MAG.37,TIA-D,0.35573600000000005,Euryarchaeota archaeon RBG-16-68-12,MAG.37 — Euryarchaeota archaeon RBG-16-68-12
+MAG.37,TIA-R,0.5292034999999999,Euryarchaeota archaeon RBG-16-68-12,MAG.37 — Euryarchaeota archaeon RBG-16-68-12
+MAG.37,VI-D,0.8479905,Euryarchaeota archaeon RBG-16-68-12,MAG.37 — Euryarchaeota archaeon RBG-16-68-12
+MAG.37,VI-R,1.108371,Euryarchaeota archaeon RBG-16-68-12,MAG.37 — Euryarchaeota archaeon RBG-16-68-12
+MAG.38,AM-D,0.0606275,Candidatus Bathyarchaeota archaeon 40CM-2-53-6,MAG.38 — Candidatus Bathyarchaeota archaeon 40CM-2-53-6
+MAG.38,AM-R,0.0794605,Candidatus Bathyarchaeota archaeon 40CM-2-53-6,MAG.38 — Candidatus Bathyarchaeota archaeon 40CM-2-53-6
+MAG.38,TI-D,0.0488865,Candidatus Bathyarchaeota archaeon 40CM-2-53-6,MAG.38 — Candidatus Bathyarchaeota archaeon 40CM-2-53-6
+MAG.38,TI-R,0.11711525,Candidatus Bathyarchaeota archaeon 40CM-2-53-6,MAG.38 — Candidatus Bathyarchaeota archaeon 40CM-2-53-6
+MAG.38,TIA-D,0.194242,Candidatus Bathyarchaeota archaeon 40CM-2-53-6,MAG.38 — Candidatus Bathyarchaeota archaeon 40CM-2-53-6
+MAG.38,TIA-R,0.19880799999999998,Candidatus Bathyarchaeota archaeon 40CM-2-53-6,MAG.38 — Candidatus Bathyarchaeota archaeon 40CM-2-53-6
+MAG.38,VI-D,0.153525,Candidatus Bathyarchaeota archaeon 40CM-2-53-6,MAG.38 — Candidatus Bathyarchaeota archaeon 40CM-2-53-6
+MAG.38,VI-R,0.2968175,Candidatus Bathyarchaeota archaeon 40CM-2-53-6,MAG.38 — Candidatus Bathyarchaeota archaeon 40CM-2-53-6
+MAG.39,AM-D,0.0339695,Candidatus Thorarchaeota archaeon,MAG.39 — Candidatus Thorarchaeota archaeon
+MAG.39,AM-R,0.08805025,Candidatus Thorarchaeota archaeon,MAG.39 — Candidatus Thorarchaeota archaeon
+MAG.39,TI-D,0.026852749999999998,Candidatus Thorarchaeota archaeon,MAG.39 — Candidatus Thorarchaeota archaeon
+MAG.39,TI-R,0.054157625,Candidatus Thorarchaeota archaeon,MAG.39 — Candidatus Thorarchaeota archaeon
+MAG.39,TIA-D,0.08107375,Candidatus Thorarchaeota archaeon,MAG.39 — Candidatus Thorarchaeota archaeon
+MAG.39,TIA-R,0.0895985,Candidatus Thorarchaeota archaeon,MAG.39 — Candidatus Thorarchaeota archaeon
+MAG.39,VI-D,0.04248225,Candidatus Thorarchaeota archaeon,MAG.39 — Candidatus Thorarchaeota archaeon
+MAG.39,VI-R,0.2049675,Candidatus Thorarchaeota archaeon,MAG.39 — Candidatus Thorarchaeota archaeon
+MAG.40,AM-D,0.0221685,Desulfobacterales bacterium UBA1163,MAG.40 — Desulfobacterales bacterium UBA1163
+MAG.40,AM-R,0.07742925,Desulfobacterales bacterium UBA1163,MAG.40 — Desulfobacterales bacterium UBA1163
+MAG.40,TI-D,0.092544125,Desulfobacterales bacterium UBA1163,MAG.40 — Desulfobacterales bacterium UBA1163
+MAG.40,TI-R,0.07913375,Desulfobacterales bacterium UBA1163,MAG.40 — Desulfobacterales bacterium UBA1163
+MAG.40,TIA-D,0.08557300000000001,Desulfobacterales bacterium UBA1163,MAG.40 — Desulfobacterales bacterium UBA1163
+MAG.40,TIA-R,0.1110845,Desulfobacterales bacterium UBA1163,MAG.40 — Desulfobacterales bacterium UBA1163
+MAG.40,VI-D,0.016155,Desulfobacterales bacterium UBA1163,MAG.40 — Desulfobacterales bacterium UBA1163
+MAG.40,VI-R,0.036551,Desulfobacterales bacterium UBA1163,MAG.40 — Desulfobacterales bacterium UBA1163
+MAG.41,AM-D,0.0822425,Dehalococcoidia bacterium RBG-13-51-36,MAG.41 — Dehalococcoidia bacterium RBG-13-51-36
+MAG.41,AM-R,0.0925145,Dehalococcoidia bacterium RBG-13-51-36,MAG.41 — Dehalococcoidia bacterium RBG-13-51-36
+MAG.41,TI-D,0.06845925,Dehalococcoidia bacterium RBG-13-51-36,MAG.41 — Dehalococcoidia bacterium RBG-13-51-36
+MAG.41,TI-R,0.065375,Dehalococcoidia bacterium RBG-13-51-36,MAG.41 — Dehalococcoidia bacterium RBG-13-51-36
+MAG.41,TIA-D,0.052864,Dehalococcoidia bacterium RBG-13-51-36,MAG.41 — Dehalococcoidia bacterium RBG-13-51-36
+MAG.41,TIA-R,0.052377,Dehalococcoidia bacterium RBG-13-51-36,MAG.41 — Dehalococcoidia bacterium RBG-13-51-36
+MAG.41,VI-D,0.0830635,Dehalococcoidia bacterium RBG-13-51-36,MAG.41 — Dehalococcoidia bacterium RBG-13-51-36
+MAG.41,VI-R,0.169272,Dehalococcoidia bacterium RBG-13-51-36,MAG.41 — Dehalococcoidia bacterium RBG-13-51-36
+MAG.42,AM-D,0.178537,Dehalococcoidia bacterium BG-13-53-26,MAG.42 — Dehalococcoidia bacterium BG-13-53-26
+MAG.42,AM-R,0.0352435,Dehalococcoidia bacterium BG-13-53-26,MAG.42 — Dehalococcoidia bacterium BG-13-53-26
+MAG.42,TI-D,0.00080925,Dehalococcoidia bacterium BG-13-53-26,MAG.42 — Dehalococcoidia bacterium BG-13-53-26
+MAG.42,TI-R,0.0,Dehalococcoidia bacterium BG-13-53-26,MAG.42 — Dehalococcoidia bacterium BG-13-53-26
+MAG.42,TIA-D,0.1187275,Dehalococcoidia bacterium BG-13-53-26,MAG.42 — Dehalococcoidia bacterium BG-13-53-26
+MAG.42,TIA-R,0.126999,Dehalococcoidia bacterium BG-13-53-26,MAG.42 — Dehalococcoidia bacterium BG-13-53-26
+MAG.42,VI-D,0.14865,Dehalococcoidia bacterium BG-13-53-26,MAG.42 — Dehalococcoidia bacterium BG-13-53-26
+MAG.42,VI-R,0.16292225000000002,Dehalococcoidia bacterium BG-13-53-26,MAG.42 — Dehalococcoidia bacterium BG-13-53-26
+MAG.43,AM-D,0.0911765,Acidobacteria bacterium UBA7541,MAG.43 — Acidobacteria bacterium UBA7541
+MAG.43,AM-R,0.115693,Acidobacteria bacterium UBA7541,MAG.43 — Acidobacteria bacterium UBA7541
+MAG.43,TI-D,0.012958374999999975,Acidobacteria bacterium UBA7541,MAG.43 — Acidobacteria bacterium UBA7541
+MAG.43,TI-R,0.01927775,Acidobacteria bacterium UBA7541,MAG.43 — Acidobacteria bacterium UBA7541
+MAG.43,TIA-D,0.047605,Acidobacteria bacterium UBA7541,MAG.43 — Acidobacteria bacterium UBA7541
+MAG.43,TIA-R,0.0904535,Acidobacteria bacterium UBA7541,MAG.43 — Acidobacteria bacterium UBA7541
+MAG.43,VI-D,0.07551125,Acidobacteria bacterium UBA7541,MAG.43 — Acidobacteria bacterium UBA7541
+MAG.43,VI-R,0.11276800000000001,Acidobacteria bacterium UBA7541,MAG.43 — Acidobacteria bacterium UBA7541
+MAG.44,AM-D,0.0,Anaerolineae bacterium UBA4142,MAG.44 — Anaerolineae bacterium UBA4142
+MAG.44,AM-R,0.0,Anaerolineae bacterium UBA4142,MAG.44 — Anaerolineae bacterium UBA4142
+MAG.44,TI-D,0.06015062499999975,Anaerolineae bacterium UBA4142,MAG.44 — Anaerolineae bacterium UBA4142
+MAG.44,TI-R,0.05528225,Anaerolineae bacterium UBA4142,MAG.44 — Anaerolineae bacterium UBA4142
+MAG.44,TIA-D,0.037805,Anaerolineae bacterium UBA4142,MAG.44 — Anaerolineae bacterium UBA4142
+MAG.44,TIA-R,0.0207305,Anaerolineae bacterium UBA4142,MAG.44 — Anaerolineae bacterium UBA4142
+MAG.44,VI-D,0.0,Anaerolineae bacterium UBA4142,MAG.44 — Anaerolineae bacterium UBA4142
+MAG.44,VI-R,0.0,Anaerolineae bacterium UBA4142,MAG.44 — Anaerolineae bacterium UBA4142
+MAG.45,AM-D,0.003279,Candidatus Aminicenantes bacterium UBA8522,MAG.45 — Candidatus Aminicenantes bacterium UBA8522
+MAG.45,AM-R,0.0148505,Candidatus Aminicenantes bacterium UBA8522,MAG.45 — Candidatus Aminicenantes bacterium UBA8522
+MAG.45,TI-D,0.11619,Candidatus Aminicenantes bacterium UBA8522,MAG.45 — Candidatus Aminicenantes bacterium UBA8522
+MAG.45,TI-R,0.1136355,Candidatus Aminicenantes bacterium UBA8522,MAG.45 — Candidatus Aminicenantes bacterium UBA8522
+MAG.45,TIA-D,0.054582000000000006,Candidatus Aminicenantes bacterium UBA8522,MAG.45 — Candidatus Aminicenantes bacterium UBA8522
+MAG.45,TIA-R,0.072003,Candidatus Aminicenantes bacterium UBA8522,MAG.45 — Candidatus Aminicenantes bacterium UBA8522
+MAG.45,VI-D,0.0055415,Candidatus Aminicenantes bacterium UBA8522,MAG.45 — Candidatus Aminicenantes bacterium UBA8522
+MAG.45,VI-R,0.041131999999999995,Candidatus Aminicenantes bacterium UBA8522,MAG.45 — Candidatus Aminicenantes bacterium UBA8522
+MAG.46,AM-D,0.016372,Candidatus Bathyarchaeota archaeon B26-1,MAG.46 — Candidatus Bathyarchaeota archaeon B26-1
+MAG.46,AM-R,0.05602,Candidatus Bathyarchaeota archaeon B26-1,MAG.46 — Candidatus Bathyarchaeota archaeon B26-1
+MAG.46,TI-D,0.07562875,Candidatus Bathyarchaeota archaeon B26-1,MAG.46 — Candidatus Bathyarchaeota archaeon B26-1
+MAG.46,TI-R,0.046227250000000004,Candidatus Bathyarchaeota archaeon B26-1,MAG.46 — Candidatus Bathyarchaeota archaeon B26-1
+MAG.46,TIA-D,0.0434115,Candidatus Bathyarchaeota archaeon B26-1,MAG.46 — Candidatus Bathyarchaeota archaeon B26-1
+MAG.46,TIA-R,0.0694635,Candidatus Bathyarchaeota archaeon B26-1,MAG.46 — Candidatus Bathyarchaeota archaeon B26-1
+MAG.46,VI-D,0.0936155,Candidatus Bathyarchaeota archaeon B26-1,MAG.46 — Candidatus Bathyarchaeota archaeon B26-1
+MAG.46,VI-R,0.230883,Candidatus Bathyarchaeota archaeon B26-1,MAG.46 — Candidatus Bathyarchaeota archaeon B26-1
+MAG.47,AM-D,0.06748649999999999,Candidatus Lokiarchaeota archaeon,MAG.47 — Candidatus Lokiarchaeota archaeon
+MAG.47,AM-R,0.045546,Candidatus Lokiarchaeota archaeon,MAG.47 — Candidatus Lokiarchaeota archaeon
+MAG.47,TI-D,0.0,Candidatus Lokiarchaeota archaeon,MAG.47 — Candidatus Lokiarchaeota archaeon
+MAG.47,TI-R,0.0,Candidatus Lokiarchaeota archaeon,MAG.47 — Candidatus Lokiarchaeota archaeon
+MAG.47,TIA-D,0.02369,Candidatus Lokiarchaeota archaeon,MAG.47 — Candidatus Lokiarchaeota archaeon
+MAG.47,TIA-R,0.028540499999999996,Candidatus Lokiarchaeota archaeon,MAG.47 — Candidatus Lokiarchaeota archaeon
+MAG.47,VI-D,0.108773,Candidatus Lokiarchaeota archaeon,MAG.47 — Candidatus Lokiarchaeota archaeon
+MAG.47,VI-R,0.30727699999999997,Candidatus Lokiarchaeota archaeon,MAG.47 — Candidatus Lokiarchaeota archaeon
+MAG.48,AM-D,0.005298,Candidatus Thorarchaeota archaeon,MAG.48 — Candidatus Thorarchaeota archaeon
+MAG.48,AM-R,0.00927275,Candidatus Thorarchaeota archaeon,MAG.48 — Candidatus Thorarchaeota archaeon
+MAG.48,TI-D,0.027438999999999998,Candidatus Thorarchaeota archaeon,MAG.48 — Candidatus Thorarchaeota archaeon
+MAG.48,TI-R,0.070102875,Candidatus Thorarchaeota archaeon,MAG.48 — Candidatus Thorarchaeota archaeon
+MAG.48,TIA-D,0.079794,Candidatus Thorarchaeota archaeon,MAG.48 — Candidatus Thorarchaeota archaeon
+MAG.48,TIA-R,0.087823,Candidatus Thorarchaeota archaeon,MAG.48 — Candidatus Thorarchaeota archaeon
+MAG.48,VI-D,0.08574425,Candidatus Thorarchaeota archaeon,MAG.48 — Candidatus Thorarchaeota archaeon
+MAG.48,VI-R,0.105155,Candidatus Thorarchaeota archaeon,MAG.48 — Candidatus Thorarchaeota archaeon
+MAG.50,AM-D,0.1183395,Acidobacteria bacterium,MAG.50 — Acidobacteria bacterium
+MAG.50,AM-R,0.0,Acidobacteria bacterium,MAG.50 — Acidobacteria bacterium
+MAG.50,TI-D,0.0159965,Acidobacteria bacterium,MAG.50 — Acidobacteria bacterium
+MAG.50,TI-R,0.02534325,Acidobacteria bacterium,MAG.50 — Acidobacteria bacterium
+MAG.50,TIA-D,0.002949,Acidobacteria bacterium,MAG.50 — Acidobacteria bacterium
+MAG.50,TIA-R,0.013125,Acidobacteria bacterium,MAG.50 — Acidobacteria bacterium
+MAG.50,VI-D,0.018254,Acidobacteria bacterium,MAG.50 — Acidobacteria bacterium
+MAG.50,VI-R,0.082173,Acidobacteria bacterium,MAG.50 — Acidobacteria bacterium

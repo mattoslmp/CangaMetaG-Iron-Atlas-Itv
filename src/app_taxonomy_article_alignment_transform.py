@@ -199,6 +199,20 @@ def _retractable_table(data=None, *args, **kwargs):
   if {"lat", "lon"}.issubset(meta.columns):
     show_high_quality_sample_map(meta, key="taxonomy_sampling_map_article_aligned")
 
+  audit_specs = [
+    ("TAXONOMY_STRICT_LT1_ROW_AUDIT_20260805.csv", txt("Auditoria linha a linha do limiar estrito <1%", "Row-level strict <1% audit")),
+    ("OTHER_TAXA_LT1_TRACEABILITY_20260805.csv", txt("Rastreabilidade de Other taxa (<1%)", "Other taxa (<1%) traceability")),
+    ("UNCLASSIFIED_PERCENTAGES_20260805.csv", txt("Percentuais exatos de Unclassified", "Exact Unclassified percentages")),
+  ]
+  with st.expander(txt("Auditorias taxonômicas canônicas", "Canonical taxonomy audits"), expanded=False):
+    for audit_name, audit_label in audit_specs:
+      audit_path = BASE_DIR / "data" / "final_publication_derived" / audit_name
+      if audit_path.exists():
+        audit_table = pd.read_csv(audit_path)
+        st.markdown(f"**{audit_label}**")
+        show_table(audit_table, f"taxonomy_audit_{audit_name}", height=280)
+        csv_button(audit_table, audit_name, txt("Baixar auditoria", "Download audit"))
+
   st.markdown("### " + txt(
     "Figuras taxonômicas finais usadas no artigo",
     "Final taxonomy figures used in the article",
@@ -208,6 +222,10 @@ def _retractable_table(data=None, *args, **kwargs):
     ("Figure3_taxonomic_phylum_archaea_horizontal_CDS.png", txt("Perfis de filos de Archaea nas estações seca e chuvosa.", "Archaea phylum profiles in dry and rainy seasons.")),
     ("Figure4_taxonomic_bacteria_genus_profiles.png", txt("Perfis de gêneros, NMDS e biplot RDA de Bacteria.", "Bacteria genus profiles, NMDS and RDA biplot.")),
     ("Figure5_taxonomic_archaea_genus_profiles.png", txt("Perfis de gêneros, NMDS e biplot RDA de Archaea.", "Archaea genus profiles, NMDS and RDA biplot.")),
+    ("SupplementaryFigure43_Taxonomy_Bacteria_Phylum_individual_samples_barplot_100pct.png", txt("Barplot suplementar de filos de Bacteria.", "Supplementary Bacteria phylum barplot.")),
+    ("SupplementaryFigure45_Taxonomy_Archaea_Phylum_individual_samples_barplot_100pct.png", txt("Barplot suplementar de filos de Archaea.", "Supplementary Archaea phylum barplot.")),
+    ("SupplementaryFigure59_Taxonomy_Bacteria_Genus_individual_samples_barplot_100pct.png", txt("Barplot suplementar de gêneros de Bacteria.", "Supplementary Bacteria genus barplot.")),
+    ("SupplementaryFigure61_Taxonomy_Archaea_Genus_individual_samples_barplot_100pct.png", txt("Barplot suplementar de gêneros de Archaea.", "Supplementary Archaea genus barplot.")),
   ]
   for figure_name, figure_caption in taxonomy_figures:
     _display_static_publication_image(
@@ -222,12 +240,12 @@ def _retractable_table(data=None, *args, **kwargs):
     "Interactive barplots corresponding to Figures 2 and 3",
   ))
   st.info(txt(
-    "Dry é sempre apresentado à esquerda e Rainy à direita. Cada painel é um gráfico independente, mas ambos usam a mesma seleção Top 14, a mesma paleta e a mesma matriz-fonte da figura estática. A tabela de validação compara os percentuais célula a célula.",
-    "Dry is always shown on the left and Rainy on the right. Each panel is an independent chart, but both use the same Top-14 selection, palette and source matrix as the static figure. The validation table compares percentages cell by cell.",
+    "Dry é sempre apresentado à esquerda e Rainy à direita. Cada painel usa a mesma regra estrita por amostra: todos os táxons que atingem 1% permanecem explícitos, somente valores abaixo de 1% formam Other taxa (<1%) e Unclassified permanece separado com seu percentual exato. Não há corte Top-N.",
+    "Dry is always shown on the left and Rainy on the right. Each panel uses the same strict per-sample rule: every taxon reaching 1% remains explicit, only values below 1% form Other taxa (<1%), and Unclassified stays separate with its exact percentage. No Top-N cutoff is used.",
   ))
   for article_domain in ["Bacteria", "Archaea"]:
     st.markdown(f"#### {article_domain} — Phylum")
-    validation = article_static_source_validation(article_domain, "Phylum", 14, BASE_DIR)
+    validation = article_static_source_validation(article_domain, "Phylum", None, BASE_DIR)
     validation_status = str(validation.iloc[0].get("status", "")) if not validation.empty else ""
     if validation_status == "PASS":
       st.success(txt(
@@ -246,7 +264,7 @@ def _retractable_table(data=None, *args, **kwargs):
     for season_name, column in [("Dry", dry_column), ("Rainy", rainy_column)]:
       with column:
         figure, exact_table, matrix = article_season_barplot(
-          article_domain, "Phylum", season_name, top_n=14, base_dir=BASE_DIR,
+          article_domain, "Phylum", season_name, top_n=None, base_dir=BASE_DIR,
         )
         render_plotly_downloadable(
           figure,
@@ -255,7 +273,7 @@ def _retractable_table(data=None, *args, **kwargs):
           audit_input_table=exact_table,
           audit_processed_table=matrix,
           audit_output_table=exact_table,
-          audit_method="Domain-filtered CDS counts; relative abundance normalized within each sample; article Top-14 rule; non-selected phyla combined as Other taxa.",
+          audit_method="Domain-filtered CDS counts; per-sample normalization; classified taxa strictly below 1% combined as Other taxa (<1%); exactly 1% explicit; Unclassified independent with exact labels; no Top-N.",
           audit_input_source="data/resultado.cds.otu.tab + data/resultado.cds.tax.tab",
           audit_script="scripts/generate_final_domain_taxonomy_figures.py; scripts/taxonomy/harmonize_ncbi_taxonomy_and_regenerate.py",
         )
@@ -297,16 +315,7 @@ def _retractable_table(data=None, *args, **kwargs):
       format_func=lambda value: txt("Barplots sazonais", "Seasonal barplots") if value.startswith("Seasonal") else txt("Heatmap de abundância relativa", "Relative-abundance heatmap"),
     )
   level_name = f"{selected_rank} — {selected_domain}"
-  preview = article_taxonomy_profile_table(selected_domain, selected_rank, "Individual samples", None, BASE_DIR)
-  available_taxa = max(1, int(preview["taxon"].nunique()) if not preview.empty else 1)
-  top_n = int(st.slider(
-    txt("Top táxons mostrados", "Top taxa shown"),
-    min_value=1,
-    max_value=available_taxa,
-    value=min(20, available_taxa),
-    step=1,
-    key=f"taxonomy_article_topn_{selected_domain}_{selected_rank}",
-  ))
+  top_n = None
 
   explorer_tables = []
   if selected_visualization == "Seasonal barplots":
@@ -318,8 +327,8 @@ def _retractable_table(data=None, *args, **kwargs):
         )
         render_plotly_downloadable(
           figure,
-          key=f"taxonomy_explorer_{selected_domain}_{selected_rank}_{season_name}_{top_n}",
-          basename=f"taxonomy_{selected_domain}_{selected_rank}_{season_name}_top{top_n}",
+          key=f"taxonomy_explorer_{selected_domain}_{selected_rank}_{season_name}_strict_lt1",
+          basename=f"taxonomy_{selected_domain}_{selected_rank}_{season_name}_strict_lt1",
           audit_input_table=exact_table,
           audit_processed_table=matrix,
           audit_output_table=exact_table,

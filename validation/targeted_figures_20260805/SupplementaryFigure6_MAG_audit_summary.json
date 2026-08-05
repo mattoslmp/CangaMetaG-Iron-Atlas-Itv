@@ -1,0 +1,113 @@
+{
+  "figure": "SupplementaryFigure6_MAG_bubble_original",
+  "status": "PASS",
+  "scientific_values_changed": false,
+  "catalogue": {
+    "supplementary_table_7_rows": 50,
+    "supplementary_table_7_unique_mag_ids": 49,
+    "source_duplicate_mag_ids_resolved_by_primary_key": [
+      "MAG.1"
+    ],
+    "source_matrix_mag_ids": 49,
+    "catalogue_ids": [
+      "MAG.1",
+      "MAG.2",
+      "MAG.3",
+      "MAG.4",
+      "MAG.5",
+      "MAG.6",
+      "MAG.7",
+      "MAG.8",
+      "MAG.9",
+      "MAG.10",
+      "MAG.11",
+      "MAG.12",
+      "MAG.13",
+      "MAG.14",
+      "MAG.15",
+      "MAG.16",
+      "MAG.17",
+      "MAG.18",
+      "MAG.19",
+      "MAG.20",
+      "MAG.21",
+      "MAG.22",
+      "MAG.23",
+      "MAG.24",
+      "MAG.25",
+      "MAG.26",
+      "MAG.27",
+      "MAG.28",
+      "MAG.29",
+      "MAG.30",
+      "MAG.31",
+      "MAG.32",
+      "MAG.33",
+      "MAG.34",
+      "MAG.35",
+      "MAG.36",
+      "MAG.37",
+      "MAG.38",
+      "MAG.39",
+      "MAG.40",
+      "MAG.41",
+      "MAG.42",
+      "MAG.43",
+      "MAG.44",
+      "MAG.45",
+      "MAG.46",
+      "MAG.47",
+      "MAG.48",
+      "MAG.50"
+    ],
+    "missing_numeric_identifiers_between_1_and_50": [
+      "MAG.49"
+    ],
+    "aggregation": "Arithmetic mean of the packaged individual-sample abundances within each documented lake-season group; no renormalization.",
+    "sample_groups": {
+      "AM-D": [
+        "AM11",
+        "AM21"
+      ],
+      "AM-R": [
+        "AM12",
+        "AM22"
+      ],
+      "TI-D": [
+        "TI111",
+        "TI121",
+        "TI211",
+        "TI331"
+      ],
+      "TI-R": [
+        "TI112",
+        "TI122",
+        "TI212",
+        "TI332"
+      ],
+      "TIA-D": [
+        "TI311",
+        "TI321"
+      ],
+      "TIA-R": [
+        "TI312",
+        "TI322"
+      ],
+      "VI-D": [
+        "V11",
+        "V21"
+      ],
+      "VI-R": [
+        "V12",
+        "V22"
+      ]
+    }
+  },
+  "source_table": "data/final_publication_derived/SupplementaryFigure6_MAG_bubble_original_source.csv",
+  "audit_table": "07_Validation_and_Manifests/targeted_figures_20260805/SupplementaryFigure6_MAG_audit.csv",
+  "generated_files": {
+    "SupplementaryFigure6_MAG_bubble_original.png": "f653fc3ef5d3416dbf8811ac4adb35330c6c06c59930f477326d935e1d7c12e8",
+    "SupplementaryFigure6_MAG_bubble_original.pdf": "06ee5a57d5e46d9a6462074a46d033e91ebfaf6cb9f79b7eda27d9126fa692c7",
+    "SupplementaryFigure6_MAG_bubble_original.svg": "52b5b5f5b9c675ff0ab177a5d1b156a0b1f776178b61c7ff3173fa4c42cb6a11"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "status": "PASS",
+  "records": [
+    {
+      "domain": "Bacteria",
+      "taxonomic_level": "Phylum",
+      "static_source_table": "07_Final_Figures_and_Scripts/data/final_publication_derived/Bacteria_Phylum_strict_lt1_display_source.csv",
+      "interactive_source_table": "10_Streamlit_App/data/targeted_figures_20260805/Bacteria_Phylum_strict_lt1_display_source.csv",
+      "rows": 18,
+      "samples": 20,
+      "static_sha256": "2d18cad7864d4f01e31e0691e96772c413a79a65332a41a1d5c123b344b21f07",
+      "interactive_sha256": "2d18cad7864d4f01e31e0691e96772c413a79a65332a41a1d5c123b344b21f07",
+      "values_identical": true,
+      "hover_uses_source_percentage": true,
+      "unclassified_label_uses_source_percentage": true,
+      "validation_status": "PASS"
+    },
+    {
+      "domain": "Bacteria",
+      "taxonomic_level": "Genus",
+      "static_source_table": "07_Final_Figures_and_Scripts/data/final_publication_derived/Bacteria_Genus_strict_lt1_display_source.csv",
+      "interactive_source_table": "10_Streamlit_App/data/targeted_figures_20260805/Bacteria_Genus_strict_lt1_display_source.csv",
+      "rows": 6,
+      "samples": 20,
+      "static_sha256": "0ea4eaa05bcf66b50b9dc1938fa2daf366c7fae97839700e62c7db03587e0b42",
+      "interactive_sha256": "0ea4eaa05bcf66b50b9dc1938fa2daf366c7fae97839700e62c7db03587e0b42",
+      "values_identical": true,
+      "hover_uses_source_percentage": true,
+      "unclassified_label_uses_source_percentage": true,
+      "validation_status": "PASS"
+    },
+    {
+      "domain": "Archaea",
+      "taxonomic_level": "Phylum",
+      "static_source_table": "07_Final_Figures_and_Scripts/data/final_publication_derived/Archaea_Phylum_strict_lt1_display_source.csv",
+      "interactive_source_table": "10_Streamlit_App/data/targeted_figures_20260805/Archaea_Phylum_strict_lt1_display_source.csv",
+      "rows": 13,
+      "samples": 20,
+      "static_sha256": "38259a499c372e4fefa831d4917247382e9203f675772ebc2e1c7c780cd967ec",
+      "interactive_sha256": "38259a499c372e4fefa831d4917247382e9203f675772ebc2e1c7c780cd967ec",
+      "values_identical": true,
+      "hover_uses_source_percentage": true,
+      "unclassified_label_uses_source_percentage": true,
+      "validation_status": "PASS"
+    },
+    {
+      "domain": "Archaea",
+      "taxonomic_level": "Genus",
+      "static_source_table": "07_Final_Figures_and_Scripts/data/final_publication_derived/Archaea_Genus_strict_lt1_display_source.csv",
+      "interactive_source_table": "10_Streamlit_App/data/targeted_figures_20260805/Archaea_Genus_strict_lt1_display_source.csv",
+      "rows": 11,
+      "samples": 20,
+      "static_sha256": "dc37c34a9949b157216d39f03b62a675d969734758702f7b78af453b5fe1ca1e",
+      "interactive_sha256": "dc37c34a9949b157216d39f03b62a675d969734758702f7b78af453b5fe1ca1e",
+      "values_identical": true,
+      "hover_uses_source_percentage": true,
+      "unclassified_label_uses_source_percentage": true,
+      "validation_status": "PASS"
+    }
+  ]
+}

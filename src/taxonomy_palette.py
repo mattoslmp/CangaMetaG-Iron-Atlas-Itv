@@ -26,7 +26,7 @@ FULL_PALETTE_BUNDLE_NAME = "taxonomy_palette_full.json.gz.b64"
 NEUTRAL_COLORS = {
   "Others": "#C89B3C",
   "Other taxa": "#D4A373",
-  "Other taxa (<1%)": "#E09F7D",
+  "Other taxa (<1%)": "#C6846F",
   "Other genera": "#8D6A9F",
   "Unclassified": "#5B7C99",
   "Unclassified taxa": "#4C6E91",

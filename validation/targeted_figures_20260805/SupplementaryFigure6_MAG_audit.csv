@@ -1,0 +1,50 @@
+MAG_ID,taxonomy_label,present_in_Supplementary_Table_7,present_in_source_matrix,present_in_figure,duplicated_MAG_ID,missing_label,number_of_lake_season_groups,abundance_sum_before,abundance_sum_after,validation_status
+MAG.1,Thermoplasmata RBG-16-68-12,True,True,True,False,False,8,0.5396945,0.5396945,PASS
+MAG.2,Candidatus Methanoperedens nitroreducens strain ANME-2d,True,True,True,False,False,8,0.280665,0.280665,PASS
+MAG.3,Candidatus Aminicenantes bacterium,True,True,True,False,False,8,0.8889354999999999,0.8889354999999999,PASS
+MAG.4,Acidobacteria bacterium UBA7541,True,True,True,False,False,8,0.51718725,0.51718725,PASS
+MAG.5,Candidatus Bathyarchaeota archaeon B26-1,True,True,True,False,False,8,0.57853325,0.57853325,PASS
+MAG.6,Candidatus Bathyarchaeota archaeon 40CM-2-53-6,True,True,True,False,False,8,0.372365,0.372365,PASS
+MAG.7,Candidatus Bathyarchaeota archaeon 20-14-0-80-47-9,True,True,True,False,False,8,1.87509975,1.87509975,PASS
+MAG.8,Trebonia kvetii,True,True,True,False,False,8,0.37953075,0.37953075,PASS
+MAG.9,Anaeromyxobacter sp. Red267,True,True,True,False,False,8,0.4341722499999999,0.4341722499999999,PASS
+MAG.10,Candidatus Bathyarchaeota archaeon B26-1,True,True,True,False,False,8,0.8085585,0.8085585,PASS
+MAG.11,Nitrososphaeria archeon EX4484-205,True,True,True,False,False,8,0.6559965,0.6559965,PASS
+MAG.12,Dehalococcoides mccartyi,True,True,True,False,False,8,0.7876402499999999,0.7876402499999999,PASS
+MAG.13,Nitrospirales bacterium LBB_01,True,True,True,False,False,8,0.45651700000000006,0.45651700000000006,PASS
+MAG.14,Spirochaetes bacterium RBG_16_67_19,True,True,True,False,False,8,0.6344352499999999,0.6344352499999999,PASS
+MAG.15,Bacteroidetes bacterium,True,True,True,False,False,8,0.220944,0.220944,PASS
+MAG.16,Candidatus Bathyarchaeota archaeon BA1,True,True,True,False,False,8,0.9391737500000001,0.9391737500000001,PASS
+MAG.17,Thermoplasmata archaeon SM1-50,True,True,True,False,False,8,0.35742425,0.35742425,PASS
+MAG.18,Dehalococcoidia bacterium SZUA-161,True,True,True,False,False,8,0.56479225,0.56479225,PASS
+MAG.19,Thermoplasmata archaeon RBG-16-68-12,True,True,True,False,False,8,0.5614208749999999,0.5614208749999999,PASS
+MAG.20,Candidatus Bathyarchaeota archaeon B26-1,True,True,True,False,False,8,0.3348305,0.3348305,PASS
+MAG.21,Candidatus Bathyarchaeota archaeon BA1,True,True,True,False,False,8,0.9108248749999999,0.9108248749999999,PASS
+MAG.22,Candidatus Bathyarchaeota archaeon 40CM-2-53-6,True,True,True,False,False,8,1.0121102499999999,1.0121102499999999,PASS
+MAG.23,Candidatus Bathyarchaeota archaeon B26-1,True,True,True,False,False,8,0.6950684999999999,0.6950684999999999,PASS
+MAG.24,Candidatus Bathyarchaeota archaeon B26,True,True,True,False,False,8,0.5323789999999999,0.5323789999999999,PASS
+MAG.25,Nitrosotalea sp.,True,True,True,False,False,8,0.35355,0.35355,PASS
+MAG.26,Burkholderiales bacterium,True,True,True,False,False,8,0.3480405,0.3480405,PASS
+MAG.27,Planctomycetes bacterium UBA8742,True,True,True,False,False,8,0.38664275,0.38664275,PASS
+MAG.28,Candidatus Bathyarchaeota archaeon BA1,True,True,True,False,False,8,0.577577875,0.577577875,PASS
+MAG.29,Candidatus Aminicenantes bacterium RBG-16-66-30,True,True,True,False,False,8,0.43392525000000004,0.43392525000000004,PASS
+MAG.30,Anaerolineales bacterium,True,True,True,False,False,8,0.8642835,0.8642835,PASS
+MAG.31,Thermoflexales bacterium RBG-16-68-12,True,True,True,False,False,8,0.5412447499999999,0.5412447499999999,PASS
+MAG.32,Candidatus Thorarchaeota archaeon,True,True,True,False,False,8,0.43030837499999997,0.43030837499999997,PASS
+MAG.33,Thermoflexales bacterium Fen-1058,True,True,True,False,False,8,0.369041625,0.369041625,PASS
+MAG.34,Hydrococcus,True,True,True,False,False,8,0.17659924999999999,0.17659924999999999,PASS
+MAG.35,Acidobacteria bacterium UBA7541,True,True,True,False,False,8,0.6887055,0.6887055,PASS
+MAG.36,Candidatus Bathyarchaeota archaeon FEN-987,True,True,True,False,False,8,0.48423550000000004,0.48423550000000004,PASS
+MAG.37,Euryarchaeota archaeon RBG-16-68-12,True,True,True,False,False,8,3.7775442499999996,3.7775442499999996,PASS
+MAG.38,Candidatus Bathyarchaeota archaeon 40CM-2-53-6,True,True,True,False,False,8,1.14948225,1.14948225,PASS
+MAG.39,Candidatus Thorarchaeota archaeon,True,True,True,False,False,8,0.621152125,0.621152125,PASS
+MAG.40,Desulfobacterales bacterium UBA1163,True,True,True,False,False,8,0.520639125,0.520639125,PASS
+MAG.41,Dehalococcoidia bacterium RBG-13-51-36,True,True,True,False,False,8,0.66616775,0.66616775,PASS
+MAG.42,Dehalococcoidia bacterium BG-13-53-26,True,True,True,False,False,8,0.7718885,0.7718885,PASS
+MAG.43,Acidobacteria bacterium UBA7541,True,True,True,False,False,8,0.565443375,0.565443375,PASS
+MAG.44,Anaerolineae bacterium UBA4142,True,True,True,False,False,8,0.17396837499999973,0.17396837499999973,PASS
+MAG.45,Candidatus Aminicenantes bacterium UBA8522,True,True,True,False,False,8,0.4212135,0.4212135,PASS
+MAG.46,Candidatus Bathyarchaeota archaeon B26-1,True,True,True,False,False,8,0.6316215000000001,0.6316215000000001,PASS
+MAG.47,Candidatus Lokiarchaeota archaeon,True,True,True,False,False,8,0.581313,0.581313,PASS
+MAG.48,Candidatus Thorarchaeota archaeon,True,True,True,False,False,8,0.47062887499999995,0.47062887499999995,PASS
+MAG.50,Acidobacteria bacterium,True,True,True,False,False,8,0.27618025,0.27618025,PASS

@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-"""Label aggregate taxonomy traces with the declared 5% cutoff."""
+"""Label aggregate taxonomy traces with the strict per-sample 1% cutoff."""
 
 
 MARKER = "CANGAMETAG_OTHER_TAXA_PERCENTAGE_LABEL_V2 = 1"
@@ -8,14 +8,14 @@ MARKER = "CANGAMETAG_OTHER_TAXA_PERCENTAGE_LABEL_V2 = 1"
 if MARKER not in source:
   anchor = "page_handler = page_handlers.get(selected_page)"
   layer = r'''
-_OTHER_TAXA_THRESHOLD_PERCENT = 5.0
+_OTHER_TAXA_THRESHOLD_PERCENT = 1.0
 
 
 def _other_taxa_percentage_label(name: object, values: object = None) -> str:
   label = str(name)
   if label not in {"Other taxa", "Other genera"}:
     return label
-  return f"{label} (<{_OTHER_TAXA_THRESHOLD_PERCENT:g}% each)"
+  return f"Other taxa (<{_OTHER_TAXA_THRESHOLD_PERCENT:g}%)"
 
 
 if "article_season_barplot" in globals():
@@ -50,7 +50,7 @@ if "article_season_barplot" in globals():
       "other_taxa_threshold_percent": _OTHER_TAXA_THRESHOLD_PERCENT,
       "other_taxa_display_labels": aggregate_labels,
       "other_taxa_label_rule": (
-        "5% denotes the per-taxon cutoff; plotted aggregate values remain "
+        "1% denotes the strict per-sample cutoff; plotted aggregate values remain "
         "the exact sums from the source table"
       ),
     })

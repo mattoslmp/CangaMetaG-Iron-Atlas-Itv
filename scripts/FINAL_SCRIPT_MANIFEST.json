@@ -1,48 +1,41 @@
 {
-  "manifest_version": "2026-07-31-final-v5-bilingual-figures",
+  "manifest_version": "2026-08-05-targeted-final",
   "policy": "Only entries with status=canonical_final are used by the app and future article packages.",
   "canonical_scripts": [
     {
-      "figure_scope": "Main Figures 2-5 taxonomy, NMDS and RDA",
-      "path": "scripts/final_publication_figures/02_05_generate_final_taxonomy_figures.py",
+      "figure_scope": "Figures 2–5, Supplementary Figures 6/18 and affected supplementary taxonomy barplots",
+      "path": "scripts/generate_targeted_figures_20260805.py",
       "status": "canonical_final",
-      "languages": ["en", "pt"],
+      "languages": [
+        "en",
+        "pt"
+      ],
       "translation_policy": "Titles, panel headings, axes, legends, annotations and other display text are translated. Matrices, coordinates, statistical values, colours and ordering remain identical.",
       "app_shared_modules": [
-        "src/article_exact_taxonomy_phylum_generated.py",
-        "src/article_exact_taxonomy_phylum_other_percentage.py",
-        "src/article_frozen_taxonomy_static_bilingual.py",
-        "src/article_frozen_taxonomy_panels.py",
-        "src/figure_language_localization.py",
-        "src/article_official_ordination_statistics.py",
-        "src/article_inference_reporting.py"
+        "src/article_taxonomy.py",
+        "src/taxonomy_normalization.py",
+        "src/article_frozen_taxonomy_panels.py"
       ],
       "inputs": [
-        "data/final_publication_derived/Figure2_taxonomic_phylum_bacteria_horizontal_CDS_source.csv",
-        "data/final_publication_derived/Figure3_taxonomic_phylum_archaea_horizontal_CDS_source.csv",
-        "data/article_frozen_taxonomy_bacteria.json",
-        "data/article_frozen_taxonomy_archaea.json",
-        "reproducibility/ordination_reproducibility/tables/Bacteria_NMDS_PERMANOVA_and_dispersion_tests.csv",
-        "reproducibility/ordination_reproducibility/tables/Archaea_NMDS_PERMANOVA_and_dispersion_tests.csv",
-        "reproducibility/ordination_reproducibility/tables/Bacteria_RDA_model_statistics.csv",
-        "reproducibility/ordination_reproducibility/tables/Archaea_RDA_model_statistics.csv"
+        "data/resultado.cds.otu.tab",
+        "data/resultado.cds.tax.display_current.tab",
+        "data/mapeamento_taxonomico.csv",
+        "tables/Supplementary_Table_7.xlsx",
+        "reproducibility/ordination_reproducibility"
       ],
       "outputs": [
         "outputs/final_publication_figures/Figure2_taxonomic_phylum_bacteria_horizontal_CDS.*",
         "outputs/final_publication_figures/Figure3_taxonomic_phylum_archaea_horizontal_CDS.*",
         "outputs/final_publication_figures/Figure4_taxonomic_bacteria_genus_profiles.*",
         "outputs/final_publication_figures/Figure5_taxonomic_archaea_genus_profiles.*",
-        "outputs/final_publication_figures/Figure2_taxonomic_phylum_bacteria_horizontal_CDS_pt.*",
-        "outputs/final_publication_figures/Figure3_taxonomic_phylum_archaea_horizontal_CDS_pt.*",
-        "outputs/final_publication_figures/Figure4_taxonomic_bacteria_genus_profiles_pt.*",
-        "outputs/final_publication_figures/Figure5_taxonomic_archaea_genus_profiles_pt.*",
-        "data/final_publication_derived/Figure4_Bacteria_NMDS_PCoA_PERMANOVA_PERMDISP.csv",
-        "data/final_publication_derived/Figure4_Bacteria_RDA_global_statistics.csv",
-        "data/final_publication_derived/Figure5_Archaea_NMDS_PCoA_PERMANOVA_PERMDISP.csv",
-        "data/final_publication_derived/Figure5_Archaea_RDA_global_statistics.csv",
-        "reports/FINAL_DOMAIN_TAXONOMY_GENERATION_REPORT.json"
+        "outputs/final_publication_figures/SupplementaryFigure6_MAG_bubble_original.*",
+        "outputs/final_publication_figures/SupplementaryFigure18_RDA_and_physicochemical_heatmap.*",
+        "outputs/final_publication_figures/SupplementaryFigure43_Taxonomy_Bacteria_Phylum_individual_samples_barplot_100pct.*",
+        "outputs/final_publication_figures/SupplementaryFigure45_Taxonomy_Archaea_Phylum_individual_samples_barplot_100pct.*",
+        "outputs/final_publication_figures/SupplementaryFigure59_Taxonomy_Bacteria_Genus_individual_samples_barplot_100pct.*",
+        "outputs/final_publication_figures/SupplementaryFigure61_Taxonomy_Archaea_Genus_individual_samples_barplot_100pct.*"
       ],
-      "command": "python scripts/final_publication_figures/02_05_generate_final_taxonomy_figures.py --base-dir . --language both",
+      "command": "python scripts/generate_targeted_figures_20260805.py --package-root . --targets all",
       "figure_source_values_changed": false,
       "official_article_statistical_values_used": true,
       "legend_layout": {
@@ -55,7 +48,9 @@
         "official article PERMANOVA table",
         "official article PERMDISP/betadisper table",
         "official article global and axis RDA permutation results"
-      ]
+      ],
+      "taxonomy_display_rule": "strictly below 1% per sample -> Other taxa (<1%); exactly 1% explicit; Unclassified separate with exact labels; no Top-N",
+      "static_interactive_parity": true
     },
     {
       "figure_scope": "Supplementary Table 8 all-KO biomarker heatmaps",
@@ -127,7 +122,7 @@
   "compatibility_entry_points": [
     {
       "path": "scripts/generate_final_domain_taxonomy_figures.py",
-      "delegates_to": "scripts/final_publication_figures/02_05_generate_final_taxonomy_figures.py"
+      "delegates_to": "scripts/generate_targeted_figures_20260805.py --targets taxonomy"
     }
   ],
   "superseded_behaviour": [

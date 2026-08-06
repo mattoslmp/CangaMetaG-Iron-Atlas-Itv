@@ -26,7 +26,7 @@ on:
       - "data/antismash/antiSMASH_BGC_region_table.csv"
       - ".github/workflows/final-article-results-validation.yml"
   push:
-    branches: [main]
+    branches: [main, final-corrections-20260806]
     paths:
       - "app.py"
       - "src/app_final_article_results_transform.py"

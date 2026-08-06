@@ -1,0 +1,56 @@
+name: Final article branch validation
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [final-corrections-20260806]
+    paths:
+      - ".github/workflows/final-article-branch-validation.yml"
+      - "scripts/run_final_ci_validation.sh"
+      - "data/final_integration_bundle_20260806.tar.gz.part-*"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: final-article-branch-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          lfs: false
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /.github/
+            /requirements.txt
+            /app.py
+            /app_core.py
+            /src/
+            /scripts/
+            /tests/
+            /tables/Supplementary_Table_8.xlsx
+            /data/resultado.cds.otu.tab
+            /data/final_integration_bundle_20260806.tar.gz.part-*
+            /data/kegg_modules/mags/gbk_antismash/
+            /reproducibility/ordination_reproducibility/
+            /data/final_publication_derived/
+            /outputs/final_publication_figures/
+            /outputs/app_main_figures/
+            /outputs/app_supplementary_figures/
+            /outputs/antismash/
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+      - name: Install validation dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install numpy pandas matplotlib openpyxl pillow biopython pytest streamlit plotly scipy scikit-learn pypdf requests cairosvg
+      - name: Execute complete validation and record status
+        run: bash scripts/run_final_ci_validation.sh
